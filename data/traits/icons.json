@@ -4,40 +4,40 @@
     "yes": ["fisherman", "pacifist", "ravenkeeper", "snakecharmer", "widow", "organgrinder", "nodashii", "lordoftyphon", "scapegoat"]
   },
   "iconShowsHumanFigure": {
-    "definition": "The token art shows a person-shaped figure with a body (human or ghostly), not just a face, hand or other part. Borderline, left untagged and scoped out of questions: golem.",
-    "yes": ["banshee", "eviltwin", "fearmonger"]
+    "definition": "The token art shows a person-shaped figure with a body (human or ghostly), not just a face, hand or other part. Borderline, left untagged and scoped out of questions: golem, fearmonger.",
+    "yes": ["banshee", "eviltwin"]
   },
   "iconShowsBodyPart": {
-    "definition": "The token art shows a separate part of a body rather than a whole creature: a hand, face, mouth, lips, teeth, eyeball, brain, bone, skull, tentacle or claw, drawn anywhere in the picture. Borderline, left untagged and scoped out of questions: legion, alchemist, goon, oracle, cultleader, fortuneteller, saint, highpriestess, wraith, scapegoat, lordoftyphon, lycanthrope, fearmonger, golem.",
-    "yes": ["amnesiac", "butler", "snitch", "cannibal", "cerenovus", "scarletwoman", "goblin", "harpy", "shabaloth", "ojo", "zombuul", "fanggu", "lleech", "lilmonsta", "bonecollector", "voudon", "vigormortis", "yaggababble"]
+    "definition": "The token art shows a separate part of a body rather than a whole creature: a hand, face, mouth, lips, teeth, eyeball, brain, bone, skull, tentacle or claw, drawn anywhere in the picture. Borderline, left untagged and scoped out of questions: legion, alchemist, goon, oracle, cultleader, fortuneteller, saint, highpriestess, wraith, scapegoat, lordoftyphon, lycanthrope, fearmonger, golem, amnesiac, lilmonsta, vizier, magician.",
+    "yes": ["butler", "snitch", "cannibal", "cerenovus", "scarletwoman", "goblin", "harpy", "shabaloth", "ojo", "zombuul", "fanggu", "lleech", "bonecollector", "voudon", "vigormortis", "yaggababble"]
   },
   "iconHasSkull": {
     "definition": "A skull is drawn somewhere in the token art, including the small skull-and-crossbones on the Alchemist's bottle label. Borderline, left untagged and scoped out of questions: wraith.",
     "yes": ["voudon", "vigormortis", "alchemist"]
   },
   "iconShowsPlant": {
-    "definition": "A plant or part of one is drawn: a flower, stem, leaf or tree. Borderline, left untagged and scoped out of questions: ravenkeeper, klutz, ogre.",
+    "definition": "A plant or part of one is drawn: a flower, stem, leaf or tree. Borderline, left untagged and scoped out of questions: ravenkeeper, klutz, ogre, damsel, king.",
     "yes": ["flowergirl", "poppygrower", "godfather", "huntsman"]
   },
   "iconShowsFoodOrDrink": {
-    "definition": "The token art shows something to eat or drink, or a vessel that plainly holds it (a pie, a lollipop, a glass of wine, a tankard of beer, a steaming teapot or cup). Borderline, left untagged and scoped out of questions: klutz, butler, pithag, alchemist, poisoner, beggar, zealot, boffin, fisherman.",
+    "definition": "The token art shows something to eat or drink, or a vessel that plainly holds it (a pie, a lollipop, a glass of wine, a tankard of beer, a steaming teapot or cup). Borderline, left untagged and scoped out of questions: klutz, butler, pithag, alchemist, poisoner, beggar, zealot, boffin, fisherman, organgrinder.",
     "yes": ["cannibal", "courtier", "drunk", "villageidiot", "barista", "tealady"]
   },
   "iconShowsWeapon": {
-    "definition": "The token art shows something made for fighting or killing: a crossbow, war club, dagger, pistols, bomb, firebomb or devil's trident. Borderline, left untagged and scoped out of questions: psychopath, butcher, farmer, knight, soldier, harpy, riot, vizier, undertaker, apprentice, judge.",
+    "definition": "The token art shows something made for fighting or killing: a crossbow, war club, dagger, pistols, bomb, firebomb or devil's trident. Borderline, left untagged and scoped out of questions: psychopath, butcher, farmer, knight, soldier, harpy, riot, vizier, undertaker, apprentice, judge, poisoner, alchemist.",
     "yes": ["slayer", "ogre", "assassin", "gunslinger", "boomdandy", "zealot", "imp"]
   },
   "iconIsRound": {
-    "definition": "The overall outline of the token art is a circle or disc. Borderline, left untagged and scoped out of questions: fortuneteller, golem, ravenkeeper, balloonist, beggar, virgin, alchemist, engineer, shugenja, ojo, po, cerenovus, professor, moonchild, atheist, voudon, fanggu, riot, kazali.",
+    "definition": "The overall outline of the token art is a circle or disc. Borderline, left untagged and scoped out of questions: fortuneteller, golem, ravenkeeper, balloonist, beggar, virgin, alchemist, engineer, shugenja, ojo, po, cerenovus, professor, moonchild, atheist, voudon, fanggu, riot, kazali, wizard.",
     "yes": ["clockmaker", "summoner", "lunatic", "boomdandy"]
   },
   "iconShowsHeadwear": {
-    "definition": "The token art shows a hat, helmet, crown or tiara. Borderline, left untagged and scoped out of questions: vizier, organgrinder, plaguedoctor, spy.",
+    "definition": "The token art shows a hat, helmet, crown or tiara. Borderline, left untagged and scoped out of questions: vizier, organgrinder, plaguedoctor, spy, fearmonger.",
     "yes": ["chef", "knight", "fool", "magician", "baron", "hatter", "witch", "gnome", "gangster", "bishop", "alhadikhia", "princess", "lilmonsta"]
   },
   "iconShowsWearable": {
-    "definition": "The token art shows something made to be worn on the body: a hat, helmet, crown, mask, glasses, shoe, clothes, corset, collar, ring or earring. Borderline, left untagged and scoped out of questions: vizier, sweetheart, goon, thief, exorcist, organgrinder, soldier, eviltwin, banshee, fearmonger, butler.",
-    "yes": ["chef", "knight", "fool", "magician", "baron", "hatter", "witch", "gnome", "gangster", "bishop", "alhadikhia", "princess", "lilmonsta", "plaguedoctor", "spy", "damsel", "harlot", "deviant", "moonchild", "virgin", "grandmother", "bountyhunter", "matron", "washerwoman"]
+    "definition": "The token art shows something made to be worn on the body: a hat, helmet, crown, mask, glasses, shoe, clothes, corset, collar, ring or earring. Borderline, left untagged and scoped out of questions: vizier, sweetheart, goon, thief, exorcist, organgrinder, soldier, eviltwin, banshee, fearmonger, butler, matron.",
+    "yes": ["chef", "knight", "fool", "magician", "baron", "hatter", "witch", "gnome", "gangster", "bishop", "alhadikhia", "princess", "lilmonsta", "plaguedoctor", "spy", "damsel", "harlot", "deviant", "moonchild", "virgin", "grandmother", "bountyhunter", "washerwoman"]
   },
   "iconShowsWriting": {
     "definition": "The token art shows paper, a book, a scroll or handwriting. Borderline, left untagged and scoped out of questions: gossip, amnesiac, choirboy, alchemist.",
@@ -52,7 +52,7 @@
     "yes": ["sage", "recluse", "nightwatchman", "noble", "hermit", "cacklejack"]
   },
   "iconIsAbstractSymbol": {
-    "definition": "The token art is a symbol, sign or pattern rather than a physical object, creature or place: a heart, spiral, ring, chaos star, knot, swirl, geometric triangle, eye symbol, fleur-de-lis, star insignia, atom, question mark or speech bubble. Borderline, left untagged and scoped out of questions: heretic, xaan, dreamer, po, wraith, pukka, highpriestess, engineer, soldier, politician, vortox, shugenja, legion, lycanthrope, choirboy, saint, monk, atheist.",
+    "definition": "The token art is a symbol, sign or pattern rather than a physical object, creature or place: a heart, spiral, ring, chaos star, knot, swirl, geometric triangle, eye symbol, fleur-de-lis, star insignia, atom, question mark or speech bubble. Borderline, left untagged and scoped out of questions: heretic, xaan, dreamer, po, wraith, pukka, highpriestess, engineer, soldier, politician, vortox, shugenja, legion, lycanthrope, choirboy, saint, monk, atheist, vigormortis.",
     "yes": ["empath", "lunatic", "summoner", "riot", "leviathan", "kazali", "mathematician", "cultleader", "oracle", "king", "wizard", "general", "professor", "amnesiac", "gossip"]
   },
   "iconHasFace": {
@@ -61,7 +61,7 @@
   },
   "iconFitsInOneHand": {
     "definition": "The token art is a small object (or a few small objects) a person could pick up and hold in one hand. The clear no side is big things and scenes (buildings, landscapes, furniture, vehicles, a planet, a cauldron, a washing line) and whole people or large creatures: nightwatchman, noble, atheist, balloonist, mayor, hermit, mutant, huntsman, shugenja, savant, mastermind, washerwoman, pithag, lordoftyphon, scapegoat, golem, banshee, eviltwin, fearmonger, vortox, innkeeper. Every other untagged character (hats, symbols, small animals, body parts, long tools and weapons, and the like) is borderline and scoped out of questions on this trait.",
-    "yes": ["investigator", "grandmother", "bountyhunter", "matron", "chambermaid", "artist", "seamstress", "gambler", "towncrier", "moonchild", "virgin", "villageidiot", "courtier", "philosopher", "mezepheles", "poisoner", "alchemist", "thief", "assassin", "tinker", "judge", "butcher", "drunk", "barista", "tealady", "steward", "librarian", "preacher", "boffin", "sweetheart", "cannibal", "klutz", "damsel", "puzzlemaster", "beggar", "psychopath", "monk", "deviant", "pixie", "spy", "bureaucrat", "godfather", "flowergirl", "poppygrower", "exorcist", "zealot", "recluse", "sage", "marionette"]
+    "yes": ["investigator", "grandmother", "bountyhunter", "matron", "chambermaid", "artist", "seamstress", "gambler", "towncrier", "moonchild", "virgin", "villageidiot", "courtier", "philosopher", "mezepheles", "poisoner", "alchemist", "thief", "assassin", "tinker", "judge", "butcher", "drunk", "barista", "tealady", "steward", "librarian", "preacher", "boffin", "sweetheart", "cannibal", "klutz", "damsel", "puzzlemaster", "beggar", "psychopath", "monk", "deviant", "pixie", "spy", "bureaucrat", "godfather", "flowergirl", "poppygrower", "zealot", "recluse", "sage", "marionette"]
   },
   "iconFoundInGarden": {
     "definition": "Whimsical: the token art would clearly look at home in a garden (flowers, a rose, garden tools, a spade). Borderline, left untagged and scoped out of questions: gnome, snakecharmer, widow, ravenkeeper, pacifist, lycanthrope, scapegoat, tinker, apprentice, psychopath, klutz, huntsman, nightwatchman, ogre, lleech, tealady, courtier, barista, acrobat, balloonist, pixie, sweetheart, mastermind, fisherman, organgrinder, chambermaid, washerwoman, sage, recluse, beggar, golem, lordoftyphon, xaan.",
@@ -72,7 +72,7 @@
     "yes": ["pixie", "puzzlemaster", "juggler", "gambler", "yaggababble"]
   },
   "iconFoundInKitchen": {
-    "definition": "Whimsical: the token art would clearly look at home in a kitchen (a chef's hat, a pie, a cleaver, a teapot, a coffee cup, a serving cloche, a bowl). Borderline, left untagged and scoped out of questions: courtier, drunk, pithag, klutz, villageidiot, seamstress, chambermaid, boffin, poisoner, alchemist, recluse, sage, towncrier, assassin, fisherman, nodashii, mastermind, widow, tinker, apprentice, psychopath, lordoftyphon, scapegoat, organgrinder, clockmaker.",
+    "definition": "Whimsical: the token art would clearly look at home in a kitchen (a chef's hat, a pie, a cleaver, a teapot, a coffee cup, a serving cloche, a bowl). Borderline, left untagged and scoped out of questions: courtier, drunk, pithag, klutz, villageidiot, seamstress, chambermaid, boffin, poisoner, alchemist, recluse, sage, towncrier, assassin, fisherman, nodashii, mastermind, widow, tinker, apprentice, psychopath, lordoftyphon, scapegoat, organgrinder, clockmaker, devilsadvocate.",
     "yes": ["chef", "cannibal", "butcher", "tealady", "barista", "butler", "beggar"]
   },
   "iconFoundInPub": {
