@@ -221,7 +221,7 @@
   },
   {
     "id": "xi-pick-and-judge",
-    "plain": "Does your ability let you choose players and then learn their alignment?",
+    "plain": "Does your ability let you choose players and then learn something about their alignment?",
     "dinniman": "You point. The universe tells you whether they're good or evil, or whether two of them match. Simple, tidy, deeply satisfying. Does your ability let you pick players and learn about their alignment?",
     "voice": "Katia",
     "yes": {
@@ -307,7 +307,7 @@
   },
   {
     "id": "xi-clue-subscription",
-    "plain": "Do you like building a case slowly from a steady stream of nightly clues your ability gives you?",
+    "plain": "Does your ability feed you a steady stream of fresh information, night after night?",
     "dinniman": "Information is a renewable resource, for some of you. Night after night, another piece for the pile, until the picture comes together or you go mad trying. Does your ability give you that steady nightly stream?",
     "voice": "Katia",
     "yes": {
@@ -582,8 +582,8 @@
   },
   {
     "id": "xi-demon-clues",
-    "plain": "Is your ability designed to give you clues for hunting down the Demon?",
-    "dinniman": "There's evil, and then there's THE evil, the big boss at the bottom of the floor. Some of you get clues pointing at the Demon itself. Is your ability designed to give you clues about who the Demon is?",
+    "plain": "Does the Storyteller give you clues about who the Demon is through your ability?",
+    "dinniman": "There's evil, and then there's THE evil, the big boss at the bottom of the floor. Some of you get clues pointing at the Demon itself. Does your ability have the Storyteller hand you clues about who the Demon is?",
     "voice": "Mordecai",
     "yes": {
       "huntsDemon": true
