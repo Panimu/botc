@@ -1,5 +1,5 @@
-import { Game } from './engine.js';
-import { artPath, fallbackArtPath, EVIL_TEAMS } from './art.js';
+import { Game } from './engine.js?v=dev';
+import { artPath, fallbackArtPath, EVIL_TEAMS } from './art.js?v=dev';
 
 const $ = (id) => document.getElementById(id);
 
@@ -97,7 +97,7 @@ function setupThemeToggle() {
     try { localStorage.setItem('theme', root.dataset.theme); } catch {}
     label();
   });
-  systemDark.addEventListener('change', label);
+  systemDark.addEventListener?.('change', label);
   label();
   button.hidden = false;
 }
@@ -186,14 +186,17 @@ function start(characters, questions) {
   render();
 }
 
-setupThemeToggle();
-
+// The ?v=dev markers are replaced with the commit id on deploy (.github/workflows/pages.yml)
+// so browsers never mix cached files from different versions.
 try {
-  const [characters, questions] = await Promise.all([loadJson('data/characters.json'), loadJson('data/questions.json')]);
+  setupThemeToggle();
+  const [characters, questions] = await Promise.all([loadJson('data/characters.json?v=dev'), loadJson('data/questions.json?v=dev')]);
   start(characters, questions);
 } catch (error) {
   console.error(error);
   $('question-number').textContent = '';
-  $('question-text').textContent = 'The question data didn’t load.';
-  $('feedback').textContent = 'If you opened index.html straight from disk, serve the folder instead (npm run serve) and visit http://localhost:8000.';
+  $('question-text').textContent = 'The quiz couldn’t start.';
+  $('feedback').textContent = location.protocol === 'file:'
+    ? 'Opening index.html straight from disk doesn’t work. Serve the folder instead (npm run serve) and visit http://localhost:8000.'
+    : `Refresh the page to try again. (${error.message})`;
 }

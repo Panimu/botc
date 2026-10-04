@@ -6,7 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A Blood on the Clocktower personality quiz covering every character (all 181 roles, including travellers, fabled and loric). The player answers binary questions; each answer **strictly eliminates** every character on the losing side, and the next question is picked **uniformly at random** from unasked questions that still split the remaining pool. The game ends when one character is left. Questions are authored by Claude Code; the user has asked to keep the pool basic for now.
 
-Live at https://panimu.github.io/botc/ (GitHub Pages, deploys from `main` of github.com/Panimu/botc).
+Live at https://panimu.github.io/botc/. Every push to `main` of github.com/Panimu/botc runs `.github/workflows/pages.yml`, which validates, tests, stamps asset URLs and deploys to GitHub Pages.
+
+**Cache-busting:** Pages caches files for 10 minutes, and a browser that mixes a new `index.html` with an old cached script breaks. So every reference to our own JS, CSS and JSON carries `?v=dev` (in `index.html`, `import` lines and `fetch` calls), and the workflow replaces it with the commit id. Add the marker to any new asset reference, including new module imports. A Mythic Beasts upload would need the same `sed` step.
 
 ## Commands
 
