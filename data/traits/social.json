@@ -1,1 +1,30 @@
-{}
+{
+  "affectsVoting": {
+    "definition": "The character's own ability changes the voting on nominations for execution: who may or must vote, how much a vote counts, whether votes are seen or tallied openly, or what happens because of who voted (a voter dies, an execution is forced, passed or failed because of the vote). Only learning about votes doesn't count, nor does a separate non-execution vote (the Cult Leader's cult) or replacing voting with something else (the Riot's day 3).",
+    "yes": ["banshee", "butler", "zealot", "organgrinder", "vizier", "legion", "thief", "bureaucrat", "gunslinger", "beggar", "voudon", "judge"]
+  },
+  "affectsNominations": {
+    "definition": "The character's own ability changes who may nominate or how often, makes a nomination itself have a game effect, or is triggered by a particular player nominating or being nominated. Only learning who nominated (the Town Crier) doesn't count, nor does merely timing an action 'before nominations'.",
+    "yes": ["princess", "virgin", "banshee", "golem", "witch", "fearmonger", "goblin", "riot", "butcher", "gnome", "bishop", "judge"]
+  },
+  "publicAbility": {
+    "definition": "Using the character's own ability requires the player to deliberately say or do something aloud in front of the whole group during the day, beyond ordinary nominating and voting: a public statement, claim, guess, choice or declaration, a spoken secret phrase, or performing to amuse the group. Abilities that may be used either publicly or privately (Puzzlemaster, Cacklejack, Wizard) and effects announced by the Storyteller (Banshee, Fearmonger) don't count.",
+    "yes": ["gossip", "alsaahir", "slayer", "juggler", "cultleader", "klutz", "moonchild", "psychopath", "goblin", "vizier", "yaggababble", "gunslinger", "gnome", "judge", "matron", "gangster", "deviant"]
+  },
+  "guesses": {
+    "definition": "The character's own ability has that player make an explicit guess, called a guess in the ability, about hidden roles (what character a player is, which players are Minions or Demons, which player is drunk, or what their own ability is), with the outcome depending on whether the guess was right. Choosing a target in the hope it is the Demon (Slayer) doesn't count, nor does being the subject of someone else's guess (Damsel).",
+    "yes": ["gambler", "juggler", "alsaahir", "amnesiac", "puzzlemaster"]
+  },
+  "spokenTrigger": {
+    "definition": "The ability reacts to the words players say aloud: a specific secret word or phrase, whether a public statement is true, a claim about one's own character (including madness), or a spoken public guess naming characters. Merely choosing or pointing at a player, nominating, voting, or talking privately with the Storyteller doesn't count.",
+    "yes": ["mezepheles", "yaggababble", "gossip", "goblin", "alsaahir", "juggler", "damsel", "deviant", "cerenovus", "mutant", "harpy", "pixie"]
+  },
+  "alternateWinOrLoss": {
+    "definition": "The character's own ability (as written or as the wiki rules it) adds a condition, beyond the standard ones (all Demons dead, or two players left with a Demon alive), under which a team immediately wins or loses the game, or changes which side wins or which side a player wins with.",
+    "yes": ["cultleader", "alsaahir", "mayor", "atheist", "klutz", "saint", "politician", "heretic", "damsel", "eviltwin", "goblin", "fearmonger", "mastermind", "summoner", "vortox", "leviathan"]
+  },
+  "daytimeAction": {
+    "definition": "The character's own ability gives that player a deliberate action or choice they can take during the day: a statement, guess, choice, declaration, claim, private visit to the Storyteller, performance, begging for vote tokens, or an ability-specific nomination or extra nomination/vote. Ordinary nominating and voting, being forced to vote, and day-time restrictions or passive effects don't count.",
+    "yes": ["gossip", "savant", "alsaahir", "artist", "slayer", "fisherman", "princess", "juggler", "amnesiac", "banshee", "cultleader", "golem", "klutz", "moonchild", "puzzlemaster", "psychopath", "goblin", "vizier", "wizard", "fearmonger", "yaggababble", "riot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "judge", "gnome", "deviant", "beggar"]
+  }
+}

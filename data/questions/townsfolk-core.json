@@ -75,8 +75,8 @@
   },
   {
     "id": "tfc-outsiders-only-briefing",
-    "plain": "Would you like your starting information to be about the Outsiders and nothing else?",
-    "dinniman": "Everybody wants the juicy stuff about Demons. Not me, sweetheart. Give me the list of oddballs and losers and I'll make do. Would you like your starting information to be about the Outsiders and nothing else?",
+    "plain": "Would you like your own ability's starting information to be about the Outsiders and nothing else?",
+    "dinniman": "Everybody wants the juicy stuff about Demons. Not me, sweetheart. Give me the list of oddballs and losers and I'll make do. Would you like your own ability's starting information to be about the Outsiders and nothing else?",
     "voice": "Elle",
     "yes": [
       "librarian",
@@ -123,8 +123,8 @@
   },
   {
     "id": "tfc-fortune-innocent-lookalike",
-    "plain": "Could you live with one innocent player who always looks like the Demon to you?",
-    "dinniman": "Here's the catch with your gift: somewhere out there is a perfectly decent person who pings as a Demon every single time. Hang them by mistake and that's on you. Could you live with one innocent player who always looks like the Demon to you?",
+    "plain": "Would you accept one innocent player always looking like the Demon to you, in return for checking for the Demon each night?",
+    "dinniman": "Here's the catch with your gift: somewhere out there is a perfectly decent person who pings as a Demon every single time. Hang them by mistake and that's on you. Would you accept one innocent player always looking like the Demon to you, in return for checking for the Demon each night?",
     "voice": "Mordecai",
     "yes": [
       "fortuneteller"
@@ -244,8 +244,8 @@
   },
   {
     "id": "tfc-soldier-bounce-off",
-    "plain": "Would you like the Demon's attacks to bounce off you, even though an execution could still finish you?",
-    "dinniman": "The big scary Demon comes knocking and you just don't answer. Ever. The neighbours can still string you up, mind. Would you like the Demon's attacks to bounce off you, even though an execution could still finish you?",
+    "plain": "Would you like the Demon's attacks never to work on you, even though an execution could still finish you?",
+    "dinniman": "The big scary Demon comes knocking and you just don't answer. Ever. The neighbours can still string you up, mind. Would you like the Demon's attacks never to work on you, even though an execution could still finish you?",
     "voice": "Elle",
     "yes": [
       "soldier"
@@ -299,8 +299,8 @@
   },
   {
     "id": "tfc-grandmother-favourite",
-    "plain": "Would you like to start the game knowing one good player and exactly what character they are?",
-    "dinniman": "One sweet little darling, revealed to you on night one: face, name, job, the lot. You'll want to knit them a scarf. Would you like to start the game knowing one good player and exactly what character they are?",
+    "plain": "Would you like to start the game knowing one fellow good player and exactly what character they are?",
+    "dinniman": "One sweet little darling, revealed to you on night one: face, name, job, the lot. You'll want to knit them a scarf. Would you like to start the game knowing one fellow good player and exactly what character they are?",
     "voice": "Elle",
     "yes": [
       "grandmother"
@@ -344,8 +344,8 @@
   },
   {
     "id": "tfc-chambermaid-busy-nights",
-    "plain": "Would you rather track who was up and about in the night than who is evil?",
-    "dinniman": "I've noticed people give themselves away by what they do after dark, not by what they say. Would you rather track who was up and about in the night than who is evil?",
+    "plain": "Would you rather the Storyteller tell you who was up and about in the night than who is evil?",
+    "dinniman": "I've noticed people give themselves away by what they do after dark, not by what they say. Would you rather the Storyteller tell you who was up and about in the night than who is evil?",
     "voice": "Katia",
     "yes": [
       "chambermaid"
@@ -508,8 +508,8 @@
   },
   {
     "id": "tfc-pacifist-snapped-rope",
-    "plain": "Would you like good players who are executed to sometimes survive?",
-    "dinniman": "The town sentences an innocent to death and... oops! The rope snapped! What are the odds? Better than you would think. Would you like good players who are executed to sometimes survive?",
+    "plain": "Would you like any good player who gets executed to have a chance of surviving?",
+    "dinniman": "The town sentences an innocent to death and... oops! The rope snapped! What are the odds? Better than you would think. Would you like any good player who gets executed to have a chance of surviving?",
     "voice": "The System AI",
     "yes": [
       "pacifist"
@@ -1443,7 +1443,6 @@
     "voice": "Odette",
     "yes": [
       "virgin",
-      "princess",
       "banshee",
       "flowergirl",
       "towncrier"
@@ -1473,7 +1472,6 @@
       "king",
       "dreamer",
       "fortuneteller",
-      "cultleader",
       "flowergirl",
       "towncrier",
       "oracle",
@@ -1496,7 +1494,6 @@
       "artist",
       "slayer",
       "fisherman",
-      "princess",
       "juggler",
       "soldier",
       "farmer",
@@ -1541,7 +1538,6 @@
       "bountyhunter",
       "empath",
       "highpriestess",
-      "sailor",
       "balloonist",
       "general",
       "preacher",
@@ -1585,8 +1581,6 @@
       "sage",
       "choirboy",
       "banshee",
-      "tealady",
-      "fool",
       "magician",
       "poppygrower",
       "pacifist",

@@ -53,6 +53,8 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 - **Travellers' characters are public**: everyone knows which Traveller you are, though not your alignment. "Everyone knows your character" questions must exclude them.
 - **The Pit-Hag** changes characters but never alignment, so it isn't a "turn someone evil" character.
 - **The Moonchild's curse** only kills good players, which is a trap for "only kills the innocent" wording. **The Cult Leader** never chooses a player at night (the Storyteller sets its alignment from its neighbours), but it does have a public daytime action.
+- **The Mayor** might "bounce" a night kill to someone else, so "attacks bounce off you" and "someone dies in your place" catch it. Use "never" or "no way" for true immunity. **The Tea Lady's** protection covers execution, so watch "executed but survives" wording.
+- **The Evil Twin** starts knowing a good player and their character. **The Wraith** watches who wakes, so night-tracking questions need "the Storyteller tells you".
 - **The madness rule** means trying to convince the group you're a character, with a penalty if you don't. Handing out bluffs (Snitch, Summoner) isn't madness, and neither is the Lunatic believing it's the Demon.
 
 ## Shape of the pool
