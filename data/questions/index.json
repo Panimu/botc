@@ -5,5 +5,10 @@
   "outsiders.json",
   "minions.json",
   "demons.json",
-  "travellers-fabled-loric.json"
+  "travellers-fabled-loric.json",
+  "cross-death.json",
+  "cross-information.json",
+  "cross-manipulation.json",
+  "cross-social.json",
+  "cross-playstyle.json"
 ]

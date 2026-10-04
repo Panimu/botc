@@ -18,13 +18,13 @@ Questions live in `data/questions/*.json`, one file per character group, each li
 - `yes`: who answers yes. Either a list of character ids, or a match object on fields in `data/characters.json`, e.g. `{ "team": ["minion", "demon"] }` or `{ "otherNight": true }`. All fields must match.
 - `scope` (optional): the sub-pool the question is about, using the same selector forms. **Without a scope** the question is *global*: everyone not on the yes side is on the no side, and it can be asked at any point. **With a scope**, it's only asked when every remaining character is inside the scope, and the "no" side is the rest of the scope. Every `yes` character must be inside the scope.
 - `voice`: who speaks the `dinniman` line (see below).
-- `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers, fabled, loric).
+- `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers), and `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files.
 
 ## Accuracy is the whole game
 
 Strict elimination means one wrong tag permanently removes the right answer. Before adding a question:
 
-- **Global questions must be true for every yes character and false for every one of the other 180.** Check across all teams and editions, not just your own group. Ability text is in `resources/data/roles.json` (`ability`, plus `flavor` for personality).
+- **Global questions must be true for every yes character and false for every other character (156 in all; Fabled and Loric aren't in the quiz).** Check across all teams and editions, not just your own group. Ability text is in `resources/data/roles.json` (`ability`, plus `flavor` for personality).
 - **Scoped questions must be true for every yes character and false for every other character in the scope.** Characters outside the scope don't matter, and the wording may presuppose the scope ("As a Demon…", "Of the people who learn things at night…").
 - Ask about the person taking the quiz: their preferences, temperament and playstyle, in a way that maps cleanly onto the character's ability or flavour. Someone who loves that character should naturally answer the same way. Direct, ability-shaped questions are fine when they're phrased as a wish or temperament ("Would you like to…", "Do you enjoy…").
 - Don't name the character in either phrasing. Team names are fine.
@@ -35,6 +35,29 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 - **Narrow splits are welcome**: one or two characters against everyone else is a great question. Aim for every character to have at least two narrow global questions that single them out (or them plus one or two others).
 - **Same split, fresh question is fine**: several questions may select exactly the same characters as long as each has a different angle and different wording.
 - **Scoped questions** separate characters within a group: a whole team (`{ "team": "demon" }`), a team within an edition (`{ "team": "townsfolk", "edition": "tb" }`), a functional group (an id list), or a set of look-alikes. Larger scopes are eligible more often, so favour whole-team and whole-alignment scopes, with some smaller ones for fine distinctions.
+
+## Cross-type questions and traits
+
+Most of the bank should mix character types: a good question puts Townsfolk, Outsiders, Minions, Demons and Travellers on **both** sides. "Do you kill?" catches Demons, but also the Assassin, Gossip, Slayer and Gunslinger, and leaves other Demons-adjacent and good characters on the no side. These questions cut the pool by large mixed chunks, which keeps games short and makes scoped questions reachable.
+
+Cross-type questions live in `cross-*.json`. The validator **requires** at least two character types on each side of every question in those files.
+
+They select characters through **traits**: shared, precisely defined tags in `data/traits/*.json`:
+
+```json
+{
+  "killsAtNight": {
+    "definition": "The character's own ability can directly cause a player's death at night (not via execution, not only by making others drunk).",
+    "yes": ["imp", "po", "gossip", "assassin", "godfather"]
+  }
+}
+```
+
+After editing a trait file, run `node scripts/build-characters.js`. That adds each trait as a boolean field on every character, so questions can use `{ "killsAtNight": true }` and combine it with other fields, e.g. `{ "killsAtNight": true, "team": ["townsfolk", "outsider"] }` for good characters who kill.
+
+- A trait is a fact about the ability as the wiki describes it, never a vibe. Write the definition first, then tag every one of the 156 characters against it. Going through `data/characters.json` one by one is the only way to be sure.
+- A trait can feed many questions. Fixing one tag corrects all of them.
+- Scopes can be traits too: `"scope": { "killsAtNight": true }` makes a question about killers that's only asked once the pool is all killers.
 
 ## The two phrasings
 

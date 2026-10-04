@@ -6,7 +6,7 @@
 //
 // Integrity problems exit 1. Coverage is reported, not enforced: when no question
 // can split the remaining characters, the game ends listing all of them.
-import { readdir } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { artPath } from '../js/art.js';
@@ -73,6 +73,40 @@ export function checkQuestions(questions, characters, seen = { ids: new Set(), t
   return errors;
 }
 
+// Questions in cross-*.json must put at least two character types on each side.
+export function checkCrossType(questions, characters) {
+  const team = new Map(characters.map((c) => [c.id, c.team]));
+  const errors = [];
+  for (const q of questions) {
+    const { yesSet, scopeSet } = prepare(q, characters);
+    const no = [...(scopeSet ?? team.keys())].filter((id) => !yesSet.has(id));
+    const yesTeams = new Set([...yesSet].map((id) => team.get(id)));
+    const noTeams = new Set(no.map((id) => team.get(id)));
+    if (yesTeams.size < 2 || noTeams.size < 2) {
+      errors.push(`Question ${q.id}: needs at least two character types on each side (yes: ${[...yesTeams].join('/') || 'none'}; no: ${[...noTeams].join('/') || 'none'})`);
+    }
+  }
+  return errors;
+}
+
+export async function checkTraits(characters) {
+  const errors = [];
+  const ids = new Set(characters.map((c) => c.id));
+  const dir = new URL('../data/traits/', import.meta.url);
+  for (const file of (await readdir(dir)).filter((f) => f.endsWith('.json'))) {
+    let traits;
+    try { traits = JSON.parse(await readFile(new URL(file, dir), 'utf8')); } catch (e) { errors.push(`data/traits/${file}: invalid JSON (${e.message})`); continue; }
+    for (const [name, trait] of Object.entries(traits)) {
+      if (!/^[a-z][A-Za-z]+$/.test(name)) errors.push(`Trait ${name} (${file}): use a camelCase name`);
+      if (typeof trait.definition !== 'string' || trait.definition.length < 20) errors.push(`Trait ${name} (${file}): needs a precise definition`);
+      if (!Array.isArray(trait.yes) || trait.yes.length < 2) { errors.push(`Trait ${name} (${file}): needs a yes list of at least 2 characters`); continue; }
+      for (const id of trait.yes) if (!ids.has(id)) errors.push(`Trait ${name} (${file}): unknown character "${id}"`);
+      if (!characters.every((c) => name in c)) errors.push(`Trait ${name} (${file}): not in data/characters.json yet; run node scripts/build-characters.js`);
+    }
+  }
+  return errors;
+}
+
 // Pairs of characters that no question can tell apart (both in scope, exactly one on the yes side).
 export function coverage(questions, characters) {
   const prepared = questions.map((q) => prepare(q, characters));
@@ -125,13 +159,14 @@ async function main() {
   const only = args.filter((a) => a.endsWith('.json'));
   const { characters, files, questionFiles, questions } = await loadData();
 
-  const errors = checkCharacters(characters);
+  const errors = [...checkCharacters(characters), ...(await checkTraits(characters))];
   const onDisk = (await readdir(new URL('../data/questions/', import.meta.url))).filter((f) => f.endsWith('.json') && f !== 'index.json');
   for (const f of onDisk) if (!files.includes(f)) errors.push(`data/questions/${f} is not listed in data/questions/index.json`);
 
   const seen = { ids: new Set(), texts: new Set() };
   for (const { file, questions: qs } of questionFiles) {
     const fileErrors = checkQuestions(qs, characters, seen);
+    if (file.startsWith('cross-') && !fileErrors.length) fileErrors.push(...checkCrossType(qs, characters));
     if (!only.length || only.includes(file)) errors.push(...fileErrors.map((e) => `${file}: ${e}`));
   }
   if (errors.length) {

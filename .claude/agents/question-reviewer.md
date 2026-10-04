@@ -10,7 +10,7 @@ You review one question file for a Blood on the Clocktower personality quiz in t
 
 1. Read `data/questions/GUIDE.md` (format, selectors, scope semantics, phrasing and voice rules).
 2. Read the file you were given.
-3. `data/characters.json` lists all 181 characters and their selector fields. `resources/data/roles.json` has official ability text. Note that `firstNight`/`otherNight` mean "appears on the Storyteller's night sheet", not "wakes".
+3. `data/characters.json` lists all 156 characters (Fabled and Loric are excluded) and their selector fields, including the hand-tagged traits from `data/traits/`. `resources/data/roles.json` has official ability text. Note that `firstNight`/`otherNight` mean "appears on the Storyteller's night sheet", not "wakes".
 4. Run `node scripts/validate.js <file>.json`. Fix any errors first.
 
 ## The wiki is the authority
@@ -24,17 +24,18 @@ Cache what you learn so other reviews don't refetch it. Before fetching a charac
 
 ## What to check, question by question
 
-Work out each question's two sides by resolving its selectors against `data/characters.json`. With a `scope`, the no side is the scope minus yes. Without one, it's all other 180 characters.
+Work out each question's two sides by resolving its selectors against `data/characters.json`. With a `scope`, the no side is the scope minus yes. Without one, it's every other character.
 
 **Rules accuracy**
 - Every yes character: would a player who loves this character truthfully answer yes, given the wiki's description of the ability and how it plays? Check the wiki page.
-- The no side: is there any character there who would also answer yes? For global questions, scan all 180 others' ability text in `roles.json` for plausible counterexamples, and check the wiki for any that are borderline. Common traps include:
+- The no side: is there any character there who would also answer yes? For global questions, scan every other character's ability text in `roles.json` for plausible counterexamples, and check the wiki for any that are borderline. Common traps include:
   - "wakes at night" versus merely being on the night sheet;
   - "learns" versus "starts knowing";
   - abilities that kill, protect, poison, make people drunk or mad, or change characters, which all span several teams;
   - Travellers whose alignment varies;
   - Fabled and Loric, which aren't seated players.
 - Scoped questions: is the presupposed context actually true for everyone in the scope?
+- Trait-based selectors (fields defined in `data/traits/*.json`): check the trait's definition and tags too. A wrong trait tag breaks every question that uses it, so report trait errors prominently. Only edit a trait file if the user asked you to review traits.
 
 **Technical accuracy**
 - `plain` and `dinniman` ask the same yes/no question, so "yes" means the same thing in both. The dinniman line ends with that question.

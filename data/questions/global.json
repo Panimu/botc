@@ -13,8 +13,8 @@
   },
   {
     "id": "global-honest-at-heart",
-    "plain": "If you win, will it be because the good team won?",
-    "dinniman": "Darling, a star must know which side of the stage she's on. Do you take your bow with the virtuous villagers when the curtain falls?",
+    "plain": "Do you start the game on the good team, hoping it wins?",
+    "dinniman": "Darling, a star must know which side of the stage she's on before the curtain even rises. Do you start the show with the virtuous villagers, hoping they win?",
     "voice": "Princess Donut",
     "yes": {
       "team": [
@@ -25,8 +25,8 @@
   },
   {
     "id": "global-secret-traitor",
-    "plain": "Are you secretly working against the town?",
-    "dinniman": "Look, I'm not judging. Okay, I'm judging a little. But if you're planning to smile at these people all day and knife them all night, I'd like to know now. Is that you?",
+    "plain": "Are you on the evil team, working against the town?",
+    "dinniman": "Look, I'm not judging. Okay, I'm judging a little. But if you're working for the bad guys, whether you hide it or not, I'd like to know now. Are you on the evil team, working against the town?",
     "voice": "Carl",
     "yes": {
       "team": [
@@ -58,17 +58,33 @@
   },
   {
     "id": "global-night-killer",
-    "plain": "Is it your job to make sure people die at night?",
-    "dinniman": "Kid, someone has to do the killing, and it's never the person complaining about it. Is the night shift yours?",
+    "plain": "Are you the evil team's killer, the reason people die each night?",
+    "dinniman": "Kid, someone has to do the killing for the bad guys, and it's never the person complaining about it. Are you the one who kills for them each night?",
     "voice": "Mordecai",
-    "yes": {
-      "team": "demon"
-    }
+    "yes": [
+      "yaggababble",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia"
+    ]
   },
   {
     "id": "global-right-hand",
-    "plain": "Would you rather serve the Demon than be the Demon?",
-    "dinniman": "Not everyone wants the crown. Some people just want to hold the knife for the person wearing it, and frankly that's where the job security is. Are you the loyal henchman type?",
+    "plain": "Are you evil, serving the Demon rather than being it?",
+    "dinniman": "Not everyone wants the crown. Some people just want to hold the knife for the person wearing it, and frankly that's where the job security is. Are you the Demon's loyal henchman rather than the Demon?",
     "voice": "Odette",
     "yes": {
       "team": "minion"
@@ -112,35 +128,11 @@
   },
   {
     "id": "global-sides-decided-for-you",
-    "plain": "Are you happy to let someone else decide which side you're on?",
+    "plain": "Are you happy for the Storyteller to simply choose your side when you join the game?",
     "dinniman": "Good, evil, whatever! The Storyteller flips a coin, you shrug, and the audience gets a plot twist. Ratings gold. Will you let them pick your side for you?",
     "voice": "Zev",
     "yes": {
       "team": "traveller"
-    }
-  },
-  {
-    "id": "global-behind-the-screen",
-    "plain": "Would you rather shape the game from the Storyteller's side than sit in the circle?",
-    "dinniman": "Some prefer to be the puppet. Some prefer to be the strings. I prefer to be the entity that owns the strings factory. Do you prefer to work behind the screen?",
-    "voice": "The System AI",
-    "yes": {
-      "team": [
-        "fabled",
-        "loric"
-      ]
-    }
-  },
-  {
-    "id": "global-not-even-playing",
-    "plain": "Would you enjoy being part of the game without ever being a player in it?",
-    "dinniman": "THE GOAT DOES NOT SIT IN CIRCLES. The goat stands above the circle and decrees how the circle shall turn. Do you wish to rule the game rather than play it?",
-    "voice": "Prepotente",
-    "yes": {
-      "team": [
-        "fabled",
-        "loric"
-      ]
     }
   },
   {
@@ -155,24 +147,6 @@
         "minion",
         "demon"
       ]
-    }
-  },
-  {
-    "id": "global-fix-the-game",
-    "plain": "Are you one of the Fabled: a special character the Storyteller adds to handle unusual groups or situations?",
-    "dinniman": "When a game needs a special fix for a special group, someone gets called in from behind the screen. Not glamorous, but people remember who showed up. Are you one of the Fabled?",
-    "voice": "Katia",
-    "yes": {
-      "team": "fabled"
-    }
-  },
-  {
-    "id": "global-house-rules",
-    "plain": "Are you one of the Loric: a rule the Storyteller adds that changes how the whole game runs?",
-    "dinniman": "Rules are just suggestions that haven't been rewritten by someone with better taste. And darling, my taste is IMPECCABLE. Are you one of the Loric, rewriting the rules for everyone?",
-    "voice": "Princess Donut",
-    "yes": {
-      "team": "loric"
     }
   },
   {
@@ -204,7 +178,7 @@
   },
   {
     "id": "global-moonlit-bloodbath",
-    "plain": "Would you feel at home in a script where lots of people die and protection really matters?",
+    "plain": "Would you feel at home in Bad Moon Rising, where lots of people die and protection really matters?",
     "dinniman": "BLOOD FOR THE BLOOD GODDESS! Also shields, apparently, for the cowards. Is your home the script where the moon rises and the bodies hit the floor?",
     "voice": "Samantha",
     "yes": {
@@ -222,7 +196,7 @@
   },
   {
     "id": "global-identity-crisis-script",
-    "plain": "Would you feel at home where people pretend to be other characters and might even turn into them?",
+    "plain": "Would you feel at home in Sects & Violets, where people pretend to be other characters and might even turn into them?",
     "dinniman": "I spent a long time not knowing what shape I was supposed to be. Turns out there's a whole script for that. Does the one full of madness and shifting identities feel like home?",
     "voice": "Katia",
     "yes": {
@@ -263,8 +237,8 @@
   },
   {
     "id": "global-first-night-wake",
-    "plain": "Does the Storyteller have something to do for you on the very first night?",
-    "dinniman": "Opening night! Lights, camera, and a Storyteller who already has your name on their to-do list before anyone has unpacked. Are you on the night-one list?",
+    "plain": "Does your own ability give the Storyteller something to do on the very first night?",
+    "dinniman": "Opening night! Lights, camera, and a Storyteller who already has your ability on their to-do list before anyone has unpacked. Is your ability on the night-one list?",
     "voice": "The Host",
     "yes": {
       "firstNight": true
@@ -272,8 +246,8 @@
   },
   {
     "id": "global-sleep-through-night-one",
-    "plain": "Can the Storyteller ignore you completely on the very first night?",
-    "dinniman": "Eight hours. Uninterrupted. While the Storyteller fusses over everyone else's secret briefings, nobody so much as glances at your bed. Is that your first night?",
+    "plain": "Does your own ability give the Storyteller nothing to do on the very first night?",
+    "dinniman": "Some abilities have the work ethic of a cat in a sunbeam. While the Storyteller runs around handling everyone else's opening-night powers, yours just sits there. Does your ability give the Storyteller nothing to do on night one?",
     "voice": "Carl",
     "yes": {
       "firstNight": false
@@ -317,44 +291,110 @@
   },
   {
     "id": "global-once-per-game",
-    "plain": "Would you save a power you can use only once for exactly the right moment?",
-    "dinniman": "One shot. No refunds. If you waste it on day one because you got excited, I will laugh, and so will forty billion viewers. Is your power a once-per-game deal?",
+    "plain": "Is your power a one-shot you can use whenever you choose, so you must save it for the right moment?",
+    "dinniman": "One shot. No refunds. You pick the moment. If you waste it on day one because you got excited, I will laugh, and so will forty billion viewers. Is your power a one-shot you get to time yourself?",
     "voice": "The System AI",
-    "yes": {
-      "oncePerGame": true
-    }
+    "yes": [
+      "engineer",
+      "nightwatchman",
+      "courtier",
+      "seamstress",
+      "philosopher",
+      "huntsman",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman",
+      "golem",
+      "assassin",
+      "wizard",
+      "bonecollector",
+      "judge",
+      "puzzlemaster"
+    ]
   },
   {
     "id": "global-one-big-swing",
-    "plain": "Do you like having one big play rather than a little something every day?",
-    "dinniman": "Some folks nickel-and-dime the game. You'd rather walk up, swing once, and make it count. Is that your style?",
+    "plain": "Do you like holding one big play in reserve, rather than doing a little something every day?",
+    "dinniman": "Some folks nickel-and-dime the game. You'd rather keep one swing in your back pocket, wait for your moment, and make it count. Is that your style?",
     "voice": "Elle",
-    "yes": {
-      "oncePerGame": true
-    }
+    "yes": [
+      "engineer",
+      "nightwatchman",
+      "courtier",
+      "seamstress",
+      "philosopher",
+      "huntsman",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman",
+      "golem",
+      "assassin",
+      "wizard",
+      "bonecollector",
+      "judge",
+      "puzzlemaster"
+    ]
   },
   {
     "id": "global-head-start",
-    "plain": "Would you like to start the game already knowing something useful?",
-    "dinniman": "Some contestants grind for every scrap of information. Others get a free clue the moment the doors lock, like a participation trophy for being born lucky. Are you the lucky kind?",
+    "plain": "Does your ability hand you information at the very start of the game, rather than fresh information each night?",
+    "dinniman": "Some contestants grind for every scrap of information night after night. Others get a free clue the moment the doors lock, like a participation trophy for being born lucky. Does your ability hand you yours up front?",
     "voice": "The System AI",
-    "yes": {
-      "startsKnowing": true
-    }
+    "yes": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "grandmother",
+      "librarian",
+      "shugenja",
+      "pixie",
+      "bountyhunter",
+      "mezepheles",
+      "godfather",
+      "yaggababble",
+      "eviltwin",
+      "widow",
+      "summoner",
+      "boffin"
+    ]
   },
   {
     "id": "global-front-loaded-secret",
-    "plain": "Do you begin the game holding a secret that nobody had to earn?",
-    "dinniman": "Exclusive! Before the first sunrise, our contestant already knows something the others would kill for. Viewers, tell me that isn't a story. Is that you?",
+    "plain": "Does your ability hand you a secret right at the start, rather than new secrets night after night?",
+    "dinniman": "Exclusive! Before the first sunrise, our contestant's ability has already slipped them something the others would kill for, without a drop of sweat spent. Viewers, tell me that isn't a story. Did your ability hand you a secret right at the start?",
     "voice": "Odette",
-    "yes": {
-      "startsKnowing": true
-    }
+    "yes": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "grandmother",
+      "librarian",
+      "shugenja",
+      "pixie",
+      "bountyhunter",
+      "mezepheles",
+      "godfather",
+      "yaggababble",
+      "eviltwin",
+      "widow",
+      "summoner",
+      "boffin"
+    ]
   },
   {
     "id": "global-madness",
-    "plain": "Does your ability involve madness: someone pretending, or being made to pretend, to be something they're not?",
-    "dinniman": "Madness is just commitment to a bit, and I respect commitment. Does your ability involve someone being mad about something?",
+    "plain": "Does your ability use the madness rule, where someone tries to convince the group that something is true?",
+    "dinniman": "In this game, madness means committing to a bit until everyone believes it, and I respect commitment. Does your ability use the madness rule?",
     "voice": "Carl",
     "yes": {
       "madness": true
@@ -365,18 +405,102 @@
     "plain": "Does your ability involve someone being drunk or poisoned?",
     "dinniman": "Kid, half the information in this game is soaked in booze or laced with something nasty. Does your ability deal in drunkenness or poison?",
     "voice": "Mordecai",
-    "yes": {
-      "drunkOrPoisoned": true
-    }
+    "yes": [
+      "sailor",
+      "villageidiot",
+      "snakecharmer",
+      "innkeeper",
+      "acrobat",
+      "courtier",
+      "philosopher",
+      "cannibal",
+      "minstrel",
+      "goon",
+      "ogre",
+      "drunk",
+      "sweetheart",
+      "puzzlemaster",
+      "poisoner",
+      "widow",
+      "xaan",
+      "organgrinder",
+      "boffin",
+      "pukka",
+      "nodashii",
+      "lleech",
+      "vigormortis"
+    ]
   },
   {
     "id": "global-pick-a-player",
     "plain": "Does your ability ask you to choose players?",
     "dinniman": "Point at someone! Go on! The System has prepared a delightful consequence for whoever you pick. Does your ability involve choosing players?",
     "voice": "The System AI",
-    "yes": {
-      "choosesPlayers": true
-    }
+    "yes": [
+      "sailor",
+      "preacher",
+      "chambermaid",
+      "villageidiot",
+      "snakecharmer",
+      "dreamer",
+      "fortuneteller",
+      "innkeeper",
+      "monk",
+      "gambler",
+      "acrobat",
+      "exorcist",
+      "lycanthrope",
+      "nightwatchman",
+      "seamstress",
+      "huntsman",
+      "professor",
+      "slayer",
+      "alchemist",
+      "ravenkeeper",
+      "butler",
+      "ogre",
+      "lunatic",
+      "klutz",
+      "moonchild",
+      "godfather",
+      "poisoner",
+      "devilsadvocate",
+      "harpy",
+      "witch",
+      "cerenovus",
+      "fearmonger",
+      "pithag",
+      "psychopath",
+      "assassin",
+      "widow",
+      "summoner",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "thief",
+      "bureaucrat",
+      "harlot",
+      "cacklejack",
+      "gunslinger",
+      "matron",
+      "gangster",
+      "bonecollector",
+      "gnome",
+      "juggler",
+      "alsaahir",
+      "puzzlemaster"
+    ]
   },
   {
     "id": "global-gavel-and-noose",
@@ -392,14 +516,92 @@
     "plain": "Does your ability talk about dying, death or killing?",
     "dinniman": "DEATH! GLORIOUS DEATH! Is it written into your very being, mortal? Does your ability speak of dying, the dead, or killing?",
     "voice": "Samantha",
-    "yes": {
-      "aboutDeath": true
-    }
+    "yes": [
+      "grandmother",
+      "pixie",
+      "bountyhunter",
+      "sailor",
+      "king",
+      "oracle",
+      "undertaker",
+      "innkeeper",
+      "gambler",
+      "acrobat",
+      "lycanthrope",
+      "gossip",
+      "professor",
+      "slayer",
+      "princess",
+      "cannibal",
+      "farmer",
+      "minstrel",
+      "ravenkeeper",
+      "sage",
+      "choirboy",
+      "banshee",
+      "tealady",
+      "mayor",
+      "fool",
+      "poppygrower",
+      "pacifist",
+      "atheist",
+      "tinker",
+      "recluse",
+      "golem",
+      "sweetheart",
+      "plaguedoctor",
+      "klutz",
+      "moonchild",
+      "saint",
+      "barber",
+      "hatter",
+      "politician",
+      "heretic",
+      "puzzlemaster",
+      "godfather",
+      "devilsadvocate",
+      "spy",
+      "harpy",
+      "witch",
+      "psychopath",
+      "assassin",
+      "boomdandy",
+      "mastermind",
+      "scarletwoman",
+      "vizier",
+      "yaggababble",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "harlot",
+      "gunslinger",
+      "gangster",
+      "bonecollector",
+      "beggar",
+      "deviant",
+      "gnome",
+      "voudon",
+      "pithag"
+    ]
   },
   {
     "id": "global-good-and-evil",
-    "plain": "Does your ability spell out who is good and who is evil?",
-    "dinniman": "Some abilities are subtle. Yours apparently comes with a label maker for souls. Does it mention good or evil outright?",
+    "plain": "Does your ability's text use the word 'good' or 'evil'?",
+    "dinniman": "Some abilities are subtle. Yours apparently comes with a label maker that only prints two words. Does your ability actually say 'good' or 'evil'?",
     "voice": "Carl",
     "yes": {
       "aboutAlignment": true
@@ -433,8 +635,8 @@
   },
   {
     "id": "global-good-with-a-head-start",
-    "plain": "Are you on the good team, starting the game with a clue already in hand?",
-    "dinniman": "A good person who walks in already knowing something? That's the closest thing to a fair start this place offers. Are you one of them?",
+    "plain": "Are you on the good team, with an ability that hands you a clue at the start rather than fresh clues each night?",
+    "dinniman": "A good person whose ability hands them a clue the moment they walk in, instead of making them earn one every night? That's the closest thing to a fair start this place offers. Are you one of them?",
     "voice": "Katia",
     "yes": {
       "team": [
@@ -446,27 +648,44 @@
   },
   {
     "id": "global-good-one-shot",
-    "plain": "Are you on the good team, with one powerful action you can only use once?",
-    "dinniman": "A hero with a single bullet. Dramatic! Tragic! Merchandisable! Are you a good contestant with a once-per-game play?",
+    "plain": "Are you on the good team, with one powerful action you can use only once, whenever you choose?",
+    "dinniman": "A hero with a single bullet, who gets to pick the moment. Dramatic! Tragic! Merchandisable! Are you a good contestant with a once-per-game play you can time yourself?",
     "voice": "The Host",
-    "yes": {
-      "team": [
-        "townsfolk",
-        "outsider"
-      ],
-      "oncePerGame": true
-    }
+    "yes": [
+      "engineer",
+      "nightwatchman",
+      "courtier",
+      "seamstress",
+      "philosopher",
+      "huntsman",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman",
+      "golem",
+      "puzzlemaster"
+    ]
   },
   {
     "id": "global-sleepy-townsperson",
     "plain": "Are you a helpful townsperson the Storyteller never has to deal with at night?",
     "dinniman": "Mongo sleeps. Storyteller never bothers Mongo at night, and Mongo still helps! Mongo very proud. Are you a good townsperson who is no bother at night?",
     "voice": "Mongo",
-    "yes": {
-      "team": "townsfolk",
-      "firstNight": false,
-      "otherNight": false
-    }
+    "yes": [
+      "savant",
+      "alsaahir",
+      "artist",
+      "slayer",
+      "fisherman",
+      "soldier",
+      "minstrel",
+      "tealady",
+      "mayor",
+      "fool",
+      "virgin",
+      "pacifist",
+      "atheist"
+    ]
   },
   {
     "id": "global-demon-who-redesigns",
