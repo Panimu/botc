@@ -50,7 +50,9 @@ function buildPool(characters) {
       img.loading = 'lazy';
       img.decoding = 'async';
       setArt(img, c);
-      li.append(img, el('span', 'name', c.name));
+      const ability = el('span', 'ability', c.summary);
+      ability.hidden = true;
+      li.append(img, el('span', 'name', c.name), ability);
       return li;
     });
     list.append(...items);
@@ -61,7 +63,7 @@ function buildPool(characters) {
   return groups;
 }
 
-function renderPool(groups, pool) {
+function renderPool(groups, pool, over) {
   const remaining = new Set(pool);
   for (const g of groups) {
     let count = 0;
@@ -73,7 +75,9 @@ function renderPool(groups, pool) {
     g.heading.textContent = `${g.team.heading} (${count})`;
     g.section.hidden = count === 0;
   }
-  $('pool-heading').textContent = pool.length === 1 ? 'Your character' : 'Still in the running';
+  $('pool-heading').textContent = !over ? 'Still in the running' : pool.length === 1 ? 'Your character' : 'Your possible characters';
+  // Once it's down to a tie, show each ability under the name.
+  for (const g of groups) for (const li of g.items) li.querySelector('.ability').hidden = !over || pool.length === 1;
 }
 
 function renderPath(game) {
@@ -108,25 +112,48 @@ function start(characters, questions) {
   const announcer = $('announcer');
   let feedback = '';
 
-  function render({ focus = false } = {}) {
-    const result = game.result;
-    renderPool(groups, game.pool);
-    $('question-panel').hidden = Boolean(result);
-    $('result-panel').hidden = !result;
-    $('path').hidden = !result;
-
-    if (result) {
+  function renderResult(results) {
+    const art = $('result-art');
+    const teamLine = $('result-team');
+    const name = $('result-name');
+    if (results.length === 1) {
+      const [result] = results;
       const teamLabel = TEAMS.find((t) => t.id === result.team)?.label ?? result.team;
-      const art = $('result-art');
+      art.hidden = false;
       art.className = `result-art ${side(result.team)}`;
       setArt(art, result);
-      $('result-name').textContent = result.name;
-      const teamLine = $('result-team');
+      $('result-lead').textContent = 'You are the';
+      name.textContent = result.name;
+      name.classList.remove('several');
+      teamLine.hidden = false;
       teamLine.className = `result-team ${side(result.team)}`;
       teamLine.textContent = teamLabel;
       $('result-summary').textContent = result.summary;
-      renderPath(game);
       announcer.textContent = `You are the ${result.name}, ${teamLabel}. ${result.summary}`;
+      return;
+    }
+    // No question left can split these characters.
+    const names = new Intl.ListFormat('en-GB', { type: 'disjunction' }).format(results.map((c) => c.name));
+    art.hidden = true;
+    teamLine.hidden = true;
+    $('result-lead').textContent = `No question can tell these ${results.length} apart yet. You are the`;
+    name.textContent = names;
+    name.classList.add('several');
+    $('result-summary').textContent = 'Their abilities are listed below.';
+    announcer.textContent = `No question can tell these apart yet. You are the ${names}.`;
+  }
+
+  function render({ focus = false } = {}) {
+    const results = game.results;
+    const over = results.length > 0;
+    renderPool(groups, game.pool, over);
+    $('question-panel').hidden = over;
+    $('result-panel').hidden = !over;
+    $('path').hidden = !over;
+
+    if (over) {
+      renderResult(results);
+      renderPath(game);
       if (focus) $('result-name').focus();
       return;
     }

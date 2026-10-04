@@ -298,7 +298,7 @@
     "plain": "Would you like to win the game by getting yourself executed?",
     "dinniman": "New strategy guide entry: 'Losing on purpose: why the noose is the shortcut to glory!' Early reviews call it 'deranged' and 'very effective'. Would you like to win by getting yourself executed?",
     "voice": "The System AI",
-    "yes": ["goblin", "atheist"]
+    "yes": ["goblin", "atheist", "boomdandy"]
   },
   {
     "id": "min-take-everyone-down",

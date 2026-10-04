@@ -260,6 +260,8 @@ button:focus-visible {
 
 .result-name:focus { outline: none; }
 
+.result-name.several { font-size: clamp(1.75rem, 6vw, 2.5rem); line-height: 1.2; }
+
 .result-team { margin: 0.5rem 0 1rem; font: 700 1.2rem/1.3 var(--serif); }
 .result-team.good { color: var(--good); }
 .result-team.evil { color: var(--evil); }
@@ -335,6 +337,12 @@ button:focus-visible {
 }
 
 .token.evil .art { border-color: var(--evil); }
+
+.token .ability {
+  font-size: 0.95rem;
+  color: var(--dim);
+  max-width: 18rem;
+}
 .token.other .art { border-color: var(--other); }
 
 footer {

@@ -35,7 +35,7 @@ test('truthful play always ends on the target character', () => {
     for (let seed = 1; seed <= 3; seed++) {
       const game = new Game({ characters, questions, rng: seeded(seed) });
       playAs(game, id);
-      assert.equal(game.result.id, id);
+      assert.ok(game.results.some((c) => c.id === id), `${id} was eliminated`);
     }
   }
 });
@@ -79,12 +79,18 @@ test('undo restores the previous pool and question', () => {
   assert.equal(game.undo(), false);
 });
 
-test('falls back to a direct question when nothing separates the pool', () => {
-  const two = characters.slice(0, 2);
-  const game = new Game({ characters: two, questions: [], rng: seeded(1) });
-  assert.ok(game.current.fallback);
-  assert.ok(game.current.plain && game.current.dinniman && game.current.voice);
+test('ends with every remaining character when no question can split them', () => {
+  const three = characters.slice(0, 3);
+  const game = new Game({ characters: three, questions: [q({ yes: [three[0].id] })], rng: seeded(1) });
   game.answer(false);
   assert.ok(game.done);
-  assert.notEqual(game.result.id, [...game.history[0].question.yesSet][0]);
+  assert.deepEqual(game.results.map((c) => c.id), [three[1].id, three[2].id]);
+  assert.throws(() => game.answer(true));
+});
+
+test('a single remaining character ends the game', () => {
+  const game = new Game({ characters, questions, rng: seeded(5) });
+  playAs(game, 'imp');
+  assert.ok(game.done);
+  assert.equal(game.current, null);
 });

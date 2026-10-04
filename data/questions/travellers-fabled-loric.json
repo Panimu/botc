@@ -645,5 +645,203 @@
     "yes": [
       "toymaker"
     ]
+  },
+  {
+    "id": "tfl-appointed-advocate",
+    "plain": "Would you make each nominee pick one defender who alone may speak until the vote?",
+    "dinniman": "Every accused gets one lawyer, and everyone else shuts up until the hands go up. It's the only courtroom down here with any manners. Would you make each nominee pick one defender who alone may speak until the vote?",
+    "voice": "Mordecai",
+    "yes": [
+      "bigwig"
+    ]
+  },
+  {
+    "id": "tfl-argue-or-die",
+    "plain": "Do you like forcing someone to argue a nominee's innocence, at the risk of their life if they don't?",
+    "dinniman": "Tell us, sweetheart, in your own words, why they're innocent. Convincingly, please. Your life depends on it. Do you like forcing someone to argue a nominee's innocence, at the risk of their life if they don't?",
+    "voice": "Odette",
+    "yes": [
+      "bigwig"
+    ]
+  },
+  {
+    "id": "tfl-love-homebrew",
+    "plain": "Do you love games full of homebrew characters and house rules?",
+    "dinniman": "Unofficial content detected! Unlicensed abilities! Fan-made nonsense! The legal team is screaming and I have never been happier. Do you love games full of homebrew characters and house rules?",
+    "voice": "The System AI",
+    "yes": [
+      "bootlegger"
+    ]
+  },
+  {
+    "id": "tfl-fan-made-script",
+    "plain": "Would you rather play a fan-made script than an official one?",
+    "dinniman": "The official stuff's fine, I guess. But some guy's kitchen-table creation with a character called 'The Haberdasher of Doom'? Now you've got my attention. Would you rather play a fan-made script than an official one?",
+    "voice": "Carl",
+    "yes": [
+      "bootlegger"
+    ]
+  },
+  {
+    "id": "tfl-hand-picked-roles",
+    "plain": "Would you like the Storyteller to hand-pick every player's character instead of dealing them at random?",
+    "dinniman": "Random draws are for COMMONERS. Every role should be placed with care, like a tiara on the right head. Would you like the Storyteller to hand-pick every player's character instead of dealing them at random?",
+    "voice": "Princess Donut",
+    "yes": [
+      "gardener"
+    ]
+  },
+  {
+    "id": "tfl-tended-garden",
+    "plain": "Do you prefer a carefully tended game, with every character planted on purpose rather than by luck?",
+    "dinniman": "I always liked a garden where somebody actually thought about what goes where. Same with a game, honestly. Do you prefer a carefully tended game, with every character planted on purpose rather than by luck?",
+    "voice": "Katia",
+    "yes": [
+      "gardener"
+    ]
+  },
+  {
+    "id": "tfl-the-sacred-hat",
+    "plain": "Would you wear a silly hat, speak only one sound at a time and vote twice for the privilege?",
+    "dinniman": "Mongo! MONGO! (Mongo is wearing the hat. Mongo only says one sound at a time. Mongo votes twice. Mongo has never been happier.) Would you wear a silly hat, speak only one sound at a time and vote twice for the privilege?",
+    "voice": "Mongo",
+    "yes": [
+      "godofug"
+    ]
+  },
+  {
+    "id": "tfl-grunt-for-power",
+    "plain": "Would you happily communicate in single grunts if it doubled your vote?",
+    "dinniman": "Ugh. Ug. Oog. Honestly, I've had worse conversations at bingo, and none of them came with two votes. Would you happily communicate in single grunts if it doubled your vote?",
+    "voice": "Elle",
+    "yes": [
+      "godofug"
+    ]
+  },
+  {
+    "id": "tfl-reborn-as-wanderers",
+    "plain": "Would you like the first four players to die to come straight back as Travellers?",
+    "dinniman": "Died early? Bad luck! Here's a fresh backpack and a new career on the road, same team as before. Would you like the first four players to die to come straight back as Travellers?",
+    "voice": "The Host",
+    "yes": [
+      "hindu"
+    ]
+  },
+  {
+    "id": "tfl-death-is-a-doorway",
+    "plain": "Do you believe the game's first few deaths should be a rebirth into a new travelling role rather than an ending?",
+    "dinniman": "I've buried a lot of crawlers. Would've been nice if a few of them had just walked back in wearing a new coat. Do you believe the game's first few deaths should be a rebirth into a new travelling role rather than an ending?",
+    "voice": "Mordecai",
+    "yes": [
+      "hindu"
+    ]
+  },
+  {
+    "id": "tfl-two-narrators",
+    "plain": "Would you like a game with two Storytellers, one who always lies and one who always tells the truth?",
+    "dinniman": "Double the hosts, half the trust! One of them's lying to your face, and they might swap at dusk. Brand synergy! Would you like a game with two Storytellers, one who always lies and one who always tells the truth?",
+    "voice": "Zev",
+    "yes": [
+      "knaves"
+    ]
+  },
+  {
+    "id": "tfl-knights-and-knaves",
+    "plain": "Would you enjoy working out which of two Storytellers is the liar, knowing they might swap at dusk?",
+    "dinniman": "One narrator lies, one tells the truth, and the guards hate you. Ask the right question or die stupid. Classic. Would you enjoy working out which of two Storytellers is the liar, knowing they might swap at dusk?",
+    "voice": "Carl",
+    "yes": [
+      "knaves"
+    ]
+  },
+  {
+    "id": "tfl-duplicate-blessings",
+    "plain": "As a rule-maker, would you allow any good character to appear more than once in the same game?",
+    "dinniman": "Two of the same? Why not three? Beauty, my children, multiplies! I DECREE IT! As a rule-maker, would you allow any good character to appear more than once in the same game?",
+    "voice": "Prepotente",
+    "yes": [
+      "pope"
+    ]
+  },
+  {
+    "id": "tfl-twin-claims",
+    "plain": "Would you like a rule that means two players claiming the same good character, whichever it is, might both be honest?",
+    "dinniman": "Two people say they are the same thing. Normally one is a liar. Under this rule? Maybe neither, for any good character at all. Good luck, everybody. Would you like a rule that means two players claiming the same good character, whichever it is, might both be honest?",
+    "voice": "Katia",
+    "yes": [
+      "pope"
+    ]
+  },
+  {
+    "id": "tfl-eye-of-the-storm",
+    "plain": "Would you shield one named good character from every death except execution, even though evil learns who they are?",
+    "dinniman": "One player, wrapped in storm-proof bubble wrap! Only the gallows can get them! Downside: the bad guys get a big glowing arrow over their head! Would you shield one named good character from every death except execution, even though evil learns who they are?",
+    "voice": "The System AI",
+    "yes": [
+      "stormcatcher"
+    ]
+  },
+  {
+    "id": "tfl-name-the-sheltered",
+    "plain": "Would you like to announce before the game which good character the storm will spare from night-time deaths?",
+    "dinniman": "Before the curtain rises, darling, you tell everyone exactly which hero the storm protects. Bold. Reckless. I adore it. Would you like to announce before the game which good character the storm will spare from night-time deaths?",
+    "voice": "Odette",
+    "yes": [
+      "stormcatcher"
+    ]
+  },
+  {
+    "id": "tfl-blind-roles",
+    "plain": "Would you like a game where nobody knows their own character or alignment until they die?",
+    "dinniman": "No character sheet. No team colours. You find out who you were at your own funeral. The ratings will be ENORMOUS. Would you like a game where nobody knows their own character or alignment until they die?",
+    "voice": "Samantha",
+    "yes": [
+      "tor"
+    ]
+  },
+  {
+    "id": "tfl-revealed-at-death",
+    "plain": "Would you play happily in the dark, learning who you really were only at the moment you die?",
+    "dinniman": "Most of us don't know what we're doing down here anyway. At least this way it's official. Would you play happily in the dark, learning who you really were only at the moment you die?",
+    "voice": "Carl",
+    "yes": [
+      "tor"
+    ]
+  },
+  {
+    "id": "tfl-fresh-character-act",
+    "plain": "Would you reward a nominee who convincingly pretends to be a character nobody has claimed yet?",
+    "dinniman": "A new face, a new voice, a whole new character pulled out of thin air in the dock. If the act is good enough, I'd let them live. Would you reward a nominee who convincingly pretends to be a character nobody has claimed yet?",
+    "voice": "Princess Donut",
+    "yes": [
+      "ventriloquist"
+    ]
+  },
+  {
+    "id": "tfl-throw-your-voice",
+    "plain": "Do you love a performer who can throw their voice well enough to cheat the gallows?",
+    "dinniman": "Gather round, folks! The dummy's talking, the nominee's sweating, and if the act lands they might walk away from the rope! Do you love a performer who can throw their voice well enough to cheat the gallows?",
+    "voice": "The Host",
+    "yes": [
+      "ventriloquist"
+    ]
+  },
+  {
+    "id": "tfl-secret-goals",
+    "plain": "Would you like to hand out secret goals that reward players with true information when achieved?",
+    "dinniman": "Hidden quest assigned! Objective: classified! Reward: one genuine, certified, non-poisoned fact! Would you like to hand out secret goals that reward players with true information when achieved?",
+    "voice": "The System AI",
+    "yes": [
+      "zenomancer"
+    ]
+  },
+  {
+    "id": "tfl-side-quest-clues",
+    "plain": "Do you think players should earn information by completing a secret personal task rather than by using an ability?",
+    "dinniman": "Sure, abilities are nice. But somebody hands me a weird little secret chore with a real answer as the prize? I am in. Every damn time. Do you think players should earn information by completing a secret personal task rather than by using an ability?",
+    "voice": "Elle",
+    "yes": [
+      "zenomancer"
+    ]
   }
 ]

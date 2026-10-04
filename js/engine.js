@@ -30,12 +30,6 @@ export function splits(question, pool) {
   return yes > 0 && yes < pool.length;
 }
 
-const FALLBACK_FLAVOUR = [
-  'The System has run out of clever questions and is, frankly, embarrassed. Just answer this one straight.',
-  'Look, the writers went on strike. Read this ability and tell us if it’s you. No pressure. Some pressure.',
-  'Emergency question! Our trained question-goblins have nothing left. Is this you, or isn’t it?',
-];
-
 export class Game {
   constructor({ characters, questions, rng = Math.random }) {
     this.characters = characters;
@@ -50,12 +44,15 @@ export class Game {
     this.current = this.#pick();
   }
 
+  // Over when one character is left, or when no question can split the rest.
   get done() {
-    return this.pool.length <= 1;
+    return this.current === null;
   }
 
-  get result() {
-    return this.done ? this.characters.find((c) => c.id === this.pool[0]) ?? null : null;
+  // The remaining characters once the game is over: usually one, several when
+  // no question can tell them apart (scripts/validate.js reports how often).
+  get results() {
+    return this.done ? this.characters.filter((c) => this.pool.includes(c.id)) : [];
   }
 
   // Unasked questions that would still narrow the pool.
@@ -81,25 +78,8 @@ export class Game {
   }
 
   #pick() {
-    if (this.done) return null;
+    if (this.pool.length <= 1) return null;
     const eligible = this.eligible();
-    if (eligible.length) return eligible[Math.floor(this.rng() * eligible.length)];
-    return this.#fallback();
-  }
-
-  // Only reached when no question splits the remaining characters
-  // (scripts/validate.js reports how often). Asks about one character directly.
-  #fallback() {
-    const id = this.pool[Math.floor(this.rng() * this.pool.length)];
-    const character = this.characters.find((c) => c.id === id);
-    return {
-      id: `fallback-${id}`,
-      plain: `Does this sound like you? “${character.summary}”`,
-      dinniman: `${FALLBACK_FLAVOUR[Math.floor(this.rng() * FALLBACK_FLAVOUR.length)]} “${character.summary}”`,
-      voice: 'The System AI',
-      yesSet: new Set([id]),
-      scopeSet: null,
-      fallback: true,
-    };
+    return eligible.length ? eligible[Math.floor(this.rng() * eligible.length)] : null;
   }
 }

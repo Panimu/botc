@@ -4,8 +4,8 @@
 //   node scripts/validate.js townsfolk.json  integrity of just these question files
 //   --verbose                                list every unseparated pair group
 //
-// Integrity problems exit 1. Coverage is reported, not enforced: characters no
-// question separates are still reachable via the engine's fallback question.
+// Integrity problems exit 1. Coverage is reported, not enforced: when no question
+// can split the remaining characters, the game ends listing all of them.
 import { readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -90,22 +90,21 @@ export function coverage(questions, characters) {
   return { totalPairs: (list.length * (list.length - 1)) / 2, unseparated, globalOnly };
 }
 
-// Plays truthful games for every character and measures length and fallback use.
+// Plays truthful games for every character and measures length and unresolved endings.
 export function simulate(questions, characters, gamesPerCharacter = 2) {
   let seed = 1;
   const rng = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 2 ** 32);
   const game = new Game({ characters, questions, rng });
   const lengths = [];
-  let fallbackGames = 0;
-  let fallbackQuestions = 0;
+  let unresolved = 0;
+  let leftOver = 0;
   for (const { id } of characters) {
     for (let n = 0; n < gamesPerCharacter; n++) {
       game.restart();
       while (!game.done) game.answer(game.current.yesSet.has(id));
-      if (game.result.id !== id) throw new Error(`Game for ${id} ended on ${game.result.id}`);
-      const fallbacks = game.history.filter((h) => h.question.fallback).length;
-      if (fallbacks) fallbackGames++;
-      fallbackQuestions += fallbacks;
+      const results = game.results.map((c) => c.id);
+      if (!results.includes(id)) throw new Error(`Game for ${id} ended on ${results.join(', ')}`);
+      if (results.length > 1) { unresolved++; leftOver += results.length; }
       lengths.push(game.history.length);
     }
   }
@@ -116,8 +115,8 @@ export function simulate(questions, characters, gamesPerCharacter = 2) {
     median: lengths[Math.floor(lengths.length / 2)],
     min: lengths[0],
     max: lengths.at(-1),
-    fallbackGames,
-    fallbackQuestions,
+    unresolved,
+    meanLeftOver: unresolved ? leftOver / unresolved : 0,
   };
 }
 
@@ -158,7 +157,7 @@ async function main() {
 
   const sim = simulate(questions, characters);
   console.log(`Simulated ${sim.games} games: ${sim.mean.toFixed(1)} questions on average (median ${sim.median}, range ${sim.min}–${sim.max}).`);
-  console.log(`Games needing the fallback question: ${sim.fallbackGames} (${((100 * sim.fallbackGames) / sim.games).toFixed(1)}%), ${sim.fallbackQuestions} fallback questions in total.`);
+  console.log(`Games ending without a single character: ${sim.unresolved} (${((100 * sim.unresolved) / sim.games).toFixed(1)}%)${sim.unresolved ? `, ${sim.meanLeftOver.toFixed(1)} characters left on average` : ''}.`);
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) await main();
