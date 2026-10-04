@@ -12,23 +12,23 @@ Live at https://panimu.github.io/botc/. Every push to `main` of github.com/Panim
 
 ## Commands
 
-- `npm run serve` — serve locally at http://localhost:8000 (plain `python -m http.server`; opening `index.html` from disk fails because the data is fetched).
-- `npm test` — Node's built-in test runner (`node --test`). Single test: `node --test --test-name-pattern="undo" test/`.
+- `npm run serve`: serve locally at http://localhost:8000 (plain `python -m http.server`; opening `index.html` from disk fails because the data is fetched).
+- `npm test`: Node's built-in test runner (`node --test`). Single test: `node --test --test-name-pattern="undo" test/`.
 - `npm run validate`: data integrity, art presence, separability coverage, and simulated games. `--verbose` lists every unseparated pair. Run after every change to `data/`.
-- `node scripts/build-characters.js` — regenerates `data/characters.json` from `resources/data/`. Don't hand-edit that file.
+- `node scripts/build-characters.js`: regenerates `data/characters.json` from `resources/data/`. Don't hand-edit that file.
 
 There are no dependencies and no build step for the site itself.
 
 ## Architecture
 
-- `resources/` — reference material supplied by the user and published with the site: `data/roles.json` (all roles with official ability text), `nightsheet.json` (night order), `jinxes.json`, and token art in `characters/<edition>/<id>[_g|_e].webp` (fabled/loric have no suffix; `generic/<team>.webp` is the fallback).
-- `data/characters.json` — generated. Per character: `id`, `name`, `team`, `edition`, `summary` (the official ability), `image`, plus boolean fact flags (`firstNight`, `otherNight`, `setup`, and regex-derived ones like `oncePerGame`, `startsKnowing`, `madness`). Add a flag in `ABILITY_FLAGS` in the build script to make it selectable.
+- `resources/`: reference material supplied by the user and published with the site: `data/roles.json` (all roles with official ability text), `nightsheet.json` (night order), `jinxes.json`, and token art in `characters/<edition>/<id>[_g|_e].webp` (fabled/loric have no suffix; `generic/<team>.webp` is the fallback).
+- `data/characters.json`: generated. Per character: `id`, `name`, `team`, `edition`, `summary` (the official ability), `image`, plus boolean fact flags (`firstNight`, `otherNight`, `setup`, and regex-derived ones like `oncePerGame`, `startsKnowing`, `madness`). Add a flag in `ABILITY_FLAGS` in the build script to make it selectable.
 - `data/questions/*.json`: one file per character group, all listed in `data/questions/index.json`, which the app and validator load. Each question is `{ id, plain, dinniman, voice, yes, scope? }`. `yes` and `scope` are selectors: an id list, or a match object on character fields (`{ "team": ["minion", "demon"] }`, `{ "otherNight": true }`). **Without `scope`** the question is global and everyone else is on the "no" side. **With `scope`** it's only asked when the whole remaining pool is inside the scope, so its wording can presuppose that context. Note that `firstNight`/`otherNight` mean "on the Storyteller's night sheet", not "wakes".
 - `data/traits/*.json`: hand-tagged, wiki-reviewed cross-team traits (`killsAtNight`, `learnsAlignment`, `psyPatient`, `iconShowsAnimal`…), each with a definition and a `yes` list. Subjective ones also carry a `no` list, and the build adds a `<trait>Clear` field so questions can scope out borderline characters. `build-characters.js` merges traits into `characters.json`, so rerun it after any trait edit. Prefer traits over id lists and over the crude regex flags (see "Known traps" in `data/questions/GUIDE.md`).
 - `.claude/agents/question-reviewer.md`: the wiki review agent. Run it on any new or edited question file. Its wiki notes are cached in `.cache/wiki/` (gitignored), and icon contact sheets are in `.cache/icons/`.
-- `js/engine.js` — pure game logic (`Game`, `select`, `prepare`, `splits`), no DOM. Shared by the browser, validator and tests; takes an injectable `rng`.
-- `js/app.js` — DOM rendering: question panel, result panel, and the full list of remaining characters grouped by team inside a collapsible `<details>` (built once, toggled with `hidden`; it's the accessible version of the circle).
-- `js/circle.js` — the town circle (decorative, `aria-hidden`). It shows one bead per character, coloured by team (Townsfolk blue, Outsiders teal, Minions orange, Demons red, Travellers brass); eliminated beads go pale. At `SEAT_THRESHOLD` (15) or fewer, survivors animate round the arc into seats as full tokens, and the eliminated stay seated but shrouded. Positions are rotations about the centre so moves follow the ring. Seat art loads on first seating. Animations are off under `prefers-reduced-motion`.
+- `js/engine.js`: pure game logic (`Game`, `select`, `prepare`, `splits`), no DOM. Shared by the browser, validator and tests; takes an injectable `rng`.
+- `js/app.js`: DOM rendering: question panel, result panel, and the full list of remaining characters grouped by team inside a collapsible `<details>` (built once, toggled with `hidden`; it's the accessible version of the circle).
+- `js/circle.js`: the town circle (decorative, `aria-hidden`). It shows one bead per character, coloured by team (Townsfolk blue, Outsiders teal, Minions orange, Demons red, Travellers brass); eliminated beads go pale. At `SEAT_THRESHOLD` (15) or fewer, survivors animate round the arc into seats as full tokens, and the eliminated stay seated but shrouded. Positions are rotations about the centre so moves follow the ring. Seat art loads on first seating. Animations are off under `prefers-reduced-motion`.
 - `scripts/validate.js` checks integrity: both phrasings and a voice, selectors that resolve, yes ⊂ scope, no duplicate ids or text. `node scripts/validate.js <file>.json` checks one file. Run without arguments, it also reports separability coverage and **simulates games**: average length, and how often a game ends **unresolved**. There's no fallback question: when no question splits the remaining characters, the game ends listing all of them. With scoped questions, pairwise separability doesn't guarantee every game resolves, so the simulation is the real measure.
 
 ## Constraints

@@ -1,7 +1,7 @@
 // The town circle. While many characters remain, every character is a bead on
 // the ring (eliminated ones go dark). Once SEAT_THRESHOLD or fewer remain, the
-// survivors slide round the ring into evenly spaced seats and grow into full
-// tokens; from then on the eliminated keep their seats, shrouded.
+// survivors float to random, evenly spaced seats (mixed up, like a real circle)
+// and grow into full tokens; from then on the eliminated keep their seats, shrouded.
 // Every position is a rotation about the centre, so moves travel along the arc.
 import { artPath, fallbackArtPath } from './art.js?v=dev';
 import { CIRCLE_TARGET } from './engine.js?v=dev';
@@ -10,7 +10,24 @@ import { CIRCLE_TARGET } from './engine.js?v=dev';
 export const SEAT_THRESHOLD = CIRCLE_TARGET.max;
 
 const TEAM_ORDER = ['townsfolk', 'outsider', 'minion', 'demon', 'traveller'];
-const SEAT_STAGGER_MS = 45;
+// Sitting down is a slow, loosely staggered float; later moves use the CSS default.
+const SEAT_FLOAT_MS = 2400;
+const SEAT_STAGGER_MS = 700;
+
+function shuffle(items) {
+  const a = [...items];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// The seat angle equivalent (±360°) closest to where the bead is, so each token
+// takes the short way round.
+function nearest(angle, from) {
+  return angle + 360 * Math.round((from - angle) / 360);
+}
 
 export function createCircle({ root, ring, count, label, characters, side }) {
   const ordered = [...characters].sort((a, b) =>
@@ -58,20 +75,24 @@ export function createCircle({ root, ring, count, label, characters, side }) {
     if (!seated) {
       seats = null;
     } else if (!seats || !pool.every((id) => seats.has(id))) {
-      const survivors = ordered.filter((c) => alive.has(c.id));
-      seats = new Map(survivors.map((c, i) => [c.id, (360 / survivors.length) * i]));
+      const survivors = shuffle(ordered.filter((c) => alive.has(c.id)));
+      seats = new Map(survivors.map((c, i) => {
+        const angle = (360 / survivors.length) * i;
+        return [c.id, nearest(angle, tokens.get(c.id).beadAngle)];
+      }));
       justSeated = true;
     }
     root.classList.toggle('seated', seated);
 
-    let order = 0;
     for (const [id, { li, img, src, beadAngle }] of tokens) {
       const seat = seats?.get(id);
       const state = !seated ? (alive.has(id) ? 'bead' : 'bead-out')
         : seat === undefined ? 'gone'
         : alive.has(id) ? 'seat' : 'seat-out';
-      // Stagger only the moment of sitting down; later changes happen at once.
-      li.style.setProperty('--delay', justSeated && state === 'seat' ? `${order++ * SEAT_STAGGER_MS}ms` : '0ms');
+      // Only the moment of sitting down floats slowly; later changes use the default.
+      const floating = justSeated && state === 'seat';
+      li.style.setProperty('--delay', floating ? `${Math.round(Math.random() * SEAT_STAGGER_MS)}ms` : '0ms');
+      li.style.setProperty('--dur', floating ? `${SEAT_FLOAT_MS}ms` : '');
       li.style.setProperty('--a', `${seat ?? beadAngle}deg`);
       li.dataset.state = state;
       if (seat !== undefined && !img.getAttribute('src')) img.src = src;

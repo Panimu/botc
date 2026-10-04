@@ -54,6 +54,7 @@ export function checkQuestions(questions, characters, seen = { ids: new Set(), t
     for (const key of ['plain', 'dinniman']) {
       if (typeof q[key] !== 'string' || !q[key].trim()) errors.push(`${label} needs a "${key}" phrasing`);
       else if (seen.texts.has(q[key])) errors.push(`${label}: "${key}" text duplicates another question`);
+      else if (q[key].includes('—')) errors.push(`${label}: "${key}" contains an em dash; use a comma, colon or full stop`);
       else seen.texts.add(q[key]);
     }
     if (typeof q.voice !== 'string' || !q.voice.trim()) errors.push(`${label} needs a "voice" crediting the dinniman line`);

@@ -100,6 +100,8 @@ After editing a trait file, run `node scripts/build-characters.js`. That adds ea
 
 ## The two phrasings
 
+**No em dashes** in either phrasing (the validator rejects them). Use a comma, colon, full stop or brackets instead.
+
 **`plain`**: clear British English, one yes/no question, ending in "?". Under about 25 words. No jargon beyond common Clocktower terms (Demon, Minion, Storyteller, nominate, execute, Grimoire).
 
 **`dinniman`**: the same question, in a voice from Matt Dinniman's *Dungeon Crawler Carl* books, credited in `voice`. One to three sentences, under about 60 words, and it **must end with a yes/no question that means exactly the same as the plain one**. Spread the questions across the cast:

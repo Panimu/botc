@@ -163,7 +163,6 @@ h1 {
   font-size: 1rem;
 }
 
-.flavour figcaption::before { content: '— '; }
 
 .feedback {
   margin: 0 0 1.5rem;
@@ -299,7 +298,7 @@ button:focus-visible {
   --S: min(calc(100vw - 32px), 560px);
   --bead: calc(var(--S) * 0.017);
   --seat: min(calc(var(--S) * 0.15), 88px);
-  --move: 900ms cubic-bezier(0.65, 0, 0.25, 1);
+  --ease: cubic-bezier(0.65, 0, 0.25, 1);
   position: relative;
   width: var(--S);
   aspect-ratio: 1;
@@ -330,6 +329,8 @@ button:focus-visible {
   overflow: hidden;
   cursor: pointer;
   transform: rotate(var(--a)) translateY(calc(var(--r) * -1)) rotate(calc(var(--a) * -1)) scale(var(--k, 1));
+  /* --dur is set to a slow float for the moment the town sits down (js/circle.js). */
+  --move: var(--dur, 900ms) var(--ease);
   transition: transform var(--move), width var(--move), height var(--move), margin var(--move),
     border-width var(--move), background-color 500ms ease, opacity 500ms ease, box-shadow 400ms ease;
   transition-delay: var(--delay, 0ms);
