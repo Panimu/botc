@@ -100,3 +100,11 @@ test('minSide drops questions with too few characters on a side', () => {
   const game = new Game({ characters, questions: qs, minSide: 2 });
   assert.deepEqual(game.questions.map((x) => x.id), ['two']);
 });
+
+test('circle target favours landing in 7-15 and avoids dropping below 7', async () => {
+  const { circleFactor, CIRCLE_TARGET } = await import('../js/engine.js');
+  assert.equal(circleFactor(3, 40), CIRCLE_TARGET.penalty, '3 vs 37 could seat a circle of 3');
+  assert.equal(circleFactor(10, 40), CIRCLE_TARGET.boost, '10 vs 30 lands in range');
+  assert.equal(circleFactor(20, 40), 1, 'both sides stay above the circle');
+  assert.equal(circleFactor(1, 12), 1, 'no steering once seated');
+});

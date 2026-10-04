@@ -42,6 +42,20 @@ export function splits(question, pool) {
 // possible, and become natural late on, when a 1-in-3 split is an even one.
 export const SPLIT_WEIGHTING = { exponent: 1.5, floor: 0.02 };
 
+// The town circle seats the survivors once `max` or fewer remain (js/circle.js).
+// While more remain, questions that could drop the pool below `min` are
+// down-weighted and ones that could land it in min..max are favoured, so the
+// circle usually seats 7-15 rather than two or three.
+export const CIRCLE_TARGET = { min: 7, max: 15, penalty: 0.05, boost: 2 };
+
+export function circleFactor(yes, poolSize, { min, max, penalty, boost } = CIRCLE_TARGET) {
+  if (poolSize <= max) return 1;
+  const sides = [yes, poolSize - yes];
+  if (sides.some((n) => n < min)) return penalty;
+  if (sides.some((n) => n <= max)) return boost;
+  return 1;
+}
+
 export function splitWeight(yes, poolSize, { exponent, floor } = SPLIT_WEIGHTING) {
   const p = yes / poolSize;
   const entropy = -(p * Math.log2(p) + (1 - p) * Math.log2(1 - p));
@@ -51,9 +65,10 @@ export function splitWeight(yes, poolSize, { exponent, floor } = SPLIT_WEIGHTING
 export class Game {
   // minSide: ignore questions with fewer than this many characters on either
   // side of their full split (1 keeps everything; 2 drops one-vs-the-rest).
-  constructor({ characters, questions, rng = Math.random, weighting = SPLIT_WEIGHTING, minSide = 1 }) {
+  constructor({ characters, questions, rng = Math.random, weighting = SPLIT_WEIGHTING, circleTarget = CIRCLE_TARGET, minSide = 1 }) {
     this.characters = characters;
     this.weighting = weighting;
+    this.circleTarget = circleTarget;
     this.questions = questions
       .map((q) => prepare(q, characters))
       .filter((q) => {
@@ -112,7 +127,8 @@ export class Game {
       if (asked.has(q.id)) continue;
       const yes = yesCount(q, this.pool);
       if (yes <= 0 || yes >= this.pool.length) continue;
-      const weight = this.weighting ? splitWeight(yes, this.pool.length, this.weighting) : 1;
+      const weight = (this.weighting ? splitWeight(yes, this.pool.length, this.weighting) : 1)
+        * (this.circleTarget ? circleFactor(yes, this.pool.length, this.circleTarget) : 1);
       options.push([q, weight]);
       total += weight;
     }

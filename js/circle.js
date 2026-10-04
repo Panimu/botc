@@ -4,8 +4,10 @@
 // tokens; from then on the eliminated keep their seats, shrouded.
 // Every position is a rotation about the centre, so moves travel along the arc.
 import { artPath, fallbackArtPath } from './art.js?v=dev';
+import { CIRCLE_TARGET } from './engine.js?v=dev';
 
-export const SEAT_THRESHOLD = 15;
+// Shared with the engine, which steers questions to seat between min and max.
+export const SEAT_THRESHOLD = CIRCLE_TARGET.max;
 
 const TEAM_ORDER = ['townsfolk', 'outsider', 'minion', 'demon', 'traveller'];
 const SEAT_STAGGER_MS = 45;
