@@ -11,6 +11,8 @@
   --brass: #7a5510;
   --token: #fffaf0;
   --line: #cdbf9f;
+  --outsider: #0e7c74;
+  --minion: #b8560f;
 
   --display: 'IM Fell English', Georgia, serif;
   --serif: 'Alegreya', Georgia, serif;
@@ -31,6 +33,8 @@
     --brass: #e0b964;
     --token: #f3e9d2;
     --line: #4a3d63;
+    --outsider: #4cc2b4;
+    --minion: #f2954b;
     color-scheme: dark;
   }
 }
@@ -46,6 +50,8 @@
   --brass: #e0b964;
   --token: #f3e9d2;
   --line: #4a3d63;
+  --outsider: #4cc2b4;
+  --minion: #f2954b;
   color-scheme: dark;
 }
 
@@ -288,6 +294,127 @@ button:focus-visible {
   font-size: 1.2rem;
 }
 
+/* The town circle (js/circle.js): beads while many remain, seats once few do. */
+.circle {
+  --S: min(calc(100vw - 32px), 560px);
+  --bead: calc(var(--S) * 0.017);
+  --seat: min(calc(var(--S) * 0.15), 88px);
+  --move: 900ms cubic-bezier(0.65, 0, 0.25, 1);
+  position: relative;
+  width: var(--S);
+  aspect-ratio: 1;
+  margin: 2.5rem auto 0;
+  container: circle / inline-size;
+}
+
+.ring {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.ring-token {
+  --d: var(--bead);
+  --r: calc(var(--S) * 0.46);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--d);
+  height: var(--d);
+  margin: calc(var(--d) / -2) 0 0 calc(var(--d) / -2);
+  border-radius: 50%;
+  border: 0 solid var(--good);
+  background: var(--good);
+  overflow: hidden;
+  cursor: pointer;
+  transform: rotate(var(--a)) translateY(calc(var(--r) * -1)) rotate(calc(var(--a) * -1)) scale(var(--k, 1));
+  transition: transform var(--move), width var(--move), height var(--move), margin var(--move),
+    border-width var(--move), background-color 500ms ease, opacity 500ms ease, box-shadow 400ms ease;
+  transition-delay: var(--delay, 0ms);
+}
+
+.ring-token.evil { background: var(--evil); border-color: var(--evil); }
+.ring-token.other { background: var(--other); border-color: var(--other); }
+.ring-token.team-outsider { background: var(--outsider); border-color: var(--outsider); }
+.ring-token.team-minion { background: var(--minion); border-color: var(--minion); }
+
+.ring-art {
+  position: absolute;
+  inset: 6% 18% 32%;
+  width: 64%;
+  height: 62%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 500ms ease, filter 500ms ease;
+}
+
+.ring-name {
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  bottom: 8%;
+  text-align: center;
+  color: #1f1830;
+  font: 700 clamp(0.5rem, calc(var(--seat) * 0.12), 0.7rem)/1.05 var(--body);
+  overflow-wrap: normal;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.ring-token[data-state="bead-out"] { background: var(--line); opacity: 0.55; --k: 0.8; }
+
+.ring-token[data-state="gone"] { opacity: 0; --k: 0.2; pointer-events: none; }
+
+.ring-token[data-state="seat"],
+.ring-token[data-state="seat-out"] {
+  --d: var(--seat);
+  --r: calc(var(--S) * 0.39);
+  background: var(--token);
+  border-width: 3px;
+}
+
+.ring-token[data-state="seat"] .ring-art,
+.ring-token[data-state="seat-out"] .ring-art { opacity: 1; }
+
+@container circle (min-width: 400px) {
+  .ring-token[data-state="seat"] .ring-name,
+  .ring-token[data-state="seat-out"] .ring-name { opacity: 1; }
+}
+
+.ring-token[data-state="seat-out"] { background: var(--line); border-color: var(--line); opacity: 0.5; --k: 0.85; }
+.ring-token[data-state="seat-out"] .ring-art { filter: grayscale(1) brightness(0.65); }
+
+.ring-token.chosen {
+  --k: 1.3;
+  z-index: 1;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px var(--brass);
+}
+
+.circle-centre {
+  position: absolute;
+  inset: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+}
+
+.circle-count {
+  margin: 0;
+  font: 400 clamp(2.5rem, 14cqw, 4.5rem)/1 var(--display);
+}
+
+.circle-label {
+  margin: 0.35rem 0 0;
+  min-height: 1.5em;
+  color: var(--dim);
+  font: 500 1.05rem/1.3 var(--serif);
+}
+
 /* Answer path */
 .path {
   width: 100%;
@@ -311,7 +438,15 @@ button:focus-visible {
   margin-top: 3rem;
 }
 
-.pool h2 { text-align: center; }
+.pool > summary {
+  cursor: pointer;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.pool > summary h2 { display: inline; }
+
+.pool[open] > summary { margin-bottom: 1.25rem; }
 
 .team-group { margin-bottom: 2rem; }
 
@@ -390,4 +525,8 @@ footer {
 @media (forced-colors: active) {
   .token .art, .result-art { border-color: CanvasText; }
   .answer { border-color: ButtonText; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .answer, .ring-token, .ring-art, .ring-name { transition: none; }
 }

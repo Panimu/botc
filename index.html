@@ -55,15 +55,25 @@
       </div>
     </section>
 
+    <!-- The town circle: beads while many remain, seated tokens once 15 or fewer do.
+         Decorative; the list below carries the same information for assistive tech. -->
+    <div class="circle" id="circle" aria-hidden="true">
+      <ol class="ring" id="ring"></ol>
+      <div class="circle-centre">
+        <p class="circle-count" id="circle-count"></p>
+        <p class="circle-label" id="circle-label"></p>
+      </div>
+    </div>
+
     <section class="path" id="path" aria-labelledby="path-heading" hidden>
       <h2 id="path-heading">How you got here</h2>
       <ol id="path-list"></ol>
     </section>
 
-    <section class="pool" aria-labelledby="pool-heading">
-      <h2 id="pool-heading">Still in the running</h2>
+    <details class="pool" id="pool">
+      <summary><h2 id="pool-heading">Still in the running</h2></summary>
       <div id="pool-groups"></div>
-    </section>
+    </details>
 
     <div class="visually-hidden" id="announcer" aria-live="polite" aria-atomic="true"></div>
   </main>

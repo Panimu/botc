@@ -1,5 +1,6 @@
 import { Game } from './engine.js?v=dev';
 import { artPath, fallbackArtPath, EVIL_TEAMS } from './art.js?v=dev';
+import { createCircle } from './circle.js?v=dev';
 
 const $ = (id) => document.getElementById(id);
 
@@ -75,7 +76,8 @@ function renderPool(groups, pool, over) {
     g.heading.textContent = `${g.team.heading} (${count})`;
     g.section.hidden = count === 0;
   }
-  $('pool-heading').textContent = !over ? 'Still in the running' : pool.length === 1 ? 'Your character' : 'Your possible characters';
+  const heading = !over ? 'All remaining characters' : pool.length === 1 ? 'Your character' : 'Your possible characters';
+  $('pool-heading').textContent = `${heading} (${pool.length})`;
   // Once it's down to a tie, show each ability under the name.
   for (const g of groups) for (const li of g.items) li.querySelector('.ability').hidden = !over || pool.length === 1;
 }
@@ -111,6 +113,9 @@ function start(characters, questions) {
   const minSide = new URLSearchParams(location.search).has('nosingles') ? 2 : 1;
   const game = new Game({ characters, questions, minSide });
   const groups = buildPool(characters);
+  const circle = createCircle({
+    root: $('circle'), ring: $('ring'), count: $('circle-count'), label: $('circle-label'), characters, side,
+  });
   const announcer = $('announcer');
   let feedback = '';
 
@@ -149,6 +154,7 @@ function start(characters, questions) {
     const results = game.results;
     const over = results.length > 0;
     renderPool(groups, game.pool, over);
+    circle(game.pool, { results });
     $('question-panel').hidden = over;
     $('result-panel').hidden = !over;
     $('path').hidden = !over;
