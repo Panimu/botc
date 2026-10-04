@@ -358,8 +358,8 @@
   },
   {
     "id": "min-instant-execution",
-    "plain": "Would you like the power to execute a nominee immediately, as long as good players voted for them?",
-    "dinniman": "New feature drop: Express Justice! If any of the goodies raised a hand, you can skip the boring tally and send the nominee straight to the gallows. Would you like to execute a nominee immediately whenever good players voted?",
+    "plain": "Would you like the power, on any day, to execute a nominee immediately whenever good players have voted for them?",
+    "dinniman": "New feature drop: Express Justice! If any of the goodies raised a hand, you can skip the boring tally and send the nominee straight to the gallows. Would you like to execute a nominee on the spot, any day, whenever good players have voted?",
     "voice": "The System AI",
     "yes": ["vizier"]
   },
@@ -404,5 +404,457 @@
     "dinniman": "Monocle, moustache, a mine full of underpaid peasants, and a firm belief that hard work never hurt anyone who wasn't you. I know the type. Are you a stuffy aristocrat obsessed with profits and cheap labour?",
     "voice": "Carl",
     "yes": ["baron"]
+  },
+  {
+    "id": "min-make-them-mad",
+    "plain": "Would you like to make other players act 'mad' about something, with a threat hanging over them if they don't play along?",
+    "dinniman": "Here's the deal, sweetie: you make someone commit to a story, loudly and convincingly, or something terrible happens to them. It's improv with a body count. Would you like to force other players to be 'mad' about something under threat?",
+    "voice": "Odette",
+    "yes": ["harpy", "cerenovus", "bigwig"]
+  },
+  {
+    "id": "min-own-victim",
+    "plain": "As a Minion, would you like a power that lets you pick a victim who then dies, whatever that victim does?",
+    "dinniman": "Most of you minions are support staff. Errand boys. But a few of you get to point at someone and have them drop, no tricks, no conditions on the poor sap. Would you like a power that simply kills the victim you choose?",
+    "voice": "Mordecai",
+    "yes": ["godfather", "psychopath", "assassin"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-declare-winner",
+    "plain": "As a Minion, would you like your ability to declare a team the winner or loser outright once its condition is met?",
+    "dinniman": "Forget the slow grind of killing everyone one by one. Some of you minions carry a little trapdoor to victory, and when the right thing happens, the game just ENDS. Would you like an ability that declares a winner or loser the moment its condition is met?",
+    "voice": "The Host",
+    "yes": ["fearmonger", "eviltwin", "goblin", "mastermind"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-shapes-setup",
+    "plain": "As a Minion, does your presence change how the game is set up before it even begins?",
+    "dinniman": "Before the first night, before a single crawler opens their eyes, you've already rearranged the furniture. Seating, headcounts, who's even in the building. Does your presence as a Minion change the game's setup?",
+    "voice": "The System AI",
+    "yes": {
+      "team": "minion",
+      "setup": true
+    },
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-outsiders-matter",
+    "plain": "As a Minion, do the town's Outsiders play a part in how your ability works?",
+    "dinniman": "The weirdos, darling. The rejects. The ones who couldn't get a proper job. For some of us evil sorts, they're absolutely central to the plan. Do Outsiders matter to how your Minion ability works?",
+    "voice": "Princess Donut",
+    "yes": ["godfather", "xaan", "baron"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-minion-poisoner",
+    "plain": "As a Minion, would you like your ability to poison people?",
+    "dinniman": "Of all the evil sidekick jobs, the one with the little bottle and the innocent smile is my personal favourite. Nobody dies, everybody's wrong. Would you like your Minion ability to poison people?",
+    "voice": "Elle",
+    "yes": ["poisoner", "widow", "xaan"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-madness-minion",
+    "plain": "As a Minion, would you like to force someone, under threat, to publicly claim whatever you dictate?",
+    "dinniman": "SAY IT! SAY WHAT SAMANTHA TELLS YOU TO SAY, OR SAMANTHA WILL HAVE YOUR HEAD! Samantha knows heads! Samantha IS a head! As a Minion, would you like to force someone, under threat, to publicly claim what you dictate?",
+    "voice": "Samantha",
+    "yes": ["harpy", "cerenovus"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-out-loud-by-day",
+    "plain": "As a Minion, would your ability have you choose or announce something out loud during the day?",
+    "dinniman": "Most of your lot do their dirty work in the dark. A few of you have to stand up in front of the whole town, in daylight, and do your thing with everyone watching. Is your Minion ability one you use out loud during the day?",
+    "voice": "Carl",
+    "yes": ["psychopath", "goblin", "vizier", "fearmonger"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-hard-to-kill-by-day",
+    "plain": "As a Minion, would you like built-in protection that makes you hard to kill during the day?",
+    "dinniman": "They want you gone. They've got the rope, the votes, the righteous fury. And it just doesn't take, does it? Delicious. As a Minion, would you like natural protection from dying during the day?",
+    "voice": "Odette",
+    "yes": ["vizier", "psychopath"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-rig-the-vote",
+    "plain": "As a Minion, does your ability change how voting itself works?",
+    "dinniman": "Democracy is a fantastic product, and we're proud to announce a few exciting modifications to it! Some minions bring their own voting rules. Does your Minion ability change the way voting works?",
+    "voice": "Zev",
+    "yes": ["organgrinder", "vizier"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-demon-knows-not-you",
+    "plain": "As a Minion, would you be content for the Demon to know you while you have no idea you're on its team?",
+    "dinniman": "The boss knows your name, your seat, your whole deal. You, meanwhile, think you're one of the good guys. Mongo confused too. Mongo still loyal! Would you be fine with the Demon knowing you while you don't know you're evil?",
+    "voice": "Mongo",
+    "yes": ["marionette"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-recruit-good",
+    "plain": "As an evil player, would you like to turn a good player into a member of the evil team?",
+    "dinniman": "Killing them is so final, isn't it? Why not just... convert them? Imagine the look on their face when they realise whose side they're on now. As an evil player, would you like to turn a good player evil?",
+    "voice": "Odette",
+    "yes": ["mezepheles", "summoner", "fanggu", "kazali"],
+    "scope": {
+      "team": ["minion", "demon"]
+    }
+  },
+  {
+    "id": "min-rewrite-characters",
+    "plain": "As an evil player, is changing other players' characters a normal part of your ability?",
+    "dinniman": "Character sheets are suggestions. You can scribble on other people's, swap them, upgrade them into monsters. The Storyteller's eraser gets a workout. As an evil player, does your ability normally change other players' characters?",
+    "voice": "Carl",
+    "yes": ["pithag", "summoner", "imp", "fanggu", "riot", "kazali"],
+    "scope": {
+      "team": ["minion", "demon"]
+    }
+  },
+  {
+    "id": "min-evil-poisons",
+    "plain": "As an evil player, does your ability poison other players?",
+    "dinniman": "Toxicity report for the evil roster, sponsored by Gutter Grog! Some of you lace drinks, some of you leak venom just by existing. As an evil player, does your ability poison other people?",
+    "voice": "The System AI",
+    "yes": ["poisoner", "widow", "xaan", "pukka", "nodashii", "vigormortis", "lleech"],
+    "scope": {
+      "team": ["minion", "demon"]
+    }
+  },
+  {
+    "id": "min-evil-extra-win",
+    "plain": "As an evil player, does your ability add its own special way for a team to win or lose?",
+    "dinniman": "Most villains win the old-fashioned way: kill until there's nobody left to argue. Some of you have a secret side door to victory written into your contract. As an evil player, does your ability add its own way to win or lose?",
+    "voice": "Mordecai",
+    "yes": ["fearmonger", "eviltwin", "goblin", "mastermind", "vortox", "leviathan"],
+    "scope": {
+      "team": ["minion", "demon"]
+    }
+  },
+  {
+    "id": "min-saver-not-killer",
+    "plain": "As a Minion, would you rather use your power to keep someone alive than to harm them?",
+    "dinniman": "It's weird, right? You're evil, and your big superpower is stopping people from dying. I'm not complaining, I'm just saying it's a strange way to be a villain. As a Minion, would you rather keep someone alive than hurt them?",
+    "voice": "Katia",
+    "yes": ["devilsadvocate"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-tb-understudy",
+    "plain": "As a Minion in Trouble Brewing, would you like to be the one who takes over if your Demon falls?",
+    "dinniman": "Every great show needs an understudy, darling, and some of us are simply BORN for the spotlight the moment the lead actor dies tragically. Would you like to be the one who steps up if the Demon falls?",
+    "voice": "Princess Donut",
+    "yes": ["scarletwoman"],
+    "scope": {
+      "team": "minion",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "min-tb-front-loaded",
+    "plain": "As a Minion in Trouble Brewing, would you be happy with an ability that does all its work before the first night?",
+    "dinniman": "You walk in, the setup changes, and then you just sort of hang around being sinister. Low effort, high impact. Honestly, I respect it. Would you be happy with a Minion ability that finishes its work before the first night?",
+    "voice": "Elle",
+    "yes": ["baron"],
+    "scope": {
+      "team": "minion",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "min-tb-know-it-all",
+    "plain": "As a Minion in Trouble Brewing, would you like to know far more about the game than anyone else at the table?",
+    "dinniman": "Information is the most powerful weapon in this dungeon, and you want ALL of it. Every night. Every token. Fine. Just don't get smug. As a Trouble Brewing Minion, would you like to know far more than everyone else?",
+    "voice": "Mordecai",
+    "yes": ["spy"],
+    "scope": {
+      "team": "minion",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "min-bmr-can-kill",
+    "plain": "As a Minion in Bad Moon Rising, would you like an ability that can kill someone?",
+    "dinniman": "In this particular nightmare, a couple of the hired help come armed. Bad moon, sharp knives, short life expectancy for everyone else. As a Bad Moon Rising Minion, would you like an ability that can kill?",
+    "voice": "The Host",
+    "yes": ["godfather", "assassin"],
+    "scope": {
+      "team": "minion",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "min-bmr-after-the-fall",
+    "plain": "As a Minion in Bad Moon Rising, does your big moment only arrive after the Demon has been executed?",
+    "dinniman": "You spend the whole game idle, waiting, and the instant the town hangs your boss, you light up like a festival. Ghoulish timing, but effective. As a Bad Moon Rising Minion, does your moment come only after the Demon is executed?",
+    "voice": "Katia",
+    "yes": ["mastermind"],
+    "scope": {
+      "team": "minion",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "min-snv-cauldron",
+    "plain": "As a Minion in Sects and Violets, do you see yourself as a witch stirring curses and potions?",
+    "dinniman": "BEHOLD THE CAULDRON! Prepotente has always fancied a pointy hat. Toads! Hexes! A bubbling pot of something that WILL NOT come out of the carpet! Do you picture yourself as a witch brewing curses and potions?",
+    "voice": "Prepotente",
+    "yes": ["witch", "pithag"],
+    "scope": {
+      "team": "minion",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "min-snv-personal-rival",
+    "plain": "As a Minion in Sects and Violets, would you like your ability to revolve around one good player who knows who you are?",
+    "dinniman": "No nightly powers, no potions, just one person on the other side who knows you, and you know them, and the town has to figure out who's lying. As a Sects and Violets Minion, would you like your ability to centre on one good player who knows you?",
+    "voice": "Katia",
+    "yes": ["eviltwin"],
+    "scope": {
+      "team": "minion",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "min-snv-dictate-words",
+    "plain": "As a Minion in Sects and Violets, do you like dictating what someone must claim tomorrow?",
+    "dinniman": "Script delivered! Tomorrow, this lucky crawler will be playing the role of Someone Else, and if they ad-lib, they might hang! Do you like deciding what someone has to claim the next day?",
+    "voice": "The System AI",
+    "yes": ["cerenovus"],
+    "scope": {
+      "team": "minion",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "min-one-shot-any-time",
+    "plain": "As a Minion, would you like a power you can use only once, but at a moment of your choosing?",
+    "dinniman": "One bullet, darling. But YOU pick the scene. Timing is everything in show business and in assassination. As a Minion, would you like a single-use power you can fire whenever you like?",
+    "voice": "Princess Donut",
+    "yes": ["assassin", "wizard"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-poisoners-fresh-victim",
+    "plain": "Of the Minions who poison, would you like to poison someone new every night?",
+    "dinniman": "Nightly rotation, nobody safe, nobody sure their info's clean. Rinse, repeat. As a poisoner, would you like a fresh victim every night?",
+    "voice": "Mordecai",
+    "yes": ["poisoner"],
+    "scope": ["poisoner", "widow", "xaan"]
+  },
+  {
+    "id": "min-poisoners-mass-dose",
+    "plain": "Of the Minions who poison, would you like to poison a whole group of players in one go?",
+    "dinniman": "Why poison one when you can poison the entire do-gooder department at once? Bulk discount! As a poisoner, would you like to hit a whole group at the same time?",
+    "voice": "Zev",
+    "yes": ["xaan"],
+    "scope": ["poisoner", "widow", "xaan"]
+  },
+  {
+    "id": "min-poisoners-one-for-good",
+    "plain": "Of the Minions who poison, would you like your one chosen victim to stay poisoned for good?",
+    "dinniman": "One target, chosen with care, poisoned for keeps. No take-backs, no second thoughts. As a poisoner, would you like your single victim to stay poisoned permanently?",
+    "voice": "Odette",
+    "yes": ["widow"],
+    "scope": ["poisoner", "widow", "xaan"]
+  },
+  {
+    "id": "min-killers-need-a-death",
+    "plain": "Of the killing Minions, do you need a particular kind of player to die first before you can strike?",
+    "dinniman": "You can't just go stabbing whenever you feel like it. First, somebody specific has to get hurt, and THEN you get to be very, very upset about it. As a killer, do you need a certain kind of death first before you strike?",
+    "voice": "Carl",
+    "yes": ["godfather"],
+    "scope": ["godfather", "psychopath", "assassin", "witch"]
+  },
+  {
+    "id": "min-killers-own-choices",
+    "plain": "Of the killing Minions, would you rather your victim die because of something they chose to do?",
+    "dinniman": "It's so much more satisfying when they do it to themselves. You merely set the trap; they walk right in. As a killer, would you prefer your victim's own choices to be what kills them?",
+    "voice": "Elle",
+    "yes": ["witch"],
+    "scope": ["godfather", "psychopath", "assassin", "witch"]
+  },
+  {
+    "id": "min-killers-in-public",
+    "plain": "Of the killing Minions, would you like to do your killing in front of everyone?",
+    "dinniman": "NO SHADOWS! NO HIDING! Samantha kills in the TOWN SQUARE, at NOON, with EVERYONE WATCHING! As a killer, would you like to do your killing in full view of everyone?",
+    "voice": "Samantha",
+    "yes": ["psychopath"],
+    "scope": ["godfather", "psychopath", "assassin", "witch"]
+  },
+  {
+    "id": "min-killers-single-shot",
+    "plain": "Of the killing Minions, would you trade having many chances for just one kill that nothing can stop?",
+    "dinniman": "Quality over quantity, kid. One clean shot, no saving throw, nobody coming back from it. As a killer, would you take a single unstoppable kill over many chances?",
+    "voice": "Mordecai",
+    "yes": ["assassin"],
+    "scope": ["godfather", "psychopath", "assassin", "witch"]
+  },
+  {
+    "id": "min-grimoire-every-night",
+    "plain": "Of the Minions who see the Grimoire, would you rather see it every night than just once?",
+    "dinniman": "One glance is a TEASE, darling. A true star demands a nightly preview of every secret in town. As one who sees the Grimoire, would you rather look every night than only once?",
+    "voice": "Princess Donut",
+    "yes": ["spy"],
+    "scope": ["spy", "widow"]
+  },
+  {
+    "id": "min-setup-plus-action",
+    "plain": "Of the Minions who change the setup, would you like your ability to do something more later in the game too?",
+    "dinniman": "Rearranging the starting line-up is nice. But some of you want a second act: a kill, a poisoning, a summoning. Encore! Encore! Of the setup-changing Minions, would you like your ability to do more later in the game?",
+    "voice": "The Host",
+    "yes": ["godfather", "xaan", "summoner"],
+    "scope": ["godfather", "xaan", "marionette", "summoner", "baron"]
+  },
+  {
+    "id": "min-gameenders-self-execution",
+    "plain": "Of the Minions with a special win or loss condition, does yours hinge on getting yourself executed?",
+    "dinniman": "Hang me, you cowards! HANG PREPOTENTE AND WITNESS HIS TRIUMPH! Of the Minions with their own victory condition, does yours depend on you being executed?",
+    "voice": "Prepotente",
+    "yes": ["goblin"],
+    "scope": ["fearmonger", "eviltwin", "goblin", "mastermind"]
+  },
+  {
+    "id": "min-gameenders-nominate",
+    "plain": "Of the Minions with a special win or loss condition, does yours need you to personally nominate someone?",
+    "dinniman": "You've got to be the one pointing the finger. Not your teammate, not some random goodie. You. Of the Minions with their own win condition, does yours need you to make the nomination yourself?",
+    "voice": "Carl",
+    "yes": ["fearmonger"],
+    "scope": ["fearmonger", "eviltwin", "goblin", "mastermind"]
+  },
+  {
+    "id": "min-gameenders-after-demon",
+    "plain": "Of the Minions with a special win or loss condition, does yours only kick in after the Demon dies?",
+    "dinniman": "The headline villain is gone, the credits are rolling, and then, surprise, a post-credits scene! Of the Minions with their own victory condition, does yours start only once the Demon has died?",
+    "voice": "Zev",
+    "yes": ["mastermind"],
+    "scope": ["fearmonger", "eviltwin", "goblin", "mastermind"]
+  },
+  {
+    "id": "min-gameenders-known-rival",
+    "plain": "Of the Minions with a special win or loss condition, does yours centre on an opponent who knows exactly who you are?",
+    "dinniman": "Your fate's tied to someone on the other team, someone who knows your face as well as you know theirs. That's not a game, that's a family feud. Of the Minions with their own win condition, does yours revolve around a known opponent?",
+    "voice": "Katia",
+    "yes": ["eviltwin"],
+    "scope": ["fearmonger", "eviltwin", "goblin", "mastermind"]
+  },
+  {
+    "id": "min-madness-accuse-not-claim",
+    "plain": "Of the Minions who drive people mad, would you rather make someone accuse another player than claim a character?",
+    "dinniman": "Two ways to torment a crawler: make them pretend to be something they're not, or make them point at their neighbour and scream 'EVIL!' As a madness-maker, do you prefer making someone accuse another player?",
+    "voice": "The System AI",
+    "yes": ["harpy"],
+    "scope": ["harpy", "cerenovus"]
+  },
+  {
+    "id": "min-trigger-words",
+    "plain": "As an evil player, does your ability trigger when particular words are spoken out loud?",
+    "dinniman": "Words have power, honey. Say the wrong one, or the right one, at the wrong moment, and suddenly everything changes. As an evil player, does your ability hinge on particular words being said out loud?",
+    "voice": "Odette",
+    "yes": ["mezepheles", "yaggababble", "goblin"],
+    "scope": {
+      "team": ["minion", "demon"]
+    }
+  },
+  {
+    "id": "min-several-at-once",
+    "plain": "As an evil player, would you like to be able to choose more than one player in a single night?",
+    "dinniman": "Why settle for one? MORE! Two, three, a whole HANDFUL of victims in a single night! Samantha is never satisfied with one! As an evil player, would you like to choose more than one player in a single night?",
+    "voice": "Samantha",
+    "yes": ["harpy", "shabaloth", "po", "alhadikhia", "kazali"],
+    "scope": {
+      "team": ["minion", "demon"]
+    }
+  },
+  {
+    "id": "min-nightly-target",
+    "plain": "As a Minion, would you like to pick a player as your target every night?",
+    "dinniman": "Every night, the same ritual: open your eyes, point at a sucker, go back to sleep. It's a steady job, and steady jobs are how you survive down here. As a Minion, would you like to choose a target every night?",
+    "voice": "Mordecai",
+    "yes": ["poisoner", "devilsadvocate", "harpy", "witch", "cerenovus", "fearmonger", "pithag"],
+    "scope": {
+      "team": "minion"
+    }
+  },
+  {
+    "id": "min-backup-become-demon",
+    "plain": "Of the Minions who keep evil going after the Demon dies, would you rather become the Demon yourself than gamble on one final day?",
+    "dinniman": "Plan B, darling: either seize the crown yourself, or bet everything on one last dramatic day. Of the Minions who carry on after the Demon dies, would you rather become the Demon than gamble on one final day?",
+    "voice": "Princess Donut",
+    "yes": ["scarletwoman"],
+    "scope": ["scarletwoman", "mastermind"]
+  },
+  {
+    "id": "min-carousel-recruit",
+    "plain": "As an experimental Minion, would you like to bring a new recruit over to your side rather than eliminate anyone?",
+    "dinniman": "Growth mindset, people! Rather than downsizing the competition, why not onboard them? As an experimental Minion, would you like to recruit someone to your side instead of eliminating them?",
+    "voice": "Zev",
+    "yes": ["mezepheles", "summoner"],
+    "scope": {
+      "team": "minion",
+      "edition": "carousel"
+    }
+  },
+  {
+    "id": "min-tb-evil-nightly-choice",
+    "plain": "As an evil player in Trouble Brewing, would you like to choose a player most nights?",
+    "dinniman": "Night falls, the evil eyes open, and someone has to choose a victim. In this town, only a couple of you get that job. As a Trouble Brewing evil player, would you like to choose a player most nights?",
+    "voice": "The Host",
+    "yes": ["poisoner", "imp"],
+    "scope": {
+      "team": ["minion", "demon"],
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "min-bmr-evil-cheat-death",
+    "plain": "As an evil player in Bad Moon Rising, does your ability sometimes cheat death, keeping someone alive or bringing them back?",
+    "dinniman": "Death is supposed to be the one thing in this dungeon you can count on. Some of you keep breaking it. I'd file a complaint, but who would I even send it to? As a Bad Moon Rising evil player, can your ability cheat death?",
+    "voice": "Carl",
+    "yes": ["devilsadvocate", "shabaloth", "zombuul"],
+    "scope": {
+      "team": ["minion", "demon"],
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "min-snv-evil-change-character",
+    "plain": "As an evil player in Sects and Violets, can your ability change another player's character?",
+    "dinniman": "New you, who dis? A few villains on this roster can rewrite another crawler's entire identity overnight. Patch notes to follow. As a Sects and Violets evil player, can your ability change someone else's character?",
+    "voice": "The System AI",
+    "yes": ["pithag", "fanggu"],
+    "scope": {
+      "team": ["minion", "demon"],
+      "edition": "snv"
+    }
   }
 ]

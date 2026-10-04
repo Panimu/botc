@@ -307,8 +307,8 @@
   },
   {
     "id": "dem-announced-targets",
-    "plain": "Would you announce your targets to the whole town and enjoy watching them sweat?",
-    "dinniman": "WHY HIDE? Samantha never hides! Shout their names to the heavens and let them tremble before the slaughter, as is PROPER! Would you announce your targets to the whole town and enjoy watching them squirm?",
+    "plain": "Would you announce your night-time targets to the whole town and enjoy watching them sweat?",
+    "dinniman": "WHY HIDE? Samantha never hides! When night falls, shout their names to the heavens and let them tremble before the slaughter, as is PROPER! Would you announce your night-time targets to the whole town and enjoy watching them squirm?",
     "voice": "Samantha",
     "yes": [
       "alhadikhia"
@@ -342,15 +342,6 @@
     ]
   },
   {
-    "id": "dem-known-but-hidden",
-    "plain": "Would you like everyone to know your character is in play, without any of them knowing who you are?",
-    "dinniman": "Darling, picture it: the whole town knows precisely what's stalking them from day one, and still can't find you. Delicious. Would you like everyone to know your character is in play but not who you are?",
-    "voice": "Odette",
-    "yes": [
-      "leviathan"
-    ]
-  },
-  {
     "id": "dem-two-innocents-hanged",
     "plain": "Would you like the town to lose outright if it executes more than one innocent?",
     "dinniman": "Let's talk about mistakes. One wrongful hanging, the town forgives itself. A second, and the game is yours. How does that feel? Would you like the town to lose if it executes more than one innocent?",
@@ -378,5 +369,770 @@
       "imp",
       "fanggu"
     ]
+  },
+  {
+    "id": "dem-several-victims",
+    "plain": "As the Demon, would you like to choose more than one victim at a time?",
+    "dinniman": "One body a night keeps the town guessing. More than one keeps them burying. Different philosophy, same shovel. As the Demon, would you like to choose more than one victim at a time?",
+    "voice": "Mordecai",
+    "yes": [
+      "shabaloth",
+      "po",
+      "alhadikhia"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-house-picks-victim",
+    "plain": "As the Demon, would you be happy for the Storyteller to pick who dies, rather than choosing a victim yourself?",
+    "dinniman": "Some Demons agonise over every kill. Others just shrug and let the guy running the game sort it out. Honestly, that's how I'd want it. As the Demon, would you be happy for the Storyteller to pick who dies instead of choosing yourself?",
+    "voice": "Carl",
+    "yes": [
+      "lilmonsta",
+      "legion",
+      "yaggababble"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-peaceful-nights",
+    "plain": "As the Demon, would you be content never to kill anyone at night?",
+    "dinniman": "Not every monster needs to creep into bedrooms after dark. Some do their damage in daylight, or just by being there. As the Demon, would you be content never to kill anyone at night?",
+    "voice": "Katia",
+    "yes": [
+      "leviathan",
+      "riot"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-poison-in-kit",
+    "plain": "As the Demon, would you like poison to be part of your ability?",
+    "dinniman": "Loot box opened! Inside: one vial of something green and fizzy, plus your usual murder kit. Combo potential: excellent. As the Demon, would you like poison to be part of your ability?",
+    "voice": "The System AI",
+    "yes": [
+      "pukka",
+      "nodashii",
+      "lleech",
+      "vigormortis"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-bonus-minion",
+    "plain": "As the Demon, would you like more Minions than usual on your side?",
+    "dinniman": "Exciting staffing update! This season the evil team gets an extra Minion on the payroll, which really helps with our content output. As the Demon, would you like more Minions than usual on your side?",
+    "voice": "Zev",
+    "yes": [
+      "lilmonsta",
+      "lordoftyphon"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-gallows-every-day",
+    "plain": "As the Demon, would you like the town to be forced to execute someone every single day?",
+    "dinniman": "Oh, I love this. No dithering, no 'let's sleep on it', no hand-wringing. Somebody swings every day or the whole town's stuffed. As the Demon, would you like the town forced to execute someone every single day?",
+    "voice": "Elle",
+    "yes": [
+      "vortox"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-night-one-choice",
+    "plain": "As the Demon, would you like to make a choice on the very first night?",
+    "dinniman": "Most Demons spend that first night twiddling their thumbs. Not you, I suspect. You'd want to get your claws in early, wouldn't you? As the Demon, would you like to make a choice on the very first night?",
+    "voice": "Odette",
+    "yes": [
+      "pukka",
+      "lleech",
+      "kazali"
+    ],
+    "scope": [
+      "yaggababble",
+      "pukka",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "leviathan"
+    ]
+  },
+  {
+    "id": "dem-reshape-the-setup",
+    "plain": "As the Demon, would you like your arrival to change the usual mix of characters before the game even begins?",
+    "dinniman": "When I arrive, the very STAGE must be rebuilt! Different players, different roles, all rearranged in my honour before the curtain rises! As the Demon, would you like your arrival to change the usual mix of characters before the game begins?",
+    "voice": "Prepotente",
+    "yes": [
+      "lilmonsta",
+      "kazali",
+      "vigormortis",
+      "legion",
+      "fanggu",
+      "lordoftyphon"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-good-turned-evil",
+    "plain": "As the Demon, would you like your ability to turn good players evil?",
+    "dinniman": "Converts! Samantha adores converts! Take the pure-hearted fools and twist them into servants of darkness, then laugh as they turn on their friends! As the Demon, would you like your ability to turn good players evil?",
+    "voice": "Samantha",
+    "yes": [
+      "fanggu",
+      "kazali"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-shared-horns",
+    "plain": "As the Demon, would you like several players to share your Demon character at the same time?",
+    "dinniman": "Usually there's only ONE star of the show, and normally I'd insist that star is me. But imagine a whole chorus line of identical monsters. As the Demon, would you like several players to share your Demon character at once?",
+    "voice": "Princess Donut",
+    "yes": [
+      "legion",
+      "riot"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-nomination-killer",
+    "plain": "As the Demon, would you like your killing to happen through daytime nominations?",
+    "dinniman": "Forget the night shift, folks! This Demon clocks in at the town square, where every nomination is a death sentence and the crowd goes WILD. As the Demon, would you like your killing to happen through daytime nominations?",
+    "voice": "The Host",
+    "yes": [
+      "riot"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-sleep-through-night",
+    "plain": "As the Demon, would you rather have no decisions to make at night at all?",
+    "dinniman": "No picking victims, no pointing in the dark, no being woken up at stupid o'clock. You just sleep. That's the dream, really. As the Demon, would you rather have no decisions to make at night at all?",
+    "voice": "Carl",
+    "yes": [
+      "yaggababble",
+      "legion",
+      "riot",
+      "leviathan"
+    ],
+    "scope": [
+      "yaggababble",
+      "pukka",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "leviathan"
+    ]
+  },
+  {
+    "id": "dem-targets-revealed",
+    "plain": "As the Demon, would you like the whole town to learn who you targeted?",
+    "dinniman": "Transparency is a core brand value! Every morning the town gets a full list of who the Demon's picked. Huge for engagement. As the Demon, would you like the whole town to learn who you targeted?",
+    "voice": "Zev",
+    "yes": [
+      "alhadikhia"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-what-not-who",
+    "plain": "As the Demon, when choosing a victim, do you care more about what someone is than who they are?",
+    "dinniman": "Faces lie. Names lie. When you go hunting, the thing worth aiming at is the job someone's holding, not the face they're wearing. As the Demon, when you pick a victim, do you care more about what someone is than about who they are?",
+    "voice": "Mordecai",
+    "yes": [
+      "ojo"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-win-without-blood",
+    "plain": "As the Demon, would you like evil to have a route to victory that needs no more deaths?",
+    "dinniman": "Everyone assumes the Demon wins by piling up bodies. But there are cleverer ways, aren't there? Tell me about yours. As the Demon, would you like evil to have a route to victory that needs no more deaths?",
+    "voice": "Odette",
+    "yes": [
+      "vortox",
+      "leviathan"
+    ],
+    "scope": {
+      "team": "demon"
+    }
+  },
+  {
+    "id": "dem-shrug-off-death",
+    "plain": "Would you like to shrug off a death that would finish any other Demon?",
+    "dinniman": "They hanged me! They stabbed me! And yet, LO, I endure, while lesser fiends crumble at the first scratch! MEEEEH! Would you like to shrug off a death that would finish any other Demon?",
+    "voice": "Prepotente",
+    "yes": [
+      "zombuul",
+      "lleech"
+    ],
+    "scope": [
+      "zombuul",
+      "lleech",
+      "imp",
+      "fanggu",
+      "vigormortis",
+      "vortox",
+      "nodashii",
+      "kazali"
+    ]
+  },
+  {
+    "id": "dem-bmr-quiet-nights",
+    "plain": "As the Demon, would you be fine with some nights, after the first, where nobody dies by your hand?",
+    "dinniman": "Restraint can be a weapon too. A night with no bodies makes people careless, or suspicious of the wrong person. As the Demon, would you be fine with some nights after the first where nobody dies by your hand?",
+    "voice": "Katia",
+    "yes": [
+      "po",
+      "zombuul"
+    ],
+    "scope": {
+      "team": "demon",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "dem-bmr-double-kill",
+    "plain": "As the Demon, would you like to take more than one life in a single night?",
+    "dinniman": "One life? ONE? Samantha spits on your single death! Give her a heap of the fallen by sunrise! As the Demon, would you like to take more than one life in a single night?",
+    "voice": "Samantha",
+    "yes": [
+      "shabaloth",
+      "po"
+    ],
+    "scope": {
+      "team": "demon",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "dem-bmr-delayed-death",
+    "plain": "As the Demon, would you like your victims to die a night later than the night you chose them?",
+    "dinniman": "Hit them tonight, bury them tomorrow night. Gives you a full day to watch them walk around not knowing. Cruel. Effective. As the Demon, would you like your victims to die a night after you chose them?",
+    "voice": "Mordecai",
+    "yes": [
+      "pukka"
+    ],
+    "scope": {
+      "team": "demon",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "dem-snv-outsider-count",
+    "plain": "As the Demon, would you like your presence to change how many Outsiders are in play?",
+    "dinniman": "Patch 6.6.6: Demon selection now modifies the Outsider population. Some get more weirdos, some get fewer. Balance is a myth. As the Demon, would you like your presence to change how many Outsiders are in play?",
+    "voice": "The System AI",
+    "yes": [
+      "vigormortis",
+      "fanggu"
+    ],
+    "scope": {
+      "team": "demon",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "dem-snv-spoil-townsfolk",
+    "plain": "As the Demon, would you like some Townsfolk to get bad information because of you?",
+    "dinniman": "The good guys rely on their little clues. It would be a real shame if some of those clues went rotten because a certain monster was in town. As the Demon, would you like some Townsfolk to get bad information because of you?",
+    "voice": "Carl",
+    "yes": [
+      "nodashii",
+      "vortox",
+      "vigormortis"
+    ],
+    "scope": {
+      "team": "demon",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "dem-crowded-evil-table",
+    "plain": "As the Demon, would you like more evil players at the table than a game normally has?",
+    "dinniman": "Bigger cast, bigger drama, bigger ratings! This Demon brings more villains to the table than the usual line-up allows. As the Demon, would you like more evil players at the table than a game normally has?",
+    "voice": "The Host",
+    "yes": [
+      "lordoftyphon",
+      "legion"
+    ],
+    "scope": [
+      "yaggababble",
+      "ojo",
+      "kazali",
+      "legion",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "leviathan"
+    ]
+  },
+  {
+    "id": "dem-one-finger-one-death",
+    "plain": "As the Demon, would you like to point at exactly one player each night and have them die?",
+    "dinniman": "None of this fancy nonsense. You point, they drop, everybody goes back to bed. Simple, honest work. As the Demon, would you like to point at exactly one player each night and have them die?",
+    "voice": "Elle",
+    "yes": [
+      "kazali",
+      "lordoftyphon",
+      "lleech"
+    ],
+    "scope": [
+      "yaggababble",
+      "ojo",
+      "kazali",
+      "legion",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "leviathan"
+    ]
+  },
+  {
+    "id": "dem-bring-one-back",
+    "plain": "Would you like the chance to bring back someone you killed?",
+    "dinniman": "Death is SO final, darling. Sometimes a girl changes her mind and wants her victim returned, slightly damp but otherwise fine. Would you like the chance to bring back someone you killed?",
+    "voice": "Princess Donut",
+    "yes": [
+      "shabaloth"
+    ],
+    "scope": [
+      "shabaloth",
+      "po",
+      "zombuul"
+    ]
+  },
+  {
+    "id": "dem-bloodless-day-hunger",
+    "plain": "Would you like your hunger to depend on whether today passed without a death?",
+    "dinniman": "Mongo? Mongo... (Mongo sniffs the air. Nobody died today. His eyes go wide and he starts drooling.) MONGO! Would you like your hunger to depend on whether today passed without a death?",
+    "voice": "Mongo",
+    "yes": [
+      "zombuul"
+    ],
+    "scope": [
+      "shabaloth",
+      "po",
+      "zombuul"
+    ]
+  },
+  {
+    "id": "dem-twist-no-execution",
+    "plain": "Would you like your special twist to punish the town whenever it fails to execute?",
+    "dinniman": "Twist selected: Cowardice Tax! Any day the town can't decide on a hanging, they lose everything. The audience is going to EAT THIS UP. Would you like your special twist to punish the town whenever it fails to execute?",
+    "voice": "The System AI",
+    "yes": [
+      "vortox"
+    ],
+    "scope": [
+      "imp",
+      "nodashii",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "kazali",
+      "lordoftyphon",
+      "lleech"
+    ]
+  },
+  {
+    "id": "dem-twist-poison-beside",
+    "plain": "Would you like your special twist to poison Townsfolk sitting beside a particular player?",
+    "dinniman": "Some twists are about the seating chart. A certain person in the circle, and the Townsfolk beside them quietly sickening. Would you like your special twist to poison Townsfolk sitting beside a particular player?",
+    "voice": "Katia",
+    "yes": [
+      "nodashii",
+      "vigormortis"
+    ],
+    "scope": [
+      "imp",
+      "nodashii",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "kazali",
+      "lordoftyphon",
+      "lleech"
+    ]
+  },
+  {
+    "id": "dem-twist-role-moves",
+    "plain": "Would you like your special twist to let the Demon role move to another player?",
+    "dinniman": "Succession planning is so important for a sustainable brand! With this twist, the horns can be handed on and the show keeps going. Would you like your special twist to let the Demon role move to another player?",
+    "voice": "Zev",
+    "yes": [
+      "imp",
+      "fanggu"
+    ],
+    "scope": [
+      "imp",
+      "nodashii",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "kazali",
+      "lordoftyphon",
+      "lleech"
+    ]
+  },
+  {
+    "id": "dem-twist-minion-control",
+    "plain": "Would you like your special twist to decide who your Minions are, or where they sit?",
+    "dinniman": "Every Demon has a team, but only a few get to shape it. Who's in it, where they sit. Are you one of those? Would you like your special twist to decide who your Minions are, or where they sit?",
+    "voice": "Odette",
+    "yes": [
+      "kazali",
+      "lordoftyphon"
+    ],
+    "scope": [
+      "imp",
+      "nodashii",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "kazali",
+      "lordoftyphon",
+      "lleech"
+    ]
+  },
+  {
+    "id": "dem-twist-life-tied",
+    "plain": "Would you like your special twist to tie your life to someone else's?",
+    "dinniman": "Your heartbeat, chained to some poor sap's. They live, you live. They die, so do you. I've seen worse deals, but not many. Would you like your special twist to tie your life to someone else's?",
+    "voice": "Mordecai",
+    "yes": [
+      "lleech"
+    ],
+    "scope": [
+      "imp",
+      "nodashii",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "kazali",
+      "lordoftyphon",
+      "lleech"
+    ]
+  },
+  {
+    "id": "dem-chatter-body-count",
+    "plain": "Would you like how much you talk to decide how many people die?",
+    "dinniman": "Finally, a reward for running your mouth! The more you yap, the more people go cold. I'd have levelled that town in an afternoon. Would you like how much you talk to decide how many people die?",
+    "voice": "Elle",
+    "yes": [
+      "yaggababble"
+    ],
+    "scope": [
+      "lilmonsta",
+      "legion",
+      "yaggababble"
+    ]
+  },
+  {
+    "id": "dem-no-chair-demon",
+    "plain": "Would you like to be the Demon without having a seat at the table?",
+    "dinniman": "Everyone's sitting in a circle, accusing each other, and the actual monster doesn't even have a chair. It's just getting carried around like a handbag. Would you like to be the Demon without having a seat at the table?",
+    "voice": "Carl",
+    "yes": [
+      "lilmonsta"
+    ],
+    "scope": [
+      "lilmonsta",
+      "legion",
+      "yaggababble"
+    ]
+  },
+  {
+    "id": "dem-simply-outlast",
+    "plain": "Would you like to win simply by outlasting the town?",
+    "dinniman": "No frenzy? No blood? Samantha is DISGUSTED. And yet, to watch them crumble as the days run out... acceptable. Would you like to win simply by outlasting the town?",
+    "voice": "Samantha",
+    "yes": [
+      "leviathan"
+    ],
+    "scope": [
+      "riot",
+      "leviathan"
+    ]
+  },
+  {
+    "id": "dem-victims-have-say",
+    "plain": "Would you like your victims to have a say in whether they die?",
+    "dinniman": "How GENEROUS of you, darling. Pick three peasants and let them vote on their own fates, like a little reality show inside the reality show. Would you like your victims to have a say in whether they die?",
+    "voice": "Princess Donut",
+    "yes": [
+      "alhadikhia"
+    ],
+    "scope": [
+      "shabaloth",
+      "po",
+      "alhadikhia"
+    ]
+  },
+  {
+    "id": "dem-outsider-over-minions",
+    "plain": "Would your plans hinge on an Outsider rather than on your Minions?",
+    "dinniman": "Ooh, a plot twist, folks! This Demon isn't counting on its loyal henchmen at all. It's got its eye on one of the town's oddballs! Would your plans hinge on an Outsider rather than on your Minions?",
+    "voice": "The Host",
+    "yes": [
+      "fanggu"
+    ],
+    "scope": [
+      "imp",
+      "fanggu",
+      "vigormortis",
+      "lilmonsta",
+      "riot",
+      "kazali",
+      "lordoftyphon"
+    ]
+  },
+  {
+    "id": "dem-minions-better-dead",
+    "plain": "Would you rather your Minions were dead than alive?",
+    "dinniman": "My servants serve me best as CORPSES! Their loyalty, eternal! Their usefulness, undiminished! Their complaints, at last, silenced! Would you rather your Minions were dead than alive?",
+    "voice": "Prepotente",
+    "yes": [
+      "vigormortis"
+    ],
+    "scope": [
+      "imp",
+      "fanggu",
+      "vigormortis",
+      "lilmonsta",
+      "riot",
+      "kazali",
+      "lordoftyphon"
+    ]
+  },
+  {
+    "id": "dem-minions-take-turns",
+    "plain": "Would you like your Minions to be the Demon themselves as a matter of routine?",
+    "dinniman": "Normally a Minion only gets the top job when the boss croaks. In some setups, though, they wear the horns as standard practice. Would you like your Minions to be the Demon themselves as a matter of routine?",
+    "voice": "Mordecai",
+    "yes": [
+      "lilmonsta",
+      "riot"
+    ],
+    "scope": [
+      "imp",
+      "fanggu",
+      "vigormortis",
+      "lilmonsta",
+      "riot",
+      "kazali",
+      "lordoftyphon"
+    ]
+  },
+  {
+    "id": "dem-evil-poisoners",
+    "plain": "As an evil player, would you like your ability to poison other players?",
+    "dinniman": "Sponsor message! This episode's toxic moments are brought to you by Grandma's Mystery Tea. As an evil player, would you like your ability to poison other players?",
+    "voice": "The System AI",
+    "yes": [
+      "poisoner",
+      "widow",
+      "xaan",
+      "pukka",
+      "nodashii",
+      "lleech",
+      "vigormortis"
+    ],
+    "scope": {
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "dem-evil-secret-words",
+    "plain": "As an evil player, would you like to start the game knowing a secret word or phrase?",
+    "dinniman": "Some of us start with nothing but our wits. Others get a secret, a word that matters more than anyone at the table realises. As an evil player, would you like to start the game knowing a secret word or phrase?",
+    "voice": "Katia",
+    "yes": [
+      "yaggababble",
+      "mezepheles"
+    ],
+    "scope": {
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "dem-evil-appointed-hour",
+    "plain": "As an evil player, would your big moment arrive on a set day or night partway through the game?",
+    "dinniman": "Mark your calendars, viewers! Some villains strike whenever they please, but others have a date circled in red, and when it comes, KABOOM! As an evil player, would your big moment arrive on a set day or night partway through the game?",
+    "voice": "The Host",
+    "yes": [
+      "riot",
+      "xaan",
+      "summoner",
+      "leviathan"
+    ],
+    "scope": {
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "dem-evil-fixed-seating",
+    "plain": "As an evil player, would you like your character to fix where you sit relative to your evil teammates?",
+    "dinniman": "Seating charts are VERY important, darling. Some evil characters insist the team sits exactly where they're told. As an evil player, would you like your character to fix where you sit relative to your evil teammates?",
+    "voice": "Princess Donut",
+    "yes": [
+      "lordoftyphon",
+      "marionette"
+    ],
+    "scope": {
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "dem-evil-false-type",
+    "plain": "As an evil player, would you like to register as a different character type from your real one?",
+    "dinniman": "You're one thing, but when the good guys check, you show up as another kind of thing. It's like having a fake ID, except the bouncer has magic. As an evil player, would you like to register as a different character type from your real one?",
+    "voice": "Carl",
+    "yes": [
+      "spy",
+      "legion"
+    ],
+    "scope": {
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "dem-evil-bigger-team",
+    "plain": "As an evil player, would you like your character to start the game with more evil players at the table than usual?",
+    "dinniman": "Headcount update from the network! Some evil characters arrive with a bigger team than the standard package. As an evil player, would you like your character to start the game with more evil players at the table than usual?",
+    "voice": "Zev",
+    "yes": [
+      "lordoftyphon",
+      "legion"
+    ],
+    "scope": [
+      "mezepheles",
+      "godfather",
+      "poisoner",
+      "devilsadvocate",
+      "spy",
+      "harpy",
+      "witch",
+      "cerenovus",
+      "fearmonger",
+      "pithag",
+      "psychopath",
+      "assassin",
+      "wizard",
+      "widow",
+      "xaan",
+      "marionette",
+      "wraith",
+      "summoner",
+      "eviltwin",
+      "goblin",
+      "boomdandy",
+      "mastermind",
+      "scarletwoman",
+      "vizier",
+      "organgrinder",
+      "boffin",
+      "baron",
+      "yaggababble",
+      "pukka",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "leviathan"
+    ]
+  },
+  {
+    "id": "dem-evil-spoken-trigger",
+    "plain": "As an evil player, would your ability be triggered by particular words you say out loud yourself?",
+    "dinniman": "Words have power, don't they? For some of you, quite literally: say the right thing, out loud, and your ability springs to life. As an evil player, would your ability be triggered by particular words you say out loud yourself?",
+    "voice": "Odette",
+    "yes": [
+      "yaggababble",
+      "goblin"
+    ],
+    "scope": {
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
   }
 ]

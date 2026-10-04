@@ -435,5 +435,858 @@
     "yes": [
       "puzzlemaster"
     ]
+  },
+  {
+    "id": "out-s-death-sets-off",
+    "plain": "As an Outsider, could your death set something nasty in motion?",
+    "dinniman": "Every misfit is a liability, but some of you are liabilities with a timer. You die, and the floor opens, the lights flicker, somebody screams. Could your death set something nasty in motion?",
+    "voice": "The System AI",
+    "yes": [
+      "sweetheart",
+      "plaguedoctor",
+      "klutz",
+      "moonchild",
+      "saint",
+      "barber",
+      "hatter",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-instant-loss",
+    "plain": "Could your team lose instantly because of one moment involving you: your execution, your final pick, or someone guessing who you are?",
+    "dinniman": "Some of you just make life harder. A few of you are a trapdoor under the whole team: one execution, one bad point, one correct guess, and it's over. Could a single moment involving you lose your team the game on the spot?",
+    "voice": "Mordecai",
+    "yes": [
+      "saint",
+      "klutz",
+      "damsel",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-side-can-change",
+    "plain": "Does your own ability let you end up on a different side from the one you started on?",
+    "dinniman": "It's scary, not knowing whose side you'll finish on. Some misfits drift, or get pulled, or jump ship when things go wrong. Does your own ability let your side change during the game?",
+    "voice": "Katia",
+    "yes": [
+      "goon",
+      "ogre",
+      "politician",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-vote-rules",
+    "plain": "Does your ability tell you when you can or must vote?",
+    "dinniman": "Most people get to vote like adults. Some of us have a little rulebook stapled to our hand saying when it's allowed to go up, or when it has to. Does your ability control when you vote?",
+    "voice": "Carl",
+    "yes": [
+      "butler",
+      "zealot",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-night-picker",
+    "plain": "Does your actual ability have you wake at night to choose a player?",
+    "dinniman": "Night shift sign-up sheet! Some Outsiders get a cosy alarm call in the dark to point at somebody. Others sleep through the whole thing. Does your real ability wake you at night to choose a player?",
+    "voice": "Zev",
+    "yes": [
+      "butler",
+      "ogre",
+      "lunatic",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-death-gifts-evil",
+    "plain": "When you die, do the Demon, Minions or Storyteller gain a new power or a chance to change characters?",
+    "dinniman": "Your corpse is a PRESENT, mortal! Wrapped for the villains or the dungeon master: a new power, or a fresh set of masks! Delicious! When you die, do the Demon, Minions or Storyteller gain a new power or a chance to change characters?",
+    "voice": "Samantha",
+    "yes": [
+      "plaguedoctor",
+      "barber",
+      "hatter",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-public-point",
+    "plain": "Does your ability give you a dramatic public moment where you point at a player and something happens?",
+    "dinniman": "Lights! Cameras! One finger, aimed straight at a contestant in front of the entire studio audience, and BOOM, consequences! Does your ability give you that big public pointing moment?",
+    "voice": "The Host",
+    "yes": [
+      "golem",
+      "klutz",
+      "moonchild",
+      "hermit"
+    ],
+    "scope": [
+      "hermit",
+      "butler",
+      "goon",
+      "ogre",
+      "lunatic",
+      "drunk",
+      "tinker",
+      "recluse",
+      "golem",
+      "sweetheart",
+      "plaguedoctor",
+      "klutz",
+      "moonchild",
+      "saint",
+      "barber",
+      "hatter",
+      "mutant",
+      "politician",
+      "zealot",
+      "damsel",
+      "snitch",
+      "heretic"
+    ]
+  },
+  {
+    "id": "out-s-minions-receive",
+    "plain": "Do the Minions learn or receive something because you are in the game?",
+    "dinniman": "Let's talk about your relationship with the villains, darling. Do they get a little something because of you: a secret, a fresh alibi, a new face? Do the Minions learn or receive something because you're in play?",
+    "voice": "Odette",
+    "yes": [
+      "damsel",
+      "snitch",
+      "hatter",
+      "hermit"
+    ],
+    "scope": [
+      "hermit",
+      "butler",
+      "goon",
+      "ogre",
+      "lunatic",
+      "drunk",
+      "tinker",
+      "recluse",
+      "golem",
+      "sweetheart",
+      "plaguedoctor",
+      "klutz",
+      "moonchild",
+      "saint",
+      "hatter",
+      "mutant",
+      "politician",
+      "zealot",
+      "damsel",
+      "snitch",
+      "heretic",
+      "puzzlemaster"
+    ]
+  },
+  {
+    "id": "out-s-wrong-about-self",
+    "plain": "Do you believe you are a different character from the one you really are?",
+    "dinniman": "Imagine thinking you're the star of the show and actually being the understudy's understudy. I could NEVER. But some of you do it every game. Do you believe you're a different character from the one you really are?",
+    "voice": "Princess Donut",
+    "yes": [
+      "lunatic",
+      "drunk"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-makes-drunk",
+    "plain": "Does your ability itself leave another player drunk?",
+    "dinniman": "Some people are just bad influences. You wander past, and somebody else ends up legless and useless. Does your ability itself get another player drunk?",
+    "voice": "Elle",
+    "yes": [
+      "goon",
+      "sweetheart",
+      "puzzlemaster",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-chooses-player",
+    "plain": "Does your ability ever ask you to choose or name a player?",
+    "dinniman": "Plenty of misfits just sit there and let bad things happen to them. Others have to pick someone: by night, by nomination, or with their dying breath. Does your ability ever make you choose a player?",
+    "voice": "Mordecai",
+    "yes": [
+      "butler",
+      "ogre",
+      "lunatic",
+      "golem",
+      "klutz",
+      "moonchild",
+      "puzzlemaster",
+      "hermit"
+    ],
+    "scope": [
+      "hermit",
+      "butler",
+      "goon",
+      "ogre",
+      "lunatic",
+      "tinker",
+      "recluse",
+      "golem",
+      "sweetheart",
+      "plaguedoctor",
+      "klutz",
+      "moonchild",
+      "saint",
+      "barber",
+      "hatter",
+      "mutant",
+      "politician",
+      "zealot",
+      "damsel",
+      "snitch",
+      "heretic",
+      "puzzlemaster"
+    ]
+  },
+  {
+    "id": "out-s-random-death",
+    "plain": "Could you simply drop dead for no reason, with nobody targeting you at all?",
+    "dinniman": "Nobody nominated you. Nobody stabbed you. You're just dead now, apparently, because the dungeon felt like it. Could you drop dead for no reason at all?",
+    "voice": "Carl",
+    "yes": [
+      "tinker",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-changes-winner",
+    "plain": "Does your ability have any say over who wins or loses the game?",
+    "dinniman": "Some creatures merely play. Others hold the very SCALES of victory in their hooves! Mostly by knocking them over. Does your ability have any power over who wins or loses?",
+    "voice": "Prepotente",
+    "yes": [
+      "saint",
+      "klutz",
+      "damsel",
+      "politician",
+      "heretic",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-secrecy-punished",
+    "plain": "Does your ability punish you or your team if your true character becomes known?",
+    "dinniman": "Hiding who you are is exhausting. Some misfits have it worse: if the truth comes out, the punishment is real. Does your ability punish you or your team when your real character is discovered?",
+    "voice": "Katia",
+    "yes": [
+      "damsel",
+      "mutant",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-one-shot",
+    "plain": "Does your ability give you a single choice that you make once and never again?",
+    "dinniman": "Limited-time offer! One choice, one use, then the button crumbles to dust and the sponsors laugh at you. Does your ability give you a single decision you only ever make once?",
+    "voice": "The System AI",
+    "yes": [
+      "golem",
+      "puzzlemaster",
+      "klutz",
+      "moonchild",
+      "ogre",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-evil-know-you",
+    "plain": "Does the evil team know something about you from the start?",
+    "dinniman": "Some contestants walk in anonymous. Others arrive with the villains already whispering about them in the green room. Tell me: does the evil team know something about you from the beginning?",
+    "voice": "Odette",
+    "yes": [
+      "damsel",
+      "lunatic"
+    ],
+    "scope": [
+      "butler",
+      "goon",
+      "ogre",
+      "lunatic",
+      "drunk",
+      "tinker",
+      "recluse",
+      "golem",
+      "sweetheart",
+      "plaguedoctor",
+      "klutz",
+      "moonchild",
+      "saint",
+      "barber",
+      "hatter",
+      "mutant",
+      "politician",
+      "zealot",
+      "damsel",
+      "snitch",
+      "heretic",
+      "puzzlemaster"
+    ]
+  },
+  {
+    "id": "out-s-guessing-game",
+    "plain": "Does your ability involve someone making a once-only guess?",
+    "dinniman": "Everybody loves a quiz segment! One guess, one shot, very dramatic music. Does your ability involve somebody making a once-only guess?",
+    "voice": "Zev",
+    "yes": [
+      "damsel",
+      "puzzlemaster",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-s-changes-setup",
+    "plain": "Does your presence change which character tokens go into the bag before the game begins?",
+    "dinniman": "Before anyone even sits down, you've already mucked about with the setup. The bag isn't what it would have been. Typical. Does your presence change which tokens go in the bag?",
+    "voice": "Elle",
+    "yes": [
+      "hermit",
+      "drunk"
+    ],
+    "scope": {
+      "team": "outsider"
+    }
+  },
+  {
+    "id": "out-g-burden",
+    "plain": "Among the good players, are you more of a burden to your own side than a help?",
+    "dinniman": "Look, we're all on the same team. Some of us bring snacks and information. Some of us bring problems, and we're very sorry. Are you more of a burden to the good side than a help?",
+    "voice": "Carl",
+    "yes": {
+      "team": "outsider"
+    },
+    "scope": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "out-g-one-moment-loss",
+    "plain": "As a good player, could a single moment involving you hand evil the win outright?",
+    "dinniman": "Most good players can only lose slowly. A rare few are a loaded trap: hang them, let them point wrong, or let a Minion spot them, and it's over. As a good player, could one moment involving you give evil the win?",
+    "voice": "Mordecai",
+    "yes": [
+      "saint",
+      "klutz",
+      "damsel",
+      "hermit"
+    ],
+    "scope": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "out-g-wrong-about-self",
+    "plain": "On the good team, could you spend the whole game wrong about which character you are?",
+    "dinniman": "Folks, here's a contestant on the good team with NO IDEA what character they really are, and they never will! Isn't that adorable? Could you play a whole game wrong about your own character?",
+    "voice": "The Host",
+    "yes": [
+      "drunk",
+      "lunatic"
+    ],
+    "scope": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "out-g-death-helps-evil",
+    "plain": "However you die, does evil automatically gain from it, without you choosing anything?",
+    "dinniman": "Your death feeds the darkness no matter how it comes! Blade, rope, falling piano: the villains profit and you get no say! Glorious! However you die, does evil automatically gain from it, with no choice of yours involved?",
+    "voice": "Samantha",
+    "yes": [
+      "sweetheart",
+      "plaguedoctor",
+      "barber",
+      "hatter",
+      "poppygrower",
+      "hermit"
+    ],
+    "scope": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "out-g-vote-rules",
+    "plain": "Among good players, does your ability limit or dictate when you vote?",
+    "dinniman": "Quick compliance check from Legal! Some good-team contestants have special voting terms in their contracts: when they may, or when they must. Does your ability limit or dictate when you vote?",
+    "voice": "Zev",
+    "yes": [
+      "butler",
+      "zealot",
+      "hermit"
+    ],
+    "scope": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "out-g-side-flip",
+    "plain": "Could your own ability move you from the good team to the evil team?",
+    "dinniman": "You start the game good. You want to stay good. But your own ability might drag you somewhere else, and that's frightening. Could your ability turn you evil?",
+    "voice": "Katia",
+    "yes": [
+      "goon",
+      "ogre",
+      "politician",
+      "cultleader",
+      "snakecharmer",
+      "hermit"
+    ],
+    "scope": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "out-g-execution-ends-it",
+    "plain": "Would your execution end the game straight away, one way or the other?",
+    "dinniman": "When they march ME to the gallows, the WHOLE SHOW ends. Win or lose, curtain down, credits roll. That is star power. Would your execution end the game immediately?",
+    "voice": "Princess Donut",
+    "yes": [
+      "saint",
+      "atheist",
+      "hermit"
+    ],
+    "scope": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "out-g-deadly-nomination",
+    "plain": "Among good players, could simply nominating someone kill them on the spot?",
+    "dinniman": "Mongo point at bad guy. Bad guy fall down. Mongo very proud. (He means his nomination alone could kill the person nominated.) As a good player, could your nomination kill someone outright?",
+    "voice": "Mongo",
+    "yes": [
+      "golem",
+      "hermit"
+    ],
+    "scope": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "out-tb-know-yourself",
+    "plain": "Do you know exactly which character you are from the very start?",
+    "dinniman": "Seems like the bare minimum, honestly. You get a card, you read the card, you are the card. Not everyone gets that luxury. Do you know exactly what character you are from the start?",
+    "voice": "Carl",
+    "yes": [
+      "butler",
+      "recluse",
+      "saint"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "out-tb-look-evil",
+    "plain": "Might the good team's information wrongly point at you as evil?",
+    "dinniman": "You're a perfectly nice cranky old so-and-so, and yet every clue in town points straight at you. Might the good team's information wrongly mark you as evil?",
+    "voice": "Elle",
+    "yes": [
+      "recluse"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "out-tb-rope-worst",
+    "plain": "Is your execution the worst thing that could happen to your team, not just to you?",
+    "dinniman": "Special event: the Gallows of Consequence! Hang this crawler and the entire party fails the floor! Is being executed the worst thing that could happen to your whole team?",
+    "voice": "The System AI",
+    "yes": [
+      "saint"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "out-bmr-deadly-ability",
+    "plain": "Could your own ability directly cause a death, whether yours or someone else's?",
+    "dinniman": "In this lot, a couple of you are walking funerals. Either the dungeon takes you on a whim, or you take someone with you. Could your own ability directly cause a death?",
+    "voice": "Mordecai",
+    "yes": [
+      "tinker",
+      "moonchild"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "out-bmr-picked-side",
+    "plain": "Could you end up on the evil team just because of who picked you at night?",
+    "dinniman": "So someone reaches for you in the dark, and suddenly you're theirs. Tell the audience how that feels. Could you end up evil simply because of who chose you at night?",
+    "voice": "Odette",
+    "yes": [
+      "goon"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "out-snv-watch-mouth",
+    "plain": "Do you have to be careful never to let on what kind of character you are?",
+    "dinniman": "SILENCE! One careless boast about your true nature and they will string you up! I speak from... no experience. Do you have to be careful never to reveal what kind of character you are?",
+    "voice": "Prepotente",
+    "yes": [
+      "mutant"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "out-snv-afterlife-trigger",
+    "plain": "Does your ability only kick in once you are dead?",
+    "dinniman": "Some people only matter after they're gone. That's sad, but it's also kind of powerful. Does your ability only take effect once you've died?",
+    "voice": "Katia",
+    "yes": [
+      "sweetheart",
+      "klutz",
+      "barber"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "out-car-decide-winner",
+    "plain": "Can your ability decide which team wins the game?",
+    "dinniman": "Among our experimental misfits, a few hold the trophy hostage! A guess, a blunder, a cosmic flip, and the winner changes! Can your ability decide which team wins?",
+    "voice": "The Host",
+    "yes": [
+      "damsel",
+      "politician",
+      "heretic",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "carousel"
+    }
+  },
+  {
+    "id": "out-car-point-at-someone",
+    "plain": "Does your ability let you pick out a specific player?",
+    "dinniman": "Brand engagement tip: audiences love it when you single someone out! Some of our experimental Outsiders get to do exactly that. Does your ability let you pick a specific player?",
+    "voice": "Zev",
+    "yes": [
+      "ogre",
+      "golem",
+      "puzzlemaster",
+      "hermit"
+    ],
+    "scope": {
+      "team": "outsider",
+      "edition": "carousel"
+    }
+  },
+  {
+    "id": "out-la-know-name",
+    "plain": "Do you at least know your character's name, even if what it does is a mystery?",
+    "dinniman": "Out of all the confused people at this table, you're the one who at least got the name tag right. You just don't know what it does. Do you know your character's name, even if not its ability?",
+    "voice": "Carl",
+    "yes": [
+      "amnesiac"
+    ],
+    "scope": [
+      "drunk",
+      "lunatic",
+      "marionette",
+      "amnesiac"
+    ]
+  },
+  {
+    "id": "out-la-think-villain",
+    "plain": "Do you believe you are one of the villains?",
+    "dinniman": "Of all the deluded people here, you're the one who thinks they're EVIL. How dramatic. I almost respect it. Do you believe you're one of the villains?",
+    "voice": "Princess Donut",
+    "yes": [
+      "lunatic"
+    ],
+    "scope": [
+      "drunk",
+      "lunatic",
+      "marionette",
+      "amnesiac"
+    ]
+  },
+  {
+    "id": "out-la-minion-hunt",
+    "plain": "Does your danger depend on a Minion working out who you are?",
+    "dinniman": "Your whole problem is some sneaky little villain squinting at you and figuring it out. Hide, honey. Does your danger depend on a Minion working out who you are?",
+    "voice": "Elle",
+    "yes": [
+      "damsel"
+    ],
+    "scope": [
+      "saint",
+      "klutz",
+      "politician",
+      "damsel",
+      "heretic",
+      "mutant"
+    ]
+  },
+  {
+    "id": "out-la-solo-winner",
+    "plain": "Could you personally end up a winner while your original teammates lose?",
+    "dinniman": "Let's be candid. If your teammates went down in flames, could you still walk away holding a trophy? Could you personally win while your original team loses?",
+    "voice": "Odette",
+    "yes": [
+      "politician"
+    ],
+    "scope": [
+      "saint",
+      "klutz",
+      "politician",
+      "damsel",
+      "heretic",
+      "mutant"
+    ]
+  },
+  {
+    "id": "out-la-one-public-pick",
+    "plain": "Does it all hinge on one public pick you make?",
+    "dinniman": "Out of this sorry bunch, your risk comes down to a single finger pointed in front of everyone. Choose well. Does it all hinge on one public pick you make?",
+    "voice": "Mordecai",
+    "yes": [
+      "klutz"
+    ],
+    "scope": [
+      "saint",
+      "klutz",
+      "politician",
+      "damsel",
+      "heretic",
+      "mutant"
+    ]
+  },
+  {
+    "id": "out-la-fear-rope",
+    "plain": "Is the executioner's rope the thing you fear most?",
+    "dinniman": "Fear audit complete! Some crawlers dread guesses, some dread pointing, and some lie awake thinking about the noose. Is the executioner's rope what you fear most?",
+    "voice": "The System AI",
+    "yes": [
+      "saint",
+      "mutant"
+    ],
+    "scope": [
+      "saint",
+      "klutz",
+      "politician",
+      "damsel",
+      "heretic",
+      "mutant"
+    ]
+  },
+  {
+    "id": "out-la-twist-everyone",
+    "plain": "Does your ability twist the final result for everyone, whoever ends up winning?",
+    "dinniman": "Not one fool, not one team, EVERYONE! Whatever the outcome, you reach in and turn it inside out! Does your ability twist the result for everyone, whoever wins?",
+    "voice": "Samantha",
+    "yes": [
+      "heretic"
+    ],
+    "scope": [
+      "saint",
+      "klutz",
+      "politician",
+      "damsel",
+      "heretic",
+      "mutant"
+    ]
+  },
+  {
+    "id": "out-la-dying-choice",
+    "plain": "When you die, do you get to make a choice yourself?",
+    "dinniman": "Some people die and things just happen around them. Others get one last decision of their own. When you die, do you get to make a choice yourself?",
+    "voice": "Katia",
+    "yes": [
+      "klutz",
+      "moonchild"
+    ],
+    "scope": [
+      "sweetheart",
+      "plaguedoctor",
+      "barber",
+      "hatter",
+      "klutz",
+      "moonchild"
+    ]
+  },
+  {
+    "id": "out-la-death-hands-evil",
+    "plain": "Does your death hand a decision to the evil team?",
+    "dinniman": "Upon your demise, the villains receive a CHOICE! A delicious, scheming choice! Oh, how I envy them. Does your death hand the evil team a decision?",
+    "voice": "Prepotente",
+    "yes": [
+      "barber",
+      "hatter"
+    ],
+    "scope": [
+      "sweetheart",
+      "plaguedoctor",
+      "barber",
+      "hatter",
+      "klutz",
+      "moonchild"
+    ]
+  },
+  {
+    "id": "out-la-storyteller-call",
+    "plain": "When you die, does the Storyteller get to decide what happens next?",
+    "dinniman": "Our showrunners love a little creative control! For some contestants, the moment they die, the Storyteller takes the wheel. When you die, does the Storyteller decide what happens next?",
+    "voice": "Zev",
+    "yes": [
+      "sweetheart",
+      "plaguedoctor"
+    ],
+    "scope": [
+      "sweetheart",
+      "plaguedoctor",
+      "barber",
+      "hatter",
+      "klutz",
+      "moonchild"
+    ]
+  },
+  {
+    "id": "out-la-good-underneath",
+    "plain": "Whatever the clues say about you, are you genuinely on the good team?",
+    "dinniman": "Between the two of you who show up as the wrong thing, one is actually on our side. Are you genuinely good, no matter what the clues say?",
+    "voice": "Carl",
+    "yes": [
+      "recluse"
+    ],
+    "scope": [
+      "recluse",
+      "spy"
+    ]
+  },
+  {
+    "id": "out-la-switch-at-end",
+    "plain": "Does your change of side only happen once the game is over?",
+    "dinniman": "Some turncoats switch mid-show. One saves it for the final credits, and steals the win! Does your change of side only happen when the game ends?",
+    "voice": "The Host",
+    "yes": [
+      "politician"
+    ],
+    "scope": [
+      "goon",
+      "ogre",
+      "politician",
+      "cultleader",
+      "snakecharmer"
+    ]
+  },
+  {
+    "id": "out-la-targeted-switch",
+    "plain": "Does your side change because someone else targets you with their ability?",
+    "dinniman": "Out of the turncoats, you're the one who doesn't choose. Somebody uses their ability on you, and you're theirs. Does your side change because someone else targets you?",
+    "voice": "Mordecai",
+    "yes": [
+      "goon"
+    ],
+    "scope": [
+      "goon",
+      "ogre",
+      "politician",
+      "cultleader",
+      "snakecharmer"
+    ]
+  },
+  {
+    "id": "out-la-first-night-friend",
+    "plain": "Do you pick one person on the very first night and take their side for the rest of the game?",
+    "dinniman": "Night one, you pick your person, and that's that. No take-backs, no peeking at what side they're on. Do you choose one player on the first night and stick with their side for good?",
+    "voice": "Elle",
+    "yes": [
+      "ogre"
+    ],
+    "scope": [
+      "goon",
+      "ogre",
+      "politician",
+      "cultleader",
+      "snakecharmer"
+    ]
   }
 ]

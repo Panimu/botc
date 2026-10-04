@@ -630,8 +630,8 @@
   },
   {
     "id": "tfl-demon-takes-a-night-off",
-    "plain": "Would you make a rule that the Demon must skip at least one attack during the game?",
-    "dinniman": "It buzzes! It walks downstairs! It forces the monster to take a night off! Fun for all ages! Would you make a rule that the Demon must skip at least one attack during the game?",
+    "plain": "Would you make a standing rule that the Demon must voluntarily skip at least one attack during the game?",
+    "dinniman": "It buzzes! It walks downstairs! It forces the monster to take a night off! Fun for all ages! Would you make a standing rule that the Demon must voluntarily skip at least one attack during the game?",
     "voice": "The Host",
     "yes": [
       "toymaker"
@@ -842,6 +842,752 @@
     "voice": "Elle",
     "yes": [
       "zenomancer"
+    ]
+  },
+  {
+    "id": "tfl-drifter-with-a-weapon",
+    "plain": "As someone just passing through, would you like the power to kill a player with your own hand?",
+    "dinniman": "You wander into town with a bedroll and a bad reputation, and you're allowed to end somebody personally. KILL! KILL! As someone just passing through, would you like the power to kill a player with your own hand?",
+    "voice": "Samantha",
+    "yes": [
+      "gunslinger",
+      "gangster",
+      "gnome"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-night-visitor",
+    "plain": "As a late arrival, would you like to wake at night and secretly pick a player to use your ability on?",
+    "dinniman": "Everyone else is asleep. You're up, tiptoeing round the circle, choosing a target. Very creepy. Very effective. As a late arrival, would you like to wake at night and secretly pick a player to use your ability on?",
+    "voice": "Carl",
+    "yes": [
+      "thief",
+      "bureaucrat",
+      "harlot",
+      "bonecollector"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-daylight-decisions",
+    "plain": "As a traveller, would you rather make your ability's choices during the day than at night?",
+    "dinniman": "Some wanderers skulk about after dark. Others do their business in broad daylight with the whole town watching. Bold. Would get you killed on my floor. As a traveller, would you rather make your ability's choices during the day than at night?",
+    "voice": "Mordecai",
+    "yes": [
+      "butcher",
+      "cacklejack",
+      "gunslinger",
+      "matron",
+      "gangster",
+      "judge",
+      "gnome"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-rewrite-the-ballot",
+    "plain": "As a traveller, would you like to change who may nominate or vote for the entire town?",
+    "dinniman": "New in town and already rewriting the constitution! The Founding Fathers would be appalled! The audience is THRILLED! As a traveller, would you like to change who may nominate or vote for the entire town?",
+    "voice": "The Host",
+    "yes": [
+      "bishop",
+      "voudon"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-one-perfect-moment",
+    "plain": "As a traveller, would you rather save a single big moment for the right time than act every day or night?",
+    "dinniman": "Patience is a weapon. One shot, one moment, and you've got to pick it right. It's terrifying, but it's also kind of beautiful. As a traveller, would you rather save a single big moment for the right time than act every day or night?",
+    "voice": "Katia",
+    "yes": [
+      "bonecollector",
+      "judge"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-living-say-so",
+    "plain": "As a traveller, would you need a living player's agreement before your ability can work?",
+    "dinniman": "Consent forms! Initial here, sign there, and only then do the fun things happen! Legal is so proud of you. As a traveller, would you need a living player's agreement before your ability can work?",
+    "voice": "Zev",
+    "yes": [
+      "harlot",
+      "gangster"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-drifter-learns",
+    "plain": "As a traveller, would you like your ability to teach you something private about another player?",
+    "dinniman": "Oh, I'm not here for the scenery, darling. I'm here for the dirt. Who are they? Which side? Spill it. As a traveller, would you like your ability to teach you something private about another player?",
+    "voice": "Odette",
+    "yes": [
+      "harlot",
+      "beggar"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-own-neck-on-the-line",
+    "plain": "As a traveller, is your ability entirely about whether you yourself get removed from the game by the town?",
+    "dinniman": "Some travellers have shiny powers. Some just have a very personal relationship with the noose. As a traveller, is your ability entirely about whether you yourself get removed from the game by the town?",
+    "voice": "Carl",
+    "yes": [
+      "deviant",
+      "scapegoat"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-ability-tinkerer",
+    "plain": "As a traveller, does your ability give, boost, restore or change someone's character or ability?",
+    "dinniman": "Upgrade station now open! Grants! Buffs! Resurrections of skills! Unexpected transformations! Warranty void if used! As a traveller, does your ability give, boost, restore or change someone's character or ability?",
+    "voice": "The System AI",
+    "yes": [
+      "barista",
+      "bonecollector",
+      "apprentice",
+      "cacklejack"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-manners-matter",
+    "plain": "As a traveller, are you fussy about where people sit and how they conduct themselves?",
+    "dinniman": "Elbows OFF the table. Sit where you are TOLD. No sneaking off for secret chats. Honestly, the manners in this dungeon. As a traveller, are you fussy about where people sit and how they conduct themselves?",
+    "voice": "Princess Donut",
+    "yes": [
+      "matron"
+    ],
+    "scope": {
+      "team": "traveller"
+    }
+  },
+  {
+    "id": "tfl-who-may-speak",
+    "plain": "As a Fabled, are you mostly concerned with who may talk and when?",
+    "dinniman": "Some helpers fix the numbers. Some fix the deaths. You fix the noise. As a Fabled, are you mostly concerned with who may talk and when?",
+    "voice": "Mordecai",
+    "yes": [
+      "buddhist",
+      "hellslibrarian"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-kinder-table",
+    "plain": "As a Fabled, are you mainly there to make the game kinder to new players?",
+    "dinniman": "Everyone remembers their first time down here. It's awful. If your whole purpose is making that first game a little less awful, I think that's lovely. As a Fabled, are you mainly there to make the game kinder to new players?",
+    "voice": "Katia",
+    "yes": [
+      "angel",
+      "buddhist"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-new-decision",
+    "plain": "As a Fabled, would you hand players a new decision that any of them might get to make, which the normal rules don't offer?",
+    "dinniman": "New interactive feature! Viewers, I mean players, now get a shiny extra button to press! What does it do? Press it and find out! As a Fabled, would you hand players a new decision that any of them might get to make, which the normal rules don't offer?",
+    "voice": "The System AI",
+    "yes": [
+      "doomsayer",
+      "duchess",
+      "fiddler"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-adjust-the-roster",
+    "plain": "As a Fabled, would you adjust how many Outsiders or evil players can end up in the game?",
+    "dinniman": "Headcount management is a core brand value! Too many villains, too few misfits, it's all just numbers on a spreadsheet. As a Fabled, would you adjust how many Outsiders or evil players can end up in the game?",
+    "voice": "Zev",
+    "yes": [
+      "sentinel",
+      "spiritofivory"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-planted-untruth",
+    "plain": "As a Fabled, would you deliberately build a falsehood into the game that is never publicly corrected?",
+    "dinniman": "One lie, darling, tucked in among the truths like a razor in a cake. And nobody will ever stand up and confess to it. As a Fabled, would you deliberately build a falsehood into the game that is never publicly corrected?",
+    "voice": "Odette",
+    "yes": [
+      "fibbin",
+      "duchess",
+      "revolutionary"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-demon-gets-a-choice",
+    "plain": "As a Fabled, would you give the Demon a special decision that the normal rules don't allow?",
+    "dinniman": "THE BEAST SHALL CHOOSE! It shall be granted powers beyond the rules! I, too, would like powers beyond the rules! As a Fabled, would you give the Demon a special decision that the normal rules don't allow?",
+    "voice": "Prepotente",
+    "yes": [
+      "fiddler",
+      "toymaker"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-storyteller-conduct",
+    "plain": "As a Fabled, is your effect about the Storyteller's own behaviour rather than the players'?",
+    "dinniman": "Most rules keep the contestants in line. Yours keeps the guy behind the screen honest, or at least honestly bad at his job. As a Fabled, is your effect about the Storyteller's own behaviour rather than the players'?",
+    "voice": "Elle",
+    "yes": [
+      "deusexfiasco"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-aimed-at-the-finish",
+    "plain": "As a Fabled, is your influence aimed squarely at how the game ends?",
+    "dinniman": "Forget the middle. Nobody remembers the middle. It's the FINALE that makes a star, darling. As a Fabled, is your influence aimed squarely at how the game ends?",
+    "voice": "Princess Donut",
+    "yes": [
+      "ferryman",
+      "fiddler"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-vague-menace",
+    "plain": "As a Fabled, do you keep players in line with the threat that something bad might happen to them?",
+    "dinniman": "Something bad. Maybe. Could be nothing! Could be your head rolling across the floor! The suspense is DELICIOUS! As a Fabled, do you keep players in line with the threat that something bad might happen to them?",
+    "voice": "Samantha",
+    "yes": [
+      "angel",
+      "hellslibrarian"
+    ],
+    "scope": {
+      "team": "fabled"
+    }
+  },
+  {
+    "id": "tfl-before-the-first-night",
+    "plain": "As a hidden rule, do you only decide who receives which character, or how many copies of a character there are?",
+    "dinniman": "Your work is done before anybody even opens their envelope. After that, you just sit back and watch the chaos you planted. As a hidden rule, do you only decide who receives which character, or how many copies of a character there are?",
+    "voice": "Carl",
+    "yes": [
+      "gardener",
+      "pope"
+    ],
+    "scope": {
+      "team": "loric"
+    }
+  },
+  {
+    "id": "tfl-nominee-defence",
+    "plain": "As a rule-bender, do you change how nominees get to defend themselves?",
+    "dinniman": "Welcome to the trial segment! Our nominees have a brand-new way to plead for their lives tonight, and the audience is ready to judge! As a rule-bender, do you change how nominees get to defend themselves?",
+    "voice": "The Host",
+    "yes": [
+      "bigwig",
+      "ventriloquist"
+    ],
+    "scope": {
+      "team": "loric"
+    }
+  },
+  {
+    "id": "tfl-speech-limits",
+    "plain": "As a hidden rule, would you restrict how players are allowed to speak?",
+    "dinniman": "Mongo... hm. (Mongo is very quiet now. Mongo has learned that some rules decide who can talk and how much, and Mongo does not want trouble.) As a hidden rule, would you restrict how players are allowed to speak?",
+    "voice": "Mongo",
+    "yes": [
+      "bigwig",
+      "godofug"
+    ],
+    "scope": {
+      "team": "loric"
+    }
+  },
+  {
+    "id": "tfl-after-the-death",
+    "plain": "As a hidden rule, do you change what happens to a player at the moment they die?",
+    "dinniman": "Death down here usually just means a loot box and a sad little ghost. Your rule makes it mean something else. As a hidden rule, do you change what happens to a player at the moment they die?",
+    "voice": "Mordecai",
+    "yes": [
+      "hindu",
+      "tor"
+    ],
+    "scope": {
+      "team": "loric"
+    }
+  },
+  {
+    "id": "tfl-reward-the-act",
+    "plain": "As a rule-bender, would you reward players for putting on a performance?",
+    "dinniman": "Grunt like a caveman, act like someone you're not, and the game gives you a prize. I've seen worse game design. Not much worse. As a rule-bender, would you reward players for putting on a performance?",
+    "voice": "Elle",
+    "yes": [
+      "godofug",
+      "ventriloquist"
+    ],
+    "scope": {
+      "team": "loric"
+    }
+  },
+  {
+    "id": "tfl-roster-numbers",
+    "plain": "Behind the Storyteller's screen, would you change how many Outsiders or evil players there can be?",
+    "dinniman": "Population control, but make it fun! A misfit added here, a villain capped there. Spreadsheets are the real final boss! Behind the Storyteller's screen, would you change how many Outsiders or evil players there can be?",
+    "voice": "The System AI",
+    "yes": [
+      "sentinel",
+      "spiritofivory"
+    ],
+    "scope": {
+      "team": [
+        "fabled",
+        "loric"
+      ]
+    }
+  },
+  {
+    "id": "tfl-narrator-not-trustworthy",
+    "plain": "Behind the screen, would you have the Storyteller openly get things wrong or tell lies?",
+    "dinniman": "The person running this whole show, standing up and lying, or fumbling it in public. Now THAT is television. Behind the screen, would you have the Storyteller openly get things wrong or tell lies?",
+    "voice": "Odette",
+    "yes": [
+      "deusexfiasco",
+      "knaves"
+    ],
+    "scope": {
+      "team": [
+        "fabled",
+        "loric"
+      ]
+    }
+  },
+  {
+    "id": "tfl-control-the-talking",
+    "plain": "As a rule-bender behind the Storyteller, would you control when or how players are allowed to talk?",
+    "dinniman": "Who speaks, when they speak, how many sounds they're allowed to make. Honestly, some of these rules are just a very elaborate 'shut up'. As a rule-bender behind the Storyteller, would you control when or how players are allowed to talk?",
+    "voice": "Carl",
+    "yes": [
+      "buddhist",
+      "hellslibrarian",
+      "bigwig",
+      "godofug"
+    ],
+    "scope": {
+      "team": [
+        "fabled",
+        "loric"
+      ]
+    }
+  },
+  {
+    "id": "tfl-ballot-tweaker",
+    "plain": "Behind the screen, would you change who may vote or how many votes somebody gets?",
+    "dinniman": "Voting reform! Very serious! Very civic! Some ghosts get a ballot, some guy in a hat gets two! Behind the screen, would you change who may vote or how many votes somebody gets?",
+    "voice": "Zev",
+    "yes": [
+      "ferryman",
+      "godofug"
+    ],
+    "scope": {
+      "team": [
+        "fabled",
+        "loric"
+      ]
+    }
+  },
+  {
+    "id": "tfl-setup-only",
+    "plain": "Behind the screen, is all your work done before the first night, deciding who gets which character or how many of a kind are dealt?",
+    "dinniman": "Some of us meddle all game. You do your mischief at the dealing table and then put your feet up. Respect. Behind the screen, is all your work done before the first night, deciding who gets which character or how many of a kind are dealt?",
+    "voice": "Elle",
+    "yes": [
+      "sentinel",
+      "gardener",
+      "pope"
+    ],
+    "scope": {
+      "team": [
+        "fabled",
+        "loric"
+      ]
+    }
+  },
+  {
+    "id": "tfl-bonus-information",
+    "plain": "Behind the screen, would you hand some players extra secret information about the game in progress?",
+    "dinniman": "Free intel! Bonus scrolls! Exclusive spoilers for selected contestants! Terms and conditions apply! Behind the screen, would you hand some players extra secret information about the game in progress?",
+    "voice": "The System AI",
+    "yes": [
+      "duchess",
+      "zenomancer",
+      "stormcatcher",
+      "toymaker"
+    ],
+    "scope": {
+      "team": [
+        "fabled",
+        "loric"
+      ]
+    }
+  },
+  {
+    "id": "tfl-boost-not-sabotage",
+    "plain": "Of the two vote-meddlers, would you rather inflate someone's vote than turn it against them?",
+    "dinniman": "Both of you mess with ballots overnight, fine. But one of you adds and one of you subtracts. Which kind of crook are you? Of the two vote-meddlers, would you rather inflate someone's vote than turn it against them?",
+    "voice": "Carl",
+    "yes": [
+      "bureaucrat"
+    ],
+    "scope": [
+      "thief",
+      "bureaucrat"
+    ]
+  },
+  {
+    "id": "tfl-nightly-pick-me-up",
+    "plain": "Would you rather your boost come round every night than be a single favour for the whole game?",
+    "dinniman": "Loyalty card or one golden ticket, darling? One of these brings coffee every single night. The other brings one spooky miracle and then closes up shop. Would you rather your boost come round every night than be a single favour for the whole game?",
+    "voice": "Odette",
+    "yes": [
+      "barista"
+    ],
+    "scope": [
+      "barista",
+      "bonecollector"
+    ]
+  },
+  {
+    "id": "tfl-kill-for-a-friend",
+    "plain": "Of these daytime killers, would you rather kill to protect a teammate than to settle a score?",
+    "dinniman": "Some killers shoot voters. Some do favours for neighbours. And some only strike when someone comes after their buddy. Of these daytime killers, would you rather kill to protect a teammate than to settle a score?",
+    "voice": "Mordecai",
+    "yes": [
+      "gnome"
+    ],
+    "scope": [
+      "gunslinger",
+      "gangster",
+      "gnome"
+    ]
+  },
+  {
+    "id": "tfl-needs-a-nod",
+    "plain": "Of these daytime killers, would you only strike once the person beside you has given the go-ahead?",
+    "dinniman": "Proper organised crime runs on handshakes and favours! Very traditional! Excellent for brand loyalty! Of these daytime killers, would you only strike once the person beside you has given the go-ahead?",
+    "voice": "Zev",
+    "yes": [
+      "gangster"
+    ],
+    "scope": [
+      "gunslinger",
+      "gangster",
+      "gnome"
+    ]
+  },
+  {
+    "id": "tfl-mercy-from-the-bench",
+    "plain": "Of these two execution-forcers, would you want the power to spare the accused as well as condemn them?",
+    "dinniman": "One of you can only ever say 'hang them'. The other gets to say 'let them go', too. Mercy is a choice, and it's the harder one. Of these two execution-forcers, would you want the power to spare the accused as well as condemn them?",
+    "voice": "Katia",
+    "yes": [
+      "judge"
+    ],
+    "scope": [
+      "judge",
+      "vizier"
+    ]
+  },
+  {
+    "id": "tfl-dead-vote-at-the-end",
+    "plain": "Would you rather wait until the final day to give the dead their voice back?",
+    "dinniman": "Ghosts voting all game long, or one grand ghostly return for the season finale? Ratings say finale. Always finale. Would you rather wait until the final day to give the dead their voice back?",
+    "voice": "The Host",
+    "yes": [
+      "ferryman"
+    ],
+    "scope": [
+      "voudon",
+      "ferryman"
+    ]
+  },
+  {
+    "id": "tfl-silence-the-veterans",
+    "plain": "Of the silence-keepers, would you single out experienced players to keep quiet?",
+    "dinniman": "Not everybody shuts up. Just the know-it-alls with fifty games under their belts. I like it already. Of the silence-keepers, would you single out experienced players to keep quiet?",
+    "voice": "Elle",
+    "yes": [
+      "buddhist"
+    ],
+    "scope": [
+      "buddhist",
+      "hellslibrarian",
+      "bigwig"
+    ]
+  },
+  {
+    "id": "tfl-one-voice-at-a-time",
+    "plain": "Of the silence-keepers, would you let exactly one chosen person speak while everyone else waits?",
+    "dinniman": "One speaker. One spotlight. Everybody else waits their turn like civilised people. I have NEVER understood why this isn't how every conversation works. Of the silence-keepers, would you let exactly one chosen person speak while everyone else waits?",
+    "voice": "Princess Donut",
+    "yes": [
+      "bigwig"
+    ],
+    "scope": [
+      "buddhist",
+      "hellslibrarian",
+      "bigwig"
+    ]
+  },
+  {
+    "id": "tfl-punish-not-shelter",
+    "plain": "As a protector of newcomers, would you rather punish whoever harms them than give them room to speak?",
+    "dinniman": "There's a gentle way to look after beginners and a SMITING way. I strongly recommend the smiting way. As a protector of newcomers, would you rather punish whoever harms them than give them room to speak?",
+    "voice": "Samantha",
+    "yes": [
+      "angel"
+    ],
+    "scope": [
+      "angel",
+      "buddhist"
+    ]
+  },
+  {
+    "id": "tfl-ask-to-learn",
+    "plain": "Of these two who ask permission, would you ask in order to learn something rather than to kill?",
+    "dinniman": "You both need a yes from somebody. One of you wants a secret. The other wants a body. Do you want the secret? Of these two who ask permission, would you ask in order to learn something rather than to kill?",
+    "voice": "Carl",
+    "yes": [
+      "harlot"
+    ],
+    "scope": [
+      "harlot",
+      "gangster"
+    ]
+  },
+  {
+    "id": "tfl-character-not-side",
+    "plain": "Of these two curious travellers, would you rather learn someone's exact character than just their alignment?",
+    "dinniman": "Good or evil is the boring headline, darling. I want the full biography, the real name, the dirty laundry. Of these two curious travellers, would you rather learn someone's exact character than just their alignment?",
+    "voice": "Odette",
+    "yes": [
+      "harlot"
+    ],
+    "scope": [
+      "harlot",
+      "beggar"
+    ]
+  },
+  {
+    "id": "tfl-control-the-accusations",
+    "plain": "Of these two rule-rewriting travellers, would you rather control nominations than votes?",
+    "dinniman": "Pick your poison: decide who ends up in the dock, or decide who gets to raise a hand. THE ACCUSATION IS EVERYTHING! Of these two rule-rewriting travellers, would you rather control nominations than votes?",
+    "voice": "Prepotente",
+    "yes": [
+      "bishop"
+    ],
+    "scope": [
+      "bishop",
+      "voudon"
+    ]
+  },
+  {
+    "id": "tfl-save-your-own-skin",
+    "plain": "Of these two, would you rather protect yourself from removal than risk dying in someone else's place?",
+    "dinniman": "One of these guys cracks jokes to stay alive. The other volunteers to hang for his friends. I know which one I'd rather have a beer with, but that's not the question. Of these two, would you rather protect yourself from removal than risk dying in someone else's place?",
+    "voice": "Mordecai",
+    "yes": [
+      "deviant"
+    ],
+    "scope": [
+      "deviant",
+      "scapegoat"
+    ]
+  },
+  {
+    "id": "tfl-transform-while-alive",
+    "plain": "Of the character-changers, would you set off a transformation without having to die first?",
+    "dinniman": "Some transformations only trigger off your corpse. Others you can fire off whenever, while still breathing. Breathing is good. Of the character-changers, would you set off a transformation without having to die first?",
+    "voice": "Katia",
+    "yes": [
+      "cacklejack",
+      "pithag"
+    ],
+    "scope": [
+      "cacklejack",
+      "pithag",
+      "barber",
+      "hatter"
+    ]
+  },
+  {
+    "id": "tfl-storyteller-picks-the-victim",
+    "plain": "Of the character-changers, would you like the Storyteller, not you or your team, to decide exactly who transforms?",
+    "dinniman": "You pull the lever. The Storyteller decides whose face melts. That's not your problem, that's management's problem. Of the character-changers, would you like the Storyteller, not you or your team, to decide exactly who transforms?",
+    "voice": "The System AI",
+    "yes": [
+      "cacklejack"
+    ],
+    "scope": [
+      "cacklejack",
+      "pithag",
+      "barber",
+      "hatter"
+    ]
+  },
+  {
+    "id": "tfl-everyone-in-the-dark",
+    "plain": "Would you rather the whole table be ignorant of their own characters, not just you?",
+    "dinniman": "If I've got to stumble around not knowing what I am, so does everyone else. Fair's fair. Would you rather the whole table be ignorant of their own characters, not just you?",
+    "voice": "Elle",
+    "yes": [
+      "tor"
+    ],
+    "scope": [
+      "tor",
+      "amnesiac"
+    ]
+  },
+  {
+    "id": "tfl-honest-mistakes",
+    "plain": "Would you rather the Storyteller's slip-ups be owned up to than be deliberate, ongoing lies?",
+    "dinniman": "A public apology is a PR opportunity! A lying narrator is a lawsuit! Both are content, but one of them tests better. Would you rather the Storyteller's slip-ups be owned up to than be deliberate, ongoing lies?",
+    "voice": "Zev",
+    "yes": [
+      "deusexfiasco"
+    ],
+    "scope": [
+      "deusexfiasco",
+      "knaves"
+    ]
+  },
+  {
+    "id": "tfl-falsehood-for-a-guest",
+    "plain": "Of these three sources of false information, would you have the lie land on someone who has come to visit you?",
+    "dinniman": "You invited them in. You poured the tea. And one of them leaves with a lie in their pocket. Of these three sources of false information, would you have the lie land on someone who has come to visit you?",
+    "voice": "Odette",
+    "yes": [
+      "duchess"
+    ],
+    "scope": [
+      "fibbin",
+      "duchess",
+      "revolutionary"
+    ]
+  },
+  {
+    "id": "tfl-false-registration",
+    "plain": "Of these three sources of false information, would you have the falsehood be about how a player registers?",
+    "dinniman": "Not a lie told to anyone, exactly. Just a player who shows up wrong, once, on somebody's reading. Sneaky. Of these three sources of false information, would you have the falsehood be about how a player registers?",
+    "voice": "Carl",
+    "yes": [
+      "revolutionary"
+    ],
+    "scope": [
+      "fibbin",
+      "duchess",
+      "revolutionary"
+    ]
+  },
+  {
+    "id": "tfl-every-good-twin",
+    "plain": "Would you allow duplicates of any good character, rather than just one particular character?",
+    "dinniman": "Twins, triplets, a whole choir of identical heroes, and not just one kind! MORE! MORE OF EVERYTHING! Would you allow duplicates of any good character, rather than just one particular character?",
+    "voice": "Prepotente",
+    "yes": [
+      "pope"
+    ],
+    "scope": [
+      "pope",
+      "villageidiot"
+    ]
+  },
+  {
+    "id": "tfl-new-form-after-death",
+    "plain": "Of these two, would you bring the dead back as a different kind of character from what they were?",
+    "dinniman": "Resurrection is boring if they come back exactly the same. New hat, new name, new career on the road. Of these two, would you bring the dead back as a different kind of character from what they were?",
+    "voice": "The Host",
+    "yes": [
+      "hindu"
+    ],
+    "scope": [
+      "hindu",
+      "professor"
+    ]
+  },
+  {
+    "id": "tfl-assign-everyone",
+    "plain": "Would you rather assign every player's character than just decide who the Minions are?",
+    "dinniman": "Picking your henchmen is fine. Picking EVERYONE is art. I would hand-place every single one of my fans. Would you rather assign every player's character than just decide who the Minions are?",
+    "voice": "Princess Donut",
+    "yes": [
+      "gardener"
+    ],
+    "scope": [
+      "gardener",
+      "kazali"
+    ]
+  },
+  {
+    "id": "tfl-encore-after-execution",
+    "plain": "Of these two double-nominators, would you only want your extra nomination after an execution has already happened?",
+    "dinniman": "One of you gets two nominations after dying. The other waits for the first hanging to finish, then calls for an encore. Of these two double-nominators, would you only want your extra nomination after an execution has already happened?",
+    "voice": "Mordecai",
+    "yes": [
+      "butcher"
+    ],
+    "scope": [
+      "butcher",
+      "banshee"
+    ]
+  },
+  {
+    "id": "tfl-earned-truth",
+    "plain": "Of these two truth-benders, would you rather players earn true information than gamble on which narrator to trust?",
+    "dinniman": "Mongo work hard! Mongo get prize! (Mongo would much rather complete a task and get a real answer than guess which of two shifty humans is lying.) Of these two truth-benders, would you rather players earn true information than gamble on which narrator to trust?",
+    "voice": "Mongo",
+    "yes": [
+      "zenomancer"
+    ],
+    "scope": [
+      "zenomancer",
+      "knaves"
     ]
   }
 ]

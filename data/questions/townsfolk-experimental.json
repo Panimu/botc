@@ -444,7 +444,7 @@
   {
     "id": "tfx-legacy-of-labour",
     "plain": "Would you like your humble trade to live on in someone else after you're gone?",
-    "dinniman": "MONGO! Mongo very sad when friend die. But friend's work keeps going, new friend picks it up! (Mongo is asking: would you like your humble job to live on after you die?)",
+    "dinniman": "MONGO! Mongo very sad when friend die. But friend's work keeps going, new friend picks it up! Mongo wants to know: would you like your humble trade to live on in someone else after you die?",
     "voice": "Mongo",
     "yes": [
       "farmer"
@@ -548,5 +548,780 @@
     "yes": [
       "atheist"
     ]
+  },
+  {
+    "id": "tfx-ability-could-kill-you",
+    "plain": "As a Townsfolk, could your own ability end up killing you?",
+    "dinniman": "Most Townsfolk powers are safe as houses. Yours comes with a little skull printed on the box. Achievement pending: Hoist By Own Petard! Could your own ability be the thing that kills you?",
+    "voice": "The System AI",
+    "yes": [
+      "gambler",
+      "acrobat",
+      "grandmother"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-neighbours-matter",
+    "plain": "Of the Townsfolk, does your ability care about the two players sitting right next to you?",
+    "dinniman": "Location, location, location! For some of the town, the folks on either elbow are the whole story. Does your ability revolve around your two immediate neighbours?",
+    "voice": "The Host",
+    "yes": [
+      "empath",
+      "cultleader",
+      "tealady"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-shield-someone-nightly",
+    "plain": "As a Townsfolk, would you like to pick players each night and keep them safe from death?",
+    "dinniman": "Every night you choose who gets tucked in safe and sound while the monsters prowl. It's a lot of responsibility, and it matters. Would you like to pick people to protect from death each night?",
+    "voice": "Katia",
+    "yes": [
+      "monk",
+      "innkeeper"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-automatically-hard-to-kill",
+    "plain": "As a Townsfolk, does your ability automatically protect you personally from dying at night?",
+    "dinniman": "Some of you are just tough to put down. No choosing, no praying, the rules simply refuse to let the night take you easily. Is your ability a built-in shield against dying at night?",
+    "voice": "Mordecai",
+    "yes": [
+      "soldier",
+      "sailor",
+      "fool",
+      "mayor"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-single-shot-saved",
+    "plain": "Of the Townsfolk, is your ability a single use that you can save for the moment of your choosing?",
+    "dinniman": "One bullet. You decide when to fire it. Not on day one because the rules say so, not when somebody nominates you, but when YOU feel like it. Is your ability a one-shot you can hold onto until the right moment?",
+    "voice": "Carl",
+    "yes": [
+      "engineer",
+      "nightwatchman",
+      "huntsman",
+      "fisherman",
+      "courtier",
+      "seamstress",
+      "philosopher",
+      "professor",
+      "artist",
+      "slayer"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-special-public-move",
+    "plain": "As a Townsfolk, does your ability have you make a special public guess, claim or shot during the day?",
+    "dinniman": "Stand up! Speak up! The whole circle stops to watch your big public moment: a shot, a guess, a juicy claim. Darling, does your ability make you take centre stage like that in daylight?",
+    "voice": "Odette",
+    "yes": [
+      "slayer",
+      "juggler",
+      "alsaahir",
+      "gossip"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-private-daytime-chat",
+    "plain": "Of the Townsfolk, does your ability involve slipping away for a private daytime chat with the Storyteller?",
+    "dinniman": "While everyone else is yelling, you sneak off for a quiet word with management. Very exclusive. Very VIP. Does your ability send you for private daytime chats with the Storyteller?",
+    "voice": "Princess Donut",
+    "yes": [
+      "savant",
+      "artist",
+      "fisherman",
+      "amnesiac"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-nightly-drinks-round",
+    "plain": "As a Townsfolk, would you like to choose players each night knowing your choice will make someone drunk?",
+    "dinniman": "Every night you pick your company and somebody in the party winds up legless because of it. Might be them, might be you, might be the other one. Cheers! Do you like a nightly choice that gets someone drunk?",
+    "voice": "Elle",
+    "yes": [
+      "sailor",
+      "innkeeper"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-reward-after-death",
+    "plain": "Of the Townsfolk, does your ability give you something useful only once you're dead?",
+    "dinniman": "Dying is usually the end of your usefulness. Not for you! Death is when the goodies arrive. Post-mortem loot drop, baby! Is your ability something you only get to enjoy after you die?",
+    "voice": "The System AI",
+    "yes": [
+      "ravenkeeper",
+      "sage",
+      "banshee"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-start-with-role-name",
+    "plain": "Of those who start knowing something, does your starting information name a specific character?",
+    "dinniman": "Night one, you get a little gift. Some gifts are numbers, some are directions, some are just names of people. Yours has an actual character written on it. Does your starting information name a specific character?",
+    "voice": "Katia",
+    "yes": [
+      "investigator",
+      "washerwoman",
+      "librarian",
+      "grandmother",
+      "pixie"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "grandmother",
+      "librarian",
+      "shugenja",
+      "pixie",
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfx-start-with-number-or-direction",
+    "plain": "Of those who start knowing something, does your starting information come as a number or a direction rather than names?",
+    "dinniman": "Some starting clues have names on them. Yours is a number, or an arrow. Cold, abstract, maddening. Do you start with a count or a direction instead of any names?",
+    "voice": "Carl",
+    "yes": [
+      "chef",
+      "clockmaker",
+      "shugenja"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "grandmother",
+      "librarian",
+      "shugenja",
+      "pixie",
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfx-guaranteed-evil-among-names",
+    "plain": "Of these start-knowing roles, is at least one of the players you start knowing guaranteed to be evil?",
+    "dinniman": "You've been handed some names. The question is whether there's a snake in the basket. For one of you, there definitely is. Is one of your starting names certain to be evil?",
+    "voice": "Mordecai",
+    "yes": [
+      "noble"
+    ],
+    "scope": [
+      "knight",
+      "steward",
+      "noble"
+    ]
+  },
+  {
+    "id": "tfx-all-names-good",
+    "plain": "Of these start-knowing roles, can you trust every player you start knowing to be good?",
+    "dinniman": "Total certainty! No Minions sneaking in, no fine print! Everyone you start knowing is a genuine, verified goodie! Can you trust every name you begin with to be good?",
+    "voice": "Zev",
+    "yes": [
+      "steward"
+    ],
+    "scope": [
+      "knight",
+      "steward",
+      "noble"
+    ]
+  },
+  {
+    "id": "tfx-starting-info-about-demon",
+    "plain": "Of these start-knowing roles, is your starting information specifically about who isn't the Demon?",
+    "dinniman": "Forget good and evil in general. Your information is all about one particular monster, and who it definitely isn't. Is your starting knowledge specifically about the Demon?",
+    "voice": "Elle",
+    "yes": [
+      "knight"
+    ],
+    "scope": [
+      "knight",
+      "steward",
+      "noble"
+    ]
+  },
+  {
+    "id": "tfx-alters-the-setup",
+    "plain": "Of the experimental Townsfolk, can your presence change the setup, altering which characters or alignments are in play?",
+    "dinniman": "When YOU join the cast, the whole production may get rewritten! Extra characters, missing villains, someone switching teams before the show even starts! Can your mere presence change the setup of the game?",
+    "voice": "Prepotente",
+    "yes": [
+      "bountyhunter",
+      "balloonist",
+      "villageidiot",
+      "huntsman",
+      "choirboy",
+      "atheist"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "carousel"
+    }
+  },
+  {
+    "id": "tfx-could-win-outright",
+    "plain": "Of the Townsfolk, could your ability win the game outright for your team?",
+    "dinniman": "Forget slowly grinding down the opposition. Some of you have a big red button marked VICTORY. Ratings gold! Could your ability end the game in your team's favour all by itself?",
+    "voice": "Zev",
+    "yes": [
+      "alsaahir",
+      "cultleader",
+      "atheist",
+      "mayor"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-borrowed-powers",
+    "plain": "As a Townsfolk, would you like to use another character's ability as your own?",
+    "dinniman": "Why settle for your own powers when somebody else's are RIGHT THERE? Borrowing is just stealing with better manners. Would you like to use another character's ability as if it were yours?",
+    "voice": "Princess Donut",
+    "yes": [
+      "pixie",
+      "alchemist",
+      "cannibal",
+      "philosopher"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-pick-who-dies",
+    "plain": "Of the Townsfolk, can you pick a specific player for your ability to kill?",
+    "dinniman": "YES! A Townsfolk with a KILL BUTTON! Point at someone and let them have it! Can you choose exactly who your ability tries to kill?",
+    "voice": "Samantha",
+    "yes": [
+      "slayer",
+      "lycanthrope"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-alignment-in-flux",
+    "plain": "As a Townsfolk, could your ability change your own alignment?",
+    "dinniman": "You start as one of the nice ones. You might not finish that way, and your own ability is the reason. Plot twist! Could your ability flip which team you're on?",
+    "voice": "Odette",
+    "yes": [
+      "cultleader",
+      "snakecharmer"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-storytellers-opinion",
+    "plain": "Of the Townsfolk, does your ability give you the Storyteller's opinion about the game, or advice on playing it, rather than facts?",
+    "dinniman": "Not facts. Not numbers. Just what the person behind the screen reckons about the game: their gut, their hunch, their tips. Is the Storyteller's opinion or advice about the game what your ability hands you?",
+    "voice": "Carl",
+    "yes": [
+      "highpriestess",
+      "general",
+      "fisherman"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-needs-specific-partner",
+    "plain": "As a Townsfolk, is your ability built around one particular other character being in the game?",
+    "dinniman": "Your whole job hinges on one specific character showing up. No partner, no purpose. Like a duet with an empty stage. Is your ability built around a particular other character being in play?",
+    "voice": "Katia",
+    "yes": [
+      "huntsman",
+      "choirboy"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-double-vote",
+    "plain": "Of the Townsfolk, would you like the power to vote twice on the same nomination?",
+    "dinniman": "MONGO VOTE! MONGO VOTE AGAIN! Mongo has discovered democracy and would like more of it. Do you want to be able to vote twice on a single nomination?",
+    "voice": "Mongo",
+    "yes": [
+      "banshee"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-scramble-evil-knowledge",
+    "plain": "As a Townsfolk, does your ability scramble what the evil team knows about who is on their team?",
+    "dinniman": "Evil's first-night team meeting is supposed to go smoothly: nods, winks, knives. You make it a disaster. Does your ability mess up what the evil team knows about its own members?",
+    "voice": "Mordecai",
+    "yes": [
+      "magician",
+      "poppygrower"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-demon-always-knows",
+    "plain": "Of these characters, does the Demon automatically know who you are, whatever you do?",
+    "dinniman": "Some of you only get spotted if you're careless. One of you is spotted the instant the lights go down, no matter what. Does the Demon automatically know who you are?",
+    "voice": "The Host",
+    "yes": [
+      "king"
+    ],
+    "scope": [
+      "king",
+      "choirboy",
+      "exorcist",
+      "nightwatchman"
+    ]
+  },
+  {
+    "id": "tfx-in-the-dark-about-self",
+    "plain": "As a Townsfolk, are you kept in the dark about what your own ability actually is?",
+    "dinniman": "Everybody else got an instruction manual. You got a blank page and a shrug. Are you left in the dark about what your own ability does?",
+    "voice": "Elle",
+    "yes": [
+      "amnesiac"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-ever-learn-anything",
+    "plain": "Of these three, can your ability ever teach you something?",
+    "dinniman": "Two of you are all about messing with the villains' heads. The third, if they're patient and the bodies pile up, actually gets to learn things. Can your ability ever give you information?",
+    "voice": "Katia",
+    "yes": [
+      "king"
+    ],
+    "scope": [
+      "king",
+      "poppygrower",
+      "magician"
+    ]
+  },
+  {
+    "id": "tfx-death-changes-evil-knowledge",
+    "plain": "Of these three, does your death change what the evil team knows?",
+    "dinniman": "When you fall, does anything shift for the bad guys? Any curtain lifted, any secret spilled? Oh, I do hope so. Does your death change what the evil team knows?",
+    "voice": "Samantha",
+    "yes": [
+      "poppygrower"
+    ],
+    "scope": [
+      "king",
+      "poppygrower",
+      "magician"
+    ]
+  },
+  {
+    "id": "tfx-nightly-chooser",
+    "plain": "Of these nightly roles, do you choose a player every night?",
+    "dinniman": "Some night owls just sit there and receive their messages. Others have to point at somebody, every single night. Do you choose a player each night?",
+    "voice": "Carl",
+    "yes": [
+      "preacher",
+      "villageidiot",
+      "acrobat",
+      "lycanthrope"
+    ],
+    "scope": [
+      "highpriestess",
+      "balloonist",
+      "general",
+      "preacher",
+      "villageidiot",
+      "king",
+      "cultleader",
+      "acrobat",
+      "lycanthrope"
+    ]
+  },
+  {
+    "id": "tfx-nightly-life-on-line",
+    "plain": "As a Townsfolk, would you put your own life on the line every night?",
+    "dinniman": "Every night, the same game: roll the dice with your own neck. Mordecai has seen plenty of people do this. Most of them were brave. Most of them are dead. Would you risk your life every single night?",
+    "voice": "Mordecai",
+    "yes": [
+      "gambler",
+      "acrobat"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-more-than-one-of-you",
+    "plain": "Of the Townsfolk, could there end up being more than one player with your role?",
+    "dinniman": "Exclusive? Unique? One of a kind? Not you, sweetie! There could be a whole matching set! Could more than one player end up with your role?",
+    "voice": "Princess Donut",
+    "yes": [
+      "villageidiot",
+      "farmer"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-no-demon-tonight",
+    "plain": "As a Townsfolk, can your ability directly stop the Demon waking or killing that night, without making anyone drunk or poisoned?",
+    "dinniman": "Not by drugging anyone, not by guarding one door, but by flat-out cancelling the Demon's evening. Night off for the monster! Can your ability directly stop the Demon from waking or killing that night?",
+    "voice": "The System AI",
+    "yes": [
+      "princess",
+      "lycanthrope",
+      "exorcist"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-guess-out-loud",
+    "plain": "Of these guessers, do you make your guesses publicly, out loud?",
+    "dinniman": "Some people whisper their guesses in a dark room. Others announce them to the entire circle and let everyone see them be wrong. Do you make your guesses out loud in public?",
+    "voice": "Odette",
+    "yes": [
+      "juggler",
+      "alsaahir"
+    ],
+    "scope": [
+      "juggler",
+      "alsaahir",
+      "amnesiac",
+      "gambler"
+    ]
+  },
+  {
+    "id": "tfx-storyteller-at-night",
+    "plain": "Of those who get insight from the Storyteller, does yours arrive at night?",
+    "dinniman": "Some of you corner the Storyteller in daylight. Some of you get your little message slipped under the door at night. Does your Storyteller-given insight come at night?",
+    "voice": "Zev",
+    "yes": [
+      "highpriestess",
+      "general"
+    ],
+    "scope": [
+      "highpriestess",
+      "general",
+      "fisherman",
+      "artist",
+      "savant",
+      "amnesiac"
+    ]
+  },
+  {
+    "id": "tfx-storyteller-once",
+    "plain": "Of those who get insight from the Storyteller, is your contact with them a one-time thing?",
+    "dinniman": "One visit. One question or one piece of advice. Then the door closes forever. Do you only get a single consultation with the Storyteller?",
+    "voice": "Mordecai",
+    "yes": [
+      "fisherman",
+      "artist"
+    ],
+    "scope": [
+      "highpriestess",
+      "general",
+      "fisherman",
+      "artist",
+      "savant",
+      "amnesiac"
+    ]
+  },
+  {
+    "id": "tfx-borrowed-from-start",
+    "plain": "Of the ability-borrowers, do you hold your borrowed power from the very start of the game?",
+    "dinniman": "No waiting, no funerals, no choosing. You walk in already carrying someone else's kind of power. Do you start the game holding your borrowed ability?",
+    "voice": "Carl",
+    "yes": [
+      "alchemist"
+    ],
+    "scope": [
+      "pixie",
+      "alchemist",
+      "cannibal",
+      "philosopher"
+    ]
+  },
+  {
+    "id": "tfx-borrow-needs-a-death",
+    "plain": "Of the ability-borrowers, does someone have to die before you get your borrowed power?",
+    "dinniman": "Inheritance, darling! Somebody has to shuffle off before the goodies are yours. Does a player need to die before you get your new power?",
+    "voice": "Princess Donut",
+    "yes": [
+      "pixie",
+      "cannibal"
+    ],
+    "scope": [
+      "pixie",
+      "alchemist",
+      "cannibal",
+      "philosopher"
+    ]
+  },
+  {
+    "id": "tfx-pick-your-power",
+    "plain": "Of the ability-borrowers, do you get to choose exactly which power you take?",
+    "dinniman": "A whole shop of powers, and you get to browse the shelves and pick one. Shopping spree! Do you choose exactly which ability you borrow?",
+    "voice": "Elle",
+    "yes": [
+      "philosopher"
+    ],
+    "scope": [
+      "pixie",
+      "alchemist",
+      "cannibal",
+      "philosopher"
+    ]
+  },
+  {
+    "id": "tfx-demon-must-kill-you",
+    "plain": "Of those whose ability is triggered by a death, must the Demon specifically kill you?",
+    "dinniman": "It's not enough to die. It has to be the Demon, and it has to be you. Fussy! Does your ability only kick in if the Demon itself kills you?",
+    "voice": "The Host",
+    "yes": [
+      "sage",
+      "banshee"
+    ],
+    "scope": [
+      "ravenkeeper",
+      "sage",
+      "banshee",
+      "farmer",
+      "poppygrower",
+      "choirboy"
+    ]
+  },
+  {
+    "id": "tfx-death-hands-on-role",
+    "plain": "Of those whose ability is triggered by a death, does your death hand your role to someone else?",
+    "dinniman": "When you drop, the job doesn't. Someone else wakes up wearing your hat. Does your death pass your role on to another player?",
+    "voice": "Katia",
+    "yes": [
+      "farmer"
+    ],
+    "scope": [
+      "ravenkeeper",
+      "sage",
+      "banshee",
+      "farmer",
+      "poppygrower",
+      "choirboy"
+    ]
+  },
+  {
+    "id": "tfx-nightly-info-names-player",
+    "plain": "Of these nightly information roles, does your information point you at a particular player?",
+    "dinniman": "Is your nightly message a face in the crowd, or something vaguer, like a score or a role with no owner? Does your nightly information point at a specific player?",
+    "voice": "Odette",
+    "yes": [
+      "highpriestess",
+      "balloonist",
+      "villageidiot"
+    ],
+    "scope": [
+      "highpriestess",
+      "balloonist",
+      "general",
+      "king",
+      "villageidiot"
+    ]
+  },
+  {
+    "id": "tfx-info-needs-bodies",
+    "plain": "Of these nightly information roles, does your information depend on how many players have died?",
+    "dinniman": "Your information pipe is connected to the graveyard. No bodies, no news. Lots of bodies, lovely news! Does your nightly information depend on the death count?",
+    "voice": "Samantha",
+    "yes": [
+      "king"
+    ],
+    "scope": [
+      "highpriestess",
+      "balloonist",
+      "general",
+      "king",
+      "villageidiot"
+    ]
+  },
+  {
+    "id": "tfx-own-execution-triggers",
+    "plain": "Of these execution-minded roles, does your ability trigger when you yourself are executed?",
+    "dinniman": "Plenty of you care who gets strung up. But for one of you, the magic only happens when it's your own neck in the rope. Does your ability trigger on your own execution?",
+    "voice": "Mordecai",
+    "yes": [
+      "atheist"
+    ],
+    "scope": [
+      "princess",
+      "cannibal",
+      "atheist",
+      "undertaker",
+      "minstrel",
+      "virgin"
+    ]
+  },
+  {
+    "id": "tfx-rewrite-someones-character",
+    "plain": "As a Townsfolk, can your ability change another player's character?",
+    "dinniman": "You don't just learn what people are. You can make them into something else. Character reassignment, effective immediately! Can your ability change someone else's character?",
+    "voice": "The System AI",
+    "yes": [
+      "huntsman",
+      "engineer",
+      "snakecharmer",
+      "farmer"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-certain-evil-from-start",
+    "plain": "Of the Townsfolk, do you start the game knowing for certain that one particular player is evil?",
+    "dinniman": "No 'one of these two', no 'one of these three'. One name, definitely evil, from the very first night. Do you begin the game certain that a specific player is evil?",
+    "voice": "Carl",
+    "yes": [
+      "bountyhunter"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
+  },
+  {
+    "id": "tfx-entirely-passive",
+    "plain": "Of the experimental Townsfolk, is your ability entirely passive, with nothing to choose, wake for, guess or learn?",
+    "dinniman": "No waking. No pointing. No guessing. No learning. Your ability just sits there humming quietly in the background. Is yours completely passive like that?",
+    "voice": "Elle",
+    "yes": [
+      "farmer",
+      "magician",
+      "poppygrower",
+      "atheist"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "carousel"
+    }
+  },
+  {
+    "id": "tfx-info-topped-up",
+    "plain": "Of these start-knowing roles, will you get more of the same kind of information when a certain player dies?",
+    "dinniman": "Most first-night clues are one and done. Yours comes with a refill: lose the name you've got, and a new one turns up. Will a certain player's death bring you more of the same information?",
+    "voice": "The Host",
+    "yes": [
+      "bountyhunter"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "noble",
+      "shugenja",
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfx-seating-not-people",
+    "plain": "Of these start-knowing roles, is your starting information about the seating rather than any particular player?",
+    "dinniman": "BEHOLD THE CIRCLE! Not who, but WHERE! Your clue is about the shape of the table itself! Is your starting information about seating rather than particular people?",
+    "voice": "Prepotente",
+    "yes": [
+      "shugenja"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "noble",
+      "shugenja",
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfx-know-your-own-ability",
+    "plain": "Of these two, do you know exactly what your own ability does?",
+    "dinniman": "One of you gets nightly whispers about who to talk to. The other is still trying to work out what their job even is. Do you know exactly what your own ability does?",
+    "voice": "Zev",
+    "yes": [
+      "highpriestess"
+    ],
+    "scope": [
+      "highpriestess",
+      "amnesiac"
+    ]
+  },
+  {
+    "id": "tfx-storyteller-every-cycle",
+    "plain": "Of these four, do you hear from the Storyteller every day or every night?",
+    "dinniman": "Regular check-ins with the boss. Daily, nightly, like clockwork. Some of us only get one meeting all game. Do you hear from the Storyteller every day or every night?",
+    "voice": "Carl",
+    "yes": [
+      "highpriestess",
+      "amnesiac",
+      "general"
+    ],
+    "scope": [
+      "highpriestess",
+      "amnesiac",
+      "fisherman",
+      "general"
+    ]
+  },
+  {
+    "id": "tfx-guess-which-is-which",
+    "plain": "As a Townsfolk, does your ability involve guessing what other players are?",
+    "dinniman": "Guess who! You point at people and name what you think they are, and the game punishes or rewards you accordingly. Does your ability involve guessing what other players are?",
+    "voice": "Princess Donut",
+    "yes": [
+      "gambler",
+      "juggler",
+      "alsaahir"
+    ],
+    "scope": {
+      "team": "townsfolk"
+    }
   }
 ]
