@@ -65,6 +65,7 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 - **Everyone bluffs and persuades in Clocktower.** Every evil player lies, and many good characters' wiki tips advise bluffing to bait the Demon (the Soldier, Sage, Ravenkeeper, Banshee, Farmer, Fool, Mayor and Choirboy). The Lunatic bluffs because it believes it's the Demon. Personality questions about lying or persuading need ability-specific wording.
 - **The Engineer, Nightwatchman and Courtier** have explicit early-versus-late advice on the wiki, so "saves it for later" isn't a fact about them.
 - **"One-shot" includes abilities that trigger once by themselves** (user ruling): the Sage, Sweetheart, Barber, Klutz, Virgin and Fool are one-shots, just like once-per-game actions. Use `takesEffectOnce` for general "only works once" questions. Keep `oneShot` only for questions about *choosing* when to use a single action.
+- **"Passive" means no player acts or chooses because of your ability, you or anyone else** (user ruling). The Barber isn't passive: the Demon swaps characters because of it. The same goes for the Hatter, Damsel, Boomdandy, Boffin and Beggar. Storyteller decisions don't count, so the Sage and Sweetheart are passive.
 - **The madness rule** means trying to convince the group you're a character, with a penalty if you don't. Handing out bluffs (Snitch, Summoner) isn't madness, and neither is the Lunatic believing it's the Demon.
 
 ## Shape of the pool

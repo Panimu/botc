@@ -103,8 +103,8 @@
   },
   {
     "id": "xp-hands-off-passive",
-    "plain": "Does your ability work entirely on its own, never asking you to choose, guess or announce anything?",
-    "dinniman": "Mordecai's tip of the day: the abilities that never ask you anything are the ones you can't screw up. No picking, no guessing, no grand speeches. Is your ability completely hands-off like that?",
+    "plain": "Does your ability work entirely on its own, with no player, you or anyone else, ever choosing or acting because of it?",
+    "dinniman": "Mordecai's tip of the day: the abilities that never make anyone do anything are the ones nobody can screw up. No picking, no guessing, no grand speeches, not from you and not from anyone else. Is your ability completely hands-off like that?",
     "voice": "Mordecai",
     "yes": {
       "neverChooses": true
@@ -112,8 +112,8 @@
   },
   {
     "id": "xp-hands-off-autopilot",
-    "plain": "Does your power simply run itself, with no decisions for you to make at all?",
-    "dinniman": "Zev here! Our research shows that a lot of viewers love a contestant who's just along for the ride while their power does the talking. Zero decisions, maximum vibes! Does your power run itself with no decisions from you?",
+    "plain": "Does your power simply run itself, with nobody at the table ever making a decision because of it?",
+    "dinniman": "Zev here! Our research shows that a lot of viewers love a contestant who's just along for the ride while their power does the talking. Zero decisions from anyone, maximum vibes! Does your power run itself with nobody at the table deciding anything because of it?",
     "voice": "Zev",
     "yes": {
       "neverChooses": true
@@ -121,8 +121,8 @@
   },
   {
     "id": "xp-hands-off-decider",
-    "plain": "Does your ability give you decisions to make, such as picking someone, guessing, or choosing whether to act?",
-    "dinniman": "I didn't sign up to make choices. Nobody signs up for anything here. But some abilities put a decision in your lap anyway, and then it's your fault. Does your ability hand you decisions to make?",
+    "plain": "Does your ability lead to someone making a decision or taking an action, whether that is you or another player?",
+    "dinniman": "I didn't sign up to make choices. Nobody signs up for anything here. But some abilities put a decision in someone's lap anyway, yours or somebody else's. Does your ability lead to someone at the table having to decide or act?",
     "voice": "Carl",
     "yes": {
       "neverChooses": false
@@ -130,8 +130,8 @@
   },
   {
     "id": "xp-hands-off-evil",
-    "plain": "Are you a Minion or Demon whose ability never asks you to choose anything?",
-    "dinniman": "The most TERRIFYING villains never lift a paw, darling. They simply exist and things go wrong around them. Are you a Minion or Demon whose ability never asks you to choose a thing?",
+    "plain": "Are you a Minion or Demon whose ability never makes anyone at the table choose or act?",
+    "dinniman": "The most TERRIFYING villains never lift a paw, darling, and never make anyone ELSE lift one either. They simply exist and things go wrong around them. Are you a Minion or Demon whose ability never has anyone choose or act?",
     "voice": "Princess Donut",
     "yes": {
       "neverChooses": true,
@@ -143,8 +143,8 @@
   },
   {
     "id": "xp-hands-off-good",
-    "plain": "Are you a Townsfolk or Outsider whose ability is completely passive?",
-    "dinniman": "There's no shame in a quiet power. Some of the strongest people I know never had to choose a target. Are you a Townsfolk or Outsider with a completely passive ability?",
+    "plain": "Are you a Townsfolk or Outsider whose ability is completely passive, with no player ever acting because of it?",
+    "dinniman": "There's no shame in a quiet power. Some of the strongest people I know never had to choose a target, and never made anyone else choose one either. Are you a Townsfolk or Outsider with a completely passive ability?",
     "voice": "Katia",
     "yes": {
       "neverChooses": true,
@@ -156,8 +156,8 @@
   },
   {
     "id": "xp-hands-off-still-woken",
-    "plain": "Even though you never have to choose anything, are you still woken on most nights?",
-    "dinniman": "Ha! The cruellest trick in the dungeon: they wake you up every single night and then you don't even get to DO anything. You just sit there and receive. Are you still woken most nights despite never choosing?",
+    "plain": "Even though nobody ever has to act because of your ability, are you still woken on most nights?",
+    "dinniman": "Ha! The cruellest trick in the dungeon: they wake you up every single night and then nobody gets to DO anything. You just sit there and receive. Are you still woken most nights even though your ability never makes anyone act?",
     "voice": "Samantha",
     "yes": {
       "neverChooses": true,
@@ -195,8 +195,8 @@
   },
   {
     "id": "xp-hands-off-dark-side",
-    "plain": "Among the characters who never choose anything, are you one of the Minions or Demons?",
-    "dinniman": "Sitting still and looking innocent, are we? The audience adores a quiet one, darling, but they adore a quiet VILLAIN even more. Are you a Minion or Demon who never has to choose?",
+    "plain": "Among the characters with completely passive abilities, are you one of the Minions or Demons?",
+    "dinniman": "Sitting still and looking innocent, are we? The audience adores a quiet one, darling, but they adore a quiet VILLAIN even more. Among the completely passive, are you a Minion or Demon?",
     "voice": "Odette",
     "yes": {
       "neverChooses": true,
@@ -211,8 +211,8 @@
   },
   {
     "id": "xp-hands-off-death-trigger",
-    "plain": "Do you make no choices at all and simply wait for a death to trigger your ability?",
-    "dinniman": "MONGO! Mongo lies very still. Mongo waits. Mongo only jumps up when something dies. (Translation: do you make no choices and just wait for a death to set your ability off?)",
+    "plain": "Is your ability completely passive, with nobody ever acting because of it, and does it wait for a death to set it off?",
+    "dinniman": "MONGO! Mongo lies very still. Mongo waits. Nobody has to do anything. Mongo only jumps up when something dies. (Translation: is your ability completely passive, with nobody acting because of it, and does it wait for a death to set it off?)",
     "voice": "Mongo",
     "yes": {
       "neverChooses": true,
@@ -516,8 +516,8 @@
   },
   {
     "id": "xp-backfire-passive",
-    "plain": "Is your drawback part of an ability that never asks you to choose anything?",
-    "dinniman": "Some of you take a risk when you act. Others never get to act at all, and the trouble just arrives on its own, like weather. Is your drawback built into an ability that never asks you to choose?",
+    "plain": "Is your drawback part of a completely passive ability, one that never makes anyone choose or act?",
+    "dinniman": "Some of you take a risk when you act. Others never get to act at all, and nor does anyone else; the trouble just arrives on its own, like weather. Is your drawback built into a completely passive ability like that?",
     "voice": "Elle",
     "yes": {
       "harmsOwnTeam": true,

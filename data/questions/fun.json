@@ -243,8 +243,8 @@
   },
   {
     "id": "fun-weather-role",
-    "plain": "Is your ability completely passive, never asking you to make a single decision?",
-    "dinniman": "My dream role: show up, sit down, never decide anything, and let the game happen to me like weather. Is your ability completely passive, never asking you to make a single decision?",
+    "plain": "Is your ability completely passive, with no player, you included, ever making a decision because of it?",
+    "dinniman": "My dream role: show up, sit down, nobody decides anything because of me, and the game happens around me like weather. Is your ability completely passive, with no player, me included, ever making a decision because of it?",
     "voice": "Carl",
     "yes": {
       "neverChooses": true
