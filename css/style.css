@@ -574,6 +574,11 @@ button:focus-visible {
   gap: 0.4rem;
 }
 
+.history > summary { list-style: none; }
+.history > summary::-webkit-details-marker { display: none; }
+.history > summary::before { content: "▸"; }
+.history[open] > summary::before { content: "▾"; }
+
 .history ol { margin: 0.25rem 0 0; padding-left: 1.75rem; }
 .history li { margin-bottom: 0.4rem; }
 .history .reply { font-weight: 700; }
