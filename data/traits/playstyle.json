@@ -1,6 +1,6 @@
 {
   "wakesMostNights": {
-    "definition": "As part of its own printed ability's normal routine, the player is woken by the Storyteller on most nights of the game (every night, or every night after the first) to act or to receive information. Waking only on night 1, only once, only on a condition that usually doesn't hold (the King, Godfather, Zombuul, Cult Leader's alignment change), only after death, or only to meet the evil team doesn't count. Characters whose waking depends on a borrowed, believed or script-dependent ability (Alchemist, Amnesiac, Cannibal, Apprentice, Drunk, Marionette, Hermit) are not tagged. Lil' Monsta counts, because the Minions wake every night to choose its babysitter.",
+    "definition": "As part of its own printed ability's normal routine, the player acts or receives information on most nights of the game (every night, or every night after the first). Waking only on night 1, only after death, only to meet the evil team, or only on a condition that usually doesn't hold (the King, Godfather, Zombuul, Cult Leader's alignment change) doesn't count. Once-per-game characters (Assassin, Seamstress, Professor and so on) don't count even though the Storyteller wakes them each night until they use it, because they decline on all but one night. The Undertaker counts (it wakes after every execution, which is most days). Characters whose waking depends on a borrowed, believed or script-dependent ability (Alchemist, Amnesiac, Cannibal, Apprentice, Philosopher, Pixie, Drunk, Marionette, Hermit) are not tagged. Lil' Monsta counts, because the Minions wake every night to choose its babysitter.",
     "yes": [
       "empath",
       "highpriestess",
@@ -56,7 +56,7 @@
     ]
   },
   "neverChooses": {
-    "definition": "The character's own ability is fully passive: it never asks its player to make any decision, at night or by day. No choosing players, characters or options, no optional actions, guesses, statements, claims or performances, and no special use of nominations or votes. The Mutant's madness requirement and choices made by other players or the Storyteller don't count against it. Characters who may hold, borrow or believe they have a choosing ability (Alchemist, Apprentice, Cannibal, Pixie, Amnesiac, Drunk, Marionette, Hermit, Lunatic) are not tagged.",
+    "definition": "The character's own printed ability is fully passive: it never asks its player to make any decision, at night or by day. No choosing players, characters or options, no optional actions, guesses, statements, claims or performances, and no special use of nominations or votes. The Mutant's madness requirement and choices made by other players or the Storyteller don't count against it. The Drunk and Marionette are tagged on their printed ability (which asks nothing, matching their untagged wakesMostNights and choosesPlayersAtNight). Characters who may hold, borrow or gain a choosing ability, or must decide whether to be mad (Alchemist, Apprentice, Cannibal, Pixie, Amnesiac, Philosopher, Hermit), and the Lunatic, who chooses at night, are not tagged.",
     "yes": [
       "steward",
       "knight",
@@ -121,7 +121,9 @@
       "beggar",
       "scapegoat",
       "bishop",
-      "voudon"
+      "voudon",
+      "drunk",
+      "marionette"
     ]
   },
   "boundToAnotherPlayer": {
@@ -140,7 +142,7 @@
     ]
   },
   "choosesPlayersAtNight": {
-    "definition": "The character's own printed ability has its player choose one or more players (not characters, not options) at night, even if only once, conditionally or on death (Ravenkeeper, Godfather, Zombuul, Ogre's first night). Lil' Monsta counts, because the Minions choose its babysitter each night. Choosing characters (Engineer, Courtier, Philosopher, Ojo), choosing by day, and abilities that depend on a borrowed, believed or script-dependent ability (Alchemist, Apprentice, Cannibal, Drunk, Marionette, Hermit) don't count.",
+    "definition": "The character's own printed ability has its player choose one or more players (not characters, not options) at night, even if only once, conditionally or on death (Ravenkeeper, Godfather, Zombuul, Ogre's first night). Lil' Monsta counts, because the Minions choose its babysitter each night. Choosing characters (Engineer, Courtier, Philosopher, Ojo), choosing by day, and abilities that depend on a borrowed, gained, believed or script-dependent ability (Alchemist, Apprentice, Cannibal, Philosopher's gained ability, Pixie, Amnesiac, Drunk, Marionette, Hermit) don't count.",
     "yes": [
       "sailor",
       "preacher",
@@ -195,7 +197,7 @@
     ]
   },
   "harmsOwnTeam": {
-    "definition": "The printed ability (excluding [setup] text) has a built-in drawback that can work against the player's own team: it can kill, execute, drunk or poison the player or a teammate (the Minstrel's table-wide drunkenness counts), lose their team the game, restrict their own voting, give the opposing team information or power (the Poppy Grower's death lets evil find each other), or make them misjudge or misplay for their side. Every Outsider qualifies. Unreliable information alone (e.g. the Fortune Teller's red herring) and redirecting a death that was already coming (the Mayor) don't count.",
+    "definition": "The printed ability (excluding [setup] text) has a built-in drawback that can work against the player's own team: it can kill, execute, drunk or poison the player or a teammate (the Minstrel's table-wide drunkenness counts), lose their team the game, restrict their own voting, give the opposing team information or power (the Poppy Grower's death lets evil find each other; the Al-Hadikhia's choices are announced to everyone; the Shabaloth's victims may be regurgitated), or make them misjudge or misplay for their side. Every Outsider qualifies. Unreliable information alone (e.g. the Fortune Teller's red herring), redirecting a death that was already coming (the Mayor) and risks that come only from the player's own choice of target (the Nightwatchman) don't count.",
     "yes": [
       "grandmother",
       "sailor",
@@ -244,11 +246,13 @@
       "leviathan",
       "harlot",
       "beggar",
-      "scapegoat"
+      "scapegoat",
+      "shabaloth",
+      "alhadikhia"
     ]
   },
   "needsDeathToAct": {
-    "definition": "The ability lies dormant until a death: it does nothing at all until the character itself dies or is executed (Saint, Goblin, Boomdandy), or until a particular death happens (an executee, the Demon, the King, a Minion by execution), or it can only work on players who are already dead (Professor, Bone Collector). Abilities with any effect while everyone lives (start-of-game info, ongoing protection, nightly kills) don't count.",
+    "definition": "The ability lies dormant until a death: it does nothing at all until the character itself dies or is executed (Saint, Goblin, Boomdandy), or until a particular death happens (an executee, the Demon, the King, a Minion by execution, the day's first execution for the Butcher), or it can only work on players who are already dead (Professor, Bone Collector). Abilities with any effect while everyone lives (start-of-game info, ongoing protection, nightly kills) don't count.",
     "yes": [
       "undertaker",
       "professor",
@@ -271,7 +275,8 @@
       "mastermind",
       "boomdandy",
       "goblin",
-      "bonecollector"
+      "bonecollector",
+      "butcher"
     ]
   },
   "changesTheRules": {

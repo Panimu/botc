@@ -88,7 +88,8 @@
     "yes": [
       "nodashii",
       "vigormortis",
-      "xaan"
+      "xaan",
+      "villageidiot"
     ],
     "scope": {
       "makesOthersDrunkOrPoisoned": true
@@ -455,8 +456,8 @@
   },
   {
     "id": "xm-wrong-notes",
-    "plain": "Does simply having you in the game, with no drink or poison involved, mean other players are told untrue things?",
-    "dinniman": "Somebody's grandmother is taking notes in the corner. Lovely handwriting. Totally wrong, and you didn't even have to spike her tea. Does simply having you in the game mean other players are told untrue things, with no drink or poison involved?",
+    "plain": "Even with no drink or poison involved, can having you in the game lead to other players being told untrue things?",
+    "dinniman": "Somebody's grandmother is taking notes in the corner. Lovely handwriting. Totally wrong, and nobody spiked her tea. Can having you in the game lead to other players being told untrue things, with no drink or poison involved?",
     "voice": "Elle",
     "yes": {
       "feedsFalseInfo": true
@@ -574,8 +575,7 @@
     "voice": "Mongo",
     "yes": [
       "marionette",
-      "ogre",
-      "hermit"
+      "ogre"
     ]
   },
   {
@@ -605,13 +605,14 @@
   },
   {
     "id": "xm-nk-secret-hangover",
-    "plain": "Of those kept in the dark about themselves, do you know your character but might be secretly drunk or poisoned?",
-    "dinniman": "You know your name. You know your job. What you don't know is whether it's actually working tonight. Of you lot kept in the dark, do you know your character but might be secretly drunk or poisoned?",
+    "plain": "Of those kept in the dark about themselves, do you know your character, but might your own ability leave you secretly drunk or poisoned?",
+    "dinniman": "You know your name. You know your job. What you don't know is whether your own ability has quietly switched you off tonight. Of you lot kept in the dark, do you know your character, but might your own ability leave you secretly drunk or poisoned?",
     "voice": "Katia",
     "yes": [
       "sailor",
       "villageidiot",
-      "cannibal"
+      "cannibal",
+      "innkeeper"
     ],
     "scope": {
       "mayNotKnowTheTruth": true
@@ -724,6 +725,7 @@
       "sailor",
       "villageidiot",
       "cannibal",
+      "innkeeper",
       "hermit"
     ]
   },

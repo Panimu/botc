@@ -1,8 +1,8 @@
 [
   {
     "id": "xs-vote-rewrites-the-show-of-hands",
-    "plain": "Does your ability change the voting on nominations: who may or must vote, how votes are cast or counted, or what the vote leads to?",
-    "dinniman": "Every day these people raise their hands like it's a fair election. It is not. Some of us quietly rewrite the rules of the show of hands. Does your ability change who may or must vote, how votes are cast or counted, or what voting leads to?",
+    "plain": "When a nomination goes to a vote, does your ability change who may or must vote, how votes are cast or counted, whether it passes, or what happens to voters?",
+    "dinniman": "Every day these people raise their hands like it's a fair election. It is not. Some of us quietly rewrite the rules of the show of hands. When a nomination goes to a vote, does your ability change who may or must vote, how votes are cast or counted, whether it passes, or what happens to voters?",
     "voice": "Carl",
     "yes": {
       "affectsVoting": true
@@ -10,8 +10,8 @@
   },
   {
     "id": "xs-vote-what-raised-hands-do",
-    "plain": "Would you like your ability to change how the show of hands on a nomination works, rather than just watching who voted?",
-    "dinniman": "PATCH NOTE: raising your hand is no longer a harmless civic gesture in the presence of certain contestants. Spectators merely take notes. You, though, could rewire the whole ritual. Would you like your ability to change how the show of hands on a nomination works?",
+    "plain": "When a nomination goes to a show of hands, would you like your ability to change how that vote works, rather than just watching who voted?",
+    "dinniman": "PATCH NOTE: raising your hand is no longer a harmless civic gesture in the presence of certain contestants. Spectators merely take notes. You, though, could rewire the whole ritual. When a nomination goes to a show of hands, would you like your ability to change how that vote works?",
     "voice": "The System AI",
     "yes": {
       "affectsVoting": true
@@ -28,8 +28,8 @@
   },
   {
     "id": "xs-nom-bends-the-nominating-rules",
-    "plain": "Does your ability change who can nominate or how often, or give certain nominations consequences of their own, beyond telling you who nominated?",
-    "dinniman": "Pointing at someone and saying 'I nominate' should be simple. Somebody always makes it complicated. Knowing who pointed doesn't count, mind. Does your ability change who can nominate or how often, or give certain nominations consequences of their own?",
+    "plain": "Does your ability change who can nominate or be nominated, or how often, or give certain nominations consequences of their own, beyond telling you who nominated?",
+    "dinniman": "Pointing at someone and saying 'I nominate' should be simple. Somebody always makes it complicated. Knowing who pointed doesn't count, mind. Does your ability change who can nominate or be nominated, or how often, or give certain nominations consequences of their own?",
     "voice": "Mordecai",
     "yes": {
       "affectsNominations": true
@@ -46,8 +46,8 @@
   },
   {
     "id": "xs-nom-tangled-in-nominations",
-    "plain": "Is your ability tangled up in nominations, meaning who makes them, how many there are, or what they set off, not just learning about them?",
-    "dinniman": "I do NOT simply nominate, peasants. When a star of my calibre points a paw, something HAPPENS. Some of you have abilities wrapped right around nominations, and I mean actually doing something, not just gossiping about them later. Is your ability tangled up in who nominates, how many times, or what a nomination sets off?",
+    "plain": "Is your ability tangled up in nominations, meaning who makes them, who can receive them, how many there are, or what they set off, not just learning about them?",
+    "dinniman": "I do NOT simply nominate, peasants. When a star of my calibre points a paw, something HAPPENS. Some of you have abilities wrapped right around nominations, and I mean actually doing something, not just gossiping about them later. Is your ability tangled up in who nominates, who can be nominated, how many times, or what a nomination sets off?",
     "voice": "Princess Donut",
     "yes": {
       "affectsNominations": true
@@ -82,8 +82,8 @@
   },
   {
     "id": "xs-guess-name-what-they-are",
-    "plain": "Is your ability a guessing game, where you name what you think someone is, or what you are, and it matters whether you're right?",
-    "dinniman": "There's something brave about saying your guess out loud, even just to yourself, and then living with whether you were right. Not attacking, not testing, just naming it. Is your ability a guessing game where you name what you think someone is, or what you are, and being right matters?",
+    "plain": "Leaving aside simply choosing a player for your ability to act on, is your ability a guessing game where you name what someone is, or what you are, and being right matters?",
+    "dinniman": "There's something brave about saying your guess out loud, even just to yourself, and then living with whether you were right. Not attacking, not testing, not just picking a player, but naming it. Is your ability a guessing game where you name what you think someone is, or what you are, and being right matters?",
     "voice": "Katia",
     "yes": {
       "guesses": true
@@ -100,8 +100,8 @@
   },
   {
     "id": "xs-guess-scored-on-hunches",
-    "plain": "Do you want your ability to score your guesses about hidden roles, and reward or punish you for them?",
-    "dinniman": "Kid, everyone in this game has hunches. The difference is whether the game actually marks your homework. Some of you put a guess down and the dungeon grades it, good or bad. Do you want your ability to score your guesses about hidden roles and make you live with the result?",
+    "plain": "Beyond simply choosing a player for your ability to act on, do you want your ability to score your guesses about hidden roles, and reward or punish you for them?",
+    "dinniman": "Kid, everyone in this game has hunches. Pointing your ability at a suspect isn't what I mean. Some of you put an actual guess down and the dungeon grades it, good or bad. Do you want your ability to score your guesses about hidden roles and make you live with the result?",
     "voice": "Mordecai",
     "yes": {
       "guesses": true
@@ -109,8 +109,8 @@
   },
   {
     "id": "xs-spoken-words-set-it-off",
-    "plain": "Can things said out loud, like a secret word, a claim about who someone is, a joke or a true statement, set off your ability?",
-    "dinniman": "Back in my day you could say any fool thing you liked and the worst you'd get was a dirty look. Now a single word can turn someone or kill someone. Can what people say out loud, a secret word, a claim about who someone is, a joke, or a statement that proves true, set off your ability?",
+    "plain": "Can things players say out loud, like a secret word, a claim about who someone is, a joke or a true statement, set off your ability?",
+    "dinniman": "Back in my day you could say any fool thing you liked and the worst you'd get was a dirty look. Now a single word can turn someone or kill someone. Can what players say out loud, a secret word, a claim about who someone is, a joke, or a statement that proves true, set off your ability?",
     "voice": "Elle",
     "yes": {
       "spokenTrigger": true
@@ -118,8 +118,8 @@
   },
   {
     "id": "xs-spoken-hinges-on-what-is-said",
-    "plain": "Does your ability hinge on exactly what gets said out loud, the words, claims or truths themselves, not just a choice being announced?",
-    "dinniman": "WORDS! Words are knives, mortal! Not pointing, not announcing who you pick, the actual words that leave the mouth! Does your ability hinge on exactly what gets said out loud, the words, claims or truths themselves?",
+    "plain": "Does your ability hinge on exactly what players say out loud to each other, the words, claims or truths themselves, not just a choice being announced?",
+    "dinniman": "WORDS! Words are knives, mortal! Not pointing, not announcing who you pick, not whispering to the Storyteller, the actual words that pass between players! Does your ability hinge on exactly what players say out loud to each other, the words, claims or truths themselves?",
     "voice": "Samantha",
     "yes": {
       "spokenTrigger": true
@@ -127,8 +127,8 @@
   },
   {
     "id": "xs-spoken-talk-is-the-trigger",
-    "plain": "Is talk the trigger for your ability: particular words, claims about characters, or whether what is said is true?",
-    "dinniman": "Silence! SILENCE! Talk is a weapon and a weakness, and I, Prepotente, wield both! Some abilities do nothing until the right words are spoken, the right claim is made, or a statement proves true. Is talk the trigger for YOUR ability?",
+    "plain": "Is talk between players the trigger for your ability: particular words, claims about characters, or whether what is said is true?",
+    "dinniman": "Silence! SILENCE! Talk is a weapon and a weakness, and I, Prepotente, wield both! Some abilities do nothing until the right words pass between players, the right claim is made, or a statement proves true. Is talk between players the trigger for YOUR ability?",
     "voice": "Prepotente",
     "yes": {
       "spokenTrigger": true
@@ -136,8 +136,8 @@
   },
   {
     "id": "xs-alt-special-ending",
-    "plain": "Does your ability add a special way for a side to win or lose, apart from the Demon dying or only two players remaining?",
-    "dinniman": "Ladies and gentlemen, the standard ending is SO last season! The Demon dies, the town shrinks to two, yawn. Some contestants bring their own finale. Does your ability add a special way for a side to win or lose, apart from those two?",
+    "plain": "Does your ability add a special way to win or lose, apart from the Demon dying or only two players remaining?",
+    "dinniman": "Ladies and gentlemen, the standard ending is SO last season! The Demon dies, the town shrinks to two, yawn. Some contestants bring their own finale. Does your ability add a special way to win or lose, apart from those two?",
     "voice": "The Host",
     "yes": {
       "alternateWinOrLoss": true
@@ -145,8 +145,8 @@
   },
   {
     "id": "xs-alt-written-in-ending",
-    "plain": "Is there a special ending written into your ability, where a side wins or loses without the Demon dying or the town running down to two?",
-    "dinniman": "Brand alert! Alternate endings test incredibly well with our key demographics. Nothing boosts engagement like the game stopping dead for a reason nobody saw coming. Is there a special ending written into your ability, where a side wins or loses without the Demon dying or the town running down to two?",
+    "plain": "Is a special ending, or a twist on who wins, written into your ability, beyond the usual Demon dying or the town running down to two?",
+    "dinniman": "Brand alert! Alternate endings test incredibly well with our key demographics. Nothing boosts engagement like the game stopping dead, or the result flipping, for a reason nobody saw coming. Is a special ending, or a twist on who wins, written into your ability, beyond the usual Demon dying or the town running down to two?",
     "voice": "Zev",
     "yes": {
       "alternateWinOrLoss": true
@@ -154,8 +154,8 @@
   },
   {
     "id": "xs-alt-own-rule-ends-it",
-    "plain": "Does your ability carry a special rule of its own that can decide, or flip, which side wins?",
-    "dinniman": "Most of you will die waiting for someone to finally stab the right person. A few of you carry a rule that just settles the matter, bang, or turns the result on its head. Does your ability carry a special rule of its own that can decide, or flip, which side wins?",
+    "plain": "Does your ability carry a special winning or losing rule of its own that can decide, or flip, who wins?",
+    "dinniman": "Most of you will die waiting for someone to finally stab the right person. A few of you carry a rule that just settles the matter, bang, or turns the result on its head. Does your ability carry a special winning or losing rule of its own that can decide, or flip, who wins?",
     "voice": "Mordecai",
     "yes": {
       "alternateWinOrLoss": true
@@ -190,8 +190,8 @@
   },
   {
     "id": "xs-vote-evil-changes-the-count",
-    "plain": "As a Minion or Demon, does your ability change how execution votes work?",
-    "dinniman": "I've interviewed a lot of villains, and the clever ones never bother hiding the body. They simply rearrange the vote. So, as a Minion or Demon, does your ability change how execution votes work?",
+    "plain": "As a Minion or Demon, when a nomination goes to a vote, does your ability change how that vote works?",
+    "dinniman": "I've interviewed a lot of villains, and the clever ones never bother hiding the body. They simply rearrange the vote. So, as a Minion or Demon, when a nomination goes to a vote, does your ability change how that vote works?",
     "voice": "Odette",
     "yes": {
       "affectsVoting": true,
@@ -232,13 +232,12 @@
     "plain": "As a Townsfolk or Outsider, is your ability tied to your own nominations, or to someone nominating you?",
     "dinniman": "Good guys usually treat nominations like a chore. A few of you have a real stake in it: your ability cares about who you nominate, or who dares nominate you. As a Townsfolk or Outsider, is your ability tied to your own nominations, or to someone nominating you?",
     "voice": "Mordecai",
-    "yes": {
-      "affectsNominations": true,
-      "team": [
-        "townsfolk",
-        "outsider"
-      ]
-    }
+    "yes": [
+      "princess",
+      "virgin",
+      "banshee",
+      "golem"
+    ]
   },
   {
     "id": "xs-pub-evil-in-the-open",
@@ -268,8 +267,8 @@
   },
   {
     "id": "xs-spoken-evil-feeds-on-words",
-    "plain": "As a Minion or Demon, does your ability turn on a particular word or phrase, or a claim about characters, said out loud?",
-    "dinniman": "Pull up a chair. Some of evil's finest never lift a knife; they just wait for the right words to leave the wrong mouth. As a Minion or Demon, does your ability turn on a particular word or phrase, or a claim about characters, said out loud?",
+    "plain": "As a Minion or Demon, does your ability turn on a particular word or phrase, or a claim about who someone is, said out loud?",
+    "dinniman": "Pull up a chair. Some of evil's finest never lift a knife; they just wait for the right words to leave the wrong mouth. As a Minion or Demon, does your ability turn on a particular word or phrase, or a claim about who someone is, said out loud?",
     "voice": "Odette",
     "yes": {
       "spokenTrigger": true,
@@ -294,8 +293,8 @@
   },
   {
     "id": "xs-alt-good-special-finish",
-    "plain": "As a Townsfolk or Outsider, does your ability hold a special way for your side to win or lose outright?",
-    "dinniman": "It's okay to be a little scared of a rule that can end everything, for better or worse. It's also okay to love it. As a Townsfolk or Outsider, does your ability hold a special way for your side to win or lose outright?",
+    "plain": "As a Townsfolk or Outsider, does your ability hold a special way for you or your side to win or lose outright?",
+    "dinniman": "It's okay to be a little scared of a rule that can end everything, for better or worse. It's also okay to love it. As a Townsfolk or Outsider, does your ability hold a special way for you or your side to win or lose outright?",
     "voice": "Katia",
     "yes": {
       "alternateWinOrLoss": true,
@@ -346,8 +345,8 @@
   },
   {
     "id": "xs-rules-of-the-gallows",
-    "plain": "Does your ability change the rules of nominating or voting, or make a nomination or a vote itself do something special?",
-    "dinniman": "WELCOME TO THE GALLOWS, where the rules are more like suggestions! Some contestants just watch the paperwork. Others get to stamp it, shred it or set it on fire. Does your ability change the rules of nominating or voting, or make a nomination or vote itself do something special?",
+    "plain": "Does your ability change the rules of nominating or voting, or make a nomination, or the vote on it, do something special?",
+    "dinniman": "WELCOME TO THE GALLOWS, where the rules are more like suggestions! Some contestants just watch the paperwork. Others get to stamp it, shred it or set it on fire. Does your ability change the rules of nominating or voting, or make a nomination, or the vote on it, do something special?",
     "voice": "The System AI",
     "yes": [
       "banshee",
@@ -371,7 +370,8 @@
       "riot",
       "butcher",
       "gnome",
-      "bishop"
+      "bishop",
+      "atheist"
     ]
   },
   {
@@ -387,8 +387,8 @@
   },
   {
     "id": "xs-pub-one-announcement-ends-it",
-    "plain": "Could one public announcement your ability calls for end the whole game on the spot, with no one dying?",
-    "dinniman": "No stabbings, no executions, no dramatic last words. Just one sentence, said in front of everybody, and the whole show is over. Could one public announcement your ability calls for end the game on the spot, with no one dying?",
+    "plain": "Could one public announcement you make with your ability end the whole game on the spot, with no one dying?",
+    "dinniman": "No stabbings, no executions, no dramatic last words. Just one sentence, out of your own mouth, in front of everybody, and the whole show is over. Could one public announcement you make with your ability end the game on the spot, with no one dying?",
     "voice": "Carl",
     "yes": [
       "cultleader",
@@ -398,8 +398,8 @@
   },
   {
     "id": "xs-pub-kill-on-the-spot",
-    "plain": "Nominations aside, can your ability let you point at someone in daylight and kill them on the spot, no execution needed?",
-    "dinniman": "THERE! THAT ONE! DEAD! RIGHT NOW! No trial, no vote, no tedious nominations, just a finger and a body hitting the floor! Can your ability let you point at someone in daylight and kill them on the spot, no execution needed?",
+    "plain": "Nominations aside, does your ability let you point at someone in daylight and kill them on the spot, no execution needed?",
+    "dinniman": "THERE! THAT ONE! DEAD! RIGHT NOW! No trial, no vote, no tedious nominations, just a finger and a body hitting the floor! Does your ability let you point at someone in daylight and kill them on the spot, no execution needed?",
     "voice": "Samantha",
     "yes": [
       "slayer",
@@ -701,8 +701,8 @@
   },
   {
     "id": "xs-day-kill-on-the-spot",
-    "plain": "Can your daytime move kill someone outright, there and then, without an execution?",
-    "dinniman": "Of the contestants who act in daylight, some just ask questions. Some leave a body on the floor before lunch. Can your daytime move kill someone outright, there and then, without an execution?",
+    "plain": "Is your daytime move a way to kill someone outright, there and then, without an execution?",
+    "dinniman": "Of the contestants who act in daylight, some just ask questions. Some leave a body on the floor before lunch. Is your daytime move a way to kill someone outright, there and then, without an execution?",
     "voice": "The Host",
     "yes": [
       "slayer",
@@ -727,7 +727,6 @@
       "fisherman",
       "artist",
       "juggler",
-      "princess",
       "golem",
       "klutz",
       "moonchild",

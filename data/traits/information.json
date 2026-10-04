@@ -1,42 +1,138 @@
 {
   "learnsCharacters": {
     "definition": "The character's own printed ability can show them which character a particular player is, or that a particular player is one of a few named characters (e.g. '1 of these 2 players is the X', 'this player is X or Y', 'the character executed today', the whole Grimoire). Learning only a character type, only whether someone is the Demon, only a count of correct guesses, or only which characters are in play without tying them to players does not count. Standard Minion/Demon night-1 info, borrowed or believed abilities, and open-ended abilities (Artist, Savant, Fisherman, Wizard) do not count.",
-    "yes": ["investigator", "washerwoman", "librarian", "grandmother", "dreamer", "undertaker", "ravenkeeper", "harlot", "spy", "widow", "eviltwin"]
+    "yes": [
+      "investigator",
+      "washerwoman",
+      "librarian",
+      "grandmother",
+      "dreamer",
+      "undertaker",
+      "ravenkeeper",
+      "harlot",
+      "spy",
+      "widow",
+      "eviltwin"
+    ]
   },
   "learnsAlignment": {
-    "definition": "The character's own printed ability tells them whether specific players are good or evil, or gives them a count, direction or comparison that is defined by alignment (pairs of evil players, evil neighbours, dead evil players, same alignment, closest evil player, a named good or evil player). Information defined by character type (Demon, Minion, Townsfolk) rather than alignment does not count, nor does the Cult Leader's own alignment change. Standard Minion/Demon team info, borrowed or believed abilities, and open-ended abilities (Artist, Savant, Fisherman, Wizard) do not count.",
-    "yes": ["steward", "noble", "chef", "shugenja", "grandmother", "bountyhunter", "empath", "villageidiot", "seamstress", "oracle", "beggar", "spy", "widow", "eviltwin"]
+    "definition": "The character's own printed ability tells them whether specific players are good or evil, or gives them a count, direction or comparison that is defined by alignment (pairs of evil players, evil neighbours, dead evil players, same alignment, closest evil player, a named good or evil player). The Gnome does not learn alignment: its amigo is announced to all players, and that is not alignment information for the Gnome. Information defined by character type (Demon, Minion, Townsfolk) rather than alignment does not count: the Dreamer's 'good' and 'evil' characters are Townsfolk/Outsider versus Minion/Demon, and the Fortune Teller, Clockmaker and Investigator are about types. The Cult Leader's own alignment change does not count either (it learns only its own new alignment). Standard Minion/Demon team info, borrowed or believed abilities, and open-ended abilities (Artist, Savant, Fisherman, Wizard) do not count.",
+    "yes": [
+      "steward",
+      "noble",
+      "chef",
+      "shugenja",
+      "grandmother",
+      "bountyhunter",
+      "empath",
+      "villageidiot",
+      "seamstress",
+      "oracle",
+      "beggar",
+      "spy",
+      "widow",
+      "eviltwin"
+    ]
   },
   "learnsNumbers": {
     "definition": "The character's own printed ability gives them information in the form of a number (a count or a distance), e.g. how many evil neighbours, how many steps, how many guesses were right. Yes/no answers, directions and pointed-out players do not count.",
-    "yes": ["chef", "clockmaker", "empath", "chambermaid", "mathematician", "oracle", "juggler"]
+    "yes": [
+      "chef",
+      "clockmaker",
+      "empath",
+      "chambermaid",
+      "mathematician",
+      "oracle",
+      "juggler"
+    ]
   },
   "infoEveryNight": {
     "definition": "The character's own printed ability gives them new information on most nights of the game (each night, or each night after the first), not just once, on a death, or only after a late-game condition is met. Includes the Harlot (who asks every night) and the Wraith (who may watch every night). Excludes the King (only once the dead equal or outnumber the living) and daytime information.",
-    "yes": ["empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "spy", "wraith", "harlot"]
+    "yes": [
+      "empath",
+      "highpriestess",
+      "balloonist",
+      "general",
+      "chambermaid",
+      "villageidiot",
+      "mathematician",
+      "dreamer",
+      "fortuneteller",
+      "flowergirl",
+      "towncrier",
+      "oracle",
+      "undertaker",
+      "spy",
+      "wraith",
+      "harlot"
+    ]
   },
   "seesHiddenInfo": {
     "definition": "The character's own printed ability reveals behind-the-scenes game mechanics rather than (or as well as) players' characters and alignments: the Grimoire itself, which abilities malfunctioned (drunk/poisoned), who woke or acted at night, or a secret extra ability the Demon holds. Lists of in-play or not-in-play characters (Godfather, bluffs) do not count.",
-    "yes": ["spy", "widow", "mathematician", "chambermaid", "wraith", "boffin"]
+    "yes": [
+      "spy",
+      "widow",
+      "mathematician",
+      "chambermaid",
+      "wraith",
+      "boffin"
+    ]
   },
   "caresAboutNeighbours": {
     "definition": "The character's ability (including its setup text) specifically involves the players seated next to them: reading, protecting, joining, killing or poisoning their neighbours, or being seated beside particular evil players. Distances and directions to non-adjacent players (Clockmaker, Shugenja), other players' neighbours (Vigormortis) and seat swapping (Matron) do not count.",
-    "yes": ["empath", "tealady", "cultleader", "gangster", "nodashii", "lordoftyphon", "marionette"]
+    "yes": [
+      "empath",
+      "tealady",
+      "cultleader",
+      "gangster",
+      "nodashii",
+      "lordoftyphon",
+      "marionette"
+    ]
   },
   "evilWithInfo": {
     "definition": "A Minion or Demon whose own printed ability gives them information about the game beyond the standard night-1 team info and Demon bluffs: the Grimoire, in-play Outsiders, an opposing player and their character, the Demon's extra ability, their own bluffs, or watching night actions. A secret word or phrase alone (Mezepheles, Yaggababble) and an open-ended wish (Wizard) do not count.",
-    "yes": ["spy", "widow", "godfather", "eviltwin", "boffin", "summoner", "wraith"]
+    "yes": [
+      "spy",
+      "widow",
+      "godfather",
+      "eviltwin",
+      "boffin",
+      "summoner",
+      "wraith"
+    ]
   },
   "huntsDemon": {
     "definition": "The character's own printed ability makes the Storyteller give them information defined in terms of the Demon: which player is the Demon, whether chosen players include a Demon, players who are not the Demon, the Demon's distance to its Minion, or whether a Demon voted. Learning it implicitly from an effect (Snake Charmer, Slayer, Golem) does not count.",
-    "yes": ["knight", "fortuneteller", "sage", "choirboy", "puzzlemaster", "flowergirl", "clockmaker"]
+    "yes": [
+      "knight",
+      "fortuneteller",
+      "sage",
+      "choirboy",
+      "puzzlemaster",
+      "flowergirl",
+      "clockmaker"
+    ]
   },
   "picksInfoTargets": {
     "definition": "The character's own printed ability lets them choose which players their information is about (choosing players to check, compare, guess about or question) and then tells them something about those players. Information about players the Storyteller picks, choices that only cause effects, and guesses whose answer is about someone else (Puzzlemaster) do not count.",
-    "yes": ["fortuneteller", "villageidiot", "dreamer", "chambermaid", "seamstress", "ravenkeeper", "juggler", "harlot"]
+    "yes": [
+      "fortuneteller",
+      "villageidiot",
+      "dreamer",
+      "chambermaid",
+      "seamstress",
+      "ravenkeeper",
+      "juggler",
+      "harlot"
+    ]
   },
   "infoFromTheDead": {
     "definition": "The character's own printed ability gives them information specifically about dead players: the character of the executed player, how many dead players are evil, or a dead player's alignment.",
-    "yes": ["undertaker", "oracle", "beggar"]
+    "yes": [
+      "undertaker",
+      "oracle",
+      "beggar"
+    ]
   }
 }

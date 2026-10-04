@@ -18,7 +18,7 @@ Questions live in `data/questions/*.json`, one file per character group, each li
 - `yes`: who answers yes. Either a list of character ids, or a match object on fields in `data/characters.json`, e.g. `{ "team": ["minion", "demon"] }` or `{ "otherNight": true }`. All fields must match.
 - `scope` (optional): the sub-pool the question is about, using the same selector forms. **Without a scope** the question is *global*: everyone not on the yes side is on the no side, and it can be asked at any point. **With a scope**, it's only asked when every remaining character is inside the scope, and the "no" side is the rest of the scope. Every `yes` character must be inside the scope.
 - `voice`: who speaks the `dinniman` line (see below).
-- `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers, in `travellers.json`), `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files, and `fun-` for `fun.json` (comedy-first questions).
+- `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers, in `travellers.json`), `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files, `fun-` for `fun.json` (comedy-first questions), `icon-` for `icons.json` (questions about the token art), and `psy-` for `psychology.json` (personality inferred from the character).
 
 ## Accuracy is the whole game
 
@@ -55,6 +55,13 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 - **The Moonchild's curse** only kills good players, which is a trap for "only kills the innocent" wording. **The Cult Leader** never chooses a player at night (the Storyteller sets its alignment from its neighbours), but it does have a public daytime action.
 - **The Mayor** might "bounce" a night kill to someone else, so "attacks bounce off you" and "someone dies in your place" catch it. Use "never" or "no way" for true immunity. **The Tea Lady's** protection covers execution, so watch "executed but survives" wording.
 - **The Evil Twin** starts knowing a good player and their character. **The Wraith** watches who wakes, so night-tracking questions need "the Storyteller tells you".
+- **Once-per-game night characters are woken every night until they use their ability**, so "woken on most nights" catches them. Ask about acting or learning something on most nights. The Undertaker only wakes after an execution death.
+- **Single-trigger passives** (the Fool's first death, the Virgin's first nomination) answer yes to "can only be used once" unless the question says "deliberate use".
+- **The Innkeeper** can choose itself and be secretly drunk, like the Sailor. **The Atheist** lets anyone nominate the Storyteller, so it belongs in nomination-rule questions.
+- **"What the vote / execution leads to"** catches every character with execution consequences (the Saint, Evil Twin, Mastermind, Leviathan, Vortox, Mayor, Goblin and others). Say exactly which part of voting changes.
+- **"Can your ability…" questions need "your own ability, not another character's"**, or the Hermit, Philosopher, Alchemist, Apprentice, Pixie and Cannibal can say yes. The Hermit genuinely holds every Outsider ability on the script.
+- **Say "kill", not "cause a death"**: the Mayor's redirected death is still the Demon's attack. **Legion's** "executions fail if only evil voted" isn't a protection. "Built-in risk to your own life" catches the King and Exorcist.
+- **The Gnome does not learn alignment** (user ruling). Its amigo is announced to everyone, and that isn't alignment information for the Gnome.
 - **The madness rule** means trying to convince the group you're a character, with a penalty if you don't. Handing out bluffs (Snitch, Summoner) isn't madness, and neither is the Lunatic believing it's the Demon.
 
 ## Shape of the pool

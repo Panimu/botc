@@ -17,7 +17,7 @@
     ]
   },
   "affectsNominations": {
-    "definition": "The character's own ability changes who may nominate or how often, makes a nomination itself have a game effect, or is triggered by a particular player nominating or being nominated. Only learning who nominated (the Town Crier) doesn't count, nor does merely timing an action 'before nominations'.",
+    "definition": "The character's own ability changes who may nominate or be nominated, or how often, makes a nomination itself have a game effect, or is triggered by a particular player nominating or being nominated. Only learning who nominated (the Town Crier) doesn't count, nor does merely timing an action 'before nominations', nor a consequence that comes only from an execution (the Saint, Evil Twin, Mastermind).",
     "yes": [
       "princess",
       "virgin",
@@ -30,7 +30,8 @@
       "butcher",
       "gnome",
       "bishop",
-      "judge"
+      "judge",
+      "atheist"
     ]
   },
   "publicAbility": {
@@ -83,7 +84,7 @@
     ]
   },
   "alternateWinOrLoss": {
-    "definition": "The character's own ability (as written or as the wiki rules it) adds a condition, beyond the standard ones (all Demons dead, or two players left with a Demon alive), under which a team immediately wins or loses the game, or changes which side wins or which side a player wins with.",
+    "definition": "The character's own ability (as written or as the wiki rules it) adds a condition, beyond the standard ones (all Demons dead, or two players left with a Demon alive), under which a team immediately wins or loses the game, or changes the result once the game ends (which side wins, or which side a player ends up winning with, as for the Politician). Changing a player's alignment mid-game (Goon, Ogre, Snake Charmer) doesn't count, nor does causing deaths that end the game by the standard rules (Boomdandy).",
     "yes": [
       "cultleader",
       "alsaahir",
@@ -104,7 +105,7 @@
     ]
   },
   "daytimeAction": {
-    "definition": "The character's own ability gives that player a deliberate action or choice they can take during the day: a statement, guess, choice, declaration, claim (including deliberately acting mad as a character), private visit to the Storyteller, performance, begging for vote tokens, or an ability-specific nomination or extra nomination/vote. Ordinary nominating and voting, being forced to vote, steering others into triggering your ability, and day-time restrictions or passive effects don't count.",
+    "definition": "The character's own ability gives that player a deliberate action or choice they can take during the day: a statement, guess, choice, declaration, claim (including deliberately acting mad as a character), private visit to the Storyteller, performance, begging for vote tokens, or an ability-specific nomination (Golem, Riot) or extra nomination/vote (Banshee, Butcher). Ordinary nominating and voting (including an ordinary nomination whose result the ability cares about, as for the Princess and Fearmonger), being forced to vote, steering others into triggering your ability, and day-time restrictions or passive effects don't count.",
     "yes": [
       "gossip",
       "savant",
@@ -112,7 +113,6 @@
       "artist",
       "slayer",
       "fisherman",
-      "princess",
       "juggler",
       "amnesiac",
       "banshee",
@@ -125,7 +125,6 @@
       "goblin",
       "vizier",
       "wizard",
-      "fearmonger",
       "yaggababble",
       "riot",
       "butcher",

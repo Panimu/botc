@@ -1,6 +1,6 @@
 {
   "makesOthersDrunkOrPoisoned": {
-    "definition": "The character's own ability text can directly make a player other than itself drunk or poisoned (the DRUNK or POISONED state), whether by its choice, as a side effect or cost, or through its setup (e.g. the Puzzlemaster's or Village Idiot's drunk player). Not: only being drunk itself (Organ Grinder), turning someone into the Drunk character by a character change, punishing drunkenness (Acrobat), curing it (Barista), or abilities borrowed from another character (Philosopher's gained ability, Alchemist, Apprentice, Hermit, Plague Doctor).",
+    "definition": "The character's own ability text can directly make a player other than itself drunk or poisoned (the DRUNK or POISONED state), whether by its choice, as a side effect or cost, or through its setup (e.g. the Puzzlemaster's or Village Idiot's drunk player). Not: only being drunk itself (Organ Grinder), turning someone into the Drunk character by a character change, punishing drunkenness (Acrobat), curing it (Barista), or abilities borrowed from another character (Philosopher's gained ability, Alchemist, Apprentice, Hermit, Plague Doctor, Boffin), open-ended wishes (Wizard), or Storyteller rule-breaking (Atheist).",
     "yes": [
       "sailor",
       "innkeeper",
@@ -31,7 +31,7 @@
     ]
   },
   "changesCharacters": {
-    "definition": "The character's own ability can change which character a player is (itself or another), including swaps and night-1 replacements caused by its setup text (Kazali, Lord of Typhon). Not: gaining or lending an ability while keeping the same character (Philosopher, Apprentice, Alchemist, Cannibal, Pixie, Boffin, Bone Collector), only changing alignment, or abilities borrowed from another character (Hermit, Plague Doctor).",
+    "definition": "The character's own ability can change which character a player is (itself or another), including swaps and night-1 replacements caused by its setup text (Kazali, Lord of Typhon). Not: gaining or lending an ability while keeping the same character (Philosopher, Apprentice, Alchemist, Cannibal, Pixie, Boffin, Bone Collector), only changing alignment, or abilities borrowed from another character (Hermit, Plague Doctor), open-ended wishes (Wizard), or Storyteller rule-breaking (Atheist).",
     "yes": [
       "snakecharmer",
       "farmer",
@@ -51,7 +51,7 @@
     ]
   },
   "changesAlignment": {
-    "definition": "The character's own ability can change the alignment of a player during play, including its own (Cult Leader, Goon, Ogre, Politician) and night-1 conversions caused by its setup text (Kazali, Lord of Typhon). Not: a player who simply starts on the other side at setup (Bounty Hunter's evil Townsfolk), registering as another alignment (Recluse, Spy, Lycanthrope), reversing who wins (Heretic), character changes that keep alignment (Pit-Hag, Barber, Cacklejack, Imp), or borrowed abilities (Hermit).",
+    "definition": "The character's own ability can change the alignment of a player during play, including its own (Cult Leader, Goon, Ogre, Politician) and night-1 conversions caused by its setup text (Kazali, Lord of Typhon). Not: a player who simply starts on the other side at setup (Bounty Hunter's evil Townsfolk), registering as another alignment (Recluse, Spy, Lycanthrope), reversing who wins (Heretic), character changes that keep alignment (Pit-Hag, Barber, Cacklejack, Imp), borrowed abilities (Hermit), or open-ended wishes (Wizard).",
     "yes": [
       "snakecharmer",
       "cultleader",
@@ -66,7 +66,7 @@
     ]
   },
   "registersFalsely": {
-    "definition": "The character itself can register to other players' abilities as something it is not: another alignment, character type or character, or as dead while alive. Not: making a different player register falsely (Fortune Teller's red herring, Lycanthrope's faux paw, Lil' Monsta's babysitter), confusing only the evil team's own night-1 info (Magician), or a borrowed Recluse ability (Hermit).",
+    "definition": "The character itself can register to other players' abilities as something it is not: another alignment, character type or character, or as dead while alive. Not: making a different player register falsely (Fortune Teller's red herring, Lycanthrope's faux paw, Lil' Monsta's babysitter, who really counts as the Demon), confusing only the evil team's own night-1 info (Magician), or a borrowed Recluse ability (Hermit).",
     "yes": [
       "recluse",
       "spy",
@@ -75,7 +75,7 @@
     ]
   },
   "feedsFalseInfo": {
-    "definition": "The character's own ability can make other players' information or perception false by some means other than drunkenness or poisoning: by registering falsely (itself or another player, to everyone), by making abilities yield false info, by letting the Storyteller lie, or by showing the evil team a false picture. Not: false info only to itself (Fortune Teller's red herring, Savant, Dreamer, Puzzlemaster's wrong guess, Lunatic, Drunk, Marionette), withholding info (Poppy Grower, Organ Grinder), madness-driven false claims (Cerenovus, Harpy), or drunk/poison effects.",
+    "definition": "The character's own ability can make other players' information or perception false by some means other than drunkenness or poisoning: by registering falsely (itself or another player, to everyone), by making abilities yield false info, by letting the Storyteller lie, or by showing the evil team a false picture. Not: false info only to itself (Fortune Teller's red herring, Savant, Dreamer, Puzzlemaster's wrong guess, Lunatic, Drunk, Marionette), withholding info (Poppy Grower, Organ Grinder), madness-driven false claims (Cerenovus, Harpy), drunk/poison effects, open-ended wishes (Wizard), or turning someone into a character that misleads (Pit-Hag, Cacklejack).",
     "yes": [
       "magician",
       "lycanthrope",
@@ -88,7 +88,7 @@
     ]
   },
   "mayNotKnowTheTruth": {
-    "definition": "Because of its own ability or setup text, the character's player can hold a false belief about themselves without being told: they believe they are a different character (Drunk, Lunatic, Marionette, and the Hermit, which holds the Drunk's and Lunatic's abilities when they are on the script), are not told their own alignment (Ogre), or may be secretly drunk or poisoned by their own ability (Sailor, the drunk extra Village Idiot, a Cannibal who ate an evil player). Not: knowingly lacking information (Amnesiac) or receiving false info while the ability works (Fortune Teller, Savant, Puzzlemaster). This is the one manipulation trait that counts the Hermit's Outsider abilities; the others exclude it.",
+    "definition": "Because of its own ability or setup text, the character's player can hold a false belief about themselves without being told: they believe they are a different character (Drunk, Lunatic, Marionette, and the Hermit, which holds the Drunk's and Lunatic's abilities when they are on the script), are not told their own alignment (Ogre), or may be secretly drunk or poisoned by their own ability (Sailor, an Innkeeper who chose itself, the drunk extra Village Idiot, a Cannibal who ate an evil player). Not: knowingly lacking information (Amnesiac) or receiving false info while the ability works (Fortune Teller, Savant, Puzzlemaster; the Puzzlemaster is not treated as its own drunk player). This is the one manipulation trait that counts the Hermit's Outsider abilities; the others exclude it.",
     "yes": [
       "drunk",
       "lunatic",
@@ -97,11 +97,12 @@
       "sailor",
       "villageidiot",
       "cannibal",
+      "innkeeper",
       "hermit"
     ]
   },
   "borrowsAbility": {
-    "definition": "The character's own ability gives its own player the ability of another character (chosen by itself, the Storyteller or circumstance) while it stays the same character. Not: giving an ability to someone else (Boffin, Plague Doctor, Bone Collector, Barista) or becoming a different character (Scarlet Woman, Farmer).",
+    "definition": "The character's own ability gives its own player the ability of another character (chosen by itself, the Storyteller or circumstance) while it stays the same character. Not: giving an ability to someone else (Boffin, Plague Doctor, Bone Collector, Barista), becoming a different character (Scarlet Woman, Farmer), an unknown Storyteller-set ability (Amnesiac), or open-ended wishes (Wizard).",
     "yes": [
       "philosopher",
       "pixie",
@@ -112,7 +113,7 @@
     ]
   },
   "setsTraps": {
-    "definition": "The character's own ability lays a condition on other players that punishes them for something they themselves choose to do or fail to do in public: nominating (Witch, Virgin, the Gnome's amigo), saying a secret word (Mezepheles) or breaking madness (Cerenovus, Harpy). Not: conditions on its own player (Butler, Zealot, Mutant), the actor choosing a victim among voters (Gunslinger), or guesses that reward the guesser (Damsel).",
+    "definition": "The character's own ability lays a condition on other players that punishes them for something they themselves choose to do or fail to do in public: nominating (Witch, Virgin, the Gnome's amigo), saying a secret word (Mezepheles) or breaking madness (Cerenovus, Harpy). Not: conditions on its own player (Butler, Zealot, Mutant), the actor choosing a victim among voters (Gunslinger), guesses that reward the guesser (Damsel), or private night-time choices (Al-Hadikhia).",
     "yes": [
       "virgin",
       "gnome",

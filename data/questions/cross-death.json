@@ -1,8 +1,8 @@
 [
   {
     "id": "xd-dawn-body-count",
-    "plain": "When the Storyteller announces who died in the night, could your own ability, not a borrowed one, be the cause?",
-    "dinniman": "Good morning, Dungeon! Another sunrise, another tasteful list of the freshly deceased. The folks at home want to know: when those names get read out, could your very own ability, not some borrowed knock-off, be the reason one of them isn't getting up?",
+    "plain": "When the Storyteller announces who died in the night, could your own ability, not a borrowed one, have killed one of them?",
+    "dinniman": "Good morning, Dungeon! Another sunrise, another tasteful list of the freshly deceased. The folks at home want to know: when those names get read out, could your very own ability, not some borrowed knock-off, have killed one of them?",
     "voice": "The Host",
     "yes": {
       "killsAtNight": true
@@ -10,8 +10,8 @@
   },
   {
     "id": "xd-after-dark",
-    "plain": "Can your own ability, rather than one you've borrowed, cause another player to die during the night?",
-    "dinniman": "Listen up. Night is when most people in this town stop breathing, and I need to know whose fault that is. Not a power you're borrowing. Yours. Can your own ability cause another player to die while the town sleeps?",
+    "plain": "Can your own ability, rather than one you've borrowed, kill another player during the night?",
+    "dinniman": "Listen up. Night is when most people in this town stop breathing, and I need to know whose fault that is. Not a power you're borrowing. Yours. Can your own ability kill another player while the town sleeps?",
     "voice": "Mordecai",
     "yes": {
       "killsAtNight": true
@@ -19,8 +19,8 @@
   },
   {
     "id": "xd-broad-daylight",
-    "plain": "Can your ability kill another player during the day, in a way that isn't an execution?",
-    "dinniman": "Oh, sweetie, none of that sneaking about in the dark. Some of us do our dirty work at high noon with the whole village gawking. Not a hanging, mind you, an honest-to-goodness daytime death. Can your ability kill another player during the day?",
+    "plain": "Can your own ability, not another character's, kill another player during the day, in a way that isn't an execution?",
+    "dinniman": "Oh, sweetie, none of that sneaking about in the dark. Some of us do our dirty work at high noon with the whole village gawking. Not a hanging, mind you, an honest-to-goodness daytime death. Can your own ability, not another character's, kill another player during the day?",
     "voice": "Elle",
     "yes": {
       "killsByDay": true
@@ -28,8 +28,8 @@
   },
   {
     "id": "xd-witnessed-kill",
-    "plain": "Can your ability strike a player dead while the whole town is awake, without them being executed?",
-    "dinniman": "SAMANTHA ADORES AN AUDIENCE! Blood in the sunlight, gasps from the crowd, no tedious voting required! Can your ability strike a player dead while the whole town is awake and watching, no execution involved?",
+    "plain": "Can your own ability, not another character's, strike a player dead while the town is awake, without them being executed?",
+    "dinniman": "SAMANTHA ADORES AN AUDIENCE! Blood in the sunlight, gasps from the crowd, no tedious voting required! Can your own ability, not another character's, strike a player dead while the whole town is awake and watching, no execution involved?",
     "voice": "Samantha",
     "yes": {
       "killsByDay": true
@@ -37,8 +37,8 @@
   },
   {
     "id": "xd-off-script-execution",
-    "plain": "Can your ability cause an instant, extra or substitute execution, beyond the day's usual nominate-and-vote?",
-    "dinniman": "Normally it goes nominate, argue, vote, hang, bed. Simple. Stupid, but simple. Some of you have a button that skips the queue, adds a bonus round or swaps who's on the rope. Can your ability cause an instant, extra or substitute execution outside that usual routine?",
+    "plain": "Can your own ability, not another character's, cause an instant, extra or substitute execution beyond the usual nominate-and-vote?",
+    "dinniman": "Normally it goes nominate, argue, vote, hang, bed. Simple. Stupid, but simple. Some of you have a button that skips the queue, adds a bonus round or swaps who's on the rope. Can your own ability, not another character's, cause an instant, extra or substitute execution outside that usual routine?",
     "voice": "Carl",
     "yes": {
       "causesExtraExecution": true
@@ -46,8 +46,8 @@
   },
   {
     "id": "xd-own-execution",
-    "plain": "Can your own ability get you yourself executed, even if the town never voted for you?",
-    "dinniman": "BEHOLD the tragic hero! Prepotente knows the agony of the noble who may be dragged to the gallows by mere RULES, no vote required! Can your own ability get you executed without the town ever voting for you?",
+    "plain": "Can your own ability, not another character's, get you executed even if the town never voted for you?",
+    "dinniman": "BEHOLD the tragic hero! Prepotente knows the agony of the noble who may be dragged to the gallows by mere RULES, no vote required! Can your own ability, not another character's, get you executed without the town ever voting for you?",
     "voice": "Prepotente",
     "yes": [
       "mutant",
@@ -56,8 +56,8 @@
   },
   {
     "id": "xd-death-rattle",
-    "plain": "When you actually die, rather than narrowly escaping it, does your ability then make something happen?",
-    "dinniman": "New achievement unlocked: Posthumous Plot Twist! Awarded to crawlers whose abilities only get going once they've genuinely kicked the bucket. Dodging death doesn't count. Once you're actually dead, does your ability make something happen?",
+    "plain": "When you actually die, rather than narrowly escaping it, does your own ability, not another character's, then make something happen?",
+    "dinniman": "New achievement unlocked: Posthumous Plot Twist! Awarded to crawlers whose abilities only get going once they've genuinely kicked the bucket. Dodging death doesn't count. Once you're actually dead, does your own ability, not another character's, make something happen?",
     "voice": "The System AI",
     "yes": {
       "triggersOnOwnDeath": true
@@ -65,8 +65,8 @@
   },
   {
     "id": "xd-final-chapter",
-    "plain": "Does dying trigger a final effect from your ability, something that couldn't happen while you were alive?",
-    "dinniman": "I used to think dying was just the end of the story. Some of you get one last chapter, though: a final effect that only your death can unlock. Does your death trigger something from your ability that couldn't happen while you lived?",
+    "plain": "Does dying trigger a final effect from your own ability, not another character's, something that couldn't happen while you were alive?",
+    "dinniman": "I used to think dying was just the end of the story. Some of you get one last chapter, though: a final effect that only your death can unlock. Does your death trigger something from your own ability, not another character's, that couldn't happen while you lived?",
     "voice": "Katia",
     "yes": {
       "triggersOnOwnDeath": true
@@ -92,8 +92,8 @@
   },
   {
     "id": "xd-shield-bearer",
-    "plain": "Can your ability directly keep other players from dying?",
-    "dinniman": "I spent a long time being the one who needed protecting. Now I want to know who's doing the protecting. Not by luck, not by getting the killer drunk: can your ability directly keep other players from dying?",
+    "plain": "Can your own ability, not another character's, directly keep other players from dying?",
+    "dinniman": "I spent a long time being the one who needed protecting. Now I want to know who's doing the protecting. Not by luck, not by getting the killer drunk: can your own ability, not another character's, directly keep other players from dying?",
     "voice": "Katia",
     "yes": {
       "protectsOthers": true
@@ -101,8 +101,8 @@
   },
   {
     "id": "xd-swoop-and-save",
-    "plain": "Can your ability directly save another player who would otherwise have died?",
-    "dinniman": "Every great star needs the moment where she swoops in and SAVES someone, darling. The fans go feral for it. Can your ability directly save another player who would otherwise have died?",
+    "plain": "Can your own ability, not another character's, directly save another player who would otherwise have died?",
+    "dinniman": "Every great star needs the moment where she swoops in and SAVES someone, darling. The fans go feral for it. Can your own ability, not another character's, directly save another player who would otherwise have died?",
     "voice": "Princess Donut",
     "yes": {
       "protectsOthers": true
@@ -128,8 +128,8 @@
   },
   {
     "id": "xd-fine-print",
-    "plain": "Does your ability carry a built-in risk to your own life, one most characters don't face?",
-    "dinniman": "So, you've got a cool power. Great. Read the fine print. Some of these come with a little clause at the bottom that says 'and also you might die.' Does your ability carry a built-in risk to your own life that most characters don't have?",
+    "plain": "Can your own ability's rules, not another character's, kill you or get you executed, a risk most characters don't face?",
+    "dinniman": "So, you've got a cool power. Great. Read the fine print. Some of these come with a little clause at the bottom that says 'and also you might die.' Can your own ability's rules, not another character's, kill you or get you executed, a risk most characters don't have?",
     "voice": "Carl",
     "yes": {
       "risksOwnLife": true
@@ -137,8 +137,8 @@
   },
   {
     "id": "xd-self-destruct",
-    "plain": "Could your ability's own rules end with you dead, without any enemy attacking you?",
-    "dinniman": "Patch note 4.1: some abilities now ship with a FREE self-destruct feature! No enemy required! The System accepts no liability. Could your ability's own rules end with you dead, without any enemy attacking you?",
+    "plain": "Could your own ability's rules, not another character's, end with you dead, without any enemy attacking you?",
+    "dinniman": "Patch note 4.1: some abilities now ship with a FREE self-destruct feature! No enemy required! The System accepts no liability. Could your own ability's rules, not another character's, end with you dead, without any enemy attacking you?",
     "voice": "The System AI",
     "yes": {
       "risksOwnLife": true
@@ -146,8 +146,8 @@
   },
   {
     "id": "xd-good-night-killer",
-    "plain": "Is your character a Townsfolk or Outsider whose own ability can cause another player's death at night?",
-    "dinniman": "Oh, I love this one. The sweet, trustworthy townsperson, and yet after dark someone stops breathing because of them. Confession time, darling: are you a Townsfolk or Outsider whose own ability can cause another player's death at night?",
+    "plain": "Is your character a Townsfolk or Outsider whose own ability, not another character's, can kill another player at night?",
+    "dinniman": "Oh, I love this one. The sweet, trustworthy townsperson, and yet after dark someone stops breathing because of them. Confession time, darling: are you a Townsfolk or Outsider whose own ability, not another character's, can kill another player at night?",
     "voice": "Odette",
     "yes": {
       "killsAtNight": true,
@@ -169,8 +169,8 @@
   },
   {
     "id": "xd-not-the-demon",
-    "plain": "Can your ability cause someone's death at night even though you're not the Demon?",
-    "dinniman": "Everyone assumes the Demon is the one doing the night-time murdering. Usually that's right. Usually. Can your ability cause someone's death at night even though you aren't the Demon?",
+    "plain": "Can your own ability, not another character's, kill someone at night even though you're not the Demon?",
+    "dinniman": "Everyone assumes the Demon is the one doing the night-time murdering. Usually that's right. Usually. Can your own ability, not another character's, kill someone at night even though you aren't the Demon?",
     "voice": "Carl",
     "yes": {
       "killsAtNight": true,
@@ -194,8 +194,8 @@
   },
   {
     "id": "xd-good-daylight-killer",
-    "plain": "Are you a Townsfolk or Outsider whose ability can kill a player in broad daylight?",
-    "dinniman": "A heroine doesn't skulk in the dark, darling. She strikes in FULL VIEW of her adoring public. Are you a Townsfolk or Outsider whose ability can kill a player in broad daylight?",
+    "plain": "Are you a Townsfolk or Outsider whose own ability, not another character's, can kill a player in broad daylight?",
+    "dinniman": "A heroine doesn't skulk in the dark, darling. She strikes in FULL VIEW of her adoring public. Are you a Townsfolk or Outsider whose own ability, not another character's, can kill a player in broad daylight?",
     "voice": "Princess Donut",
     "yes": {
       "killsByDay": true,
@@ -207,8 +207,8 @@
   },
   {
     "id": "xd-traveller-killer",
-    "plain": "Are you a Traveller whose ability can kill another player?",
-    "dinniman": "Our visiting guest stars are a huge ratings driver, and some of them come with a body count written right into the contract! Are you a Traveller whose ability can kill another player?",
+    "plain": "Are you a Traveller whose own ability, not another character's, can kill another player?",
+    "dinniman": "Our visiting guest stars are a huge ratings driver, and some of them come with a body count written right into the contract! Are you a Traveller whose own ability, not another character's, can kill another player?",
     "voice": "Zev",
     "yes": [
       "harlot",
@@ -219,14 +219,13 @@
   },
   {
     "id": "xd-any-kill",
-    "plain": "Leaving executions aside, can your ability directly cause another player's death, by day or by night?",
-    "dinniman": "Sponsor poll! Our partners at Brutal Hygiene Wipes want to know how many of you are packing actual murder. Executions don't count, those are a team effort. Can your ability directly cause another player's death, day or night?",
+    "plain": "Leaving executions aside, can your own ability, not another character's, kill another player, by day or by night?",
+    "dinniman": "Sponsor poll! Our partners at Brutal Hygiene Wipes want to know how many of you are packing actual murder. Executions don't count, those are a team effort. Can your own ability, not another character's, kill another player, day or night?",
     "voice": "The System AI",
     "yes": [
       "lycanthrope",
       "gossip",
       "slayer",
-      "mayor",
       "golem",
       "moonchild",
       "godfather",
@@ -262,11 +261,10 @@
   },
   {
     "id": "xd-deathless-killer",
-    "plain": "Setting executions aside, can your ability both cause another player's death and shield you from your own?",
-    "dinniman": "Prepotente is DEATH and Prepotente is DEATHLESS! Mere killers bore me. Mere survivors bore me MORE! Setting executions aside, can your ability both cause another player's death and shield you from your own?",
+    "plain": "Can your own ability, not another character's, both kill another player without an execution and protect you from dying?",
+    "dinniman": "Prepotente is DEATH and Prepotente is DEATHLESS! Mere killers bore me. Mere survivors bore me MORE! Can your own ability, not another character's, both kill another player without an execution and protect you from dying?",
     "voice": "Prepotente",
     "yes": [
-      "mayor",
       "psychopath",
       "zombuul",
       "lleech"
@@ -274,8 +272,8 @@
   },
   {
     "id": "xd-parting-gift",
-    "plain": "When you die or are executed, does your ability then cause other players to die?",
-    "dinniman": "Some folks go quietly. Not you, you spiteful little firecracker: your death comes with a parting gift for somebody else. When you die or get executed, does your ability then cause other players to die?",
+    "plain": "When you die or are executed, does your own ability, not another character's, then cause other players to die?",
+    "dinniman": "Some folks go quietly. Not you, you spiteful little firecracker: your death comes with a parting gift for somebody else. When you die or get executed, does your own ability, not another character's, then cause other players to die?",
     "voice": "Elle",
     "yes": [
       "moonchild",
@@ -284,8 +282,8 @@
   },
   {
     "id": "xd-life-keeper",
-    "plain": "Does your ability directly keep someone alive, whether that's another player or yourself?",
-    "dinniman": "Staying alive in here takes everything you have, and sometimes a little help. Some abilities are that help. Does yours directly keep someone alive, whether that someone is another player or you?",
+    "plain": "Does your own ability, not another character's, directly keep someone alive, whether that's another player or yourself?",
+    "dinniman": "Staying alive in here takes everything you have, and sometimes a little help. Some abilities are that help. Does your own ability, not another character's, directly keep someone alive, whether that someone is another player or you?",
     "voice": "Katia",
     "yes": [
       "sailor",
@@ -302,7 +300,6 @@
       "psychopath",
       "vizier",
       "zombuul",
-      "legion",
       "lleech",
       "judge",
       "deviant",
@@ -323,8 +320,8 @@
   },
   {
     "id": "xd-innocent-victims",
-    "plain": "Can your ability kill other players, but only ever good ones?",
-    "dinniman": "This one's hard to say out loud. Some abilities can only ever hurt the innocent, never the monsters we're hunting. Is yours like that: able to kill other players, but only ever good ones?",
+    "plain": "Can your own ability, not another character's, kill other players, but only ever good ones?",
+    "dinniman": "This one's hard to say out loud. Some abilities can only ever hurt the innocent, never the monsters we're hunting. Is your own ability, not another character's, like that: able to kill other players, but only ever good ones?",
     "voice": "Katia",
     "yes": [
       "lycanthrope",
@@ -343,8 +340,8 @@
   },
   {
     "id": "xd-perform-or-perish",
-    "plain": "When you're sent to your death, can winning a game or being funny save you?",
-    "dinniman": "Charm is a survival skill, darling, I would know. For a lucky few, the right performance at the right moment really does keep the noose off. When the town sends you to your death, can winning a game or being funny save you?",
+    "plain": "When you're sent to your death, can your own ability, not another character's, let winning a game or being funny save you?",
+    "dinniman": "Charm is a survival skill, darling, I would know. For a lucky few, the right performance at the right moment really does keep the noose off. When the town sends you to your death, can your own ability, not another character's, let winning a game or being funny save you?",
     "voice": "Odette",
     "yes": [
       "psychopath",
@@ -373,8 +370,8 @@
   },
   {
     "id": "xd-last-public-pick",
-    "plain": "When you learn that you've died, must you publicly pick one living player for a final, high-stakes choice?",
-    "dinniman": "So you're dead. Congratulations. Before you lie down, though, you have to stand up in front of everyone and point at somebody, and if you get it wrong, it hurts. When you learn you've died, must you publicly pick one living player for that final choice?",
+    "plain": "When you learn you've died, does your own ability, not another character's, make you publicly pick a living player for a high-stakes final choice?",
+    "dinniman": "So you're dead. Congratulations. Before you lie down, though, you have to stand up in front of everyone and point at somebody, and if you get it wrong, it hurts. When you learn you've died, does your own ability, not another character's, make you publicly pick a living player for that final choice?",
     "voice": "Carl",
     "yes": [
       "klutz",
@@ -407,8 +404,7 @@
       "pithag",
       "yaggababble",
       "lilmonsta",
-      "legion",
-      "mayor"
+      "legion"
     ],
     "scope": {
       "killsAtNight": true
@@ -788,8 +784,7 @@
       "pacifist",
       "devilsadvocate",
       "scapegoat",
-      "judge",
-      "legion"
+      "judge"
     ],
     "scope": {
       "protectsOthers": true
@@ -830,8 +825,7 @@
     "yes": [
       "tealady",
       "pacifist",
-      "scapegoat",
-      "legion"
+      "scapegoat"
     ],
     "scope": {
       "protectsOthers": true
@@ -906,7 +900,6 @@
       "lycanthrope",
       "gossip",
       "slayer",
-      "mayor",
       "golem",
       "moonchild",
       "godfather",
@@ -952,7 +945,6 @@
       "lycanthrope",
       "gossip",
       "slayer",
-      "mayor",
       "golem",
       "moonchild",
       "godfather",
@@ -1009,7 +1001,6 @@
       "psychopath",
       "vizier",
       "zombuul",
-      "legion",
       "lleech",
       "judge",
       "deviant",

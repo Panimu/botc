@@ -1,6 +1,6 @@
 {
   "killsAtNight": {
-    "definition": "The character’s own ability, as written, can cause the death of another player during the night: a kill the character chooses, or night deaths the Storyteller makes under that ability (Gossip, Harlot, Pit-Hag making a Demon, Legion, Lil’ Monsta, Yaggababble, and the Mayor, whose night death can be redirected so another player dies instead). Excludes deaths that are only the character’s own (Gambler, Acrobat), indirect effects such as drunkenness or creating a Demon (Summoner), and abilities borrowed from other characters (Alchemist, Philosopher, Cannibal, Pixie, Apprentice, Hermit, Amnesiac, Wizard, Boffin). The Riot and Leviathan have no night kill.",
+    "definition": "The character’s own ability, as written, can kill another player during the night: a kill the character chooses, or night deaths the Storyteller makes under that ability (Gossip, Harlot, Pit-Hag making a Demon, Legion, Lil’ Monsta, Yaggababble). Excludes the Mayor (a night attack on the Mayor that lands on someone else is still the Demon’s attack: the wiki says a Soldier or Monk-protected replacement doesn’t die), deaths that are only the character’s own (Gambler, Acrobat), indirect effects such as drunkenness, creating a Demon (Summoner) or giving the Storyteller a Minion ability (Plague Doctor), the Wizard’s open-ended wish, and abilities borrowed from other characters (Alchemist, Philosopher, Cannibal, Pixie, Apprentice, Hermit, Amnesiac; the Boffin’s gift belongs to the Demon). The Riot and Leviathan have no night kill.",
     "yes": [
       "lycanthrope",
       "gossip",
@@ -25,8 +25,7 @@
       "fanggu",
       "lordoftyphon",
       "lleech",
-      "alhadikhia",
-      "mayor"
+      "alhadikhia"
     ]
   },
   "killsByDay": {
@@ -96,7 +95,7 @@
     ]
   },
   "protectsOthers": {
-    "definition": "The character’s own ability can directly stop another player from dying: it makes players unable to die or safe from the Demon (Innkeeper, Monk, Tea Lady), stops the Demon’s kill outright (Princess, Exorcist), lets an executed player survive (Pacifist, Devil’s Advocate), takes an execution in their place (Scapegoat), or makes an execution fail (Judge forcing a fail, Legion’s evil-only votes failing). Excludes self-only protection (see hardToKill), stopping a kill indirectly by making the killer drunk or poisoned (Sailor, Courtier, Preacher), swapping a kill for a different death (Lycanthrope), Storyteller balancing deaths (Pit-Hag), resurrection (Professor), and borrowed abilities.",
+    "definition": "The character’s own ability can directly stop another player from dying: it makes players unable to die or safe from the Demon (Innkeeper, Monk, Tea Lady), stops the Demon’s kill outright (Princess, Exorcist), lets an executed player survive (Pacifist, Devil’s Advocate), takes an execution in their place (Scapegoat), or lets the character force a nominee’s execution to fail (Judge). Excludes self-only protection (see hardToKill), Legion (its evil-only votes failing is a limit on the evil team, not a protection Legion players use), stopping a kill indirectly by making the killer drunk or poisoned (Sailor, Courtier, Preacher), swapping a kill for a different death (Lycanthrope), redirecting an attack on yourself (Mayor), Storyteller balancing deaths (Pit-Hag), resurrection (Professor), and borrowed abilities.",
     "yes": [
       "innkeeper",
       "monk",
@@ -106,8 +105,7 @@
       "pacifist",
       "devilsadvocate",
       "scapegoat",
-      "judge",
-      "legion"
+      "judge"
     ]
   },
   "hardToKill": {

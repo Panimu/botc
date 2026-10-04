@@ -1,8 +1,8 @@
 [
   {
     "id": "xp-night-shift-regular",
-    "plain": "Does your own ability have you woken on most nights of the game to act or learn something?",
-    "dinniman": "Achievement unlocked: Insomniac! Awarded to crawlers whose ability drags them out of bed night after night after night. Sleep is for the loot-less. Does your ability wake you on most nights?",
+    "plain": "Does your own ability have you take an action or learn something on most nights, not just once?",
+    "dinniman": "Achievement unlocked: Insomniac! Awarded to crawlers whose ability drags them out of bed to do or learn something night after night after night. Sleep is for the loot-less. Does your ability have you act or learn something on most nights?",
     "voice": "The System AI",
     "yes": {
       "wakesMostNights": true
@@ -19,8 +19,8 @@
   },
   {
     "id": "xp-night-shift-sleeper",
-    "plain": "Does your ability leave you sleeping through most nights, without being woken to act or learn?",
-    "dinniman": "Darling, a star needs her beauty sleep. I refuse to be shaken awake at three in the morning to do PAPERWORK. Does your ability let you sleep through most nights untouched?",
+    "plain": "Is your ability quiet on most nights, giving you no nightly job and no nightly information?",
+    "dinniman": "Darling, a star needs her beauty sleep. I refuse to be shaken awake at three in the morning to do PAPERWORK. Does your ability leave you in peace on most nights, with no nightly job and no nightly news?",
     "voice": "Princess Donut",
     "yes": {
       "wakesMostNights": false
@@ -28,8 +28,8 @@
   },
   {
     "id": "xp-night-shift-evil",
-    "plain": "Are you a Minion or Demon whose ability wakes you on most nights to do your work?",
-    "dinniman": "Evil never sleeps, they say. Usually they're talking about the ones who actually get up every night and get their hands dirty. Are you a Minion or Demon who's woken most nights to work?",
+    "plain": "Are you a Minion or Demon whose ability has you act or learn something on most nights, not just once?",
+    "dinniman": "Evil never sleeps, they say. Usually they're talking about the ones who actually get up night after night and get their hands dirty. Are you a Minion or Demon whose ability puts you to work on most nights?",
     "voice": "Mordecai",
     "yes": {
       "wakesMostNights": true,
@@ -41,8 +41,8 @@
   },
   {
     "id": "xp-night-shift-good",
-    "plain": "Are you a Townsfolk or Outsider whose own ability wakes you on most nights?",
-    "dinniman": "It's honest work, waking up in the dark for a town that might hang you tomorrow. I think it's brave. Are you a Townsfolk or Outsider woken most nights by your own ability?",
+    "plain": "Are you a Townsfolk or Outsider whose own ability has you act or learn something on most nights?",
+    "dinniman": "It's honest work, waking up in the dark for a town that might hang you tomorrow. I think it's brave. Are you a Townsfolk or Outsider whose own ability has you act or learn something most nights?",
     "voice": "Katia",
     "yes": {
       "wakesMostNights": true,
@@ -83,8 +83,8 @@
   },
   {
     "id": "xp-night-shift-no-pointing",
-    "plain": "Are you woken on most nights, yet never asked to pick a player?",
-    "dinniman": "Every night the lights come on and somebody whispers secrets at you, and you never once have to point at anybody. Honestly? Sounds like a decent gig. Are you woken most nights without ever picking a player?",
+    "plain": "Does your ability have you act or learn something on most nights, but never pick a player?",
+    "dinniman": "Every night the lights come on and somebody whispers secrets at you, and you never once have to point at anybody. Honestly? Sounds like a decent gig. Does your ability keep you busy most nights without ever having you pick a player?",
     "voice": "Elle",
     "yes": {
       "wakesMostNights": true,
@@ -93,8 +93,8 @@
   },
   {
     "id": "xp-night-shift-risky",
-    "plain": "Do you wake most nights to use an ability that carries a catch for you or your own side?",
-    "dinniman": "New sponsor-approved feature: the Nightly Gamble! Every night you use your power, and every night it might bite you, or your friends, right on the ankle. Ratings GOLD. Do you wake most nights to use an ability with a catch for you or your side?",
+    "plain": "Do you use your ability on most nights, and does it carry a catch for you or your own side?",
+    "dinniman": "New sponsor-approved feature: the Nightly Gamble! Every night you use your power, and every night it might bite you, or your friends, right on the ankle. Ratings GOLD. Do you use your ability most nights, with a catch for you or your side?",
     "voice": "The System AI",
     "yes": {
       "wakesMostNights": true,
@@ -291,8 +291,8 @@
   },
   {
     "id": "xp-dark-pointer-bond",
-    "plain": "Does one of your night picks tie you to that player from then on?",
-    "dinniman": "Most night picks are fire-and-forget. Yours might be different: you choose someone and suddenly you're stuck with them, like a lease you didn't read. Does one of your night picks bind you to that player?",
+    "plain": "Does a night pick bind you to that player, so their vote, alignment or survival decides yours?",
+    "dinniman": "Most night picks are fire-and-forget. Yours might be different: you choose someone and suddenly their vote, their side or their pulse decides yours, like a lease you didn't read. Does a night pick bind you to that player like that?",
     "voice": "Carl",
     "yes": {
       "choosesPlayersAtNight": true,
@@ -665,8 +665,8 @@
   },
   {
     "id": "xp-rules-house-rules",
-    "plain": "Does your character make everyone play the day differently, just by being in the game?",
-    "dinniman": "Exciting format change, everyone! With this contestant around, the usual daytime procedure goes right out the window. Fresh! Disruptive! On-brand! Does your character make everyone play the day differently just by being there?",
+    "plain": "Does just having your character in play change one of the game's standing rules for everybody?",
+    "dinniman": "Exciting format change, everyone! With this contestant around, the usual rulebook goes right out the window for the whole table. Fresh! Disruptive! On-brand! Does your character change a standing rule for everyone just by being in play?",
     "voice": "Zev",
     "yes": {
       "changesTheRules": true
@@ -674,8 +674,8 @@
   },
   {
     "id": "xp-rules-evil",
-    "plain": "Are you a Minion or Demon whose ability rewrites how the town's days work for everyone?",
-    "dinniman": "Why kill the town when you can rig the whole system? Are you a Minion or Demon whose ability rewrites how the days work for everyone?",
+    "plain": "Are you a Minion or Demon whose ability changes how nominating, voting or executions work for the whole table?",
+    "dinniman": "Why kill the town when you can rig the whole system? Are you a Minion or Demon whose ability changes how nominations, votes or executions work for everyone?",
     "voice": "Samantha",
     "yes": {
       "changesTheRules": true,
@@ -726,8 +726,8 @@
   },
   {
     "id": "xp-oneshot-spent",
-    "plain": "Do you get exactly one use of your ability in the whole game, and then it's spent?",
-    "dinniman": "One-time consumable detected! Use it wisely, or don't, the audience enjoys both outcomes. Do you get exactly one use of your ability, and then it's gone forever?",
+    "plain": "Do you get exactly one deliberate use of your ability in the whole game, and then it's spent?",
+    "dinniman": "One-time consumable detected! Use it wisely, or don't, the audience enjoys both outcomes. Do you get exactly one deliberate use of your ability, and then it's gone forever?",
     "voice": "The System AI",
     "yes": {
       "oneShot": true
@@ -757,8 +757,8 @@
   },
   {
     "id": "xp-oneshot-good",
-    "plain": "Are you a Townsfolk or Outsider whose ability can only be used once?",
-    "dinniman": "Holding one card all game, waiting for the right moment, knowing you can't take it back. I think that's one of the bravest ways to play. Are you a Townsfolk or Outsider whose ability can only be used once?",
+    "plain": "Are you a Townsfolk or Outsider who gets just one deliberate use of your ability all game?",
+    "dinniman": "Holding one card all game, waiting for the right moment, knowing you can't take it back. I think that's one of the bravest ways to play. Are you a Townsfolk or Outsider with just one deliberate use of your ability?",
     "voice": "Katia",
     "yes": {
       "oneShot": true,
