@@ -18,7 +18,7 @@ Questions live in `data/questions/*.json`, one file per character group, each li
 - `yes`: who answers yes. Either a list of character ids, or a match object on fields in `data/characters.json`, e.g. `{ "team": ["minion", "demon"] }` or `{ "otherNight": true }`. All fields must match.
 - `scope` (optional): the sub-pool the question is about, using the same selector forms. **Without a scope** the question is *global*: everyone not on the yes side is on the no side, and it can be asked at any point. **With a scope**, it's only asked when every remaining character is inside the scope, and the "no" side is the rest of the scope. Every `yes` character must be inside the scope.
 - `voice`: who speaks the `dinniman` line (see below).
-- `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers, in `travellers.json`), and `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files.
+- `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers, in `travellers.json`), `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files, and `fun-` for `fun.json` (comedy-first questions).
 
 ## Accuracy is the whole game
 

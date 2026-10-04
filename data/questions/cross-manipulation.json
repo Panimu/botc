@@ -1,1 +1,864 @@
-[]
+[
+  {
+    "id": "xm-drunk-side-effect",
+    "plain": "Does your ability leave somebody else drunk or poisoned, whether that's the whole point or just the price?",
+    "dinniman": "Patch note: certain contestants now ship with a complimentary hangover, applied to a player who is not them. Sometimes it's the feature, sometimes it's the bug. Does your ability leave somebody else drunk or poisoned?",
+    "voice": "The System AI",
+    "yes": {
+      "makesOthersDrunkOrPoisoned": true
+    }
+  },
+  {
+    "id": "xm-reminder-tokens",
+    "plain": "Would the Storyteller have to mark another player drunk or poisoned because of your ability?",
+    "dinniman": "Every game the Storyteller's got a little pile of shame tokens. Drunk. Poisoned. Somebody's going to wear one. Would the Storyteller have to slap one of those on another player because of your ability?",
+    "voice": "Mordecai",
+    "yes": {
+      "makesOthersDrunkOrPoisoned": true
+    }
+  },
+  {
+    "id": "xm-good-but-befuddling",
+    "plain": "Are you on the good team, yet your ability can still leave another player drunk or poisoned?",
+    "dinniman": "So you're one of the good guys. Lovely. And yet somehow, someone on your watch ends up seeing double and getting nonsense from the Storyteller. Are you good, with an ability that can leave another player drunk or poisoned?",
+    "voice": "Carl",
+    "yes": {
+      "makesOthersDrunkOrPoisoned": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xm-evil-poison-pusher",
+    "plain": "Playing for evil, would your ability slip poison into other players' powers?",
+    "dinniman": "Our new sponsor, Nightshade Spritzers, is THRILLED to partner with evil contestants who spike the punch. Brand-safe? Absolutely. Fatal? Mostly to information. Playing for evil, would your ability slip poison into other players' powers?",
+    "voice": "Zev",
+    "yes": {
+      "makesOthersDrunkOrPoisoned": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "xm-mind-clouding",
+    "plain": "Can your ability cloud another player's judgement, by making them drunk, poisoned or mad?",
+    "dinniman": "Booze, venom or a head full of nonsense the Storyteller makes them repeat. Three flavours of ruining somebody's afternoon. Can your ability cloud another player's judgement with drink, poison or madness?",
+    "voice": "Elle",
+    "yes": [
+      "sailor",
+      "villageidiot",
+      "snakecharmer",
+      "innkeeper",
+      "courtier",
+      "philosopher",
+      "minstrel",
+      "goon",
+      "sweetheart",
+      "puzzlemaster",
+      "poisoner",
+      "widow",
+      "xaan",
+      "pukka",
+      "nodashii",
+      "vigormortis",
+      "lleech",
+      "cerenovus",
+      "harpy"
+    ]
+  },
+  {
+    "id": "xm-demon-with-a-chaser",
+    "plain": "As a Demon, does your ability poison players as well as kill them?",
+    "dinniman": "Murder is the main course, darlings, but a TRUE monster serves it with a little poison on the side. Presentation matters! As a Demon, does your ability poison players as well as kill them?",
+    "voice": "Princess Donut",
+    "yes": {
+      "makesOthersDrunkOrPoisoned": true,
+      "team": "demon"
+    }
+  },
+  {
+    "id": "xm-d-townsfolk-only",
+    "plain": "Of those who spread drunkenness or poison, does yours only ever land on Townsfolk?",
+    "dinniman": "Some poisons are indiscriminate. Yours has taste. It skips the Outsiders, ignores the riff-raff and goes straight for the Townsfolk. Does your poison only ever land on Townsfolk?",
+    "voice": "Odette",
+    "yes": [
+      "nodashii",
+      "vigormortis",
+      "xaan"
+    ],
+    "scope": {
+      "makesOthersDrunkOrPoisoned": true
+    }
+  },
+  {
+    "id": "xm-d-death-triggered",
+    "plain": "Of those who spread drunkenness or poison, does yours only kick in when somebody dies?",
+    "dinniman": "Some of you poison on a schedule. Others wait for a body to hit the floor before the fog rolls in. Of you drink-and-poison types, does yours only kick in when somebody dies?",
+    "voice": "Mordecai",
+    "yes": [
+      "minstrel",
+      "sweetheart",
+      "vigormortis"
+    ],
+    "scope": {
+      "makesOthersDrunkOrPoisoned": true
+    }
+  },
+  {
+    "id": "xm-d-good-side",
+    "plain": "Of those who bring drunkenness or poison into the game, are you on the town's side?",
+    "dinniman": "You leave people stumbling. Fine. But are you doing it for the town, or for the monsters? Among the poison-and-drink crowd, are you on the town's side?",
+    "voice": "Katia",
+    "yes": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    },
+    "scope": {
+      "makesOthersDrunkOrPoisoned": true
+    }
+  },
+  {
+    "id": "xm-d-side-dish",
+    "plain": "Of those who spread drunkenness or poison, do you also kill a player most nights?",
+    "dinniman": "MONGO! Mongo sniffs the poison cup, then looks hungrily at the village. Translation: for you, is the poison just a side dish to killing a player most nights?",
+    "voice": "Mongo",
+    "yes": {
+      "team": "demon"
+    },
+    "scope": {
+      "makesOthersDrunkOrPoisoned": true
+    }
+  },
+  {
+    "id": "xm-d-chosen-by-them",
+    "plain": "Of those who spread drunkenness, does yours only strike whoever chooses you with their ability?",
+    "dinniman": "You don't go looking for victims. They come to you, poke you with their ability, and wake up with a headache. Does your drunkenness only strike whoever chooses you?",
+    "voice": "Carl",
+    "yes": [
+      "goon"
+    ],
+    "scope": {
+      "makesOthersDrunkOrPoisoned": true
+    }
+  },
+  {
+    "id": "xm-madness-rule",
+    "plain": "Does your ability use the madness rule, where someone must convincingly commit to a claim?",
+    "dinniman": "New mechanic unlocked: Method Acting! Commit to the bit, sell it to the whole room, and the Storyteller is watching your performance. Does your ability use the madness rule, where someone must convincingly commit to a claim?",
+    "voice": "The System AI",
+    "yes": {
+      "involvesMadness": true
+    }
+  },
+  {
+    "id": "xm-convincing-performance",
+    "plain": "Because of your ability, must the Storyteller judge whether someone is sincerely selling a claim?",
+    "dinniman": "I was BORN to be judged, darlings, and I always win. Some of you make the Storyteller sit there scoring how hard someone is selling their story. Because of your ability, must the Storyteller judge whether someone is sincerely selling a claim?",
+    "voice": "Princess Donut",
+    "yes": {
+      "involvesMadness": true
+    }
+  },
+  {
+    "id": "xm-inflict-madness",
+    "plain": "Does your ability force another player to sell a claim to the group, or pay for refusing?",
+    "dinniman": "BEHOLD! I shall write the script, and some poor fool shall recite it with feeling, or suffer! Does your ability force another player to sell a claim to the group, or pay for refusing?",
+    "voice": "Prepotente",
+    "yes": [
+      "cerenovus",
+      "harpy"
+    ]
+  },
+  {
+    "id": "xm-mad-yourself",
+    "plain": "Of those whose ability uses madness, is it you who has to keep up the act?",
+    "dinniman": "Some of you hand out the madness. Some of you have to carry it yourself, lying through your teeth for your own benefit. Is it you who has to keep up the act?",
+    "voice": "Katia",
+    "yes": [
+      "pixie",
+      "mutant"
+    ],
+    "scope": {
+      "involvesMadness": true
+    }
+  },
+  {
+    "id": "xm-recast",
+    "plain": "Can your ability turn a player, perhaps even you, into a different character?",
+    "dinniman": "Mid-season recasting! The audience adores it when a contestant goes to sleep as one thing and wakes up as another. Can your ability turn a player, perhaps even you, into a different character?",
+    "voice": "The Host",
+    "yes": {
+      "changesCharacters": true
+    }
+  },
+  {
+    "id": "xm-casting-director",
+    "plain": "Does your ability rewrite who's who, so that a player's character is no longer what it was?",
+    "dinniman": "I've had to explain my own species to four different idiots this week, so believe me, identity is fluid down here. Does your ability rewrite who's who, so that a player's character is no longer what it was?",
+    "voice": "Carl",
+    "yes": {
+      "changesCharacters": true
+    }
+  },
+  {
+    "id": "xm-good-reshuffle",
+    "plain": "As a good player, can your ability end up changing somebody's character?",
+    "dinniman": "Heroes don't usually get to rearrange the cast list. You might. As a good player, can your ability end up changing somebody's character?",
+    "voice": "Odette",
+    "yes": {
+      "changesCharacters": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xm-evil-transform",
+    "plain": "As an evil player, does your ability reshape who is which character?",
+    "dinniman": "Evil gets a makeover budget! New Demons, new Minions, new faces where the old ones used to be. As an evil player, does your ability reshape who is which character?",
+    "voice": "Zev",
+    "yes": {
+      "changesCharacters": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "xm-cc-evil-targets",
+    "plain": "Of those who change characters, do the characters you change belong only to evil players?",
+    "dinniman": "Some of you mess with anyone. You keep it in the family. Of you character-changers, do you only ever change the characters of evil players?",
+    "voice": "Mordecai",
+    "yes": [
+      "engineer",
+      "hatter",
+      "imp",
+      "scarletwoman",
+      "riot"
+    ],
+    "scope": {
+      "changesCharacters": true
+    }
+  },
+  {
+    "id": "xm-cc-death-trigger",
+    "plain": "Of those who change characters, does the change only happen because somebody died?",
+    "dinniman": "A body drops, and suddenly somebody's got a new name badge. Grim little promotions system. Of you character-changers, does yours only happen because somebody died?",
+    "voice": "Elle",
+    "yes": [
+      "barber",
+      "hatter",
+      "farmer",
+      "scarletwoman",
+      "imp",
+      "fanggu"
+    ],
+    "scope": {
+      "changesCharacters": true
+    }
+  },
+  {
+    "id": "xm-cc-name-the-role",
+    "plain": "Of those who change characters, do you personally decide which character someone becomes?",
+    "dinniman": "I DECIDE. I CHOOSE. I name the role and they must wear it! Of you character-changers, do you personally decide which character someone becomes?",
+    "voice": "Samantha",
+    "yes": [
+      "pithag",
+      "summoner",
+      "kazali",
+      "engineer"
+    ],
+    "scope": {
+      "changesCharacters": true
+    }
+  },
+  {
+    "id": "xm-cc-many-at-once",
+    "plain": "Of those who change characters, can yours change two or more players' characters at once?",
+    "dinniman": "One makeover is a segment. Two or more at once is a special event, and we sell ad space accordingly. Of you character-changers, can yours change two or more players' characters at once?",
+    "voice": "The Host",
+    "yes": [
+      "riot",
+      "hatter",
+      "engineer",
+      "kazali",
+      "lordoftyphon",
+      "barber",
+      "snakecharmer"
+    ],
+    "scope": {
+      "changesCharacters": true
+    }
+  },
+  {
+    "id": "xm-flip-sides",
+    "plain": "Can your ability move a player, perhaps you, from one team to the other?",
+    "dinniman": "Achievement: Turncoat Enabler! Someone started the day on one team and is finishing it on the other, and it's your fault. Can your ability move a player, perhaps you, from one team to the other?",
+    "voice": "The System AI",
+    "yes": {
+      "changesAlignment": true
+    }
+  },
+  {
+    "id": "xm-own-side-may-switch",
+    "plain": "Could your own ability leave you on a different team from the one you started on?",
+    "dinniman": "Starting loyalty is a suggestion, not a contract. I've watched good folk wake up batting for the other side and keep right on smiling. Could your own ability leave you on a different team from the one you started on?",
+    "voice": "Mordecai",
+    "yes": [
+      "cultleader",
+      "goon",
+      "ogre",
+      "politician",
+      "snakecharmer"
+    ]
+  },
+  {
+    "id": "xm-evil-recruiter",
+    "plain": "As an evil player, can your ability bring good players over to your side?",
+    "dinniman": "Why kill them when you can hire them? Fresh talent, no severance, endless loyalty. As an evil player, can your ability bring good players over to your side?",
+    "voice": "Odette",
+    "yes": {
+      "changesAlignment": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "xm-ca-only-yourself",
+    "plain": "Of those who change alignment, is the only player whose side your ability changes you?",
+    "dinniman": "Some people convert others. You just keep changing your own mind and blaming the neighbours. Of you side-switchers, is the only player whose side your ability changes you?",
+    "voice": "Elle",
+    "yes": [
+      "cultleader",
+      "goon",
+      "ogre",
+      "politician"
+    ],
+    "scope": {
+      "changesAlignment": true
+    }
+  },
+  {
+    "id": "xm-ca-night-after-night",
+    "plain": "Of those who change alignment, can your ability flip a side again and again, night after night?",
+    "dinniman": "Some of you switch once and live with it. You? You're a weathervane. Of you side-switchers, can your ability flip a side again and again, night after night?",
+    "voice": "Carl",
+    "yes": [
+      "cultleader",
+      "goon"
+    ],
+    "scope": {
+      "changesAlignment": true
+    }
+  },
+  {
+    "id": "xm-character-and-side",
+    "plain": "Can your ability change both a player's character and which team they're on?",
+    "dinniman": "The deluxe package: new costume AND new loyalties, gift-wrapped and delivered overnight. Can your ability change both a player's character and which team they're on?",
+    "voice": "Zev",
+    "yes": [
+      "snakecharmer",
+      "summoner",
+      "kazali",
+      "fanggu",
+      "lordoftyphon"
+    ]
+  },
+  {
+    "id": "xm-chaos-for-notes",
+    "plain": "Can your ability change a player's character or their team, wrecking everyone's careful notes?",
+    "dinniman": "Somebody spent all day building a perfect chart of who is what, and you're about to make it fiction. Can your ability change a player's character or which team they're on?",
+    "voice": "Princess Donut",
+    "yes": [
+      "snakecharmer",
+      "farmer",
+      "huntsman",
+      "engineer",
+      "barber",
+      "hatter",
+      "pithag",
+      "scarletwoman",
+      "summoner",
+      "imp",
+      "fanggu",
+      "kazali",
+      "lordoftyphon",
+      "riot",
+      "cacklejack",
+      "cultleader",
+      "goon",
+      "ogre",
+      "politician",
+      "mezepheles"
+    ]
+  },
+  {
+    "id": "xm-false-reading",
+    "plain": "Can you register to other players' abilities as something you're not?",
+    "dinniman": "Scanners say one thing, reality says another. You are a walking glitch in the inspection system. Can you register to other players' abilities as something you're not?",
+    "voice": "The System AI",
+    "yes": {
+      "registersFalsely": true
+    }
+  },
+  {
+    "id": "xm-not-what-you-seem",
+    "plain": "Is your own registration unreliable, so you might read as something you aren't even when every ability works properly?",
+    "dinniman": "I spent a long time looking like things I wasn't. It's lonely, but it's also a kind of armour. Is your own registration unreliable, so you might read as something you aren't even when every ability works properly?",
+    "voice": "Katia",
+    "yes": {
+      "registersFalsely": true
+    }
+  },
+  {
+    "id": "xm-rf-good-underneath",
+    "plain": "Of those who can register falsely, are you secretly good underneath the disguise?",
+    "dinniman": "A disguise can hide a villain or a saint, darling. Of you mis-registering types, are you secretly good underneath it?",
+    "voice": "Odette",
+    "yes": [
+      "recluse"
+    ],
+    "scope": {
+      "registersFalsely": true
+    }
+  },
+  {
+    "id": "xm-rf-playing-dead",
+    "plain": "Of those who can register falsely, is your disguise about seeming dead rather than your side or role?",
+    "dinniman": "Some fakers lie about their team. You lie about your pulse. Of you mis-registering types, is your disguise about seeming dead?",
+    "voice": "Samantha",
+    "yes": [
+      "zombuul"
+    ],
+    "scope": {
+      "registersFalsely": true
+    }
+  },
+  {
+    "id": "xm-muddy-waters",
+    "plain": "Can your ability make the Storyteller tell other players false things, without any drunkenness or poison?",
+    "dinniman": "No booze, no venom, and still the Storyteller is reading everybody fairy tales. Very elegant. Very annoying. Can your ability make the Storyteller tell other players false things, without drunkenness or poison?",
+    "voice": "Mordecai",
+    "yes": {
+      "feedsFalseInfo": true
+    }
+  },
+  {
+    "id": "xm-wrong-notes",
+    "plain": "Does simply having you in the game, with no drink or poison involved, mean other players are told untrue things?",
+    "dinniman": "Somebody's grandmother is taking notes in the corner. Lovely handwriting. Totally wrong, and you didn't even have to spike her tea. Does simply having you in the game mean other players are told untrue things, with no drink or poison involved?",
+    "voice": "Elle",
+    "yes": {
+      "feedsFalseInfo": true
+    }
+  },
+  {
+    "id": "xm-good-confuser",
+    "plain": "On the good team, does your ability make the Storyteller tell other players false things, with no drink or poison involved?",
+    "dinniman": "You're good. You're helping. And somehow somebody's information goes wrong whenever you're around, and nobody's been drinking. On the good team, does your ability make the Storyteller tell other players false things, with no drink or poison involved?",
+    "voice": "Carl",
+    "yes": {
+      "feedsFalseInfo": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xm-evil-misinformation",
+    "plain": "As an evil player, does your ability make the Storyteller tell the town false things, with no poison needed?",
+    "dinniman": "The finest lies come straight from the source, darlings, not out of a bottle. As an evil player, does your ability make the Storyteller tell the town false things, with no poison needed?",
+    "voice": "Princess Donut",
+    "yes": {
+      "feedsFalseInfo": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "xm-fi-about-you",
+    "plain": "Of those who spread false information, is the false impression mostly about you yourself?",
+    "dinniman": "Some liars build a whole false world. Others just build a false them. Of you misinformation merchants, is the false impression mostly about you yourself?",
+    "voice": "Katia",
+    "yes": [
+      "magician",
+      "recluse",
+      "spy",
+      "legion",
+      "zombuul"
+    ],
+    "scope": {
+      "feedsFalseInfo": true
+    }
+  },
+  {
+    "id": "xm-fi-fool-the-evil",
+    "plain": "Of those who spread false information, do you mainly fool the evil team rather than the town?",
+    "dinniman": "BAH! Why trick the sheep when you can trick the wolves? Of you misinformation merchants, do you mainly fool the evil team?",
+    "voice": "Prepotente",
+    "yes": [
+      "magician"
+    ],
+    "scope": {
+      "feedsFalseInfo": true
+    }
+  },
+  {
+    "id": "xm-unreliable-by-any-means",
+    "plain": "Can your own ability directly lead the Storyteller to give another player false information, by any means?",
+    "dinniman": "Poison, drink, disguises, rule-bending, whatever. We don't care how, we care that the info is garbage. Can your own ability directly lead the Storyteller to give another player false information, by any means?",
+    "voice": "The System AI",
+    "yes": [
+      "sailor",
+      "villageidiot",
+      "snakecharmer",
+      "innkeeper",
+      "courtier",
+      "philosopher",
+      "minstrel",
+      "goon",
+      "sweetheart",
+      "puzzlemaster",
+      "poisoner",
+      "widow",
+      "xaan",
+      "pukka",
+      "nodashii",
+      "vigormortis",
+      "lleech",
+      "magician",
+      "lycanthrope",
+      "atheist",
+      "recluse",
+      "spy",
+      "legion",
+      "zombuul",
+      "vortox"
+    ]
+  },
+  {
+    "id": "xm-secretly-wrong",
+    "plain": "Could your own role leave you wrong about yourself, or quietly broken, without anyone telling you?",
+    "dinniman": "Here's the nightmare: you're playing your heart out and the game never mentions that you've got it all wrong. Could your own role leave you wrong about yourself, or quietly broken, without anyone telling you?",
+    "voice": "Carl",
+    "yes": {
+      "mayNotKnowTheTruth": true
+    }
+  },
+  {
+    "id": "xm-blissful-ignorance",
+    "plain": "Might you be the last to find out the truth about your own character, team, or whether your ability even works?",
+    "dinniman": "Mystery Box Achievement! Contents: you. Label: possibly incorrect. Warranty: void. Might you be the last to find out the truth about your own character, team, or whether your ability even works?",
+    "voice": "The System AI",
+    "yes": {
+      "mayNotKnowTheTruth": true
+    }
+  },
+  {
+    "id": "xm-think-good-really-evil",
+    "plain": "Could your role let you sincerely believe you're good while you're actually evil?",
+    "dinniman": "Mongo tilts his head. Mongo thinks he is a good boy. Narrator: Mongo may not be a good boy. Could your role let you sincerely believe you're good while you're actually evil?",
+    "voice": "Mongo",
+    "yes": [
+      "marionette",
+      "ogre",
+      "hermit"
+    ]
+  },
+  {
+    "id": "xm-think-demon-really-good",
+    "plain": "Could your role trick you into believing you're the Demon when you're really good?",
+    "dinniman": "You wake up, you get your little Minion list, you pick a victim, you feel very evil. Then nobody dies. Could your role trick you into believing you're the Demon when you're really good?",
+    "voice": "Elle",
+    "yes": [
+      "lunatic",
+      "hermit"
+    ]
+  },
+  {
+    "id": "xm-nk-different-character",
+    "plain": "Of those kept in the dark about themselves, could you believe you're a whole different character?",
+    "dinniman": "Not just a little bit wrong. Completely, gloriously, wearing-the-wrong-costume wrong. Of you lot kept in the dark, could you believe you're a whole different character?",
+    "voice": "Mordecai",
+    "yes": [
+      "drunk",
+      "lunatic",
+      "marionette",
+      "hermit"
+    ],
+    "scope": {
+      "mayNotKnowTheTruth": true
+    }
+  },
+  {
+    "id": "xm-nk-secret-hangover",
+    "plain": "Of those kept in the dark about themselves, do you know your character but might be secretly drunk or poisoned?",
+    "dinniman": "You know your name. You know your job. What you don't know is whether it's actually working tonight. Of you lot kept in the dark, do you know your character but might be secretly drunk or poisoned?",
+    "voice": "Katia",
+    "yes": [
+      "sailor",
+      "villageidiot",
+      "cannibal"
+    ],
+    "scope": {
+      "mayNotKnowTheTruth": true
+    }
+  },
+  {
+    "id": "xm-borrowed-power",
+    "plain": "Does your ability give you another character's ability to use as your own?",
+    "dinniman": "Why build a power when you can borrow one? Like a library card, but for murder and secrets. Does your ability give you another character's ability to use as your own?",
+    "voice": "Zev",
+    "yes": {
+      "borrowsAbility": true
+    }
+  },
+  {
+    "id": "xm-copycat",
+    "plain": "Do you really hold a power that belongs to some other character?",
+    "dinniman": "Hand-me-downs! I ADORE hand-me-downs, as long as they're designer. Do you really hold a power that belongs to some other character?",
+    "voice": "Princess Donut",
+    "yes": {
+      "borrowsAbility": true
+    }
+  },
+  {
+    "id": "xm-ba-pick-it",
+    "plain": "Of those who borrow abilities, do you get to pick exactly which ability you take?",
+    "dinniman": "Some of you get whatever falls out of the box. One of you gets to read the menu and order. Of you ability-borrowers, do you pick exactly which ability you take?",
+    "voice": "The Host",
+    "yes": [
+      "philosopher"
+    ],
+    "scope": {
+      "borrowsAbility": true
+    }
+  },
+  {
+    "id": "xm-ba-after-death",
+    "plain": "Of those who borrow abilities, does someone have to die before the ability becomes yours?",
+    "dinniman": "Inheritance! The only way to get rich down here is for someone else to stop breathing. Of you ability-borrowers, does someone have to die before the ability becomes yours?",
+    "voice": "Samantha",
+    "yes": [
+      "pixie",
+      "cannibal"
+    ],
+    "scope": {
+      "borrowsAbility": true
+    }
+  },
+  {
+    "id": "xm-trap-setter",
+    "plain": "Does your ability set up a condition so that the very player who breaks it is the one who suffers?",
+    "dinniman": "Nobody's forcing them to step on the pressure plate. You just made sure there's one there, and it only bites the foot that lands on it. Does your ability set up a condition so that the very player who breaks it is the one who suffers?",
+    "voice": "Mordecai",
+    "yes": {
+      "setsTraps": true
+    }
+  },
+  {
+    "id": "xm-bait",
+    "plain": "Does your ability punish another player for their own choices: nominating, saying a certain word, or refusing to play along?",
+    "dinniman": "The waiting is the delicious part, darling. They point, they speak, they refuse to play their part, and snap. Does your ability punish another player for nominating, saying a certain word, or refusing to play along?",
+    "voice": "Odette",
+    "yes": {
+      "setsTraps": true
+    }
+  },
+  {
+    "id": "xm-st-nominations",
+    "plain": "Of those who set traps, is yours sprung when someone nominates?",
+    "dinniman": "Some traps trigger on words. Yours triggers on a pointing finger and a big speech. Of you trap-setters, is yours sprung when someone nominates?",
+    "voice": "Carl",
+    "yes": [
+      "virgin",
+      "witch",
+      "gnome"
+    ],
+    "scope": {
+      "setsTraps": true
+    }
+  },
+  {
+    "id": "xm-st-new-target-nightly",
+    "plain": "Of those who set traps, do you pick a fresh target for it every night?",
+    "dinniman": "A new victim every evening, like a little advent calendar of doom! Of you trap-setters, do you pick a fresh target for it every night?",
+    "voice": "Samantha",
+    "yes": [
+      "witch",
+      "cerenovus",
+      "harpy"
+    ],
+    "scope": {
+      "setsTraps": true
+    }
+  },
+  {
+    "id": "xm-gap-between-seeming",
+    "plain": "Can the game's rules mislead about you, giving others a false picture of you or leaving you with a false belief about yourself?",
+    "dinniman": "Mirror, mirror, absolutely lying to your face, or to everyone else's. Can the game's rules mislead about you, giving others a false picture of you or leaving you with a false belief about yourself?",
+    "voice": "Katia",
+    "yes": [
+      "recluse",
+      "spy",
+      "legion",
+      "zombuul",
+      "magician",
+      "drunk",
+      "lunatic",
+      "marionette",
+      "ogre",
+      "sailor",
+      "villageidiot",
+      "cannibal",
+      "hermit"
+    ]
+  },
+  {
+    "id": "xm-good-meddler",
+    "plain": "As a good player, does your ability tamper with another player's character or sobriety?",
+    "dinniman": "You're on the right side, sure. You're also the reason somebody woke up as someone else, or woke up drunk. As a good player, does your ability tamper with another player's character or sobriety?",
+    "voice": "Elle",
+    "yes": [
+      "sailor",
+      "villageidiot",
+      "snakecharmer",
+      "innkeeper",
+      "courtier",
+      "philosopher",
+      "minstrel",
+      "goon",
+      "sweetheart",
+      "puzzlemaster",
+      "engineer",
+      "huntsman",
+      "farmer",
+      "barber",
+      "hatter"
+    ]
+  },
+  {
+    "id": "xm-evil-meddler",
+    "plain": "As an evil player, does your ability tamper with another player's character, team or sobriety?",
+    "dinniman": "Evil contestants, listen up: tampering polls fantastically with the eighteen-to-dead demographic. As an evil player, does your ability tamper with another player's character, team or sobriety?",
+    "voice": "Zev",
+    "yes": [
+      "poisoner",
+      "widow",
+      "xaan",
+      "pukka",
+      "nodashii",
+      "vigormortis",
+      "lleech",
+      "pithag",
+      "summoner",
+      "imp",
+      "kazali",
+      "fanggu",
+      "lordoftyphon",
+      "riot",
+      "mezepheles"
+    ]
+  },
+  {
+    "id": "xm-swap-artist",
+    "plain": "Does your ability swap things between players, such as their characters or their seats?",
+    "dinniman": "Shell game! Watch the cup, watch the cup, oops, now you're sitting somewhere else as someone else. Does your ability swap things between players, such as their characters or their seats?",
+    "voice": "The Host",
+    "yes": [
+      "snakecharmer",
+      "barber",
+      "matron"
+    ]
+  },
+  {
+    "id": "xm-secret-word",
+    "plain": "Would you love a secret word or phrase that does terrible things whenever it's spoken aloud?",
+    "dinniman": "I KNOW A WORD! A WORD OF POWER! Speak it, and the village shall rue the day! Would you love a secret word or phrase that does terrible things whenever it's spoken aloud?",
+    "voice": "Prepotente",
+    "yes": [
+      "mezepheles",
+      "yaggababble"
+    ]
+  },
+  {
+    "id": "xm-public-recaster",
+    "plain": "Does your publicly known character let you cause another player to change character?",
+    "dinniman": "Everyone knows exactly who you are, and you still get to rearrange them. Bold. Does your publicly known character let you cause another player to change character?",
+    "voice": "Carl",
+    "yes": [
+      "cacklejack"
+    ]
+  },
+  {
+    "id": "xm-ca-started-good",
+    "plain": "Of those who change alignment, do you start the game as a good character?",
+    "dinniman": "Every turncoat has an origin story. Some of you began as heroes. Of you side-switchers, do you start the game as a good character?",
+    "voice": "Odette",
+    "yes": {
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    },
+    "scope": {
+      "changesAlignment": true
+    }
+  },
+  {
+    "id": "xm-nk-secret-minion",
+    "plain": "Of those kept in the dark about themselves, are you secretly one of the Demon's Minions?",
+    "dinniman": "The worst secret is the one kept from you. Somewhere a Demon is grinning because it knows what you are. Of you lot kept in the dark, are you secretly one of the Demon's Minions?",
+    "voice": "Mordecai",
+    "yes": {
+      "team": "minion"
+    },
+    "scope": {
+      "mayNotKnowTheTruth": true
+    }
+  },
+  {
+    "id": "xm-cc-good-only",
+    "plain": "Of those who change characters, do you only ever turn players into good characters?",
+    "dinniman": "Some transformations make monsters. Yours only ever makes more heroes. Of you character-changers, do you only ever turn players into good characters?",
+    "voice": "Katia",
+    "yes": [
+      "farmer",
+      "huntsman"
+    ],
+    "scope": {
+      "changesCharacters": true
+    }
+  },
+  {
+    "id": "xm-d-single-for-good",
+    "plain": "Of those who cause drunkenness or poison, does yours settle on a single player for good rather than moving around?",
+    "dinniman": "Achievement: Long-Term Relationship! One unlucky player, one permanent stupor, no take-backs. Of you drink-and-poison types, does yours settle on a single player for good rather than moving around?",
+    "voice": "The System AI",
+    "yes": [
+      "sweetheart",
+      "puzzlemaster",
+      "widow",
+      "philosopher",
+      "villageidiot",
+      "lleech",
+      "snakecharmer"
+    ],
+    "scope": {
+      "makesOthersDrunkOrPoisoned": true
+    }
+  }
+]

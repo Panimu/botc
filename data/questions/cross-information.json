@@ -1,1 +1,750 @@
-[]
+[
+  {
+    "id": "xi-name-to-a-face",
+    "plain": "Is your ability built to tell you which character a particular player is, even if only as one of two options?",
+    "dinniman": "New loot drop: the Name Tag Reveal! Point at a face, get a character name stapled to it, possibly with a decoy stapled next to it for flavour. Is that kind of reveal built right into your ability?",
+    "voice": "The System AI",
+    "yes": {
+      "learnsCharacters": true
+    }
+  },
+  {
+    "id": "xi-see-the-token",
+    "plain": "Does your ability show you a character and tie it to a specific player, or to one of two players?",
+    "dinniman": "Somewhere in this village, the Storyteller holds up a little disc with a picture on it, nods at a player, and someone finally knows who that person actually is. Does your ability show you a character and pin it on a specific player like that?",
+    "voice": "Carl",
+    "yes": {
+      "learnsCharacters": true
+    }
+  },
+  {
+    "id": "xi-unmasker",
+    "plain": "Do you love unmasking people, with an ability that actually tells you what character they are?",
+    "dinniman": "Masks are TACKY, darling. Everybody pretending to be somebody else, and only a select few of us get to see past it to the actual character underneath. Does your ability let you see behind the mask like that?",
+    "voice": "Princess Donut",
+    "yes": {
+      "learnsCharacters": true
+    }
+  },
+  {
+    "id": "xi-evil-reads-the-good",
+    "plain": "Are you a Minion or Demon whose own ability shows you which characters good players really are?",
+    "dinniman": "Every evil team wants a peek at the opposition's hand. Most of you just get the usual handshake with your teammates and a shrug. Are you the Minion or Demon whose own ability lets you read the good players' actual characters?",
+    "voice": "Mordecai",
+    "yes": {
+      "learnsCharacters": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "xi-good-reads-names",
+    "plain": "Are you a good character whose ability tells you exactly which character someone is?",
+    "dinniman": "I think there's real courage in being the one who knows a name and has to decide when to say it. Are you on the good side, with an ability that hands you someone's actual character?",
+    "voice": "Katia",
+    "yes": {
+      "learnsCharacters": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xi-names-night-after-night",
+    "plain": "Does your ability give you characters' names night after night, rather than just once?",
+    "dinniman": "Subscription model, baby! Not one measly name on night one but a fresh character delivered to your pillow, again and again, all season long. Does your ability keep the names coming night after night?",
+    "voice": "Zev",
+    "yes": {
+      "learnsCharacters": true,
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-char-pick-who",
+    "plain": "Of those who learn characters, do you get to choose whose character you find out?",
+    "dinniman": "So you learn characters. Fine. But do you get to aim, or does the Storyteller just toss you whatever name falls out of the bag? Do you choose whose character you learn?",
+    "voice": "Elle",
+    "yes": [
+      "dreamer",
+      "ravenkeeper",
+      "harlot"
+    ],
+    "scope": {
+      "learnsCharacters": true
+    }
+  },
+  {
+    "id": "xi-char-whole-board",
+    "plain": "Of those who learn characters, do you see everyone's character at once, laid out in the Grimoire?",
+    "dinniman": "One name is a clue. Every name, all at once, laid out like a buffet? That's a feast, and I intend to gorge. Of you name-learners, do you get to see the whole board, every character at once?",
+    "voice": "Samantha",
+    "yes": [
+      "spy",
+      "widow"
+    ],
+    "scope": {
+      "learnsCharacters": true
+    }
+  },
+  {
+    "id": "xi-char-front-loaded",
+    "plain": "Of those who learn characters, do you get all your character information at the very start, and nothing more later?",
+    "dinniman": "Some of you get one juicy reveal before breakfast and then spend the rest of the game living off it. Others keep getting fed. Of you character-learners, is yours a single reveal at the start and then nothing?",
+    "voice": "Odette",
+    "yes": [
+      "investigator",
+      "washerwoman",
+      "librarian",
+      "grandmother",
+      "widow",
+      "eviltwin"
+    ],
+    "scope": {
+      "learnsCharacters": true
+    }
+  },
+  {
+    "id": "xi-char-for-the-demon",
+    "plain": "Of those who learn characters, are you a Minion, reporting what you see back to your Demon?",
+    "dinniman": "BEHOLD! Knowledge is a blade, and I hand mine directly to my dark master like a loyal, devious, magnificent servant! Of those who see characters, are you a Minion passing it all to the Demon?",
+    "voice": "Prepotente",
+    "yes": [
+      "spy",
+      "widow",
+      "eviltwin"
+    ],
+    "scope": {
+      "learnsCharacters": true
+    }
+  },
+  {
+    "id": "xi-alignment-reader",
+    "plain": "Does your ability read players' good or evil alignment itself, rather than only whether they're a Demon or Minion?",
+    "dinniman": "Forget the job titles. I want to know who's rotten. Some abilities only care which monster is which; others go straight for good versus evil. Does yours tell you about players' alignment itself?",
+    "voice": "Carl",
+    "yes": {
+      "learnsAlignment": true
+    }
+  },
+  {
+    "id": "xi-moral-compass",
+    "plain": "Does your ability give you a read on good and evil among the players, whether as a verdict, a comparison, a count or a direction?",
+    "dinniman": "Patch note: alignment detectors are back in stock! Beep for good, boop for evil, a 'these two match', a tidy tally of the wicked, or an arrow pointing at the nearest one. Does your ability give you that kind of good-or-evil read on players?",
+    "voice": "The System AI",
+    "yes": {
+      "learnsAlignment": true
+    }
+  },
+  {
+    "id": "xi-sorting-hat",
+    "plain": "Does your ability help you sort players into good and evil by telling you about their alignment?",
+    "dinniman": "Mongo sniffs. Mongo growls at one, wags at another. (He's sorting good from evil by scent, and he's thrilled.) Does your ability let you sort players by alignment like that?",
+    "voice": "Mongo",
+    "yes": {
+      "learnsAlignment": true
+    }
+  },
+  {
+    "id": "xi-good-reads-alignment",
+    "plain": "Are you a good character whose ability tells you about other players' alignment?",
+    "dinniman": "Here's the gig, sweetie: you're on the town's side, and the Storyteller whispers who's naughty and who's nice. Not who they are, just which side they're on. Are you a good character with that kind of ability?",
+    "voice": "Elle",
+    "yes": {
+      "learnsAlignment": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xi-alignment-again-and-again",
+    "plain": "Of those who learn alignments, can your ability keep giving you fresh alignment information as the game goes on?",
+    "dinniman": "One good-or-evil reading is a snapshot. A stream of them is a documentary, and documentaries win awards. Of you alignment-readers, does your ability keep feeding you new readings as the game goes on?",
+    "voice": "Zev",
+    "yes": [
+      "empath",
+      "villageidiot",
+      "oracle",
+      "spy",
+      "beggar",
+      "bountyhunter"
+    ],
+    "scope": {
+      "learnsAlignment": true
+    }
+  },
+  {
+    "id": "xi-alignment-one-off",
+    "plain": "Of those who learn alignments, is your alignment information a single gift at the start of the game?",
+    "dinniman": "You wake up on night one holding a little piece of truth about who's good and who isn't, and that's your lot. Make it last. Of you alignment-readers, is yours a one-off at the start?",
+    "voice": "Mordecai",
+    "yes": [
+      "steward",
+      "noble",
+      "chef",
+      "shugenja",
+      "grandmother",
+      "widow",
+      "eviltwin"
+    ],
+    "scope": {
+      "learnsAlignment": true
+    }
+  },
+  {
+    "id": "xi-alignment-tally",
+    "plain": "Of those who learn alignments, does your ability count the evil rather than point at them?",
+    "dinniman": "Pointing is so gauche. A REAL lady receives a number, elegantly, and works out the rest herself. Of you alignment-readers, does your ability count the evil instead of pointing them out?",
+    "voice": "Princess Donut",
+    "yes": [
+      "chef",
+      "empath",
+      "oracle"
+    ],
+    "scope": {
+      "learnsAlignment": true
+    }
+  },
+  {
+    "id": "xi-good-and-evil-every-night",
+    "plain": "Does your ability give you a new reading on players' alignment almost every night?",
+    "dinniman": "Every night, another little verdict: this many evil, that one wicked, these ones fine. It's like a weather report, but for sin. Does your ability hand you a fresh alignment reading nearly every night?",
+    "voice": "The Host",
+    "yes": {
+      "learnsAlignment": true,
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-pick-and-judge",
+    "plain": "Does your ability let you choose players and then learn their alignment?",
+    "dinniman": "You point. The universe tells you whether they're good or evil, or whether two of them match. Simple, tidy, deeply satisfying. Does your ability let you pick players and learn about their alignment?",
+    "voice": "Katia",
+    "yes": {
+      "learnsAlignment": true,
+      "picksInfoTargets": true
+    }
+  },
+  {
+    "id": "xi-single-out-good",
+    "plain": "Does your own ability single out one particular good player for you at the start of the game?",
+    "dinniman": "Night one. Lights down. The Storyteller taps one specific person and tells you: that one's good. Maybe you love them, maybe you want them dead. Does your own ability single out a good player for you like that?",
+    "voice": "Odette",
+    "yes": [
+      "steward",
+      "grandmother",
+      "eviltwin"
+    ]
+  },
+  {
+    "id": "xi-numbers-talk",
+    "plain": "Does your ability give you its information as a number?",
+    "dinniman": "Numbers don't lie. People lie. Storytellers sometimes lie. But a number, at least, is a nice clean thing to argue about. Does your ability hand you its information as a number?",
+    "voice": "Carl",
+    "yes": {
+      "learnsNumbers": true
+    }
+  },
+  {
+    "id": "xi-fingers-up",
+    "plain": "When the Storyteller gives you information, is it usually by holding up a number of fingers?",
+    "dinniman": "Achievement unlocked: Finger Counter! You've been woken in the dark to squint at a raised hand and do sums. Riveting television. When you get your info, is it usually a number held up on fingers?",
+    "voice": "The System AI",
+    "yes": {
+      "learnsNumbers": true
+    }
+  },
+  {
+    "id": "xi-nightly-number",
+    "plain": "Does your ability give you a new number almost every night?",
+    "dinniman": "Every night, a number. Every morning, an argument about the number. If you're into that sort of thing, it's very relaxing. Does your ability give you a fresh number nearly every night?",
+    "voice": "Mordecai",
+    "yes": {
+      "learnsNumbers": true,
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-number-changes",
+    "plain": "Of those who learn numbers, does your number get updated night by night?",
+    "dinniman": "Some numbers are tattoos: you get one and you're stuck with it. Others are a stock ticker, ticking away all game. Of you number-learners, is yours the kind that updates night by night?",
+    "voice": "Zev",
+    "yes": [
+      "empath",
+      "chambermaid",
+      "mathematician",
+      "oracle"
+    ],
+    "scope": {
+      "learnsNumbers": true
+    }
+  },
+  {
+    "id": "xi-number-you-aim",
+    "plain": "Of those who learn numbers, do you choose which players your number is about?",
+    "dinniman": "Is your number about whoever the game decides, or do you get to point and say 'count THESE'? Of you number-learners, do you choose the players your number is about?",
+    "voice": "Elle",
+    "yes": [
+      "chambermaid",
+      "juggler"
+    ],
+    "scope": {
+      "learnsNumbers": true
+    }
+  },
+  {
+    "id": "xi-nightly-drip",
+    "plain": "Does your ability give you new information almost every night?",
+    "dinniman": "Some crawlers get a single hint on the stairs and then nothing for the rest of the floor. Others get a fresh note shoved under the door every single night. Does your ability keep the information coming most nights?",
+    "voice": "Carl",
+    "yes": {
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-clue-subscription",
+    "plain": "Do you like building a case slowly from a steady stream of nightly clues your ability gives you?",
+    "dinniman": "Information is a renewable resource, for some of you. Night after night, another piece for the pile, until the picture comes together or you go mad trying. Does your ability give you that steady nightly stream?",
+    "voice": "Katia",
+    "yes": {
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-woken-for-news",
+    "plain": "Does your ability have you awake most nights, taking in something new?",
+    "dinniman": "Mongo! Mongo! (He's nudging you awake again, nearly every night, because there's news. There is always news.) Does your ability have you up most nights taking in something new?",
+    "voice": "Mongo",
+    "yes": {
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-good-nightly-news",
+    "plain": "Are you a good character who gets new information from your ability almost every night?",
+    "dinniman": "Townsperson on the nightly news beat, darling: the Storyteller wakes you, slips you the latest, and back to bed. Glamorous? Hardly. Essential? ABSOLUTELY. Are you a good character with nightly information?",
+    "voice": "Princess Donut",
+    "yes": {
+      "infoEveryNight": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xi-evil-nightly-intel",
+    "plain": "As a Minion, do you gather fresh intelligence from your ability every single night?",
+    "dinniman": "Your Demon wants a report on its desk every morning, and you are only too happy to oblige. Every night, eyes open, notes taken. Are you a Minion whose ability gathers fresh intel every night?",
+    "voice": "Samantha",
+    "yes": {
+      "infoEveryNight": true,
+      "team": "minion"
+    }
+  },
+  {
+    "id": "xi-nightly-aim",
+    "plain": "Of those who get nightly information, do you choose who your information is about?",
+    "dinniman": "Nightly info, check. But are you steering the spotlight or just sitting in the audience watching what the Storyteller shows you? Of you nightly learners, do you choose who your information is about?",
+    "voice": "The Host",
+    "yes": [
+      "villageidiot",
+      "dreamer",
+      "fortuneteller",
+      "chambermaid",
+      "harlot"
+    ],
+    "scope": {
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-nightly-day-recap",
+    "plain": "Of those who get nightly information, is yours about the day's votes, nominations or execution?",
+    "dinniman": "Some of you learn about the night. Others get the evening recap of the day's drama: who voted, who nominated, who got the rope. Of you nightly learners, is your info about what happened at today's votes and execution?",
+    "voice": "Odette",
+    "yes": [
+      "flowergirl",
+      "towncrier",
+      "undertaker"
+    ],
+    "scope": {
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-nightly-opinion",
+    "plain": "Of those who get nightly information, is yours the Storyteller's own opinion rather than a hard fact?",
+    "dinniman": "Some info is cold fact. Yours is a personal take from the narrator, like a horoscope written by the person running the dungeon. Of you nightly learners, is your info the Storyteller's opinion?",
+    "voice": "Elle",
+    "yes": [
+      "highpriestess",
+      "general"
+    ],
+    "scope": {
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-nightly-for-evil",
+    "plain": "Of those who get nightly information, are you a Minion using it against the good team?",
+    "dinniman": "Same nightly routine as the town's little detectives, except every scrap you collect goes straight to the bad guys. LOVE the synergy. Of you nightly learners, are you a Minion working for evil?",
+    "voice": "Zev",
+    "yes": [
+      "spy",
+      "wraith"
+    ],
+    "scope": {
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-behind-the-curtain",
+    "plain": "Does your ability show you behind the scenes: the Grimoire, who woke at night, whose abilities malfunctioned, or a secret ability someone holds?",
+    "dinniman": "Most crawlers only see the monsters. A rare few get a look at the wiring: the Grimoire, who stirred in the dark, which powers fizzled, what secret tricks are hidden. Does your ability show you that machinery?",
+    "voice": "The System AI",
+    "yes": {
+      "seesHiddenInfo": true
+    }
+  },
+  {
+    "id": "xi-under-the-hood",
+    "plain": "Do you love knowing how the game is secretly working, beyond who people are, because your ability shows you?",
+    "dinniman": "Knowing who someone is? Amateur hour. I want to know how the trick works: who woke, what broke, what's written in the secret book. Does your ability show you the hidden workings of the game?",
+    "voice": "Prepotente",
+    "yes": {
+      "seesHiddenInfo": true
+    }
+  },
+  {
+    "id": "xi-evil-backstage-pass",
+    "plain": "As a Minion or Demon, does your own ability show you hidden game workings, like the Grimoire or night-time actions?",
+    "dinniman": "Backstage pass, evil edition. While the town fumbles in the dark, you've seen the wiring and you're whispering it to your Demon. Are you a Minion or Demon whose ability shows you how the game is really running?",
+    "voice": "Mordecai",
+    "yes": {
+      "seesHiddenInfo": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "xi-hidden-whole-book",
+    "plain": "Of those who see behind the scenes, do you get to look at the entire Grimoire?",
+    "dinniman": "Every token, every reminder, every dirty little secret in one big book, and you get to read it. Of you behind-the-scenes types, do you see the whole Grimoire?",
+    "voice": "Samantha",
+    "yes": [
+      "spy",
+      "widow"
+    ],
+    "scope": {
+      "seesHiddenInfo": true
+    }
+  },
+  {
+    "id": "xi-hidden-for-evil",
+    "plain": "Of those who see behind the scenes, are you a Minion?",
+    "dinniman": "Seeing the machinery is power. The question is whose side gets to use it. Of you behind-the-scenes types, are you a Minion feeding it to evil?",
+    "voice": "Katia",
+    "yes": [
+      "spy",
+      "widow",
+      "wraith",
+      "boffin"
+    ],
+    "scope": {
+      "seesHiddenInfo": true
+    }
+  },
+  {
+    "id": "xi-left-and-right",
+    "plain": "Does your ability specifically involve the players sitting right next to you?",
+    "dinniman": "Location, location, location! Some abilities reach across the whole circle. Yours cares deeply about the two chairs on either side of you. Is your ability specifically about your neighbours?",
+    "voice": "Zev",
+    "yes": {
+      "caresAboutNeighbours": true
+    }
+  },
+  {
+    "id": "xi-mind-the-neighbours",
+    "plain": "Do you watch the people on your left and right especially closely, because your ability is tied to them?",
+    "dinniman": "The village is big. Your world is three chairs wide: yours and the two beside it. Whatever happens to them happens to your game. Is your ability tied to the players either side of you?",
+    "voice": "Carl",
+    "yes": {
+      "caresAboutNeighbours": true
+    }
+  },
+  {
+    "id": "xi-evil-neighbours",
+    "plain": "Are you a Minion or Demon whose ability is tied to the players seated next to you?",
+    "dinniman": "Your ability has a seating plan, and you're evil. Your neighbours are part of the scheme, whether they know it or not. Are you a Minion or Demon whose ability involves the players beside you?",
+    "voice": "Odette",
+    "yes": {
+      "caresAboutNeighbours": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "xi-good-neighbours",
+    "plain": "Are you a good character whose ability is tied to the players seated next to you?",
+    "dinniman": "I've always believed you look after the people closest to you first. Or at least you keep a careful eye on them. Are you a good character whose ability revolves around your neighbours?",
+    "voice": "Katia",
+    "yes": {
+      "caresAboutNeighbours": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xi-neighbours-evil-side",
+    "plain": "Of those whose ability involves their neighbours, are you a Minion or Demon?",
+    "dinniman": "Neighbourly, yes. Friendly? Ha! Of you lot whose ability cares about the seats beside you, are you a Minion or Demon?",
+    "voice": "Samantha",
+    "yes": [
+      "nodashii",
+      "lordoftyphon",
+      "marionette"
+    ],
+    "scope": {
+      "caresAboutNeighbours": true
+    }
+  },
+  {
+    "id": "xi-neighbours-touched",
+    "plain": "Of those whose ability involves their neighbours, does it do something to them, like protecting, poisoning or killing them?",
+    "dinniman": "Reading your neighbours is one thing. Reaching over and actually DOING something to them is quite another. Of you neighbour-focused players, does your ability protect, poison or kill the people beside you?",
+    "voice": "Prepotente",
+    "yes": [
+      "tealady",
+      "gangster",
+      "nodashii"
+    ],
+    "scope": {
+      "caresAboutNeighbours": true
+    }
+  },
+  {
+    "id": "xi-evil-intel-officer",
+    "plain": "As a Minion or Demon, does your own ability give you extra information beyond the usual evil team introductions?",
+    "dinniman": "Every evil team gets the standard welcome pack: meet your friends, here are some bluffs, good luck. Your ability throws in a bonus dossier. Are you a Minion or Demon whose ability gives you extra info?",
+    "voice": "The System AI",
+    "yes": {
+      "evilWithInfo": true
+    }
+  },
+  {
+    "id": "xi-evil-brains",
+    "plain": "Are you an evil character whose own ability feeds you information about the game?",
+    "dinniman": "Somebody on the evil team has to read the files while the others sharpen knives. Glamorous? No. Vital? Yes, and you'll be insufferable about it. Are you evil, with an ability that feeds you information?",
+    "voice": "Elle",
+    "yes": {
+      "evilWithInfo": true
+    }
+  },
+  {
+    "id": "xi-evil-intel-once",
+    "plain": "Of the evil characters with extra information, is yours a one-time gift at the start of the game?",
+    "dinniman": "Night one, a fat envelope lands in your lap. After that? Silence. Better have read carefully. Of you evil intel types, is your extra info a single delivery at the start?",
+    "voice": "Mordecai",
+    "yes": [
+      "widow",
+      "godfather",
+      "eviltwin",
+      "boffin",
+      "summoner"
+    ],
+    "scope": {
+      "evilWithInfo": true
+    }
+  },
+  {
+    "id": "xi-evil-intel-ongoing",
+    "plain": "Of the evil characters with extra information, do you keep gathering it every night?",
+    "dinniman": "Mongo stays up ALL night. Mongo watches. Mongo reports. (He's very proud of his night shift.) Of you evil intel types, do you keep gathering information every night?",
+    "voice": "Mongo",
+    "yes": [
+      "spy",
+      "wraith"
+    ],
+    "scope": {
+      "evilWithInfo": true
+    }
+  },
+  {
+    "id": "xi-demon-clues",
+    "plain": "Is your ability designed to give you clues for hunting down the Demon?",
+    "dinniman": "There's evil, and then there's THE evil, the big boss at the bottom of the floor. Some of you get clues pointing at the Demon itself. Is your ability designed to give you clues about who the Demon is?",
+    "voice": "Mordecai",
+    "yes": {
+      "huntsDemon": true
+    }
+  },
+  {
+    "id": "xi-demon-focus",
+    "plain": "Is finding out who the Demon is the main point of the information your ability gives you?",
+    "dinniman": "Forget the henchmen. Forget the riff-raff. You want the head of the snake, and every scrap your ability hands you is aimed at exactly that. Is finding the Demon the whole point of your information?",
+    "voice": "Princess Donut",
+    "yes": {
+      "huntsDemon": true
+    }
+  },
+  {
+    "id": "xi-demon-clue-needs-death",
+    "plain": "Of those who get clues about the Demon, does someone have to be killed by the Demon before you learn anything?",
+    "dinniman": "Some of you only get your answer the hard way: the Demon strikes, and the body tells the tale. Of you Demon-hunters, does your clue depend on the Demon killing someone first?",
+    "voice": "Samantha",
+    "yes": [
+      "sage",
+      "choirboy"
+    ],
+    "scope": {
+      "huntsDemon": true
+    }
+  },
+  {
+    "id": "xi-demon-clue-at-start",
+    "plain": "Of those who get clues about the Demon, is your clue a one-off handed to you at the start of the game?",
+    "dinniman": "Night one: here's your hint, crawler. Don't lose it, there are no refills. Of you Demon-hunters, is yours a single clue handed over at the very start?",
+    "voice": "The Host",
+    "yes": [
+      "knight",
+      "clockmaker"
+    ],
+    "scope": {
+      "huntsDemon": true
+    }
+  },
+  {
+    "id": "xi-demon-check-nightly",
+    "plain": "Does your ability check for the Demon almost every night?",
+    "dinniman": "Every night, the same question: is the Demon here, did the Demon do that? Ask enough times and eventually you get lucky. Does your ability check for the Demon nearly every night?",
+    "voice": "Carl",
+    "yes": {
+      "huntsDemon": true,
+      "infoEveryNight": true
+    }
+  },
+  {
+    "id": "xi-choose-your-target",
+    "plain": "Does your ability have you choose players and then tell you something about those exact players?",
+    "dinniman": "Free will! Agency! The thrill of saying 'that one, Storyteller, tell me about THAT one!' Does your ability let you choose which players you learn about?",
+    "voice": "Princess Donut",
+    "yes": {
+      "picksInfoTargets": true
+    }
+  },
+  {
+    "id": "xi-your-call",
+    "plain": "Does your ability ask you to pick players, and then tell you something about the ones you picked?",
+    "dinniman": "Some of you sit back and take whatever the Storyteller serves. You lot want to aim the flashlight yourselves, and the light shows you whoever you aimed at. Do you pick the players your ability then tells you about?",
+    "voice": "Odette",
+    "yes": {
+      "picksInfoTargets": true
+    }
+  },
+  {
+    "id": "xi-pick-one-at-a-time",
+    "plain": "Of those who choose who to learn about, do you choose just one player at a time?",
+    "dinniman": "One target, full attention. No juggling, no comparisons, just you and one poor soul under the lamp. Of you choosers, do you pick a single player at a time?",
+    "voice": "Katia",
+    "yes": [
+      "villageidiot",
+      "dreamer",
+      "ravenkeeper",
+      "harlot"
+    ],
+    "scope": {
+      "picksInfoTargets": true
+    }
+  },
+  {
+    "id": "xi-pick-a-pair",
+    "plain": "Of those who choose who to learn about, do you choose exactly two players and learn about them together?",
+    "dinniman": "Two at a time, side by side, like a very tense double date. Of you choosers, do you always pick a pair of players and learn something about the two of them together?",
+    "voice": "Elle",
+    "yes": [
+      "fortuneteller",
+      "chambermaid",
+      "seamstress"
+    ],
+    "scope": {
+      "picksInfoTargets": true
+    }
+  },
+  {
+    "id": "xi-graveyard-whispers",
+    "plain": "Is your ability's information specifically about the dead: who they were or which side they were on?",
+    "dinniman": "The dead don't talk. Except to you, apparently, and they've got plenty to say about who they were and whose side they were on. Is your ability's information specifically about dead players?",
+    "voice": "Mordecai",
+    "yes": {
+      "infoFromTheDead": true
+    }
+  },
+  {
+    "id": "xi-ask-the-departed",
+    "plain": "Do you like getting answers from the graveyard, because your ability tells you specifically about players who have died?",
+    "dinniman": "BLOOD! BONES! Graves full of secrets! I adore anyone who rummages through the dead for answers. Does your ability tell you specifically about players who have died?",
+    "voice": "Samantha",
+    "yes": {
+      "infoFromTheDead": true
+    }
+  },
+  {
+    "id": "xi-night-one-dossier",
+    "plain": "Does your own ability hand you real information about other players or the setup on the first night, then nothing more?",
+    "dinniman": "One envelope, delivered on night one because of your own ability. Not fake, not repeated, never topped up. Just you and that one truth for the rest of the game. Is that how your ability gives you information?",
+    "voice": "The System AI",
+    "yes": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "librarian",
+      "shugenja",
+      "pixie",
+      "grandmother",
+      "widow",
+      "eviltwin",
+      "godfather",
+      "boffin",
+      "summoner"
+    ]
+  },
+  {
+    "id": "xi-the-full-picture-evil",
+    "plain": "As a Minion or Demon, does your own ability let you see good players' characters and alignments, not just your team's?",
+    "dinniman": "The good team thinks it's hiding. Adorable. Your ability shows you who they really are and whose side they're on. Are you a Minion or Demon whose ability reveals the good players to you like that?",
+    "voice": "Prepotente",
+    "yes": {
+      "learnsCharacters": true,
+      "learnsAlignment": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
+  },
+  {
+    "id": "xi-dead-and-nightly",
+    "plain": "Does your ability tell you about the dead almost every night?",
+    "dinniman": "Every night, a little bulletin from beyond: who just went in the ground, or how many of the departed were rotten. Morbid, but steady work. Does your ability report on the dead nearly every night?",
+    "voice": "The Host",
+    "yes": {
+      "infoFromTheDead": true,
+      "infoEveryNight": true
+    }
+  }
+]
