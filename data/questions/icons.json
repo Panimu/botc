@@ -11846,38 +11846,5 @@
       "bishop",
       "voudon"
     ]
-  },
-  {
-    "id": "icon-two-tone",
-    "plain": "Is your token's picture split into two halves, one blue and the other a different colour, like brown?",
-    "dinniman": "Look at this, folks: a token that couldn't decide what colour to be, so it went with both! Is your token's picture split into two halves, one blue and the other a different colour, like brown?",
-    "voice": "The Host",
-    "yes": {
-      "team": "traveller"
-    }
-  },
-  {
-    "id": "icon-red-ink",
-    "plain": "Is your token's picture drawn in red, with no blue anywhere?",
-    "dinniman": "RED! The colour of fury, of blood, of Samantha's favourite lipstick! Is your token's picture drawn in red, with no blue anywhere?",
-    "voice": "Samantha",
-    "yes": {
-      "team": [
-        "minion",
-        "demon"
-      ]
-    }
-  },
-  {
-    "id": "icon-blue-ink",
-    "plain": "Is your token's picture drawn only in blue and white, with no other colour such as red or brown?",
-    "dinniman": "Blue always calms me down, like cold water after a bad fight. Is your token's picture drawn only in blue and white, with no other colour such as red or brown?",
-    "voice": "Katia",
-    "yes": {
-      "team": [
-        "townsfolk",
-        "outsider"
-      ]
-    }
   }
 ]

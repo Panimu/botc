@@ -50,7 +50,9 @@ function nearest(angle, from) {
   return angle + 360 * Math.round((from - angle) / 360);
 }
 
-export function createCircle({ root, ring, count, label, characters, side }) {
+// onSelect (optional): called with a character id when a seated token is tapped
+// while render() was given { selectable: true } (the daily hunt's guessing).
+export function createCircle({ root, ring, count, label, characters, side, onSelect }) {
   const ordered = [...characters].sort((a, b) =>
     TEAM_ORDER.indexOf(a.team) - TEAM_ORDER.indexOf(b.team) || a.name.localeCompare(b.name));
 
@@ -60,6 +62,7 @@ export function createCircle({ root, ring, count, label, characters, side }) {
     li.className = `ring-token ${side(c.team)} team-${c.team}`;
     li.title = c.name;
     li.dataset.name = c.name;
+    li.dataset.id = c.id;
     const img = document.createElement('img');
     img.className = 'ring-art';
     img.alt = '';
@@ -81,12 +84,19 @@ export function createCircle({ root, ring, count, label, characters, side }) {
     clearTimeout(labelTimer);
     labelTimer = setTimeout(() => { label.textContent = idleLabel; }, 2500);
   };
-  root.addEventListener('click', showName);
+  let selectable = false;
+  root.addEventListener('click', (event) => {
+    showName(event);
+    const li = event.target.closest('.ring-token');
+    if (li && selectable && onSelect && li.dataset.state === 'seat') onSelect(li.dataset.id);
+  });
   root.addEventListener('pointerover', showName);
 
   let seats = null; // id -> seat angle, fixed from the moment the town sits down
 
-  return function render(pool, { results = [] } = {}) {
+  return function render(pool, { results = [], selectable: canSelect = false, selected = null, wrong = [] } = {}) {
+    selectable = canSelect;
+    root.classList.toggle('selectable', selectable);
     const alive = new Set(pool);
     const seated = pool.length <= SEAT_THRESHOLD;
     let justSeated = false;
@@ -115,6 +125,8 @@ export function createCircle({ root, ring, count, label, characters, side }) {
       li.dataset.state = state;
       if (seat !== undefined && !img.getAttribute('src')) img.src = src;
       li.classList.toggle('chosen', results.length === 1 && results[0].id === id);
+      li.classList.toggle('selected', selected === id);
+      li.classList.toggle('wrong', wrong.includes(id));
     }
 
     count.textContent = results.length ? '' : String(pool.length);

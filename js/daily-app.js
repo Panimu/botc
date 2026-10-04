@@ -1,0 +1,209 @@
+// The daily hunt page: choose questions to find the day's hidden character.
+// Game rules live in js/daily.js; this file only renders and stores progress.
+import { DailyGame, replay, streaks, localDate, EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES } from './daily.js?v=dev';
+import { createCircle } from './circle.js?v=dev';
+import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData } from './shared.js?v=dev';
+import { restore, load, save as persist, requestPersistence } from './storage.js?v=dev';
+
+const PROGRESS_KEY = 'daily-progress';
+const guessesLeft = (n) => `${n} wrong ${n === 1 ? 'guess' : 'guesses'}`;
+const RESULTS_KEY = 'daily-results';
+
+// Durable storage (js/storage.js); the hunt still works if storage is unavailable.
+const store = { get: load, set: persist };
+
+function start(characters, questions) {
+  const date = localDate();
+  const byId = new Map(characters.map((c) => [c.id, c]));
+  const game = new DailyGame({ characters, questions, date });
+  const saved = store.get(PROGRESS_KEY, null);
+  let actions = saved?.date === date ? saved.actions : [];
+  try { replay(game, actions); } catch { actions = []; }
+
+  const announcer = $('announcer');
+  const renderPool = createPoolList($('pool-groups'), $('pool-heading'), characters);
+  let selected = null;
+  let lastReply = null;
+
+  const circle = createCircle({
+    root: $('circle'), ring: $('ring'), count: $('circle-count'), label: $('circle-label'), characters, side,
+    onSelect: (id) => select(id),
+  });
+
+  function save() {
+    store.set(PROGRESS_KEY, { date, actions });
+    if (game.status !== 'playing') {
+      const results = store.get(RESULTS_KEY, {});
+      if (!results[date]) {
+        results[date] = { won: game.status === 'won', score: game.score };
+        store.set(RESULTS_KEY, results);
+        requestPersistence();
+      }
+    }
+  }
+
+  function select(id) {
+    if (!game.canGuess || !game.pool.includes(id)) return;
+    selected = id;
+    render();
+    $('guess-confirm').focus();
+  }
+
+  function renderOffers() {
+    const offers = game.status === 'playing' ? game.offers : [];
+    $('hunt-heading').hidden = !offers.length;
+    $('offers').replaceChildren(...offers.map((q) => {
+      const button = el('button', 'offer');
+      button.type = 'button';
+      button.append(el('span', 'offer-text', q.plain), el('span', 'offer-id', q.id));
+      button.addEventListener('click', () => ask(q.id));
+      return button;
+    }));
+  }
+
+  function renderGuessing() {
+    $('guessing').hidden = !game.canGuess;
+    $('guess-locked').textContent = game.status === 'playing' && !game.canGuess
+      ? `Guessing opens when ${GUESS_THRESHOLD} or fewer remain.` : '';
+    if (!game.canGuess) return;
+    const left = MAX_WRONG_GUESSES - game.wrongGuesses.length;
+    $('guess-hint').textContent = `Guessing is open: tap a token in the circle, or pick a name. A wrong guess costs a point, and you have ${guessesLeft(left)} left.`;
+    $('candidates').replaceChildren(...game.pool.map((id) => {
+      const button = el('button', `candidate${selected === id ? ' selected' : ''}`, byId.get(id).name);
+      button.type = 'button';
+      button.setAttribute('aria-pressed', String(selected === id));
+      button.addEventListener('click', () => select(id));
+      return button;
+    }));
+    const confirm = $('guess-confirm');
+    confirm.hidden = !selected;
+    if (selected) confirm.textContent = `Guess the ${byId.get(selected).name}`;
+  }
+
+  function renderPath() {
+    const items = [];
+    game.history.forEach((h, i) => {
+      const after = i + 1 < game.history.length ? game.history[i + 1].poolBefore.length : null;
+      const li = el('li');
+      li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'), el('span', 'path-id', ` ${h.question.id}`));
+      items.push(li);
+    });
+    for (const id of game.wrongGuesses) items.push(el('li', 'wrong-guess', `Guessed the ${byId.get(id).name}: wrong`));
+    $('path-list').replaceChildren(...items);
+    $('path').hidden = items.length === 0;
+  }
+
+  function shareText() {
+    const marks = game.history.map((h) => (h.answer ? '🟦' : '⬛')).join('')
+      + '❌'.repeat(game.wrongGuesses.length) + (game.status === 'won' ? '✅' : '');
+    const verdict = game.status === 'won' ? `found in ${game.score}` : 'not found';
+    const { current } = streaks(store.get(RESULTS_KEY, {}), date);
+    return [`Clocktower daily hunt #${game.number}: ${verdict}`, marks, current > 1 ? `Streak: ${current}` : '', location.href.split(/[?#]/)[0]]
+      .filter(Boolean).join(String.fromCharCode(10));
+  }
+
+  function renderResult() {
+    const over = game.status !== 'playing';
+    $('result-panel').hidden = !over;
+    $('hunt-panel').hidden = over;
+    if (!over) return;
+    const target = game.targetCharacter;
+    setArt($('result-art'), target);
+    $('result-art').className = `result-art ${side(target.team)}`;
+    $('result-lead').textContent = game.status === 'won' ? `Found in ${plural(game.score, 'point')}. Today's character is the` : "Out of guesses. Today's character was the";
+    $('result-name').textContent = target.name;
+    $('result-team').className = `result-team ${side(target.team)}`;
+    $('result-team').textContent = teamLabel(target.team);
+    $('result-summary').textContent = target.summary;
+    const s = streaks(store.get(RESULTS_KEY, {}), date);
+    const stats = [['Current streak', s.current], ['Best streak', s.best], ['Played', s.played], ['Won', s.wins]];
+    $('stats').replaceChildren(...stats.flatMap(([term, value]) => [el('dt', '', term), el('dd', '', String(value))]));
+  }
+
+  function renderCountdown() {
+    const now = new Date();
+    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    const minutes = Math.ceil((midnight - now) / 60000);
+    $('countdown').textContent = `Next hunt in ${Math.floor(minutes / 60)}h ${minutes % 60}m.`;
+  }
+
+  function render({ focus = null } = {}) {
+    if (selected && (!game.canGuess || !game.pool.includes(selected))) selected = null;
+    $('hunt-number').textContent = `Hunt #${game.number}`;
+    $('hunt-score').textContent = `${plural(game.score, 'point')} so far`;
+    $('hunt-guesses').textContent = `${game.wrongGuesses.length} of ${MAX_WRONG_GUESSES} wrong guesses`;
+    $('last-answer').hidden = !lastReply;
+    if (lastReply) {
+      $('last-question').textContent = lastReply.question;
+      $('last-reply').textContent = lastReply.reply;
+    }
+    renderOffers();
+    renderGuessing();
+    renderPath();
+    renderResult();
+    renderPool(game.pool, game.status === 'playing' ? 'All remaining characters' : 'Characters left at the end');
+    circle(game.pool, {
+      results: game.status === 'won' ? [game.targetCharacter] : [],
+      selectable: game.canGuess,
+      selected,
+    });
+    if (focus) $(focus)?.focus();
+  }
+
+  function ask(id) {
+    const before = game.pool.length;
+    const question = game.offers.find((q) => q.id === id);
+    const answer = game.ask(id);
+    actions = [...actions, { ask: id }];
+    const ruled = before - game.pool.length;
+    lastReply = { question: question.plain, reply: `${answer ? 'Yes' : 'No'}. That ruled out ${plural(ruled, 'character')}.` };
+    save();
+    announcer.textContent = `${lastReply.question} ${lastReply.reply} ${game.pool.length} left.`;
+    render({ focus: game.status === 'playing' ? 'hunt-heading' : 'result-name' });
+  }
+
+  function guess() {
+    if (!selected) return;
+    const name = byId.get(selected).name;
+    const right = game.guess(selected);
+    actions = [...actions, { guess: selected }];
+    lastReply = right ? null : { question: `You guessed the ${name}.`, reply: 'Wrong. Their token is shrouded.' };
+    selected = null;
+    save();
+    announcer.textContent = right ? `Yes, it's the ${name}!` : `Not the ${name}. ${guessesLeft(MAX_WRONG_GUESSES - game.wrongGuesses.length)} left.`;
+    render({ focus: game.status === 'playing' ? 'guess-hint' : 'result-name' });
+  }
+
+  async function share() {
+    const text = shareText();
+    try {
+      if (navigator.share) { await navigator.share({ text }); return; }
+      await navigator.clipboard.writeText(text);
+      $('share-status').textContent = 'Copied to your clipboard.';
+    } catch (error) {
+      if (error?.name !== 'AbortError') $('share-status').textContent = `Couldn’t share automatically. Copy this instead: ${text}`;
+    }
+  }
+
+  $('guess-confirm').addEventListener('click', guess);
+  $('share').addEventListener('click', share);
+  $('guess-hint').tabIndex = -1;
+  renderCountdown();
+  setInterval(renderCountdown, 30000);
+  render();
+}
+
+try {
+  setupThemeToggle();
+  const [{ characters, questions }] = await Promise.all([
+    loadGameData({ exclude: EXCLUDED_FILES }),
+    restore([PROGRESS_KEY, RESULTS_KEY]),
+  ]);
+  start(characters, questions);
+} catch (error) {
+  console.error(error);
+  $('hunt-number').textContent = 'The hunt couldn’t start.';
+  $('guess-locked').textContent = location.protocol === 'file:'
+    ? 'Opening daily.html straight from disk doesn’t work. Serve the folder instead (npm run serve) and visit http://localhost:8000/daily.html.'
+    : `Refresh the page to try again. (${error.message})`;
+}

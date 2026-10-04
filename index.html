@@ -16,20 +16,21 @@
   <script type="module" src="js/app.js?v=dev"></script>
 </head>
 <body>
-  <header class="intro">
-    <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
-    <h1>Which Clocktower character are you?</h1>
-    <p>Answer each question honestly. Every answer rules out characters until only one is left.</p>
-  </header>
-
   <main>
+    <div class="side">
+    <header class="intro">
+      <nav class="topbar" aria-label="Modes">
+        <a href="./" aria-current="page">Personality quiz</a>
+        <a href="daily.html">Daily hunt</a>
+        <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
+      </nav>
+      <h1>Which Clocktower character are you?</h1>
+      <p>Answer each question honestly. Every answer rules out characters until only one is left.</p>
+    </header>
     <section class="panel" id="question-panel" aria-labelledby="question-text">
       <p class="progress"><span id="question-number">Loading…</span> <span id="remaining"></span></p>
-      <h2 class="question" id="question-text" tabindex="-1"></h2>
-      <figure class="flavour" id="flavour">
-        <blockquote id="flavour-text"></blockquote>
-        <figcaption id="flavour-voice"></figcaption>
-      </figure>
+      <h2 class="question voiced" id="question-text" tabindex="-1"></h2>
+      <p class="voice" id="flavour-voice"></p>
       <p class="feedback" id="feedback"></p>
       <div class="answers" id="answers" hidden>
         <button type="button" class="answer" id="yes">Yes</button>
@@ -49,21 +50,17 @@
       <h2 class="result-name" id="result-name" tabindex="-1"></h2>
       <p class="result-team" id="result-team"></p>
       <p class="result-summary" id="result-summary"></p>
+      <figure class="share-quote" id="share-quote" hidden>
+        <blockquote id="share-quote-text"></blockquote>
+        <figcaption id="share-quote-voice"></figcaption>
+      </figure>
       <div class="secondary">
+        <button type="button" class="answer" id="share" hidden>Share result</button>
         <button type="button" class="answer" id="play-again">Play again</button>
         <button type="button" class="quiet" id="result-undo">Undo last answer</button>
       </div>
+      <p class="share-status" id="share-status" role="status"></p>
     </section>
-
-    <!-- The town circle: beads while many remain, seated tokens once 15 or fewer do.
-         Decorative; the list below carries the same information for assistive tech. -->
-    <div class="circle" id="circle" aria-hidden="true">
-      <ol class="ring" id="ring"></ol>
-      <div class="circle-centre">
-        <p class="circle-count" id="circle-count"></p>
-        <p class="circle-label" id="circle-label"></p>
-      </div>
-    </div>
 
     <section class="path" id="path" aria-labelledby="path-heading" hidden>
       <h2 id="path-heading">How you got here</h2>
@@ -74,6 +71,17 @@
       <summary><h2 id="pool-heading">Still in the running</h2></summary>
       <div id="pool-groups"></div>
     </details>
+    </div>
+
+    <!-- The town circle: beads while many remain, seated tokens once 15 or fewer do.
+         Decorative; the list below carries the same information for assistive tech. -->
+    <div class="circle" id="circle" aria-hidden="true">
+      <ol class="ring" id="ring"></ol>
+      <div class="circle-centre">
+        <p class="circle-count" id="circle-count"></p>
+        <p class="circle-label" id="circle-label"></p>
+      </div>
+    </div>
 
     <div class="visually-hidden" id="announcer" aria-live="polite" aria-atomic="true"></div>
   </main>

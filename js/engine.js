@@ -62,6 +62,34 @@ export function splitWeight(yes, poolSize, { exponent, floor } = SPLIT_WEIGHTING
   return entropy ** exponent + floor;
 }
 
+// Unasked questions that split the pool, each with its selection weight.
+export function weightedOptions(questions, pool, asked, { weighting = SPLIT_WEIGHTING, circleTarget = CIRCLE_TARGET } = {}) {
+  const options = [];
+  for (const q of questions) {
+    if (asked.has(q.id)) continue;
+    const yes = yesCount(q, pool);
+    if (yes <= 0 || yes >= pool.length) continue;
+    const weight = (weighting ? splitWeight(yes, pool.length, weighting) : 1)
+      * (circleTarget ? circleFactor(yes, pool.length, circleTarget) : 1);
+    options.push([q, weight]);
+  }
+  return options;
+}
+
+// Draws up to `count` distinct items from [item, weight] pairs, without replacement.
+export function drawWeighted(options, rng, count = 1) {
+  const remaining = [...options];
+  const drawn = [];
+  while (drawn.length < count && remaining.length) {
+    const total = remaining.reduce((sum, [, w]) => sum + w, 0);
+    let r = rng() * total;
+    let index = remaining.findIndex(([, w]) => (r -= w) < 0);
+    if (index < 0) index = remaining.length - 1;
+    drawn.push(remaining.splice(index, 1)[0][0]);
+  }
+  return drawn;
+}
+
 export class Game {
   // minSide: ignore questions with fewer than this many characters on either
   // side of their full split (1 keeps everything; 2 drops one-vs-the-rest).
@@ -121,19 +149,7 @@ export class Game {
   #pick() {
     if (this.pool.length <= 1) return null;
     const asked = new Set(this.history.map((h) => h.question.id));
-    const options = [];
-    let total = 0;
-    for (const q of this.questions) {
-      if (asked.has(q.id)) continue;
-      const yes = yesCount(q, this.pool);
-      if (yes <= 0 || yes >= this.pool.length) continue;
-      const weight = (this.weighting ? splitWeight(yes, this.pool.length, this.weighting) : 1)
-        * (this.circleTarget ? circleFactor(yes, this.pool.length, this.circleTarget) : 1);
-      options.push([q, weight]);
-      total += weight;
-    }
-    let r = this.rng() * total;
-    for (const [q, weight] of options) if ((r -= weight) < 0) return q;
-    return options.at(-1)?.[0] ?? null;
+    const options = weightedOptions(this.questions, this.pool, asked, { weighting: this.weighting, circleTarget: this.circleTarget });
+    return drawWeighted(options, this.rng)[0] ?? null;
   }
 }

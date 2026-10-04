@@ -83,6 +83,46 @@ main {
   align-items: center;
 }
 
+/* Narrow screens stack question, result, circle, then the lists; the wrapper
+   dissolves so the circle can sit between them. */
+.side { display: contents; }
+.intro { order: 0; }
+#question-panel, .hunt-panel { order: 1; }
+#result-panel { order: 2; }
+.circle { order: 3; }
+.path { order: 4; }
+.pool { order: 5; }
+
+/* Wide screens: panels on the left, the circle on the right, sized to the
+   window height and kept in view while scrolling. */
+@media (min-width: 64rem) {
+  main {
+    max-width: 96rem;
+    display: grid;
+    grid-template-columns: minmax(22rem, 44rem) auto;
+    justify-content: center;
+    column-gap: clamp(2rem, 4vw, 5rem);
+    align-items: start;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  main > .circle {
+    --S: max(20rem, min(calc(100svh - 2rem), calc(50vw - 3rem), 980px));
+    position: sticky;
+    top: 1rem;
+    justify-self: center;
+    margin: 0;
+  }
+
+  .intro { padding: 0.5rem 0 1.25rem; }
+  .intro h1 { margin-top: 0.75rem; }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -112,10 +152,25 @@ h1 {
   color: var(--dim);
 }
 
-.theme-toggle {
-  display: block;
-  margin-left: auto;
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1.25rem;
 }
+
+.topbar a {
+  color: var(--dim);
+  text-underline-offset: 3px;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.topbar a[aria-current="page"] { color: var(--text); font-weight: 700; text-decoration: none; }
+.topbar a:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }
+
+.theme-toggle { margin-left: auto; }
 
 /* Question and result panels */
 .panel {
@@ -146,23 +201,40 @@ h1 {
 
 .question:focus { outline: none; }
 
-/* The Dungeon Crawler Carl-style phrasing, credited to its speaker. */
-.flavour {
-  margin: 0 auto 1rem;
-  max-width: 32rem;
+/* Personality mode asks in a Dungeon Crawler Carl voice; the speaker is credited below. */
+.question.voiced {
+  font-size: clamp(1.2rem, 3.6vw, 1.55rem);
+  line-height: 1.4;
+  text-wrap: pretty;
 }
 
-.flavour blockquote {
-  margin: 0;
-  font: italic 500 1.1rem/1.5 var(--serif);
-}
-
-.flavour figcaption {
-  margin-top: 0.35rem;
+.voice {
+  margin: 0 0 1rem;
   color: var(--dim);
   font-size: 1rem;
 }
 
+/* The shareable quote on the result. */
+.share-quote {
+  margin: 1.25rem auto 0;
+  max-width: 30rem;
+}
+
+.share-quote blockquote {
+  margin: 0;
+  font: italic 500 1.15rem/1.5 var(--serif);
+}
+
+.share-quote figcaption {
+  margin-top: 0.35rem;
+  color: var(--dim);
+}
+
+.share-status {
+  margin: 0.75rem 0 0;
+  min-height: 1.5em;
+  color: var(--dim);
+}
 
 .feedback {
   margin: 0 0 1.5rem;
@@ -295,9 +367,10 @@ button:focus-visible {
 
 /* The town circle (js/circle.js): beads while many remain, seats once few do. */
 .circle {
-  --S: min(calc(100vw - 32px), 560px);
+  /* Never wider than the screen or taller than the window. */
+  --S: max(15rem, min(calc(100vw - 32px), 560px, calc(100svh - 3rem)));
   --bead: calc(var(--S) * 0.017);
-  --seat: min(calc(var(--S) * 0.15), 88px);
+  --seat: min(calc(var(--S) * 0.15), 120px);
   --ease: cubic-bezier(0.65, 0, 0.25, 1);
   position: relative;
   width: var(--S);
@@ -430,6 +503,11 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
+/* Daily hunt guessing: seated tokens become tappable once guessing opens. */
+.circle.selectable .ring-token[data-state="seat"] { cursor: pointer; }
+.circle.selectable .ring-token[data-state="seat"]:hover { --k: 1.08; }
+.ring-token.selected { --k: 1.18; z-index: 1; outline: 3px dashed var(--brass); outline-offset: 4px; }
+
 .circle-centre {
   position: absolute;
   inset: 24%;
@@ -452,6 +530,91 @@ button:focus-visible {
   color: var(--dim);
   font: 500 1.05rem/1.3 var(--serif);
 }
+
+/* Daily hunt */
+.last-answer {
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--bg);
+}
+
+.last-question { margin: 0; }
+.last-reply { margin: 0.25rem 0 0; font-weight: 700; }
+
+.hunt-heading {
+  margin: 1.5rem 0 0.75rem;
+  font: 500 1.3rem/1.3 var(--serif);
+}
+
+.hunt-heading:focus { outline: none; }
+
+.offers {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--line);
+  border-radius: 0.9rem;
+  background: var(--panel);
+  color: var(--text);
+  text-align: left;
+  font: 500 1.08rem/1.4 var(--serif);
+}
+
+@media (hover: hover) {
+  .offer:hover { border-color: var(--brass); }
+}
+
+.offer-id {
+  color: var(--dim);
+  font: 400 0.8rem/1.2 ui-monospace, Consolas, monospace;
+}
+
+.guessing { margin-top: 1.5rem; }
+.guess-hint { margin: 0 0 0.75rem; }
+.guess-hint:focus { outline: none; }
+
+.candidates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.candidate {
+  min-height: 2.75rem;
+  padding: 0.35rem 0.9rem;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+}
+
+.candidate.selected { border-color: var(--brass); background: var(--brass); color: var(--panel); }
+
+.guess-locked { margin: 1rem 0 0; color: var(--dim); }
+.guess-locked:empty { display: none; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.stats dt { grid-row: 2; color: var(--dim); font-size: 0.9rem; }
+.stats dd { grid-row: 1; margin: 0; font: 400 2rem/1 var(--display); }
+
+.countdown { margin: 0.5rem 0 0; color: var(--dim); }
+
+.wrong-guess { color: var(--dim); }
 
 /* Answer path */
 .path {

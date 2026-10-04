@@ -1,118 +1,22 @@
 import { Game } from './engine.js?v=dev';
-import { artPath, fallbackArtPath, EVIL_TEAMS } from './art.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
-
-const $ = (id) => document.getElementById(id);
-
-const TEAMS = [
-  { id: 'townsfolk', heading: 'Townsfolk', label: 'Townsfolk' },
-  { id: 'outsider', heading: 'Outsiders', label: 'Outsider' },
-  { id: 'minion', heading: 'Minions', label: 'Minion' },
-  { id: 'demon', heading: 'Demons', label: 'Demon' },
-  { id: 'traveller', heading: 'Travellers', label: 'Traveller' },
-  { id: 'fabled', heading: 'Fabled', label: 'Fabled' },
-  { id: 'loric', heading: 'Loric', label: 'Loric' },
-];
-const GOOD_TEAMS = new Set(['townsfolk', 'outsider']);
-
-// Good / evil / other (travellers and storyteller characters), used for border colour.
-const side = (team) => (GOOD_TEAMS.has(team) ? 'good' : EVIL_TEAMS.has(team) ? 'evil' : 'other');
-const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
-
-async function loadJson(path) {
-  const response = await fetch(path);
-  if (!response.ok) throw new Error(`${path}: ${response.status}`);
-  return response.json();
-}
-
-function el(tag, className, text) {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  if (text !== undefined) node.textContent = text;
-  return node;
-}
-
-function setArt(img, character) {
-  img.src = artPath(character);
-  img.addEventListener('error', () => { img.src = fallbackArtPath(character); }, { once: true });
-}
-
-// Builds every team group once; renderPool() only toggles visibility.
-function buildPool(characters) {
-  const groups = TEAMS.map((team) => {
-    const section = el('section', 'team-group');
-    const heading = el('h3');
-    const list = el('ul', 'tokens');
-    const items = characters.filter((c) => c.team === team.id).map((c) => {
-      const li = el('li', `token ${side(c.team)}`);
-      li.dataset.id = c.id;
-      const img = el('img', 'art');
-      img.alt = '';
-      img.loading = 'lazy';
-      img.decoding = 'async';
-      setArt(img, c);
-      const ability = el('span', 'ability', c.summary);
-      ability.hidden = true;
-      li.append(img, el('span', 'name', c.name), ability);
-      return li;
-    });
-    list.append(...items);
-    section.append(heading, list);
-    return { team, section, heading, items };
-  }).filter((g) => g.items.length);
-  $('pool-groups').replaceChildren(...groups.map((g) => g.section));
-  return groups;
-}
-
-function renderPool(groups, pool, over) {
-  const remaining = new Set(pool);
-  for (const g of groups) {
-    let count = 0;
-    for (const li of g.items) {
-      const inPool = remaining.has(li.dataset.id);
-      li.hidden = !inPool;
-      if (inPool) count++;
-    }
-    g.heading.textContent = `${g.team.heading} (${count})`;
-    g.section.hidden = count === 0;
-  }
-  const heading = !over ? 'All remaining characters' : pool.length === 1 ? 'Your character' : 'Your possible characters';
-  $('pool-heading').textContent = `${heading} (${pool.length})`;
-  // Once it's down to a tie, show each ability under the name.
-  for (const g of groups) for (const li of g.items) li.querySelector('.ability').hidden = !over || pool.length === 1;
-}
+import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson } from './shared.js?v=dev';
 
 function renderPath(game) {
   $('path-list').replaceChildren(...game.history.map((h, i) => {
     const [yesLabel, noLabel] = h.question.options ?? ['Yes', 'No'];
     const after = i + 1 < game.history.length ? game.history[i + 1].pool.length : game.pool.length;
     const li = el('li');
-    li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? yesLabel : noLabel), el('span', 'left', ` (${h.pool.length} left, then ${after})`), el('span', 'path-id', ` ${h.question.id}`));
+    li.append(`${h.question.dinniman} `, el('span', 'reply', h.answer ? yesLabel : noLabel), el('span', 'left', ` (${h.pool.length} left, then ${after})`), el('span', 'path-id', ` ${h.question.id}`));
     return li;
   }));
 }
 
-function setupThemeToggle() {
-  const button = $('theme-toggle');
-  const root = document.documentElement;
-  const systemDark = matchMedia('(prefers-color-scheme: dark)');
-  const current = () => root.dataset.theme ?? (systemDark.matches ? 'dark' : 'light');
-  const label = () => { button.textContent = current() === 'dark' ? 'Use light theme' : 'Use dark theme'; };
-  button.addEventListener('click', () => {
-    root.dataset.theme = current() === 'dark' ? 'light' : 'dark';
-    try { localStorage.setItem('theme', root.dataset.theme); } catch {}
-    label();
-  });
-  systemDark.addEventListener?.('change', label);
-  label();
-  button.hidden = false;
-}
-
-function start(characters, questions) {
+function start(characters, questions, shareQuotes) {
   // Test switch: ?nosingles drops questions with one character on either side of their split.
   const minSide = new URLSearchParams(location.search).has('nosingles') ? 2 : 1;
   const game = new Game({ characters, questions, minSide });
-  const groups = buildPool(characters);
+  const renderPool = createPoolList($('pool-groups'), $('pool-heading'), characters);
   const circle = createCircle({
     root: $('circle'), ring: $('ring'), count: $('circle-count'), label: $('circle-label'), characters, side,
   });
@@ -125,7 +29,7 @@ function start(characters, questions) {
     const name = $('result-name');
     if (results.length === 1) {
       const [result] = results;
-      const teamLabel = TEAMS.find((t) => t.id === result.team)?.label ?? result.team;
+      const team = teamLabel(result.team);
       art.hidden = false;
       art.className = `result-art ${side(result.team)}`;
       setArt(art, result);
@@ -134,9 +38,10 @@ function start(characters, questions) {
       name.classList.remove('several');
       teamLine.hidden = false;
       teamLine.className = `result-team ${side(result.team)}`;
-      teamLine.textContent = teamLabel;
+      teamLine.textContent = team;
       $('result-summary').textContent = result.summary;
-      announcer.textContent = `You are the ${result.name}, ${teamLabel}. ${result.summary}`;
+      renderShare(result);
+      announcer.textContent = `You are the ${result.name}, ${team}. ${result.summary}`;
       return;
     }
     // No question left can split these characters.
@@ -147,13 +52,43 @@ function start(characters, questions) {
     name.textContent = names;
     name.classList.add('several');
     $('result-summary').textContent = 'Their abilities are listed below.';
+    renderShare(null);
     announcer.textContent = `No question can tell these apart yet. You are the ${names}.`;
   }
+
+  // Share: the character's quote in a Dungeon Crawler Carl voice, via the
+  // system share sheet where there is one, otherwise the clipboard.
+  let shareText = '';
+  function renderShare(result) {
+    $('share').hidden = !result;
+    $('share-quote').hidden = true;
+    $('share-status').textContent = '';
+    if (!result) return;
+    const quote = shareQuotes[result.id];
+    if (quote) {
+      $('share-quote-text').textContent = quote.quote;
+      $('share-quote-voice').textContent = quote.voice;
+      $('share-quote').hidden = false;
+    }
+    const url = location.href.split(/[?#]/)[0];
+    shareText = [`I'm the ${result.name} (${teamLabel(result.team)}) in Which Clocktower character are you?`,
+      quote ? `"${quote.quote}" (${quote.voice})` : '', url].filter(Boolean).join(String.fromCharCode(10));
+  }
+  async function share() {
+    try {
+      if (navigator.share) { await navigator.share({ text: shareText }); return; }
+      await navigator.clipboard.writeText(shareText);
+      $('share-status').textContent = 'Copied to your clipboard.';
+    } catch (error) {
+      if (error?.name !== 'AbortError') $('share-status').textContent = 'Couldn’t share automatically. Copy this instead: ' + shareText;
+    }
+  }
+  $('share').addEventListener('click', share);
 
   function render({ focus = false } = {}) {
     const results = game.results;
     const over = results.length > 0;
-    renderPool(groups, game.pool, over);
+    renderPool(game.pool, !over ? 'All remaining characters' : game.pool.length === 1 ? 'Your character' : 'Your possible characters', { showAbilities: over && game.pool.length > 1 });
     circle(game.pool, { results });
     $('question-panel').hidden = over;
     $('result-panel').hidden = !over;
@@ -172,15 +107,14 @@ function start(characters, questions) {
     const left = `${game.pool.length} of ${plural(game.characters.length, 'character')} left`;
     $('question-number').textContent = number;
     $('remaining').textContent = left;
-    $('question-text').textContent = q.plain;
+    $('question-text').textContent = q.dinniman;
     $('question-id').textContent = q.id;
-    $('flavour-text').textContent = q.dinniman;
     $('flavour-voice').textContent = q.voice;
     $('feedback').textContent = feedback;
     $('yes').textContent = yesLabel;
     $('no').textContent = noLabel;
     $('undo').disabled = game.history.length === 0;
-    announcer.textContent = [feedback, `${number}, ${left}.`, q.plain].filter(Boolean).join(' ');
+    announcer.textContent = [feedback, `${number}, ${left}.`, `${q.voice}: ${q.dinniman}`].filter(Boolean).join(' ');
     if (focus) $('question-text').focus();
   }
 
@@ -239,9 +173,11 @@ function start(characters, questions) {
 // so browsers never mix cached files from different versions.
 try {
   setupThemeToggle();
-  const [characters, files] = await Promise.all([loadJson('data/characters.json?v=dev'), loadJson('data/questions/index.json?v=dev')]);
-  const questions = (await Promise.all(files.map((file) => loadJson(`data/questions/${file}?v=dev`)))).flat();
-  start(characters, questions);
+  const [{ characters, questions }, shareQuotes] = await Promise.all([
+    loadGameData(),
+    loadJson('data/share-quotes.json?v=dev').catch(() => ({})),
+  ]);
+  start(characters, questions, shareQuotes);
 } catch (error) {
   console.error(error);
   $('question-number').textContent = '';
