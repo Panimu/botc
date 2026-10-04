@@ -14,6 +14,27 @@ const TEAM_ORDER = ['townsfolk', 'outsider', 'minion', 'demon', 'traveller'];
 const SEAT_FLOAT_MS = 2400;
 const SEAT_STAGGER_MS = 700;
 
+// The name follows the bottom edge of the token, as on the physical tokens.
+const SVG = 'http://www.w3.org/2000/svg';
+function curvedName(character) {
+  const svg = document.createElementNS(SVG, 'svg');
+  svg.setAttribute('class', 'ring-name');
+  svg.setAttribute('viewBox', '0 0 100 100');
+  const path = document.createElementNS(SVG, 'path');
+  path.id = `arc-${character.id}`;
+  path.setAttribute('d', 'M 13 52 A 37 37 0 0 0 87 52');
+  path.setAttribute('fill', 'none');
+  const text = document.createElementNS(SVG, 'text');
+  const along = document.createElementNS(SVG, 'textPath');
+  along.setAttribute('href', `#arc-${character.id}`);
+  along.setAttribute('startOffset', '50%');
+  along.setAttribute('text-anchor', 'middle');
+  along.textContent = character.name;
+  text.append(along);
+  svg.append(path, text);
+  return svg;
+}
+
 function shuffle(items) {
   const a = [...items];
   for (let i = a.length - 1; i > 0; i--) {
@@ -44,10 +65,7 @@ export function createCircle({ root, ring, count, label, characters, side }) {
     img.alt = '';
     img.decoding = 'async';
     img.addEventListener('error', () => { img.src = fallbackArtPath(c); }, { once: true });
-    const name = document.createElement('span');
-    name.className = 'ring-name';
-    name.textContent = c.name;
-    li.append(img, name);
+    li.append(img, curvedName(c));
     ring.append(li);
     // Art loads the first time the token takes a seat; beads don't show it.
     tokens.set(c.id, { li, img, src: artPath(c), beadAngle: (360 / ordered.length) * i });

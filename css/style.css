@@ -341,27 +341,60 @@ button:focus-visible {
 .ring-token.team-outsider { background: var(--outsider); border-color: var(--outsider); }
 .ring-token.team-minion { background: var(--minion); border-color: var(--minion); }
 
+/* Seated tokens imitate the physical ones: a parchment face, a large icon, the
+   name curving round the bottom edge, and no team rim (the art's own colour shows
+   alignment). Beads fade into the parchment as they grow. */
+.ring-token::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 38%, #fbf5e6 0%, #efe3c6 55%, #d6c197 100%);
+  box-shadow: inset 0 0 0 1.5px rgba(74, 52, 26, 0.55), inset 0 -4px 8px rgba(74, 52, 26, 0.2);
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+
 .ring-art {
   position: absolute;
-  inset: 6% 18% 32%;
-  width: 64%;
-  height: 62%;
+  left: 0;
+  top: -7%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   opacity: 0;
-  transition: opacity 500ms ease, filter 500ms ease;
+  transition: opacity 600ms ease, filter 500ms ease;
 }
 
 .ring-name {
   position: absolute;
-  left: 6%;
-  right: 6%;
-  bottom: 8%;
-  text-align: center;
-  color: #1f1830;
-  font: 700 clamp(0.5rem, calc(var(--seat) * 0.12), 0.7rem)/1.05 var(--body);
-  overflow-wrap: normal;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
   opacity: 0;
-  transition: opacity 500ms ease;
+  transition: opacity 600ms ease;
+}
+
+.ring-name text {
+  font: 400 13px var(--display);
+  letter-spacing: 0.03em;
+  fill: #2b1d12;
+}
+
+/* The shroud laid over a dead player's token. */
+.ring-token::after {
+  content: '';
+  position: absolute;
+  left: 26%;
+  right: 26%;
+  top: -2%;
+  height: 46%;
+  background: linear-gradient(#17121d, #2e2537);
+  clip-path: polygon(0 0, 100% 0, 90% 76%, 70% 100%, 50% 84%, 30% 100%, 10% 76%);
+  opacity: 0;
+  transform: translateY(-35%);
+  transition: opacity 500ms ease, transform 500ms ease;
 }
 
 .ring-token[data-state="bead-out"] { background: var(--line); opacity: 0.55; --k: 0.8; }
@@ -372,10 +405,12 @@ button:focus-visible {
 .ring-token[data-state="seat-out"] {
   --d: var(--seat);
   --r: calc(var(--S) * 0.39);
-  background: var(--token);
-  border-width: 3px;
+  background-color: #efe3c6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
+.ring-token[data-state="seat"]::before,
+.ring-token[data-state="seat-out"]::before,
 .ring-token[data-state="seat"] .ring-art,
 .ring-token[data-state="seat-out"] .ring-art { opacity: 1; }
 
@@ -384,13 +419,15 @@ button:focus-visible {
   .ring-token[data-state="seat-out"] .ring-name { opacity: 1; }
 }
 
-.ring-token[data-state="seat-out"] { background: var(--line); border-color: var(--line); opacity: 0.5; --k: 0.85; }
-.ring-token[data-state="seat-out"] .ring-art { filter: grayscale(1) brightness(0.65); }
+.ring-token[data-state="seat-out"] { --k: 0.92; }
+.ring-token[data-state="seat-out"] .ring-art { filter: grayscale(0.8) brightness(0.8); }
+.ring-token[data-state="seat-out"]::after { opacity: 0.9; transform: none; }
 
 .ring-token.chosen {
   --k: 1.3;
   z-index: 1;
-  box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px var(--brass);
+  outline: 3px solid var(--brass);
+  outline-offset: 4px;
 }
 
 .circle-centre {
@@ -529,5 +566,5 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .answer, .ring-token, .ring-art, .ring-name { transition: none; }
+  .answer, .ring-token, .ring-token::before, .ring-token::after, .ring-art, .ring-name { transition: none; }
 }
