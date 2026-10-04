@@ -369,6 +369,24 @@ footer {
   color: var(--dim);
 }
 
+/* Community Created Content badge: parchment in the light theme, dark sleeve in the dark theme. */
+.ccc {
+  display: block;
+  width: min(14rem, 60vw);
+  height: auto;
+  margin: 0 auto;
+}
+
+.ccc-dark { display: none; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .ccc-light { display: none; }
+  :root:not([data-theme="light"]) .ccc-dark { display: block; }
+}
+
+:root[data-theme="dark"] .ccc-light { display: none; }
+:root[data-theme="dark"] .ccc-dark { display: block; }
+
 @media (forced-colors: active) {
   .token .art, .result-art { border-color: CanvasText; }
   .answer { border-color: ButtonText; }
