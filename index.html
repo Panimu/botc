@@ -1,45 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Which Clocktower Character Are You?</title>
-  <meta name="description" content="Answer yes or no until only one Blood on the Clocktower character is left in the circle.">
+  <meta name="description" content="Answer yes or no until only one Blood on the Clocktower character is left.">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Alegreya+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <script type="module" src="js/app.js"></script>
 </head>
 <body>
   <header class="intro">
+    <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
     <h1>Which Clocktower character are you?</h1>
-    <p>Answer honestly. Each answer sends characters out of the circle until only yours is left.</p>
+    <p>Answer each question honestly. Every answer rules out characters until only one is left.</p>
   </header>
 
   <main>
-    <div class="square">
-      <ol class="ring" id="ring" aria-label="Characters still in the circle"></ol>
-      <div class="centre" id="centre" aria-live="polite">
-        <p class="status">Gathering the town…</p>
-      </div>
-    </div>
-
-    <div class="controls" id="controls" hidden>
-      <div class="answers">
+    <section class="panel" id="question-panel" aria-labelledby="question-text">
+      <p class="progress"><span id="question-number">Loading…</span> <span id="remaining"></span></p>
+      <h2 class="question" id="question-text" tabindex="-1"></h2>
+      <p class="feedback" id="feedback"></p>
+      <div class="answers" id="answers" hidden>
         <button type="button" class="answer" id="yes">Yes</button>
         <button type="button" class="answer" id="no">No</button>
       </div>
-      <div class="secondary">
+      <div class="secondary" id="secondary" hidden>
         <button type="button" class="quiet" id="undo">Undo last answer</button>
         <button type="button" class="quiet" id="restart">Start over</button>
       </div>
-    </div>
+      <p class="keys" id="keys" hidden>Keyboard: <kbd>Y</kbd> yes, <kbd>N</kbd> no, <kbd>Backspace</kbd> undo.</p>
+    </section>
 
-    <section class="path" id="path" hidden>
-      <h2>How you got here</h2>
+    <section class="panel result" id="result-panel" aria-labelledby="result-name" hidden>
+      <img class="result-art" id="result-art" alt="">
+      <p class="result-lead">You are the</p>
+      <h2 class="result-name" id="result-name" tabindex="-1"></h2>
+      <p class="result-team" id="result-team"></p>
+      <p class="result-summary" id="result-summary"></p>
+      <div class="secondary">
+        <button type="button" class="answer" id="play-again">Play again</button>
+        <button type="button" class="quiet" id="result-undo">Undo last answer</button>
+      </div>
+    </section>
+
+    <section class="path" id="path" aria-labelledby="path-heading" hidden>
+      <h2 id="path-heading">How you got here</h2>
       <ol id="path-list"></ol>
     </section>
+
+    <section class="pool" aria-labelledby="pool-heading">
+      <h2 id="pool-heading">Still in the running</h2>
+      <div id="pool-groups"></div>
+    </section>
+
+    <div class="visually-hidden" id="announcer" aria-live="polite" aria-atomic="true"></div>
   </main>
 
   <footer>

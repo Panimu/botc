@@ -1,6 +1,16 @@
 // Pure game logic, shared by the browser (js/app.js) and the Node tests.
 // Strict elimination: every answer removes the characters on the losing side.
 
+// Ids on a question's "yes" side: either listed in `yes`, or every character
+// whose fields satisfy `match` ({ field: value } or { field: [allowed values] }).
+export function resolveYes(question, characters) {
+  if (question.yes) return question.yes;
+  const rules = Object.entries(question.match ?? {});
+  return characters
+    .filter((c) => rules.every(([field, want]) => (Array.isArray(want) ? want.includes(c[field]) : c[field] === want)))
+    .map((c) => c.id);
+}
+
 // True when the question puts at least one pooled character on each side.
 export function splits(question, pool) {
   let yes = 0;
@@ -11,7 +21,10 @@ export function splits(question, pool) {
 export class Game {
   constructor({ characters, questions, rng = Math.random }) {
     this.characters = characters;
-    this.questions = questions.map((q) => ({ ...q, yesSet: new Set(q.yes) }));
+    this.questions = questions.map((q) => {
+      const yes = resolveYes(q, characters);
+      return { ...q, yes, yesSet: new Set(yes) };
+    });
     this.rng = rng;
     this.restart();
   }
