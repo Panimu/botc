@@ -728,6 +728,3 @@ footer {
   .answer { border-color: ButtonText; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .answer, .ring-token, .ring-token::before, .ring-token::after, .ring-art, .ring-name { transition: none; }
-}
