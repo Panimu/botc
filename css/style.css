@@ -89,7 +89,7 @@ main {
 .intro { order: 0; }
 #question-panel, .hunt-panel { order: 1; }
 #result-panel { order: 2; }
-.circle { order: 3; }
+.stage { order: 3; }
 .path { order: 4; }
 .pool { order: 5; }
 
@@ -97,10 +97,9 @@ main {
    window height and kept in view while scrolling. */
 @media (min-width: 64rem) {
   main {
-    max-width: 96rem;
+    max-width: none;
     display: grid;
-    grid-template-columns: minmax(22rem, 44rem) auto;
-    justify-content: center;
+    grid-template-columns: minmax(22rem, 44rem) minmax(0, 1fr);
     column-gap: clamp(2rem, 4vw, 5rem);
     align-items: start;
   }
@@ -111,11 +110,20 @@ main {
     align-items: stretch;
   }
 
-  main > .circle {
-    --S: max(20rem, min(calc(100svh - 2rem), calc(50vw - 3rem), 980px));
+  /* The stage fills the space beside the panels at window height and stays in
+     view; the circle is centred in it and sized to fit it. */
+  .stage {
     position: sticky;
-    top: 1rem;
-    justify-self: center;
+    top: 0;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    container: stage / size;
+  }
+
+  .stage > .circle {
+    --S: max(18rem, min(calc(100cqw - 2rem), calc(100cqh - 2rem), 980px));
     margin: 0;
   }
 
