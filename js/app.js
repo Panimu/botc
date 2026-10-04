@@ -1,6 +1,6 @@
 import { Game } from './engine.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
-import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson } from './shared.js?v=dev';
+import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson, setupShare } from './shared.js?v=dev';
 
 function renderPath(game) {
   $('path-list').replaceChildren(...game.history.map((h, i) => {
@@ -56,11 +56,10 @@ function start(characters, questions, shareQuotes) {
     announcer.textContent = `No question can tell these apart yet. You are the ${names}.`;
   }
 
-  // Share: the character's quote in a Dungeon Crawler Carl voice, via the
-  // system share sheet where there is one, otherwise the clipboard.
-  let shareText = '';
+  // Share: copy buttons, Discord first, with the character's quote in a Dungeon Crawler Carl voice.
+  let texts = { discord: '', plain: '', url: '' };
   function renderShare(result) {
-    $('share').hidden = !result;
+    $('share-options').hidden = !result;
     $('share-quote').hidden = true;
     $('share-status').textContent = '';
     if (!result) return;
@@ -71,19 +70,15 @@ function start(characters, questions, shareQuotes) {
       $('share-quote').hidden = false;
     }
     const url = location.href.split(/[?#]/)[0];
-    shareText = [`I'm the ${result.name} (${teamLabel(result.team)}) in Which Clocktower character are you?`,
-      quote ? `"${quote.quote}" (${quote.voice})` : '', url].filter(Boolean).join(String.fromCharCode(10));
+    const team = teamLabel(result.team);
+    const nl = String.fromCharCode(10);
+    texts = {
+      url,
+      plain: [`I'm the ${result.name} (${team}) in Which Clocktower character are you?`, quote ? `"${quote.quote}" (${quote.voice})` : '', url].filter(Boolean).join(nl),
+      discord: [`**I'm the ${result.name}** (${team}) in *Which Clocktower character are you?*`, quote ? `> ${quote.quote}${nl}> *${quote.voice}*` : '', url].filter(Boolean).join(nl),
+    };
   }
-  async function share() {
-    try {
-      if (navigator.share) { await navigator.share({ text: shareText }); return; }
-      await navigator.clipboard.writeText(shareText);
-      $('share-status').textContent = 'Copied to your clipboard.';
-    } catch (error) {
-      if (error?.name !== 'AbortError') $('share-status').textContent = 'Couldn’t share automatically. Copy this instead: ' + shareText;
-    }
-  }
-  $('share').addEventListener('click', share);
+  setupShare($('share-options'), $('share-status'), () => texts);
 
   function render({ focus = false } = {}) {
     const results = game.results;

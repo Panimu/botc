@@ -101,3 +101,48 @@ export function createPoolList(container, headingEl, characters) {
     headingEl.textContent = `${heading} (${pool.length})`;
   };
 }
+
+// Copy to the clipboard, with a fallback for browsers without the async API.
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    const area = Object.assign(document.createElement('textarea'), { value: text });
+    area.setAttribute('readonly', '');
+    area.style.cssText = 'position:fixed;opacity:0';
+    document.body.append(area);
+    area.select();
+    const ok = document.execCommand('copy');
+    area.remove();
+    return ok;
+  }
+}
+
+// Share buttons: Discord-formatted, plain text, link, and the system share
+// sheet where one exists (mostly phones). getTexts() returns { discord, plain, url }.
+export function setupShare(container, status, getTexts) {
+  const options = [
+    ['Copy for Discord', (t) => t.discord, 'Copied for Discord: paste it into any channel.'],
+    ['Copy text', (t) => t.plain, 'Copied to your clipboard.'],
+    ['Copy link', (t) => t.url, 'Link copied.'],
+  ];
+  const buttons = options.map(([label, pick, done], i) => {
+    const button = el('button', i === 0 ? 'answer share-main' : 'quiet', label);
+    button.type = 'button';
+    button.addEventListener('click', async () => {
+      const text = pick(getTexts());
+      status.textContent = (await copyText(text)) ? done : `Couldn’t copy automatically. Here it is to copy by hand: ${text}`;
+    });
+    return button;
+  });
+  if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+    const native = el('button', 'quiet', 'Share…');
+    native.type = 'button';
+    native.addEventListener('click', async () => {
+      try { await navigator.share({ text: getTexts().plain }); } catch {}
+    });
+    buttons.push(native);
+  }
+  container.replaceChildren(...buttons);
+}

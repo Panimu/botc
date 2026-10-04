@@ -41,6 +41,11 @@ const DAY_MS = 86400000;
 const toUtc = (date) => { const [y, m, d] = date.split('-').map(Number); return Date.UTC(y, m - 1, d); };
 const fromUtc = (ms) => new Date(ms).toISOString().slice(0, 10);
 
+// The UTC date as YYYY-MM-DD: the daily hunt's day, the same for everyone.
+export function utcDate(now = new Date()) {
+  return now.toISOString().slice(0, 10);
+}
+
 // The player's local date as YYYY-MM-DD.
 export function localDate(now = new Date()) {
   const pad = (n) => String(n).padStart(2, '0');

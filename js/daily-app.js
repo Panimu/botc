@@ -1,8 +1,8 @@
 // The daily hunt page: choose questions to find the day's hidden character.
 // Game rules live in js/daily.js; this file only renders and stores progress.
-import { DailyGame, replay, streaks, localDate, EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES } from './daily.js?v=dev';
+import { DailyGame, replay, streaks, utcDate, EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES } from './daily.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
-import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData } from './shared.js?v=dev';
+import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, setupShare } from './shared.js?v=dev';
 import { restore, load, save as persist, requestPersistence } from './storage.js?v=dev';
 
 const PROGRESS_KEY = 'daily-progress';
@@ -12,8 +12,21 @@ const RESULTS_KEY = 'daily-results';
 // Durable storage (js/storage.js); the hunt still works if storage is unavailable.
 const store = { get: load, set: persist };
 
-function start(characters, questions) {
-  const date = localDate();
+// The web host's clock (from the Date response header), so everyone shares the
+// same day; falls back to the device clock. Days roll over at midnight UTC.
+async function hostClockOffset() {
+  try {
+    const response = await fetch(`data/questions/index.json?clock=${Date.now()}`, { method: 'HEAD', cache: 'no-store' });
+    const host = Date.parse(response.headers.get('Date'));
+    return Number.isFinite(host) ? host - Date.now() : 0;
+  } catch {
+    return 0;
+  }
+}
+
+function start(characters, questions, clockOffset) {
+  const now = () => new Date(Date.now() + clockOffset);
+  const date = utcDate(now());
   const byId = new Map(characters.map((c) => [c.id, c]));
   const game = new DailyGame({ characters, questions, date });
   const saved = store.get(PROGRESS_KEY, null);
@@ -93,6 +106,13 @@ function start(characters, questions) {
     $('path').hidden = items.length === 0;
   }
 
+  function shareTexts() {
+    const nl = String.fromCharCode(10);
+    const plain = shareText();
+    const [title, marks, ...rest] = plain.split(nl);
+    return { plain, url: location.href.split(/[?#]/)[0], discord: [`**${title}**`, marks, ...rest].join(nl) };
+  }
+
   function shareText() {
     const marks = game.history.map((h) => (h.answer ? '🟦' : '⬛')).join('')
       + '❌'.repeat(game.wrongGuesses.length) + (game.status === 'won' ? '✅' : '');
@@ -121,9 +141,9 @@ function start(characters, questions) {
   }
 
   function renderCountdown() {
-    const now = new Date();
-    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-    const minutes = Math.ceil((midnight - now) / 60000);
+    const t = now();
+    const midnight = Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate() + 1);
+    const minutes = Math.ceil((midnight - t) / 60000);
     $('countdown').textContent = `Next hunt in ${Math.floor(minutes / 60)}h ${minutes % 60}m.`;
   }
 
@@ -174,19 +194,8 @@ function start(characters, questions) {
     render({ focus: game.status === 'playing' ? 'guess-hint' : 'result-name' });
   }
 
-  async function share() {
-    const text = shareText();
-    try {
-      if (navigator.share) { await navigator.share({ text }); return; }
-      await navigator.clipboard.writeText(text);
-      $('share-status').textContent = 'Copied to your clipboard.';
-    } catch (error) {
-      if (error?.name !== 'AbortError') $('share-status').textContent = `Couldn’t share automatically. Copy this instead: ${text}`;
-    }
-  }
-
   $('guess-confirm').addEventListener('click', guess);
-  $('share').addEventListener('click', share);
+  setupShare($('share-options'), $('share-status'), shareTexts);
   $('guess-hint').tabIndex = -1;
   renderCountdown();
   setInterval(renderCountdown, 30000);
@@ -195,11 +204,12 @@ function start(characters, questions) {
 
 try {
   setupThemeToggle();
-  const [{ characters, questions }] = await Promise.all([
+  const [{ characters, questions }, , clockOffset] = await Promise.all([
     loadGameData({ exclude: EXCLUDED_FILES }),
     restore([PROGRESS_KEY, RESULTS_KEY]),
+    hostClockOffset(),
   ]);
-  start(characters, questions);
+  start(characters, questions, clockOffset);
 } catch (error) {
   console.error(error);
   $('hunt-number').textContent = 'The hunt couldn’t start.';
