@@ -81,7 +81,7 @@ function renderPath(game) {
     const [yesLabel, noLabel] = h.question.options ?? ['Yes', 'No'];
     const after = i + 1 < game.history.length ? game.history[i + 1].pool.length : game.pool.length;
     const li = el('li');
-    li.append(`${h.question.text} `, el('span', 'reply', h.answer ? yesLabel : noLabel), el('span', 'left', ` (${h.pool.length} left, then ${after})`));
+    li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? yesLabel : noLabel), el('span', 'left', ` (${h.pool.length} left, then ${after})`));
     return li;
   }));
 }
@@ -137,12 +137,14 @@ function start(characters, questions) {
     const left = `${game.pool.length} of ${plural(game.characters.length, 'character')} left`;
     $('question-number').textContent = number;
     $('remaining').textContent = left;
-    $('question-text').textContent = q.text;
+    $('question-text').textContent = q.plain;
+    $('flavour-text').textContent = q.dinniman;
+    $('flavour-voice').textContent = q.voice;
     $('feedback').textContent = feedback;
     $('yes').textContent = yesLabel;
     $('no').textContent = noLabel;
     $('undo').disabled = game.history.length === 0;
-    announcer.textContent = [feedback, `${number}, ${left}.`, q.text].filter(Boolean).join(' ');
+    announcer.textContent = [feedback, `${number}, ${left}.`, q.plain].filter(Boolean).join(' ');
     if (focus) $('question-text').focus();
   }
 
@@ -201,7 +203,8 @@ function start(characters, questions) {
 // so browsers never mix cached files from different versions.
 try {
   setupThemeToggle();
-  const [characters, questions] = await Promise.all([loadJson('data/characters.json?v=dev'), loadJson('data/questions.json?v=dev')]);
+  const [characters, files] = await Promise.all([loadJson('data/characters.json?v=dev'), loadJson('data/questions/index.json?v=dev')]);
+  const questions = (await Promise.all(files.map((file) => loadJson(`data/questions/${file}?v=dev`)))).flat();
   start(characters, questions);
 } catch (error) {
   console.error(error);

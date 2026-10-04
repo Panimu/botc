@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A Blood on the Clocktower personality quiz covering every character (all 181 roles, including travellers, fabled and loric). The player answers binary questions; each answer **strictly eliminates** every character on the losing side, and the next question is picked **uniformly at random** from unasked questions that still split the remaining pool. The game ends when one character is left. Questions are authored by Claude Code; the user has asked to keep the pool basic for now.
+A Blood on the Clocktower personality quiz covering every character (all 181 roles, including travellers, fabled and loric). The player answers binary questions; each answer **strictly eliminates** every character on the losing side, and the next question is picked **uniformly at random** from unasked questions that still split the remaining pool. The game ends when one character is left. Questions are authored by Claude Code, following `data/questions/GUIDE.md` (format, accuracy rules, and the Dungeon Crawler Carl voice cast). Each question has a plain phrasing and a `dinniman` phrasing credited to a `voice`; both are shown for now.
 
 Live at https://panimu.github.io/botc/. Every push to `main` of github.com/Panimu/botc runs `.github/workflows/pages.yml`, which validates, tests, stamps asset URLs and deploys to GitHub Pages.
 
@@ -14,7 +14,7 @@ Live at https://panimu.github.io/botc/. Every push to `main` of github.com/Panim
 
 - `npm run serve` — serve locally at http://localhost:8000 (plain `python -m http.server`; opening `index.html` from disk fails because the data is fetched).
 - `npm test` — Node's built-in test runner (`node --test`). Single test: `node --test --test-name-pattern="undo" test/`.
-- `npm run validate` — data integrity, art presence, and separability coverage. `--verbose` lists every group of look-alike characters. Run after every change to `data/`.
+- `npm run validate`: data integrity, art presence, separability coverage, and simulated games. `--verbose` lists every unseparated pair. Run after every change to `data/`.
 - `node scripts/build-characters.js` — regenerates `data/characters.json` from `resources/data/`. Don't hand-edit that file.
 
 There are no dependencies and no build step for the site itself.
@@ -23,10 +23,10 @@ There are no dependencies and no build step for the site itself.
 
 - `resources/` — reference material supplied by the user and published with the site: `data/roles.json` (all roles with official ability text), `nightsheet.json` (night order), `jinxes.json`, and token art in `characters/<edition>/<id>[_g|_e].webp` (fabled/loric have no suffix; `generic/<team>.webp` is the fallback).
 - `data/characters.json` — generated. Per character: `id`, `name`, `team`, `edition`, `summary` (the official ability), `image`, plus boolean fact flags (`firstNight`, `otherNight`, `setup`, and regex-derived ones like `oncePerGame`, `startsKnowing`, `madness`). Add a flag in `ABILITY_FLAGS` in the build script to make it selectable.
-- `data/questions.json` — each question is `{ id, text, match | yes, options? }`. `match` selects the "yes" side by character fields (`{ "team": ["minion", "demon"] }`, `{ "otherNight": true }`); `yes` lists ids explicitly. Everyone else is on the "no" side. Optional `options: [yesLabel, noLabel]` relabels the buttons. A question's wording must hold for **every** character it selects.
-- `js/engine.js` — pure game logic (`Game`, `resolveYes`), no DOM. Shared by the browser, validator and tests; takes an injectable `rng`.
+- `data/questions/*.json`: one file per character group, all listed in `data/questions/index.json`, which the app and validator load. Each question is `{ id, plain, dinniman, voice, yes, scope? }`. `yes` and `scope` are selectors: an id list, or a match object on character fields (`{ "team": ["minion", "demon"] }`, `{ "otherNight": true }`). **Without `scope`** the question is global and everyone else is on the "no" side. **With `scope`** it's only asked when the whole remaining pool is inside the scope, so its wording can presuppose that context. Note that `firstNight`/`otherNight` mean "on the Storyteller's night sheet", not "wakes".
+- `js/engine.js` — pure game logic (`Game`, `select`, `prepare`, `splits`), no DOM. Shared by the browser, validator and tests; takes an injectable `rng`.
 - `js/app.js` — DOM rendering. Question panel, result panel, and the remaining characters as a grid grouped by team (built once, then toggled with `hidden`).
-- `scripts/validate.js` — reports **separability coverage**: pairs of characters no question tells apart. When such characters are all that remain, the engine's `#fallback()` asks "Does this sound like you?" with one character's ability. Raising coverage means adding questions that split the reported look-alike groups.
+- `scripts/validate.js` checks integrity: both phrasings and a voice, selectors that resolve, yes ⊂ scope, no duplicate ids or text. `node scripts/validate.js <file>.json` checks one file. Run without arguments, it also reports separability coverage and **simulates games**: average length, and how often the engine's `#fallback()` ("Does this sound like you?" plus an ability) is needed. With scoped questions, pairwise separability no longer guarantees zero fallbacks, so the simulation is the real measure.
 
 ## Constraints
 

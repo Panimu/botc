@@ -1,0 +1,236 @@
+[
+  {
+    "id": "tfx-loyal-to-one",
+    "plain": "Would you like to start the game able to vouch for exactly one good player, without knowing their role?",
+    "dinniman": "One name. That's it. You don't know what they do, but you know they're good, and you'll defend them like a guard dog with a grudge. Is a single trustworthy name, role unknown, how you'd like to begin?",
+    "voice": "Mordecai",
+    "yes": [
+      "steward"
+    ]
+  },
+  {
+    "id": "tfx-simplest-start",
+    "plain": "Is one guaranteed-good name, with nothing else attached, all the starting information you'd want?",
+    "dinniman": "Some of you want spreadsheets. Some of you want a single name on a napkin that says 'this one's fine'. No role, no numbers, no fuss. Is that one lonely good name enough to make you happy?",
+    "voice": "Carl",
+    "yes": [
+      "steward"
+    ]
+  },
+  {
+    "id": "tfx-two-not-demon",
+    "plain": "Would you like to start the game knowing two players who aren't the Demon, without knowing who the Demon is?",
+    "dinniman": "Congratulations, crawler! Your starter pack contains TWO certified Not-The-Demon people! Who the Demon actually is? Sold separately. Warranty void if they turn out to be Minions. Do you want those two names, and no Demon, on night one?",
+    "voice": "The System AI",
+    "yes": [
+      "knight"
+    ]
+  },
+  {
+    "id": "tfx-honour-clears-two",
+    "plain": "As a good player, would you like to clear two people of being the Demon while still unsure whether they are good?",
+    "dinniman": "There is something noble about standing up for the town and saying: not these two, not the big bad. Even knowing they could still be working for it. As one of the good guys, would you like to clear that pair of being the Demon without knowing they are good?",
+    "voice": "Katia",
+    "yes": [
+      "knight"
+    ]
+  },
+  {
+    "id": "tfx-one-in-three",
+    "plain": "Would you like to start with three players, knowing exactly one of them is evil?",
+    "dinniman": "Three faces, darling, and only ONE of them is rotten. It's like a reality show elimination, except I get to pick the villain. Would you like to begin the game with that delicious little trio?",
+    "voice": "Princess Donut",
+    "yes": [
+      "noble"
+    ]
+  },
+  {
+    "id": "tfx-dinner-party-traitor",
+    "plain": "Do you like the idea of sitting with three acquaintances, two loyal and one a traitor, and working out which?",
+    "dinniman": "Picture it, sweetheart: three guests at your table, two perfectly lovely and one with a knife up the sleeve. You know the ratio, just not the culprit. Tell me honestly, does that dinner party sound like your idea of fun?",
+    "voice": "Odette",
+    "yes": [
+      "noble"
+    ]
+  },
+  {
+    "id": "tfx-left-or-right",
+    "plain": "Would you like to start knowing only which direction around the circle the nearest evil player sits?",
+    "dinniman": "Left or right. That's your whole clue. No name, no number, just a finger pointing vaguely round the table. Would you like to begin with nothing but the direction of the nearest evil?",
+    "voice": "Elle",
+    "yes": [
+      "shugenja"
+    ]
+  },
+  {
+    "id": "tfx-compass-needle",
+    "plain": "Do you think a simple clockwise-or-anticlockwise clue is the most useful thing you could start with?",
+    "dinniman": "HEAR ME. A compass needle is worth more than a thousand gossiping fools! Clockwise! Anticlockwise! The rest is noise! Do you believe one turn of direction is the finest clue a player could ask for?",
+    "voice": "Prepotente",
+    "yes": [
+      "shugenja"
+    ]
+  },
+  {
+    "id": "tfx-pretend-to-inherit",
+    "plain": "Would you pretend to be another player's character, hoping to inherit their power when they die?",
+    "dinniman": "Here's the move: you swan around claiming somebody else's job, loudly, and when they kick the bucket you get to keep their toys. Delightfully cheeky. Would you play pretend for an inheritance like that?",
+    "voice": "Zev",
+    "yes": [
+      "pixie"
+    ]
+  },
+  {
+    "id": "tfx-role-without-owner",
+    "plain": "Would you like to start knowing one Townsfolk character that's in play, with no hint of who has it?",
+    "dinniman": "We've got a name tag, but no name on the person. Someone in this circle is that Townsfolk, and you've got zero clue who. Do you want to start the game holding a role without its owner?",
+    "voice": "Carl",
+    "yes": [
+      "pixie"
+    ]
+  },
+  {
+    "id": "tfx-fresh-bounty",
+    "plain": "Would you like to know one evil player from the start, and learn a new one whenever yours dies?",
+    "dinniman": "One target to start. Bag it, and a fresh wanted poster slides under your door that night. Rinse, repeat, stack the bodies. Does a rolling hit list of evil players sound like your kind of job?",
+    "voice": "Samantha",
+    "yes": [
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfx-townsfolk-turned",
+    "plain": "Would you like your presence to mean one of the Townsfolk starts the game secretly evil?",
+    "dinniman": "Patch note: when you're in the game, one cheerful Townsfolk has quietly switched teams before the doors even open. Corruption, baked right in! Do you want to be the reason one of the townsfolk is rotten?",
+    "voice": "The System AI",
+    "yes": [
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfx-who-to-talk-to",
+    "plain": "Would you like the Storyteller to tell you each night which player you most need to talk to?",
+    "dinniman": "No facts, no roles, just a nightly nudge: go chat to that one. The person running the show thinks they're important to you. Would you like that kind of nightly pointer?",
+    "voice": "Katia",
+    "yes": [
+      "highpriestess"
+    ]
+  },
+  {
+    "id": "tfx-deep-conversation",
+    "plain": "Would you rather be pointed to the right person to talk to than told anyone's role or alignment?",
+    "dinniman": "Facts are cheap, honey. A real conversation, the kind where the mask slips? That's where the gold is. Would you take a nudge toward the right person over any hard information at all?",
+    "voice": "Odette",
+    "yes": [
+      "highpriestess"
+    ]
+  },
+  {
+    "id": "tfx-different-type-nightly",
+    "plain": "Would you like to learn one player each night, each time of a different character type than the night before?",
+    "dinniman": "Townsfolk one night, Outsider the next, maybe a Minion after that. Never the same kind twice in a row. It's a sampler platter of people! Do you want that nightly variety pack of names?",
+    "voice": "The Host",
+    "yes": [
+      "balloonist"
+    ]
+  },
+  {
+    "id": "tfx-never-same-kind-twice",
+    "plain": "Would you enjoy information that guarantees you never hear about the same kind of character two nights running?",
+    "dinniman": "Up, down, up again. Every night you drift over someone new, and the rules promise they're a different sort from last time. Do you like a guarantee that each night's name is a new kind of character?",
+    "voice": "Elle",
+    "yes": [
+      "balloonist"
+    ]
+  },
+  {
+    "id": "tfx-whos-winning",
+    "plain": "Would you like a nightly report on which side the Storyteller thinks is winning?",
+    "dinniman": "Every night, a little scoreboard: good's ahead, evil's ahead, or it's a mess. Straight from the Storyteller's gut. Want that nightly war report?",
+    "voice": "Mordecai",
+    "yes": [
+      "general"
+    ]
+  },
+  {
+    "id": "tfx-skip-the-speeches",
+    "plain": "Would you rather hear which side is winning the war than learn anything about a single player?",
+    "dinniman": "Forget individuals. Forget names. Big-picture people want one number on the board: are we winning or not? Ratings LOVE a decisive leader! Would you rather hear who is winning the war than anything about one soldier?",
+    "voice": "Zev",
+    "yes": [
+      "general"
+    ]
+  },
+  {
+    "id": "tfx-sermon-strips-power",
+    "plain": "Would you like to strip Minions of their powers just by picking them out at night?",
+    "dinniman": "Oh, I LOVE a sermon with consequences. You point at the wicked, and the wicked go limp and useless forever. Do you want to choose players at night and leave any Minion among them powerless?",
+    "voice": "Samantha",
+    "yes": [
+      "preacher"
+    ]
+  },
+  {
+    "id": "tfx-caught-minion-knows",
+    "plain": "Would you accept that any Minion you catch is told they've been caught?",
+    "dinniman": "The sinners you nab get a little tap on the shoulder: you've been found out, buddy. So they know. Which means they might come for you. Are you fine with caught Minions knowing they were caught?",
+    "voice": "Carl",
+    "yes": [
+      "preacher"
+    ]
+  },
+  {
+    "id": "tfx-nightly-alignment-check",
+    "plain": "Would you like to choose a player every night and learn whether they are good or evil?",
+    "dinniman": "Simple question, simple answer, every night: good or evil? Point, ask, done. Achievement unlocked: Binary Thinker! Do you want a nightly good-or-evil check on someone you pick?",
+    "voice": "The System AI",
+    "yes": [
+      "villageidiot"
+    ]
+  },
+  {
+    "id": "tfx-shared-job-one-drunk",
+    "plain": "Would you be happy if up to two others secretly had your exact role, and one of you was drunk?",
+    "dinniman": "Imagine you're not the only one wearing your outfit. Two more might turn up, and one of you is sloshed and doesn't know it. Could be you! Would you cheerfully accept that kind of crowded wardrobe?",
+    "voice": "Princess Donut",
+    "yes": [
+      "villageidiot"
+    ]
+  },
+  {
+    "id": "tfx-wisdom-from-the-dead",
+    "plain": "Would you like your information to start only once the dead equal or outnumber the living?",
+    "dinniman": "You sit on the throne and wait. Nothing comes until the graveyard's at least as crowded as the room. Then the secrets roll in. Would you be happy with information that only begins once the dead catch up?",
+    "voice": "Mordecai",
+    "yes": [
+      "king"
+    ]
+  },
+  {
+    "id": "tfx-demon-knows-your-crown",
+    "plain": "Would you accept the Demon knowing your role from the start, in exchange for learning living players' roles late in the game?",
+    "dinniman": "Big shiny target on your head, and the worst person in the room knows exactly where it is. But hang on long enough and you start learning who's who among the living. Would you take that deal?",
+    "voice": "Katia",
+    "yes": [
+      "king"
+    ]
+  },
+  {
+    "id": "tfx-win-by-cult",
+    "plain": "Would you like to win the game by persuading every good player to join your cult?",
+    "dinniman": "BEHOLD ME! FOLLOW ME! When every last good soul kneels at my hooves, VICTORY IS MINE! Would you like to win by gathering all the good players into your flock?",
+    "voice": "Prepotente",
+    "yes": [
+      "cultleader"
+    ]
+  },
+  {
+    "id": "tfx-drift-with-neighbour",
+    "plain": "Would you let your alignment change each night to match one of the players sitting next to you?",
+    "dinniman": "Your loyalties, it turns out, depend on who you're sat beside. Good tonight, evil tomorrow, whatever your neighbour is. Would you let your team shift nightly to match a neighbour?",
+    "voice": "Elle",
+    "yes": [
+      "cultleader"
+    ]
+  }
+]

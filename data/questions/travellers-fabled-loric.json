@@ -1,0 +1,649 @@
+[
+  {
+    "id": "tfl-reverse-a-vote",
+    "plain": "Would you like to secretly make someone's vote count against the side they back tomorrow?",
+    "dinniman": "Picture it: they raise their hand, full of conviction, and every bit of that support quietly subtracts itself. No fingerprints. Would you like to secretly make someone's vote count against the side they back tomorrow?",
+    "voice": "The System AI",
+    "yes": [
+      "thief"
+    ]
+  },
+  {
+    "id": "tfl-pickpocket-the-ballot",
+    "plain": "Do you fancy pinching a person's vote overnight so it works backwards for them?",
+    "dinniman": "Wasn't me. Wasn't anybody. Somebody's vote just happens to point the wrong way now, and that's a coincidence I'm not going to investigate. Do you fancy pinching a person's vote overnight so it works backwards for them?",
+    "voice": "Carl",
+    "yes": [
+      "thief"
+    ]
+  },
+  {
+    "id": "tfl-weigh-the-vote",
+    "plain": "Would you like to change how much another player's vote is worth?",
+    "dinniman": "One person, one vote is SUCH a peasant idea. Some votes deserve to count more, some deserve to count against, and I should decide which. Would you like to change how much another player's vote is worth?",
+    "voice": "Princess Donut",
+    "yes": [
+      "thief",
+      "bureaucrat",
+      "godofug"
+    ]
+  },
+  {
+    "id": "tfl-triple-stamp",
+    "plain": "Would you like to hand someone a vote that counts three times over tomorrow?",
+    "dinniman": "Form 3B, the Ballot Amplification Request, signed in triplicate. Approved! Sponsors adore a landslide. Would you like to hand someone a vote that counts three times over tomorrow?",
+    "voice": "Zev",
+    "yes": [
+      "bureaucrat"
+    ]
+  },
+  {
+    "id": "tfl-paperwork-clout",
+    "plain": "Do you enjoy using official paperwork to give one chosen person a lot more say at the vote?",
+    "dinniman": "Seen this a hundred times. Some clerk with a stamp decides one idiot's hand is worth three, and the whole floor dies because of it. Do you enjoy using official paperwork to give one chosen person a lot more say at the vote?",
+    "voice": "Mordecai",
+    "yes": [
+      "bureaucrat"
+    ]
+  },
+  {
+    "id": "tfl-double-shot",
+    "plain": "Would you like to make someone else's ability work twice in one night?",
+    "dinniman": "Double espresso, darling, but for powers! One sip and their little trick fires TWICE. Would you like to make someone else's ability work twice in one night?",
+    "voice": "Odette",
+    "yes": [
+      "barista"
+    ]
+  },
+  {
+    "id": "tfl-guaranteed-clarity",
+    "plain": "Would you like to make sure one player is sober, healthy and told only the truth for a night?",
+    "dinniman": "Everybody down here is drunk, poisoned or lied to, usually all three. Sometimes the kindest thing is one clear cup for one person. Would you like to make sure one player is sober, healthy and told only the truth for a night?",
+    "voice": "Katia",
+    "yes": [
+      "barista"
+    ]
+  },
+  {
+    "id": "tfl-temporary-boost",
+    "plain": "Would you like to give another player a short boost to their own ability, lasting until the next dusk?",
+    "dinniman": "Limited-time power-up! Expires at dusk! Non-refundable! Side effects include hope! Would you like to give another player a short boost to their own ability, lasting until the next dusk?",
+    "voice": "The System AI",
+    "yes": [
+      "barista",
+      "bonecollector"
+    ]
+  },
+  {
+    "id": "tfl-risky-confession",
+    "plain": "Would you invite someone to share their secret identity with you, knowing it might kill you both?",
+    "dinniman": "Come sit, sweetheart. Tell me who you really are. Of course, there's a small chance we both end up dead, but isn't honesty worth it? Would you invite someone to share their secret identity with you, knowing it might kill you both?",
+    "voice": "Odette",
+    "yes": [
+      "harlot"
+    ]
+  },
+  {
+    "id": "tfl-consent-for-secrets",
+    "plain": "Do you only want to learn someone's character if they agree to tell you?",
+    "dinniman": "I'm not prying it out of anyone with a crowbar. If they say yes, great. If they say no, I'll live, which honestly is more than the other option guarantees. Do you only want to learn someone's character if they agree to tell you?",
+    "voice": "Carl",
+    "yes": [
+      "harlot"
+    ]
+  },
+  {
+    "id": "tfl-second-helping",
+    "plain": "Once someone has been executed today, would you like to be allowed to nominate again?",
+    "dinniman": "The crowd has had its hanging and everyone's heading home, and you stand up and say 'more please'. The ratings! Once someone has been executed today, would you like to be allowed to nominate again?",
+    "voice": "The Host",
+    "yes": [
+      "butcher"
+    ]
+  },
+  {
+    "id": "tfl-two-trials-a-day",
+    "plain": "Would you like the power to hold a second trial on a day that has already had its execution?",
+    "dinniman": "ONE EXECUTION?! What is this, a petting zoo? Bring me another one! Would you like the power to hold a second trial on a day that has already had its execution?",
+    "voice": "Samantha",
+    "yes": [
+      "butcher"
+    ]
+  },
+  {
+    "id": "tfl-pull-the-lever",
+    "plain": "Would you like to point at one player and have somebody else's character change that night?",
+    "dinniman": "You press the big red button marked 'them' and the zap lands on someone completely different. That's not a bug, that's science. Would you like to point at one player and have somebody else's character change that night?",
+    "voice": "Elle",
+    "yes": [
+      "cacklejack"
+    ]
+  },
+  {
+    "id": "tfl-mad-experiment",
+    "plain": "Do you enjoy daily experiments that turn a player other than your target into a new character?",
+    "dinniman": "Wire alpha to wire beta, buzzer off, stand very still, and BEHOLD! The wrong person has transformed, as planned. Do you enjoy daily experiments that turn a player other than your target into a new character?",
+    "voice": "Prepotente",
+    "yes": [
+      "cacklejack"
+    ]
+  },
+  {
+    "id": "tfl-shoot-a-voter",
+    "plain": "Would you like to shoot someone dead just because of how they voted?",
+    "dinniman": "The first tally's in. You saw who raised a hand. You've got a six-shooter and an attitude. Would you like to shoot someone dead just because of how they voted?",
+    "voice": "Mordecai",
+    "yes": [
+      "gunslinger"
+    ]
+  },
+  {
+    "id": "tfl-watch-the-first-tally",
+    "plain": "Do you watch the day's first vote closely, ready to punish someone who took part in it?",
+    "dinniman": "New achievement unlocked: Quick Draw! Awarded for ending a voter's career right after the count. Reward: one dented spittoon. Do you watch the day's first vote closely, ready to punish someone who took part in it?",
+    "voice": "The System AI",
+    "yes": [
+      "gunslinger"
+    ]
+  },
+  {
+    "id": "tfl-rearrange-the-seats",
+    "plain": "Would you like to rearrange where people sit around the circle?",
+    "dinniman": "Master Carl, you will sit THERE. Lady Katia, beside the window. No, I don't care that you were comfortable. Would you like to rearrange where people sit around the circle?",
+    "voice": "Princess Donut",
+    "yes": [
+      "matron"
+    ]
+  },
+  {
+    "id": "tfl-no-whispering",
+    "plain": "Would you forbid players from leaving their seats to talk in private?",
+    "dinniman": "No sneaking off to the corridor. No little huddles by the snack table. If you've got something to say, say it where everyone can hear. Would you forbid players from leaving their seats to talk in private?",
+    "voice": "Elle",
+    "yes": [
+      "matron"
+    ]
+  },
+  {
+    "id": "tfl-neighbourly-hit",
+    "plain": "Would you like to kill one of your neighbours, but only if your other neighbour agrees?",
+    "dinniman": "Nice shoes on the fella to your left. Shame if something happened to him. All you need is a nod from the fella on your right. Would you like to kill one of your neighbours, but only if your other neighbour agrees?",
+    "voice": "Zev",
+    "yes": [
+      "gangster"
+    ]
+  },
+  {
+    "id": "tfl-offer-you-cannot-refuse",
+    "plain": "Do you prefer your daytime murders arranged with the blessing of the person sitting beside you?",
+    "dinniman": "Here's how it works on this floor: no hit goes down without a handshake from the guy next to you. Honour among killers. Do you prefer your daytime murders arranged with the blessing of the person sitting beside you?",
+    "voice": "Mordecai",
+    "yes": [
+      "gangster"
+    ]
+  },
+  {
+    "id": "tfl-wake-the-dead-power",
+    "plain": "Would you like to let a dead player use their ability again for a while, without bringing them back to life?",
+    "dinniman": "They're still dead, mind you. Very dead. But for one short stretch their old trick works again, which is creepy and also useful. Would you like to let a dead player use their ability again for a while, without bringing them back to life?",
+    "voice": "Carl",
+    "yes": [
+      "bonecollector"
+    ]
+  },
+  {
+    "id": "tfl-grave-curios",
+    "plain": "Would you save one grisly favour for the whole game, briefly reviving a corpse's power?",
+    "dinniman": "Hair, teeth, fragments of poems, a dead man's talent on loan until sundown. One per customer! Would you save one grisly favour for the whole game, briefly reviving a corpse's power?",
+    "voice": "The System AI",
+    "yes": [
+      "bonecollector"
+    ]
+  },
+  {
+    "id": "tfl-gavel-either-way",
+    "plain": "Would you like a once-per-game power to decide yourself whether a nominated execution passes or fails, whatever the vote says?",
+    "dinniman": "ORDER! The court has heard enough of your pathetic hand-waving. I alone decide if this one swings or walks! Would you like a once-per-game power to decide yourself whether a nominated execution passes or fails, whatever the vote says?",
+    "voice": "Prepotente",
+    "yes": [
+      "judge"
+    ]
+  },
+  {
+    "id": "tfl-throw-out-the-verdict",
+    "plain": "Would you like to rule a vote a failure, so nobody is executed at all, even after enough people voted?",
+    "dinniman": "The mob has done its counting, the rope is ready, and you get to say case dismissed, nobody hangs today. Would you like to rule a vote a failure, so nobody is executed at all, even after enough people voted?",
+    "voice": "Katia",
+    "yes": [
+      "judge"
+    ]
+  },
+  {
+    "id": "tfl-force-it-through",
+    "plain": "After seeing a vote, would you like the power to declare the execution anyway, however few hands went up?",
+    "dinniman": "Democracy is lovely, darling, until it gets in your way. Then it is merely a suggestion. After seeing a vote, would you like the power to declare the execution anyway, however few hands went up?",
+    "voice": "Odette",
+    "yes": [
+      "judge",
+      "vizier"
+    ]
+  },
+  {
+    "id": "tfl-trade-by-alignment",
+    "plain": "Would you like to pick up a trade on your first night that depends on your side: a Townsfolk skill if good, a Minion trick if evil?",
+    "dinniman": "Welcome, apprentice! Your starter class is randomised based on your moral compass. Good kids get hammers. Bad kids get knives. Would you like to pick up a trade on your first night that depends on your side: a Townsfolk skill if good, a Minion trick if evil?",
+    "voice": "The System AI",
+    "yes": [
+      "apprentice"
+    ]
+  },
+  {
+    "id": "tfl-arrive-untrained",
+    "plain": "As a newcomer, would you like to arrive with no ability of your own and be taught one on your first night?",
+    "dinniman": "Everybody starts somewhere. Showing up with empty hands and learning the local craft overnight isn't weakness, it's how you grow. As a newcomer, would you like to arrive with no ability of your own and be taught one on your first night?",
+    "voice": "Katia",
+    "yes": [
+      "apprentice"
+    ]
+  },
+  {
+    "id": "tfl-alms-for-a-vote",
+    "plain": "Would you be content to vote only when someone hands you their vote token?",
+    "dinniman": "Spare a token, guv? Bless you! Look at me, Carl, I'm an ACTOR. A tragic, starving actor who can only vote on charity. Would you be content to vote only when someone hands you their vote token?",
+    "voice": "Princess Donut",
+    "yes": [
+      "beggar"
+    ]
+  },
+  {
+    "id": "tfl-gift-reveals-giver",
+    "plain": "Would you like to learn a dead player's alignment when they give you something?",
+    "dinniman": "Funny thing about charity. You learn a lot about a person from the fact that they gave it. Would you like to learn a dead player's alignment when they give you something?",
+    "voice": "Mordecai",
+    "yes": [
+      "beggar"
+    ]
+  },
+  {
+    "id": "tfl-never-drunk",
+    "plain": "Would you like to be permanently sober and healthy, whatever anyone tries to do to you?",
+    "dinniman": "Poison? Bounces off. Booze? Water to me, honey. I've been through worse than your little potions. Would you like to be permanently sober and healthy, whatever anyone tries to do to you?",
+    "voice": "Elle",
+    "yes": [
+      "beggar"
+    ]
+  },
+  {
+    "id": "tfl-joke-your-way-out",
+    "plain": "Do you think being funny enough should keep you from being exiled?",
+    "dinniman": "Tough crowd tonight! But if they laugh, they can't throw you out. That's in the contract. Probably. Do you think being funny enough should keep you from being exiled?",
+    "voice": "The Host",
+    "yes": [
+      "deviant"
+    ]
+  },
+  {
+    "id": "tfl-comedy-as-armour",
+    "plain": "Would you rely on your sense of humour, rather than your innocence, to survive the town's judgement?",
+    "dinniman": "Look, nobody believes I'm innocent. But I did get a laugh earlier with the bit about the goblin, and apparently that counts. Would you rely on your sense of humour, rather than your innocence, to survive the town's judgement?",
+    "voice": "Carl",
+    "yes": [
+      "deviant"
+    ]
+  },
+  {
+    "id": "tfl-take-the-fall",
+    "plain": "Would you take a teammate's place at the gallows if they were executed?",
+    "dinniman": "Somebody on your team is about to swing. You step forward, smile, and say 'I'll take it from here'. Would you take a teammate's place at the gallows if they were executed?",
+    "voice": "Katia",
+    "yes": [
+      "scapegoat"
+    ]
+  },
+  {
+    "id": "tfl-cheerful-patsy",
+    "plain": "Would you happily be the one who gets blamed and hanged so an ally walks free?",
+    "dinniman": "Friendly newcomer! Dandy attitude! Does not ask what the rope is for! Our sponsors call this an ideal brand ambassador. Would you happily be the one who gets blamed and hanged so an ally walks free?",
+    "voice": "Zev",
+    "yes": [
+      "scapegoat"
+    ]
+  },
+  {
+    "id": "tfl-bodyguard-of-one",
+    "plain": "Would you like to kill anyone who dares nominate a particular teammate of yours?",
+    "dinniman": "TOUCH MY FRIEND AND I WILL FEAST ON YOUR SPLEEN! Anyone who nominates them DIES! Would you like to kill anyone who dares nominate a particular teammate of yours?",
+    "voice": "Samantha",
+    "yes": [
+      "gnome"
+    ]
+  },
+  {
+    "id": "tfl-everyone-knows-your-friend",
+    "plain": "Would you like the whole town to start the game knowing a player who shares your alignment?",
+    "dinniman": "Mongo! Mongo stomp! (Mongo means everyone already knows who his best friend is, and they'd better not lay a finger on them.) Would you like the whole town to start the game knowing a player who shares your alignment?",
+    "voice": "Mongo",
+    "yes": [
+      "gnome"
+    ]
+  },
+  {
+    "id": "tfl-storyteller-nominates",
+    "plain": "Would you like to take nominations away from the players and leave them to the Storyteller alone?",
+    "dinniman": "Hear ye! The faithful shall no longer point their grubby fingers. Only the Storyteller may name the accused! Would you like to take nominations away from the players and leave them to the Storyteller alone?",
+    "voice": "Prepotente",
+    "yes": [
+      "bishop"
+    ]
+  },
+  {
+    "id": "tfl-enemy-on-trial-daily",
+    "plain": "Would you like to guarantee that at least one member of the opposing team is nominated every day?",
+    "dinniman": "Here's a fun rule: every single day, the other side gets someone in the dock, no excuses. Would you like to guarantee that at least one member of the opposing team is nominated every day?",
+    "voice": "The Host",
+    "yes": [
+      "bishop"
+    ]
+  },
+  {
+    "id": "tfl-only-you-and-the-dead",
+    "plain": "Would you like a vote where only you and the dead get a say?",
+    "dinniman": "The living have had their chance and blew it. From now on, it's you and the ghosts. Would you like a vote where only you and the dead get a say?",
+    "voice": "Mordecai",
+    "yes": [
+      "voudon"
+    ]
+  },
+  {
+    "id": "tfl-no-majority-needed",
+    "plain": "Would you scrap the need for a majority, so even a handful of votes can carry an execution?",
+    "dinniman": "Majority? Quorum? That's a lot of paperwork for one hanging. A few hands should do it. Would you scrap the need for a majority, so even a handful of votes can carry an execution?",
+    "voice": "Elle",
+    "yes": [
+      "voudon"
+    ]
+  },
+  {
+    "id": "tfl-voice-for-the-dead",
+    "plain": "Would you like every dead player in town to have a stronger say at the vote than usual?",
+    "dinniman": "Dead viewers are still viewers! Engagement is engagement! Let us put every ghost back on the ballot. Would you like every dead player in town to have a stronger say at the vote than usual?",
+    "voice": "Zev",
+    "yes": [
+      "voudon",
+      "ferryman"
+    ]
+  },
+  {
+    "id": "tfl-guardian-of-newcomers",
+    "plain": "Would you like to protect new players by threatening whoever is most responsible for killing them?",
+    "dinniman": "Hurt the new kid and the sky opens up. I've seen a lot of rules down here, and that's one of the few I actually like. Would you like to protect new players by threatening whoever is most responsible for killing them?",
+    "voice": "Mordecai",
+    "yes": [
+      "angel"
+    ]
+  },
+  {
+    "id": "tfl-smite-the-bully",
+    "plain": "Would you call down trouble on anyone who knocks a first-time player out of the game?",
+    "dinniman": "BEHOLD my divine wrath! Strike down the innocent beginner and I shall rain fire upon your smug little head! Would you call down trouble on anyone who knocks a first-time player out of the game?",
+    "voice": "Samantha",
+    "yes": [
+      "angel"
+    ]
+  },
+  {
+    "id": "tfl-tilt-for-beginners",
+    "plain": "Would you bend the rules so newcomers get protection or breathing room from the veterans?",
+    "dinniman": "I remember being new and terrified. If the game can give beginners a little shelter from the people who've played a hundred times, I'm all for it. Would you bend the rules so newcomers get protection or breathing room from the veterans?",
+    "voice": "Katia",
+    "yes": [
+      "angel",
+      "buddhist"
+    ]
+  },
+  {
+    "id": "tfl-veterans-hush",
+    "plain": "Would you make experienced players stay quiet for the first couple of minutes of each day?",
+    "dinniman": "Two minutes. That's all. The old hands sit on their hands, and the new folks get a word in before the know-it-alls take over. Would you make experienced players stay quiet for the first couple of minutes of each day?",
+    "voice": "Carl",
+    "yes": [
+      "buddhist"
+    ]
+  },
+  {
+    "id": "tfl-beginners-speak-first",
+    "plain": "Do you believe veterans should hold their tongues each morning so beginners can speak first?",
+    "dinniman": "New patch notes! Veteran crawlers now suffer a mandatory two-minute Mute debuff at the start of each day. Fresh meat may now speak. Do you believe veterans should hold their tongues each morning so beginners can speak first?",
+    "voice": "The System AI",
+    "yes": [
+      "buddhist"
+    ]
+  },
+  {
+    "id": "tfl-enforced-silence",
+    "plain": "Would you like rules that force some of the players to stay silent at certain moments?",
+    "dinniman": "Silence, darlings, is the most DRAMATIC sound there is. Everyone hushed, every eye on the one person still allowed to speak. Would you like rules that force some of the players to stay silent at certain moments?",
+    "voice": "Princess Donut",
+    "yes": [
+      "buddhist",
+      "hellslibrarian",
+      "bigwig"
+    ]
+  },
+  {
+    "id": "tfl-admit-the-blunder",
+    "plain": "Would you like the Storyteller to make a deliberate mistake, fix it and own up to it publicly?",
+    "dinniman": "It's not a bug, it's a feature! And when it IS a bug, we announce it to the whole audience with a big apology banner. Brand transparency! Would you like the Storyteller to make a deliberate mistake, fix it and own up to it publicly?",
+    "voice": "Zev",
+    "yes": [
+      "deusexfiasco"
+    ]
+  },
+  {
+    "id": "tfl-charming-cock-up",
+    "plain": "Do you find it endearing when the person running a game admits they got something wrong?",
+    "dinniman": "Oh, I love it when the big boss goes red in the face and says 'whoops, my bad'. Makes my whole damn day. Do you find it endearing when the person running a game admits they got something wrong?",
+    "voice": "Elle",
+    "yes": [
+      "deusexfiasco"
+    ]
+  },
+  {
+    "id": "tfl-public-jinx",
+    "plain": "Would you like a special rule, known to everyone, that smooths over an awkward clash between particular characters?",
+    "dinniman": "When two abilities collide and nobody knows what happens, someone has to write it down and read it out loud. Would you like a special rule, known to everyone, that smooths over an awkward clash between particular characters?",
+    "voice": "Katia",
+    "yes": [
+      "djinn"
+    ]
+  },
+  {
+    "id": "tfl-the-fine-print",
+    "plain": "Do you enjoy announcing the official clause that explains exactly how two troublesome characters interact?",
+    "dinniman": "Section nine, subsection 'these two hate each other'. Everybody listen, because I'm only explaining this once. Do you enjoy announcing the official clause that explains exactly how two troublesome characters interact?",
+    "voice": "Mordecai",
+    "yes": [
+      "djinn"
+    ]
+  },
+  {
+    "id": "tfl-sacrifice-your-own",
+    "plain": "Would you give every player a once-per-game chance to doom someone on their own team?",
+    "dinniman": "WOE! WOE UPON THE VILLAGE! Each of you may offer up one of your own to the void! I find this deeply moving! Would you give every player a once-per-game chance to doom someone on their own team?",
+    "voice": "Prepotente",
+    "yes": [
+      "doomsayer"
+    ]
+  },
+  {
+    "id": "tfl-prophet-of-woe",
+    "plain": "While four or more players live, would you let anyone publicly call for the death of someone on their own side?",
+    "dinniman": "Folks, the doom-preacher is in the building, and tonight anyone can stand up and point at a teammate! The audience is losing its mind! While four or more players live, would you let anyone publicly call for the death of someone on their own side?",
+    "voice": "The Host",
+    "yes": [
+      "doomsayer"
+    ]
+  },
+  {
+    "id": "tfl-afternoon-tea",
+    "plain": "Would you like to host a daily gathering where up to three guests learn how many of them are evil?",
+    "dinniman": "Tea at six fifteen. Scones at six forty-five. Three guests, darling, and each one goes home knowing a little something about the others. Would you like to host a daily gathering where up to three guests learn how many of them are evil?",
+    "voice": "Odette",
+    "yes": [
+      "duchess"
+    ]
+  },
+  {
+    "id": "tfl-gossip-at-the-salon",
+    "plain": "Do you enjoy having visitors call on you, knowing one of them will leave with false gossip?",
+    "dinniman": "My salon is EXCLUSIVE. Three visitors only. And one of them will leave whispering absolute nonsense, which is half the fun. Do you enjoy having visitors call on you, knowing one of them will leave with false gossip?",
+    "voice": "Princess Donut",
+    "yes": [
+      "duchess"
+    ]
+  },
+  {
+    "id": "tfl-last-crossing",
+    "plain": "Would you give every dead player one more vote on the final day?",
+    "dinniman": "When the end comes, the ghosts get their tokens back for one last ride. Even dead crawlers get to vote on the finale. Would you give every dead player one more vote on the final day?",
+    "voice": "Mordecai",
+    "yes": [
+      "ferryman"
+    ]
+  },
+  {
+    "id": "tfl-everyone-at-the-finale",
+    "plain": "Do you believe the dead should get their say back when the game reaches its very last day?",
+    "dinniman": "FINALE NIGHT! Every corpse in the house gets a voice! The dead vote counts! Viewership up four hundred percent! Do you believe the dead should get their say back when the game reaches its very last day?",
+    "voice": "The System AI",
+    "yes": [
+      "ferryman"
+    ]
+  },
+  {
+    "id": "tfl-one-little-fib",
+    "plain": "Would you like to help the Storyteller give one good player a single piece of wrong information, just once all game?",
+    "dinniman": "Tee-hee. Just one tiny lie, once, to one nice person. That's practically nothing. That's barely a prank. Would you like to help the Storyteller give one good player a single piece of wrong information, just once all game?",
+    "voice": "Elle",
+    "yes": [
+      "fibbin"
+    ]
+  },
+  {
+    "id": "tfl-keep-good-on-its-toes",
+    "plain": "Do you like the idea of one sneaky fib, somewhere in the game, keeping the good team from trusting everything?",
+    "dinniman": "Stay humble, team. Somewhere in this game there might be one piece of info that's a giggling little lie, and nobody's to blame. Do you like the idea of one sneaky fib, somewhere in the game, keeping the good team from trusting everything?",
+    "voice": "Carl",
+    "yes": [
+      "fibbin"
+    ]
+  },
+  {
+    "id": "tfl-fiddle-contest",
+    "plain": "Would you like the game to come down to a head-to-head contest where everyone picks the winner?",
+    "dinniman": "Two contestants. One stage. The whole crowd votes on who walks away a champion. This is what television was MADE for! Would you like the game to come down to a head-to-head contest where everyone picks the winner?",
+    "voice": "The Host",
+    "yes": [
+      "fiddler"
+    ]
+  },
+  {
+    "id": "tfl-demon-throws-down",
+    "plain": "Would you give the Demon one chance to challenge an opponent to a showdown that the whole town judges?",
+    "dinniman": "BLOOD! GLORY! The Demon calls out a challenger and the mortals choose who wins! I would watch this every night! Would you give the Demon one chance to challenge an opponent to a showdown that the whole town judges?",
+    "voice": "Samantha",
+    "yes": [
+      "fiddler"
+    ]
+  },
+  {
+    "id": "tfl-shush-or-else",
+    "plain": "Would you like something bad to happen to anyone who talks when the Storyteller has asked for silence?",
+    "dinniman": "Shhh. The Storyteller asked nicely. Talk now and something very large with very many teeth comes out of the stacks. Would you like something bad to happen to anyone who talks when the Storyteller has asked for silence?",
+    "voice": "Zev",
+    "yes": [
+      "hellslibrarian"
+    ]
+  },
+  {
+    "id": "tfl-glare-at-chatterers",
+    "plain": "Are you the sort who wants people chattering through important announcements to face real consequences?",
+    "dinniman": "Mongo... GRR. (Mongo has noticed you talking while the nice lady was explaining the rules, and Mongo would like you to stop or be eaten.) Are you the sort who wants people chattering through important announcements to face real consequences?",
+    "voice": "Mongo",
+    "yes": [
+      "hellslibrarian"
+    ]
+  },
+  {
+    "id": "tfl-announced-allies",
+    "plain": "Would you like the whole town to know that two particular neighbours are on the same side?",
+    "dinniman": "Two seats, side by side, publicly declared comrades. Very touching. Very suspicious. Would you like the whole town to know that two particular neighbours are on the same side?",
+    "voice": "Odette",
+    "yes": [
+      "revolutionary"
+    ]
+  },
+  {
+    "id": "tfl-crack-in-the-alliance",
+    "plain": "Would you reveal a pair of allies to everyone, then let one of them register falsely just once?",
+    "dinniman": "United we stand, until one of us shows up wrong on somebody's reading. One crack, that's all I'd allow. Would you reveal a pair of allies to everyone, then let one of them register falsely just once?",
+    "voice": "Katia",
+    "yes": [
+      "revolutionary"
+    ]
+  },
+  {
+    "id": "tfl-outsider-border-control",
+    "plain": "As someone shaping the game rather than playing in it, would you like to let in one extra Outsider, or turn one away?",
+    "dinniman": "Name, please. Papers, please. One more misfit through the gate, or one fewer. You decide, officer. As someone shaping the game rather than playing in it, would you like to let in one extra Outsider, or turn one away?",
+    "voice": "The System AI",
+    "yes": [
+      "sentinel"
+    ]
+  },
+  {
+    "id": "tfl-papers-please",
+    "plain": "Do you like standing guard at the town gate, deciding whether one more misfit gets in?",
+    "dinniman": "Some people want adventure. Some people want a little booth, a stamp and the power to say 'not today'. Do you like standing guard at the town gate, deciding whether one more misfit gets in?",
+    "voice": "Carl",
+    "yes": [
+      "sentinel"
+    ]
+  },
+  {
+    "id": "tfl-evil-cap",
+    "plain": "Would you set a firm limit so that evil can never gain more than one extra player?",
+    "dinniman": "Converts, recruits, turncoats, all very exciting, until there are nine of them and the show's over by lunch. Would you set a firm limit so that evil can never gain more than one extra player?",
+    "voice": "Zev",
+    "yes": [
+      "spiritofivory"
+    ]
+  },
+  {
+    "id": "tfl-watchful-spirit",
+    "plain": "As a rule-keeper, would you rather cap evil's recruiting than let converts pile up without limit?",
+    "dinniman": "The great spirit watches. The great spirit counts. And the great spirit says ONE extra villain, no more, or I start screaming. As a rule-keeper, would you rather cap evil's recruiting than let converts pile up without limit?",
+    "voice": "Prepotente",
+    "yes": [
+      "spiritofivory"
+    ]
+  },
+  {
+    "id": "tfl-demon-takes-a-night-off",
+    "plain": "Would you make a rule that the Demon must skip at least one attack during the game?",
+    "dinniman": "It buzzes! It walks downstairs! It forces the monster to take a night off! Fun for all ages! Would you make a rule that the Demon must skip at least one attack during the game?",
+    "voice": "The Host",
+    "yes": [
+      "toymaker"
+    ]
+  },
+  {
+    "id": "tfl-small-game-full-info",
+    "plain": "Would you like evil players to get their usual starting information even in a very small game?",
+    "dinniman": "Tiny game, tiny crowd, still gets the deluxe evil starter pack. Every villain deserves their goodie bag! Would you like evil players to get their usual starting information even in a very small game?",
+    "voice": "The System AI",
+    "yes": [
+      "toymaker"
+    ]
+  }
+]

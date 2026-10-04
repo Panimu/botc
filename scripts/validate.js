@@ -1,21 +1,24 @@
-// Checks data/*.json for integrity and that every character has token art,
-// then reports separability coverage: how many pairs of characters at least one
-// question tells apart. Unseparated characters can still be reached, but the
-// game has to fall back to asking about their abilities directly.
-// Usage: node scripts/validate.js [--verbose]
-import { readFile } from 'node:fs/promises';
+// Checks the data and reports how well the questions cover the characters.
+//
+//   node scripts/validate.js                 full check, coverage and simulated games
+//   node scripts/validate.js townsfolk.json  integrity of just these question files
+//   --verbose                                list every unseparated pair group
+//
+// Integrity problems exit 1. Coverage is reported, not enforced: characters no
+// question separates are still reachable via the engine's fallback question.
+import { readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { artPath } from '../js/art.js';
-import { resolveYes } from '../js/engine.js';
+import { Game, prepare, splits } from '../js/engine.js';
+import { loadData } from './load.js';
 
 const TEAMS = new Set(['townsfolk', 'outsider', 'minion', 'demon', 'traveller', 'fabled', 'loric']);
 const exists = (path) => existsSync(fileURLToPath(new URL(`../${path}`, import.meta.url)));
 
-export function validate(characters, questions) {
+export function checkCharacters(characters) {
   const errors = [];
   const ids = new Set();
-
   for (const c of characters) {
     if (!c.id || !c.name || !c.summary) errors.push(`Character missing id/name/summary: ${JSON.stringify(c)}`);
     if (ids.has(c.id)) errors.push(`Duplicate character id: ${c.id}`);
@@ -23,58 +26,139 @@ export function validate(characters, questions) {
     if (!exists(artPath(c))) errors.push(`Character ${c.id} has no art at ${artPath(c)}`);
     ids.add(c.id);
   }
+  return errors;
+}
 
-  const questionIds = new Set();
-  const sets = [];
+function checkSelector(selector, label, ids, fields) {
+  const errors = [];
+  if (Array.isArray(selector)) {
+    for (const id of selector) if (!ids.has(id)) errors.push(`${label} names unknown character "${id}"`);
+    if (new Set(selector).size !== selector.length) errors.push(`${label} lists a character twice`);
+  } else if (selector && typeof selector === 'object') {
+    for (const field of Object.keys(selector)) if (!fields.has(field)) errors.push(`${label} matches unknown field "${field}"`);
+  } else {
+    errors.push(`${label} must be a list of ids or a match object`);
+  }
+  return errors;
+}
+
+export function checkQuestions(questions, characters, seen = { ids: new Set(), texts: new Set() }) {
+  const errors = [];
+  const ids = new Set(characters.map((c) => c.id));
+  const fields = new Set(characters.flatMap((c) => Object.keys(c)));
   for (const q of questions) {
-    if (!q.id || !q.text || (!Array.isArray(q.yes) && typeof q.match !== 'object')) {
-      errors.push(`Question needs id, text and either yes or match: ${JSON.stringify(q)}`);
-      continue;
+    const label = `Question ${q.id ?? JSON.stringify(q).slice(0, 60)}`;
+    if (!q.id) errors.push(`${label} has no id`);
+    if (seen.ids.has(q.id)) errors.push(`${label}: duplicate id`);
+    seen.ids.add(q.id);
+    for (const key of ['plain', 'dinniman']) {
+      if (typeof q[key] !== 'string' || !q[key].trim()) errors.push(`${label} needs a "${key}" phrasing`);
+      else if (seen.texts.has(q[key])) errors.push(`${label}: "${key}" text duplicates another question`);
+      else seen.texts.add(q[key]);
     }
-    if (questionIds.has(q.id)) errors.push(`Duplicate question id: ${q.id}`);
-    questionIds.add(q.id);
-    const yes = resolveYes(q, characters);
-    for (const id of yes) if (!ids.has(id)) errors.push(`Question ${q.id} names unknown character: ${id}`);
-    if (new Set(yes).size !== yes.length) errors.push(`Question ${q.id} lists a character twice`);
-    if (yes.length === 0 || yes.length >= ids.size) errors.push(`Question ${q.id} never splits the full pool (${yes.length} on the yes side)`);
-    if (q.options && (!Array.isArray(q.options) || q.options.length !== 2)) errors.push(`Question ${q.id} options must be [yesLabel, noLabel]`);
-    sets.push(new Set(yes));
-  }
+    if (typeof q.voice !== 'string' || !q.voice.trim()) errors.push(`${label} needs a "voice" crediting the dinniman line`);
+    const selectorErrors = [...checkSelector(q.yes, `${label} yes`, ids, fields), ...(q.scope ? checkSelector(q.scope, `${label} scope`, ids, fields) : [])];
+    errors.push(...selectorErrors);
+    if (selectorErrors.length) continue;
 
-  // Characters with identical answers to every question can't be told apart.
-  const groups = new Map();
-  for (const id of ids) {
-    const key = sets.map((s) => (s.has(id) ? 1 : 0)).join('');
-    groups.set(key, [...(groups.get(key) ?? []), id]);
+    const { yesSet, scopeSet } = prepare(q, characters);
+    const scopeSize = scopeSet?.size ?? ids.size;
+    if (scopeSet && Array.isArray(q.yes)) {
+      for (const id of q.yes) if (!scopeSet.has(id)) errors.push(`${label}: yes character "${id}" is outside its scope`);
+    }
+    if (yesSet.size === 0) errors.push(`${label}: nobody is on the yes side`);
+    if (yesSet.size >= scopeSize) errors.push(`${label}: everyone in scope is on the yes side, so it never splits`);
+    if (scopeSet && scopeSet.size < 2) errors.push(`${label}: scope has fewer than 2 characters`);
   }
-  const lookalikes = [...groups.values()].filter((g) => g.length > 1).sort((a, b) => b.length - a.length);
-  const totalPairs = (ids.size * (ids.size - 1)) / 2;
-  const unseparatedPairs = lookalikes.reduce((n, g) => n + (g.length * (g.length - 1)) / 2, 0);
-
-  return { errors, lookalikes, totalPairs, unseparatedPairs };
+  return errors;
 }
 
-async function loadJson(path) {
-  return JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
+// Pairs of characters that no question can tell apart (both in scope, exactly one on the yes side).
+export function coverage(questions, characters) {
+  const prepared = questions.map((q) => prepare(q, characters));
+  const list = characters.map((c) => c.id);
+  const unseparated = [];
+  let globalOnly = 0;
+  for (let i = 0; i < list.length; i++) {
+    for (let j = i + 1; j < list.length; j++) {
+      const pair = [list[i], list[j]];
+      const separating = prepared.filter((q) => splits(q, pair));
+      if (!separating.length) unseparated.push(pair);
+      if (separating.some((q) => !q.scopeSet)) globalOnly++;
+    }
+  }
+  return { totalPairs: (list.length * (list.length - 1)) / 2, unseparated, globalOnly };
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const characters = await loadJson('data/characters.json');
-  const questions = await loadJson('data/questions.json');
-  const { errors, lookalikes, totalPairs, unseparatedPairs } = validate(characters, questions);
+// Plays truthful games for every character and measures length and fallback use.
+export function simulate(questions, characters, gamesPerCharacter = 2) {
+  let seed = 1;
+  const rng = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 2 ** 32);
+  const game = new Game({ characters, questions, rng });
+  const lengths = [];
+  let fallbackGames = 0;
+  let fallbackQuestions = 0;
+  for (const { id } of characters) {
+    for (let n = 0; n < gamesPerCharacter; n++) {
+      game.restart();
+      while (!game.done) game.answer(game.current.yesSet.has(id));
+      if (game.result.id !== id) throw new Error(`Game for ${id} ended on ${game.result.id}`);
+      const fallbacks = game.history.filter((h) => h.question.fallback).length;
+      if (fallbacks) fallbackGames++;
+      fallbackQuestions += fallbacks;
+      lengths.push(game.history.length);
+    }
+  }
+  lengths.sort((a, b) => a - b);
+  return {
+    games: lengths.length,
+    mean: lengths.reduce((a, b) => a + b, 0) / lengths.length,
+    median: lengths[Math.floor(lengths.length / 2)],
+    min: lengths[0],
+    max: lengths.at(-1),
+    fallbackGames,
+    fallbackQuestions,
+  };
+}
+
+async function main() {
+  const args = process.argv.slice(2);
+  const only = args.filter((a) => a.endsWith('.json'));
+  const { characters, files, questionFiles, questions } = await loadData();
+
+  const errors = checkCharacters(characters);
+  const onDisk = (await readdir(new URL('../data/questions/', import.meta.url))).filter((f) => f.endsWith('.json') && f !== 'index.json');
+  for (const f of onDisk) if (!files.includes(f)) errors.push(`data/questions/${f} is not listed in data/questions/index.json`);
+
+  const seen = { ids: new Set(), texts: new Set() };
+  for (const { file, questions: qs } of questionFiles) {
+    const fileErrors = checkQuestions(qs, characters, seen);
+    if (!only.length || only.includes(file)) errors.push(...fileErrors.map((e) => `${file}: ${e}`));
+  }
   if (errors.length) {
     console.error(errors.join('\n'));
     console.error(`\n${errors.length} problem(s) found.`);
     process.exit(1);
   }
-  const separated = totalPairs - unseparatedPairs;
-  console.log(`OK: ${characters.length} characters, ${questions.length} questions.`);
-  console.log(`Separable pairs: ${separated} of ${totalPairs} (${((100 * separated) / totalPairs).toFixed(1)}%).`);
-  if (lookalikes.length) {
-    const largest = lookalikes[0].length;
-    console.log(`${lookalikes.length} groups of characters answer every question identically (largest: ${largest}).`);
-    const shown = process.argv.includes('--verbose') ? lookalikes : lookalikes.slice(0, 5);
-    for (const g of shown) console.log(`  ${g.join(', ')}`);
-    if (shown.length < lookalikes.length) console.log('  … run with --verbose for all groups');
+  if (only.length) {
+    const count = questionFiles.filter((f) => only.includes(f.file)).reduce((n, f) => n + f.questions.length, 0);
+    console.log(`OK: ${count} questions in ${only.join(', ')}.`);
+    return;
   }
+
+  const { totalPairs, unseparated, globalOnly } = coverage(questions, characters);
+  const pct = (n) => `${((100 * n) / totalPairs).toFixed(1)}%`;
+  console.log(`OK: ${characters.length} characters, ${questions.length} questions in ${files.length} files.`);
+  console.log(`Separable pairs: ${totalPairs - unseparated.length} of ${totalPairs} (${pct(totalPairs - unseparated.length)}); by global questions alone: ${pct(globalOnly)}.`);
+  if (unseparated.length) {
+    const shown = args.includes('--verbose') ? unseparated : unseparated.slice(0, 10);
+    for (const [a, b] of shown) console.log(`  not separated: ${a} / ${b}`);
+    if (shown.length < unseparated.length) console.log(`  … ${unseparated.length - shown.length} more (--verbose)`);
+  }
+
+  const sim = simulate(questions, characters);
+  console.log(`Simulated ${sim.games} games: ${sim.mean.toFixed(1)} questions on average (median ${sim.median}, range ${sim.min}–${sim.max}).`);
+  console.log(`Games needing the fallback question: ${sim.fallbackGames} (${((100 * sim.fallbackGames) / sim.games).toFixed(1)}%), ${sim.fallbackQuestions} fallback questions in total.`);
 }
+
+if (import.meta.url === pathToFileURL(process.argv[1]).href) await main();
