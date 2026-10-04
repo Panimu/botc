@@ -49,10 +49,17 @@ export function splitWeight(yes, poolSize, { exponent, floor } = SPLIT_WEIGHTING
 }
 
 export class Game {
-  constructor({ characters, questions, rng = Math.random, weighting = SPLIT_WEIGHTING }) {
+  // minSide: ignore questions with fewer than this many characters on either
+  // side of their full split (1 keeps everything; 2 drops one-vs-the-rest).
+  constructor({ characters, questions, rng = Math.random, weighting = SPLIT_WEIGHTING, minSide = 1 }) {
     this.characters = characters;
     this.weighting = weighting;
-    this.questions = questions.map((q) => prepare(q, characters));
+    this.questions = questions
+      .map((q) => prepare(q, characters))
+      .filter((q) => {
+        const scopeSize = q.scopeSet?.size ?? characters.length;
+        return q.yesSet.size >= minSide && scopeSize - q.yesSet.size >= minSide;
+      });
     this.rng = rng;
     this.restart();
   }

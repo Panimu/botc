@@ -94,3 +94,9 @@ test('a single remaining character ends the game', () => {
   assert.ok(game.done);
   assert.equal(game.current, null);
 });
+
+test('minSide drops questions with too few characters on a side', () => {
+  const qs = [q({ id: 'one', plain: '1', dinniman: '1', yes: ['imp'] }), q({ id: 'two', plain: '2', dinniman: '2', yes: ['imp', 'po'] })];
+  const game = new Game({ characters, questions: qs, minSide: 2 });
+  assert.deepEqual(game.questions.map((x) => x.id), ['two']);
+});

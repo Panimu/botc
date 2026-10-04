@@ -107,7 +107,9 @@ function setupThemeToggle() {
 }
 
 function start(characters, questions) {
-  const game = new Game({ characters, questions });
+  // Test switch: ?nosingles drops questions with one character on either side of their split.
+  const minSide = new URLSearchParams(location.search).has('nosingles') ? 2 : 1;
+  const game = new Game({ characters, questions, minSide });
   const groups = buildPool(characters);
   const announcer = $('announcer');
   let feedback = '';
