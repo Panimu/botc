@@ -62,6 +62,8 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 - **"Can your ability…" questions need "your own ability, not another character's"**, or the Hermit, Philosopher, Alchemist, Apprentice, Pixie and Cannibal can say yes. The Hermit genuinely holds every Outsider ability on the script.
 - **Say "kill", not "cause a death"**: the Mayor's redirected death is still the Demon's attack. **Legion's** "executions fail if only evil voted" isn't a protection. "Built-in risk to your own life" catches the King and Exorcist.
 - **The Gnome does not learn alignment** (user ruling). Its amigo is announced to everyone, and that isn't alignment information for the Gnome.
+- **Everyone bluffs and persuades in Clocktower.** Every evil player lies, and many good characters' wiki tips advise bluffing to bait the Demon (the Soldier, Sage, Ravenkeeper, Banshee, Farmer, Fool, Mayor and Choirboy). The Lunatic bluffs because it believes it's the Demon. Personality questions about lying or persuading need ability-specific wording.
+- **The Engineer, Nightwatchman and Courtier** have explicit early-versus-late advice on the wiki, so "saves it for later" isn't a fact about them.
 - **The madness rule** means trying to convince the group you're a character, with a penalty if you don't. Handing out bluffs (Snitch, Summoner) isn't madness, and neither is the Lunatic believing it's the Demon.
 
 ## Shape of the pool
@@ -91,6 +93,7 @@ After editing a trait file, run `node scripts/build-characters.js`. That adds ea
 
 - A trait is a fact about the ability as the wiki describes it, never a vibe. Write the definition first, then tag every one of the 156 characters against it. Going through `data/characters.json` one by one is the only way to be sure.
 - A trait can feed many questions. Fixing one tag corrects all of them.
+- **Subjective traits** (personality, art) should list clear-yes characters in `yes` **and** clear-no characters in `no`, leaving borderline characters out of both. The build then adds a `<trait>Clear` field, so a question can scope out borderline characters with `"scope": { "psyPatientClear": true }`. Prefer this to copying id lists into scopes: fixing a tag then updates every question that uses it.
 - Scopes can be traits too: `"scope": { "killsAtNight": true }` makes a question about killers that's only asked once the pool is all killers.
 
 ## The two phrasings

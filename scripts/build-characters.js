@@ -14,12 +14,15 @@ const roles = await read('resources/data/roles.json');
 const night = await read('resources/data/nightsheet.json');
 const firstNight = new Set(night.firstNight);
 
-// Hand-tagged cross-team traits: data/traits/*.json, each { traitName: { definition, yes: [ids] } }.
+// Hand-tagged cross-team traits: data/traits/*.json, each { traitName: { definition, yes: [ids], no?: [ids] } }.
+// A trait with a `no` list also gets a `<name>Clear` field (true for clear yes or clear no),
+// so subjective questions can scope out borderline characters with { "<name>Clear": true }.
 const traits = {};
 for (const file of (await readdir(new URL('data/traits/', root))).filter((f) => f.endsWith('.json'))) {
   for (const [name, trait] of Object.entries(await read(`data/traits/${file}`))) {
     if (traits[name]) throw new Error(`Trait ${name} is defined twice`);
     traits[name] = new Set(trait.yes);
+    if (Array.isArray(trait.no)) traits[`${name}Clear`] = new Set([...trait.yes, ...trait.no]);
   }
 }
 const otherNight = new Set(night.otherNight);

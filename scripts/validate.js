@@ -102,6 +102,14 @@ export async function checkTraits(characters) {
       if (typeof trait.definition !== 'string' || trait.definition.length < 20) errors.push(`Trait ${name} (${file}): needs a precise definition`);
       if (!Array.isArray(trait.yes) || trait.yes.length < 2) { errors.push(`Trait ${name} (${file}): needs a yes list of at least 2 characters`); continue; }
       for (const id of trait.yes) if (!ids.has(id)) errors.push(`Trait ${name} (${file}): unknown character "${id}"`);
+      if (trait.no !== undefined) {
+        if (!Array.isArray(trait.no)) errors.push(`Trait ${name} (${file}): "no" must be a list`);
+        else {
+          for (const id of trait.no) if (!ids.has(id)) errors.push(`Trait ${name} (${file}): unknown character "${id}" in no`);
+          const both = trait.no.filter((id) => trait.yes.includes(id));
+          if (both.length) errors.push(`Trait ${name} (${file}): ${both.join(', ')} listed as both yes and no`);
+        }
+      }
       if (!characters.every((c) => name in c)) errors.push(`Trait ${name} (${file}): not in data/characters.json yet; run node scripts/build-characters.js`);
     }
   }

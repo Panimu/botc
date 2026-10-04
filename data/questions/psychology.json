@@ -7,7 +7,9 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["pixie", "king", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "golem", "puzzlemaster", "godfather", "assassin", "wizard", "xaan", "summoner", "mastermind", "scarletwoman", "po", "zombuul", "riot", "leviathan", "bonecollector", "judge", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "princess", "juggler", "soldier", "tealady", "magician", "poppygrower", "pacifist", "butler", "goon", "ogre", "lunatic", "zealot", "snitch", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "widow", "wraith", "organgrinder", "boffin", "baron", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "beggar", "deviant", "bishop", "voudon"]
+    "scope": {
+      "psyPatientClear": true
+    }
   },
   {
     "id": "psy-slow-payoff",
@@ -17,7 +19,9 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["pixie", "king", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "golem", "puzzlemaster", "godfather", "assassin", "wizard", "xaan", "summoner", "mastermind", "scarletwoman", "po", "zombuul", "riot", "leviathan", "bonecollector", "judge", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "princess", "juggler", "soldier", "tealady", "magician", "poppygrower", "pacifist", "butler", "goon", "ogre", "lunatic", "zealot", "snitch", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "widow", "wraith", "organgrinder", "boffin", "baron", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "beggar", "deviant", "bishop", "voudon"]
+    "scope": {
+      "psyPatientClear": true
+    }
   },
   {
     "id": "psy-best-bite-last",
@@ -27,7 +31,9 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["pixie", "king", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "golem", "puzzlemaster", "godfather", "assassin", "wizard", "xaan", "summoner", "mastermind", "scarletwoman", "po", "zombuul", "riot", "leviathan", "bonecollector", "judge", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "princess", "juggler", "soldier", "tealady", "magician", "poppygrower", "pacifist", "butler", "goon", "ogre", "lunatic", "zealot", "snitch", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "widow", "wraith", "organgrinder", "boffin", "baron", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "beggar", "deviant", "bishop", "voudon"]
+    "scope": {
+      "psyPatientClear": true
+    }
   },
   {
     "id": "psy-hold-the-trump",
@@ -37,7 +43,9 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["pixie", "king", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "golem", "puzzlemaster", "godfather", "assassin", "wizard", "xaan", "summoner", "mastermind", "scarletwoman", "po", "zombuul", "riot", "leviathan", "bonecollector", "judge", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "princess", "juggler", "soldier", "tealady", "magician", "poppygrower", "pacifist", "butler", "goon", "ogre", "lunatic", "zealot", "snitch", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "widow", "wraith", "organgrinder", "boffin", "baron", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "beggar", "deviant", "bishop", "voudon"]
+    "scope": {
+      "psyPatientClear": true
+    }
   },
   {
     "id": "psy-waiting-game",
@@ -47,7 +55,9 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["pixie", "king", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "golem", "puzzlemaster", "godfather", "assassin", "wizard", "xaan", "summoner", "mastermind", "scarletwoman", "po", "zombuul", "riot", "leviathan", "bonecollector", "judge", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "princess", "juggler", "soldier", "tealady", "magician", "poppygrower", "pacifist", "butler", "goon", "ogre", "lunatic", "zealot", "snitch", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "widow", "wraith", "organgrinder", "boffin", "baron", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "beggar", "deviant", "bishop", "voudon"]
+    "scope": {
+      "psyPatientClear": true
+    }
   },
   {
     "id": "psy-demon-bide",
@@ -57,7 +67,10 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["po", "zombuul", "riot", "leviathan", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia"]
+    "scope": {
+      "psyPatientClear": true,
+      "team": "demon"
+    }
   },
   {
     "id": "psy-minion-reserve",
@@ -67,7 +80,10 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["godfather", "assassin", "wizard", "xaan", "summoner", "mastermind", "scarletwoman", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "widow", "wraith", "organgrinder", "boffin", "baron"]
+    "scope": {
+      "psyPatientClear": true,
+      "team": "minion"
+    }
   },
   {
     "id": "psy-townsfolk-one-shot",
@@ -77,7 +93,10 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["pixie", "king", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "princess", "juggler", "soldier", "tealady", "magician", "poppygrower", "pacifist"]
+    "scope": {
+      "psyPatientClear": true,
+      "team": "townsfolk"
+    }
   },
   {
     "id": "psy-on-the-line",
@@ -87,17 +106,21 @@
     "yes": {
       "psyRiskTaker": true
     },
-    "scope": ["gambler", "acrobat", "exorcist", "gossip", "nightwatchman", "ogre", "golem", "klutz", "puzzlemaster", "wizard", "goblin", "harlot", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "zealot", "snitch", "godfather", "poisoner", "devilsadvocate", "spy", "witch", "cerenovus", "assassin", "xaan", "wraith", "eviltwin", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "riot", "leviathan", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "matron", "bonecollector", "judge", "beggar", "deviant", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyRiskTakerClear": true
+    }
   },
   {
     "id": "psy-big-risks",
-    "plain": "Do you take big risks when the reward is big enough?",
-    "dinniman": "I've buried a lot of crawlers who said yes to this one. I've also watched a few of them walk out rich. Do you take big risks when the reward is big enough?",
+    "plain": "Do you love taking big risks?",
+    "dinniman": "I've buried a lot of crawlers who said yes to this one. I've also watched a few of them walk out rich. Do you love taking big risks?",
     "voice": "Mordecai",
     "yes": {
       "psyRiskTaker": true
     },
-    "scope": ["gambler", "acrobat", "exorcist", "gossip", "nightwatchman", "ogre", "golem", "klutz", "puzzlemaster", "wizard", "goblin", "harlot", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "zealot", "snitch", "godfather", "poisoner", "devilsadvocate", "spy", "witch", "cerenovus", "assassin", "xaan", "wraith", "eviltwin", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "riot", "leviathan", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "matron", "bonecollector", "judge", "beggar", "deviant", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyRiskTakerClear": true
+    }
   },
   {
     "id": "psy-safe-bores",
@@ -107,7 +130,9 @@
     "yes": {
       "psyRiskTaker": true
     },
-    "scope": ["gambler", "acrobat", "exorcist", "gossip", "nightwatchman", "ogre", "golem", "klutz", "puzzlemaster", "wizard", "goblin", "harlot", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "zealot", "snitch", "godfather", "poisoner", "devilsadvocate", "spy", "witch", "cerenovus", "assassin", "xaan", "wraith", "eviltwin", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "riot", "leviathan", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "matron", "bonecollector", "judge", "beggar", "deviant", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyRiskTakerClear": true
+    }
   },
   {
     "id": "psy-townsfolk-danger",
@@ -117,15 +142,22 @@
     "yes": {
       "psyRiskTaker": true
     },
-    "scope": ["gambler", "acrobat", "exorcist", "gossip", "nightwatchman", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist"]
+    "scope": {
+      "psyRiskTakerClear": true,
+      "team": "townsfolk"
+    }
   },
   {
     "id": "psy-safe-option",
     "plain": "Do you nearly always pick the safe option?",
     "dinniman": "The left door says 'Certain Death', the right door says 'Probably Fine'. I don't care what the loot is, I'm going right. Do you nearly always pick the safe option?",
     "voice": "Carl",
-    "yes": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "zealot", "snitch", "godfather", "poisoner", "devilsadvocate", "spy", "witch", "cerenovus", "assassin", "xaan", "wraith", "eviltwin", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "riot", "leviathan", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "matron", "bonecollector", "judge", "beggar", "deviant", "gnome", "bishop", "voudon"],
-    "scope": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "zealot", "snitch", "godfather", "poisoner", "devilsadvocate", "spy", "witch", "cerenovus", "assassin", "xaan", "wraith", "eviltwin", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "riot", "leviathan", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "matron", "bonecollector", "judge", "beggar", "deviant", "gnome", "bishop", "voudon", "gambler", "acrobat", "exorcist", "gossip", "nightwatchman", "ogre", "golem", "klutz", "puzzlemaster", "wizard", "goblin", "harlot"]
+    "yes": {
+      "psyRiskTaker": false
+    },
+    "scope": {
+      "psyRiskTakerClear": true
+    }
   },
   {
     "id": "psy-set-the-rules",
@@ -135,7 +167,9 @@
     "yes": {
       "psyNeedsControl": true
     },
-    "scope": ["preacher", "engineer", "courtier", "harpy", "witch", "cerenovus", "pithag", "summoner", "vizier", "organgrinder", "kazali", "thief", "bureaucrat", "matron", "judge", "bishop", "voudon", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "lycanthrope", "savant", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "juggler", "soldier", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "spy", "marionette", "wraith", "scarletwoman", "boffin", "baron", "lilmonsta", "legion", "leviathan", "barista", "harlot", "butcher", "beggar", "deviant", "scapegoat"]
+    "scope": {
+      "psyNeedsControlClear": true
+    }
   },
   {
     "id": "psy-decide-for-them",
@@ -145,7 +179,9 @@
     "yes": {
       "psyNeedsControl": true
     },
-    "scope": ["preacher", "engineer", "courtier", "harpy", "witch", "cerenovus", "pithag", "summoner", "vizier", "organgrinder", "kazali", "thief", "bureaucrat", "matron", "judge", "bishop", "voudon", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "lycanthrope", "savant", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "juggler", "soldier", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "spy", "marionette", "wraith", "scarletwoman", "boffin", "baron", "lilmonsta", "legion", "leviathan", "barista", "harlot", "butcher", "beggar", "deviant", "scapegoat"]
+    "scope": {
+      "psyNeedsControlClear": true
+    }
   },
   {
     "id": "psy-allowed",
@@ -155,7 +191,9 @@
     "yes": {
       "psyNeedsControl": true
     },
-    "scope": ["preacher", "engineer", "courtier", "harpy", "witch", "cerenovus", "pithag", "summoner", "vizier", "organgrinder", "kazali", "thief", "bureaucrat", "matron", "judge", "bishop", "voudon", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "lycanthrope", "savant", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "juggler", "soldier", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "spy", "marionette", "wraith", "scarletwoman", "boffin", "baron", "lilmonsta", "legion", "leviathan", "barista", "harlot", "butcher", "beggar", "deviant", "scapegoat"]
+    "scope": {
+      "psyNeedsControlClear": true
+    }
   },
   {
     "id": "psy-minion-orders",
@@ -165,7 +203,10 @@
     "yes": {
       "psyNeedsControl": true
     },
-    "scope": ["harpy", "witch", "cerenovus", "pithag", "summoner", "vizier", "organgrinder", "spy", "marionette", "wraith", "scarletwoman", "boffin", "baron"]
+    "scope": {
+      "psyNeedsControlClear": true,
+      "team": "minion"
+    }
   },
   {
     "id": "psy-set-agenda",
@@ -175,15 +216,22 @@
     "yes": {
       "psyNeedsControl": true
     },
-    "scope": ["thief", "bureaucrat", "matron", "judge", "bishop", "voudon", "barista", "harlot", "butcher", "beggar", "deviant", "scapegoat"]
+    "scope": {
+      "psyNeedsControlClear": true,
+      "team": "traveller"
+    }
   },
   {
     "id": "psy-go-with-flow",
-    "plain": "Are you happy to go with the flow and let others make the calls?",
-    "dinniman": "I used to think I had to control everything to be safe. Now I can let someone else steer sometimes, and it's a relief. Are you happy to go with the flow and let others make the calls?",
+    "plain": "Would you rather leave the rule-making to someone else?",
+    "dinniman": "I used to think I had to control everything to be safe. Now I can let someone else write the rules sometimes, and it's a relief. Would you rather leave the rule-making to someone else?",
     "voice": "Katia",
-    "yes": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "lycanthrope", "savant", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "juggler", "soldier", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "spy", "marionette", "wraith", "scarletwoman", "boffin", "baron", "lilmonsta", "legion", "leviathan", "barista", "harlot", "butcher", "beggar", "deviant", "scapegoat"],
-    "scope": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "lycanthrope", "savant", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "juggler", "soldier", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "spy", "marionette", "wraith", "scarletwoman", "boffin", "baron", "lilmonsta", "legion", "leviathan", "barista", "harlot", "butcher", "beggar", "deviant", "scapegoat", "preacher", "engineer", "courtier", "harpy", "witch", "cerenovus", "pithag", "summoner", "vizier", "organgrinder", "kazali", "thief", "bureaucrat", "matron", "judge", "bishop", "voudon"]
+    "yes": {
+      "psyNeedsControl": false
+    },
+    "scope": {
+      "psyNeedsControlClear": true
+    }
   },
   {
     "id": "psy-centre-attention",
@@ -193,7 +241,9 @@
     "yes": {
       "psyShowman": true
     },
-    "scope": ["pixie", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "banshee", "golem", "klutz", "moonchild", "psychopath", "goblin", "boomdandy", "vizier", "yaggababble", "riot", "butcher", "gunslinger", "matron", "gangster", "judge", "deviant", "voudon", "choirboy", "magician", "lunatic", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech"]
+    "scope": {
+      "psyShowmanClear": true
+    }
   },
   {
     "id": "psy-full-view",
@@ -203,7 +253,9 @@
     "yes": {
       "psyShowman": true
     },
-    "scope": ["pixie", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "banshee", "golem", "klutz", "moonchild", "psychopath", "goblin", "boomdandy", "vizier", "yaggababble", "riot", "butcher", "gunslinger", "matron", "gangster", "judge", "deviant", "voudon", "choirboy", "magician", "lunatic", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech"]
+    "scope": {
+      "psyShowmanClear": true
+    }
   },
   {
     "id": "psy-karaoke-first",
@@ -213,7 +265,9 @@
     "yes": {
       "psyShowman": true
     },
-    "scope": ["pixie", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "banshee", "golem", "klutz", "moonchild", "psychopath", "goblin", "boomdandy", "vizier", "yaggababble", "riot", "butcher", "gunslinger", "matron", "gangster", "judge", "deviant", "voudon", "choirboy", "magician", "lunatic", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech"]
+    "scope": {
+      "psyShowmanClear": true
+    }
   },
   {
     "id": "psy-dramatic-reveal",
@@ -223,7 +277,9 @@
     "yes": {
       "psyShowman": true
     },
-    "scope": ["pixie", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "banshee", "golem", "klutz", "moonchild", "psychopath", "goblin", "boomdandy", "vizier", "yaggababble", "riot", "butcher", "gunslinger", "matron", "gangster", "judge", "deviant", "voudon", "choirboy", "magician", "lunatic", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech"]
+    "scope": {
+      "psyShowmanClear": true
+    }
   },
   {
     "id": "psy-evil-audience",
@@ -233,7 +289,13 @@
     "yes": {
       "psyShowman": true
     },
-    "scope": ["psychopath", "goblin", "boomdandy", "vizier", "yaggababble", "riot", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech"]
+    "scope": {
+      "psyShowmanClear": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
   },
   {
     "id": "psy-good-watched",
@@ -243,7 +305,13 @@
     "yes": {
       "psyShowman": true
     },
-    "scope": ["pixie", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "banshee", "golem", "klutz", "moonchild", "choirboy", "magician", "lunatic", "mutant", "damsel"]
+    "scope": {
+      "psyShowmanClear": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
   },
   {
     "id": "psy-demon-daylight",
@@ -253,15 +321,22 @@
     "yes": {
       "psyShowman": true
     },
-    "scope": ["yaggababble", "riot", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech"]
+    "scope": {
+      "psyShowmanClear": true,
+      "team": "demon"
+    }
   },
   {
     "id": "psy-unnoticed",
     "plain": "Do you do your best work when nobody is paying attention to you?",
     "dinniman": "The crawlers who last are usually the ones nobody remembers seeing. No fuss, no fanfare, just results. Do you do your best work when nobody is paying attention to you?",
     "voice": "Mordecai",
-    "yes": ["choirboy", "magician", "lunatic", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech"],
-    "scope": ["choirboy", "magician", "lunatic", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech", "pixie", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "banshee", "golem", "klutz", "moonchild", "psychopath", "goblin", "boomdandy", "vizier", "yaggababble", "riot", "butcher", "gunslinger", "matron", "gangster", "judge", "deviant", "voudon"]
+    "yes": {
+      "psyShowman": false
+    },
+    "scope": {
+      "psyShowmanClear": true
+    }
   },
   {
     "id": "psy-enjoy-bluffing",
@@ -271,27 +346,33 @@
     "yes": {
       "psyDeceiver": true
     },
-    "scope": ["pixie", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "wraith", "summoner", "eviltwin", "boomdandy", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster", "marionette"]
+    "scope": {
+      "psyDeceiverClear": true
+    }
   },
   {
     "id": "psy-secret-identity",
-    "plain": "Do you enjoy keeping a secret identity for a long time?",
-    "dinniman": "PATCH NOTE 4.2: Masks are now mandatory for a third of contestants. Several have reported enjoying this a worrying amount. Do you enjoy keeping a secret identity for a long time?",
+    "plain": "Do you enjoy pretending to be someone you're not for a long time?",
+    "dinniman": "PATCH NOTE 4.2: Masks are now mandatory for a third of contestants. Several have reported enjoying this a worrying amount. Do you enjoy pretending to be someone you're not for a long time?",
     "voice": "The System AI",
     "yes": {
       "psyDeceiver": true
     },
-    "scope": ["pixie", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "wraith", "summoner", "eviltwin", "boomdandy", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster", "marionette"]
+    "scope": {
+      "psyDeceiverClear": true
+    }
   },
   {
     "id": "psy-poker-face",
-    "plain": "Is a convincing poker face one of your proudest skills?",
-    "dinniman": "I once told a cruise ship captain I was a retired brain surgeon. Kept it up for nine days. Best holiday of my life. Is a convincing poker face one of your proudest skills?",
+    "plain": "Is lying convincingly one of your proudest skills?",
+    "dinniman": "I once told a cruise ship captain I was a retired brain surgeon. Kept it up for nine days. Best holiday of my life. Is lying convincingly one of your proudest skills?",
     "voice": "Elle",
     "yes": {
       "psyDeceiver": true
     },
-    "scope": ["pixie", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "wraith", "summoner", "eviltwin", "boomdandy", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster", "marionette"]
+    "scope": {
+      "psyDeceiverClear": true
+    }
   },
   {
     "id": "psy-lies-easy",
@@ -301,7 +382,9 @@
     "yes": {
       "psyDeceiver": true
     },
-    "scope": ["pixie", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "wraith", "summoner", "eviltwin", "boomdandy", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster", "marionette"]
+    "scope": {
+      "psyDeceiverClear": true
+    }
   },
   {
     "id": "psy-good-mask",
@@ -311,15 +394,25 @@
     "yes": {
       "psyDeceiver": true
     },
-    "scope": ["pixie", "mutant", "damsel", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster"]
+    "scope": {
+      "psyDeceiverClear": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
   },
   {
     "id": "psy-honest-fault",
-    "plain": "Are you honest almost to a fault?",
-    "dinniman": "I've never been good at pretending. My face gives me away every time, and honestly, I've made peace with that. Are you honest almost to a fault?",
+    "plain": "Does lying feel unnatural to you?",
+    "dinniman": "I've never been good at pretending. My face gives me away every time, and honestly, I've made peace with that. Does lying feel unnatural to you?",
     "voice": "Katia",
-    "yes": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster", "marionette"],
-    "scope": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster", "marionette", "pixie", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "wraith", "summoner", "eviltwin", "boomdandy", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan"]
+    "yes": {
+      "psyDeceiver": false
+    },
+    "scope": {
+      "psyDeceiverClear": true
+    }
   },
   {
     "id": "psy-pull-strings",
@@ -329,17 +422,21 @@
     "yes": {
       "psyManipulator": true
     },
-    "scope": ["sailor", "innkeeper", "courtier", "philosopher", "magician", "mezepheles", "poisoner", "harpy", "witch", "cerenovus", "pithag", "widow", "xaan", "pukka", "nodashii", "vigormortis", "vortox", "lleech", "cacklejack", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "farmer", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "pacifist", "atheist", "butler", "lunatic", "drunk", "tinker", "golem", "klutz", "moonchild", "saint", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "godfather", "fearmonger", "psychopath", "assassin", "marionette", "wraith", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "boffin", "baron", "yaggababble", "lilmonsta", "imp", "shabaloth", "ojo", "po", "zombuul", "legion", "fanggu", "lordoftyphon", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "harlot", "butcher", "gunslinger", "matron", "gangster", "bonecollector", "judge", "beggar", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyManipulatorClear": true
+    }
   },
   {
     "id": "psy-mess-with-heads",
-    "plain": "Do you enjoy quietly messing with what other people think they know?",
-    "dinniman": "Fun fact: thirty percent of what you believe right now was put there by someone else. Sponsors pay extra for that. Do you enjoy quietly messing with what other people think they know?",
+    "plain": "Do you enjoy secretly sabotaging other people's tools so they mislead them?",
+    "dinniman": "Fun fact: thirty percent of the gear in this dungeon has been quietly tampered with. Sponsors pay extra for that. Do you enjoy secretly sabotaging other people's tools so they mislead them?",
     "voice": "The System AI",
     "yes": {
       "psyManipulator": true
     },
-    "scope": ["sailor", "innkeeper", "courtier", "philosopher", "magician", "mezepheles", "poisoner", "harpy", "witch", "cerenovus", "pithag", "widow", "xaan", "pukka", "nodashii", "vigormortis", "vortox", "lleech", "cacklejack", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "farmer", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "pacifist", "atheist", "butler", "lunatic", "drunk", "tinker", "golem", "klutz", "moonchild", "saint", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "godfather", "fearmonger", "psychopath", "assassin", "marionette", "wraith", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "boffin", "baron", "yaggababble", "lilmonsta", "imp", "shabaloth", "ojo", "po", "zombuul", "legion", "fanggu", "lordoftyphon", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "harlot", "butcher", "gunslinger", "matron", "gangster", "bonecollector", "judge", "beggar", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyManipulatorClear": true
+    }
   },
   {
     "id": "psy-good-muddle",
@@ -349,37 +446,104 @@
     "yes": {
       "psyManipulator": true
     },
-    "scope": ["sailor", "innkeeper", "courtier", "philosopher", "magician", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "farmer", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "pacifist", "atheist", "butler", "lunatic", "drunk", "tinker", "golem", "klutz", "moonchild", "saint", "mutant", "politician", "zealot", "damsel", "snitch", "heretic"]
+    "scope": {
+      "psyManipulatorClear": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
   },
   {
     "id": "psy-demon-confusion",
-    "plain": "As a Demon, do you want to spread confusion as well as bodies?",
-    "dinniman": "Bodies are delightful. But bodies AND bewilderment? Samantha’s favourite combination! As a Demon, do you want to spread confusion as well as bodies?",
+    "plain": "As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
+    "dinniman": "Bodies are delightful. But bodies AND a village full of befuddled, poisoned survivors? Samantha's favourite combination! As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
     "voice": "Samantha",
     "yes": {
       "psyManipulator": true
     },
-    "scope": ["pukka", "nodashii", "vigormortis", "vortox", "lleech", "yaggababble", "lilmonsta", "imp", "shabaloth", "ojo", "po", "zombuul", "legion", "fanggu", "lordoftyphon", "alhadikhia", "riot", "leviathan"]
+    "scope": [
+      "yaggababble",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "po",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "leviathan"
+    ]
   },
   {
     "id": "psy-group-first",
     "plain": "Do you put the group's needs ahead of your own safety?",
     "dinniman": "When it really comes down to it, would you step in front of the blow so someone else doesn't have to? I would. I think. Do you put the group's needs ahead of your own safety?",
     "voice": "Katia",
-    "yes": {
-      "psySelfless": true
-    },
-    "scope": ["innkeeper", "monk", "exorcist", "nightwatchman", "professor", "princess", "farmer", "tealady", "pacifist", "devilsadvocate", "summoner", "goblin", "boffin", "bonecollector", "scapegoat", "gnome", "sailor", "soldier", "mayor", "fool", "goon", "politician", "psychopath", "scarletwoman", "vizier", "zombuul", "lleech", "deviant"]
+    "yes": [
+      "monk",
+      "exorcist",
+      "nightwatchman",
+      "tealady",
+      "pacifist",
+      "devilsadvocate",
+      "goblin",
+      "scapegoat",
+      "gnome"
+    ],
+    "scope": [
+      "sailor",
+      "monk",
+      "exorcist",
+      "nightwatchman",
+      "soldier",
+      "tealady",
+      "mayor",
+      "fool",
+      "pacifist",
+      "politician",
+      "devilsadvocate",
+      "psychopath",
+      "goblin",
+      "vizier",
+      "zombuul",
+      "lleech",
+      "deviant",
+      "scapegoat",
+      "gnome"
+    ]
   },
   {
     "id": "psy-kingmaker",
     "plain": "Do you get more joy from making someone else powerful than from being powerful yourself?",
     "dinniman": "Behind every superstar is a support team nobody thanks! Our sponsors call them 'enablers'. Do you get more joy from making someone else powerful than from being powerful yourself?",
     "voice": "Zev",
-    "yes": {
-      "psySelfless": true
-    },
-    "scope": ["innkeeper", "monk", "exorcist", "nightwatchman", "professor", "princess", "farmer", "tealady", "pacifist", "devilsadvocate", "summoner", "goblin", "boffin", "bonecollector", "scapegoat", "gnome", "sailor", "soldier", "mayor", "fool", "goon", "politician", "psychopath", "scarletwoman", "vizier", "zombuul", "lleech", "deviant"]
+    "yes": [
+      "professor",
+      "boffin",
+      "bonecollector"
+    ],
+    "scope": [
+      "sailor",
+      "professor",
+      "soldier",
+      "mayor",
+      "fool",
+      "politician",
+      "psychopath",
+      "vizier",
+      "boffin",
+      "zombuul",
+      "lleech",
+      "bonecollector",
+      "deviant"
+    ]
   },
   {
     "id": "psy-evil-crew",
@@ -389,55 +553,143 @@
     "yes": {
       "psySelfless": true
     },
-    "scope": ["devilsadvocate", "summoner", "goblin", "boffin", "psychopath", "scarletwoman", "vizier", "zombuul", "lleech"]
+    "scope": {
+      "psySelflessClear": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
   },
   {
     "id": "psy-good-others-safe",
-    "plain": "On the good side, do you care more about keeping others safe than keeping yourself safe?",
-    "dinniman": "Some heroes dive on the grenade, and some heroes dive behind the nearest heavy friend! Let's see which this one is. On the good side, do you care more about keeping others safe than keeping yourself safe?",
+    "plain": "On the good side, would you rather help other people than look after yourself?",
+    "dinniman": "Some heroes dive on the grenade, and some heroes dive behind the nearest heavy friend! Let's see which this one is. On the good side, would you rather help other people than look after yourself?",
     "voice": "The Host",
     "yes": {
       "psySelfless": true
     },
-    "scope": ["innkeeper", "monk", "exorcist", "nightwatchman", "professor", "princess", "farmer", "tealady", "pacifist", "sailor", "soldier", "mayor", "fool", "goon", "politician"]
+    "scope": {
+      "psySelflessClear": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
   },
   {
     "id": "psy-go-alone",
     "plain": "Do you prefer going it alone over relying on a team?",
     "dinniman": "Committees are where good ideas go to die, sweetie. I'll do it myself and bring the snacks. Do you prefer going it alone over relying on a team?",
     "voice": "Elle",
-    "yes": {
-      "psyLoneWolf": true
-    },
-    "scope": ["goon", "ogre", "mutant", "politician", "damsel", "heretic", "marionette", "steward", "knight", "grandmother", "highpriestess", "cultleader", "choirboy", "tealady", "butler", "summoner", "boffin", "lilmonsta", "kazali", "vigormortis", "legion", "lordoftyphon"]
+    "yes": [
+      "politician"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "grandmother",
+      "highpriestess",
+      "cultleader",
+      "choirboy",
+      "tealady",
+      "butler",
+      "politician",
+      "summoner",
+      "boffin",
+      "lilmonsta",
+      "kazali",
+      "vigormortis",
+      "legion",
+      "lordoftyphon"
+    ]
   },
   {
     "id": "psy-pin-down",
     "plain": "Are you happiest when nobody can quite pin you down?",
     "dinniman": "I've interviewed you three times and I still couldn't tell my viewers who you really are. Infuriating. Delicious. Are you happiest when nobody can quite pin you down?",
     "voice": "Odette",
-    "yes": {
-      "psyLoneWolf": true
-    },
-    "scope": ["goon", "ogre", "mutant", "politician", "damsel", "heretic", "marionette", "steward", "knight", "grandmother", "highpriestess", "cultleader", "choirboy", "tealady", "butler", "summoner", "boffin", "lilmonsta", "kazali", "vigormortis", "legion", "lordoftyphon"]
+    "yes": [
+      "politician"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "grandmother",
+      "highpriestess",
+      "choirboy",
+      "tealady",
+      "butler",
+      "politician"
+    ]
   },
   {
     "id": "psy-own-terms",
     "plain": "Do you prefer to win on your own terms rather than with the crowd?",
     "dinniman": "The herd goes left. The goat goes up the cliff! ALONE! MAGNIFICENT! Do you prefer to win on your own terms rather than with the crowd?",
     "voice": "Prepotente",
-    "yes": {
-      "psyLoneWolf": true
-    },
-    "scope": ["goon", "ogre", "mutant", "politician", "damsel", "heretic", "marionette", "steward", "knight", "grandmother", "highpriestess", "cultleader", "choirboy", "tealady", "butler", "summoner", "boffin", "lilmonsta", "kazali", "vigormortis", "legion", "lordoftyphon"]
+    "yes": [
+      "politician"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "grandmother",
+      "highpriestess",
+      "cultleader",
+      "choirboy",
+      "tealady",
+      "butler",
+      "politician",
+      "summoner",
+      "boffin",
+      "lilmonsta",
+      "kazali",
+      "vigormortis",
+      "legion",
+      "lordoftyphon"
+    ]
   },
   {
     "id": "psy-tell-team",
-    "plain": "Do you share everything with your teammates?",
-    "dinniman": "Mongo finds a shiny thing. Mongo brings it straight to Carl and drops it at his feet. Mongo keeps no secrets from his pack. Do you share everything with your teammates?",
+    "plain": "Would you rather rely on a team than go it alone?",
+    "dinniman": "Mongo finds a shiny thing. Mongo brings it straight to Carl and drops it at his feet. Mongo does nothing without his pack. Would you rather rely on a team than go it alone?",
     "voice": "Mongo",
-    "yes": ["steward", "knight", "grandmother", "highpriestess", "cultleader", "choirboy", "tealady", "butler", "summoner", "boffin", "lilmonsta", "kazali", "vigormortis", "legion", "lordoftyphon"],
-    "scope": ["steward", "knight", "grandmother", "highpriestess", "cultleader", "choirboy", "tealady", "butler", "summoner", "boffin", "lilmonsta", "kazali", "vigormortis", "legion", "lordoftyphon", "goon", "ogre", "mutant", "politician", "damsel", "heretic", "marionette"]
+    "yes": [
+      "steward",
+      "knight",
+      "grandmother",
+      "highpriestess",
+      "cultleader",
+      "choirboy",
+      "tealady",
+      "butler",
+      "summoner",
+      "boffin",
+      "lilmonsta",
+      "kazali",
+      "vigormortis",
+      "legion",
+      "lordoftyphon"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "grandmother",
+      "highpriestess",
+      "cultleader",
+      "choirboy",
+      "tealady",
+      "butler",
+      "politician",
+      "summoner",
+      "boffin",
+      "lilmonsta",
+      "kazali",
+      "vigormortis",
+      "legion",
+      "lordoftyphon"
+    ]
   },
   {
     "id": "psy-hate-not-knowing",
@@ -447,7 +699,9 @@
     "yes": {
       "psyCurious": true
     },
-    "scope": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "savant", "seamstress", "artist", "fisherman", "juggler", "ravenkeeper", "sage", "choirboy", "spy", "widow", "wraith", "harlot", "sailor", "preacher", "snakecharmer", "cultleader", "innkeeper", "monk", "lycanthrope", "gossip", "alsaahir", "engineer", "nightwatchman", "courtier", "huntsman", "professor", "slayer", "princess", "soldier", "farmer", "minstrel", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "mezepheles", "poisoner", "devilsadvocate", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "xaan", "marionette", "summoner", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "bonecollector", "judge", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyCuriousClear": true
+    }
   },
   {
     "id": "psy-wrapped-present",
@@ -457,7 +711,9 @@
     "yes": {
       "psyCurious": true
     },
-    "scope": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "savant", "seamstress", "artist", "fisherman", "juggler", "ravenkeeper", "sage", "choirboy", "spy", "widow", "wraith", "harlot", "sailor", "preacher", "snakecharmer", "cultleader", "innkeeper", "monk", "lycanthrope", "gossip", "alsaahir", "engineer", "nightwatchman", "courtier", "huntsman", "professor", "slayer", "princess", "soldier", "farmer", "minstrel", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "mezepheles", "poisoner", "devilsadvocate", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "xaan", "marionette", "summoner", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "bonecollector", "judge", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyCuriousClear": true
+    }
   },
   {
     "id": "psy-truth-over-action",
@@ -467,7 +723,9 @@
     "yes": {
       "psyCurious": true
     },
-    "scope": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "savant", "seamstress", "artist", "fisherman", "juggler", "ravenkeeper", "sage", "choirboy", "spy", "widow", "wraith", "harlot", "sailor", "preacher", "snakecharmer", "cultleader", "innkeeper", "monk", "lycanthrope", "gossip", "alsaahir", "engineer", "nightwatchman", "courtier", "huntsman", "professor", "slayer", "princess", "soldier", "farmer", "minstrel", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "mezepheles", "poisoner", "devilsadvocate", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "xaan", "marionette", "summoner", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "bonecollector", "judge", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyCuriousClear": true
+    }
   },
   {
     "id": "psy-evil-see-all",
@@ -477,7 +735,13 @@
     "yes": {
       "psyCurious": true
     },
-    "scope": ["spy", "widow", "wraith", "mezepheles", "poisoner", "devilsadvocate", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "xaan", "marionette", "summoner", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan"]
+    "scope": {
+      "psyCuriousClear": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
   },
   {
     "id": "psy-peek-secret",
@@ -487,7 +751,10 @@
     "yes": {
       "psyCurious": true
     },
-    "scope": ["harlot", "thief", "bureaucrat", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "bonecollector", "judge", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyCuriousClear": true,
+      "team": "traveller"
+    }
   },
   {
     "id": "psy-learn-not-change",
@@ -497,7 +764,10 @@
     "yes": {
       "psyCurious": true
     },
-    "scope": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "savant", "seamstress", "artist", "fisherman", "juggler", "ravenkeeper", "sage", "choirboy", "sailor", "preacher", "snakecharmer", "cultleader", "innkeeper", "monk", "lycanthrope", "gossip", "alsaahir", "engineer", "nightwatchman", "courtier", "huntsman", "professor", "slayer", "princess", "soldier", "farmer", "minstrel", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist"]
+    "scope": {
+      "psyCuriousClear": true,
+      "team": "townsfolk"
+    }
   },
   {
     "id": "psy-gut-over-evidence",
@@ -507,7 +777,9 @@
     "yes": {
       "psyIntuitive": true
     },
-    "scope": ["preacher", "snakecharmer", "gambler", "exorcist", "gossip", "alsaahir", "courtier", "huntsman", "slayer", "juggler", "amnesiac", "ogre", "golem", "klutz", "moonchild", "puzzlemaster", "ojo", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "engineer", "seamstress", "philosopher", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "mezepheles", "devilsadvocate", "spy", "widow", "xaan", "wraith", "summoner", "eviltwin", "goblin", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "thief", "bureaucrat", "harlot", "butcher", "matron", "bonecollector", "judge", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyIntuitiveClear": true
+    }
   },
   {
     "id": "psy-bold-guess",
@@ -517,7 +789,9 @@
     "yes": {
       "psyIntuitive": true
     },
-    "scope": ["preacher", "snakecharmer", "gambler", "exorcist", "gossip", "alsaahir", "courtier", "huntsman", "slayer", "juggler", "amnesiac", "ogre", "golem", "klutz", "moonchild", "puzzlemaster", "ojo", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "engineer", "seamstress", "philosopher", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "mezepheles", "devilsadvocate", "spy", "widow", "xaan", "wraith", "summoner", "eviltwin", "goblin", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "thief", "bureaucrat", "harlot", "butcher", "matron", "bonecollector", "judge", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyIntuitiveClear": true
+    }
   },
   {
     "id": "psy-instinct",
@@ -527,7 +801,9 @@
     "yes": {
       "psyIntuitive": true
     },
-    "scope": ["preacher", "snakecharmer", "gambler", "exorcist", "gossip", "alsaahir", "courtier", "huntsman", "slayer", "juggler", "amnesiac", "ogre", "golem", "klutz", "moonchild", "puzzlemaster", "ojo", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "engineer", "seamstress", "philosopher", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "mezepheles", "devilsadvocate", "spy", "widow", "xaan", "wraith", "summoner", "eviltwin", "goblin", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "thief", "bureaucrat", "harlot", "butcher", "matron", "bonecollector", "judge", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyIntuitiveClear": true
+    }
   },
   {
     "id": "psy-guess-not-told",
@@ -537,7 +813,10 @@
     "yes": {
       "psyIntuitive": true
     },
-    "scope": ["preacher", "snakecharmer", "gambler", "exorcist", "gossip", "alsaahir", "courtier", "huntsman", "slayer", "juggler", "amnesiac", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "engineer", "seamstress", "philosopher", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist"]
+    "scope": {
+      "psyIntuitiveClear": true,
+      "team": "townsfolk"
+    }
   },
   {
     "id": "psy-logic-puzzle",
@@ -547,7 +826,9 @@
     "yes": {
       "psyPuzzler": true
     },
-    "scope": ["knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "librarian", "shugenja", "empath", "balloonist", "chambermaid", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "savant", "seamstress", "juggler", "amnesiac", "sage", "puzzlemaster", "steward", "grandmother", "pixie", "bountyhunter", "king", "undertaker", "artist", "fisherman", "ravenkeeper", "choirboy", "spy", "widow"]
+    "scope": {
+      "psyPuzzlerClear": true
+    }
   },
   {
     "id": "psy-scraps-combine",
@@ -557,7 +838,9 @@
     "yes": {
       "psyPuzzler": true
     },
-    "scope": ["knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "librarian", "shugenja", "empath", "balloonist", "chambermaid", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "savant", "seamstress", "juggler", "amnesiac", "sage", "puzzlemaster", "steward", "grandmother", "pixie", "bountyhunter", "king", "undertaker", "artist", "fisherman", "ravenkeeper", "choirboy", "spy", "widow"]
+    "scope": {
+      "psyPuzzlerClear": true
+    }
   },
   {
     "id": "psy-half-answer",
@@ -567,7 +850,9 @@
     "yes": {
       "psyPuzzler": true
     },
-    "scope": ["knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "librarian", "shugenja", "empath", "balloonist", "chambermaid", "mathematician", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "savant", "seamstress", "juggler", "amnesiac", "sage", "puzzlemaster", "steward", "grandmother", "pixie", "bountyhunter", "king", "undertaker", "artist", "fisherman", "ravenkeeper", "choirboy", "spy", "widow"]
+    "scope": {
+      "psyPuzzlerClear": true
+    }
   },
   {
     "id": "psy-protect-instinct",
@@ -577,7 +862,9 @@
     "yes": {
       "psyProtective": true
     },
-    "scope": ["innkeeper", "monk", "exorcist", "huntsman", "professor", "princess", "tealady", "pacifist", "devilsadvocate", "scapegoat", "gnome", "sailor", "lycanthrope", "gossip", "slayer", "soldier", "mayor", "fool", "golem", "moonchild", "godfather", "poisoner", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "xaan", "boomdandy", "mastermind", "scarletwoman", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "gunslinger", "gangster", "deviant"]
+    "scope": {
+      "psyProtectiveClear": true
+    }
   },
   {
     "id": "psy-safe-home",
@@ -587,15 +874,63 @@
     "yes": {
       "psyProtective": true
     },
-    "scope": ["innkeeper", "monk", "exorcist", "huntsman", "professor", "princess", "tealady", "pacifist", "devilsadvocate", "scapegoat", "gnome", "sailor", "lycanthrope", "gossip", "slayer", "soldier", "mayor", "fool", "golem", "moonchild", "godfather", "poisoner", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "xaan", "boomdandy", "mastermind", "scarletwoman", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "gunslinger", "gangster", "deviant"]
+    "scope": {
+      "psyProtectiveClear": true
+    }
   },
   {
     "id": "psy-save-not-slay",
     "plain": "Would you rather keep someone alive than take someone down?",
     "dinniman": "I'd love to punch the bad guy. I really would. But if I have to choose, I'm grabbing the person who's about to fall. Would you rather keep someone alive than take someone down?",
     "voice": "Carl",
-    "yes": ["innkeeper", "monk", "exorcist", "huntsman", "professor", "princess", "tealady", "pacifist", "devilsadvocate", "scapegoat"],
-    "scope": ["innkeeper", "monk", "exorcist", "huntsman", "professor", "princess", "tealady", "pacifist", "devilsadvocate", "scapegoat", "lycanthrope", "gossip", "slayer", "golem", "moonchild", "godfather", "harpy", "witch", "psychopath", "assassin", "boomdandy", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "gunslinger", "gangster", "gnome"]
+    "yes": [
+      "innkeeper",
+      "monk",
+      "exorcist",
+      "professor",
+      "tealady",
+      "pacifist",
+      "devilsadvocate",
+      "scapegoat"
+    ],
+    "scope": [
+      "innkeeper",
+      "monk",
+      "exorcist",
+      "lycanthrope",
+      "professor",
+      "slayer",
+      "tealady",
+      "pacifist",
+      "golem",
+      "godfather",
+      "devilsadvocate",
+      "witch",
+      "psychopath",
+      "assassin",
+      "boomdandy",
+      "yaggababble",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "gunslinger",
+      "gangster",
+      "scapegoat"
+    ]
   },
   {
     "id": "psy-evil-shield",
@@ -605,7 +940,13 @@
     "yes": {
       "psyProtective": true
     },
-    "scope": ["devilsadvocate", "godfather", "poisoner", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "xaan", "boomdandy", "mastermind", "scarletwoman", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan"]
+    "scope": {
+      "psyProtectiveClear": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
   },
   {
     "id": "psy-sideways",
@@ -615,7 +956,9 @@
     "yes": {
       "psyChaosLover": true
     },
-    "scope": ["snakecharmer", "gossip", "atheist", "goon", "tinker", "plaguedoctor", "barber", "hatter", "heretic", "mezepheles", "harpy", "pithag", "wizard", "xaan", "summoner", "boomdandy", "organgrinder", "shabaloth", "kazali", "vortox", "legion", "alhadikhia", "riot", "thief", "cacklejack", "matron", "voudon", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "balloonist", "preacher", "chambermaid", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "monk", "exorcist", "seamstress", "philosopher", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "ravenkeeper", "sage", "choirboy", "tealady", "mayor", "fool", "virgin", "spy", "scarletwoman", "baron", "nodashii", "imp"]
+    "scope": {
+      "psyChaosLoverClear": true
+    }
   },
   {
     "id": "psy-stir-pot",
@@ -625,7 +968,9 @@
     "yes": {
       "psyChaosLover": true
     },
-    "scope": ["snakecharmer", "gossip", "atheist", "goon", "tinker", "plaguedoctor", "barber", "hatter", "heretic", "mezepheles", "harpy", "pithag", "wizard", "xaan", "summoner", "boomdandy", "organgrinder", "shabaloth", "kazali", "vortox", "legion", "alhadikhia", "riot", "thief", "cacklejack", "matron", "voudon", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "balloonist", "preacher", "chambermaid", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "monk", "exorcist", "seamstress", "philosopher", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "ravenkeeper", "sage", "choirboy", "tealady", "mayor", "fool", "virgin", "spy", "scarletwoman", "baron", "nodashii", "imp"]
+    "scope": {
+      "psyChaosLoverClear": true
+    }
   },
   {
     "id": "psy-tear-up-rules",
@@ -635,7 +980,9 @@
     "yes": {
       "psyChaosLover": true
     },
-    "scope": ["snakecharmer", "gossip", "atheist", "goon", "tinker", "plaguedoctor", "barber", "hatter", "heretic", "mezepheles", "harpy", "pithag", "wizard", "xaan", "summoner", "boomdandy", "organgrinder", "shabaloth", "kazali", "vortox", "legion", "alhadikhia", "riot", "thief", "cacklejack", "matron", "voudon", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "balloonist", "preacher", "chambermaid", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "monk", "exorcist", "seamstress", "philosopher", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "ravenkeeper", "sage", "choirboy", "tealady", "mayor", "fool", "virgin", "spy", "scarletwoman", "baron", "nodashii", "imp"]
+    "scope": {
+      "psyChaosLoverClear": true
+    }
   },
   {
     "id": "psy-demon-mayhem",
@@ -645,7 +992,10 @@
     "yes": {
       "psyChaosLover": true
     },
-    "scope": ["shabaloth", "kazali", "vortox", "legion", "alhadikhia", "riot", "nodashii", "imp"]
+    "scope": {
+      "psyChaosLoverClear": true,
+      "team": "demon"
+    }
   },
   {
     "id": "psy-good-unpredictable",
@@ -655,17 +1005,25 @@
     "yes": {
       "psyChaosLover": true
     },
-    "scope": ["snakecharmer", "gossip", "atheist", "goon", "tinker", "plaguedoctor", "barber", "hatter", "heretic", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "balloonist", "preacher", "chambermaid", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "monk", "exorcist", "seamstress", "philosopher", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "ravenkeeper", "sage", "choirboy", "tealady", "mayor", "fool", "virgin"]
+    "scope": {
+      "psyChaosLoverClear": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
   },
   {
     "id": "psy-fierce-loyalty",
-    "plain": "Are you fiercely loyal to one person or one team?",
-    "dinniman": "I know what it's like to have people who'd walk through fire for you. I'd do the same for them without a second thought. Are you fiercely loyal to one person or one team?",
+    "plain": "Are you fiercely loyal to one particular person?",
+    "dinniman": "I know what it's like to have someone who'd walk through fire for you. I'd do the same for them without a second thought. Are you fiercely loyal to one particular person?",
     "voice": "Katia",
     "yes": {
       "psyLoyal": true
     },
-    "scope": ["grandmother", "choirboy", "tealady", "butler", "mastermind", "scarletwoman", "boffin", "lilmonsta", "scapegoat", "gnome", "sailor", "snakecharmer", "cultleader", "soldier", "fool", "goon", "ogre", "politician", "heretic", "zombuul", "lleech"]
+    "scope": {
+      "psyLoyalClear": true
+    }
   },
   {
     "id": "psy-stick-by",
@@ -675,7 +1033,9 @@
     "yes": {
       "psyLoyal": true
     },
-    "scope": ["grandmother", "choirboy", "tealady", "butler", "mastermind", "scarletwoman", "boffin", "lilmonsta", "scapegoat", "gnome", "sailor", "snakecharmer", "cultleader", "soldier", "fool", "goon", "ogre", "politician", "heretic", "zombuul", "lleech"]
+    "scope": {
+      "psyLoyalClear": true
+    }
   },
   {
     "id": "psy-one-devoted",
@@ -685,7 +1045,9 @@
     "yes": {
       "psyLoyal": true
     },
-    "scope": ["grandmother", "choirboy", "tealady", "butler", "mastermind", "scarletwoman", "boffin", "lilmonsta", "scapegoat", "gnome", "sailor", "snakecharmer", "cultleader", "soldier", "fool", "goon", "ogre", "politician", "heretic", "zombuul", "lleech"]
+    "scope": {
+      "psyLoyalClear": true
+    }
   },
   {
     "id": "psy-pay-back",
@@ -695,7 +1057,9 @@
     "yes": {
       "psyVengeful": true
     },
-    "scope": ["sage", "choirboy", "banshee", "virgin", "moonchild", "godfather", "witch", "boomdandy", "mastermind", "gunslinger", "gnome", "sailor", "innkeeper", "monk", "exorcist", "professor", "soldier", "tealady", "fool", "pacifist", "devilsadvocate"]
+    "scope": {
+      "psyVengefulClear": true
+    }
   },
   {
     "id": "psy-strike-back",
@@ -705,7 +1069,9 @@
     "yes": {
       "psyVengeful": true
     },
-    "scope": ["sage", "choirboy", "banshee", "virgin", "moonchild", "godfather", "witch", "boomdandy", "mastermind", "gunslinger", "gnome", "sailor", "innkeeper", "monk", "exorcist", "professor", "soldier", "tealady", "fool", "pacifist", "devilsadvocate"]
+    "scope": {
+      "psyVengefulClear": true
+    }
   },
   {
     "id": "psy-grudges",
@@ -715,7 +1081,9 @@
     "yes": {
       "psyVengeful": true
     },
-    "scope": ["sage", "choirboy", "banshee", "virgin", "moonchild", "godfather", "witch", "boomdandy", "mastermind", "gunslinger", "gnome", "sailor", "innkeeper", "monk", "exorcist", "professor", "soldier", "tealady", "fool", "pacifist", "devilsadvocate"]
+    "scope": {
+      "psyVengefulClear": true
+    }
   },
   {
     "id": "psy-good-make-pay",
@@ -725,17 +1093,25 @@
     "yes": {
       "psyVengeful": true
     },
-    "scope": ["sage", "choirboy", "banshee", "virgin", "moonchild", "sailor", "innkeeper", "monk", "exorcist", "professor", "soldier", "tealady", "fool", "pacifist"]
+    "scope": {
+      "psyVengefulClear": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
   },
   {
     "id": "psy-ruthless-streak",
-    "plain": "Do you have a ruthless streak?",
-    "dinniman": "Everyone has a little darkness, darling. Some of us keep it in a drawer, and some of us keep it sharpened. Do you have a ruthless streak?",
+    "plain": "Would you like to be the one who takes people out?",
+    "dinniman": "Everyone has a little darkness, darling. Some of us keep it in a drawer, and some of us keep it sharpened. Would you like to be the one who takes people out?",
     "voice": "Odette",
     "yes": {
       "psyRuthless": true
     },
-    "scope": ["lycanthrope", "gossip", "slayer", "golem", "moonchild", "godfather", "harpy", "witch", "psychopath", "assassin", "boomdandy", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "gunslinger", "gangster", "gnome", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "huntsman", "professor", "artist", "fisherman", "princess", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "klutz", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "mezepheles", "poisoner", "devilsadvocate", "spy", "cerenovus", "fearmonger", "widow", "xaan", "marionette", "wraith", "eviltwin", "goblin", "mastermind", "scarletwoman", "organgrinder", "baron", "leviathan", "thief", "bureaucrat", "barista", "cacklejack", "matron", "bonecollector", "beggar", "deviant", "scapegoat", "bishop", "voudon"]
+    "scope": {
+      "psyRuthlessClear": true
+    }
   },
   {
     "id": "psy-remove-obstacle",
@@ -745,7 +1121,9 @@
     "yes": {
       "psyRuthless": true
     },
-    "scope": ["lycanthrope", "gossip", "slayer", "golem", "moonchild", "godfather", "harpy", "witch", "psychopath", "assassin", "boomdandy", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "gunslinger", "gangster", "gnome", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "huntsman", "professor", "artist", "fisherman", "princess", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "klutz", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "mezepheles", "poisoner", "devilsadvocate", "spy", "cerenovus", "fearmonger", "widow", "xaan", "marionette", "wraith", "eviltwin", "goblin", "mastermind", "scarletwoman", "organgrinder", "baron", "leviathan", "thief", "bureaucrat", "barista", "cacklejack", "matron", "bonecollector", "beggar", "deviant", "scapegoat", "bishop", "voudon"]
+    "scope": {
+      "psyRuthlessClear": true
+    }
   },
   {
     "id": "psy-good-take-out",
@@ -755,7 +1133,13 @@
     "yes": {
       "psyRuthless": true
     },
-    "scope": ["lycanthrope", "gossip", "slayer", "golem", "moonchild", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "huntsman", "professor", "artist", "fisherman", "princess", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "klutz", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster"]
+    "scope": {
+      "psyRuthlessClear": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
   },
   {
     "id": "psy-quick-permanent",
@@ -765,7 +1149,10 @@
     "yes": {
       "psyRuthless": true
     },
-    "scope": ["gunslinger", "gangster", "gnome", "thief", "bureaucrat", "barista", "cacklejack", "matron", "bonecollector", "beggar", "deviant", "scapegoat", "bishop", "voudon"]
+    "scope": {
+      "psyRuthlessClear": true,
+      "team": "traveller"
+    }
   },
   {
     "id": "psy-talk-round",
@@ -775,17 +1162,21 @@
     "yes": {
       "psyPersuader": true
     },
-    "scope": ["pixie", "cultleader", "princess", "mutant", "mezepheles", "fearmonger", "eviltwin", "goblin", "boomdandy", "mastermind", "vizier", "harlot", "gangster", "beggar", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "barber", "hatter", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "gunslinger", "matron", "bonecollector", "judge", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyPersuaderClear": true
+    }
   },
   {
     "id": "psy-others-act",
-    "plain": "Would you rather win by getting others to act than by acting yourself?",
-    "dinniman": "Some people do the job. Some people convince twelve other people to do the job for them. I am jealous of the second kind. Would you rather win by getting others to act than by acting yourself?",
+    "plain": "Do you love it when your plan only works because you talked people into it?",
+    "dinniman": "Some people do the job. Some people convince twelve other people to do the job for them. I am jealous of the second kind. Do you love it when your plan only works because you talked people into it?",
     "voice": "Carl",
     "yes": {
       "psyPersuader": true
     },
-    "scope": ["pixie", "cultleader", "princess", "mutant", "mezepheles", "fearmonger", "eviltwin", "goblin", "boomdandy", "mastermind", "vizier", "harlot", "gangster", "beggar", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "barber", "hatter", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "gunslinger", "matron", "bonecollector", "judge", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyPersuaderClear": true
+    }
   },
   {
     "id": "psy-hostile-room",
@@ -795,17 +1186,25 @@
     "yes": {
       "psyPersuader": true
     },
-    "scope": ["pixie", "cultleader", "princess", "mutant", "mezepheles", "fearmonger", "eviltwin", "goblin", "boomdandy", "mastermind", "vizier", "harlot", "gangster", "beggar", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "barber", "hatter", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "gunslinger", "matron", "bonecollector", "judge", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyPersuaderClear": true
+    }
   },
   {
     "id": "psy-evil-talker",
-    "plain": "As a villain, does your plan depend on talking people into things?",
-    "dinniman": "Some villains need a knife. The really frightening ones only need a conversation. Which are you, darling? As a villain, does your plan depend on talking people into things?",
+    "plain": "As a villain, does your own power only work if you talk people into something?",
+    "dinniman": "Some villains need a knife. The really frightening ones only need a conversation. Which are you, darling? As a villain, does your own power only work if you talk people into something?",
     "voice": "Odette",
     "yes": {
       "psyPersuader": true
     },
-    "scope": ["mezepheles", "fearmonger", "eviltwin", "goblin", "boomdandy", "mastermind", "vizier", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia"]
+    "scope": {
+      "psyPersuaderClear": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
   },
   {
     "id": "psy-underestimated",
@@ -815,7 +1214,9 @@
     "yes": {
       "psyUnderdog": true
     },
-    "scope": ["soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "fool", "virgin", "magician", "poppygrower", "golem", "mastermind", "scarletwoman", "zombuul", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "fearmonger", "psychopath", "vizier", "yaggababble", "alhadikhia", "riot", "leviathan", "butcher", "gunslinger", "matron", "gangster", "judge", "deviant", "voudon"]
+    "scope": {
+      "psyUnderdogClear": true
+    }
   },
   {
     "id": "psy-overlooked",
@@ -825,7 +1226,9 @@
     "yes": {
       "psyUnderdog": true
     },
-    "scope": ["soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "fool", "virgin", "magician", "poppygrower", "golem", "mastermind", "scarletwoman", "zombuul", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "fearmonger", "psychopath", "vizier", "yaggababble", "alhadikhia", "riot", "leviathan", "butcher", "gunslinger", "matron", "gangster", "judge", "deviant", "voudon"]
+    "scope": {
+      "psyUnderdogClear": true
+    }
   },
   {
     "id": "psy-hidden-ace",
@@ -835,7 +1238,9 @@
     "yes": {
       "psyUnderdog": true
     },
-    "scope": ["soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "mayor", "fool", "virgin", "magician", "poppygrower", "golem", "mastermind", "scarletwoman", "zombuul", "cultleader", "gossip", "alsaahir", "slayer", "juggler", "fearmonger", "psychopath", "vizier", "yaggababble", "alhadikhia", "riot", "leviathan", "butcher", "gunslinger", "matron", "gangster", "judge", "deviant", "voudon"]
+    "scope": {
+      "psyUnderdogClear": true
+    }
   },
   {
     "id": "psy-make-it-up",
@@ -845,7 +1250,9 @@
     "yes": {
       "psyImproviser": true
     },
-    "scope": ["gossip", "engineer", "philosopher", "artist", "cannibal", "amnesiac", "hermit", "pithag", "wizard", "summoner", "kazali", "bonecollector", "apprentice", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "savant", "alsaahir", "nightwatchman", "seamstress", "huntsman", "professor", "slayer", "princess", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "fearmonger", "psychopath", "assassin", "widow", "xaan", "marionette", "wraith", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "harlot", "butcher", "gunslinger", "matron", "gangster", "judge", "beggar", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyImproviserClear": true
+    }
   },
   {
     "id": "psy-toolbox",
@@ -855,7 +1262,9 @@
     "yes": {
       "psyImproviser": true
     },
-    "scope": ["gossip", "engineer", "philosopher", "artist", "cannibal", "amnesiac", "hermit", "pithag", "wizard", "summoner", "kazali", "bonecollector", "apprentice", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "savant", "alsaahir", "nightwatchman", "seamstress", "huntsman", "professor", "slayer", "princess", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "fearmonger", "psychopath", "assassin", "widow", "xaan", "marionette", "wraith", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "harlot", "butcher", "gunslinger", "matron", "gangster", "judge", "beggar", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyImproviserClear": true
+    }
   },
   {
     "id": "psy-blank-cheque",
@@ -865,7 +1274,9 @@
     "yes": {
       "psyImproviser": true
     },
-    "scope": ["gossip", "engineer", "philosopher", "artist", "cannibal", "amnesiac", "hermit", "pithag", "wizard", "summoner", "kazali", "bonecollector", "apprentice", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "savant", "alsaahir", "nightwatchman", "seamstress", "huntsman", "professor", "slayer", "princess", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "fearmonger", "psychopath", "assassin", "widow", "xaan", "marionette", "wraith", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "harlot", "butcher", "gunslinger", "matron", "gangster", "judge", "beggar", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyImproviserClear": true
+    }
   },
   {
     "id": "psy-evil-options",
@@ -875,7 +1286,13 @@
     "yes": {
       "psyImproviser": true
     },
-    "scope": ["pithag", "wizard", "summoner", "kazali", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "fearmonger", "psychopath", "assassin", "widow", "xaan", "marionette", "wraith", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan"]
+    "scope": {
+      "psyImproviserClear": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    }
   },
   {
     "id": "psy-good-free-form",
@@ -885,7 +1302,10 @@
     "yes": {
       "psyImproviser": true
     },
-    "scope": ["gossip", "engineer", "philosopher", "artist", "cannibal", "amnesiac", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "savant", "alsaahir", "nightwatchman", "seamstress", "huntsman", "professor", "slayer", "princess", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist"]
+    "scope": {
+      "psyImproviserClear": true,
+      "team": "townsfolk"
+    }
   },
   {
     "id": "psy-other-side",
@@ -895,7 +1315,9 @@
     "yes": {
       "psyContrarian": true
     },
-    "scope": ["lycanthrope", "magician", "atheist", "heretic", "devilsadvocate", "vortox", "thief", "cultleader", "butler", "goon", "ogre", "zealot"]
+    "scope": {
+      "psyContrarianClear": true
+    }
   },
   {
     "id": "psy-all-agree",
@@ -905,7 +1327,9 @@
     "yes": {
       "psyContrarian": true
     },
-    "scope": ["lycanthrope", "magician", "atheist", "heretic", "devilsadvocate", "vortox", "thief", "cultleader", "butler", "goon", "ogre", "zealot"]
+    "scope": {
+      "psyContrarianClear": true
+    }
   },
   {
     "id": "psy-long-con",
@@ -916,7 +1340,59 @@
       "psyPatient": true,
       "psyDeceiver": true
     },
-    "scope": ["pixie", "godfather", "assassin", "wizard", "xaan", "summoner", "mastermind", "scarletwoman", "po", "zombuul", "riot", "leviathan", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "widow", "marionette", "wraith", "organgrinder", "boffin", "baron", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "beggar", "deviant", "bishop", "voudon"]
+    "scope": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "grandmother",
+      "librarian",
+      "shugenja",
+      "bountyhunter",
+      "empath",
+      "highpriestess",
+      "sailor",
+      "general",
+      "preacher",
+      "chambermaid",
+      "villageidiot",
+      "mathematician",
+      "dreamer",
+      "flowergirl",
+      "towncrier",
+      "undertaker",
+      "innkeeper",
+      "monk",
+      "gambler",
+      "acrobat",
+      "exorcist",
+      "gossip",
+      "savant",
+      "seamstress",
+      "huntsman",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman",
+      "princess",
+      "juggler",
+      "butler",
+      "golem",
+      "puzzlemaster",
+      "assassin",
+      "wizard",
+      "xaan",
+      "summoner",
+      "mastermind",
+      "scarletwoman",
+      "po",
+      "zombuul",
+      "riot",
+      "leviathan"
+    ]
   },
   {
     "id": "psy-loud-takedown",
@@ -927,7 +1403,31 @@
       "psyShowman": true,
       "psyRuthless": true
     },
-    "scope": ["gossip", "slayer", "golem", "moonchild", "psychopath", "boomdandy", "yaggababble", "riot", "gunslinger", "gangster", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "huntsman", "professor", "artist", "fisherman", "princess", "juggler", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "klutz", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "eviltwin", "goblin", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "fanggu", "lordoftyphon", "lleech", "leviathan", "thief", "bureaucrat", "barista", "cacklejack", "matron", "bonecollector", "beggar", "deviant", "scapegoat", "bishop", "voudon"]
+    "scope": [
+      "slayer",
+      "godfather",
+      "witch",
+      "psychopath",
+      "assassin",
+      "boomdandy",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "riot",
+      "gunslinger",
+      "gangster"
+    ]
   },
   {
     "id": "psy-others-before-self",
@@ -938,7 +1438,10 @@
       "psyProtective": true,
       "psySelfless": true
     },
-    "scope": ["innkeeper", "monk", "exorcist", "professor", "princess", "tealady", "pacifist", "devilsadvocate", "scapegoat", "gnome", "sailor", "lycanthrope", "gossip", "slayer", "soldier", "mayor", "fool", "goon", "golem", "moonchild", "politician", "godfather", "poisoner", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "xaan", "boomdandy", "mastermind", "scarletwoman", "vizier", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "gunslinger", "gangster", "deviant"]
+    "scope": {
+      "psyProtectiveClear": true,
+      "psySelflessClear": true
+    }
   },
   {
     "id": "psy-one-perfect-clue",
@@ -949,7 +1452,41 @@
       "psyCurious": true,
       "psyPatient": true
     },
-    "scope": ["king", "seamstress", "artist", "fisherman", "ravenkeeper", "sage", "choirboy", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "huntsman", "professor", "slayer", "princess", "juggler", "soldier", "farmer", "minstrel", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "mezepheles", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "bonecollector", "judge", "beggar", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "grandmother",
+      "librarian",
+      "shugenja",
+      "bountyhunter",
+      "empath",
+      "highpriestess",
+      "general",
+      "chambermaid",
+      "villageidiot",
+      "mathematician",
+      "dreamer",
+      "flowergirl",
+      "towncrier",
+      "undertaker",
+      "savant",
+      "seamstress",
+      "artist",
+      "fisherman",
+      "juggler",
+      "ravenkeeper",
+      "sage",
+      "choirboy",
+      "spy",
+      "widow",
+      "wraith",
+      "harlot"
+    ]
   },
   {
     "id": "psy-bet-on-gut",
@@ -960,7 +1497,15 @@
       "psyRiskTaker": true,
       "psyIntuitive": true
     },
-    "scope": ["gambler", "exorcist", "gossip", "ogre", "golem", "klutz", "puzzlemaster", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "savant", "alsaahir", "engineer", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "fisherman", "soldier", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "lunatic", "tinker", "recluse", "sweetheart", "plaguedoctor", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "witch", "cerenovus", "assassin", "widow", "xaan", "wraith", "summoner", "eviltwin", "goblin", "mastermind", "scarletwoman", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "riot", "leviathan", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "matron", "bonecollector", "judge", "beggar", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": {
+      "psyRiskTakerClear": true,
+      "psyIntuitiveClear": true,
+      "team": [
+        "outsider",
+        "townsfolk",
+        "traveller"
+      ]
+    }
   },
   {
     "id": "psy-sell-the-lie",
@@ -971,7 +1516,80 @@
       "psyDeceiver": true,
       "psyPersuader": true
     },
-    "scope": ["pixie", "mutant", "mezepheles", "fearmonger", "eviltwin", "boomdandy", "mastermind", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "thief", "bureaucrat", "barista", "butcher", "cacklejack", "gunslinger", "matron", "bonecollector", "judge", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "grandmother",
+      "librarian",
+      "shugenja",
+      "pixie",
+      "bountyhunter",
+      "empath",
+      "highpriestess",
+      "sailor",
+      "balloonist",
+      "general",
+      "preacher",
+      "chambermaid",
+      "villageidiot",
+      "mathematician",
+      "king",
+      "dreamer",
+      "fortuneteller",
+      "cultleader",
+      "flowergirl",
+      "towncrier",
+      "oracle",
+      "undertaker",
+      "innkeeper",
+      "monk",
+      "gambler",
+      "acrobat",
+      "exorcist",
+      "savant",
+      "alsaahir",
+      "engineer",
+      "courtier",
+      "seamstress",
+      "philosopher",
+      "huntsman",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman",
+      "princess",
+      "juggler",
+      "minstrel",
+      "tealady",
+      "virgin",
+      "poppygrower",
+      "pacifist",
+      "butler",
+      "ogre",
+      "tinker",
+      "recluse",
+      "golem",
+      "sweetheart",
+      "plaguedoctor",
+      "klutz",
+      "moonchild",
+      "barber",
+      "hatter",
+      "mutant",
+      "zealot",
+      "snitch",
+      "puzzlemaster",
+      "mezepheles",
+      "fearmonger",
+      "eviltwin",
+      "boomdandy",
+      "mastermind"
+    ]
   },
   {
     "id": "psy-secret-scramble",
@@ -982,15 +1600,109 @@
       "psyManipulator": true,
       "psyChaosLover": true
     },
-    "scope": ["mezepheles", "harpy", "pithag", "xaan", "vortox", "cacklejack", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "nightwatchman", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "farmer", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "pacifist", "atheist", "butler", "lunatic", "drunk", "tinker", "golem", "klutz", "moonchild", "saint", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "godfather", "spy", "fearmonger", "psychopath", "assassin", "marionette", "wraith", "eviltwin", "goblin", "boomdandy", "mastermind", "scarletwoman", "vizier", "boffin", "baron", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "po", "zombuul", "legion", "fanggu", "lordoftyphon", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "harlot", "butcher", "gunslinger", "matron", "gangster", "bonecollector", "judge", "beggar", "deviant", "scapegoat", "gnome", "bishop", "voudon"]
+    "scope": [
+      "steward",
+      "knight",
+      "chef",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "clockmaker",
+      "grandmother",
+      "librarian",
+      "shugenja",
+      "bountyhunter",
+      "empath",
+      "balloonist",
+      "chambermaid",
+      "mathematician",
+      "king",
+      "dreamer",
+      "fortuneteller",
+      "flowergirl",
+      "towncrier",
+      "oracle",
+      "undertaker",
+      "monk",
+      "exorcist",
+      "seamstress",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman",
+      "princess",
+      "juggler",
+      "soldier",
+      "ravenkeeper",
+      "sage",
+      "choirboy",
+      "tealady",
+      "mayor",
+      "fool",
+      "virgin",
+      "mezepheles",
+      "harpy",
+      "pithag",
+      "xaan",
+      "scarletwoman",
+      "imp",
+      "vortox",
+      "cacklejack"
+    ]
   },
   {
     "id": "psy-loud-and-true",
     "plain": "Do you like being loud and honest about exactly who you are?",
     "dinniman": "It took me a long time to stop hiding. Now I'd rather stand up, say who I am, and let people deal with it. Do you like being loud and honest about exactly who you are?",
     "voice": "Katia",
-    "yes": ["cultleader", "gossip", "alsaahir", "slayer", "juggler", "banshee", "golem", "klutz", "moonchild"],
-    "scope": ["cultleader", "gossip", "alsaahir", "slayer", "juggler", "banshee", "golem", "klutz", "moonchild", "pixie", "choirboy", "magician", "lunatic", "mutant", "damsel", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "eviltwin", "boomdandy", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan"]
+    "yes": [
+      "cultleader",
+      "gossip",
+      "juggler"
+    ],
+    "scope": [
+      "cultleader",
+      "gossip",
+      "juggler",
+      "mutant",
+      "damsel",
+      "mezepheles",
+      "godfather",
+      "poisoner",
+      "devilsadvocate",
+      "spy",
+      "harpy",
+      "witch",
+      "cerenovus",
+      "pithag",
+      "assassin",
+      "wizard",
+      "widow",
+      "xaan",
+      "wraith",
+      "summoner",
+      "boomdandy",
+      "mastermind",
+      "scarletwoman",
+      "organgrinder",
+      "boffin",
+      "baron",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "riot"
+    ]
   },
   {
     "id": "psy-sleeper",
@@ -1001,7 +1713,27 @@
       "psyUnderdog": true,
       "psyPatient": true
     },
-    "scope": ["ravenkeeper", "sage", "choirboy", "banshee", "mayor", "golem", "mastermind", "scarletwoman", "zombuul", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "slayer", "princess", "juggler", "soldier", "tealady", "magician", "poppygrower", "pacifist", "butler", "goon", "ogre", "lunatic", "zealot", "snitch", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "fearmonger", "pithag", "psychopath", "widow", "wraith", "vizier", "organgrinder", "boffin", "baron", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "riot", "leviathan", "thief", "bureaucrat", "barista", "harlot", "butcher", "cacklejack", "gunslinger", "matron", "gangster", "judge", "beggar", "deviant", "bishop", "voudon"]
+    "scope": [
+      "gossip",
+      "juggler",
+      "ravenkeeper",
+      "sage",
+      "choirboy",
+      "banshee",
+      "golem",
+      "fearmonger",
+      "psychopath",
+      "mastermind",
+      "scarletwoman",
+      "zombuul",
+      "alhadikhia",
+      "butcher",
+      "gunslinger",
+      "matron",
+      "gangster",
+      "deviant",
+      "voudon"
+    ]
   },
   {
     "id": "psy-lonely-secret",
@@ -1009,10 +1741,15 @@
     "dinniman": "The goat carries a secret SO terrible, SO magnificent, that not even his dearest allies may know it! Do you guard a secret you cannot share with anyone, not even your friends?",
     "voice": "Prepotente",
     "yes": {
-      "psyLoneWolf": true,
       "psyDeceiver": true
     },
-    "scope": ["mutant", "damsel", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "sailor", "balloonist", "general", "preacher", "chambermaid", "villageidiot", "mathematician", "king", "dreamer", "fortuneteller", "cultleader", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "exorcist", "lycanthrope", "gossip", "savant", "alsaahir", "engineer", "nightwatchman", "courtier", "seamstress", "philosopher", "huntsman", "professor", "artist", "slayer", "fisherman", "princess", "juggler", "soldier", "alchemist", "cannibal", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "poppygrower", "pacifist", "atheist", "hermit", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "zealot", "snitch", "puzzlemaster", "marionette", "summoner", "boffin", "lilmonsta", "kazali", "vigormortis", "legion", "lordoftyphon"]
+    "scope": {
+      "psyDeceiverClear": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
   },
   {
     "id": "psy-centre-stage-boss",
@@ -1023,7 +1760,29 @@
       "psyNeedsControl": true,
       "psyShowman": true
     },
-    "scope": ["vizier", "matron", "judge", "voudon", "steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "bountyhunter", "empath", "highpriestess", "balloonist", "general", "chambermaid", "villageidiot", "snakecharmer", "mathematician", "king", "dreamer", "fortuneteller", "flowergirl", "towncrier", "oracle", "undertaker", "innkeeper", "monk", "gambler", "acrobat", "lycanthrope", "savant", "nightwatchman", "seamstress", "huntsman", "professor", "artist", "slayer", "juggler", "soldier", "amnesiac", "farmer", "minstrel", "ravenkeeper", "sage", "choirboy", "banshee", "tealady", "mayor", "fool", "virgin", "magician", "poppygrower", "pacifist", "atheist", "butler", "goon", "ogre", "lunatic", "drunk", "tinker", "recluse", "golem", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "mutant", "politician", "zealot", "damsel", "snitch", "heretic", "puzzlemaster", "mezepheles", "godfather", "poisoner", "devilsadvocate", "spy", "harpy", "witch", "cerenovus", "pithag", "assassin", "wizard", "widow", "xaan", "marionette", "wraith", "summoner", "mastermind", "scarletwoman", "organgrinder", "boffin", "baron", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "leviathan", "barista", "harlot", "butcher", "beggar", "deviant", "scapegoat"]
+    "scope": [
+      "choirboy",
+      "magician",
+      "mutant",
+      "damsel",
+      "spy",
+      "harpy",
+      "witch",
+      "cerenovus",
+      "pithag",
+      "wraith",
+      "summoner",
+      "scarletwoman",
+      "vizier",
+      "organgrinder",
+      "boffin",
+      "baron",
+      "lilmonsta",
+      "kazali",
+      "matron",
+      "judge",
+      "voudon"
+    ]
   },
   {
     "id": "psy-pour-everything",
@@ -1034,7 +1793,10 @@
       "psyLoyal": true,
       "psySelfless": true
     },
-    "scope": ["tealady", "boffin", "scapegoat", "gnome", "sailor", "snakecharmer", "cultleader", "soldier", "mayor", "fool", "goon", "ogre", "politician", "heretic", "psychopath", "scarletwoman", "vizier", "zombuul", "lleech", "deviant"]
+    "scope": {
+      "psyLoyalClear": true,
+      "psySelflessClear": true
+    }
   },
   {
     "id": "psy-killer-waits",
@@ -1044,14 +1806,54 @@
     "yes": {
       "psyPatient": true
     },
-    "scope": ["slayer", "golem", "godfather", "assassin", "po", "zombuul", "riot", "lycanthrope", "gossip", "harpy", "witch", "psychopath", "yaggababble", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia", "gunslinger", "gangster"]
+    "scope": [
+      "lycanthrope",
+      "slayer",
+      "golem",
+      "witch",
+      "psychopath",
+      "assassin",
+      "yaggababble",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "gunslinger",
+      "gangster"
+    ]
   },
   {
     "id": "psy-protect-or-punish",
     "plain": "Would you rather punish people who hurt your side than stop the hurt happening?",
     "dinniman": "Our market research shows two kinds of hero: the bodyguard and the avenger. Both move merchandise! Would you rather punish people who hurt your side than stop the hurt happening?",
     "voice": "Zev",
-    "yes": ["moonchild", "godfather", "witch", "boomdandy", "mastermind", "gunslinger"],
-    "scope": ["moonchild", "godfather", "witch", "boomdandy", "mastermind", "gunslinger", "innkeeper", "monk", "exorcist", "huntsman", "professor", "princess", "tealady", "pacifist", "devilsadvocate", "scapegoat"]
+    "yes": [
+      "godfather",
+      "boomdandy",
+      "gunslinger"
+    ],
+    "scope": [
+      "innkeeper",
+      "monk",
+      "exorcist",
+      "professor",
+      "tealady",
+      "pacifist",
+      "godfather",
+      "devilsadvocate",
+      "boomdandy",
+      "gunslinger",
+      "scapegoat"
+    ]
   }
 ]
