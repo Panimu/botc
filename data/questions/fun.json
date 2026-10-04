@@ -24,7 +24,7 @@
     "voice": "Princess Donut",
     "yes": [
       "goblin",
-      "atheist"
+      "boomdandy"
     ]
   },
   {
@@ -47,8 +47,8 @@
   },
   {
     "id": "fun-democracy-lootbox",
-    "plain": "Can your character's ability ever let you vote twice on the same nomination?",
-    "dinniman": "CONGRATULATIONS! You have opened a Gold Democracy Box! Inside: one (1) extra vote per nomination, unlocked only after something horrible happens to you. Can your character's ability ever let you vote twice on the same nomination?",
+    "plain": "Can your own ability, not another character's, ever let you vote twice on the same nomination?",
+    "dinniman": "CONGRATULATIONS! You have opened a Gold Democracy Box! Inside: one (1) extra vote per nomination, unlocked only after something horrible happens to you. Can your own ability, not another character's, ever let you vote twice on the same nomination?",
     "voice": "The System AI",
     "yes": [
       "banshee"
@@ -206,8 +206,8 @@
   },
   {
     "id": "fun-katia-bring-back",
-    "plain": "Can your ability bring a dead player back to life?",
-    "dinniman": "I've lost friends down here. If I could bring one back, I would. Even the one who kept stealing my potions. Can your ability bring a dead player back to life?",
+    "plain": "Can your own ability, not another character's, bring a dead player back to life?",
+    "dinniman": "I've lost friends down here. If I could bring one back, I would. Even the one who kept stealing my potions. Can your own ability, not another character's, bring a dead player back to life?",
     "voice": "Katia",
     "yes": [
       "professor",
@@ -234,8 +234,8 @@
   },
   {
     "id": "fun-beauty-sleep",
-    "plain": "Does your ability have the Storyteller waking you on most nights of the game?",
-    "dinniman": "A star of my calibre NEEDS her beauty sleep, and yet some of you get poked awake every single night like a common alarm clock. Does your ability have the Storyteller waking you on most nights of the game?",
+    "plain": "Does your ability have you act or learn something on most nights of the game?",
+    "dinniman": "A star of my calibre NEEDS her beauty sleep, and yet some of you get poked awake every single night like a common alarm clock. Does your ability actually have you doing or learning something on most nights of the game?",
     "voice": "Princess Donut",
     "yes": {
       "wakesMostNights": true
@@ -270,8 +270,8 @@
   },
   {
     "id": "fun-single-use-item",
-    "plain": "Do you get exactly one use of your ability in the whole game?",
-    "dinniman": "ITEM ACQUIRED: Ability (Single Use). This item will crumble to dust the moment you touch it. No refunds. No exchanges. Do you get exactly one use of your ability in the whole game?",
+    "plain": "Do you get exactly one deliberate use of your ability in the whole game?",
+    "dinniman": "ITEM ACQUIRED: Ability (Single Use). This item will crumble to dust the moment you touch it. No refunds. No exchanges. Do you get exactly one deliberate use of your ability in the whole game?",
     "voice": "The System AI",
     "yes": {
       "oneShot": true
@@ -279,8 +279,8 @@
   },
   {
     "id": "fun-katia-night-watch",
-    "plain": "Each night, do you choose someone to keep safe from dying?",
-    "dinniman": "If I could, I'd stand over every bed in this town with a club. I can't, so I pick one person and hope I picked right. Each night, do you choose someone to keep safe from dying?",
+    "plain": "Each night, does your own ability have you choose someone to keep safe from dying?",
+    "dinniman": "If I could, I'd stand over every bed in this town with a club. I can't, so I pick one person and hope I picked right. Each night, does your own ability have you choose someone to keep safe from dying?",
     "voice": "Katia",
     "yes": [
       "monk",
@@ -290,8 +290,8 @@
   },
   {
     "id": "fun-noon-murder",
-    "plain": "Can your ability kill a player in broad daylight, without an execution?",
-    "dinniman": "Why wait for nightfall like some COWARD? Samantha murders at NOON, in front of EVERYONE, and then demands applause! Can your ability kill a player in broad daylight, without an execution?",
+    "plain": "Can your own ability, not another character's, kill another player in broad daylight, without executing them?",
+    "dinniman": "Why wait for nightfall like some COWARD? Samantha murders at NOON, in front of EVERYONE, and then demands applause! Can your own ability, not another character's, kill another player in broad daylight, without executing them?",
     "voice": "Samantha",
     "yes": {
       "killsByDay": true
@@ -308,8 +308,8 @@
   },
   {
     "id": "fun-spin-the-wheel",
-    "plain": "Does your ability literally ask you to guess something, with consequences for getting it right or wrong?",
-    "dinniman": "Spin the wheel, folks! Our next contestant has to GUESS, and the answer could change everything! Does your ability literally ask you to guess something, with real consequences for getting it right or wrong?",
+    "plain": "Does your own ability, not another character's, literally ask you to guess something, with consequences for getting it right or wrong?",
+    "dinniman": "Spin the wheel, folks! Our next contestant has to GUESS, and the answer could change everything! Does your own ability, not another character's, literally ask you to guess something, with real consequences for getting it right or wrong?",
     "voice": "The Host",
     "yes": {
       "guesses": true
@@ -317,8 +317,8 @@
   },
   {
     "id": "fun-every-voice-matters",
-    "plain": "Does your ability change how voting on executions works?",
-    "dinniman": "At Borant we believe every voice matters! Some voices matter three times as much, some count backwards, and some only count if a friend is voting too! Does your ability change how voting on executions works?",
+    "plain": "Does your own ability, not another character's, change how voting on executions works?",
+    "dinniman": "At Borant we believe every voice matters! Some voices matter three times as much, some count backwards, and some only count if a friend is voting too! Does your own ability, not another character's, change how voting on executions works?",
     "voice": "Zev",
     "yes": {
       "affectsVoting": true
@@ -779,8 +779,8 @@
   },
   {
     "id": "fun-night-shift",
-    "plain": "As a Minion, does your own ability wake you on most nights?",
-    "dinniman": "NIGHT SHIFT BONUS: none. Overtime pay: none. Chance your supervisor eats you: nonzero! As a Minion, does your own ability wake you up on most nights?",
+    "plain": "As a Minion, does your own ability have you act or learn something on most nights?",
+    "dinniman": "NIGHT SHIFT BONUS: none. Overtime pay: none. Chance your supervisor eats you: nonzero! As a Minion, does your own ability have you up doing or learning something on most nights?",
     "voice": "The System AI",
     "yes": {
       "wakesMostNights": true
@@ -806,8 +806,8 @@
   },
   {
     "id": "fun-death-is-a-setback",
-    "plain": "Does your ability's text say it keeps working even if you're dead?",
-    "dinniman": "Death is a setback, kid, not a resignation letter. Some of you keep clocking in long after the funeral. Does your ability's text say it keeps working even if you're dead?",
+    "plain": "Does your ability's text specifically say it keeps working even if you're dead?",
+    "dinniman": "Death is a setback, kid, not a resignation letter. Some of you keep clocking in long after the funeral. Does your ability's text specifically say it keeps working even if you're dead?",
     "voice": "Mordecai",
     "yes": [
       "recluse",
@@ -829,8 +829,8 @@
   },
   {
     "id": "fun-surprise-ending",
-    "plain": "Does your ability add a new way for a team to win or lose the game?",
-    "dinniman": "Hold onto your seats, folks, because tonight's game might not end the usual way! A brand-new ending, live on air! Does your ability add a new way for a team to win or lose the game?",
+    "plain": "Does your own ability, not another character's, add a new way for a team to win or lose the game?",
+    "dinniman": "Hold onto your seats, folks, because tonight's game might not end the usual way! A brand-new ending, live on air! Does your own ability, not another character's, add a new way for a team to win or lose the game?",
     "voice": "The Host",
     "yes": {
       "alternateWinOrLoss": true
@@ -849,8 +849,8 @@
   },
   {
     "id": "fun-words-are-my-business",
-    "plain": "Does your ability react to the actual words players say aloud, like a phrase, claim, guess or joke, not just pointing?",
-    "dinniman": "Words are my business, darling. One careless sentence and a whole career is over. Does your ability react to the actual words players say aloud, like a phrase, a claim, a guess or a joke, not just pointing?",
+    "plain": "Does your own ability, not another character's, react to the actual words players say aloud, like a phrase, claim, guess or joke, not just pointing?",
+    "dinniman": "Words are my business, darling. One careless sentence and a whole career is over. Does your own ability, not another character's, react to the actual words players say aloud, like a phrase, a claim, a guess or a joke, not just pointing?",
     "voice": "Odette",
     "yes": {
       "spokenTrigger": true
@@ -879,9 +879,16 @@
     "plain": "Is the information your ability gives you always about the Demon?",
     "dinniman": "Forget the henchmen. I would like to speak to the manager. Is the information your ability gives you always about the Demon?",
     "voice": "Carl",
-    "yes": {
-      "huntsDemon": true
-    }
+    "yes": [
+      "knight",
+      "clockmaker",
+      "fortuneteller",
+      "flowergirl",
+      "sage",
+      "choirboy",
+      "puzzlemaster",
+      "boffin"
+    ]
   },
   {
     "id": "fun-nosiest-on-the-street",
