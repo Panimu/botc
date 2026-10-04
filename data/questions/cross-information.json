@@ -41,8 +41,8 @@
   },
   {
     "id": "xi-good-reads-names",
-    "plain": "Are you a good character whose ability tells you exactly which character someone is?",
-    "dinniman": "I think there's real courage in being the one who knows a name and has to decide when to say it. Are you on the good side, with an ability that hands you someone's actual character?",
+    "plain": "Are you a good character whose ability matches players to characters?",
+    "dinniman": "There's real courage in being the one who can put a name to a face. Are you on the good side, with an ability that matches players to characters?",
     "voice": "Katia",
     "yes": {
       "learnsCharacters": true,
