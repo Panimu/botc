@@ -20,19 +20,38 @@ export function prepare(question, characters) {
   return { ...question, yesSet: new Set(yes), scopeSet: scope };
 }
 
-// True when the question applies to the pool and puts someone on each side.
-export function splits(question, pool) {
+// How many pooled characters are on the yes side, or -1 if the pool isn't
+// entirely inside the question's scope.
+function yesCount(question, pool) {
   let yes = 0;
   for (const id of pool) {
-    if (question.scopeSet && !question.scopeSet.has(id)) return false;
+    if (question.scopeSet && !question.scopeSet.has(id)) return -1;
     if (question.yesSet.has(id)) yes++;
   }
+  return yes;
+}
+
+// True when the question applies to the pool and puts someone on each side.
+export function splits(question, pool) {
+  const yes = yesCount(question, pool);
   return yes > 0 && yes < pool.length;
 }
 
+// Questions are picked at random, weighted towards even splits of the current
+// pool: weight = entropy(yes share) ^ exponent + floor. Narrow questions stay
+// possible, and become natural late on, when a 1-in-3 split is an even one.
+export const SPLIT_WEIGHTING = { exponent: 1.5, floor: 0.02 };
+
+export function splitWeight(yes, poolSize, { exponent, floor } = SPLIT_WEIGHTING) {
+  const p = yes / poolSize;
+  const entropy = -(p * Math.log2(p) + (1 - p) * Math.log2(1 - p));
+  return entropy ** exponent + floor;
+}
+
 export class Game {
-  constructor({ characters, questions, rng = Math.random }) {
+  constructor({ characters, questions, rng = Math.random, weighting = SPLIT_WEIGHTING }) {
     this.characters = characters;
+    this.weighting = weighting;
     this.questions = questions.map((q) => prepare(q, characters));
     this.rng = rng;
     this.restart();
@@ -79,7 +98,19 @@ export class Game {
 
   #pick() {
     if (this.pool.length <= 1) return null;
-    const eligible = this.eligible();
-    return eligible.length ? eligible[Math.floor(this.rng() * eligible.length)] : null;
+    const asked = new Set(this.history.map((h) => h.question.id));
+    const options = [];
+    let total = 0;
+    for (const q of this.questions) {
+      if (asked.has(q.id)) continue;
+      const yes = yesCount(q, this.pool);
+      if (yes <= 0 || yes >= this.pool.length) continue;
+      const weight = this.weighting ? splitWeight(yes, this.pool.length, this.weighting) : 1;
+      options.push([q, weight]);
+      total += weight;
+    }
+    let r = this.rng() * total;
+    for (const [q, weight] of options) if ((r -= weight) < 0) return q;
+    return options.at(-1)?.[0] ?? null;
   }
 }
