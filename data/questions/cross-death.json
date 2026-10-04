@@ -1,1 +1,1087 @@
-[]
+[
+  {
+    "id": "xd-dawn-body-count",
+    "plain": "When the Storyteller announces who died in the night, could your own ability, not a borrowed one, be the cause?",
+    "dinniman": "Good morning, Dungeon! Another sunrise, another tasteful list of the freshly deceased. The folks at home want to know: when those names get read out, could your very own ability, not some borrowed knock-off, be the reason one of them isn't getting up?",
+    "voice": "The Host",
+    "yes": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-after-dark",
+    "plain": "Can your own ability, rather than one you've borrowed, cause another player to die during the night?",
+    "dinniman": "Listen up. Night is when most people in this town stop breathing, and I need to know whose fault that is. Not a power you're borrowing. Yours. Can your own ability cause another player to die while the town sleeps?",
+    "voice": "Mordecai",
+    "yes": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-broad-daylight",
+    "plain": "Can your ability kill another player during the day, in a way that isn't an execution?",
+    "dinniman": "Oh, sweetie, none of that sneaking about in the dark. Some of us do our dirty work at high noon with the whole village gawking. Not a hanging, mind you, an honest-to-goodness daytime death. Can your ability kill another player during the day?",
+    "voice": "Elle",
+    "yes": {
+      "killsByDay": true
+    }
+  },
+  {
+    "id": "xd-witnessed-kill",
+    "plain": "Can your ability strike a player dead while the whole town is awake, without them being executed?",
+    "dinniman": "SAMANTHA ADORES AN AUDIENCE! Blood in the sunlight, gasps from the crowd, no tedious voting required! Can your ability strike a player dead while the whole town is awake and watching, no execution involved?",
+    "voice": "Samantha",
+    "yes": {
+      "killsByDay": true
+    }
+  },
+  {
+    "id": "xd-off-script-execution",
+    "plain": "Can your ability cause an instant, extra or substitute execution, beyond the day's usual nominate-and-vote?",
+    "dinniman": "Normally it goes nominate, argue, vote, hang, bed. Simple. Stupid, but simple. Some of you have a button that skips the queue, adds a bonus round or swaps who's on the rope. Can your ability cause an instant, extra or substitute execution outside that usual routine?",
+    "voice": "Carl",
+    "yes": {
+      "causesExtraExecution": true
+    }
+  },
+  {
+    "id": "xd-own-execution",
+    "plain": "Can your own ability get you yourself executed, even if the town never voted for you?",
+    "dinniman": "BEHOLD the tragic hero! Prepotente knows the agony of the noble who may be dragged to the gallows by mere RULES, no vote required! Can your own ability get you executed without the town ever voting for you?",
+    "voice": "Prepotente",
+    "yes": [
+      "mutant",
+      "scapegoat"
+    ]
+  },
+  {
+    "id": "xd-death-rattle",
+    "plain": "When you actually die, rather than narrowly escaping it, does your ability then make something happen?",
+    "dinniman": "New achievement unlocked: Posthumous Plot Twist! Awarded to crawlers whose abilities only get going once they've genuinely kicked the bucket. Dodging death doesn't count. Once you're actually dead, does your ability make something happen?",
+    "voice": "The System AI",
+    "yes": {
+      "triggersOnOwnDeath": true
+    }
+  },
+  {
+    "id": "xd-final-chapter",
+    "plain": "Does dying trigger a final effect from your ability, something that couldn't happen while you were alive?",
+    "dinniman": "I used to think dying was just the end of the story. Some of you get one last chapter, though: a final effect that only your death can unlock. Does your death trigger something from your ability that couldn't happen while you lived?",
+    "voice": "Katia",
+    "yes": {
+      "triggersOnOwnDeath": true
+    }
+  },
+  {
+    "id": "xd-someone-elses-funeral",
+    "plain": "Is your ability set off by the death of a particular player, or a particular kind of player, other than you?",
+    "dinniman": "Darling, we all have one name we're secretly listening for at dawn. For you it's practical, isn't it? Tell our viewers: is your ability set off when a particular other player, or a particular kind of player, dies?",
+    "voice": "Odette",
+    "yes": {
+      "triggersOnOthersDeath": true
+    }
+  },
+  {
+    "id": "xd-watching-for-one-death",
+    "plain": "Does your ability keep you watching for one particular death, whether you dread it or hope for it?",
+    "dinniman": "Every star has a name she watches for in the headlines, darling, whether she's dreading it or DYING to see it. Does your ability keep you watching for one particular death, whether you dread it or hope for it?",
+    "voice": "Princess Donut",
+    "yes": {
+      "triggersOnOthersDeath": true
+    }
+  },
+  {
+    "id": "xd-shield-bearer",
+    "plain": "Can your ability directly keep other players from dying?",
+    "dinniman": "I spent a long time being the one who needed protecting. Now I want to know who's doing the protecting. Not by luck, not by getting the killer drunk: can your ability directly keep other players from dying?",
+    "voice": "Katia",
+    "yes": {
+      "protectsOthers": true
+    }
+  },
+  {
+    "id": "xd-swoop-and-save",
+    "plain": "Can your ability directly save another player who would otherwise have died?",
+    "dinniman": "Every great star needs the moment where she swoops in and SAVES someone, darling. The fans go feral for it. Can your ability directly save another player who would otherwise have died?",
+    "voice": "Princess Donut",
+    "yes": {
+      "protectsOthers": true
+    }
+  },
+  {
+    "id": "xd-tough-hide",
+    "plain": "Does your ability give you, personally, a way to survive something that would kill anyone else?",
+    "dinniman": "I've buried a lot of crawlers who thought they were tough. A few of you actually are: the thing that would put anybody else in the ground just bounces off. Does your ability give you, personally, a way to survive what would kill anyone else?",
+    "voice": "Mordecai",
+    "yes": {
+      "hardToKill": true
+    }
+  },
+  {
+    "id": "xd-only-you",
+    "plain": "Does your ability protect you, and only you, from some way of dying?",
+    "dinniman": "Honey, I don't care who you're saving. I want to know who's saving YOU. Is there some way of dying that your ability protects you from, and only you?",
+    "voice": "Elle",
+    "yes": {
+      "hardToKill": true
+    }
+  },
+  {
+    "id": "xd-fine-print",
+    "plain": "Does your ability carry a built-in risk to your own life, one most characters don't face?",
+    "dinniman": "So, you've got a cool power. Great. Read the fine print. Some of these come with a little clause at the bottom that says 'and also you might die.' Does your ability carry a built-in risk to your own life that most characters don't have?",
+    "voice": "Carl",
+    "yes": {
+      "risksOwnLife": true
+    }
+  },
+  {
+    "id": "xd-self-destruct",
+    "plain": "Could your ability's own rules end with you dead, without any enemy attacking you?",
+    "dinniman": "Patch note 4.1: some abilities now ship with a FREE self-destruct feature! No enemy required! The System accepts no liability. Could your ability's own rules end with you dead, without any enemy attacking you?",
+    "voice": "The System AI",
+    "yes": {
+      "risksOwnLife": true
+    }
+  },
+  {
+    "id": "xd-good-night-killer",
+    "plain": "Is your character a Townsfolk or Outsider whose own ability can cause another player's death at night?",
+    "dinniman": "Oh, I love this one. The sweet, trustworthy townsperson, and yet after dark someone stops breathing because of them. Confession time, darling: are you a Townsfolk or Outsider whose own ability can cause another player's death at night?",
+    "voice": "Odette",
+    "yes": {
+      "killsAtNight": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xd-minion-night-killer",
+    "plain": "Are you a Minion whose own ability can kill a player at night?",
+    "dinniman": "Minions! Lackeys! Henchfolk! Most of you just loom behind the Demon looking shifty. But some of you get to do the night-time killing YOURSELVES, and Samantha respects that. Are you a Minion whose own ability can kill a player at night?",
+    "voice": "Samantha",
+    "yes": {
+      "killsAtNight": true,
+      "team": "minion"
+    }
+  },
+  {
+    "id": "xd-not-the-demon",
+    "plain": "Can your ability cause someone's death at night even though you're not the Demon?",
+    "dinniman": "Everyone assumes the Demon is the one doing the night-time murdering. Usually that's right. Usually. Can your ability cause someone's death at night even though you aren't the Demon?",
+    "voice": "Carl",
+    "yes": {
+      "killsAtNight": true,
+      "team": [
+        "townsfolk",
+        "outsider",
+        "minion",
+        "traveller"
+      ]
+    }
+  },
+  {
+    "id": "xd-demon-no-night-kill",
+    "plain": "Are you a Demon whose ability never kills anyone at night?",
+    "dinniman": "Most Demons treat the night like a buffet. A couple of you skip the meal entirely and win some other ugly way. Are you a Demon whose ability never kills anyone at night?",
+    "voice": "Mordecai",
+    "yes": {
+      "team": "demon",
+      "killsAtNight": false
+    }
+  },
+  {
+    "id": "xd-good-daylight-killer",
+    "plain": "Are you a Townsfolk or Outsider whose ability can kill a player in broad daylight?",
+    "dinniman": "A heroine doesn't skulk in the dark, darling. She strikes in FULL VIEW of her adoring public. Are you a Townsfolk or Outsider whose ability can kill a player in broad daylight?",
+    "voice": "Princess Donut",
+    "yes": {
+      "killsByDay": true,
+      "team": [
+        "townsfolk",
+        "outsider"
+      ]
+    }
+  },
+  {
+    "id": "xd-traveller-killer",
+    "plain": "Are you a Traveller whose ability can kill another player?",
+    "dinniman": "Our visiting guest stars are a huge ratings driver, and some of them come with a body count written right into the contract! Are you a Traveller whose ability can kill another player?",
+    "voice": "Zev",
+    "yes": [
+      "harlot",
+      "gunslinger",
+      "gangster",
+      "gnome"
+    ]
+  },
+  {
+    "id": "xd-any-kill",
+    "plain": "Leaving executions aside, can your ability directly cause another player's death, by day or by night?",
+    "dinniman": "Sponsor poll! Our partners at Brutal Hygiene Wipes want to know how many of you are packing actual murder. Executions don't count, those are a team effort. Can your ability directly cause another player's death, day or night?",
+    "voice": "The System AI",
+    "yes": [
+      "lycanthrope",
+      "gossip",
+      "slayer",
+      "mayor",
+      "golem",
+      "moonchild",
+      "godfather",
+      "harpy",
+      "witch",
+      "pithag",
+      "psychopath",
+      "assassin",
+      "boomdandy",
+      "yaggababble",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "harlot",
+      "gunslinger",
+      "gangster",
+      "gnome"
+    ]
+  },
+  {
+    "id": "xd-deathless-killer",
+    "plain": "Setting executions aside, can your ability both cause another player's death and shield you from your own?",
+    "dinniman": "Prepotente is DEATH and Prepotente is DEATHLESS! Mere killers bore me. Mere survivors bore me MORE! Setting executions aside, can your ability both cause another player's death and shield you from your own?",
+    "voice": "Prepotente",
+    "yes": [
+      "mayor",
+      "psychopath",
+      "zombuul",
+      "lleech"
+    ]
+  },
+  {
+    "id": "xd-parting-gift",
+    "plain": "When you die or are executed, does your ability then cause other players to die?",
+    "dinniman": "Some folks go quietly. Not you, you spiteful little firecracker: your death comes with a parting gift for somebody else. When you die or get executed, does your ability then cause other players to die?",
+    "voice": "Elle",
+    "yes": [
+      "moonchild",
+      "boomdandy"
+    ]
+  },
+  {
+    "id": "xd-life-keeper",
+    "plain": "Does your ability directly keep someone alive, whether that's another player or yourself?",
+    "dinniman": "Staying alive in here takes everything you have, and sometimes a little help. Some abilities are that help. Does yours directly keep someone alive, whether that someone is another player or you?",
+    "voice": "Katia",
+    "yes": [
+      "sailor",
+      "innkeeper",
+      "monk",
+      "exorcist",
+      "princess",
+      "soldier",
+      "tealady",
+      "mayor",
+      "fool",
+      "pacifist",
+      "devilsadvocate",
+      "psychopath",
+      "vizier",
+      "zombuul",
+      "legion",
+      "lleech",
+      "judge",
+      "deviant",
+      "scapegoat"
+    ]
+  },
+  {
+    "id": "xd-single-shot",
+    "plain": "Does your ability give you a single shot, once per game, at killing one other player?",
+    "dinniman": "Limited-edition loot drop: ONE killing blow, single use, no refills, no refunds. Use it wisely, or don't, the System wins either way. Does your ability give you a single shot, once per game, at killing one other player?",
+    "voice": "The System AI",
+    "yes": [
+      "slayer",
+      "golem",
+      "assassin",
+      "moonchild"
+    ]
+  },
+  {
+    "id": "xd-innocent-victims",
+    "plain": "Can your ability kill other players, but only ever good ones?",
+    "dinniman": "This one's hard to say out loud. Some abilities can only ever hurt the innocent, never the monsters we're hunting. Is yours like that: able to kill other players, but only ever good ones?",
+    "voice": "Katia",
+    "yes": [
+      "lycanthrope",
+      "moonchild"
+    ]
+  },
+  {
+    "id": "xd-second-life",
+    "plain": "Does your ability let you survive the first time you die?",
+    "dinniman": "Folks, you're gonna love this. They go down, the crowd gasps, and then they're BACK! Or at least still breathing! Does your ability let you survive the first time you die?",
+    "voice": "The Host",
+    "yes": [
+      "fool",
+      "zombuul"
+    ]
+  },
+  {
+    "id": "xd-perform-or-perish",
+    "plain": "When you're sent to your death, can winning a game or being funny save you?",
+    "dinniman": "Charm is a survival skill, darling, I would know. For a lucky few, the right performance at the right moment really does keep the noose off. When the town sends you to your death, can winning a game or being funny save you?",
+    "voice": "Odette",
+    "yes": [
+      "psychopath",
+      "deviant"
+    ]
+  },
+  {
+    "id": "xd-tied-lifelines",
+    "plain": "Is your own life tied to another player's, so that their death can bring about yours?",
+    "dinniman": "Some bonds are SACRED, darling. Like me and my fans. Or, apparently, you and one other poor soul whose funeral would also be yours. Is your life tied to another player's, so that their death can bring about yours?",
+    "voice": "Princess Donut",
+    "yes": [
+      "grandmother",
+      "lleech"
+    ]
+  },
+  {
+    "id": "xd-demon-kill-payout",
+    "plain": "Does your ability only do something if it's the Demon that kills you?",
+    "dinniman": "Getting knifed by the Demon is a rotten way to go. For some of you it's the only way your ability ever pays out. Does your ability only kick in if it's specifically the Demon that kills you?",
+    "voice": "Mordecai",
+    "yes": [
+      "sage",
+      "banshee"
+    ]
+  },
+  {
+    "id": "xd-last-public-pick",
+    "plain": "When you learn that you've died, must you publicly pick one living player for a final, high-stakes choice?",
+    "dinniman": "So you're dead. Congratulations. Before you lie down, though, you have to stand up in front of everyone and point at somebody, and if you get it wrong, it hurts. When you learn you've died, must you publicly pick one living player for that final choice?",
+    "voice": "Carl",
+    "yes": [
+      "klutz",
+      "moonchild"
+    ]
+  },
+  {
+    "id": "xd-k-evil-team",
+    "plain": "Of those whose ability can kill at night, are you on the evil team as a Minion or Demon?",
+    "dinniman": "Our night-shift killers are in the spotlight, folks, and the audience is dying to know which team they play for! Of those whose ability can kill at night, are you on the evil team as a Minion or Demon?",
+    "voice": "The Host",
+    "yes": {
+      "killsAtNight": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    },
+    "scope": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-k-storyteller-picks",
+    "plain": "Of those whose ability can kill at night, is it always the Storyteller, never you, who picks who dies?",
+    "dinniman": "Delegation is a leadership skill! Some of our crawlers simply provide the opportunity, and the Storyteller handles the messy talent selection. Of you night-time killers, is it always the Storyteller, never you, who picks who your ability kills?",
+    "voice": "Zev",
+    "yes": [
+      "gossip",
+      "pithag",
+      "yaggababble",
+      "lilmonsta",
+      "legion",
+      "mayor"
+    ],
+    "scope": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-k-public-element",
+    "plain": "Of those who can kill at night, does your deadly ability involve something said or shown in front of everyone?",
+    "dinniman": "The best killers have a flair for performance: a public statement, a public choice, a little phrase dropped into conversation. Of you night-time killers, does your deadly ability involve something said or shown in front of everyone?",
+    "voice": "Odette",
+    "yes": [
+      "gossip",
+      "moonchild",
+      "alhadikhia",
+      "yaggababble"
+    ],
+    "scope": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-k-multi-kill",
+    "plain": "Of those who can kill at night, can your ability kill more than one other player in a single night?",
+    "dinniman": "ONE corpse? ONE? Samantha weeps at your lack of ambition! Among you night-time killers, can your ability kill more than one other player in a single night?",
+    "voice": "Samantha",
+    "yes": [
+      "shabaloth",
+      "po",
+      "alhadikhia",
+      "pithag",
+      "yaggababble"
+    ],
+    "scope": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-k-risks-self",
+    "plain": "Of those who can kill at night, does your ability also carry a built-in risk to your own life?",
+    "dinniman": "Killing's dangerous work, and I don't just mean for the victim. Some of you hold a power that can bite the hand that wields it. Of you night-time killers, does your ability carry a built-in risk to your own life?",
+    "voice": "Mordecai",
+    "yes": {
+      "killsAtNight": true,
+      "risksOwnLife": true
+    },
+    "scope": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-k-hard-to-kill",
+    "plain": "Of those who can kill at night, does your ability also protect you from dying?",
+    "dinniman": "To kill, and NOT be killed! This is the dream of every goat of vision! Of you night-time killers, does your ability also protect you from dying?",
+    "voice": "Prepotente",
+    "yes": {
+      "killsAtNight": true,
+      "hardToKill": true
+    },
+    "scope": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-k-one-kill",
+    "plain": "Of those who can kill at night, do you only ever get one kill in the whole game?",
+    "dinniman": "One bullet, one chance, no do-overs. I respect it. Of all you night-time killers, does your ability give you just one kill for the whole game?",
+    "voice": "Elle",
+    "yes": [
+      "assassin",
+      "moonchild"
+    ],
+    "scope": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-k-poison-too",
+    "plain": "Of those who can kill at night, does your ability poison players as well as killing them?",
+    "dinniman": "Combo bonus! Why settle for a murder when you can add a light dusting of poison for flavour? The System loves a two-for-one. Of you night-time killers, does your ability poison players as well as killing them?",
+    "voice": "The System AI",
+    "yes": [
+      "pukka",
+      "nodashii",
+      "vigormortis",
+      "lleech"
+    ],
+    "scope": {
+      "killsAtNight": true
+    }
+  },
+  {
+    "id": "xd-d-night-trap",
+    "plain": "Of those who can kill by day, do you set up your daytime victim during the night before?",
+    "dinniman": "Some daytime killers act in the moment. Others lay the groundwork in the dark and wait to see who walks into it. Of you daylight killers, do you set up tomorrow's victim during the night before?",
+    "voice": "Katia",
+    "yes": [
+      "witch",
+      "harpy"
+    ],
+    "scope": {
+      "killsByDay": true
+    }
+  },
+  {
+    "id": "xd-d-on-the-spot",
+    "plain": "Of those who can kill by day, do you pick your victim yourself, there and then?",
+    "dinniman": "No traps, no fine print. You look at someone, you decide, they drop. Of you daylight killers, do you pick your victim yourself, right there and then?",
+    "voice": "Carl",
+    "yes": [
+      "slayer",
+      "golem",
+      "psychopath",
+      "gunslinger",
+      "gangster",
+      "gnome",
+      "riot"
+    ],
+    "scope": {
+      "killsByDay": true
+    }
+  },
+  {
+    "id": "xd-d-day-after-day",
+    "plain": "Of those who can kill by day, can your ability claim a victim day after day, not just once?",
+    "dinniman": "Recurring content is the backbone of any franchise! Of our daylight killers, can your ability claim a fresh victim day after day, rather than just once?",
+    "voice": "Zev",
+    "yes": [
+      "psychopath",
+      "gunslinger",
+      "gangster",
+      "gnome",
+      "witch",
+      "harpy"
+    ],
+    "scope": {
+      "killsByDay": true
+    }
+  },
+  {
+    "id": "xd-d-evil",
+    "plain": "Of those who can kill by day, are you a Minion or Demon?",
+    "dinniman": "Daylight murder! Glorious! But Samantha must know whose side the blood is on. Of you daylight killers, are you a Minion or a Demon?",
+    "voice": "Samantha",
+    "yes": {
+      "killsByDay": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    },
+    "scope": {
+      "killsByDay": true
+    }
+  },
+  {
+    "id": "xd-d-demon-only",
+    "plain": "Of those who can kill by day, does your kill only work if your target is the Demon?",
+    "dinniman": "Darling, I do not waste my talents on extras. Only the headliner will do. Of you daylight killers, does your kill only work if the target turns out to be the Demon?",
+    "voice": "Princess Donut",
+    "yes": [
+      "slayer"
+    ],
+    "scope": {
+      "killsByDay": true
+    }
+  },
+  {
+    "id": "xd-e-own-neck",
+    "plain": "Of those whose ability can cause an unusual execution, is it your own execution?",
+    "dinniman": "Mongo! Mongo mongo? (Carl, translating: he's asking, very gently, whether the rope your ability brings out is meant for your own neck.) Of you unusual-execution types, is it your own execution your ability can cause?",
+    "voice": "Mongo",
+    "yes": [
+      "mutant",
+      "scapegoat"
+    ],
+    "scope": {
+      "causesExtraExecution": true
+    }
+  },
+  {
+    "id": "xd-e-in-the-moment",
+    "plain": "Of those whose ability can cause an unusual execution, do you decide in the moment, during the day, to use it?",
+    "dinniman": "Prepotente does not WAIT for fate! Prepotente SEIZES the gavel! Of you who bend the gallows rules, do you decide in the moment, during the day, to use that power?",
+    "voice": "Prepotente",
+    "yes": [
+      "vizier",
+      "judge",
+      "butcher"
+    ],
+    "scope": {
+      "causesExtraExecution": true
+    }
+  },
+  {
+    "id": "xd-e-storyteller-call",
+    "plain": "Of those whose ability can cause an unusual execution, does the Storyteller decide whether that execution happens?",
+    "dinniman": "Power is lovely, but discretion is lovelier, and in your case it isn't yours. Among you gallows-benders, does the Storyteller get the final say on whether your unusual execution happens?",
+    "voice": "Odette",
+    "yes": [
+      "mutant",
+      "cerenovus",
+      "scapegoat"
+    ],
+    "scope": {
+      "causesExtraExecution": true
+    }
+  },
+  {
+    "id": "xd-o-curse-on-team",
+    "plain": "Of those whose death sets off their ability, can your death harm your own team through no choice of yours?",
+    "dinniman": "Good news: when you die, something happens. Bad news: it's bad. For your own side. And you don't get a say. Of those whose death triggers their ability, can your death hurt your own team through no choice of yours?",
+    "voice": "Carl",
+    "yes": [
+      "saint",
+      "sweetheart",
+      "plaguedoctor",
+      "barber",
+      "hatter",
+      "poppygrower"
+    ],
+    "scope": {
+      "triggersOnOwnDeath": true
+    }
+  },
+  {
+    "id": "xd-o-gift-to-team",
+    "plain": "Of those whose death sets off their ability, can your death give your own team an advantage?",
+    "dinniman": "Even my EXIT would be a gift to my fans, darling. A final bow, a final present. Of those whose death sets off their ability, can your death hand your own team an advantage?",
+    "voice": "Princess Donut",
+    "yes": [
+      "farmer",
+      "ravenkeeper",
+      "sage",
+      "banshee",
+      "boomdandy",
+      "goblin",
+      "imp"
+    ],
+    "scope": {
+      "triggersOnOwnDeath": true
+    }
+  },
+  {
+    "id": "xd-o-executed",
+    "plain": "Of those whose death sets off their ability, is it specifically being executed that matters?",
+    "dinniman": "Getting knifed in your sleep? Doesn't count, apparently. Your ability only perks up when the town strings you up proper. Of you death-triggered folks, is it specifically being executed that sets yours off?",
+    "voice": "Elle",
+    "yes": [
+      "saint",
+      "goblin",
+      "boomdandy"
+    ],
+    "scope": {
+      "triggersOnOwnDeath": true
+    }
+  },
+  {
+    "id": "xd-o-recast",
+    "plain": "Of those whose death sets off their ability, does your death make other players change characters?",
+    "dinniman": "Reshuffle event triggered! When you die, somebody else's character sheet gets a surprise makeover. Character changes are non-refundable. Of those whose death sets off their ability, does your death make other players change characters?",
+    "voice": "The System AI",
+    "yes": [
+      "barber",
+      "hatter",
+      "farmer",
+      "imp"
+    ],
+    "scope": {
+      "triggersOnOwnDeath": true
+    }
+  },
+  {
+    "id": "xd-o-last-truth",
+    "plain": "Of those whose death sets off their ability, do you personally learn something when you die?",
+    "dinniman": "Dying is frightening. Dying and getting nothing for it is worse. For a few of you, death comes with one last truth. Of those whose death sets off their ability, do you personally learn something when you die?",
+    "voice": "Katia",
+    "yes": [
+      "ravenkeeper",
+      "sage"
+    ],
+    "scope": {
+      "triggersOnOwnDeath": true
+    }
+  },
+  {
+    "id": "xd-o-villain",
+    "plain": "Of those whose death sets off their ability, are you a Minion or Demon?",
+    "dinniman": "When a villain falls, the earth should SHAKE! Of those whose death sets off their ability, are you a wicked Minion or Demon?",
+    "voice": "Samantha",
+    "yes": {
+      "triggersOnOwnDeath": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    },
+    "scope": {
+      "triggersOnOwnDeath": true
+    }
+  },
+  {
+    "id": "xd-t-demon-death",
+    "plain": "Of those whose ability reacts to another player's death, is it the Demon's death you're waiting for?",
+    "dinniman": "Everyone's waiting for somebody to die. In your case, it's the boss. Of those whose ability reacts to someone else's death, is it the Demon's death your ability is waiting for?",
+    "voice": "Mordecai",
+    "yes": [
+      "scarletwoman",
+      "mastermind"
+    ],
+    "scope": {
+      "triggersOnOthersDeath": true
+    }
+  },
+  {
+    "id": "xd-t-execution-death",
+    "plain": "Of those whose ability reacts to another player's death, is it specifically an execution that sets yours off?",
+    "dinniman": "Our analytics show execution day is appointment viewing! Of those whose ability reacts to somebody else's death, is it specifically an execution that sets yours off?",
+    "voice": "Zev",
+    "yes": [
+      "undertaker",
+      "cannibal",
+      "minstrel",
+      "mastermind",
+      "eviltwin"
+    ],
+    "scope": {
+      "triggersOnOthersDeath": true
+    }
+  },
+  {
+    "id": "xd-t-inheritance",
+    "plain": "Of those whose ability reacts to another player's death, can that death hand you a new ability or character?",
+    "dinniman": "Grief is so much easier with an inheritance, isn't it? Of those whose ability reacts to someone else's death, can that death hand you a new ability or a new character?",
+    "voice": "Odette",
+    "yes": [
+      "pixie",
+      "cannibal",
+      "scarletwoman"
+    ],
+    "scope": {
+      "triggersOnOthersDeath": true
+    }
+  },
+  {
+    "id": "xd-t-news-from-the-grave",
+    "plain": "Of those whose ability reacts to another player's death, does that death bring you information?",
+    "dinniman": "Someone died. Tragic. Anyway, what did you learn? Of those whose ability reacts to someone else's death, does that death bring you new information?",
+    "voice": "Carl",
+    "yes": [
+      "bountyhunter",
+      "choirboy",
+      "undertaker"
+    ],
+    "scope": {
+      "triggersOnOthersDeath": true
+    }
+  },
+  {
+    "id": "xd-t-own-victims",
+    "plain": "Of those whose ability reacts to another player's death, does it change what happens to the players you kill?",
+    "dinniman": "Samantha's victims become LEGENDS! Of those whose ability reacts to somebody else's death, does your ability change what happens to the players you yourself kill?",
+    "voice": "Samantha",
+    "yes": [
+      "vigormortis",
+      "fanggu"
+    ],
+    "scope": {
+      "triggersOnOthersDeath": true
+    }
+  },
+  {
+    "id": "xd-p-gallows-only",
+    "plain": "Of those who can protect other players, does your protection only work against executions?",
+    "dinniman": "Night-time protection is the usual trick. Yours is stranger: the only thing you save people from is the rope. Of you protectors, does your protection only work against executions?",
+    "voice": "Mordecai",
+    "yes": [
+      "pacifist",
+      "devilsadvocate",
+      "scapegoat",
+      "judge",
+      "legion"
+    ],
+    "scope": {
+      "protectsOthers": true
+    }
+  },
+  {
+    "id": "xd-p-nightly-pick",
+    "plain": "Of those who can protect other players, do you choose someone each night to keep alive?",
+    "dinniman": "Every night you get to point at one person and say: not this one. Not tonight. Of you protectors, do you choose someone each night to keep alive?",
+    "voice": "Katia",
+    "yes": [
+      "innkeeper",
+      "monk",
+      "devilsadvocate"
+    ],
+    "scope": {
+      "protectsOthers": true
+    }
+  },
+  {
+    "id": "xd-p-cancel-the-kill",
+    "plain": "Of those who can protect other players, can you stop the Demon from killing anyone at all for a night?",
+    "dinniman": "Why guard ONE peasant when you can cancel the entire massacre? Of you protectors, can your ability stop the Demon from killing anyone at all for a night?",
+    "voice": "Princess Donut",
+    "yes": [
+      "princess",
+      "exorcist"
+    ],
+    "scope": {
+      "protectsOthers": true
+    }
+  },
+  {
+    "id": "xd-p-hands-free",
+    "plain": "Of those who can protect other players, does your protection work without you making any choice?",
+    "dinniman": "Lazy? No, efficient. Your ability does the guarding while you sit there looking innocent. Of you protectors, does your protection work without you having to choose anything?",
+    "voice": "Elle",
+    "yes": [
+      "tealady",
+      "pacifist",
+      "scapegoat",
+      "legion"
+    ],
+    "scope": {
+      "protectsOthers": true
+    }
+  },
+  {
+    "id": "xd-h-evil",
+    "plain": "Of those who are hard to kill, are you a Minion or Demon?",
+    "dinniman": "The unkillables, folks! But are they heroes or horrors? Of those of you who are hard to kill, are you a Minion or a Demon?",
+    "voice": "The Host",
+    "yes": {
+      "hardToKill": true,
+      "team": [
+        "minion",
+        "demon"
+      ]
+    },
+    "scope": {
+      "hardToKill": true
+    }
+  },
+  {
+    "id": "xd-r-storyteller-whim",
+    "plain": "Of those whose ability risks their own life, is it up to the Storyteller whether it actually kills you?",
+    "dinniman": "You know what's worse than a power that can kill you? One where the decision belongs to the Storyteller, who is smiling right now. Of those whose ability risks their own life, is it up to the Storyteller whether it actually kills you?",
+    "voice": "Carl",
+    "yes": [
+      "tinker",
+      "mutant",
+      "harlot",
+      "scapegoat"
+    ],
+    "scope": {
+      "risksOwnLife": true
+    }
+  },
+  {
+    "id": "xd-r-mistake-penalty",
+    "plain": "Of those whose ability risks their own life, does your ability punish a night-time mistake with your death?",
+    "dinniman": "Error detected! Penalty: death! The System has always believed in strong incentives. Of those whose ability risks their own life, does your ability punish a night-time mistake with your own death?",
+    "voice": "The System AI",
+    "yes": [
+      "gambler",
+      "acrobat"
+    ],
+    "scope": {
+      "risksOwnLife": true
+    }
+  },
+  {
+    "id": "xd-r-demon-handover",
+    "plain": "Of those whose ability risks their own life, when it kills you, does another player become the Demon?",
+    "dinniman": "Old Demons die. New ones get promoted. Same dungeon, different management. Of those whose ability risks their own life, when it kills you, does another player become the Demon?",
+    "voice": "Mordecai",
+    "yes": [
+      "imp",
+      "fanggu"
+    ],
+    "scope": {
+      "risksOwnLife": true
+    }
+  },
+  {
+    "id": "xd-u-daylight-killer",
+    "plain": "Of those whose ability can kill, do you do your killing in daylight rather than at night?",
+    "dinniman": "Alright, killers, show of hands. Who's a creature of the night, and who's got the nerve to do it at noon? Of you with a killing ability, do you do your killing in daylight?",
+    "voice": "Elle",
+    "yes": {
+      "killsByDay": true
+    },
+    "scope": [
+      "lycanthrope",
+      "gossip",
+      "slayer",
+      "mayor",
+      "golem",
+      "moonchild",
+      "godfather",
+      "harpy",
+      "witch",
+      "pithag",
+      "psychopath",
+      "assassin",
+      "boomdandy",
+      "yaggababble",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "harlot",
+      "gunslinger",
+      "gangster",
+      "gnome"
+    ]
+  },
+  {
+    "id": "xd-u-graveyard-shift",
+    "plain": "Of those whose ability can kill, does it claim its victims while the town is asleep?",
+    "dinniman": "Killers, we've got a ratings war between the morning shift and the graveyard shift! Of those of you who can kill, does your ability claim its victims while the town's asleep?",
+    "voice": "The Host",
+    "yes": {
+      "killsAtNight": true
+    },
+    "scope": [
+      "lycanthrope",
+      "gossip",
+      "slayer",
+      "mayor",
+      "golem",
+      "moonchild",
+      "godfather",
+      "harpy",
+      "witch",
+      "pithag",
+      "psychopath",
+      "assassin",
+      "boomdandy",
+      "yaggababble",
+      "pukka",
+      "lilmonsta",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "harlot",
+      "gunslinger",
+      "gangster",
+      "gnome"
+    ]
+  },
+  {
+    "id": "xd-u-whose-life",
+    "plain": "Of those whose ability keeps someone alive, is it other players' lives you protect?",
+    "dinniman": "Brand values check! Is your survival ability a self-care product, or is it community-focused? Of those whose ability keeps someone alive, is it other players' lives you protect?",
+    "voice": "Zev",
+    "yes": {
+      "protectsOthers": true
+    },
+    "scope": [
+      "sailor",
+      "innkeeper",
+      "monk",
+      "exorcist",
+      "princess",
+      "soldier",
+      "tealady",
+      "mayor",
+      "fool",
+      "pacifist",
+      "devilsadvocate",
+      "psychopath",
+      "vizier",
+      "zombuul",
+      "legion",
+      "lleech",
+      "judge",
+      "deviant",
+      "scapegoat"
+    ]
+  },
+  {
+    "id": "xd-u-whose-funeral",
+    "plain": "Of those whose ability reacts to a death, is it your own death rather than someone else's?",
+    "dinniman": "Every one of you is waiting on a funeral, darling. The only question is whose. Of those whose ability reacts to a death, is it your own rather than someone else's?",
+    "voice": "Odette",
+    "yes": {
+      "triggersOnOwnDeath": true
+    },
+    "scope": [
+      "grandmother",
+      "pixie",
+      "bountyhunter",
+      "undertaker",
+      "cannibal",
+      "farmer",
+      "minstrel",
+      "ravenkeeper",
+      "sage",
+      "choirboy",
+      "banshee",
+      "poppygrower",
+      "sweetheart",
+      "plaguedoctor",
+      "klutz",
+      "moonchild",
+      "saint",
+      "barber",
+      "hatter",
+      "godfather",
+      "eviltwin",
+      "goblin",
+      "boomdandy",
+      "mastermind",
+      "scarletwoman",
+      "imp",
+      "vigormortis",
+      "fanggu",
+      "lleech"
+    ]
+  },
+  {
+    "id": "xd-u-rope-or-blade",
+    "plain": "Of those whose ability can cause deaths by day, does it work through executions rather than outright kills?",
+    "dinniman": "The gallows or the blade, mortal? Prepotente DEMANDS to know your instrument! Of you daytime dealers of death, does your ability work through executions rather than outright killing?",
+    "voice": "Prepotente",
+    "yes": {
+      "causesExtraExecution": true
+    },
+    "scope": [
+      "slayer",
+      "virgin",
+      "golem",
+      "mutant",
+      "harpy",
+      "witch",
+      "cerenovus",
+      "psychopath",
+      "boomdandy",
+      "vizier",
+      "riot",
+      "butcher",
+      "gunslinger",
+      "gangster",
+      "judge",
+      "scapegoat",
+      "gnome"
+    ]
+  }
+]

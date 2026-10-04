@@ -1,6 +1,6 @@
 {
   "killsAtNight": {
-    "definition": "The character's own ability, as written, can cause the death of another player during the night: a kill the character chooses, or night deaths the Storyteller makes under that ability (Gossip, Harlot, Pit-Hag making a Demon, Legion, Lil' Monsta, Yaggababble). Excludes deaths that are only the character's own (Gambler, Acrobat), redirecting someone else's kill (Mayor), indirect effects such as drunkenness, and abilities borrowed from other characters (Alchemist, Philosopher, Cannibal, Pixie, Apprentice, Hermit, Amnesiac, Wizard, Boffin). The Riot and Leviathan have no night kill.",
+    "definition": "The character’s own ability, as written, can cause the death of another player during the night: a kill the character chooses, or night deaths the Storyteller makes under that ability (Gossip, Harlot, Pit-Hag making a Demon, Legion, Lil’ Monsta, Yaggababble, and the Mayor, whose night death can be redirected so another player dies instead). Excludes deaths that are only the character’s own (Gambler, Acrobat), indirect effects such as drunkenness or creating a Demon (Summoner), and abilities borrowed from other characters (Alchemist, Philosopher, Cannibal, Pixie, Apprentice, Hermit, Amnesiac, Wizard, Boffin). The Riot and Leviathan have no night kill.",
     "yes": [
       "lycanthrope",
       "gossip",
@@ -25,7 +25,8 @@
       "fanggu",
       "lordoftyphon",
       "lleech",
-      "alhadikhia"
+      "alhadikhia",
+      "mayor"
     ]
   },
   "killsByDay": {
@@ -76,7 +77,7 @@
     ]
   },
   "triggersOnOthersDeath": {
-    "definition": "The character's ability is set off by the death of a particular other player or kind of player: something happens to or for this character when that player dies (any cause, or a specific cause such as execution or a Demon kill). Counting dead players (King, Oracle), acting on players who are already dead (Professor, Bone Collector, Shabaloth), and requiring that nobody died (Zombuul) don't count.",
+    "definition": "The character’s ability is set off by the death of a particular other player or kind of player: something happens to or for this character when that player dies (any cause, or a specific cause such as execution or a Demon kill). Includes the Evil Twin (the good twin’s execution wins for evil, and its death lifts the ‘good can’t win’ lock). Counting dead players (King, Oracle), acting on players who are already dead (Professor, Bone Collector, Shabaloth), requiring that nobody died (Zombuul), and triggers on executions regardless of death (Leviathan, Fearmonger, Scapegoat, Princess, Butcher) don’t count.",
     "yes": [
       "pixie",
       "bountyhunter",
@@ -90,11 +91,12 @@
       "mastermind",
       "vigormortis",
       "fanggu",
-      "lleech"
+      "lleech",
+      "eviltwin"
     ]
   },
   "protectsOthers": {
-    "definition": "The character's own ability can directly stop another player from dying: it makes players unable to die or safe from the Demon (Innkeeper, Monk, Tea Lady), stops the Demon's kill outright (Princess, Exorcist), lets an executed player survive (Pacifist, Devil's Advocate), or takes an execution in their place (Scapegoat). Excludes self-only protection (see hardToKill), stopping a kill indirectly by making the killer drunk or poisoned (Sailor, Courtier, Preacher), swapping a kill for a different death (Lycanthrope), stopping an execution from happening (Judge, Legion), Storyteller balancing deaths (Pit-Hag), resurrection (Professor), and borrowed abilities.",
+    "definition": "The character’s own ability can directly stop another player from dying: it makes players unable to die or safe from the Demon (Innkeeper, Monk, Tea Lady), stops the Demon’s kill outright (Princess, Exorcist), lets an executed player survive (Pacifist, Devil’s Advocate), takes an execution in their place (Scapegoat), or makes an execution fail (Judge forcing a fail, Legion’s evil-only votes failing). Excludes self-only protection (see hardToKill), stopping a kill indirectly by making the killer drunk or poisoned (Sailor, Courtier, Preacher), swapping a kill for a different death (Lycanthrope), Storyteller balancing deaths (Pit-Hag), resurrection (Professor), and borrowed abilities.",
     "yes": [
       "innkeeper",
       "monk",
@@ -103,7 +105,9 @@
       "exorcist",
       "pacifist",
       "devilsadvocate",
-      "scapegoat"
+      "scapegoat",
+      "judge",
+      "legion"
     ]
   },
   "hardToKill": {
@@ -121,7 +125,7 @@
     ]
   },
   "risksOwnLife": {
-    "definition": "The character’s own ability text names this character’s own death or execution as a possible consequence of the ability: a cost, gamble, penalty or weakness built into how it works. A wrong guess or bad pick kills you (Gambler, Acrobat), you die when someone else does (Grandmother, Lleech), you might die or be executed at the Storyteller’s discretion (Tinker, Mutant, Harlot, Scapegoat), or killing yourself or an Outsider is a written mechanic (Imp, Fang Gu). Merely being a valid target of your own ability, like any other player (Gossip, Lycanthrope, Al-Hadikhia choosing itself, any Demon choosing itself), does not count; nor do abilities that reduce your risk of dying (Psychopath).",
+    "definition": "The character’s own ability builds a risk of this character’s own death or execution into how it works: a wrong guess or bad pick kills you (Gambler, Acrobat), you die when someone else does (Grandmother, Lleech), you might die or be executed at the Storyteller’s discretion (Tinker, Mutant, Harlot, Scapegoat), killing yourself or an Outsider is a written mechanic (Imp, Fang Gu), or choosing yourself puts you to a live-or-die vote that can kill all three (Al-Hadikhia, whose wiki tips recommend it). Merely being able to target yourself with an ordinary kill (Lycanthrope, any other Demon) or being a possible Storyteller-chosen victim (Gossip, Pit-Hag) does not count, nor do abilities that reduce your risk of dying (Psychopath).",
     "yes": [
       "gambler",
       "acrobat",
@@ -132,7 +136,8 @@
       "fanggu",
       "lleech",
       "harlot",
-      "scapegoat"
+      "scapegoat",
+      "alhadikhia"
     ]
   }
 }
