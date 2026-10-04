@@ -41,7 +41,7 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 - **Demons that don't kill at night:** the Riot (kills through nominations on day 3) and the Leviathan (doesn't kill).
 - **Good characters that kill at night:** the Lycanthrope, for one.
 - **The Vizier is publicly known**, so "secretly evil" is false for it.
-- **Travellers' alignment is chosen by the Storyteller.** Good/evil questions treat Travellers as neither by default, so make sure the wording lets a Traveller fan answer no.
+- **Having an alignment means you aren't a Traveller.** Travellers have no fixed side (the Storyteller assigns one), so they answer **no** to every "are you good / evil / on the town's side" question, and a yes rules them out. Keep them on the no side of alignment questions rather than scoping them out, unless the question is deliberately scoped to good-only or evil-only characters. Questions *about* a Traveller's assigned side or other players' alignment (e.g. "a player who shares your alignment") are fine.
 - **Borrowed and believed abilities:** the Cannibal, Alchemist, Apprentice and Pixie borrow abilities. The Drunk and Marionette act as the character they believe they are. The Hermit holds every Outsider ability. Keep these on a fixed side with explicit wording or id lists.
 - **"Once per game, whenever you choose"** excludes the Juggler (day 1 only) and death triggers like the Klutz and Moonchild. It includes the Puzzlemaster.
 - **The Hermit:** with the Drunk ability, it believes it's a Townsfolk, so include it in "believes they're another character" questions. It only has the abilities of Outsiders on the script, and single-character globals need "your whole role" wording to exclude it.

@@ -32,7 +32,7 @@ Work out each question's two sides by resolving its selectors against `data/char
   - "wakes at night" versus merely being on the night sheet;
   - "learns" versus "starts knowing";
   - abilities that kill, protect, poison, make people drunk or mad, or change characters, which all span several teams;
-  - Travellers whose alignment varies;
+  - Travellers, who have no fixed alignment: they belong on the **no** side of every "are you good/evil" question;
   - Fabled and Loric, which aren't seated players.
 - Scoped questions: is the presupposed context actually true for everyone in the scope?
 - Trait-based selectors (fields defined in `data/traits/*.json`): check the trait's definition and tags too. A wrong trait tag breaks every question that uses it, so report trait errors prominently. Only edit a trait file if the user asked you to review traits.

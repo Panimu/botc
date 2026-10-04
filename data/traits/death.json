@@ -1,1 +1,34 @@
-{}
+{
+  "killsAtNight": {
+    "definition": "The character's own ability, as written, can cause the death of another player during the night: a kill the character chooses, or night deaths the Storyteller makes under that ability (Gossip, Harlot, Pit-Hag making a Demon, Legion, Lil' Monsta, Yaggababble). Excludes deaths that are only the character's own (Gambler, Acrobat), redirecting someone else's kill (Mayor), indirect effects such as drunkenness, and abilities borrowed from other characters (Alchemist, Philosopher, Cannibal, Pixie, Apprentice, Hermit, Amnesiac, Wizard, Boffin). The Riot and Leviathan have no night kill.",
+    "yes": ["lycanthrope", "gossip", "moonchild", "godfather", "assassin", "pithag", "harlot", "yaggababble", "pukka", "lilmonsta", "nodashii", "imp", "shabaloth", "ojo", "kazali", "po", "zombuul", "vigormortis", "vortox", "legion", "fanggu", "lordoftyphon", "lleech", "alhadikhia"]
+  },
+  "killsByDay": {
+    "definition": "The character's own ability, as written, can kill another player during the day by means other than an execution: a shot, a nomination that kills, a daytime death the Storyteller makes under the ability, or the Riot's day-3 nominations. Executions caused by an ability (Virgin, Vizier, Cerenovus) belong to causesExtraExecution instead, and borrowed abilities don't count.",
+    "yes": ["slayer", "golem", "witch", "harpy", "psychopath", "boomdandy", "riot", "gunslinger", "gangster", "gnome"]
+  },
+  "causesExtraExecution": {
+    "definition": "The character's own ability can make a player be executed other than by the normal nominate-then-vote process: an immediate execution (Virgin, Vizier), an execution as a penalty (Mutant, Cerenovus), a second execution in a day (Butcher), forcing the current execution through (Judge), or being executed in someone else's place (Scapegoat). Daytime kills that are not executions are killsByDay; changing how votes count (Thief, Bureaucrat, Voudon, Bishop) or preventing executions doesn't count.",
+    "yes": ["virgin", "mutant", "cerenovus", "vizier", "butcher", "judge", "scapegoat"]
+  },
+  "triggersOnOwnDeath": {
+    "definition": "The character's ability does something when this character dies, or (for the Saint, Goblin and Boomdandy) when it is executed: information, a new ability, a game result, a kill, or a handover. Excludes abilities that stop or cancel the character's own death (Fool, Zombuul, Mayor, Psychopath: see hardToKill), abilities that merely keep working after death (Puzzlemaster, Recluse, Heretic, Politician), and deaths of other players (see triggersOnOthersDeath).",
+    "yes": ["farmer", "ravenkeeper", "sage", "banshee", "poppygrower", "sweetheart", "plaguedoctor", "klutz", "moonchild", "saint", "barber", "hatter", "boomdandy", "goblin", "imp"]
+  },
+  "triggersOnOthersDeath": {
+    "definition": "The character's ability is set off by the death of a particular other player or kind of player: something happens to or for this character when that player dies (any cause, or a specific cause such as execution or a Demon kill). Counting dead players (King, Oracle), acting on players who are already dead (Professor, Bone Collector, Shabaloth), and requiring that nobody died (Zombuul) don't count.",
+    "yes": ["pixie", "bountyhunter", "grandmother", "choirboy", "undertaker", "cannibal", "minstrel", "godfather", "scarletwoman", "mastermind", "vigormortis", "fanggu", "lleech"]
+  },
+  "protectsOthers": {
+    "definition": "The character's own ability can directly stop another player from dying: it makes players unable to die or safe from the Demon (Innkeeper, Monk, Tea Lady), stops the Demon's kill outright (Princess, Exorcist), lets an executed player survive (Pacifist, Devil's Advocate), or takes an execution in their place (Scapegoat). Excludes self-only protection (see hardToKill), stopping a kill indirectly by making the killer drunk or poisoned (Sailor, Courtier, Preacher), swapping a kill for a different death (Lycanthrope), stopping an execution from happening (Judge, Legion), Storyteller balancing deaths (Pit-Hag), resurrection (Professor), and borrowed abilities.",
+    "yes": ["innkeeper", "monk", "tealady", "princess", "exorcist", "pacifist", "devilsadvocate", "scapegoat"]
+  },
+  "hardToKill": {
+    "definition": "The character's own ability gives this character built-in resistance to dying: it can't die (Sailor), is safe from the Demon (Soldier), survives its first death (Fool, Zombuul), can have a night death redirected (Mayor), can't die by day (Vizier), survives execution unless it loses roshambo (Psychopath), can't die by exile (Deviant), or can't die while its host lives (Lleech). Abilities that can protect any chosen player, sometimes including yourself (Innkeeper, Devil's Advocate), or a whole group you belong to (Pacifist), don't count.",
+    "yes": ["soldier", "sailor", "fool", "mayor", "zombuul", "lleech", "vizier", "psychopath", "deviant"]
+  },
+  "risksOwnLife": {
+    "definition": "The character's own ability can kill or execute this character itself, as a cost, gamble, penalty or weakness built into it: a wrong guess or bad pick kills you (Gambler, Acrobat), you die when someone else does (Grandmother, Lleech), you might die or be executed at the Storyteller's whim (Tinker, Mutant, Harlot, Scapegoat), or you can deliberately target yourself (Imp starpass, Al-Hadikhia choosing itself, Fang Gu dying when it jumps). Excludes the general chance that a Storyteller-chosen victim happens to be you (Gossip, Pit-Hag).",
+    "yes": ["gambler", "acrobat", "grandmother", "tinker", "mutant", "imp", "fanggu", "lleech", "alhadikhia", "harlot", "scapegoat"]
+  }
+}
