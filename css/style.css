@@ -180,6 +180,21 @@ h1 {
   gap: 0.75rem 1.5rem;
 }
 
+/* Shown so a question can be referenced when asking for changes. */
+.question-id {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+  color: var(--dim);
+}
+
+.question-id span, .path .path-id {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.9em;
+  user-select: all;
+}
+
+.path .path-id { color: var(--dim); }
+
 .keys {
   margin: 1rem 0 0;
   font-size: 1rem;

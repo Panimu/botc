@@ -85,7 +85,7 @@ function renderPath(game) {
     const [yesLabel, noLabel] = h.question.options ?? ['Yes', 'No'];
     const after = i + 1 < game.history.length ? game.history[i + 1].pool.length : game.pool.length;
     const li = el('li');
-    li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? yesLabel : noLabel), el('span', 'left', ` (${h.pool.length} left, then ${after})`));
+    li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? yesLabel : noLabel), el('span', 'left', ` (${h.pool.length} left, then ${after})`), el('span', 'path-id', ` ${h.question.id}`));
     return li;
   }));
 }
@@ -165,6 +165,7 @@ function start(characters, questions) {
     $('question-number').textContent = number;
     $('remaining').textContent = left;
     $('question-text').textContent = q.plain;
+    $('question-id').textContent = q.id;
     $('flavour-text').textContent = q.dinniman;
     $('flavour-voice').textContent = q.voice;
     $('feedback').textContent = feedback;
