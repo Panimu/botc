@@ -93,7 +93,8 @@ function start(characters, questions, clockOffset) {
     if (selected) confirm.textContent = `Guess the ${byId.get(selected).name}`;
   }
 
-  function renderPath() {
+  // The asked questions and wrong guesses, newest last.
+  function historyItems() {
     const items = [];
     game.history.forEach((h, i) => {
       const after = i + 1 < game.history.length ? game.history[i + 1].poolBefore.length : null;
@@ -102,8 +103,18 @@ function start(characters, questions, clockOffset) {
       items.push(li);
     });
     for (const id of game.wrongGuesses) items.push(el('li', 'wrong-guess', `Guessed the ${byId.get(id).name}: wrong`));
-    $('path-list').replaceChildren(...items);
-    $('path').hidden = items.length === 0;
+    return items;
+  }
+
+  // During the hunt: a collapsible list of everything asked so far. At the end: the full list below.
+  function renderPath() {
+    const playing = game.status === 'playing';
+    const count = game.history.length + game.wrongGuesses.length;
+    $('history').hidden = !playing || count === 0;
+    $('history-summary').textContent = `All questions so far (${count})`;
+    $('history-list').replaceChildren(...(playing ? historyItems() : []));
+    $('path-list').replaceChildren(...(playing ? [] : historyItems()));
+    $('path').hidden = playing || count === 0;
   }
 
   function shareTexts() {
