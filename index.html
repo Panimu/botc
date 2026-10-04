@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Which Clocktower Character Are You?</title>
+  <meta name="description" content="Answer yes or no until only one Blood on the Clocktower character is left in the circle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Alegreya+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="intro">
+    <h1>Which Clocktower character are you?</h1>
+    <p>Answer honestly. Each answer sends characters out of the circle until only yours is left.</p>
+  </header>
+
+  <main>
+    <div class="square">
+      <ol class="ring" id="ring" aria-label="Characters still in the circle"></ol>
+      <div class="centre" id="centre" aria-live="polite">
+        <p class="status">Gathering the town…</p>
+      </div>
+    </div>
+
+    <div class="controls" id="controls" hidden>
+      <div class="answers">
+        <button type="button" class="answer" id="yes">Yes</button>
+        <button type="button" class="answer" id="no">No</button>
+      </div>
+      <div class="secondary">
+        <button type="button" class="quiet" id="undo">Undo last answer</button>
+        <button type="button" class="quiet" id="restart">Start over</button>
+      </div>
+    </div>
+
+    <section class="path" id="path" hidden>
+      <h2>How you got here</h2>
+      <ol id="path-list"></ol>
+    </section>
+  </main>
+
+  <footer>
+    A fan-made quiz. Blood on the Clocktower is a trademark of The Pandemonium Institute; this site is not affiliated with them.
+  </footer>
+</body>
+</html>

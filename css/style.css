@@ -1,0 +1,268 @@
+:root {
+  --night: #221932;
+  --night-lit: #33274a;
+  --vellum: #efe3c8;
+  --vellum-dim: #b9ad95;
+  --brass: #c9a24e;
+  --good: #5b8fd6;
+  --evil: #c0393f;
+  --shroud: #3b3150;
+  --ink: #221932;
+
+  --display: 'IM Fell English', Georgia, serif;
+  --body: 'Alegreya Sans', system-ui, sans-serif;
+
+  --size: min(92vw, 620px);
+}
+
+* { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html { color-scheme: dark; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 0 16px;
+  /* A lamp over the town square. */
+  background: radial-gradient(circle at 50% 38%, var(--night-lit) 0, var(--night) 60%) fixed, var(--night);
+  color: var(--vellum);
+  font: 400 1.0625rem/1.55 var(--body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  max-width: 34rem;
+  text-align: center;
+  padding: 2.5rem 0 1rem;
+}
+
+h1 {
+  font: 400 clamp(1.9rem, 6vw, 2.75rem)/1.1 var(--display);
+  margin: 0 0 0.5rem;
+}
+
+.intro p {
+  margin: 0;
+  color: var(--vellum-dim);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The circle: tokens on the rim, Storyteller in the middle. */
+.square {
+  position: relative;
+  width: var(--size);
+  aspect-ratio: 1;
+  container: square / inline-size;
+}
+
+.ring {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.token {
+  --tok: clamp(36px, calc(var(--size) * 0.115), 72px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--tok);
+  height: var(--tok);
+  margin: calc(var(--tok) / -2) 0 0 calc(var(--tok) / -2);
+  transform: rotate(var(--angle)) translateY(calc(var(--size) * -0.44)) rotate(calc(-1 * var(--angle))) scale(var(--scale, 1));
+  border-radius: 50%;
+  background: var(--vellum);
+  border: 2px solid var(--good);
+  overflow: hidden;
+  transition: opacity 450ms ease, background-color 450ms ease, border-color 450ms ease, transform 450ms ease;
+}
+
+.token.evil { border-color: var(--evil); }
+
+.token .art {
+  position: absolute;
+  inset: 4%;
+  width: 92%;
+  height: 92%;
+  object-fit: contain;
+  transition: filter 450ms ease;
+}
+
+/* Name sits along the bottom of the token, as on the physical ones. */
+.token .name {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 9%;
+  text-align: center;
+  color: var(--ink);
+  font: 700 0.55rem/1 var(--body);
+  white-space: nowrap;
+}
+
+@container square (min-width: 520px) {
+  .token .art { inset: 2% 12% 22%; width: 76%; height: 76%; }
+  .token .name { display: block; }
+}
+
+.token.out {
+  background: var(--shroud);
+  border-color: var(--shroud);
+  opacity: 0.45;
+  --scale: 0.82;
+}
+
+.token.out .art { filter: grayscale(1) brightness(0.6); }
+.token.out .name { color: var(--vellum-dim); }
+
+.token.chosen {
+  --scale: 1.25;
+  box-shadow: 0 0 0 4px var(--night), 0 0 0 6px var(--brass);
+}
+
+.centre {
+  position: absolute;
+  inset: 21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.6rem;
+}
+
+.result-art {
+  width: clamp(56px, 22cqw, 130px);
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 50%;
+  background: var(--vellum);
+  padding: 4%;
+}
+
+.status {
+  margin: 0;
+  color: var(--vellum-dim);
+  font-size: 0.95rem;
+}
+
+.question {
+  margin: 0;
+  font: 400 clamp(1.15rem, 4.6vw, 1.75rem)/1.25 var(--display);
+  text-wrap: balance;
+}
+
+.question.fallback { font-size: clamp(1rem, 3.8vw, 1.35rem); }
+
+.result-name {
+  margin: 0;
+  font: 400 clamp(2rem, 9vw, 3.5rem)/1 var(--display);
+}
+
+.result-team { margin: 0; font-style: italic; font-family: var(--display); font-size: 1.15rem; }
+.result-team.good { color: var(--good); }
+.result-team.evil { color: var(--evil); }
+
+.result-summary {
+  margin: 0;
+  font-size: clamp(0.85rem, 2.8vw, 1rem);
+  color: var(--vellum-dim);
+  max-width: 24rem;
+}
+
+.controls {
+  width: 100%;
+  max-width: 28rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.secondary {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 3px;
+}
+
+.answer {
+  padding: 0.85rem 1rem;
+  border: 2px solid var(--brass);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--vellum);
+  font: 400 1.35rem/1 var(--display);
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.answer:hover { background: var(--brass); color: var(--ink); }
+
+.quiet {
+  border: 0;
+  background: none;
+  color: var(--vellum-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0.25rem;
+}
+
+.quiet:hover { color: var(--vellum); }
+.quiet:disabled { opacity: 0.4; cursor: default; text-decoration: none; }
+
+.path {
+  width: 100%;
+  max-width: 34rem;
+  margin-top: 2.5rem;
+}
+
+.path h2 {
+  font: 400 1.4rem/1.2 var(--display);
+  margin: 0 0 0.75rem;
+}
+
+.path ol { margin: 0; padding-left: 1.5rem; }
+.path li { margin-bottom: 0.4rem; }
+.path .reply { color: var(--brass); font-weight: 700; }
+.path .left { color: var(--vellum-dim); font-size: 0.9rem; }
+
+footer {
+  margin-top: auto;
+  padding: 3rem 0 1.5rem;
+  max-width: 34rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--vellum-dim);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .token, .token .art, .answer { transition: none; }
+}
