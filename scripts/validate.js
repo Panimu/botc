@@ -208,4 +208,4 @@ async function main() {
   console.log(`Games ending without a single character: ${sim.unresolved} (${((100 * sim.unresolved) / sim.games).toFixed(1)}%)${sim.unresolved ? `, ${sim.meanLeftOver.toFixed(1)} characters left on average` : ''}.`);
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) await main();
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await main();
