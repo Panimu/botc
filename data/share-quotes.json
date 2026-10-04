@@ -1,0 +1,626 @@
+{
+  "acrobat": {
+    "voice": "Elle",
+    "quote": "Dying of someone else's hangover. In my day you at least had to go to the party."
+  },
+  "alchemist": {
+    "voice": "Prepotente",
+    "quote": "You turned the villains' own weapon against them! Prepotente weeps with joy! PREPOTENTE STOPS WEEPING, BECAUSE THE STORYTELLER JUST TOLD YOU TO PICK SOMEONE ELSE!"
+  },
+  "alhadikhia": {
+    "voice": "Carl",
+    "quote": "You read out three names and let them sort it out like a group project: somebody volunteers to die, or all three do. You weaponised the trust fall."
+  },
+  "alsaahir": {
+    "voice": "Mordecai",
+    "quote": "You can win the whole game by standing up and naming the Demon and every Minion. You can also lose every friend you have by doing it wrong at lunch. Same speech."
+  },
+  "amnesiac": {
+    "voice": "The System AI",
+    "quote": "Your ability has been redacted for entertainment purposes. Warmer, colder, colder, oh, you died. It was a really good one, too."
+  },
+  "apprentice": {
+    "voice": "Princess Donut",
+    "quote": "I don't arrive with a skill. I arrive and a skill is GIVEN to me. That's called being discovered."
+  },
+  "artist": {
+    "voice": "Carl",
+    "quote": "You get one yes-or-no question from the person who knows literally everything, and you spend twenty minutes wording it like a contract lawyer."
+  },
+  "assassin": {
+    "voice": "Samantha",
+    "quote": "ONE kill? Only ONE? Through any protection in the land? Make it count, little stabber, or I'll roll over there and do it myself!"
+  },
+  "atheist": {
+    "voice": "Carl",
+    "quote": "Your win condition is getting a room full of paranoid people to execute the referee. I respect it. I've wanted that since floor one."
+  },
+  "balloonist": {
+    "voice": "Carl",
+    "quote": "One name a night, each a different character type from the night before. You're collecting the whole set, and one of the cards eats people."
+  },
+  "banshee": {
+    "voice": "Samantha",
+    "quote": "THE DEMON MURDERED YOU AND YOU CAME BACK SCREAMING WITH TWO VOTES! Samantha has never respected anyone more. Apart from Samantha."
+  },
+  "barber": {
+    "voice": "Elle",
+    "quote": "You die and somebody wakes up as a whole new person. I've been to funerals like that. There's always a long-lost nephew nobody recognises."
+  },
+  "barista": {
+    "voice": "Carl",
+    "quote": "You don't choose anything. Every night the Storyteller makes someone's ability work twice and calls it your contribution. You're on the payroll for standing near the machine."
+  },
+  "baron": {
+    "voice": "Carl",
+    "quote": "Your entire ability is inviting two extra weirdos to the party. You didn't even bring a dip."
+  },
+  "beggar": {
+    "voice": "Carl",
+    "quote": "You can't vote unless a dead player hands you their token. Your entire political career depends on the kindness of ghosts."
+  },
+  "bishop": {
+    "voice": "Prepotente",
+    "quote": "Prepotente ALSO believes only one voice should choose who stands accused! Prepotente simply believes that voice should belong to a GOAT!"
+  },
+  "boffin": {
+    "voice": "Elle",
+    "quote": "You took a perfectly nice good-guy ability and stapled it onto the Demon. This is what happens when nerds get bored."
+  },
+  "bonecollector": {
+    "voice": "Mordecai",
+    "quote": "Bring back the dead Slayer and you might get a shot. Bring back the dead Chef and he'll proudly repeat his number from the first night."
+  },
+  "boomdandy": {
+    "voice": "Princess Donut",
+    "quote": "Everyone's dead, three are left, and they're pointing fingers on a countdown. I've hosted reunion specials gentler than this."
+  },
+  "bountyhunter": {
+    "voice": "Mordecai",
+    "quote": "You start out knowing one evil player. Get them killed and the Storyteller hands you a fresh one. It's a subscription service, and the product is corpses."
+  },
+  "bureaucrat": {
+    "voice": "Zev",
+    "quote": "We've had feedback that Bureaucrat days feel 'rigged'. We prefer the word 'curated'."
+  },
+  "butcher": {
+    "voice": "Samantha",
+    "quote": "TWO EXECUTIONS IN ONE DAY! At last, someone in this town understands portion sizes!"
+  },
+  "butler": {
+    "voice": "Carl",
+    "quote": "You can only vote if your master votes. You're the plus-one of democracy."
+  },
+  "cacklejack": {
+    "voice": "Elle",
+    "quote": "The one person you pick is safe, and the rest of the town is in line for a surprise makeover. I'd pay good money to watch the Mayor wake up as the Saint."
+  },
+  "cannibal": {
+    "voice": "Mordecai",
+    "quote": "Nobody tells you when you've eaten an evil one. Your new ability just quietly starts lying to you, which means the town finally got one right."
+  },
+  "cerenovus": {
+    "voice": "Carl",
+    "quote": "You make people pretend to be a character they're not, or else. You're a community theatre director with an execution budget."
+  },
+  "chambermaid": {
+    "voice": "Princess Donut",
+    "quote": "You count who woke up in the night? I wake up FOUR times a night, and I will thank you not to put that on a clipboard."
+  },
+  "chef": {
+    "voice": "Princess Donut",
+    "quote": "Evil people sitting TOGETHER? How tacky. Villains should spread out and mingle, darling. It's basic seating etiquette."
+  },
+  "choirboy": {
+    "voice": "Carl",
+    "quote": "You learn who the Demon is the moment it murders the King, so every night you're quietly hoping your monarch dies. Very holy of you."
+  },
+  "clockmaker": {
+    "voice": "Elle",
+    "quote": "One number on the first night, and then you just sit there like a grandfather clock. I've dated livelier furniture."
+  },
+  "courtier": {
+    "voice": "Carl",
+    "quote": "You don't pick a person, you pick a job title, and then you get it drunk for three days. You're the guy who sends a round over to 'whoever the Poisoner is'."
+  },
+  "cultleader": {
+    "voice": "Zev",
+    "quote": "Legally we have to call it a 'community engagement initiative'. But yes, you're running a cult, and the matching outfits are testing very well."
+  },
+  "damsel": {
+    "voice": "Mordecai",
+    "quote": "Look too important and a Minion says your name. Look too quiet and a Minion says your name. Look like a Chef."
+  },
+  "deviant": {
+    "voice": "Carl",
+    "quote": "Your survival depends on being funny. I've heard your jokes. Please start packing."
+  },
+  "devilsadvocate": {
+    "voice": "Odette",
+    "quote": "The town executed your client and he walked off the stage smiling. Tell me your fee. I'm asking on behalf of several of my guests."
+  },
+  "dreamer": {
+    "voice": "Carl",
+    "quote": "You learn that someone is either a Sage or a Vigormortis. That's a weather forecast that says sunshine or meteor."
+  },
+  "drunk": {
+    "voice": "Elle",
+    "quote": "You don't even know you're drunk, sweetie. That's the purest kind. Most of us have to practise."
+  },
+  "empath": {
+    "voice": "Elle",
+    "quote": "A one means one of the two people beside you is evil. At my age, those are excellent odds for a dinner party."
+  },
+  "engineer": {
+    "voice": "Prepotente",
+    "quote": "YOU REBUILT THE VILLAINS WITH YOUR OWN HANDS! Prepotente respects a craftsman. Prepotente does NOT respect a craftsman who somehow built them a BETTER Demon!"
+  },
+  "eviltwin": {
+    "voice": "Carl",
+    "quote": "You and a good player know each other, and the town has to work out which of you is lying. It's a custody battle where one parent is a Minion."
+  },
+  "exorcist": {
+    "voice": "Mordecai",
+    "quote": "A quiet night means you probably found it. A Demon staring at you across the square means you definitely found it."
+  },
+  "fanggu": {
+    "voice": "Carl",
+    "quote": "One morning the real Demon is lying dead and nobody realises. You're the Recluse now, and for once the Fortune Teller's yes is correct."
+  },
+  "farmer": {
+    "voice": "Mongo",
+    "quote": "MONGO! [Mongo is sad the Farmer died, then happy because there is a new Farmer. Mongo does not fully understand death.]"
+  },
+  "fearmonger": {
+    "voice": "The System AI",
+    "quote": "Alert: the Fearmonger has chosen a new player. Identity withheld. Please panic at a sustainable pace."
+  },
+  "fisherman": {
+    "voice": "Princess Donut",
+    "quote": "A private meeting with the Storyteller, and you used it for ADVICE? I would have used it to give notes."
+  },
+  "flowergirl": {
+    "voice": "The System AI",
+    "quote": "Flowergirl report: a Demon voted today! Unfortunately, so did eleven other people. Please enjoy your flowers."
+  },
+  "fool": {
+    "voice": "Elle",
+    "quote": "They killed you and you just didn't die. Sweetie, I've been doing that for eighty years and my doctors are furious."
+  },
+  "fortuneteller": {
+    "voice": "Princess Donut",
+    "quote": "A crystal ball AND a red herring? Darling, I adore herring. Hand me the red one, I'll eat it, and your little problem is solved."
+  },
+  "gambler": {
+    "voice": "Princess Donut",
+    "quote": "Gambling with your own life? Darling, I only ever gamble with Carl's."
+  },
+  "gangster": {
+    "voice": "Odette",
+    "quote": "Every murder needs a co-signer. Darling, you've turned homicide into a mortgage."
+  },
+  "general": {
+    "voice": "The System AI",
+    "quote": "Nightly update: 'neither'. The AI hates that answer. 'Neither' has never once made anybody cry."
+  },
+  "gnome": {
+    "voice": "Princess Donut",
+    "quote": "I also have a designated friend nobody may accuse without consequences. His name is Carl, and the consequence is me."
+  },
+  "goblin": {
+    "voice": "Prepotente",
+    "quote": "Prepotente is THE GOBLIN! Prepotente declares it! Now execute Prepotente, cowards, or live forever knowing you were afraid of a goat!"
+  },
+  "godfather": {
+    "voice": "Carl",
+    "quote": "You only get to kill after an Outsider dies in daylight. Your business model is the town being mean to the weird kids."
+  },
+  "golem": {
+    "voice": "Mongo",
+    "quote": "Mongo! MONGO! [Mongo pointed at someone. They were not the Demon. They are now flat.]"
+  },
+  "goon": {
+    "voice": "Elle",
+    "quote": "You side with whoever bothers you first, and they wake up woozy. Sweetie, that's how I picked my bowling team."
+  },
+  "gossip": {
+    "voice": "Princess Donut",
+    "quote": "Darling, I've been saying true and devastating things about people for YEARS and nobody died. Well. Careers died."
+  },
+  "grandmother": {
+    "voice": "The System AI",
+    "quote": "Limited-time offer for Demons: kill one specific good player and receive their grandmother absolutely free."
+  },
+  "gunslinger": {
+    "voice": "Carl",
+    "quote": "After the first vote is tallied, you can shoot anyone who voted. Every hand that went up was a hand that volunteered."
+  },
+  "harlot": {
+    "voice": "The System AI",
+    "quote": "Mutual Disclosure Agreement offered! Accept to share your character with the Harlot. Risk of death applies to both parties. The System calls this 'networking'."
+  },
+  "harpy": {
+    "voice": "Princess Donut",
+    "quote": "Forcing someone to insist their best friend is evil, in public? I did that to a Pomeranian once. Purely for sport."
+  },
+  "hatter": {
+    "voice": "Mordecai",
+    "quote": "Your death hands evil a wardrobe change. Hope they don't pick something worse. They will."
+  },
+  "heretic": {
+    "voice": "Princess Donut",
+    "quote": "Victory is defeat and defeat is victory? I have lost exactly zero times in my life, and I am NOT starting to win by losing."
+  },
+  "hermit": {
+    "voice": "Carl",
+    "quote": "You have every Outsider ability on the script at once. Somebody emptied the junk drawer and called it a character."
+  },
+  "highpriestess": {
+    "voice": "The System AI",
+    "quote": "Tonight's divine guidance: go and talk to the quiet one in the corner. The gods will not say why. The gods think it's funnier this way."
+  },
+  "huntsman": {
+    "voice": "Prepotente",
+    "quote": "ONE ARROW, ONE CHANCE! Prepotente once hunted a damsel for six days and it turned out to be a hat stand. CHOOSE WISELY!"
+  },
+  "imp": {
+    "voice": "The System AI",
+    "quote": "Starpass detected! Your Minion has been promoted to Demon, effective immediately. Your severance package is a coffin."
+  },
+  "innkeeper": {
+    "voice": "Princess Donut",
+    "quote": "Guaranteed survival, and one lucky guest gets drunk for free? Four stars. The pillows were tragic."
+  },
+  "investigator": {
+    "voice": "Odette",
+    "quote": "You walked in knowing one of two people was a Minion, darling. I'd love to hear how long you let the innocent one sweat. My guess is all afternoon."
+  },
+  "judge": {
+    "voice": "Princess Donut",
+    "quote": "I have overruled Carl's decisions for years. Apparently that's a whole Traveller now, and I'm only allowed to do it once."
+  },
+  "juggler": {
+    "voice": "The System AI",
+    "quote": "Day one: guess five characters in public. That night: learn your score. Unfortunately, the player you correctly called 'Imp' was also listening."
+  },
+  "kazali": {
+    "voice": "Carl",
+    "quote": "Every other Demon gets handed a team. You walk around the room on night one picking your Minions like it's gym class."
+  },
+  "king": {
+    "voice": "Mordecai",
+    "quote": "Your power doesn't kick in until half the town is dead. So your job is surviving long enough to rule a graveyard."
+  },
+  "klutz": {
+    "voice": "Princess Donut",
+    "quote": "Darling, I would never point at someone I hadn't thoroughly vetted. I have standards. You, apparently, have a finger and a dream."
+  },
+  "knight": {
+    "voice": "The Host",
+    "quote": "Ladies and gentlemen, our Knight enters the arena with two confirmed non-Demons and absolutely no idea what to do with them!"
+  },
+  "legion": {
+    "voice": "Mordecai",
+    "quote": "Executions fail if only evil votes, so you need a good hand up every time. You're an army that still needs a permission slip."
+  },
+  "leviathan": {
+    "voice": "The System AI",
+    "quote": "Loyalty Programme: the town's first innocent execution is free! The second one ends the game. Points expire after day five."
+  },
+  "librarian": {
+    "voice": "Carl",
+    "quote": "Your big reveal is that one of two people is the Butler. That's the information. A Butler."
+  },
+  "lilmonsta": {
+    "voice": "Mongo",
+    "quote": "Mongo! Mongo mongo! [Mongo would like to babysit. Mongo has been told dinosaurs eat babies. Mongo says that was one time.]"
+  },
+  "lleech": {
+    "voice": "Mordecai",
+    "quote": "You've latched onto one poor sap and you only die when they do. So the town's best move is murdering an innocent. Watch them hate it."
+  },
+  "lordoftyphon": {
+    "voice": "Odette",
+    "quote": "Some call it cosmic horror. I say you just wanted Minions you could reach without getting up."
+  },
+  "lunatic": {
+    "voice": "Odette",
+    "quote": "You told your Minions they could trust you. They nodded politely. They were not your Minions. Look into camera two, darling, and tell me how that felt."
+  },
+  "lycanthrope": {
+    "voice": "The System AI",
+    "quote": "Patch notes: the town werewolf now eats only good people, and when it does, the Demon takes the night off. The Demon thanks you for covering its shift."
+  },
+  "magician": {
+    "voice": "Carl",
+    "quote": "The Minions think you're the Demon and the Demon thinks you're a Minion. Somewhere there's a very awkward evil group chat trying to work out who's in charge."
+  },
+  "marionette": {
+    "voice": "Mordecai",
+    "quote": "If your neighbour has been weirdly supportive all game, I have bad news about who you work for."
+  },
+  "mastermind": {
+    "voice": "The Host",
+    "quote": "The Demon is dead! Good wins! Hold on, folks, something in my earpiece... A Mastermind! Back to your seats, we're going into overtime!"
+  },
+  "mathematician": {
+    "voice": "Mongo",
+    "quote": "Mongo! [Mongo counted the broken things. Mongo got four. Mongo can only count to four, so the real number may be higher.]"
+  },
+  "matron": {
+    "voice": "Mordecai",
+    "quote": "Swap the seats and the neighbours change. There goes the Empath's reading, and any Demon who cared who sat beside them. You're a menace in a cardigan."
+  },
+  "mayor": {
+    "voice": "Zev",
+    "quote": "Our sponsors love a politician whose security plan is 'someone else, probably'. Polling is through the roof among voters who are still alive."
+  },
+  "mezepheles": {
+    "voice": "Odette",
+    "quote": "You spent all afternoon trying to get the Monk to say 'cauliflower'. Walk me through that conversation. Every word."
+  },
+  "minstrel": {
+    "voice": "Mordecai",
+    "quote": "Your ability only fires if the corpse was a Minion. Otherwise you're just a man with a lute at a public hanging."
+  },
+  "monk": {
+    "voice": "Princess Donut",
+    "quote": "Choose me every night, obviously. If I wake up murdered it will be YOUR fault, and my fans know where you sleep."
+  },
+  "moonchild": {
+    "voice": "Elle",
+    "quote": "You died, you pointed, and the nice girl who believed you all game was found dead by morning. Petty from beyond the grave. I've got a sister-in-law like that."
+  },
+  "mutant": {
+    "voice": "Zev",
+    "quote": "From a branding standpoint, the Mutant is a nightmare. You're contractually forbidden from discussing your own product. Please stay on message. The message is: definitely a Chef."
+  },
+  "nightwatchman": {
+    "voice": "Elle",
+    "quote": "Once a game you sneak to somebody's door at night just to tell them your name. I did that in 1974. Married him, too. Worst ability I ever used."
+  },
+  "noble": {
+    "voice": "Odette",
+    "quote": "You dined with three guests knowing one of them was evil, darling, and you still passed the salt to all of them. That's breeding."
+  },
+  "nodashii": {
+    "voice": "Princess Donut",
+    "quote": "Sitting next to me is an HONOUR, and it also poisons you. I refuse to believe those two facts are related."
+  },
+  "ogre": {
+    "voice": "Mongo",
+    "quote": "Mongo? MONGO! [Mongo has chosen Carl as his best friend and will be whatever Carl is, forever, no questions asked.]"
+  },
+  "ojo": {
+    "voice": "Odette",
+    "quote": "Someone proudly announces their character in the square and you make a little note. Darling, you're the only Demon who reads the minutes."
+  },
+  "oracle": {
+    "voice": "The System AI",
+    "quote": "Ghost census results. Evil dead: 0. Good dead: everybody you vouched for."
+  },
+  "organgrinder": {
+    "voice": "Princess Donut",
+    "quote": "Votes in the dark and a secret count that nobody can check? That's how they do pageant results, darling, and I've been robbed THREE times."
+  },
+  "pacifist": {
+    "voice": "Princess Donut",
+    "quote": "An execution where nobody dies is simply a dress rehearsal, and this town has needed more of those for ages."
+  },
+  "philosopher": {
+    "voice": "Carl",
+    "quote": "You pick any good ability on the script and take it. Somewhere a Fortune Teller is now drunk, getting garbage results and blaming the Red Herring."
+  },
+  "pithag": {
+    "voice": "Samantha",
+    "quote": "You can make a DEMON? Out of some nobody?! Do it! Do it tonight! I want the arbitrary deaths! ALL OF THEM!"
+  },
+  "pixie": {
+    "voice": "Carl",
+    "quote": "Your ability is insisting you are someone else and waiting for them to die so you can have their stuff. In the dungeon we call that estate planning."
+  },
+  "plaguedoctor": {
+    "voice": "Zev",
+    "quote": "Great news! When you die, your ability goes to an exciting new talent: the Storyteller. Please sign this release so we can use your death in the promo."
+  },
+  "po": {
+    "voice": "Princess Donut",
+    "quote": "Saving up for one big night out is EXACTLY how I approach my wardrobe. Restraint, restraint, then total devastation."
+  },
+  "poisoner": {
+    "voice": "Mordecai",
+    "quote": "Poison whoever looks smug at breakfast. Smug people have information. Let them spend the day being smug about garbage."
+  },
+  "politician": {
+    "voice": "Carl",
+    "quote": "You're the only character whose best move is sabotage with plausible deniability. If anyone asks, you were just really, really bad at this."
+  },
+  "poppygrower": {
+    "voice": "Prepotente",
+    "quote": "BEHOLD the gardener who keeps the villains blind as moles! When you perish, they will find each other and HUG. It will be disgusting. AAAAAH!"
+  },
+  "preacher": {
+    "voice": "The System AI",
+    "quote": "Sermon delivered to: 1 Minion. Ability: confiscated. Minion: asking to speak with management."
+  },
+  "princess": {
+    "voice": "Princess Donut",
+    "quote": "A PRINCESS who orders an execution on day one and stops a murder that very night. Finally, a character written by someone who understands me."
+  },
+  "professor": {
+    "voice": "Princess Donut",
+    "quote": "Resurrection is wasted on most people. I would only bring back someone who still owes me an apology."
+  },
+  "psychopath": {
+    "voice": "Samantha",
+    "quote": "Every day! In public! You point and they DIE! And if they try to execute you, it's ROCK PAPER SCISSORS?! I love you. I love you so much."
+  },
+  "pukka": {
+    "voice": "The System AI",
+    "quote": "Your kill has been scheduled for delivery tomorrow night. The recipient will spend today feeling 'a bit off'. No tracking number is available."
+  },
+  "puzzlemaster": {
+    "voice": "The System AI",
+    "quote": "Puzzle solved? Here is your Demon! Puzzle not solved? Here is also your Demon! Good luck telling them apart!"
+  },
+  "ravenkeeper": {
+    "voice": "Mordecai",
+    "quote": "Act important enough to get murdered and not important enough to get hanged. It's a narrow window. Most Ravenkeepers fall out of it."
+  },
+  "recluse": {
+    "voice": "Elle",
+    "quote": "Everybody's sure you're the Demon because you keep to yourself and smell like a swamp. Sweetie, that's just retirement."
+  },
+  "riot": {
+    "voice": "Prepotente",
+    "quote": "THE MASSES RISE! Prepotente has always said this town should destroy itself! Prepotente simply did not expect it to happen so efficiently, and on a schedule!"
+  },
+  "sage": {
+    "voice": "The System AI",
+    "quote": "Achievement: Last Words. Your killer is one of two people. The other one is about to have a very bad afternoon."
+  },
+  "sailor": {
+    "voice": "Princess Donut",
+    "quote": "An immortal pirate who gets people sloshed for fun. I have found Carl's role model and I hate it."
+  },
+  "saint": {
+    "voice": "Carl",
+    "quote": "Your special power is that if the town makes one mistake about you, everybody loses. You're a landmine in sandals."
+  },
+  "savant": {
+    "voice": "The System AI",
+    "quote": "Today's Savant briefing: 'The Demon sits to your left.' 'Your hair looks great.' One of these is a lie. We'll let you sit with that."
+  },
+  "scapegoat": {
+    "voice": "Prepotente",
+    "quote": "A GOAT, DYING FOR THE SINS OF OTHERS? Prepotente is a goat and Prepotente REFUSES! Prepotente has sins of his own to commit!"
+  },
+  "scarletwoman": {
+    "voice": "Princess Donut",
+    "quote": "You only take the throne if five or more players are still alive? Darling, I don't perform for smaller audiences either."
+  },
+  "seamstress": {
+    "voice": "Elle",
+    "quote": "You pick two people and find out if they're on the same team. I used to do that at church picnics with nothing but a pie and one eyebrow."
+  },
+  "shabaloth": {
+    "voice": "The System AI",
+    "quote": "Product Recall: one of last night's victims has been returned to the town in used condition. The Shabaloth regrets nothing and is still hungry."
+  },
+  "shugenja": {
+    "voice": "Princess Donut",
+    "quote": "Evil is clockwise, they told me. Carl, EVERYONE is clockwise if you keep going long enough."
+  },
+  "slayer": {
+    "voice": "The System AI",
+    "quote": "Slayer shot missed. The target is alive, apparently not the Demon, and will now be insufferable about it."
+  },
+  "snakecharmer": {
+    "voice": "The System AI",
+    "quote": "Snake charm successful. You have switched teams and job titles. HR has been notified. HR is also evil now."
+  },
+  "snitch": {
+    "voice": "Carl",
+    "quote": "Your ability gives the evil team more ways to lie. You're the good guy who shows up at the enemy base with a gift basket."
+  },
+  "soldier": {
+    "voice": "Mongo",
+    "quote": "MONGO! [Mongo bit the Soldier. Nothing happened. Mongo is very confused, and also not the Demon.]"
+  },
+  "spy": {
+    "voice": "Carl",
+    "quote": "You see the whole Grimoire every night, and the hardest part of your job is acting surprised when the Washerwoman shares her clue."
+  },
+  "steward": {
+    "voice": "The System AI",
+    "quote": "Steward package delivered: one verified good player. Note: being good does not make them smart."
+  },
+  "summoner": {
+    "voice": "Carl",
+    "quote": "For two whole nights there's no Demon, just you and a hiring decision. The town has no idea it's living through the interview process."
+  },
+  "sweetheart": {
+    "voice": "Samantha",
+    "quote": "When you die, someone becomes useless FOREVER? What a gift! I would kill you myself just to find out who!"
+  },
+  "tealady": {
+    "voice": "The System AI",
+    "quote": "Execution failed: target protected by Earl Grey. The Assassin has been briefed and is putting the kettle on."
+  },
+  "thief": {
+    "voice": "Mordecai",
+    "quote": "Pick the loudest voter. Tomorrow their vote counts backwards, and they'll spend all day wondering why every argument they win still loses."
+  },
+  "tinker": {
+    "voice": "The System AI",
+    "quote": "Tinker status: alive. Tinker status: alive. Tinker status: dead. Reason given: narrative pacing."
+  },
+  "towncrier": {
+    "voice": "Princess Donut",
+    "quote": "I have been a town crier my whole life, Carl. I simply cried about different things, mostly the food."
+  },
+  "undertaker": {
+    "voice": "The System AI",
+    "quote": "Autopsy complete. Cause of death: the town. Character: Virgin. Mood in the square: sheepish."
+  },
+  "vigormortis": {
+    "voice": "Carl",
+    "quote": "You kill your own Minions and they keep working. You found a way to make dead employees do overtime."
+  },
+  "villageidiot": {
+    "voice": "The System AI",
+    "quote": "Bonus Village Idiots have spawned. One of them is drunk. Each of them is certain it's one of the others."
+  },
+  "virgin": {
+    "voice": "Odette",
+    "quote": "The first Townsfolk who dares point at you dies on the spot. Most of my guests spend years building that kind of reputation."
+  },
+  "vizier": {
+    "voice": "The System AI",
+    "quote": "Vote tallied: one good hand detected. The Vizier has ruled the execution valid. Mathematics is now optional."
+  },
+  "vortox": {
+    "voice": "Princess Donut",
+    "quote": "Under the Vortox, the Fortune Teller swore I was the Demon. Normally I'd be insulted. This week it's the nicest thing anyone has said about me."
+  },
+  "voudon": {
+    "voice": "The System AI",
+    "quote": "Election Update: only the Voudon and the dead may vote. No tokens, no majority required. Turnout among corpses is at a record high."
+  },
+  "washerwoman": {
+    "voice": "Princess Donut",
+    "quote": "They give me two names and one character and expect me to sort it out. Carl, I don't do laundry. I have PEOPLE for laundry."
+  },
+  "widow": {
+    "voice": "Elle",
+    "quote": "Widow? I've been one twice. You get a good long look at everybody's business, then somebody gets poisoned. Sounds about right."
+  },
+  "witch": {
+    "voice": "Carl",
+    "quote": "Thanks to you, every nomination is a game of chicken. Nobody knows who's cursed, so the bravest person in town is also, potentially, the deadest."
+  },
+  "wizard": {
+    "voice": "Princess Donut",
+    "quote": "ONE wish? Darling, I'd need at least seven, and two of them are for the hair."
+  },
+  "wraith": {
+    "voice": "Elle",
+    "quote": "Spooky ghost, my foot. You're the neighbour behind the curtains with binoculars, and somebody finally made it a job."
+  },
+  "xaan": {
+    "voice": "Mordecai",
+    "quote": "Count the Outsiders. That's the night every Townsfolk wakes up wrong. If there are none, you're a very expensive houseplant."
+  },
+  "yaggababble": {
+    "voice": "Princess Donut",
+    "quote": "A secret phrase that kills people when I say it. I've said 'Carl, you're embarrassing me' twelve times a day for months. This explains SO much."
+  },
+  "zealot": {
+    "voice": "Prepotente",
+    "quote": "YES! Prepotente votes YES! What was the question? IRRELEVANT! Conviction does not wait for details!"
+  },
+  "zombuul": {
+    "voice": "The System AI",
+    "quote": "Announcement: the Zombuul is dead. The Zombuul is also fine. Both statements are true, and the town only heard the first one."
+  }
+}
