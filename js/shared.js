@@ -16,6 +16,8 @@ const GOOD_TEAMS = new Set(['townsfolk', 'outsider']);
 export const side = (team) => (GOOD_TEAMS.has(team) ? 'good' : EVIL_TEAMS.has(team) ? 'evil' : 'other');
 export const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
 export const teamLabel = (team) => TEAMS.find((t) => t.id === team)?.label ?? team;
+// Team markers for shared text, matching the circle's bead colours.
+export const TEAM_EMOJI = { townsfolk: '🔵', outsider: '🟢', minion: '🟠', demon: '🔴', traveller: '🟡' };
 
 export async function loadJson(path) {
   const response = await fetch(path);

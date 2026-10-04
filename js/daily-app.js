@@ -117,16 +117,29 @@ function start(characters, questions, clockOffset) {
     $('path').hidden = playing || count === 0;
   }
 
+  // Spoiler-free: 👍/👎 per answer, 🪦 per wrong guess (an innocent executed),
+  // 🎯 for the right guess, 🔍 when the questions alone found it, 💀 for a loss.
   function shareTexts() {
     const nl = String.fromCharCode(10);
-    const plain = shareText();
-    const [title, marks, ...rest] = plain.split(nl);
-    return { plain, url: location.href.split(/[?#]/)[0], discord: [`**${title}**`, marks, ...rest].join(nl) };
+    const url = location.href.split(/[?#]/)[0];
+    const solvedByQuestions = game.status === 'won' && Boolean(actions.at(-1)?.ask);
+    const answers = game.history.map((h) => (h.answer ? '👍' : '👎')).join('');
+    const guesses = '🪦'.repeat(game.wrongGuesses.length);
+    const finish = game.status === 'won' ? (solvedByQuestions ? '🔍' : '🎯') : '💀';
+    const marks = [answers, guesses, finish].filter(Boolean).join(' ');
+    const { current } = streaks(store.get(RESULTS_KEY, {}), date);
+    const verdict = game.status === 'won' ? `🎯 Found in ${game.score}` : '💀 The town failed';
+    const streak = current > 1 ? ` | 🔥 ${current}-day streak` : '';
+    return {
+      url,
+      plain: shareText(),
+      discord: [`🕰️ **Clocktower Daily Hunt #${game.number}**`, `${verdict}${streak}`, marks, `<${url}>`].join(nl),
+    };
   }
 
   function shareText() {
-    const marks = game.history.map((h) => (h.answer ? '🟦' : '⬛')).join('')
-      + '❌'.repeat(game.wrongGuesses.length) + (game.status === 'won' ? '✅' : '');
+    const marks = game.history.map((h) => (h.answer ? '👍' : '👎')).join('')
+      + '🪦'.repeat(game.wrongGuesses.length) + (game.status === 'won' ? '🎯' : '💀');
     const verdict = game.status === 'won' ? `found in ${game.score}` : 'not found';
     const { current } = streaks(store.get(RESULTS_KEY, {}), date);
     return [`Clocktower daily hunt #${game.number}: ${verdict}`, marks, current > 1 ? `Streak: ${current}` : '', location.href.split(/[?#]/)[0]]

@@ -1,6 +1,6 @@
 import { Game } from './engine.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
-import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson, setupShare } from './shared.js?v=dev';
+import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson, setupShare, TEAM_EMOJI } from './shared.js?v=dev';
 
 function renderPath(game) {
   $('path-list').replaceChildren(...game.history.map((h, i) => {
@@ -75,7 +75,11 @@ function start(characters, questions, shareQuotes) {
     texts = {
       url,
       plain: [`I'm the ${result.name} (${team}) in Which Clocktower character are you?`, quote ? `"${quote.quote}" (${quote.voice})` : '', url].filter(Boolean).join(nl),
-      discord: [`**I'm the ${result.name}** (${team}) in *Which Clocktower character are you?*`, quote ? `> ${quote.quote}${nl}> *${quote.voice}*` : '', url].filter(Boolean).join(nl),
+      discord: [
+        `🕰️ **I'm the ${result.name}!** ${TEAM_EMOJI[result.team] ?? ''} ${team}`,
+        quote ? `> ${quote.quote}${nl}> *${quote.voice}*` : '',
+        `🔮 Which Clocktower character are you? ${url}`,
+      ].filter(Boolean).join(nl),
     };
   }
   setupShare($('share-options'), $('share-status'), () => texts);
