@@ -146,8 +146,19 @@ function start(characters, questions) {
     if (focus) $('question-text').focus();
   }
 
+  // Keep the hover fill off the button just pressed until the pointer moves,
+  // so it doesn't look like the new question is already answered.
+  const answers = $('answers');
+  let answeredAt = 0;
+  answers.addEventListener('pointermove', () => {
+    if (performance.now() - answeredAt > 250) answers.classList.remove('settling');
+  });
+  answers.addEventListener('pointerleave', () => answers.classList.remove('settling'));
+
   function answer(yes) {
     if (game.done) return;
+    answers.classList.add('settling');
+    answeredAt = performance.now();
     const before = game.pool.length;
     game.answer(yes);
     feedback = `That answer ruled out ${plural(before - game.pool.length, 'character')}.`;

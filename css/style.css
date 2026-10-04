@@ -197,7 +197,13 @@ button:focus-visible {
   font: 700 1.35rem/1.2 var(--serif);
 }
 
-.answer:hover { background: var(--brass); color: var(--panel); }
+/* Touch screens keep :hover after a tap, so only real pointers get it, and it's
+   suppressed after answering until the pointer moves (see .settling in app.js). */
+@media (hover: hover) {
+  .answers:not(.settling) .answer:hover { background: var(--brass); color: var(--panel); }
+}
+
+.answer:active { background: var(--brass); color: var(--panel); }
 
 .quiet {
   min-height: 2.75rem;
