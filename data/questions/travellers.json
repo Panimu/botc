@@ -148,7 +148,7 @@
   {
     "id": "tfl-rearrange-the-seats",
     "plain": "Would you like to rearrange where people sit around the circle?",
-    "dinniman": "Master Carl, you will sit THERE. Lady Katia, beside the window. No, I don't care that you were comfortable. Would you like to rearrange where people sit around the circle?",
+    "dinniman": "Human, you will sit THERE. You, the tall one, beside the window. No, I don't care that you were comfortable. Would you like to rearrange where people sit around the circle?",
     "voice": "Princess Donut",
     "yes": [
       "matron"
@@ -248,7 +248,7 @@
   {
     "id": "tfl-alms-for-a-vote",
     "plain": "Would you be content to vote only when someone hands you their vote token?",
-    "dinniman": "Spare a token, guv? Bless you! Look at me, Carl, I'm an ACTOR. A tragic, starving actor who can only vote on charity. Would you be content to vote only when someone hands you their vote token?",
+    "dinniman": "Spare a token, guv? Bless you! Look at me, human, I'm an ACTOR. A tragic, starving actor who can only vote on charity. Would you be content to vote only when someone hands you their vote token?",
     "voice": "Princess Donut",
     "yes": [
       "beggar"
@@ -320,7 +320,7 @@
   {
     "id": "tfl-everyone-knows-your-friend",
     "plain": "Would you like the whole town to start the game knowing a player who shares your alignment?",
-    "dinniman": "Mongo! Mongo stomp! (Mongo means everyone already knows who his best friend is, and they'd better not lay a finger on them.) Would you like the whole town to start the game knowing a player who shares your alignment?",
+    "dinniman": "RAWR! Stomp stomp! (He means everyone already knows who his best friend is, and they'd better not lay a finger on them.) Would you like the whole town to start the game knowing a player who shares your alignment?",
     "voice": "Mongo",
     "yes": [
       "gnome"

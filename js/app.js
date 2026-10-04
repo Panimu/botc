@@ -7,7 +7,7 @@ function renderPath(game) {
     const [yesLabel, noLabel] = h.question.options ?? ['Yes', 'No'];
     const after = i + 1 < game.history.length ? game.history[i + 1].pool.length : game.pool.length;
     const li = el('li');
-    li.append(`${h.question.dinniman} `, el('span', 'reply', h.answer ? yesLabel : noLabel), el('span', 'left', ` (${h.pool.length} left, then ${after})`), el('span', 'path-id', ` ${h.question.id}`));
+    li.append(`${h.question.styled} `, el('span', 'reply', h.answer ? yesLabel : noLabel), el('span', 'left', ` (${h.pool.length} left, then ${after})`), el('span', 'path-id', ` ${h.question.id}`));
     return li;
   }));
 }
@@ -56,7 +56,7 @@ function start(characters, questions, shareQuotes) {
     announcer.textContent = `No question can tell these apart yet. You are the ${names}.`;
   }
 
-  // Share: copy buttons, Discord first, with the character's quote in a Dungeon Crawler Carl voice.
+  // Share: copy buttons, Discord first, with the character's quote.
   let texts = { discord: '', plain: '', url: '' };
   function renderShare(result) {
     $('share-options').hidden = !result;
@@ -66,7 +66,6 @@ function start(characters, questions, shareQuotes) {
     const quote = shareQuotes[result.id];
     if (quote) {
       $('share-quote-text').textContent = quote.quote;
-      $('share-quote-voice').textContent = quote.voice;
       $('share-quote').hidden = false;
     }
     const url = location.href.split(/[?#]/)[0];
@@ -74,10 +73,10 @@ function start(characters, questions, shareQuotes) {
     const nl = String.fromCharCode(10);
     texts = {
       url,
-      plain: [`I'm the ${result.name} (${team}) in Which Clocktower character are you?`, quote ? `"${quote.quote}" (${quote.voice})` : '', url].filter(Boolean).join(nl),
+      plain: [`I'm the ${result.name} (${team}) in Which Clocktower character are you?`, quote ? `"${quote.quote}"` : '', url].filter(Boolean).join(nl),
       discord: [
         `🕰️ **I'm the ${result.name}!** ${TEAM_EMOJI[result.team] ?? ''} ${team}`,
-        quote ? `> ${quote.quote}${nl}> *${quote.voice}*` : '',
+        quote ? `> ${quote.quote}` : '',
         `🔮 Which Clocktower character are you? ${url}`,
       ].filter(Boolean).join(nl),
     };
@@ -103,17 +102,16 @@ function start(characters, questions, shareQuotes) {
     const q = game.current;
     const [yesLabel, noLabel] = q.options ?? ['Yes', 'No'];
     const number = `Question ${game.history.length + 1}`;
-    const left = `${game.pool.length} of ${plural(game.characters.length, 'character')} left`;
+    const left = `${game.pool.length} of ${game.characters.length} left`;
     $('question-number').textContent = number;
     $('remaining').textContent = left;
-    $('question-text').textContent = q.dinniman;
+    $('question-text').textContent = q.styled;
     $('question-id').textContent = q.id;
-    $('flavour-voice').textContent = q.voice;
     $('feedback').textContent = feedback;
-    $('yes').textContent = yesLabel;
-    $('no').textContent = noLabel;
+    $('yes').querySelector('.answer-label').textContent = yesLabel;
+    $('no').querySelector('.answer-label').textContent = noLabel;
     $('undo').disabled = game.history.length === 0;
-    announcer.textContent = [feedback, `${number}, ${left}.`, `${q.voice}: ${q.dinniman}`].filter(Boolean).join(' ');
+    announcer.textContent = [feedback, `${number}, ${left}.`, q.styled].filter(Boolean).join(' ');
     if (focus) $('question-text').focus();
   }
 
@@ -164,7 +162,7 @@ function start(characters, questions, shareQuotes) {
     else if (key === 'backspace') { event.preventDefault(); undo(); }
   });
 
-  for (const id of ['answers', 'secondary', 'keys']) $(id).hidden = false;
+  for (const id of ['answers', 'secondary']) $(id).hidden = false;
   render();
 }
 

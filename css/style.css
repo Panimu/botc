@@ -209,7 +209,7 @@ h1 {
 
 .question:focus { outline: none; }
 
-/* Personality mode asks in a Dungeon Crawler Carl voice; the speaker is credited below. */
+/* Personality mode asks the styled phrasing of each question. */
 .question.voiced {
   font-size: clamp(1.2rem, 3.6vw, 1.55rem);
   line-height: 1.4;
@@ -770,3 +770,212 @@ footer {
   .answer { border-color: ButtonText; }
 }
 
+
+/* ===== Visual polish: town square at night, with a clocktower ===== */
+html, body { overflow-x: clip; }
+:root {
+  --glow: rgba(201, 162, 78, 0.24);
+  --dial: #c9b994;
+  --shadow: rgba(48, 30, 12, 0.32);
+  --parchment: radial-gradient(circle at 50% 38%, #fbf5e6 0%, #efe3c6 55%, #d6c197 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --glow: rgba(224, 185, 100, 0.15); --dial: #5a4c74; --shadow: rgba(0, 0, 0, 0.55); }
+}
+:root[data-theme="dark"] { --glow: rgba(224, 185, 100, 0.15); --dial: #5a4c74; --shadow: rgba(0, 0, 0, 0.55); }
+
+/* Paper grain over the page colour (fine noise, very low contrast). */
+body {
+  background-color: var(--bg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.26 0 0 0 0 0.14 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Header: mode tabs and a title with presence, left-aligned with the panels. */
+.intro { text-align: left; }
+.intro h1 {
+  max-width: none;
+  margin: 1.5rem 0 0.5rem;
+  font-size: clamp(2.2rem, 4.6vw, 3.4rem);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+}
+.intro p { margin: 0; max-width: 34rem; }
+
+.topbar { justify-content: space-between; }
+.modes {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+}
+.modes a {
+  min-height: 2.5rem;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.modes a:hover { color: var(--text); }
+.modes a[aria-current="page"] { background: var(--text); color: var(--bg); font-weight: 700; }
+
+/* Cards */
+.panel {
+  text-align: left;
+  border-radius: 1.5rem;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  box-shadow: 0 22px 44px -30px var(--shadow);
+}
+.panel.result { text-align: center; }
+
+.card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+.card-number { font: 400 1.6rem/1 var(--display); }
+.card-left { color: var(--dim); }
+
+/* The question is spoken: a brass quotation mark, then the line, left-aligned for reading. */
+.question.voiced {
+  margin: 0 0 1.25rem;
+  text-align: left;
+  font: 500 clamp(1.2rem, 2.1vw, 1.55rem)/1.5 var(--serif);
+  text-wrap: pretty;
+}
+.question.voiced::before {
+  content: "\201C";
+  display: block;
+  height: 1.6rem;
+  margin-bottom: 0.2rem;
+  color: var(--brass);
+  font: 400 4.5rem/1 var(--display);
+}
+.feedback { margin: 0 0 1rem; text-align: left; font-size: 1rem; }
+
+.answer-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.25rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  font: 700 1.55rem/1 var(--serif);
+}
+.answer-tile kbd { font-size: 0.8rem; opacity: 0.7; border-color: currentColor; }
+
+.card-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+.card-foot kbd { font-size: 0.72em; margin-left: 0.25rem; }
+.card-foot .question-id { margin: 0 0 0 auto; font-size: 0.85rem; color: var(--dim); }
+
+/* The circle as a clock face: lamplight behind, an outer dial of minute and hour
+   ticks, and a faint inner ring around the count. */
+.circle::before {
+  content: "";
+  position: absolute;
+  inset: -6%;
+  border-radius: 50%;
+  background: radial-gradient(circle closest-side, var(--glow), transparent 75%);
+  pointer-events: none;
+}
+.circle::after {
+  content: "";
+  position: absolute;
+  inset: -3%;
+  border-radius: 50%;
+  background:
+    repeating-conic-gradient(from -0.45deg, var(--brass) 0 0.9deg, transparent 0.9deg 30deg),
+    repeating-conic-gradient(from -0.35deg, var(--dial) 0 0.7deg, transparent 0.7deg 6deg);
+  -webkit-mask: radial-gradient(circle closest-side, transparent 93%, #000 93.5% 99%, transparent 99.5%);
+  mask: radial-gradient(circle closest-side, transparent 93%, #000 93.5% 99%, transparent 99.5%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+.ring::before {
+  content: "";
+  position: absolute;
+  inset: 22%;
+  border-radius: 50%;
+  border: 1px solid var(--dial);
+  opacity: 0.6;
+}
+.circle-count { font-size: clamp(3rem, 15cqw, 6rem); }
+.circle-label { font-size: clamp(1rem, 2.6cqw, 1.3rem); }
+
+/* Result: the character as a large parchment token, a team badge, and the quote as speech. */
+.result-art {
+  width: clamp(9rem, 28vw, 12rem);
+  padding: 0;
+  border: 0;
+  background: var(--parchment);
+  box-shadow: inset 0 0 0 2px rgba(74, 52, 26, 0.5), 0 16px 34px -16px var(--shadow);
+}
+.result-team {
+  display: inline-block;
+  margin: 0.75rem 0 1rem;
+  padding: 0.15rem 0.9rem;
+  border: 1.5px solid currentColor;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+.result-lead { margin-top: 1.25rem; }
+.share-quote {
+  position: relative;
+  margin: 1.5rem auto 0;
+  padding: 1.1rem 1.25rem 1rem;
+  border-radius: 1rem;
+  background: var(--bg);
+  text-align: left;
+}
+.share-quote::before {
+  content: "\201C";
+  position: absolute;
+  top: -0.9rem;
+  left: 0.9rem;
+  color: var(--brass);
+  font: 400 3.5rem/1 var(--display);
+}
+
+/* Daily hunt */
+.last-answer { text-align: left; border-left: 4px solid var(--brass); border-radius: 0 0.75rem 0.75rem 0; }
+.hunt-heading { text-align: left; }
+.offer { position: relative; padding-left: 3rem; }
+.offer::before {
+  content: "?";
+  position: absolute;
+  left: 1.1rem;
+  top: 0.65rem;
+  color: var(--brass);
+  font: 400 1.7rem/1 var(--display);
+}
+.guessing { text-align: left; }
+.candidates { justify-content: flex-start; }
+.candidate { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.2rem 0.85rem 0.2rem 0.25rem; }
+.candidate-art { width: 2rem; height: 2rem; border-radius: 50%; background: var(--parchment); object-fit: contain; }
+.guess-locked { text-align: left; }
+.card-left span + span::before { content: "|"; margin: 0 0.5rem; opacity: 0.5; }
+
+.ccc { width: min(11rem, 50vw); opacity: 0.9; }
+
+.replay { margin-top: 1rem; }
+.replay .answer { min-height: 2.75rem; padding: 0.4rem 1.25rem; font-size: 1.1rem; }
+
+/* Keyboard hints mean nothing on touchscreens. */
+@media (pointer: coarse) {
+  .answer-tile kbd, .card-foot kbd { display: none; }
+}

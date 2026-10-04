@@ -20,7 +20,7 @@
   {
     "id": "min-secret-phrase",
     "plain": "Would you like to start the game holding a secret word or phrase that only you know?",
-    "dinniman": "Congratulations, crawler! Your starter pack contains one (1) password of doom. Do not share it. Do not write it down. Ratings spike every time someone gets close. Would you like to begin with a secret word or phrase only you know?",
+    "dinniman": "Congratulations, contestant! Your starter pack contains one (1) password of doom. Do not share it. Do not write it down. Ratings spike every time someone gets close. Would you like to begin with a secret word or phrase only you know?",
     "voice": "The System AI",
     "yes": [
       "mezepheles",
@@ -75,7 +75,7 @@
   {
     "id": "min-absurd-technicalities",
     "plain": "Do you relish arguing a hopeless case and winning it on a ridiculous technicality?",
-    "dinniman": "THE ACCUSED IS INNOCENT BECAUSE THE PROSECUTION SPELLED 'GALLOWS' WRONG! Prepotente rests his case! Prepotente always rests his case! Do you love arguing a hopeless case and winning on an absurd technicality?",
+    "dinniman": "THE ACCUSED IS INNOCENT BECAUSE THE PROSECUTION SPELLED 'GALLOWS' WRONG! The goat rests his case! The goat ALWAYS rests his case! Do you love arguing a hopeless case and winning on an absurd technicality?",
     "voice": "Prepotente",
     "yes": [
       "devilsadvocate"
@@ -121,7 +121,7 @@
   {
     "id": "min-two-targets-threat",
     "plain": "Do you like choosing two people each night and making their fates hang on how one talks about the other?",
-    "dinniman": "TWO SKULLS! Samantha picks TWO! One must condemn the other, or BOTH might be crushed beneath Samantha's glorious wrath! Do you like picking two people each night and making their fate depend on what one says about the other?",
+    "dinniman": "TWO SKULLS! Your goddess picks TWO! One must condemn the other, or BOTH might be crushed beneath my glorious wrath! Do you like picking two people each night and making their fate depend on what one says about the other?",
     "voice": "Samantha",
     "yes": [
       "harpy"
@@ -130,7 +130,7 @@
   {
     "id": "min-curse-nominators",
     "plain": "Would you like to curse someone so that they die if they nominate anyone tomorrow?",
-    "dinniman": "Achievement unlocked: Hex Appeal! Mark a crawler tonight, and if they so much as point a finger tomorrow, they drop dead. Bonus loot for maximum irony. Would you like to curse someone so that nominating kills them?",
+    "dinniman": "Achievement unlocked: Hex Appeal! Mark a contestant tonight, and if they so much as point a finger tomorrow, they drop dead. Bonus loot for maximum irony. Would you like to curse someone so that nominating kills them?",
     "voice": "The System AI",
     "yes": [
       "witch"
@@ -184,7 +184,7 @@
   {
     "id": "min-nightly-transform",
     "plain": "Would you like to turn a player of your choice into a new character every night?",
-    "dinniman": "Loot box contents: one (1) cauldron, rerolls every night. Toss a crawler in, pull out somebody completely different. Warranty void if contents scream. Would you like to transform a chosen player into a new character each night?",
+    "dinniman": "Loot box contents: one (1) cauldron, rerolls every night. Toss a contestant in, pull out somebody completely different. Warranty void if contents scream. Would you like to transform a chosen player into a new character each night?",
     "voice": "The System AI",
     "yes": [
       "pithag"
@@ -238,7 +238,7 @@
   {
     "id": "min-make-a-wish",
     "plain": "Would you like to make a wish once during the game and perhaps have it granted?",
-    "dinniman": "A WISH! An actual wish! Prepotente would wish for a larger throne, and a smaller goat to sit beside it, for contrast! Would you like to make one wish during the game and maybe have it granted?",
+    "dinniman": "A WISH! An actual wish! I would wish for a larger throne, and a smaller goat to sit beside it, for contrast! Would you like to make one wish during the game and maybe have it granted?",
     "voice": "Prepotente",
     "yes": [
       "wizard"
@@ -329,7 +329,7 @@
   {
     "id": "min-wake-with-evil",
     "plain": "Would you like to wake up every time any other evil player wakes during the night?",
-    "dinniman": "Mongo hears a sound in the night! Mongo is AWAKE! In short: whenever any of the bad guys wakes up, so do you, like a very loyal and very sneaky dinosaur. Would you like to wake whenever another evil player wakes?",
+    "dinniman": "RAWR? RAWR! [Translation: a sound in the night! I am AWAKE!] In short: whenever any of the bad guys wakes up, so do you, like a very loyal and very sneaky dinosaur. Would you like to wake whenever another evil player wakes?",
     "voice": "Mongo",
     "yes": [
       "wraith"
@@ -347,7 +347,7 @@
   {
     "id": "min-ritual-takes-time",
     "plain": "Would you like to spend the first few nights quietly preparing a ritual that creates the Demon?",
-    "dinniman": "BEHOLD! Night one: chalk! Night two: candles! Night three: A DEMON RISES AND IT WAS ALL PREPOTENTE'S DOING! Would you like to spend the opening nights preparing a ritual that brings the Demon into being?",
+    "dinniman": "BEHOLD! Night one: chalk! Night two: candles! Night three: A DEMON RISES AND IT WAS ALL THE GOAT'S DOING! Would you like to spend the opening nights preparing a ritual that brings the Demon into being?",
     "voice": "Prepotente",
     "yes": [
       "summoner"
@@ -393,7 +393,7 @@
   {
     "id": "min-take-everyone-down",
     "plain": "If you were executed, would you like to take nearly everyone down with you?",
-    "dinniman": "YES! YES! THEY HANG SAMANTHA AND THE WHOLE TOWN BURSTS LIKE OVERRIPE MELONS! Only three left standing! GLORIOUS! If you were executed, would you want to take almost everyone with you?",
+    "dinniman": "YES! YES! THEY HANG YOUR GODDESS AND THE WHOLE TOWN BURSTS LIKE OVERRIPE MELONS! Only three left standing! GLORIOUS! If you were executed, would you want to take almost everyone with you?",
     "voice": "Samantha",
     "yes": [
       "boomdandy"
@@ -420,7 +420,7 @@
   {
     "id": "min-planned-all-along",
     "plain": "When the town thinks it has won, would you like to reveal it was all your plan, with one day left to prove it?",
-    "dinniman": "Everything proceeding EXACTLY as Prepotente foresaw! The fools celebrate, and Prepotente announces ONE MORE DAY! When the town thinks it's won, would you like to reveal your plan and get one final day to prove it?",
+    "dinniman": "Everything proceeding EXACTLY as I foresaw! The fools celebrate, and the goat announces ONE MORE DAY! When the town thinks it's won, would you like to reveal your plan and get one final day to prove it?",
     "voice": "Prepotente",
     "yes": [
       "mastermind"
@@ -501,7 +501,7 @@
   {
     "id": "min-mad-inventor",
     "plain": "Do you see yourself as the evil team's inventor, building gadgets for your boss?",
-    "dinniman": "Mongo sees tiny bottle! Bottle goes BOOM! Put simply: you'd be the one in the lab, tinkering away to make the big bad even bigger and badder. Do you see yourself as the evil team's inventor?",
+    "dinniman": "RAWR! [Translation: tiny bottle! Bottle goes BOOM!] Put simply: you'd be the one in the lab, tinkering away to make the big bad even bigger and badder. Do you see yourself as the evil team's inventor?",
     "voice": "Mongo",
     "yes": [
       "boffin"
@@ -567,7 +567,7 @@
   {
     "id": "min-shapes-setup",
     "plain": "As a Minion, does your presence change how the game is set up before it even begins?",
-    "dinniman": "Before the first night, before a single crawler opens their eyes, you've already rearranged the furniture. Seating, headcounts, who's even in the building. Does your presence as a Minion change the game's setup?",
+    "dinniman": "Before the first night, before a single contestant opens their eyes, you've already rearranged the furniture. Seating, headcounts, who's even in the building. Does your presence as a Minion change the game's setup?",
     "voice": "The System AI",
     "yes": {
       "team": "minion",
@@ -608,7 +608,7 @@
   {
     "id": "min-madness-minion",
     "plain": "As a Minion, would you like to force someone, under threat, to publicly claim whatever you dictate?",
-    "dinniman": "SAY IT! SAY WHAT SAMANTHA TELLS YOU TO SAY, OR SAMANTHA WILL HAVE YOUR HEAD! Samantha knows heads! Samantha IS a head! As a Minion, would you like to force someone, under threat, to publicly claim what you dictate?",
+    "dinniman": "SAY IT! SAY WHAT YOUR GODDESS TELLS YOU TO SAY, OR I WILL HAVE YOUR HEAD! I know heads! I AM a head! As a Minion, would you like to force someone, under threat, to publicly claim what you dictate?",
     "voice": "Samantha",
     "yes": [
       "harpy",
@@ -662,7 +662,7 @@
   {
     "id": "min-demon-knows-not-you",
     "plain": "As a Minion, would you be content for the Demon to know you while you have no idea you're on its team?",
-    "dinniman": "The boss knows your name, your seat, your whole deal. You, meanwhile, think you're one of the good guys. Mongo confused too. Mongo still loyal! Would you be fine with the Demon knowing you while you don't know you're evil?",
+    "dinniman": "The boss knows your name, your seat, your whole deal. You, meanwhile, think you're one of the good guys. RAWR? [Translation: confused too. Still loyal!] Would you be fine with the Demon knowing you while you don't know you're evil?",
     "voice": "Mongo",
     "yes": [
       "marionette"
@@ -831,7 +831,7 @@
   {
     "id": "min-snv-cauldron",
     "plain": "As a Minion in Sects and Violets, do you see yourself as a witch stirring curses and potions?",
-    "dinniman": "BEHOLD THE CAULDRON! Prepotente has always fancied a pointy hat. Toads! Hexes! A bubbling pot of something that WILL NOT come out of the carpet! Do you picture yourself as a witch brewing curses and potions?",
+    "dinniman": "BEHOLD THE CAULDRON! The goat has always fancied a pointy hat. Toads! Hexes! A bubbling pot of something that WILL NOT come out of the carpet! Do you picture yourself as a witch brewing curses and potions?",
     "voice": "Prepotente",
     "yes": [
       "witch",
@@ -858,7 +858,7 @@
   {
     "id": "min-snv-dictate-words",
     "plain": "As a Minion in Sects and Violets, do you like dictating what someone must claim tomorrow?",
-    "dinniman": "Script delivered! Tomorrow, this lucky crawler will be playing the role of Someone Else, and if they ad-lib, they might hang! Do you like deciding what someone has to claim the next day?",
+    "dinniman": "Script delivered! Tomorrow, this lucky contestant will be playing the role of Someone Else, and if they ad-lib, they might hang! Do you like deciding what someone has to claim the next day?",
     "voice": "The System AI",
     "yes": [
       "cerenovus"
@@ -956,7 +956,7 @@
   {
     "id": "min-killers-in-public",
     "plain": "Of the killing Minions, would you like to choose your victim openly, in front of everyone?",
-    "dinniman": "NO SHADOWS! NO HIDING! Samantha picks her prey in the TOWN SQUARE, at NOON, with EVERYONE WATCHING! As a killer, would you like to choose your victim openly, in full view of everyone?",
+    "dinniman": "NO SHADOWS! NO HIDING! Your goddess picks her prey in the TOWN SQUARE, at NOON, with EVERYONE WATCHING! As a killer, would you like to choose your victim openly, in full view of everyone?",
     "voice": "Samantha",
     "yes": [
       "psychopath"
@@ -1017,7 +1017,7 @@
   {
     "id": "min-gameenders-self-execution",
     "plain": "Of the Minions with a special win or loss condition, does yours hinge on getting yourself executed?",
-    "dinniman": "Hang me, you cowards! HANG PREPOTENTE AND WITNESS HIS TRIUMPH! Of the Minions with their own victory condition, does yours depend on you being executed?",
+    "dinniman": "Hang me, you cowards! HANG THE GOAT AND WITNESS HIS TRIUMPH! Of the Minions with their own victory condition, does yours depend on you being executed?",
     "voice": "Prepotente",
     "yes": [
       "goblin"
@@ -1077,7 +1077,7 @@
   {
     "id": "min-madness-accuse-not-claim",
     "plain": "Of the Minions who drive people mad, would you rather make someone accuse another player than claim a character?",
-    "dinniman": "Two ways to torment a crawler: make them pretend to be something they're not, or make them point at their neighbour and scream 'EVIL!' As a madness-maker, do you prefer making someone accuse another player?",
+    "dinniman": "Two ways to torment a contestant: make them pretend to be something they're not, or make them point at their neighbour and scream 'EVIL!' As a madness-maker, do you prefer making someone accuse another player?",
     "voice": "The System AI",
     "yes": [
       "harpy"
@@ -1107,7 +1107,7 @@
   {
     "id": "min-several-at-once",
     "plain": "As an evil player, would you like to be able to choose more than one player in a single night?",
-    "dinniman": "Why settle for one? MORE! Two, three, a whole HANDFUL of victims in a single night! Samantha is never satisfied with one! As an evil player, would you like to choose more than one player in a single night?",
+    "dinniman": "Why settle for one? MORE! Two, three, a whole HANDFUL of victims in a single night! Your goddess is never satisfied with one! As an evil player, would you like to choose more than one player in a single night?",
     "voice": "Samantha",
     "yes": [
       "harpy",
@@ -1206,7 +1206,7 @@
   {
     "id": "min-snv-evil-change-character",
     "plain": "As an evil player in Sects and Violets, can your ability change another player's character?",
-    "dinniman": "New you, who dis? A few villains on this roster can rewrite another crawler's entire identity overnight. Patch notes to follow. As a Sects and Violets evil player, can your ability change someone else's character?",
+    "dinniman": "New you, who dis? A few villains on this roster can rewrite another contestant's entire identity overnight. Patch notes to follow. As a Sects and Violets evil player, can your ability change someone else's character?",
     "voice": "The System AI",
     "yes": [
       "pithag",

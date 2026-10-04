@@ -527,7 +527,7 @@
   {
     "id": "tfc-fool-custard-comeback",
     "plain": "Would you like to survive exactly one death and carry on openly alive?",
-    "dinniman": "Mongo! MONGO! (Mongo watches the jester fall down, bounce back up and tell a joke, and is deeply impressed.) Would you like to survive exactly one death and carry on openly alive?",
+    "dinniman": "RAWR! RAWR! (He watches the jester fall down, bounce back up and tell a joke, and is deeply impressed.) Would you like to survive exactly one death and carry on openly alive?",
     "voice": "Mongo",
     "yes": [
       "fool"
@@ -2138,7 +2138,7 @@
   {
     "id": "tfc-tf-guesswork",
     "plain": "Does your ability ask you to put a guess into words, either out loud or to the Storyteller?",
-    "dinniman": "Mongo? (Mongo tilts his head, sniffs a player, and guesses. Mongo guesses wrong. Mongo is still a good boy.) Does your ability ask you to put a guess into words, out loud or to the Storyteller?",
+    "dinniman": "Rawr? (He tilts his head, sniffs a player, and guesses. He guesses wrong. He is still a good boy.) Does your ability ask you to put a guess into words, out loud or to the Storyteller?",
     "voice": "Mongo",
     "yes": [
       "gambler",

@@ -82,8 +82,12 @@ function start(characters, questions, clockOffset) {
     const left = MAX_WRONG_GUESSES - game.wrongGuesses.length;
     $('guess-hint').textContent = `Guessing is open: tap a token in the circle, or pick a name. A wrong guess costs a point, and you have ${guessesLeft(left)} left.`;
     $('candidates').replaceChildren(...game.pool.map((id) => {
-      const button = el('button', `candidate${selected === id ? ' selected' : ''}`, byId.get(id).name);
+      const button = el('button', `candidate${selected === id ? ' selected' : ''}`);
       button.type = 'button';
+      const art = el('img', 'candidate-art');
+      art.alt = '';
+      setArt(art, byId.get(id));
+      button.append(art, el('span', '', byId.get(id).name));
       button.setAttribute('aria-pressed', String(selected === id));
       button.addEventListener('click', () => select(id));
       return button;

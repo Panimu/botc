@@ -2,7 +2,7 @@
   {
     "id": "psy-perfect-moment",
     "plain": "Would you rather save one big move for the perfect moment than use a small power every day?",
-    "dinniman": "NEW ACHIEVEMENT UNLOCKED: Hoarder of Destiny! Some crawlers spend their power like pocket change. Others sit on one glorious button for days, waiting to smash it at exactly the right second. Would you rather save one big move for the perfect moment than use a little power every day?",
+    "dinniman": "NEW ACHIEVEMENT UNLOCKED: Hoarder of Destiny! Some contestants spend their power like pocket change. Others sit on one glorious button for days, waiting to smash it at exactly the right second. Would you rather save one big move for the perfect moment than use a little power every day?",
     "voice": "The System AI",
     "yes": {
       "psyPatient": true
@@ -62,7 +62,7 @@
   {
     "id": "psy-demon-bide",
     "plain": "As a Demon, would you rather bide your time than strike every single night?",
-    "dinniman": "SAMANTHA ADORES A MASSACRE! But even a goddess knows the sweetest slaughter is the one you wait for. Little demon, would you rather bide your time than strike every single night?",
+    "dinniman": "YOUR GODDESS ADORES A MASSACRE! But even a goddess knows the sweetest slaughter is the one you wait for. Little demon, would you rather bide your time than strike every single night?",
     "voice": "Samantha",
     "yes": {
       "psyPatient": true
@@ -113,7 +113,7 @@
   {
     "id": "psy-big-risks",
     "plain": "Do you love taking big risks?",
-    "dinniman": "I've buried a lot of crawlers who said yes to this one. I've also watched a few of them walk out rich. Do you love taking big risks?",
+    "dinniman": "I've buried a lot of contestants who said yes to this one. I've also watched a few of them walk out rich. Do you love taking big risks?",
     "voice": "Mordecai",
     "yes": {
       "psyRiskTaker": true
@@ -162,7 +162,7 @@
   {
     "id": "psy-set-the-rules",
     "plain": "Do you like being the one who sets the rules for everyone else?",
-    "dinniman": "PREPOTENTE DECREES IT! The rules shall be what I say they are, and the peasants shall OBEY! Do you, too, like being the one who sets the rules for everyone else?",
+    "dinniman": "I DECREE IT! The rules shall be what I say they are, and the peasants shall OBEY! Do you, too, like being the one who sets the rules for everyone else?",
     "voice": "Prepotente",
     "yes": {
       "psyNeedsControl": true
@@ -186,7 +186,7 @@
   {
     "id": "psy-allowed",
     "plain": "Do you enjoy deciding what other people are and are not allowed to do?",
-    "dinniman": "Mongo is not ALLOWED on the good cushion. Carl is not ALLOWED to touch my snacks. Everyone must clap when I enter. It's called leadership. Do you enjoy deciding what other people are and are not allowed to do?",
+    "dinniman": "The dinosaur is not ALLOWED on the good cushion. My human is not ALLOWED to touch my snacks. Everyone must clap when I enter. It's called leadership. Do you enjoy deciding what other people are and are not allowed to do?",
     "voice": "Princess Donut",
     "yes": {
       "psyNeedsControl": true
@@ -248,7 +248,7 @@
   {
     "id": "psy-full-view",
     "plain": "Would you rather act in full view of everyone than work quietly in the background?",
-    "dinniman": "Lights! Cameras! Questionable life choices! Our crawlers can do their thing under a spotlight or in a dark corner. Would you rather act in full view of everyone than work quietly in the background?",
+    "dinniman": "Lights! Cameras! Questionable life choices! Our contestants can do their thing under a spotlight or in a dark corner. Would you rather act in full view of everyone than work quietly in the background?",
     "voice": "The Host",
     "yes": {
       "psyShowman": true
@@ -260,7 +260,7 @@
   {
     "id": "psy-karaoke-first",
     "plain": "Are you usually first up at karaoke?",
-    "dinniman": "MONGO! Mongo stomps onto the little stage, grabs the microphone in his jaws and roars along to the music. Mongo always goes first. Are you usually first up at karaoke?",
+    "dinniman": "RAWR! [Translation: me first!] He stomps onto the little stage, grabs the microphone in his jaws and roars along to the music. He always goes first. Are you usually first up at karaoke?",
     "voice": "Mongo",
     "yes": {
       "psyShowman": true
@@ -272,7 +272,7 @@
   {
     "id": "psy-dramatic-reveal",
     "plain": "Do you love a dramatic moment in front of everyone?",
-    "dinniman": "Behold! The goat throws off his cloak! The crowd GASPS! The crowd WEEPS! PREPOTENTE HAS ARRIVED! Do you love a dramatic moment in front of everyone?",
+    "dinniman": "Behold! The goat throws off his cloak! The crowd GASPS! The crowd WEEPS! THE GOAT HAS ARRIVED! Do you love a dramatic moment in front of everyone?",
     "voice": "Prepotente",
     "yes": {
       "psyShowman": true
@@ -284,7 +284,7 @@
   {
     "id": "psy-evil-audience",
     "plain": "Even as a villain, do you want an audience watching you work?",
-    "dinniman": "What is carnage without spectators? A WASTE, that is what! Samantha demands witnesses for her glory! Even as a villain, do you want an audience watching you work?",
+    "dinniman": "What is carnage without spectators? A WASTE, that is what! Your goddess demands witnesses for her glory! Even as a villain, do you want an audience watching you work?",
     "voice": "Samantha",
     "yes": {
       "psyShowman": true
@@ -329,7 +329,7 @@
   {
     "id": "psy-unnoticed",
     "plain": "Do you do your best work when nobody is paying attention to you?",
-    "dinniman": "The crawlers who last are usually the ones nobody remembers seeing. No fuss, no fanfare, just results. Do you do your best work when nobody is paying attention to you?",
+    "dinniman": "The contestants who last are usually the ones nobody remembers seeing. No fuss, no fanfare, just results. Do you do your best work when nobody is paying attention to you?",
     "voice": "Mordecai",
     "yes": {
       "psyShowman": false
@@ -457,7 +457,7 @@
   {
     "id": "psy-demon-confusion",
     "plain": "As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
-    "dinniman": "Bodies are delightful. But bodies AND a village full of befuddled, poisoned survivors? Samantha's favourite combination! As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
+    "dinniman": "Bodies are delightful. But bodies AND a village full of befuddled, poisoned survivors? My favourite combination! As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
     "voice": "Samantha",
     "yes": {
       "psyManipulator": true
@@ -548,7 +548,7 @@
   {
     "id": "psy-evil-crew",
     "plain": "Even as a villain, would you rather lift up your allies than look after yourself?",
-    "dinniman": "Most evil crawlers I knew were in it for number one. Every now and then one actually cared about the crew. Even as a villain, would you rather lift up your allies than look after yourself?",
+    "dinniman": "Most evil contestants I knew were in it for number one. Every now and then one actually cared about the crew. Even as a villain, would you rather lift up your allies than look after yourself?",
     "voice": "Mordecai",
     "yes": {
       "psySelfless": true
@@ -653,7 +653,7 @@
   {
     "id": "psy-tell-team",
     "plain": "Would you rather rely on a team than go it alone?",
-    "dinniman": "Mongo finds a shiny thing. Mongo brings it straight to Carl and drops it at his feet. Mongo does nothing without his pack. Would you rather rely on a team than go it alone?",
+    "dinniman": "RAWR! [Translation: shiny thing! For my human!] He drops it right at his best friend's feet. This dinosaur does nothing without his pack. Would you rather rely on a team than go it alone?",
     "voice": "Mongo",
     "yes": [
       "steward",
@@ -694,7 +694,7 @@
   {
     "id": "psy-hate-not-knowing",
     "plain": "Do you hate not knowing things?",
-    "dinniman": "A box falls from the ceiling with a question mark on it. Donut wants to open it. I want to run. And yet I really, really want to know what's inside. Do you hate not knowing things?",
+    "dinniman": "A box falls from the ceiling with a question mark on it. The cat wants to open it. I want to run. And yet I really, really want to know what's inside. Do you hate not knowing things?",
     "voice": "Carl",
     "yes": {
       "psyCurious": true
@@ -718,7 +718,7 @@
   {
     "id": "psy-truth-over-action",
     "plain": "Is finding out the truth more satisfying to you than acting on it?",
-    "dinniman": "Some crawlers want to know everything. Others want to hit everything. The first kind spots the trap; the second kind triggers it. Is finding out the truth more satisfying to you than acting on it?",
+    "dinniman": "Some contestants want to know everything. Others want to hit everything. The first kind spots the trap; the second kind triggers it. Is finding out the truth more satisfying to you than acting on it?",
     "voice": "Mordecai",
     "yes": {
       "psyCurious": true
@@ -784,7 +784,7 @@
   {
     "id": "psy-bold-guess",
     "plain": "Would you rather make a bold guess than wait for proof?",
-    "dinniman": "There's a door. It's either treasure or a room full of teeth. Donut wants to wait for clues. I'm already reaching for the handle. Would you rather make a bold guess than wait for proof?",
+    "dinniman": "There's a door. It's either treasure or a room full of teeth. The cat wants to wait for clues. I'm already reaching for the handle. Would you rather make a bold guess than wait for proof?",
     "voice": "Carl",
     "yes": {
       "psyIntuitive": true
@@ -821,7 +821,7 @@
   {
     "id": "psy-logic-puzzle",
     "plain": "Do you love a logic puzzle more than a straight answer?",
-    "dinniman": "Congratulations! Your reward is a riddle wrapped in a mystery wrapped in a slightly damp sock. Some crawlers weep. Some crawlers SALIVATE. Do you love a logic puzzle more than a straight answer?",
+    "dinniman": "Congratulations! Your reward is a riddle wrapped in a mystery wrapped in a slightly damp sock. Some contestants weep. Some contestants SALIVATE. Do you love a logic puzzle more than a straight answer?",
     "voice": "The System AI",
     "yes": {
       "psyPuzzler": true
@@ -833,7 +833,7 @@
   {
     "id": "psy-scraps-combine",
     "plain": "Do you enjoy piecing together scraps that only make sense once combined?",
-    "dinniman": "Half a map here, a scribbled number there. Most crawlers toss it. The good ones keep every scrap until it clicks. Do you enjoy piecing together scraps that only make sense once combined?",
+    "dinniman": "Half a map here, a scribbled number there. Most contestants toss it. The good ones keep every scrap until it clicks. Do you enjoy piecing together scraps that only make sense once combined?",
     "voice": "Mordecai",
     "yes": {
       "psyPuzzler": true
@@ -869,7 +869,7 @@
   {
     "id": "psy-safe-home",
     "plain": "Are you the friend who makes sure everyone gets home safe?",
-    "dinniman": "Mongo walks Carl home. Mongo walks Donut home. Mongo walks the strange man from the bar home too. Mongo is a very good boy. Are you the friend who makes sure everyone gets home safe?",
+    "dinniman": "RAWR! [Translation: walking everyone home!] The man, the cat, and the strange fellow from the bar too. He is a very good boy. Are you the friend who makes sure everyone gets home safe?",
     "voice": "Mongo",
     "yes": {
       "psyProtective": true
@@ -987,7 +987,7 @@
   {
     "id": "psy-demon-mayhem",
     "plain": "As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
-    "dinniman": "Quiet killing is for amateurs! Samantha wants screaming, swapping, sky-falling madness! As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
+    "dinniman": "Quiet killing is for amateurs! Your goddess wants screaming, swapping, sky-falling madness! As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
     "voice": "Samantha",
     "yes": {
       "psyChaosLover": true
@@ -1000,7 +1000,7 @@
   {
     "id": "psy-good-unpredictable",
     "plain": "On the good side, do you love it when nobody can predict what happens next?",
-    "dinniman": "MONGO! Mongo knocks over everything, every time, and nobody ever knows which thing is next. Mongo is having the best day. On the good side, do you love it when nobody can predict what happens next?",
+    "dinniman": "RAWR! [Translation: knocking over EVERYTHING!] Every time, and nobody ever knows which thing is next. He is having the best day. On the good side, do you love it when nobody can predict what happens next?",
     "voice": "Mongo",
     "yes": {
       "psyChaosLover": true
@@ -1028,7 +1028,7 @@
   {
     "id": "psy-stick-by",
     "plain": "Do you stick by your people even when it costs you?",
-    "dinniman": "Loyalty's expensive down here. Half the crawlers I've guided sold out their party for a better loot box. Do you stick by your people even when it costs you?",
+    "dinniman": "Loyalty's expensive down here. Half the contestants I've guided sold out their party for a better loot box. Do you stick by your people even when it costs you?",
     "voice": "Mordecai",
     "yes": {
       "psyLoyal": true
@@ -1040,7 +1040,7 @@
   {
     "id": "psy-one-devoted",
     "plain": "Would you rather have one devoted partner than a crowd of casual allies?",
-    "dinniman": "One devoted servant is worth a thousand fair-weather fans. Mongo understands this. Carl is learning. Would you rather have one devoted partner than a crowd of casual allies?",
+    "dinniman": "One devoted servant is worth a thousand fair-weather fans. My dinosaur understands this. My human is learning. Would you rather have one devoted partner than a crowd of casual allies?",
     "voice": "Princess Donut",
     "yes": {
       "psyLoyal": true
@@ -1052,7 +1052,7 @@
   {
     "id": "psy-pay-back",
     "plain": "Do you always pay back a wrong?",
-    "dinniman": "Samantha NEVER forgets! Samantha keeps a list! Samantha has no hands, but the list is VERY LONG! Do you always pay back a wrong?",
+    "dinniman": "I NEVER forget! I keep a list! Your goddess has no hands, but the list is VERY LONG! Do you always pay back a wrong?",
     "voice": "Samantha",
     "yes": {
       "psyVengeful": true
@@ -1233,7 +1233,7 @@
   {
     "id": "psy-hidden-ace",
     "plain": "Do you like having a hidden ace that nobody sees coming?",
-    "dinniman": "Everyone thinks Mongo is just a big silly dinosaur. Then Mongo eats the boss. MONGO! Do you like having a hidden ace that nobody sees coming?",
+    "dinniman": "Everyone thinks he's just a big silly dinosaur. Then he eats the boss. RAWR! [Translation: surprise!] Do you like having a hidden ace that nobody sees coming?",
     "voice": "Mongo",
     "yes": {
       "psyUnderdog": true
@@ -1281,7 +1281,7 @@
   {
     "id": "psy-evil-options",
     "plain": "As a villain, do you want endless options for how to cause trouble?",
-    "dinniman": "One way to ruin a village? BORING! Samantha wants a menu, a buffet, a thousand flavours of ruin! As a villain, do you want endless options for how to cause trouble?",
+    "dinniman": "One way to ruin a village? BORING! Your goddess wants a menu, a buffet, a thousand flavours of ruin! As a villain, do you want endless options for how to cause trouble?",
     "voice": "Samantha",
     "yes": {
       "psyImproviser": true
@@ -1432,7 +1432,7 @@
   {
     "id": "psy-others-before-self",
     "plain": "Do you look out for other people before yourself?",
-    "dinniman": "Mongo stands in front of his friends when the monsters come. Mongo eats last. Mongo does not mind. Do you look out for other people before yourself?",
+    "dinniman": "The dinosaur stands in front of his friends when the monsters come. He eats last. He does not mind. Do you look out for other people before yourself?",
     "voice": "Mongo",
     "yes": {
       "psyProtective": true,
@@ -1707,7 +1707,7 @@
   {
     "id": "psy-sleeper",
     "plain": "Do you like lying low until one big moment makes you matter?",
-    "dinniman": "I've seen quiet crawlers nobody rated turn a whole floor around in one move. Takes patience, and a thick skin. Do you like lying low until one big moment makes you matter?",
+    "dinniman": "I've seen quiet contestants nobody rated turn a whole floor around in one move. Takes patience, and a thick skin. Do you like lying low until one big moment makes you matter?",
     "voice": "Mordecai",
     "yes": {
       "psyUnderdog": true,
@@ -1801,7 +1801,7 @@
   {
     "id": "psy-killer-waits",
     "plain": "When you strike, would you rather wait for one perfect blow than strike again and again?",
-    "dinniman": "One perfect, glorious, PERFECTLY TIMED blow, or a hundred messy little ones? Samantha loves both, but you must choose! When you strike, would you rather wait for one perfect blow than strike again and again?",
+    "dinniman": "One perfect, glorious, PERFECTLY TIMED blow, or a hundred messy little ones? Your goddess loves both, but you must choose! When you strike, would you rather wait for one perfect blow than strike again and again?",
     "voice": "Samantha",
     "yes": {
       "psyPatient": true

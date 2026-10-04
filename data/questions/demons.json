@@ -101,7 +101,7 @@
   {
     "id": "dem-two-course-dinner",
     "plain": "Do you have an appetite for two victims every single night?",
-    "dinniman": "Mongo! MONGO! (Mongo has eaten one villager, is eyeing a second, and plainly intends to do this every night. One is never enough for Mongo.) Is your appetite big enough for two victims every single night?",
+    "dinniman": "RAWR! RAWR! (He has eaten one villager, is eyeing a second, and plainly intends to do this every night. One is never enough.) Is your appetite big enough for two victims every single night?",
     "voice": "Mongo",
     "yes": [
       "shabaloth"
@@ -308,7 +308,7 @@
   {
     "id": "dem-announced-targets",
     "plain": "Would you announce your night-time targets to the whole town and enjoy watching them sweat?",
-    "dinniman": "WHY HIDE? Samantha never hides! When night falls, shout their names to the heavens and let them tremble before the slaughter, as is PROPER! Would you announce your night-time targets to the whole town and enjoy watching them squirm?",
+    "dinniman": "WHY HIDE? Your goddess never hides! When night falls, shout their names to the heavens and let them tremble before the slaughter, as is PROPER! Would you announce your night-time targets to the whole town and enjoy watching them squirm?",
     "voice": "Samantha",
     "yes": [
       "alhadikhia"
@@ -353,7 +353,7 @@
   {
     "id": "dem-three-in-a-night",
     "plain": "Would you like to pick three victims in a single night?",
-    "dinniman": "ONE corpse? Pathetic! Samantha demands THREE, laid out before her at once like a feast! Would you like to choose three victims in a single night?",
+    "dinniman": "ONE corpse? Pathetic! Your goddess demands THREE, laid out before her at once like a feast! Would you like to choose three victims in a single night?",
     "voice": "Samantha",
     "yes": [
       "po",
@@ -502,7 +502,7 @@
   {
     "id": "dem-good-turned-evil",
     "plain": "As the Demon, would you like your ability to turn good players evil?",
-    "dinniman": "Converts! Samantha adores converts! Take the pure-hearted fools and twist them into servants of darkness, then laugh as they turn on their friends! As the Demon, would you like your ability to turn good players evil?",
+    "dinniman": "Converts! I adore converts! Take the pure-hearted fools and twist them into servants of darkness, then laugh as they turn on their friends! As the Demon, would you like your ability to turn good players evil?",
     "voice": "Samantha",
     "yes": [
       "fanggu",
@@ -643,7 +643,7 @@
   {
     "id": "dem-bmr-double-kill",
     "plain": "As the Demon, would you like to take more than one life in a single night?",
-    "dinniman": "One life? ONE? Samantha spits on your single death! Give her a heap of the fallen by sunrise! As the Demon, would you like to take more than one life in a single night?",
+    "dinniman": "One life? ONE? Your goddess spits on your single death! Give her a heap of the fallen by sunrise! As the Demon, would you like to take more than one life in a single night?",
     "voice": "Samantha",
     "yes": [
       "shabaloth",
@@ -756,7 +756,7 @@
   {
     "id": "dem-bloodless-day-hunger",
     "plain": "Would you like your hunger to depend on whether today passed without a death?",
-    "dinniman": "Mongo? Mongo... (Mongo sniffs the air. Nobody died today. His eyes go wide and he starts drooling.) MONGO! Would you like your hunger to depend on whether today passed without a death?",
+    "dinniman": "Rawr? Rawr... (He sniffs the air. Nobody died today. His eyes go wide and he starts drooling.) RAWR! Would you like your hunger to depend on whether today passed without a death?",
     "voice": "Mongo",
     "yes": [
       "zombuul"
@@ -896,7 +896,7 @@
   {
     "id": "dem-simply-outlast",
     "plain": "Would you like to win simply by outlasting the town?",
-    "dinniman": "No frenzy? No blood? Samantha is DISGUSTED. And yet, to watch them crumble as the days run out... acceptable. Would you like to win simply by outlasting the town?",
+    "dinniman": "No frenzy? No blood? Your goddess is DISGUSTED. And yet, to watch them crumble as the days run out... acceptable. Would you like to win simply by outlasting the town?",
     "voice": "Samantha",
     "yes": [
       "leviathan"

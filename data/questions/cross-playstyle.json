@@ -2,7 +2,7 @@
   {
     "id": "xp-night-shift-regular",
     "plain": "Does your own ability have you take an action or learn something on most nights, not just once?",
-    "dinniman": "Achievement unlocked: Insomniac! Awarded to crawlers whose ability drags them out of bed to do or learn something night after night after night. Sleep is for the loot-less. Does your ability have you act or learn something on most nights?",
+    "dinniman": "Achievement unlocked: Insomniac! Awarded to contestants whose ability drags them out of bed to do or learn something night after night after night. Sleep is for the loot-less. Does your ability have you act or learn something on most nights?",
     "voice": "The System AI",
     "yes": {
       "wakesMostNights": true
@@ -104,7 +104,7 @@
   {
     "id": "xp-hands-off-passive",
     "plain": "Does your ability work entirely on its own, with no player, you or anyone else, ever choosing or acting because of it?",
-    "dinniman": "Mordecai's tip of the day: the abilities that never make anyone do anything are the ones nobody can screw up. No picking, no guessing, no grand speeches, not from you and not from anyone else. Is your ability completely hands-off like that?",
+    "dinniman": "My tip of the day: the abilities that never make anyone do anything are the ones nobody can screw up. No picking, no guessing, no grand speeches, not from you and not from anyone else. Is your ability completely hands-off like that?",
     "voice": "Mordecai",
     "yes": {
       "neverChooses": true
@@ -113,7 +113,7 @@
   {
     "id": "xp-hands-off-autopilot",
     "plain": "Does your power simply run itself, with nobody at the table ever making a decision because of it?",
-    "dinniman": "Zev here! Our research shows that a lot of viewers love a contestant who's just along for the ride while their power does the talking. Zero decisions from anyone, maximum vibes! Does your power run itself with nobody at the table deciding anything because of it?",
+    "dinniman": "Your friendly network liaison here! Our research shows that a lot of viewers love a contestant who's just along for the ride while their power does the talking. Zero decisions from anyone, maximum vibes! Does your power run itself with nobody at the table deciding anything because of it?",
     "voice": "Zev",
     "yes": {
       "neverChooses": true
@@ -212,7 +212,7 @@
   {
     "id": "xp-hands-off-death-trigger",
     "plain": "Is your ability completely passive, with nobody ever acting because of it, and does it wait for a death to set it off?",
-    "dinniman": "MONGO! Mongo lies very still. Mongo waits. Nobody has to do anything. Mongo only jumps up when something dies. (Translation: is your ability completely passive, with nobody acting because of it, and does it wait for a death to set it off?)",
+    "dinniman": "RAWR! Lie very still. Wait. Nobody has to do anything. Only jump up when something dies. (Translation: is your ability completely passive, with nobody acting because of it, and does it wait for a death to set it off?)",
     "voice": "Mongo",
     "yes": {
       "neverChooses": true,
@@ -222,7 +222,7 @@
   {
     "id": "xp-dark-pointer",
     "plain": "Does your ability ever have you choose a player while the town sleeps?",
-    "dinniman": "Lights out, crawlers! While everyone snores, a few of you get to wave a little finger at somebody and make something happen. Ominous! Thrilling! Does your ability ever have you pick a player at night?",
+    "dinniman": "Lights out, contestants! While everyone snores, a few of you get to wave a little finger at somebody and make something happen. Ominous! Thrilling! Does your ability ever have you pick a player at night?",
     "voice": "The System AI",
     "yes": {
       "choosesPlayersAtNight": true
@@ -349,7 +349,7 @@
   {
     "id": "xp-bond-attachment",
     "plain": "Does your ability give you a special attachment to one specific person in the game?",
-    "dinniman": "Prepotente has ONE companion. One! And Prepotente's destiny is WOVEN with theirs! Does your ability give you a special attachment to one specific person?",
+    "dinniman": "THIS GOAT has ONE companion. One! And this goat's destiny is WOVEN with theirs! Does your ability give you a special attachment to one specific person?",
     "voice": "Prepotente",
     "yes": {
       "boundToAnotherPlayer": true
@@ -425,7 +425,7 @@
   {
     "id": "xp-bond-risky",
     "plain": "Does being tied to your partner put you or your own team at risk?",
-    "dinniman": "Attachment is a weakness, crawlers! Patch note: bonds now come with free complimentary danger. Does your tie to one particular player put you or your own team at risk?",
+    "dinniman": "Attachment is a weakness, contestants! Patch note: bonds now come with free complimentary danger. Does your tie to one particular player put you or your own team at risk?",
     "voice": "The System AI",
     "yes": {
       "boundToAnotherPlayer": true,
@@ -539,7 +539,7 @@
   {
     "id": "xp-death-slow-burner",
     "plain": "Are you a slow burner, whose power only stirs once there's been a death?",
-    "dinniman": "Rawr! MONGO! (Mongo says: some friends only wake up after something has died. Is your power a slow burner that only stirs once there's been a death?)",
+    "dinniman": "Rawr! RAWR! (He says: some friends only wake up after something has died. Is your power a slow burner that only stirs once there's been a death?)",
     "voice": "Mongo",
     "yes": {
       "needsDeathToAct": true
@@ -829,7 +829,7 @@
   {
     "id": "xp-oneshot-dark-side",
     "plain": "Among the characters with a single use, are you a Minion or Demon?",
-    "dinniman": "One shot each, crawlers! And now the leaderboard wants to know whose side that shot is fired for. Are you a Minion or Demon?",
+    "dinniman": "One shot each, contestants! And now the leaderboard wants to know whose side that shot is fired for. Are you a Minion or Demon?",
     "voice": "Zev",
     "yes": {
       "oneShot": true,

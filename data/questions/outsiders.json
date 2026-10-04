@@ -2,7 +2,7 @@
   {
     "id": "out-all-the-quirks",
     "plain": "Would you like every Outsider's ability rolled into a single character, and that character to be you?",
-    "dinniman": "New bundle deal! One crawler, every misfit perk on the shelf, absolutely no refunds. Our legal team calls it 'a bit much'. Would you like to be the one carrying every Outsider ability at once?",
+    "dinniman": "New bundle deal! One contestant, every misfit perk on the shelf, absolutely no refunds. Our legal team calls it 'a bit much'. Would you like to be the one carrying every Outsider ability at once?",
     "voice": "The System AI",
     "yes": [
       "hermit"
@@ -47,7 +47,7 @@
   {
     "id": "out-hired-muscle",
     "plain": "Are you basically hired muscle, siding with whoever grabs you first and shrugging off the bruises?",
-    "dinniman": "Mongo! Mongo stomp for first friend who come close! Mongo no care about scratches! (He's saying he'd follow whoever reaches him first and laugh off the bruises.) Is that you: loyal muscle for whoever claims you first?",
+    "dinniman": "RAWR! RAWR! [Translation: stomp for first friend who comes close! No care about scratches!] He'd follow whoever reaches him first and laugh off the bruises. Is that you: loyal muscle for whoever claims you first?",
     "voice": "Mongo",
     "yes": [
       "goon"
@@ -101,7 +101,7 @@
   {
     "id": "out-confident-and-wrong",
     "plain": "Would you like to play a whole game believing you are a Townsfolk hero, still on the good team but with nothing except fake powers and worthless information?",
-    "dinniman": "I've watched crawlers march into the boss room swinging a sword that turned out to be a breadstick. Still on our side, bless them, just useless. Would you want to spend the whole game convinced you're a Townsfolk hero, still good but with nothing except fake powers and worthless info?",
+    "dinniman": "I've watched contestants march into the boss room swinging a sword that turned out to be a breadstick. Still on our side, bless them, just useless. Would you want to spend the whole game convinced you're a Townsfolk hero, still good but with nothing except fake powers and worthless info?",
     "voice": "Mordecai",
     "yes": [
       "drunk"
@@ -110,7 +110,7 @@
   {
     "id": "out-drop-dead-anytime",
     "plain": "Would you like your one and only quirk to be that the Storyteller can kill you whenever they fancy?",
-    "dinniman": "Hi! Zev here from Production. Your contract has a small clause where you can be removed from the show at any moment for no reason at all. It's your only clause! Would you like that to be your whole deal?",
+    "dinniman": "Hi! Your friendly liaison here from Production. Your contract has a small clause where you can be removed from the show at any moment for no reason at all. It's your only clause! Would you like that to be your whole deal?",
     "voice": "Zev",
     "yes": [
       "tinker"
@@ -155,7 +155,7 @@
   {
     "id": "out-big-simple-swing",
     "plain": "Is your whole game plan one huge accusation, with no take-backs if it flattens an innocent?",
-    "dinniman": "Mongo point! Mongo SMASH! Mongo say sorry later! (In other words: one enormous accusation, and if he squashes the wrong person, too bad.) Is that your whole plan for the game?",
+    "dinniman": "RAWR! [Translation: point! SMASH! Say sorry later!] In other words: one enormous accusation, and if he squashes the wrong person, too bad. Is that your whole plan for the game?",
     "voice": "Mongo",
     "yes": [
       "golem"
@@ -182,7 +182,7 @@
   {
     "id": "out-death-feeds-storyteller",
     "plain": "Would you like your only effect to be that dying hands the Storyteller a Minion's power?",
-    "dinniman": "Patch note: when this crawler dies, the Game Master receives a free villain ability! Complimentary! Forever! Would you like your only contribution to be handing the Storyteller a Minion power when you die?",
+    "dinniman": "Patch note: when this contestant dies, the Game Master receives a free villain ability! Complimentary! Forever! Would you like your only contribution to be handing the Storyteller a Minion power when you die?",
     "voice": "The System AI",
     "yes": [
       "plaguedoctor"
@@ -275,7 +275,7 @@
   {
     "id": "out-death-swap",
     "plain": "Would you like your one effect to be that dying lets the Demon swap two players' characters?",
-    "dinniman": "Upon your death, the dungeon's top monster gets to grab two crawlers and switch their class cards. That's your whole legacy, folks! Would you want your only effect to be letting the Demon swap two people's characters?",
+    "dinniman": "Upon your death, the dungeon's top monster gets to grab two contestants and switch their class cards. That's your whole legacy, folks! Would you want your only effect to be letting the Demon swap two people's characters?",
     "voice": "The Host",
     "yes": [
       "barber"
@@ -412,7 +412,7 @@
   {
     "id": "out-losing-is-winning",
     "plain": "Is rooting for your own team to lose, because that is how they truly win, the heart of your character?",
-    "dinniman": "I have explained this to Donut four times. Losing is winning. Winning is losing. She bit me. Is cheering for your own team to lose, because that's how they actually win, the core of who you are?",
+    "dinniman": "I have explained this to the cat four times. Losing is winning. Winning is losing. She bit me. Is cheering for your own team to lose, because that's how they actually win, the core of who you are?",
     "voice": "Carl",
     "yes": [
       "heretic"
@@ -421,7 +421,7 @@
   {
     "id": "out-find-the-drunk",
     "plain": "Is your main job in the game working out which one player is secretly drunk?",
-    "dinniman": "Somewhere in this room is one crawler who's absolutely sloshed and doesn't know it. Finding them is your main job. It's a puzzle box with a hangover. Is hunting down the secret drunk what your game is all about?",
+    "dinniman": "Somewhere in this room is one contestant who's absolutely sloshed and doesn't know it. Finding them is your main job. It's a puzzle box with a hangover. Is hunting down the secret drunk what your game is all about?",
     "voice": "Zev",
     "yes": [
       "puzzlemaster"
@@ -918,7 +918,7 @@
   {
     "id": "out-g-deadly-nomination",
     "plain": "Among good players, could simply nominating someone kill them on the spot?",
-    "dinniman": "Mongo point at bad guy. Bad guy fall down. Mongo very proud. (He means his nomination alone could kill the person nominated.) As a good player, could your nomination kill someone outright?",
+    "dinniman": "RAWR! [Translation: point at bad guy. Bad guy fall down. Very proud.] He means his nomination alone could kill the person nominated. As a good player, could your nomination kill someone outright?",
     "voice": "Mongo",
     "yes": [
       "golem",
@@ -962,7 +962,7 @@
   {
     "id": "out-tb-rope-worst",
     "plain": "Is your execution the worst thing that could happen to your team, not just to you?",
-    "dinniman": "Special event: the Gallows of Consequence! Hang this crawler and the entire party fails the floor! Is being executed the worst thing that could happen to your whole team?",
+    "dinniman": "Special event: the Gallows of Consequence! Hang this contestant and the entire party fails the floor! Is being executed the worst thing that could happen to your whole team?",
     "voice": "The System AI",
     "yes": [
       "saint"
@@ -1143,7 +1143,7 @@
   {
     "id": "out-la-fear-rope",
     "plain": "Is the executioner's rope the thing you fear most?",
-    "dinniman": "Fear audit complete! Some crawlers dread guesses, some dread pointing, and some lie awake thinking about the noose. Is the executioner's rope what you fear most?",
+    "dinniman": "Fear audit complete! Some contestants dread guesses, some dread pointing, and some lie awake thinking about the noose. Is the executioner's rope what you fear most?",
     "voice": "The System AI",
     "yes": [
       "saint",

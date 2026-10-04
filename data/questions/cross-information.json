@@ -141,7 +141,7 @@
   {
     "id": "xi-sorting-hat",
     "plain": "Does your ability help you sort players into good and evil by telling you about their alignment?",
-    "dinniman": "Mongo sniffs. Mongo growls at one, wags at another. (He's sorting good from evil by scent, and he's thrilled.) Does your ability let you sort players by alignment like that?",
+    "dinniman": "Sniff, sniff. A growl at one, a happy tail-wag at another. (He is sorting good from evil by scent, and he is thrilled.) Does your ability let you sort players by alignment like that?",
     "voice": "Mongo",
     "yes": {
       "learnsAlignment": true
@@ -299,7 +299,7 @@
   {
     "id": "xi-nightly-drip",
     "plain": "Does your ability give you new information almost every night?",
-    "dinniman": "Some crawlers get a single hint on the stairs and then nothing for the rest of the floor. Others get a fresh note shoved under the door every single night. Does your ability keep the information coming most nights?",
+    "dinniman": "Some contestants get a single hint on the stairs and then nothing for the rest of the floor. Others get a fresh note shoved under the door every single night. Does your ability keep the information coming most nights?",
     "voice": "Carl",
     "yes": {
       "infoEveryNight": true
@@ -317,7 +317,7 @@
   {
     "id": "xi-woken-for-news",
     "plain": "Does your ability have you awake most nights, taking in something new?",
-    "dinniman": "Mongo! Mongo! (He's nudging you awake again, nearly every night, because there's news. There is always news.) Does your ability have you up most nights taking in something new?",
+    "dinniman": "RAWR! RAWR! [Translation: wake up, there's news!] He nudges you awake nearly every night, because there is always news. Does your ability have you up most nights taking in something new?",
     "voice": "Mongo",
     "yes": {
       "infoEveryNight": true
@@ -405,7 +405,7 @@
   {
     "id": "xi-behind-the-curtain",
     "plain": "Does your ability show you behind the scenes: the Grimoire, who woke at night, whose abilities malfunctioned, or a secret ability someone holds?",
-    "dinniman": "Most crawlers only see the monsters. A rare few get a look at the wiring: the Grimoire, who stirred in the dark, which powers fizzled, what secret tricks are hidden. Does your ability show you that machinery?",
+    "dinniman": "Most contestants only see the monsters. A rare few get a look at the wiring: the Grimoire, who stirred in the dark, which powers fizzled, what secret tricks are hidden. Does your ability show you that machinery?",
     "voice": "The System AI",
     "yes": {
       "seesHiddenInfo": true
@@ -570,7 +570,7 @@
   {
     "id": "xi-evil-intel-ongoing",
     "plain": "Of the evil characters with extra information, do you keep gathering it every night?",
-    "dinniman": "Mongo stays up ALL night. Mongo watches. Mongo reports. (He's very proud of his night shift.) Of you evil intel types, do you keep gathering information every night?",
+    "dinniman": "RAWR! [Translation: awake ALL night. Watching. Reporting.] He's very proud of his night shift. Of you evil intel types, do you keep gathering information every night?",
     "voice": "Mongo",
     "yes": [
       "spy",
@@ -614,7 +614,7 @@
   {
     "id": "xi-demon-clue-at-start",
     "plain": "Of those who get clues about the Demon, is your clue a one-off handed to you at the start of the game?",
-    "dinniman": "Night one: here's your hint, crawler. Don't lose it, there are no refills. Of you Demon-hunters, is yours a single clue handed over at the very start?",
+    "dinniman": "Night one: here's your hint, contestant. Don't lose it, there are no refills. Of you Demon-hunters, is yours a single clue handed over at the very start?",
     "voice": "The Host",
     "yes": [
       "knight",

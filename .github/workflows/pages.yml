@@ -27,11 +27,11 @@ jobs:
           node-version: 24
       - name: Validate data and run tests
         run: node scripts/validate.js && node --test
-      - name: Stamp asset URLs with the commit so browsers fetch fresh files
-        run: sed -i "s/?v=dev/?v=${GITHUB_SHA::8}/g" index.html daily.html js/*.js
+      - name: Build the published site (stamped asset URLs, authoring fields stripped, banned names checked)
+        run: node scripts/build-site.js --version ${GITHUB_SHA::8}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4

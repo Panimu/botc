@@ -2,7 +2,7 @@
   {
     "id": "icon-real-animal",
     "plain": "Is your token's picture a real animal, or a real animal's head?",
-    "dinniman": "I've buried crawlers killed by things with fur, scales and far too many legs. Some of you carry one of those beasts painted on your token. Is your token's picture a real animal, or a real animal's head?",
+    "dinniman": "I've buried contestants killed by things with fur, scales and far too many legs. Some of you carry one of those beasts painted on your token. Is your token's picture a real animal, or a real animal's head?",
     "voice": "Mordecai",
     "yes": {
       "iconShowsAnimal": true
@@ -644,7 +644,7 @@
   {
     "id": "icon-bits-and-pieces",
     "plain": "Does your token's picture show a body part on its own, like a hand, mouth, eye, brain or bone?",
-    "dinniman": "SAMANTHA APPROVES OF PIECES! Hands, teeth, eyeballs, whole brains, scattered like offerings at my altar! Does your token's picture show a body part on its own, like a hand, mouth, eye, brain or bone?",
+    "dinniman": "YOUR GODDESS APPROVES OF PIECES! Hands, teeth, eyeballs, whole brains, scattered like offerings at my altar! Does your token's picture show a body part on its own, like a hand, mouth, eye, brain or bone?",
     "voice": "Samantha",
     "yes": {
       "iconShowsBodyPart": true
@@ -1108,7 +1108,7 @@
   {
     "id": "icon-pirate-spots-skull",
     "plain": "Would a sharp-eyed pirate find a skull somewhere in your token's art?",
-    "dinniman": "Prepotente has sailed with pirates! In a dream! They taught him to spot a skull at a hundred paces. LOOK CLOSER, MORTAL! Would a sharp-eyed pirate find a skull somewhere in your token's art?",
+    "dinniman": "THIS GOAT has sailed with pirates! In a dream! They taught me to spot a skull at a hundred paces. LOOK CLOSER, MORTAL! Would a sharp-eyed pirate find a skull somewhere in your token's art?",
     "voice": "Prepotente",
     "yes": {
       "iconHasSkull": true
@@ -1436,7 +1436,7 @@
   {
     "id": "icon-leafy",
     "plain": "Is there a flower, stem, leaf or tree drawn on your token?",
-    "dinniman": "Mongo sniff token. Mongo want to chew the green bit! (Carl translates: Mongo is checking for something leafy.) Is there a flower, stem, leaf or tree drawn on your token?",
+    "dinniman": "Sniff token. Chew green bit! RAWR! (Translation: he is checking for something leafy.) Is there a flower, stem, leaf or tree drawn on your token?",
     "voice": "Mongo",
     "yes": {
       "iconShowsPlant": true
@@ -2066,7 +2066,7 @@
   {
     "id": "icon-made-to-hurt",
     "plain": "Was the thing on your token made to hurt someone?",
-    "dinniman": "Blades! Bolts! Bombs! Samantha would worship any one of them, if she had hands! Was the thing on your token made to hurt someone?",
+    "dinniman": "Blades! Bolts! Bombs! Your goddess would worship any one of them, if she had hands! Was the thing on your token made to hurt someone?",
     "voice": "Samantha",
     "yes": {
       "iconShowsWeapon": true
@@ -2676,7 +2676,7 @@
   {
     "id": "icon-headgear",
     "plain": "Does your token show headgear, something worn on top of the head?",
-    "dinniman": "Prepotente's horns are crown enough, but he respects those who must buy theirs! KNEEL! Then answer. Does your token show headgear, something worn on top of the head?",
+    "dinniman": "My horns are crown enough, but I respect those who must buy theirs! KNEEL! Then answer. Does your token show headgear, something worn on top of the head?",
     "voice": "Prepotente",
     "yes": {
       "iconShowsHeadwear": true
@@ -3474,7 +3474,7 @@
   {
     "id": "icon-flame",
     "plain": "Is there a flame drawn on your token's picture?",
-    "dinniman": "FIRE! Samantha loves fire! It purifies! It screams! It ruins carpets! Is there a flame drawn on your token's picture?",
+    "dinniman": "FIRE! Your goddess loves fire! It purifies! It screams! It ruins carpets! Is there a flame drawn on your token's picture?",
     "voice": "Samantha",
     "yes": {
       "iconShowsFire": true
@@ -3956,7 +3956,7 @@
   {
     "id": "icon-light-the-dark",
     "plain": "Is the thing on your token there to light up the dark?",
-    "dinniman": "The crawlers who carry light live longer. Not by much, but by enough. Is the thing on your token there to light up the dark?",
+    "dinniman": "The contestants who carry light live longer. Not by much, but by enough. Is the thing on your token there to light up the dark?",
     "voice": "Mordecai",
     "yes": {
       "iconShowsLightSource": true
@@ -4264,7 +4264,7 @@
   {
     "id": "icon-sign-not-thing",
     "plain": "Is your token's picture more of a sign than a thing: a shape, emblem or pattern?",
-    "dinniman": "Prepotente sees SYMBOLS everywhere! Sigils! Omens! Possibly a sandwich! Is your token's picture more of a sign than a thing: a shape, emblem or pattern?",
+    "dinniman": "THIS GOAT sees SYMBOLS everywhere! Sigils! Omens! Possibly a sandwich! Is your token's picture more of a sign than a thing: a shape, emblem or pattern?",
     "voice": "Prepotente",
     "yes": {
       "iconIsAbstractSymbol": true
@@ -4774,7 +4774,7 @@
   {
     "id": "icon-one-hand-grab",
     "plain": "Is the thing on your token small enough to pick up with one hand?",
-    "dinniman": "Mongo pick it up! Mongo carry it everywhere! (Carl here: he's asking whether it's small, and please don't let him eat it.) Is the thing on your token small enough to pick up with one hand?",
+    "dinniman": "Pick it up! Carry it everywhere! RAWR! (Translator here: he's asking whether it's small, and please don't let him eat it.) Is the thing on your token small enough to pick up with one hand?",
     "voice": "Mongo",
     "yes": {
       "iconFitsInOneHand": true
@@ -5457,7 +5457,7 @@
   {
     "id": "icon-cooks-kit",
     "plain": "Would a cook expect to find the thing on your token in their kitchen?",
-    "dinniman": "I used to cook for crawlers. Some of them even said thank you before they died. Would a cook expect to find the thing on your token in their kitchen?",
+    "dinniman": "I used to cook for contestants. Some of them even said thank you before they died. Would a cook expect to find the thing on your token in their kitchen?",
     "voice": "Mordecai",
     "yes": {
       "iconFoundInKitchen": true
@@ -5978,7 +5978,7 @@
   {
     "id": "icon-vicar-knows",
     "plain": "Would a vicar recognise your token's picture as something that belongs in church?",
-    "dinniman": "Prepotente once ate a hymn book! It was DIVINE! The vicar was less impressed. Would a vicar recognise your token's picture as something that belongs in church?",
+    "dinniman": "THIS GOAT once ate a hymn book! It was DIVINE! The vicar was less impressed. Would a vicar recognise your token's picture as something that belongs in church?",
     "voice": "Prepotente",
     "yes": {
       "iconFoundInChurch": true
@@ -6254,7 +6254,7 @@
   {
     "id": "icon-by-the-water",
     "plain": "Does your token's picture belong by the sea, on a boat, in the water or on the shore?",
-    "dinniman": "Mongo go swim! Splash splash! (Translation from Donut: Mongo wants to know if your token is a seaside sort of thing.) Does your token's picture belong by the sea, on a boat, in the water or on the shore?",
+    "dinniman": "Go swim! Splash splash! RAWR! (Translation, from the cat who owns him: he wants to know if your token is a seaside sort of thing.) Does your token's picture belong by the sea, on a boat, in the water or on the shore?",
     "voice": "Mongo",
     "yes": {
       "iconFoundAtSea": true
@@ -6656,7 +6656,7 @@
   {
     "id": "icon-graveyard",
     "plain": "Would your token's picture look at home in a graveyard?",
-    "dinniman": "Graveyards! Samantha's favourite picnic spot! So many friends, all lying down! Would your token's picture look at home in a graveyard?",
+    "dinniman": "Graveyards! Your goddess's favourite picnic spot! So many friends, all lying down! Would your token's picture look at home in a graveyard?",
     "voice": "Samantha",
     "yes": {
       "iconFoundInGraveyard": true
@@ -6771,7 +6771,7 @@
   {
     "id": "icon-dug-up",
     "plain": "Is your token's picture something grim you'd expect in a cemetery, like bones, a skull or a gravedigger's spade?",
-    "dinniman": "I've helped bury more crawlers than I can count. You learn what turns up in the dirt. Is your token's picture something grim you'd expect in a cemetery, like bones, a skull or a gravedigger's spade?",
+    "dinniman": "I've helped bury more contestants than I can count. You learn what turns up in the dirt. Is your token's picture something grim you'd expect in a cemetery, like bones, a skull or a gravedigger's spade?",
     "voice": "Mordecai",
     "yes": {
       "iconFoundInGraveyard": true
@@ -7656,7 +7656,7 @@
   {
     "id": "icon-crucifix-shape",
     "plain": "Is a church-style cross drawn somewhere on your token, the right way up or upside down?",
-    "dinniman": "Samantha has been worshipped under many symbols, and she remembers every single one! Is a church-style cross drawn somewhere on your token, the right way up or upside down?",
+    "dinniman": "Your goddess has been worshipped under many symbols, and she remembers every single one! Is a church-style cross drawn somewhere on your token, the right way up or upside down?",
     "voice": "Samantha",
     "yes": [
       "monk",
@@ -9071,7 +9071,7 @@
   {
     "id": "icon-pirate-ship",
     "plain": "Would your token's picture look at home on a pirate ship?",
-    "dinniman": "Prepotente shall be CAPTAIN! Of a ship! Of the seas! Of YOU! Would your token's picture look at home on a pirate ship?",
+    "dinniman": "THIS GOAT shall be CAPTAIN! Of a ship! Of the seas! Of YOU! Would your token's picture look at home on a pirate ship?",
     "voice": "Prepotente",
     "yes": [
       "sailor",
@@ -9832,7 +9832,7 @@
   {
     "id": "icon-tentacles",
     "plain": "Are there tentacles on your token's picture?",
-    "dinniman": "TENTACLES! The finest of all limbs! Samantha would trade her entire missing body for eight of them! Are there tentacles on your token's picture?",
+    "dinniman": "TENTACLES! The finest of all limbs! Your goddess would trade her entire missing body for eight of them! Are there tentacles on your token's picture?",
     "voice": "Samantha",
     "yes": [
       "nodashii",
@@ -9998,7 +9998,7 @@
   {
     "id": "icon-octopus-arm",
     "plain": "Does your token's art have at least one octopus-style tentacle?",
-    "dinniman": "Mongo saw wiggly arm! Mongo scared! Mongo brave! (Carl: he's asking about tentacles. Again.) Does your token's art have at least one octopus-style tentacle?",
+    "dinniman": "Saw wiggly arm! Scared! Brave! RAWR! (Translation: he's asking about tentacles. Again.) Does your token's art have at least one octopus-style tentacle?",
     "voice": "Mongo",
     "yes": [
       "nodashii",
@@ -10493,7 +10493,7 @@
   {
     "id": "icon-reaching-hand",
     "plain": "Does your token's art show a hand holding something, reaching out, or leaving a print?",
-    "dinniman": "Sponsor shout-out: Handy Gloves, for crawlers who still have hands! Does your token's art show a hand holding something, reaching out, or leaving a print?",
+    "dinniman": "Sponsor shout-out: Handy Gloves, for contestants who still have hands! Does your token's art show a hand holding something, reaching out, or leaving a print?",
     "voice": "The System AI",
     "yes": [
       "butler",
@@ -10655,7 +10655,7 @@
   {
     "id": "icon-mouth",
     "plain": "Is your token's picture a mouth, lips or teeth on their own, without the rest of a face?",
-    "dinniman": "Samantha is ALL face and no body, so she respects those who are all mouth and no face! Is your token's picture a mouth, lips or teeth on their own, without the rest of a face?",
+    "dinniman": "Your goddess is ALL face and no body, so she respects those who are all mouth and no face! Is your token's picture a mouth, lips or teeth on their own, without the rest of a face?",
     "voice": "Samantha",
     "yes": [
       "snitch",
@@ -10668,7 +10668,7 @@
   {
     "id": "icon-big-mouth",
     "plain": "Is your token's picture basically just a big mouth?",
-    "dinniman": "Prepotente has the LOUDEST mouth in the dungeon! Is there a challenger? SPEAK! Is your token's picture basically just a big mouth?",
+    "dinniman": "THIS GOAT has the LOUDEST mouth in the dungeon! Is there a challenger? SPEAK! Is your token's picture basically just a big mouth?",
     "voice": "Prepotente",
     "yes": [
       "snitch",
@@ -11178,7 +11178,7 @@
   {
     "id": "icon-farm",
     "plain": "Would your token's picture look at home on a farm?",
-    "dinniman": "Mongo like farm! Mongo chase goat! (Narration: Mongo has been banned from several farms.) Would your token's picture look at home on a farm?",
+    "dinniman": "Like farm! Chase goat! RAWR! (Narration: this dinosaur has been banned from several farms.) Would your token's picture look at home on a farm?",
     "voice": "Mongo",
     "yes": [
       "farmer",
@@ -11476,7 +11476,7 @@
   {
     "id": "icon-ancient-egypt",
     "plain": "Does your token's picture look like ancient Egyptian art?",
-    "dinniman": "The pharaohs worshipped goats! Prepotente is almost certain! Is it true? IT IS TRUE NOW! Does your token's picture look like ancient Egyptian art?",
+    "dinniman": "The pharaohs worshipped goats! THIS GOAT is almost certain! Is it true? IT IS TRUE NOW! Does your token's picture look like ancient Egyptian art?",
     "voice": "Prepotente",
     "yes": [
       "highpriestess",
@@ -11665,7 +11665,7 @@
   {
     "id": "icon-teddy",
     "plain": "Is your token's picture a teddy bear?",
-    "dinniman": "Mongo want hug! Mongo hug soft bear! (Donut: he will hug it to pieces, I promise you.) Is your token's picture a teddy bear?",
+    "dinniman": "Want hug! Hug soft bear! RAWR! (Translation: he will hug it to pieces, I promise you.) Is your token's picture a teddy bear?",
     "voice": "Mongo",
     "yes": [
       "pixie"

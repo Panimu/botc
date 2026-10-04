@@ -8,7 +8,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Clocktower Character Quiz">
   <meta property="og:title" content="Which Clocktower character are you?">
-  <meta property="og:description" content="Answer yes or no until only one Blood on the Clocktower character is left. 156 characters, questions voiced by the Dungeon Crawler Carl cast.">
+  <meta property="og:description" content="Answer yes or no until only one Blood on the Clocktower character is left. 156 characters, and questions with attitude.">
   <meta property="og:url" content="https://panimu.github.io/botc/">
   <meta name="theme-color" content="#221932">
   <script>
@@ -26,28 +26,31 @@
     <div class="side">
     <header class="intro">
       <nav class="topbar" aria-label="Modes">
-        <a href="./" aria-current="page">Personality quiz</a>
-        <a href="daily.html">Daily hunt</a>
+        <div class="modes">
+          <a href="./" aria-current="page">Personality quiz</a>
+          <a href="daily.html">Daily hunt</a>
+        </div>
         <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
       </nav>
       <h1>Which Clocktower character are you?</h1>
       <p>Answer each question honestly. Every answer rules out characters until only one is left.</p>
     </header>
     <section class="panel" id="question-panel" aria-labelledby="question-text">
-      <p class="progress"><span id="question-number">Loading…</span> <span id="remaining"></span></p>
+      <div class="card-head">
+        <span class="card-number" id="question-number">Loading…</span>
+        <span class="card-left" id="remaining"></span>
+      </div>
       <h2 class="question voiced" id="question-text" tabindex="-1"></h2>
-      <p class="voice" id="flavour-voice"></p>
       <p class="feedback" id="feedback"></p>
       <div class="answers" id="answers" hidden>
-        <button type="button" class="answer" id="yes">Yes</button>
-        <button type="button" class="answer" id="no">No</button>
+        <button type="button" class="answer answer-tile" id="yes"><span class="answer-label">Yes</span><kbd>Y</kbd></button>
+        <button type="button" class="answer answer-tile" id="no"><span class="answer-label">No</span><kbd>N</kbd></button>
       </div>
-      <div class="secondary" id="secondary" hidden>
-        <button type="button" class="quiet" id="undo">Undo last answer</button>
+      <div class="card-foot" id="secondary" hidden>
+        <button type="button" class="quiet" id="undo">Undo <kbd>Backspace</kbd></button>
         <button type="button" class="quiet" id="restart">Start over</button>
+        <p class="question-id">Question <span id="question-id"></span></p>
       </div>
-      <p class="question-id">Question ID: <span id="question-id"></span></p>
-      <p class="keys" id="keys" hidden>Keyboard: <kbd>Y</kbd> yes, <kbd>N</kbd> no, <kbd>Backspace</kbd> undo.</p>
     </section>
 
     <section class="panel result" id="result-panel" aria-labelledby="result-name" hidden>
@@ -58,14 +61,13 @@
       <p class="result-summary" id="result-summary"></p>
       <figure class="share-quote" id="share-quote" hidden>
         <blockquote id="share-quote-text"></blockquote>
-        <figcaption id="share-quote-voice"></figcaption>
       </figure>
-      <div class="secondary">
+      <div class="share-options" id="share-options" hidden></div>
+      <p class="share-status" id="share-status" role="status"></p>
+      <div class="secondary replay">
         <button type="button" class="answer" id="play-again">Play again</button>
         <button type="button" class="quiet" id="result-undo">Undo last answer</button>
       </div>
-      <div class="share-options" id="share-options" hidden></div>
-      <p class="share-status" id="share-status" role="status"></p>
     </section>
 
     <section class="path" id="path" aria-labelledby="path-heading" hidden>

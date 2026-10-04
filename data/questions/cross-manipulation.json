@@ -127,7 +127,7 @@
   {
     "id": "xm-d-side-dish",
     "plain": "Of those who spread drunkenness or poison, do you also kill a player most nights?",
-    "dinniman": "MONGO! Mongo sniffs the poison cup, then looks hungrily at the village. Translation: for you, is the poison just a side dish to killing a player most nights?",
+    "dinniman": "RAWR! He sniffs the poison cup, then looks hungrily at the village. Translation: for you, is the poison just a side dish to killing a player most nights?",
     "voice": "Mongo",
     "yes": {
       "team": "demon"
@@ -571,7 +571,7 @@
   {
     "id": "xm-think-good-really-evil",
     "plain": "Could your role let you sincerely believe you're good while you're actually evil?",
-    "dinniman": "Mongo tilts his head. Mongo thinks he is a good boy. Narrator: Mongo may not be a good boy. Could your role let you sincerely believe you're good while you're actually evil?",
+    "dinniman": "The dinosaur tilts his head. He thinks he is a good boy. Narrator: he may not be a good boy. Could your role let you sincerely believe you're good while you're actually evil?",
     "voice": "Mongo",
     "yes": [
       "marionette",

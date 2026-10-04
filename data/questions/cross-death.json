@@ -29,7 +29,7 @@
   {
     "id": "xd-witnessed-kill",
     "plain": "Can your own ability, not another character's, strike a player dead while the town is awake, without them being executed?",
-    "dinniman": "SAMANTHA ADORES AN AUDIENCE! Blood in the sunlight, gasps from the crowd, no tedious voting required! Can your own ability, not another character's, strike a player dead while the whole town is awake and watching, no execution involved?",
+    "dinniman": "YOUR GODDESS ADORES AN AUDIENCE! Blood in the sunlight, gasps from the crowd, no tedious voting required! Can your own ability, not another character's, strike a player dead while the whole town is awake and watching, no execution involved?",
     "voice": "Samantha",
     "yes": {
       "killsByDay": true
@@ -47,7 +47,7 @@
   {
     "id": "xd-own-execution",
     "plain": "Can your own ability, not another character's, get you executed even if the town never voted for you?",
-    "dinniman": "BEHOLD the tragic hero! Prepotente knows the agony of the noble who may be dragged to the gallows by mere RULES, no vote required! Can your own ability, not another character's, get you executed without the town ever voting for you?",
+    "dinniman": "BEHOLD the tragic hero! THIS GOAT knows the agony of the noble who may be dragged to the gallows by mere RULES, no vote required! Can your own ability, not another character's, get you executed without the town ever voting for you?",
     "voice": "Prepotente",
     "yes": [
       "mutant",
@@ -57,7 +57,7 @@
   {
     "id": "xd-death-rattle",
     "plain": "When you actually die, rather than narrowly escaping it, does your own ability, not another character's, then make something happen?",
-    "dinniman": "New achievement unlocked: Posthumous Plot Twist! Awarded to crawlers whose abilities only get going once they've genuinely kicked the bucket. Dodging death doesn't count. Once you're actually dead, does your own ability, not another character's, make something happen?",
+    "dinniman": "New achievement unlocked: Posthumous Plot Twist! Awarded to contestants whose abilities only get going once they've genuinely kicked the bucket. Dodging death doesn't count. Once you're actually dead, does your own ability, not another character's, make something happen?",
     "voice": "The System AI",
     "yes": {
       "triggersOnOwnDeath": true
@@ -111,7 +111,7 @@
   {
     "id": "xd-tough-hide",
     "plain": "Does your ability give you, personally, a way to survive something that would kill anyone else?",
-    "dinniman": "I've buried a lot of crawlers who thought they were tough. A few of you actually are: the thing that would put anybody else in the ground just bounces off. Does your ability give you, personally, a way to survive what would kill anyone else?",
+    "dinniman": "I've buried a lot of contestants who thought they were tough. A few of you actually are: the thing that would put anybody else in the ground just bounces off. Does your ability give you, personally, a way to survive what would kill anyone else?",
     "voice": "Mordecai",
     "yes": {
       "hardToKill": true
@@ -160,7 +160,7 @@
   {
     "id": "xd-minion-night-killer",
     "plain": "Are you a Minion whose own ability can kill a player at night?",
-    "dinniman": "Minions! Lackeys! Henchfolk! Most of you just loom behind the Demon looking shifty. But some of you get to do the night-time killing YOURSELVES, and Samantha respects that. Are you a Minion whose own ability can kill a player at night?",
+    "dinniman": "Minions! Lackeys! Henchfolk! Most of you just loom behind the Demon looking shifty. But some of you get to do the night-time killing YOURSELVES, and your goddess respects that. Are you a Minion whose own ability can kill a player at night?",
     "voice": "Samantha",
     "yes": {
       "killsAtNight": true,
@@ -262,7 +262,7 @@
   {
     "id": "xd-deathless-killer",
     "plain": "Can your own ability, not another character's, both kill another player without an execution and protect you from dying?",
-    "dinniman": "Prepotente is DEATH and Prepotente is DEATHLESS! Mere killers bore me. Mere survivors bore me MORE! Can your own ability, not another character's, both kill another player without an execution and protect you from dying?",
+    "dinniman": "THIS GOAT is DEATH and THIS GOAT is DEATHLESS! Mere killers bore me. Mere survivors bore me MORE! Can your own ability, not another character's, both kill another player without an execution and protect you from dying?",
     "voice": "Prepotente",
     "yes": [
       "psychopath",
@@ -397,7 +397,7 @@
   {
     "id": "xd-k-storyteller-picks",
     "plain": "Of those whose ability can kill at night, is it always the Storyteller, never you, who picks who dies?",
-    "dinniman": "Delegation is a leadership skill! Some of our crawlers simply provide the opportunity, and the Storyteller handles the messy talent selection. Of you night-time killers, is it always the Storyteller, never you, who picks who your ability kills?",
+    "dinniman": "Delegation is a leadership skill! Some of our contestants simply provide the opportunity, and the Storyteller handles the messy talent selection. Of you night-time killers, is it always the Storyteller, never you, who picks who your ability kills?",
     "voice": "Zev",
     "yes": [
       "gossip",
@@ -428,7 +428,7 @@
   {
     "id": "xd-k-multi-kill",
     "plain": "Of those who can kill at night, can your ability kill more than one other player in a single night?",
-    "dinniman": "ONE corpse? ONE? Samantha weeps at your lack of ambition! Among you night-time killers, can your ability kill more than one other player in a single night?",
+    "dinniman": "ONE corpse? ONE? Your goddess weeps at your lack of ambition! Among you night-time killers, can your ability kill more than one other player in a single night?",
     "voice": "Samantha",
     "yes": [
       "shabaloth",
@@ -546,7 +546,7 @@
   {
     "id": "xd-d-evil",
     "plain": "Of those who can kill by day, are you a Minion or Demon?",
-    "dinniman": "Daylight murder! Glorious! But Samantha must know whose side the blood is on. Of you daylight killers, are you a Minion or a Demon?",
+    "dinniman": "Daylight murder! Glorious! But your goddess must know whose side the blood is on. Of you daylight killers, are you a Minion or a Demon?",
     "voice": "Samantha",
     "yes": {
       "killsByDay": true,
@@ -574,7 +574,7 @@
   {
     "id": "xd-e-own-neck",
     "plain": "Of those whose ability can cause an unusual execution, is it your own execution?",
-    "dinniman": "Mongo! Mongo mongo? (Carl, translating: he's asking, very gently, whether the rope your ability brings out is meant for your own neck.) Of you unusual-execution types, is it your own execution your ability can cause?",
+    "dinniman": "Rawr! Rawr rawr? (Translation: he's asking, very gently, whether the rope your ability brings out is meant for your own neck.) Of you unusual-execution types, is it your own execution your ability can cause?",
     "voice": "Mongo",
     "yes": [
       "mutant",
@@ -587,7 +587,7 @@
   {
     "id": "xd-e-in-the-moment",
     "plain": "Of those whose ability can cause an unusual execution, do you decide in the moment, during the day, to use it?",
-    "dinniman": "Prepotente does not WAIT for fate! Prepotente SEIZES the gavel! Of you who bend the gallows rules, do you decide in the moment, during the day, to use that power?",
+    "dinniman": "THIS GOAT does not WAIT for fate! THIS GOAT SEIZES the gavel! Of you who bend the gallows rules, do you decide in the moment, during the day, to use that power?",
     "voice": "Prepotente",
     "yes": [
       "vizier",
@@ -765,7 +765,7 @@
   {
     "id": "xd-t-own-victims",
     "plain": "Of those whose ability reacts to another player's death, does it change what happens to the players you kill?",
-    "dinniman": "Samantha's victims become LEGENDS! Of those whose ability reacts to somebody else's death, does your ability change what happens to the players you yourself kill?",
+    "dinniman": "Your goddess's victims become LEGENDS! Of those whose ability reacts to somebody else's death, does your ability change what happens to the players you yourself kill?",
     "voice": "Samantha",
     "yes": [
       "vigormortis",
@@ -1050,7 +1050,7 @@
   {
     "id": "xd-u-rope-or-blade",
     "plain": "Of those whose ability can cause deaths by day, does it work through executions rather than outright kills?",
-    "dinniman": "The gallows or the blade, mortal? Prepotente DEMANDS to know your instrument! Of you daytime dealers of death, does your ability work through executions rather than outright killing?",
+    "dinniman": "The gallows or the blade, mortal? THIS GOAT DEMANDS to know your instrument! Of you daytime dealers of death, does your ability work through executions rather than outright killing?",
     "voice": "Prepotente",
     "yes": {
       "causesExtraExecution": true

@@ -20,7 +20,7 @@
   {
     "id": "tfx-two-not-demon",
     "plain": "Would you like to start the game knowing two players who aren't the Demon, without knowing who the Demon is?",
-    "dinniman": "Congratulations, crawler! Your starter pack contains TWO certified Not-The-Demon people! Who the Demon actually is? Sold separately. Warranty void if they turn out to be Minions. Do you want those two names, and no Demon, on night one?",
+    "dinniman": "Congratulations, contestant! Your starter pack contains TWO certified Not-The-Demon people! Who the Demon actually is? Sold separately. Warranty void if they turn out to be Minions. Do you want those two names, and no Demon, on night one?",
     "voice": "The System AI",
     "yes": [
       "knight"
@@ -417,7 +417,7 @@
   {
     "id": "tfx-unknown-own-power",
     "plain": "Would you be happy not knowing what your own ability is, and guessing at it each day?",
-    "dinniman": "Welcome, crawler! Your ability is: [REDACTED]. Please guess daily. Accuracy feedback provided. Refunds unavailable. Would you be happy to play without knowing your own power, guessing at it every day?",
+    "dinniman": "Welcome, contestant! Your ability is: [REDACTED]. Please guess daily. Accuracy feedback provided. Refunds unavailable. Would you be happy to play without knowing your own power, guessing at it every day?",
     "voice": "The System AI",
     "yes": [
       "amnesiac"
@@ -444,7 +444,7 @@
   {
     "id": "tfx-legacy-of-labour",
     "plain": "Would you like your humble trade to live on in someone else after you're gone?",
-    "dinniman": "MONGO! Mongo very sad when friend die. But friend's work keeps going, new friend picks it up! Mongo wants to know: would you like your humble trade to live on in someone else after you die?",
+    "dinniman": "RAWR! Very sad when friend die. But friend's work keeps going, new friend picks it up! Translation: would you like your humble trade to live on in someone else after you die?",
     "voice": "Mongo",
     "yes": [
       "farmer"
@@ -883,7 +883,7 @@
   {
     "id": "tfx-double-vote",
     "plain": "Of the Townsfolk, would you like the power to vote twice on the same nomination?",
-    "dinniman": "MONGO VOTE! MONGO VOTE AGAIN! Mongo has discovered democracy and would like more of it. Do you want to be able to vote twice on a single nomination?",
+    "dinniman": "VOTE! VOTE AGAIN! RAWR! This dinosaur has discovered democracy and would like more of it. Do you want to be able to vote twice on a single nomination?",
     "voice": "Mongo",
     "yes": [
       "banshee"
@@ -986,7 +986,7 @@
   {
     "id": "tfx-nightly-life-on-line",
     "plain": "As a Townsfolk, would you put your own life on the line every night?",
-    "dinniman": "Every night, the same game: roll the dice with your own neck. Mordecai has seen plenty of people do this. Most of them were brave. Most of them are dead. Would you risk your life every single night?",
+    "dinniman": "Every night, the same game: roll the dice with your own neck. I've seen plenty of people do this. Most of them were brave. Most of them are dead. Would you risk your life every single night?",
     "voice": "Mordecai",
     "yes": [
       "gambler",

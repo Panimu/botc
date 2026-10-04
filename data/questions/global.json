@@ -138,7 +138,7 @@
   {
     "id": "global-in-the-circle",
     "plain": "Do you want a seat in the circle from the very start of the game?",
-    "dinniman": "Mongo! Translation: Mongo wants a proper seat, from the start, with snacks. No wandering in late, no lurking behind the Storyteller. Do you want your seat from the start too?",
+    "dinniman": "RAWR! Translation: he wants a proper seat, from the start, with snacks. No wandering in late, no lurking behind the Storyteller. Do you want your seat from the start too?",
     "voice": "Mongo",
     "yes": {
       "team": [
@@ -669,7 +669,7 @@
   {
     "id": "global-sleepy-townsperson",
     "plain": "Are you a helpful townsperson the Storyteller never has to deal with at night?",
-    "dinniman": "Mongo sleeps. Storyteller never bothers Mongo at night, and Mongo still helps! Mongo very proud. Are you a good townsperson who is no bother at night?",
+    "dinniman": "Rawr... zzz. (Translation: the Storyteller never bothers him at night, and he still helps! He is very proud.) Are you a good townsperson who is no bother at night?",
     "voice": "Mongo",
     "yes": [
       "savant",

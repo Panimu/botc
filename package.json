@@ -4,8 +4,9 @@
   "type": "module",
   "description": "Which Blood on the Clocktower character are you? A binary-elimination personality quiz.",
   "scripts": {
-    "serve": "python -m http.server 8000",
+    "serve": "node scripts/build-site.js && python -m http.server 8000 -d _site",
     "validate": "node scripts/validate.js",
-    "test": "node --test"
+    "test": "node --test",
+    "build": "node scripts/build-site.js"
   }
 }

@@ -26,8 +26,10 @@
     <div class="side">
       <header class="intro">
         <nav class="topbar" aria-label="Modes">
-          <a href="./">Personality quiz</a>
-          <a href="daily.html" aria-current="page">Daily hunt</a>
+          <div class="modes">
+            <a href="./">Personality quiz</a>
+            <a href="daily.html" aria-current="page">Daily hunt</a>
+          </div>
           <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
         </nav>
         <h1>Daily character hunt</h1>
@@ -35,11 +37,10 @@
       </header>
 
       <section class="panel hunt-panel" id="hunt-panel" aria-labelledby="hunt-heading">
-        <p class="progress">
-          <span id="hunt-number">Loading…</span>
-          <span id="hunt-score"></span>
-          <span id="hunt-guesses"></span>
-        </p>
+        <div class="card-head">
+          <span class="card-number" id="hunt-number">Loading…</span>
+          <span class="card-left"><span id="hunt-score"></span> <span id="hunt-guesses"></span></span>
+        </div>
 
         <div class="last-answer" id="last-answer" hidden>
           <p class="last-question" id="last-question"></p>

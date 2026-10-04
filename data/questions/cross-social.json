@@ -128,7 +128,7 @@
   {
     "id": "xs-spoken-talk-is-the-trigger",
     "plain": "Is talk between players the trigger for your ability: particular words, claims about characters, or whether what is said is true?",
-    "dinniman": "Silence! SILENCE! Talk is a weapon and a weakness, and I, Prepotente, wield both! Some abilities do nothing until the right words pass between players, the right claim is made, or a statement proves true. Is talk between players the trigger for YOUR ability?",
+    "dinniman": "Silence! SILENCE! Talk is a weapon and a weakness, and I, the magnificent goat, wield both! Some abilities do nothing until the right words pass between players, the right claim is made, or a statement proves true. Is talk between players the trigger for YOUR ability?",
     "voice": "Prepotente",
     "yes": {
       "spokenTrigger": true
@@ -333,7 +333,7 @@
   {
     "id": "xs-day-good-daylight-business",
     "plain": "As a Townsfolk or Outsider, does your ability give you a daytime move of your own, beyond the usual nominating and voting?",
-    "dinniman": "Mongo! Mongo stomp around in sunshine! (Mongo wants to know: as a Townsfolk or Outsider, does your ability give you a daytime move of your own, beyond the usual nominating and voting?)",
+    "dinniman": "RAWR! [Translation: stomping around in the sunshine!] He wants to know: as a Townsfolk or Outsider, does your ability give you a daytime move of your own, beyond the usual nominating and voting?",
     "voice": "Mongo",
     "yes": {
       "daytimeAction": true,
@@ -445,7 +445,7 @@
   {
     "id": "xs-spoken-secret-word",
     "plain": "Does your ability come with a secret word or phrase that only you know at the start?",
-    "dinniman": "Mongo sniff... Mongo know secret! (Of everyone set off by spoken words, Mongo asks: does your ability come with a secret word or phrase that only you know at the start?)",
+    "dinniman": "Sniff... RAWR! [Translation: I know a secret!] Of everyone set off by spoken words, he asks: does your ability come with a secret word or phrase that only you know at the start?",
     "voice": "Mongo",
     "yes": [
       "mezepheles",
