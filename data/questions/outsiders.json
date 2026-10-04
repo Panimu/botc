@@ -73,8 +73,8 @@
   },
   {
     "id": "out-think-im-demon",
-    "plain": "Would you like to believe you're the Demon when you're actually nothing of the sort?",
-    "dinniman": "Congratulations on your promotion to Lord of Darkness! Terms and conditions apply. Promotion is imaginary. Would you enjoy believing you're the Demon when you aren't one at all?",
+    "plain": "Would you like your whole role to be believing you are the Demon when you are actually nothing of the sort?",
+    "dinniman": "Congratulations on your promotion to Lord of Darkness! Terms and conditions apply. Promotion is imaginary. Would you enjoy that being your entire role: believing you're the Demon when you aren't one at all?",
     "voice": "The System AI",
     "yes": [
       "lunatic"
@@ -100,8 +100,8 @@
   },
   {
     "id": "out-confident-and-wrong",
-    "plain": "Could you play a whole game believing you are a Townsfolk hero, still on the good team but with fake powers and worthless information?",
-    "dinniman": "I've watched crawlers march into the boss room swinging a sword that turned out to be a breadstick. Still on our side, bless them, just useless. Could you spend the whole game convinced you're a Townsfolk hero, still good but with fake powers and worthless info?",
+    "plain": "Would you like to play a whole game believing you are a Townsfolk hero, still on the good team but with nothing except fake powers and worthless information?",
+    "dinniman": "I've watched crawlers march into the boss room swinging a sword that turned out to be a breadstick. Still on our side, bless them, just useless. Would you want to spend the whole game convinced you're a Townsfolk hero, still good but with nothing except fake powers and worthless info?",
     "voice": "Mordecai",
     "yes": [
       "drunk"
@@ -255,8 +255,8 @@
   },
   {
     "id": "out-execution-catastrophe",
-    "plain": "Would your execution be an outright catastrophe that loses the game for your whole team?",
-    "dinniman": "Pitch meeting! A gentle soul, a crowd with a rope, and a twist ending where your entire side loses because they strung up the wrong nice person! Sponsors love a tragedy. Would your execution lose the game for your team?",
+    "plain": "Even though you are on the good team, would your execution be an outright catastrophe that loses the game for your whole side?",
+    "dinniman": "Pitch meeting! A gentle soul, a crowd with a rope, and a twist ending where your entire side loses because they strung up the wrong nice person! Sponsors love a tragedy. Even though you're one of the good guys, would your execution lose the game for your team?",
     "voice": "Zev",
     "yes": [
       "saint",
@@ -301,8 +301,8 @@
   },
   {
     "id": "out-reshuffle-on-death",
-    "plain": "Would your death give the evil side a chance to reshuffle who is playing which character?",
-    "dinniman": "When you die, the bad guys get to shuffle the deck and hand out new roles while everyone's still mourning. Brutal. Would your death give evil a chance to change who is which character?",
+    "plain": "Would your death hand the evil players a choice about who becomes which character?",
+    "dinniman": "When you die, the bad guys get to shuffle the deck and hand out new roles while everyone's still mourning. Brutal. Would your death hand the evil side a choice about who becomes which character?",
     "voice": "Katia",
     "yes": [
       "barber",
@@ -603,12 +603,13 @@
   },
   {
     "id": "out-s-wrong-about-self",
-    "plain": "Do you believe you are a different character from the one you really are?",
-    "dinniman": "Imagine thinking you're the star of the show and actually being the understudy's understudy. I could NEVER. But some of you do it every game. Do you believe you're a different character from the one you really are?",
+    "plain": "Could your ability leave you believing you are a different character from the one you really are?",
+    "dinniman": "Imagine thinking you're the star of the show and actually being the understudy's understudy. I could NEVER. But some of you do it every game. Could your ability leave you believing you're a different character from the one you really are?",
     "voice": "Princess Donut",
     "yes": [
       "lunatic",
-      "drunk"
+      "drunk",
+      "hermit"
     ],
     "scope": {
       "team": "outsider"
@@ -831,7 +832,8 @@
     "voice": "The Host",
     "yes": [
       "drunk",
-      "lunatic"
+      "lunatic",
+      "hermit"
     ],
     "scope": {
       "team": [
@@ -904,7 +906,6 @@
     "voice": "Princess Donut",
     "yes": [
       "saint",
-      "atheist",
       "hermit"
     ],
     "scope": {

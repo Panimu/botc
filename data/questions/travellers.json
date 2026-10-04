@@ -210,8 +210,8 @@
   },
   {
     "id": "tfl-throw-out-the-verdict",
-    "plain": "Would you like to rule a vote a failure, so nobody is executed at all, even after enough people voted?",
-    "dinniman": "The mob has done its counting, the rope is ready, and you get to say case dismissed, nobody hangs today. Would you like to rule a vote a failure, so nobody is executed at all, even after enough people voted?",
+    "plain": "Would you like to declare a vote a failure, so the nominee is not executed, even after enough people voted for them?",
+    "dinniman": "The mob has done its counting, the rope is ready, and you get to say case dismissed, not this one. Would you like to declare a vote a failure, so the nominee is not executed, even after enough people voted for them?",
     "voice": "Katia",
     "yes": [
       "judge"
@@ -219,8 +219,8 @@
   },
   {
     "id": "tfl-force-it-through",
-    "plain": "After seeing a vote, would you like the power to declare the execution anyway, however few hands went up?",
-    "dinniman": "Democracy is lovely, darling, until it gets in your way. Then it is merely a suggestion. After seeing a vote, would you like the power to declare the execution anyway, however few hands went up?",
+    "plain": "After seeing a vote, would you like the power to declare the execution anyway, even without enough hands raised?",
+    "dinniman": "Democracy is lovely, darling, until it gets in your way. Then it is merely a suggestion. After seeing a vote, would you like the power to declare the execution anyway, even without enough hands raised?",
     "voice": "Odette",
     "yes": [
       "judge",
@@ -355,8 +355,8 @@
   },
   {
     "id": "tfl-no-majority-needed",
-    "plain": "Would you scrap the need for a majority, so even a handful of votes can carry an execution?",
-    "dinniman": "Majority? Quorum? That's a lot of paperwork for one hanging. A few hands should do it. Would you scrap the need for a majority, so even a handful of votes can carry an execution?",
+    "plain": "Would you scrap the majority rule, so whoever gets the most votes is executed, even with a single hand?",
+    "dinniman": "Majority? Quorum? That's a lot of paperwork for one hanging. Most hands wins, even if it's one. Would you scrap the majority rule, so whoever gets the most votes is executed, even with a single hand?",
     "voice": "Elle",
     "yes": [
       "voudon"

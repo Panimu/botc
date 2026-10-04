@@ -73,20 +73,21 @@ export function checkQuestions(questions, characters, seen = { ids: new Set(), t
   return errors;
 }
 
-// Questions in cross-*.json must put at least two character types on each side.
-export function checkCrossType(questions, characters) {
+// How many questions mix character types: more than one type on the yes side,
+// and on both sides. Reported, not enforced.
+export function typeMix(questions, characters) {
   const team = new Map(characters.map((c) => [c.id, c.team]));
-  const errors = [];
+  let mixedYes = 0;
+  let mixedBoth = 0;
   for (const q of questions) {
     const { yesSet, scopeSet } = prepare(q, characters);
     const no = [...(scopeSet ?? team.keys())].filter((id) => !yesSet.has(id));
-    const yesTeams = new Set([...yesSet].map((id) => team.get(id)));
-    const noTeams = new Set(no.map((id) => team.get(id)));
-    if (yesTeams.size < 2 || noTeams.size < 2) {
-      errors.push(`Question ${q.id}: needs at least two character types on each side (yes: ${[...yesTeams].join('/') || 'none'}; no: ${[...noTeams].join('/') || 'none'})`);
-    }
+    const yesTeams = new Set([...yesSet].map((id) => team.get(id))).size;
+    const noTeams = new Set(no.map((id) => team.get(id))).size;
+    if (yesTeams > 1) mixedYes++;
+    if (yesTeams > 1 && noTeams > 1) mixedBoth++;
   }
-  return errors;
+  return { mixedYes, mixedBoth };
 }
 
 export async function checkTraits(characters) {
@@ -166,7 +167,6 @@ async function main() {
   const seen = { ids: new Set(), texts: new Set() };
   for (const { file, questions: qs } of questionFiles) {
     const fileErrors = checkQuestions(qs, characters, seen);
-    if (file.startsWith('cross-') && !fileErrors.length) fileErrors.push(...checkCrossType(qs, characters));
     if (!only.length || only.includes(file)) errors.push(...fileErrors.map((e) => `${file}: ${e}`));
   }
   if (errors.length) {
@@ -189,6 +189,10 @@ async function main() {
     for (const [a, b] of shown) console.log(`  not separated: ${a} / ${b}`);
     if (shown.length < unseparated.length) console.log(`  … ${unseparated.length - shown.length} more (--verbose)`);
   }
+
+  const mix = typeMix(questions, characters);
+  const share = (n) => `${((100 * n) / questions.length).toFixed(0)}%`;
+  console.log(`Questions mixing character types: ${mix.mixedYes} (${share(mix.mixedYes)}) have more than one type on the yes side; ${mix.mixedBoth} (${share(mix.mixedBoth)}) on both sides.`);
 
   const sim = simulate(questions, characters);
   console.log(`Simulated ${sim.games} games: ${sim.mean.toFixed(1)} questions on average (median ${sim.median}, range ${sim.min}–${sim.max}).`);

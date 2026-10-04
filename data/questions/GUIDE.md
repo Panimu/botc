@@ -18,7 +18,7 @@ Questions live in `data/questions/*.json`, one file per character group, each li
 - `yes`: who answers yes. Either a list of character ids, or a match object on fields in `data/characters.json`, e.g. `{ "team": ["minion", "demon"] }` or `{ "otherNight": true }`. All fields must match.
 - `scope` (optional): the sub-pool the question is about, using the same selector forms. **Without a scope** the question is *global*: everyone not on the yes side is on the no side, and it can be asked at any point. **With a scope**, it's only asked when every remaining character is inside the scope, and the "no" side is the rest of the scope. Every `yes` character must be inside the scope.
 - `voice`: who speaks the `dinniman` line (see below).
-- `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers), and `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files.
+- `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers, in `travellers.json`), and `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files.
 
 ## Accuracy is the whole game
 
@@ -30,6 +30,27 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 - Don't name the character in either phrasing. Team names are fine.
 - If you're unsure whether a character belongs on the yes side, rephrase until you're sure, or leave the question out.
 
+### Known traps (found in review)
+
+- **Crude flags:** `learns`, `choosesPlayers`, `aboutDeath`, `aboutVoting`, `madness`, `drunkOrPoisoned`, `aboutAlignment`, `startsKnowing` and `oncePerGame` are keyword matches on ability text, not rules facts, so don't use them as selectors in new questions. For example, `choosesPlayers` really means "makes any choice", and `startsKnowing` misses the Evil Twin, Widow, Summoner and Boffin. Use hand-tagged traits, `team`, `edition`, `setup` or id lists instead.
+- **Night 1:** in games of 7+ players every Minion and Demon wakes on night 1 to meet their team, and the Demon gets bluffs. Questions about starting with knowledge or acting on night 1 must say "because of your own ability".
+- **The night sheet:** `firstNight`/`otherNight` mean the Storyteller has something to do, not that the player wakes.
+- **Demons that don't kill at night:** the Riot (kills through nominations on day 3) and the Leviathan (doesn't kill).
+- **Good characters that kill at night:** the Lycanthrope, for one.
+- **The Vizier is publicly known**, so "secretly evil" is false for it.
+- **Travellers' alignment is chosen by the Storyteller.** Good/evil questions treat Travellers as neither by default, so make sure the wording lets a Traveller fan answer no.
+- **Borrowed and believed abilities:** the Cannibal, Alchemist, Apprentice and Pixie borrow abilities. The Drunk and Marionette act as the character they believe they are. The Hermit holds every Outsider ability. Keep these on a fixed side with explicit wording or id lists.
+- **"Once per game, whenever you choose"** excludes the Juggler (day 1 only) and death triggers like the Klutz and Moonchild. It includes the Puzzlemaster.
+- **The Hermit:** with the Drunk ability, it believes it's a Townsfolk, so include it in "believes they're another character" questions. It only has the abilities of Outsiders on the script, and single-character globals need "your whole role" wording to exclude it.
+- **The Atheist:** executing the Atheist does nothing; good wins by executing the *Storyteller*.
+- **The Puzzlemaster:** its guess can be private, so it isn't a public action.
+- **The Judge:** a failed vote only saves that nominee, and the day carries on. The Vizier can force an execution only if a good player voted, and can never force a fail.
+- **The Barista:** the Storyteller chooses who is affected and how, so the Barista player chooses nothing.
+- **"Your execution loses the game"** catches every Demon unless it's limited to good players.
+- **Travellers' characters are public**: everyone knows which Traveller you are, though not your alignment. "Everyone knows your character" questions must exclude them.
+- **The Pit-Hag** changes characters but never alignment, so it isn't a "turn someone evil" character.
+- **The madness rule** means trying to convince the group you're a character, with a penalty if you don't. Handing out bluffs (Snitch, Summoner) isn't madness, and neither is the Lunatic believing it's the Demon.
+
 ## Shape of the pool
 
 - **Narrow splits are welcome**: one or two characters against everyone else is a great question. Aim for every character to have at least two narrow global questions that single them out (or them plus one or two others).
@@ -38,9 +59,9 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 
 ## Cross-type questions and traits
 
-Most of the bank should mix character types: a good question puts Townsfolk, Outsiders, Minions, Demons and Travellers on **both** sides. "Do you kill?" catches Demons, but also the Assassin, Gossip, Slayer and Gunslinger, and leaves other Demons-adjacent and good characters on the no side. These questions cut the pool by large mixed chunks, which keeps games short and makes scoped questions reachable.
+Lots of the bank should mix character types, with Townsfolk, Outsiders, Minions, Demons and Travellers spread across the sides. "Do you kill?" catches Demons, but also the Assassin, Gossip, Slayer and Gunslinger, and leaves other Demons-adjacent and good characters on the no side. These questions cut the pool by large mixed chunks, which keeps games short and makes scoped questions reachable.
 
-Cross-type questions live in `cross-*.json`. The validator **requires** at least two character types on each side of every question in those files.
+Cross-type questions live in `cross-*.json`. Mixing is the aim, not a rule: a question with one type on a side is fine when it's the right question. `npm run validate` reports how much of the bank mixes types.
 
 They select characters through **traits**: shared, precisely defined tags in `data/traits/*.json`:
 
@@ -89,14 +110,14 @@ Mild swearing is fine (hell, damn, crap, ass). Nothing stronger, no slurs, no se
 [
   {
     "id": "global-holding-a-clue",
-    "plain": "Would you like to start the game already knowing something useful?",
-    "dinniman": "Some contestants grind for every scrap of information. Others get a free clue the moment the doors lock, like a participation trophy for being born lucky. Are you the lucky kind?",
+    "plain": "Does your own ability hand you a clue at the very start, rather than fresh information each night?",
+    "dinniman": "Some contestants grind for every scrap of information. Others get a free clue the moment the doors lock, like a participation trophy for being born lucky. Does your ability make you the lucky kind?",
     "voice": "The System AI",
-    "yes": { "startsKnowing": true }
+    "yes": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter"]
   },
   {
     "id": "global-evil-team",
-    "plain": "Are you secretly working against the town?",
+    "plain": "Are you on the evil team, working against the town?",
     "dinniman": "Look, I'm not judging. Okay, I'm judging a little. But if you're planning to smile at these people all day and knife them all night, I'd like to know now. Is that you?",
     "voice": "Carl",
     "yes": { "team": ["minion", "demon"] }

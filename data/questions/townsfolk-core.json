@@ -2143,8 +2143,8 @@
   },
   {
     "id": "tfc-tf-guesswork",
-    "plain": "Does your ability ask you to make guesses?",
-    "dinniman": "Mongo? (Mongo tilts his head, sniffs a player, and guesses. Mongo guesses wrong. Mongo is still a good boy.) Does your ability ask you to make guesses?",
+    "plain": "Does your ability ask you to put a guess into words, either out loud or to the Storyteller?",
+    "dinniman": "Mongo? (Mongo tilts his head, sniffs a player, and guesses. Mongo guesses wrong. Mongo is still a good boy.) Does your ability ask you to put a guess into words, out loud or to the Storyteller?",
     "voice": "Mongo",
     "yes": [
       "gambler",
@@ -2916,6 +2916,749 @@
       "poppygrower",
       "pacifist",
       "atheist"
+    ]
+  },
+  {
+    "id": "tfc-tb-info-gatherer",
+    "plain": "Of the Trouble Brewing Townsfolk, is your ability about gathering information?",
+    "dinniman": "In the starter town, about half the good guys are detectives and the rest are, I don't know, furniture with opinions. Is your ability about gathering information?",
+    "voice": "Carl",
+    "yes": [
+      "washerwoman",
+      "librarian",
+      "investigator",
+      "chef",
+      "empath",
+      "fortuneteller",
+      "undertaker",
+      "ravenkeeper"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "tfc-tb-demon-defence",
+    "plain": "Of the Trouble Brewing Townsfolk, does your ability protect someone from being killed by the Demon?",
+    "dinniman": "Not everyone in the first town is a detective. A few of us are there to make sure somebody is still breathing in the morning. Does your ability protect someone from being killed by the Demon?",
+    "voice": "Katia",
+    "yes": [
+      "monk",
+      "soldier",
+      "mayor"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "tfc-tb-nightly-news",
+    "plain": "Of the Trouble Brewing Townsfolk, do you get fresh information night after night?",
+    "dinniman": "Some of our starter-town heroes get one clue and a pat on the head! Others get a brand-new scoop every single night! Do you get fresh information night after night?",
+    "voice": "The Host",
+    "yes": [
+      "empath",
+      "fortuneteller",
+      "undertaker"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "tfc-tb-no-pointing",
+    "plain": "Of the Trouble Brewing Townsfolk, does your ability work without you ever choosing a player?",
+    "dinniman": "Pointing at people is rude, dear, and some of us never have to. The game just does its thing around us. Does your ability work without you ever choosing a player?",
+    "voice": "Elle",
+    "yes": [
+      "washerwoman",
+      "librarian",
+      "investigator",
+      "chef",
+      "empath",
+      "undertaker",
+      "virgin",
+      "soldier",
+      "mayor"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "tfc-tb-daylight-only",
+    "plain": "Of the Trouble Brewing Townsfolk, does your ability only ever come into play during the day?",
+    "dinniman": "SOME OF US DO OUR BEST WORK IN BROAD DAYLIGHT, IN FRONT OF EVERYONE, WITH MAXIMUM SCREAMING! Does your ability only ever come into play during the day?",
+    "voice": "Samantha",
+    "yes": [
+      "slayer",
+      "virgin"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "tb"
+    }
+  },
+  {
+    "id": "tfc-bmr-drunk-makers",
+    "plain": "Of the Bad Moon Rising Townsfolk, does your ability get other players drunk?",
+    "dinniman": "That town is practically a TAVERN, darling. Half the good guys go around getting people sloshed and calling it strategy. Does your ability get other players drunk?",
+    "voice": "Princess Donut",
+    "yes": [
+      "sailor",
+      "innkeeper",
+      "courtier",
+      "minstrel"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "tfc-bmr-cheat-death",
+    "plain": "Of the Bad Moon Rising Townsfolk, can your ability stop someone from dying?",
+    "dinniman": "That place is a bloodbath, so some of the good folk come with ways to keep bodies off the floor. Can your ability stop someone from dying?",
+    "voice": "Mordecai",
+    "yes": [
+      "sailor",
+      "innkeeper",
+      "tealady",
+      "pacifist",
+      "fool"
+    ],
+    "scope": [
+      "grandmother",
+      "sailor",
+      "chambermaid",
+      "innkeeper",
+      "gambler",
+      "gossip",
+      "courtier",
+      "minstrel",
+      "tealady",
+      "fool",
+      "pacifist"
+    ]
+  },
+  {
+    "id": "tfc-bmr-told-something",
+    "plain": "Of the Bad Moon Rising Townsfolk, does the Storyteller ever give you information directly?",
+    "dinniman": "Fun stat: in the Bad Moon town, hardly anyone on the good team gets actual information! It's a very action-forward brand. Does the Storyteller ever give you information directly?",
+    "voice": "Zev",
+    "yes": [
+      "grandmother",
+      "chambermaid"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "tfc-bmr-own-worst-enemy",
+    "plain": "Of the Bad Moon Rising Townsfolk, could your own ability kill you?",
+    "dinniman": "Warning: some abilities in this region have been flagged as Hazardous To Owner! We've decided not to fix that because the ratings are incredible. Could your own ability kill you?",
+    "voice": "The System AI",
+    "yes": [
+      "grandmother",
+      "gambler"
+    ],
+    "scope": [
+      "grandmother",
+      "sailor",
+      "chambermaid",
+      "innkeeper",
+      "gambler",
+      "exorcist",
+      "courtier",
+      "professor",
+      "minstrel",
+      "tealady",
+      "fool",
+      "pacifist"
+    ]
+  },
+  {
+    "id": "tfc-bmr-single-use",
+    "plain": "Of the Bad Moon Rising Townsfolk, do you get just one use of your ability, at a time of your choosing?",
+    "dinniman": "One shot, sweetheart, and you pick the moment. Do you hoard it like a secret, or blurt it out on the first night? Either way, tell me: do you get just one use of your ability, at a time of your choosing?",
+    "voice": "Odette",
+    "yes": [
+      "courtier",
+      "professor"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "tfc-bmr-hands-off",
+    "plain": "Of the Bad Moon Rising Townsfolk, does your ability work without you ever waking or doing anything?",
+    "dinniman": "Some people in that town have abilities that just sort of happen to them. No decisions, no wake-ups. I'm extremely jealous. Does your ability work without you ever waking or doing anything?",
+    "voice": "Carl",
+    "yes": [
+      "minstrel",
+      "tealady",
+      "pacifist",
+      "fool"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "bmr"
+    }
+  },
+  {
+    "id": "tfc-snv-quiet-listener",
+    "plain": "Of the Sects and Violets Townsfolk, do you receive information every night without choosing anyone?",
+    "dinniman": "Some of us don't get to point or pick. We just wake up, hear the news, and try to make sense of it. Do you receive information every night without choosing anyone?",
+    "voice": "Katia",
+    "yes": [
+      "mathematician",
+      "flowergirl",
+      "towncrier",
+      "oracle"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "tfc-snv-daytime-act",
+    "plain": "Of the Sects and Violets Townsfolk, do you use your ability during the day?",
+    "dinniman": "While most of our violet-town heroes work the night shift, a few prefer the daytime crowd! Do you use your ability during the day?",
+    "voice": "The Host",
+    "yes": [
+      "savant",
+      "artist",
+      "juggler"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "tfc-snv-saved-for-later",
+    "plain": "Of the Sects and Violets Townsfolk, do you have a once-per-game ability you can use whenever you choose?",
+    "dinniman": "I SHALL BIDE MY TIME! Lesser beings squander their gifts, but I wait, I plot, and I strike when the moment is PERFECT! Do you have a once-per-game ability you can use whenever you choose?",
+    "voice": "Prepotente",
+    "yes": [
+      "seamstress",
+      "philosopher",
+      "artist"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "tfc-snv-night-pick",
+    "plain": "Of the Sects and Violets Townsfolk, does your ability have you choose players at night?",
+    "dinniman": "Choosing players at night is how you get things done in that town, and also how you make enemies. Does your ability have you choose players at night?",
+    "voice": "Mordecai",
+    "yes": [
+      "dreamer",
+      "snakecharmer",
+      "seamstress"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "tfc-snv-lie-in-the-mix",
+    "plain": "Of the Sects and Violets Townsfolk, does your information deliberately include a false option next to the true one?",
+    "dinniman": "Half the truth and half hogwash, served on the same plate. Some of us get our clues that way on purpose. Does your information deliberately include a false option next to the true one?",
+    "voice": "Elle",
+    "yes": [
+      "savant",
+      "dreamer"
+    ],
+    "scope": [
+      "clockmaker",
+      "snakecharmer",
+      "mathematician",
+      "dreamer",
+      "flowergirl",
+      "towncrier",
+      "oracle",
+      "savant",
+      "seamstress",
+      "philosopher",
+      "artist",
+      "juggler"
+    ]
+  },
+  {
+    "id": "tfc-snv-demon-focus",
+    "plain": "Of the Sects and Violets Townsfolk, does your ability specifically involve the Demon?",
+    "dinniman": "THE DEMON! THE DEMON! Some of you are obsessed with the beast, and I APPROVE! Does your ability specifically involve the Demon?",
+    "voice": "Samantha",
+    "yes": [
+      "clockmaker",
+      "snakecharmer",
+      "flowergirl",
+      "sage"
+    ],
+    "scope": {
+      "team": "townsfolk",
+      "edition": "snv"
+    }
+  },
+  {
+    "id": "tfc-trio-hunting-evil",
+    "plain": "Is your starting clue meant to point you towards an evil player?",
+    "dinniman": "Two names, one title. For most of you it's a good guy to trust. For one of you, it's a rat to hunt. Is your starting clue meant to point you towards an evil player?",
+    "voice": "Mordecai",
+    "yes": [
+      "investigator"
+    ],
+    "scope": [
+      "washerwoman",
+      "librarian",
+      "investigator"
+    ]
+  },
+  {
+    "id": "tfc-trio-nobody-home",
+    "plain": "Could your starting clue tell you that nobody of the kind you are looking for is in play?",
+    "dinniman": "Imagine getting your one clue of the game and it's just 'nope, none of those here.' Honestly, still useful. Annoying, but useful. Could your starting clue tell you that nobody of the kind you're looking for is in play?",
+    "voice": "Carl",
+    "yes": [
+      "librarian"
+    ],
+    "scope": [
+      "washerwoman",
+      "librarian",
+      "investigator"
+    ]
+  },
+  {
+    "id": "tfc-trio-fellow-townsfolk",
+    "plain": "Does your starting clue point towards a fellow Townsfolk?",
+    "dinniman": "My clue points at one of my OWN, darling: a fellow upstanding citizen, probably with dreadful taste in clothes. Does your starting clue point towards a fellow Townsfolk?",
+    "voice": "Princess Donut",
+    "yes": [
+      "washerwoman"
+    ],
+    "scope": [
+      "washerwoman",
+      "librarian",
+      "investigator"
+    ]
+  },
+  {
+    "id": "tfc-fn-a-number",
+    "plain": "Does your starting clue come as a number?",
+    "dinniman": "Starting Bonus: Math! While other contestants get names and faces, you get a single integer. Enjoy! Does your starting clue come as a number?",
+    "voice": "The System AI",
+    "yes": [
+      "chef",
+      "clockmaker"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "noble",
+      "chef",
+      "investigator",
+      "washerwoman",
+      "librarian",
+      "clockmaker",
+      "grandmother",
+      "shugenja",
+      "pixie",
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfc-fn-names-faces",
+    "plain": "Does your starting clue usually point at specific players?",
+    "dinniman": "Some starting packages come with actual names and faces! Our viewers love being able to follow along. Does your starting clue usually point at specific players?",
+    "voice": "Zev",
+    "yes": [
+      "steward",
+      "knight",
+      "noble",
+      "investigator",
+      "washerwoman",
+      "librarian",
+      "grandmother",
+      "bountyhunter"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "noble",
+      "chef",
+      "investigator",
+      "washerwoman",
+      "librarian",
+      "clockmaker",
+      "grandmother",
+      "shugenja",
+      "pixie",
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfc-fn-toward-evil",
+    "plain": "Is your starting clue built to point you towards an evil player?",
+    "dinniman": "Some people begin the game with a lovely little lead on a villain. Do you, darling? Is your starting clue built to point you towards an evil player?",
+    "voice": "Odette",
+    "yes": [
+      "noble",
+      "investigator",
+      "bountyhunter"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "noble",
+      "chef",
+      "investigator",
+      "washerwoman",
+      "librarian",
+      "clockmaker",
+      "grandmother",
+      "pixie",
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfc-fn-names-a-character",
+    "plain": "Does your starting clue usually name a specific character?",
+    "dinniman": "Knowing a person is one thing. Knowing exactly what they are is something else. Does your starting clue usually name a specific character?",
+    "voice": "Katia",
+    "yes": [
+      "washerwoman",
+      "librarian",
+      "investigator",
+      "grandmother",
+      "pixie"
+    ],
+    "scope": [
+      "steward",
+      "knight",
+      "noble",
+      "chef",
+      "investigator",
+      "washerwoman",
+      "librarian",
+      "clockmaker",
+      "grandmother",
+      "shugenja",
+      "pixie",
+      "bountyhunter"
+    ]
+  },
+  {
+    "id": "tfc-pr-self-preservation",
+    "plain": "Of the protective characters, do you protect only yourself?",
+    "dinniman": "Some folks guard the whole neighbourhood. I guard me, and I sleep fine, thanks. Of the protective sorts, do you protect only yourself?",
+    "voice": "Elle",
+    "yes": [
+      "soldier",
+      "sailor",
+      "fool",
+      "mayor"
+    ],
+    "scope": [
+      "monk",
+      "innkeeper",
+      "tealady",
+      "soldier",
+      "sailor",
+      "fool",
+      "pacifist",
+      "mayor"
+    ]
+  },
+  {
+    "id": "tfc-pr-beats-the-noose",
+    "plain": "Of the protective characters, does your protection work against execution, not just night-time deaths?",
+    "dinniman": "Most shields only work in the dark. A few still hold when the mob has the rope. Of the protective sorts, does your protection work against execution, not just night-time deaths?",
+    "voice": "Mordecai",
+    "yes": [
+      "sailor",
+      "pacifist",
+      "fool",
+      "tealady"
+    ],
+    "scope": [
+      "monk",
+      "innkeeper",
+      "tealady",
+      "soldier",
+      "sailor",
+      "fool",
+      "pacifist",
+      "mayor"
+    ]
+  },
+  {
+    "id": "tfc-pr-nightly-pick",
+    "plain": "Of the protective characters, do you choose who to protect each night?",
+    "dinniman": "Of all our guardian angels, only a couple get to wake up and hand-pick tonight's lucky survivor! Of the protective sorts, do you choose who to protect each night?",
+    "voice": "The Host",
+    "yes": [
+      "monk",
+      "innkeeper"
+    ],
+    "scope": [
+      "monk",
+      "innkeeper",
+      "tealady",
+      "soldier",
+      "sailor",
+      "fool",
+      "pacifist",
+      "mayor"
+    ]
+  },
+  {
+    "id": "tfc-opg-daytime-shot",
+    "plain": "Of the once-per-game characters, do you use your one shot during the day?",
+    "dinniman": "Most once-a-game tricks happen at night while everyone's asleep. A few happen in daylight, where everyone can watch you mess it up. Do you use your one shot during the day?",
+    "voice": "Carl",
+    "yes": [
+      "artist",
+      "slayer",
+      "fisherman"
+    ],
+    "scope": [
+      "engineer",
+      "nightwatchman",
+      "courtier",
+      "seamstress",
+      "philosopher",
+      "huntsman",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman"
+    ]
+  },
+  {
+    "id": "tfc-opg-get-told",
+    "plain": "Of the once-per-game characters, does your one use make the Storyteller tell you something?",
+    "dinniman": "For a few of our single-use talents, the payoff is pure content: the Storyteller tells you something! Of the once-per-game characters, does your one use make the Storyteller tell you something?",
+    "voice": "Zev",
+    "yes": [
+      "seamstress",
+      "artist",
+      "fisherman"
+    ],
+    "scope": [
+      "engineer",
+      "nightwatchman",
+      "courtier",
+      "seamstress",
+      "philosopher",
+      "huntsman",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman"
+    ]
+  },
+  {
+    "id": "tfc-opg-name-the-role",
+    "plain": "Of the once-per-game characters, does your one use have you choose characters rather than players?",
+    "dinniman": "Faces are SO common. When I make my one grand gesture, I choose a TITLE, not some grubby person. Of the once-per-game characters, does your one use have you choose characters rather than players?",
+    "voice": "Princess Donut",
+    "yes": [
+      "courtier",
+      "philosopher",
+      "engineer"
+    ],
+    "scope": [
+      "engineer",
+      "nightwatchman",
+      "courtier",
+      "seamstress",
+      "philosopher",
+      "huntsman",
+      "professor",
+      "artist",
+      "slayer",
+      "fisherman"
+    ]
+  },
+  {
+    "id": "tfc-nd-about-deaths",
+    "plain": "Of those who learn something each night about the day just gone, is your information about players who have died?",
+    "dinniman": "THE DEAD! TELL ME OF THE DEAD! Some of you only care about corpses, and frankly that's the correct priority! Is your nightly information about players who have died?",
+    "voice": "Samantha",
+    "yes": [
+      "oracle",
+      "undertaker"
+    ],
+    "scope": [
+      "flowergirl",
+      "towncrier",
+      "oracle",
+      "undertaker"
+    ]
+  },
+  {
+    "id": "tfc-nd-demon-watch",
+    "plain": "Of those who learn something each night about the day just gone, is your information about the Demon specifically?",
+    "dinniman": "Specialised Tracking Module installed! While your peers fuss about corpses and lackeys, you watch exactly one target: the big boss. Is your nightly information about the Demon specifically?",
+    "voice": "The System AI",
+    "yes": [
+      "flowergirl"
+    ],
+    "scope": [
+      "flowergirl",
+      "towncrier",
+      "oracle",
+      "undertaker"
+    ]
+  },
+  {
+    "id": "tfc-ng-who-sits-where",
+    "plain": "Of those who learn numbers, is your number about where people are sitting?",
+    "dinniman": "THE SEATING CHART IS EVERYTHING! Who sits beside whom, how many chairs apart, I SEE IT ALL! Of those who learn numbers, is your number about where people are sitting?",
+    "voice": "Prepotente",
+    "yes": [
+      "chef",
+      "empath",
+      "clockmaker"
+    ],
+    "scope": [
+      "chef",
+      "empath",
+      "clockmaker",
+      "mathematician",
+      "oracle",
+      "juggler",
+      "chambermaid"
+    ]
+  },
+  {
+    "id": "tfc-ng-fresh-number",
+    "plain": "Of those who learn numbers, do you get a fresh number most nights?",
+    "dinniman": "One number is a hint. A number every night is a pattern, and patterns are what keep you alive. Of those who learn numbers, do you get a fresh number most nights?",
+    "voice": "Mordecai",
+    "yes": [
+      "empath",
+      "mathematician",
+      "oracle",
+      "chambermaid"
+    ],
+    "scope": [
+      "chef",
+      "empath",
+      "clockmaker",
+      "mathematician",
+      "oracle",
+      "juggler",
+      "chambermaid"
+    ]
+  },
+  {
+    "id": "tfc-ng-your-choice",
+    "plain": "Of those who learn numbers, do you get to choose which players your number is about?",
+    "dinniman": "I'd rather decide what I'm investigating than have it decided for me. Of those who learn numbers, do you get to choose which players your number is about?",
+    "voice": "Katia",
+    "yes": [
+      "chambermaid",
+      "juggler"
+    ],
+    "scope": [
+      "chef",
+      "empath",
+      "clockmaker",
+      "mathematician",
+      "oracle",
+      "juggler",
+      "chambermaid"
+    ]
+  },
+  {
+    "id": "tfc-pd-body-count",
+    "plain": "Of those who make a public play during the day, can yours lead to a death?",
+    "dinniman": "Everybody loves a public performance, but some of them end with a body on the stage. Now, darling, of those who make a public play during the day, can yours lead to a death?",
+    "voice": "Odette",
+    "yes": [
+      "gossip",
+      "slayer"
+    ],
+    "scope": [
+      "gossip",
+      "alsaahir",
+      "slayer",
+      "juggler"
+    ]
+  },
+  {
+    "id": "tfc-dm-one-round",
+    "plain": "Of those whose ability gets others drunk, does yours only do it once all game?",
+    "dinniman": "Some folks pour every night. Others save it all for one almighty bender. Of those whose ability gets others drunk, does yours only do it once all game?",
+    "voice": "Elle",
+    "yes": [
+      "courtier",
+      "philosopher"
+    ],
+    "scope": [
+      "sailor",
+      "innkeeper",
+      "courtier",
+      "philosopher",
+      "minstrel"
+    ]
+  },
+  {
+    "id": "tfc-nc-learn-every-night",
+    "plain": "Of those who choose someone each night, does the Storyteller give you information about your choice every night?",
+    "dinniman": "Some of us point at people every night and actually get told something back. Others just point and hope. Does the Storyteller give you information about your choice every night?",
+    "voice": "Carl",
+    "yes": [
+      "chambermaid",
+      "dreamer",
+      "fortuneteller"
+    ],
+    "scope": [
+      "sailor",
+      "chambermaid",
+      "snakecharmer",
+      "dreamer",
+      "fortuneteller",
+      "innkeeper",
+      "monk",
+      "gambler",
+      "exorcist"
+    ]
+  },
+  {
+    "id": "tfc-nc-only-the-demon",
+    "plain": "Of those who choose someone each night, does your choice only do anything if you pick the Demon?",
+    "dinniman": "For two of our nightly pickers, it's all or nothing: find the Demon and the fireworks start, miss and nothing happens at all! Does your choice only do anything if you pick the Demon?",
+    "voice": "The Host",
+    "yes": [
+      "snakecharmer",
+      "exorcist"
+    ],
+    "scope": [
+      "sailor",
+      "chambermaid",
+      "snakecharmer",
+      "dreamer",
+      "fortuneteller",
+      "innkeeper",
+      "monk",
+      "gambler",
+      "exorcist"
     ]
   }
 ]

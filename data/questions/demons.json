@@ -136,8 +136,8 @@
   },
   {
     "id": "dem-casting-director",
-    "plain": "Would you like to hand out Minion characters to the players of your choice, like a casting director?",
-    "dinniman": "YOU, darling, are the poisoner. You over there, the spy. No, no, don't argue, I have a VISION. Would you like to be the casting director who hands Minion characters to whichever players you choose?",
+    "plain": "Would you like to pick which players join your evil team, and cast each of them as a particular Minion?",
+    "dinniman": "YOU, darling, are joining my team as the poisoner. You over there, the spy. No, no, don't argue, I have a VISION. Would you like to pick which players join your evil team and cast each of them as a particular Minion?",
     "voice": "Princess Donut",
     "yes": [
       "kazali"
@@ -628,8 +628,8 @@
   },
   {
     "id": "dem-bmr-quiet-nights",
-    "plain": "As the Demon, would you be fine with some nights, after the first, where nobody dies by your hand?",
-    "dinniman": "Restraint can be a weapon too. A night with no bodies makes people careless, or suspicious of the wrong person. As the Demon, would you be fine with some nights after the first where nobody dies by your hand?",
+    "plain": "As the Demon, would you be fine with some nights, after the first, where you choose no victim at all?",
+    "dinniman": "Restraint can be a weapon too. A night with no bodies makes people careless, or suspicious of the wrong person. As the Demon, would you be fine with some nights after the first where you choose no victim at all?",
     "voice": "Katia",
     "yes": [
       "po",
@@ -1055,12 +1055,53 @@
       "spy",
       "legion"
     ],
-    "scope": {
-      "team": [
-        "minion",
-        "demon"
-      ]
-    }
+    "scope": [
+      "mezepheles",
+      "godfather",
+      "poisoner",
+      "devilsadvocate",
+      "spy",
+      "harpy",
+      "witch",
+      "cerenovus",
+      "fearmonger",
+      "pithag",
+      "psychopath",
+      "assassin",
+      "wizard",
+      "widow",
+      "xaan",
+      "marionette",
+      "wraith",
+      "summoner",
+      "eviltwin",
+      "goblin",
+      "boomdandy",
+      "mastermind",
+      "scarletwoman",
+      "vizier",
+      "organgrinder",
+      "boffin",
+      "baron",
+      "yaggababble",
+      "pukka",
+      "nodashii",
+      "imp",
+      "shabaloth",
+      "ojo",
+      "kazali",
+      "po",
+      "zombuul",
+      "vigormortis",
+      "vortox",
+      "legion",
+      "fanggu",
+      "lordoftyphon",
+      "lleech",
+      "alhadikhia",
+      "riot",
+      "leviathan"
+    ]
   },
   {
     "id": "dem-evil-bigger-team",
