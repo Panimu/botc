@@ -270,11 +270,14 @@
   },
   {
     "id": "fun-single-use-item",
-    "plain": "Do you get exactly one deliberate use of your ability in the whole game?",
-    "dinniman": "ITEM ACQUIRED: Ability (Single Use). This item will crumble to dust the moment you touch it. No refunds. No exchanges. Do you get exactly one deliberate use of your ability in the whole game?",
+    "plain": "Does your ability only work once in the whole game?",
+    "dinniman": "ITEM ACQUIRED: Ability (Single Use). This item will crumble to dust the moment it activates, whether you meant it to or not. No refunds. No exchanges. Does your ability only work once in the whole game?",
     "voice": "The System AI",
     "yes": {
-      "oneShot": true
+      "takesEffectOnce": true
+    },
+    "scope": {
+      "takesEffectOnceClear": true
     }
   },
   {

@@ -726,46 +726,58 @@
   },
   {
     "id": "xp-oneshot-spent",
-    "plain": "Do you get exactly one deliberate use of your ability in the whole game, and then it's spent?",
-    "dinniman": "One-time consumable detected! Use it wisely, or don't, the audience enjoys both outcomes. Do you get exactly one deliberate use of your ability, and then it's gone forever?",
+    "plain": "Does your ability only ever take effect once in the whole game?",
+    "dinniman": "One-time consumable detected! Whether you trigger it or it triggers you, the audience enjoys the outcome either way. Does your ability only ever go off once, and then it's gone forever?",
     "voice": "The System AI",
     "yes": {
-      "oneShot": true
+      "takesEffectOnce": true
+    },
+    "scope": {
+      "takesEffectOnceClear": true
     }
   },
   {
     "id": "xp-oneshot-single-move",
-    "plain": "Is your whole ability spent in a single move?",
-    "dinniman": "You get one swing. That's it. I've seen people hold onto a swing like that until they died with it still in their pocket. Don't be those people. Is your whole ability spent in one single move?",
+    "plain": "Is your whole ability used up in a single go?",
+    "dinniman": "One swing, kid. Maybe you take it, maybe it takes itself. Either way, there's no second one coming. Is your whole ability used up in a single go?",
     "voice": "Mordecai",
     "yes": {
-      "oneShot": true
+      "takesEffectOnce": true
+    },
+    "scope": {
+      "takesEffectOnceClear": true
     }
   },
   {
     "id": "xp-oneshot-evil",
-    "plain": "Are you a Minion or Demon with just one deliberate use of your ability all game?",
-    "dinniman": "One perfect strike, darling, delivered with style and never repeated. That's what makes it ICONIC. Are you a Minion or Demon with just one use of your ability all game?",
+    "plain": "Are you a Minion or Demon whose ability only ever takes effect once?",
+    "dinniman": "One perfect strike, darling, delivered with style and never repeated. That's what makes it ICONIC. Are you a Minion or Demon whose ability only ever goes off once?",
     "voice": "Princess Donut",
     "yes": {
-      "oneShot": true,
+      "takesEffectOnce": true,
       "team": [
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "takesEffectOnceClear": true
     }
   },
   {
     "id": "xp-oneshot-good",
-    "plain": "Are you a Townsfolk or Outsider who gets just one deliberate use of your ability all game?",
-    "dinniman": "Holding one card all game, waiting for the right moment, knowing you can't take it back. I think that's one of the bravest ways to play. Are you a Townsfolk or Outsider with just one deliberate use of your ability?",
+    "plain": "Are you a Townsfolk or Outsider whose ability only ever takes effect once?",
+    "dinniman": "Knowing your moment comes once, and only once, and you can't take it back. I think that's one of the bravest ways to play. Are you a Townsfolk or Outsider whose ability only ever goes off once?",
     "voice": "Katia",
     "yes": {
-      "oneShot": true,
+      "takesEffectOnce": true,
       "team": [
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "takesEffectOnceClear": true
     }
   },
   {
