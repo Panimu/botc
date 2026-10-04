@@ -32,6 +32,9 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 
 ### Known traps (found in review)
 
+- **Permissive phrasing:** "Would you be fine with…", "Would you accept…" and "Could you…" get a yes from anyone who doesn't mind. Ask what they'd *like*, or what their ability *does*. Opinion questions ("Is that the best start?") can draw a no from the character's own fans.
+- **Preference contests between look-alikes:** "Would you rather X than Y" questions can swap answers between similar characters (the High Priestess, General and Fisherman, for instance). Scope them, or tie them to the specific mechanic.
+
 - **Crude flags:** `learns`, `choosesPlayers`, `aboutDeath`, `aboutVoting`, `madness`, `drunkOrPoisoned`, `aboutAlignment`, `startsKnowing` and `oncePerGame` are keyword matches on ability text, not rules facts, so don't use them as selectors in new questions. For example, `choosesPlayers` really means "makes any choice", and `startsKnowing` misses the Evil Twin, Widow, Summoner and Boffin. Use hand-tagged traits, `team`, `edition`, `setup` or id lists instead.
 - **Night 1:** in games of 7+ players every Minion and Demon wakes on night 1 to meet their team, and the Demon gets bluffs. Questions about starting with knowledge or acting on night 1 must say "because of your own ability".
 - **The night sheet:** `firstNight`/`otherNight` mean the Storyteller has something to do, not that the player wakes.
@@ -49,6 +52,7 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 - **"Your execution loses the game"** catches every Demon unless it's limited to good players.
 - **Travellers' characters are public**: everyone knows which Traveller you are, though not your alignment. "Everyone knows your character" questions must exclude them.
 - **The Pit-Hag** changes characters but never alignment, so it isn't a "turn someone evil" character.
+- **The Moonchild's curse** only kills good players, which is a trap for "only kills the innocent" wording. **The Cult Leader** never chooses a player at night (the Storyteller sets its alignment from its neighbours), but it does have a public daytime action.
 - **The madness rule** means trying to convince the group you're a character, with a penalty if you don't. Handing out bluffs (Snitch, Summoner) isn't madness, and neither is the Lunatic believing it's the Demon.
 
 ## Shape of the pool

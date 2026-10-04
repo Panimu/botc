@@ -10,8 +10,8 @@
   },
   {
     "id": "tfx-simplest-start",
-    "plain": "Is one guaranteed-good name, with nothing else attached, all the starting information you'd want?",
-    "dinniman": "Some of you want spreadsheets. Some of you want a single name on a napkin that says 'this one's fine'. No role, no numbers, no fuss. Is that one lonely good name enough to make you happy?",
+    "plain": "Would you like your only starting information to be one guaranteed-good name, with nothing else attached?",
+    "dinniman": "Some of you want spreadsheets. Some of you want a single name on a napkin that says 'this one's fine'. No role, no numbers, no fuss. Would you like that one lonely good name to be all you start with?",
     "voice": "Carl",
     "yes": [
       "steward"
@@ -28,8 +28,8 @@
   },
   {
     "id": "tfx-honour-clears-two",
-    "plain": "As a good player, would you like to clear two people of being the Demon while still unsure whether they are good?",
-    "dinniman": "There is something noble about standing up for the town and saying: not these two, not the big bad. Even knowing they could still be working for it. As one of the good guys, would you like to clear that pair of being the Demon without knowing they are good?",
+    "plain": "As a good player, would you like to be handed two people already cleared of being the Demon, while still unsure whether they are good?",
+    "dinniman": "There is something noble about standing up for the town and saying: not these two, not the big bad. Even knowing they could still be working for it. As one of the good guys, would you like to be handed that pair, already cleared of being the Demon, without knowing they are good?",
     "voice": "Katia",
     "yes": [
       "knight"
@@ -64,8 +64,8 @@
   },
   {
     "id": "tfx-compass-needle",
-    "plain": "Do you think a simple clockwise-or-anticlockwise clue is the most useful thing you could start with?",
-    "dinniman": "HEAR ME. A compass needle is worth more than a thousand gossiping fools! Clockwise! Anticlockwise! The rest is noise! Do you believe one turn of direction is the finest clue a player could ask for?",
+    "plain": "Would you be happy to start the game with nothing but a clockwise-or-anticlockwise clue?",
+    "dinniman": "HEAR ME. A compass needle is worth more than a thousand gossiping fools! Clockwise! Anticlockwise! The rest is noise! Would you be content to begin the game with nothing but that one turn of direction?",
     "voice": "Prepotente",
     "yes": [
       "shugenja"
@@ -163,7 +163,7 @@
   },
   {
     "id": "tfx-sermon-strips-power",
-    "plain": "Would you like to strip Minions of their powers just by picking them out at night?",
+    "plain": "Would you like to choose players each night and leave any Minion among them powerless?",
     "dinniman": "Oh, I LOVE a sermon with consequences. You point at the wicked, and the wicked go limp and useless forever. Do you want to choose players at night and leave any Minion among them powerless?",
     "voice": "Samantha",
     "yes": [
@@ -262,8 +262,8 @@
   },
   {
     "id": "tfx-beast-bites-innocent",
-    "plain": "Do you have a beast beneath your civilised surface whose bite only ever kills the innocent?",
-    "dinniman": "OH, I adore this one! A howling monster hiding under a polite little face, and it can only rip apart the GOOD people! Delicious irony! Is there a beast like that inside you, one that only hurts the innocent?",
+    "plain": "Do you have a beast beneath your civilised surface that hunts every night, but whose bite only ever kills the innocent?",
+    "dinniman": "OH, I adore this one! A howling monster hiding under a polite little face, out hunting every night, and it can only rip apart the GOOD people! Delicious irony! Is there a beast like that inside you, one that hunts nightly and only hurts the innocent?",
     "voice": "Samantha",
     "yes": [
       "lycanthrope"
@@ -370,8 +370,8 @@
   },
   {
     "id": "tfx-first-day-moment",
-    "plain": "Would you like your ability's big moment to be tied to your very first day?",
-    "dinniman": "Most abilities simmer. Yours explodes on day one and then it's done. Blink and the audience misses it! Do you want your big moment pinned to your first day?",
+    "plain": "Would you like an ability you can only use on your very first day?",
+    "dinniman": "Most abilities simmer. Yours explodes on day one and then it's done. Blink and the audience misses it! Do you want an ability you can only use on your first day?",
     "voice": "The Host",
     "yes": [
       "princess",
@@ -542,8 +542,8 @@
   },
   {
     "id": "tfx-execution-wins",
-    "plain": "Would you like your own execution to win the game for good?",
-    "dinniman": "Most people beg not to be executed. You'd hand them the rope, because if they hang you, the good team wins. YES! MORE ROPE! Would you like your own execution to be the good team's victory?",
+    "plain": "Would you like good to win if the town executes the Storyteller?",
+    "dinniman": "Most people string up their neighbours. You'd rather string up the one running the show, because if the Storyteller hangs, the good team wins. YES! MORE ROPE! Would you like good to win if the town executes the Storyteller?",
     "voice": "Samantha",
     "yes": [
       "atheist"
@@ -628,14 +628,15 @@
   },
   {
     "id": "tfx-special-public-move",
-    "plain": "As a Townsfolk, does your ability have you make a special public guess, claim or shot during the day?",
-    "dinniman": "Stand up! Speak up! The whole circle stops to watch your big public moment: a shot, a guess, a juicy claim. Darling, does your ability make you take centre stage like that in daylight?",
+    "plain": "As a Townsfolk, does your ability have you make a special public guess, statement, call or shot during the day?",
+    "dinniman": "Stand up! Speak up! The whole circle stops to watch your big public moment: a shot, a guess, a juicy statement, a call to arms. Darling, does your ability make you take centre stage like that in daylight?",
     "voice": "Odette",
     "yes": [
-      "slayer",
-      "juggler",
+      "cultleader",
+      "gossip",
       "alsaahir",
-      "gossip"
+      "slayer",
+      "juggler"
     ],
     "scope": {
       "team": "townsfolk"
@@ -801,10 +802,11 @@
     "dinniman": "Forget slowly grinding down the opposition. Some of you have a big red button marked VICTORY. Ratings gold! Could your ability end the game in your team's favour all by itself?",
     "voice": "Zev",
     "yes": [
-      "alsaahir",
       "cultleader",
-      "atheist",
-      "mayor"
+      "alsaahir",
+      "slayer",
+      "mayor",
+      "atheist"
     ],
     "scope": {
       "team": "townsfolk"
@@ -1190,8 +1192,8 @@
   },
   {
     "id": "tfx-own-execution-triggers",
-    "plain": "Of these execution-minded roles, does your ability trigger when you yourself are executed?",
-    "dinniman": "Plenty of you care who gets strung up. But for one of you, the magic only happens when it's your own neck in the rope. Does your ability trigger on your own execution?",
+    "plain": "Of these execution-minded roles, does your ability trigger when the Storyteller, not a player, is executed?",
+    "dinniman": "Plenty of you care which player gets strung up. But for one of you, the magic only happens when the noose goes round the Storyteller's neck. Does your ability trigger when the Storyteller is executed?",
     "voice": "Mordecai",
     "yes": [
       "atheist"
