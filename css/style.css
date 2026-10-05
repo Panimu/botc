@@ -984,3 +984,19 @@ body {
 }
 
 .yesterday-note { margin: 0 0 1rem; color: var(--dim); font-size: 1rem; }
+
+/* Shown when the UTC day rolls over while the daily hunt is open. */
+.new-day {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--brass);
+  border-radius: 1rem;
+  background: var(--panel);
+}
+.new-day p { margin: 0; font-weight: 700; }
+.new-day .answer { min-height: 2.75rem; padding: 0.3rem 1.1rem; font-size: 1.05rem; }

@@ -176,6 +176,12 @@ function start(characters, questions, clockOffset) {
 
   function renderCountdown() {
     const t = now();
+    if (utcDate(t) !== date) {
+      // A new UTC day started while the page was open: this page still holds yesterday's hunt.
+      $('new-day').hidden = false;
+      $('countdown').textContent = "Today's hunt is ready.";
+      return;
+    }
     const midnight = Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate() + 1);
     const minutes = Math.ceil((midnight - t) / 60000);
     $('countdown').textContent = `Next hunt in ${Math.floor(minutes / 60)}h ${minutes % 60}m.`;
@@ -234,6 +240,7 @@ function start(characters, questions, clockOffset) {
   $('guess-confirm').addEventListener('click', guess);
   setupShare($('share-options'), $('share-status'), shareTexts);
   $('guess-hint').tabIndex = -1;
+  $('new-day-reload').addEventListener('click', () => location.reload());
   renderCountdown();
   setInterval(renderCountdown, 30000);
   render();

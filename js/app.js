@@ -154,7 +154,7 @@ function start(characters, questions, shareQuotes) {
   $('play-again').addEventListener('click', restart);
 
   document.addEventListener('keydown', (event) => {
-    if (event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.ctrlKey || event.metaKey || event.altKey || event.repeat) return;
     if (event.target.closest('input, textarea, select')) return;
     const key = event.key.toLowerCase();
     if (key === 'y') answer(true);

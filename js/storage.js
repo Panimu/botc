@@ -38,11 +38,14 @@ function localSet(key, value) {
 }
 
 // How two surviving copies of a key are combined.
-const MERGE = {
+export const MERGE = {
   // Results are { date: { won, score } }: keep every date from both copies.
   'daily-results': (a, b) => ({ ...b, ...a }),
-  // Progress is today's in-flight hunt: prefer the copy with more actions.
-  'daily-progress': (a, b) => ((a?.actions?.length ?? 0) >= (b?.actions?.length ?? 0) ? a : b),
+  // Progress is the in-flight hunt: the later day wins; on the same day, the copy with more actions.
+  'daily-progress': (a, b) => {
+    if ((a?.date ?? '') !== (b?.date ?? '')) return (a?.date ?? '') > (b?.date ?? '') ? a : b;
+    return (a?.actions?.length ?? 0) >= (b?.actions?.length ?? 0) ? a : b;
+  },
 };
 
 // Reconciles localStorage and IndexedDB for these keys before the page reads them.

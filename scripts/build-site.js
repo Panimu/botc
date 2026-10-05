@@ -8,7 +8,7 @@
 // styled line `dinniman`; neither the speakers nor that key are published.
 import { cp, mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import { join, extname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const out = join(root, '_site');
@@ -16,7 +16,7 @@ const version = process.argv.includes('--version') ? process.argv[process.argv.i
 
 // Never published: the names of the people and characters the styled lines imitate.
 const BANNED = ['Carl', 'Princess Donut', 'Donut', 'Mordecai', 'Katia', 'Zev', 'Odette', 'Mongo', 'Samantha',
-  'Prepotente', 'System AI', 'Dinniman', 'Dungeon Crawler', 'crawler', 'crawlers'];
+  'Prepotente', 'System AI', 'Dinniman', 'Dungeon Crawler', 'crawler'];
 const BANNED_CASE_SENSITIVE = ['Elle'];
 
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), 'utf8'));
@@ -62,9 +62,12 @@ async function* textFiles(dir) {
   }
 }
 
+// A name, optionally pluralised or possessive ("Donuts", "Carl's"), as a whole word.
+const word = (names) => `(^|[^A-Za-z])((?:${names.join('|')})(?:es|s|'s|’s)?)([^A-Za-z]|$)`;
+export const BANNED_PATTERNS = [new RegExp(word(BANNED), 'i'), new RegExp(word(BANNED_CASE_SENSITIVE))];
+
 async function scan() {
-  const anyCase = new RegExp(`(^|[^A-Za-z])(${BANNED.join('|')})([^A-Za-z]|$)`, 'i');
-  const exact = new RegExp(`(^|[^A-Za-z])(${BANNED_CASE_SENSITIVE.join('|')})([^A-Za-z]|$)`);
+  const [anyCase, exact] = BANNED_PATTERNS;
   const problems = [];
   for await (const path of textFiles(out)) {
     const text = await readFile(path, 'utf8');
@@ -76,10 +79,12 @@ async function scan() {
   return problems;
 }
 
-await build();
-const problems = await scan();
-if (problems.length) {
-  console.error(`Banned names found in the built site:\n${problems.join('\n')}`);
-  process.exit(1);
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  await build();
+  const problems = await scan();
+  if (problems.length) {
+    console.error(`Banned names found in the built site:\n${problems.join('\n')}`);
+    process.exit(1);
+  }
+  console.log(`Built _site (version ${version}); no banned names found.`);
 }
-console.log(`Built _site (version ${version}); no banned names found.`);
