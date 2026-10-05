@@ -100,7 +100,7 @@ main {
     max-width: none;
     display: grid;
     grid-template-columns: minmax(22rem, 44rem) minmax(0, 1fr);
-    column-gap: clamp(2rem, 4vw, 5rem);
+    column-gap: 0;
     align-items: start;
   }
 
@@ -112,7 +112,10 @@ main {
 
   /* The stage fills the space beside the panels at window height and stays in
      view; the circle is centred in it and sized to fit it. */
+  /* Spans exactly from the panels' edge to the window's edge (cancelling the
+     body's side padding), so the circle sits in the middle of the visible space. */
   .stage {
+    margin-right: -16px;
     position: sticky;
     top: 0;
     height: 100svh;
@@ -979,3 +982,5 @@ body {
 @media (pointer: coarse) {
   .answer-tile kbd, .card-foot kbd { display: none; }
 }
+
+.yesterday-note { margin: 0 0 1rem; color: var(--dim); font-size: 1rem; }

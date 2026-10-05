@@ -28,10 +28,16 @@ function start(characters, questions, clockOffset) {
   const now = () => new Date(Date.now() + clockOffset);
   const date = utcDate(now());
   const byId = new Map(characters.map((c) => [c.id, c]));
-  const game = new DailyGame({ characters, questions, date });
   const saved = store.get(PROGRESS_KEY, null);
   let actions = saved?.date === date ? saved.actions : [];
-  try { replay(game, actions); } catch { actions = []; }
+  let game = new DailyGame({ characters, questions, date });
+  try {
+    replay(game, actions);
+  } catch {
+    // Saved progress no longer replays (e.g. the questions changed): start today's hunt afresh.
+    game = new DailyGame({ characters, questions, date });
+    actions = [];
+  }
 
   const announcer = $('announcer');
   const renderPool = createPoolList($('pool-groups'), $('pool-heading'), characters);
@@ -178,6 +184,9 @@ function start(characters, questions, clockOffset) {
   function render({ focus = null } = {}) {
     if (selected && (!game.canGuess || !game.pool.includes(selected))) selected = null;
     $('hunt-number').textContent = `Hunt #${game.number}`;
+    const yesterday = game.yesterday && byId.get(game.yesterday);
+    $('yesterday-note').hidden = !yesterday || game.status !== 'playing';
+    if (yesterday) $('yesterday-note').textContent = `Yesterday's character, the ${yesterday.name}, can't come up two days running, so they start out of the circle.`;
     $('hunt-score').textContent = `${plural(game.score, 'point')} so far`;
     $('hunt-guesses').textContent = `${game.wrongGuesses.length} of ${MAX_WRONG_GUESSES} wrong guesses`;
     $('last-answer').hidden = !lastReply;

@@ -95,3 +95,17 @@ test('streaks count consecutive won days', () => {
   assert.equal(streaks(results, '2026-10-10').current, 3, 'today not played yet keeps yesterday\'s streak');
   assert.equal(streaks(results, '2026-10-11').current, 0, 'a missed day breaks it');
 });
+
+test("from the start date, yesterday's character begins eliminated", async () => {
+  const { PRE_ELIMINATE_FROM } = await import('../js/daily.js');
+  const before = new DailyGame({ characters, questions, date: LAUNCH_DATE });
+  assert.equal(before.yesterday, null);
+  assert.equal(before.pool.length, characters.length);
+  const date = addDays(PRE_ELIMINATE_FROM, 3);
+  const game = new DailyGame({ characters, questions, date });
+  const days = schedule(date, characters);
+  assert.equal(game.yesterday, days.at(-2));
+  assert.ok(!game.pool.includes(game.yesterday));
+  assert.ok(game.pool.includes(game.target));
+  assert.equal(game.pool.length, characters.length - 1);
+});

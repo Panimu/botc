@@ -13,6 +13,9 @@ export const GUESS_THRESHOLD = CIRCLE_TARGET.max;
 export const NO_REPEAT_DAYS = 1;
 export const UNLIKELY_DAYS = 14;
 export const UNLIKELY_WEIGHT = 0.15;
+// Yesterday's character can't be today's answer, so from this date the hunt
+// starts with them already eliminated. (Earlier hunts are left as they were.)
+export const PRE_ELIMINATE_FROM = '2026-10-06';
 // Rules-based questions only: personality and token-art questions are too
 // subjective for a puzzle everyone plays against the same answer.
 export const EXCLUDED_FILES = ['psychology.json', 'icons.json'];
@@ -93,8 +96,10 @@ export class DailyGame {
     this.questions = questions.map((q) => prepare(q, characters));
     this.date = date;
     this.number = dayNumber(date) + 1;
-    this.target = dailyCharacterId(date, characters);
-    this.pool = characters.map((c) => c.id);
+    const days = schedule(date, characters);
+    this.target = days.at(-1);
+    this.yesterday = date >= PRE_ELIMINATE_FROM && days.length > 1 ? days.at(-2) : null;
+    this.pool = characters.map((c) => c.id).filter((id) => id !== this.yesterday);
     this.history = []; // { question, answer, poolBefore }
     this.wrongGuesses = [];
     this.status = 'playing'; // 'won' | 'lost'
