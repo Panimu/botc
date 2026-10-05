@@ -229,11 +229,10 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const verdict = game.status === 'won' ? `🎯 Found in ${game.score}${parText}` : '💀 The town failed';
     const streak = !practice && current > 1 ? ` | 🔥 ${current}-day streak` : '';
     const title = `Clocktower Daily Hunt #${game.number}${practice ? ' (practice)' : ''}`;
-    const quote = game.status !== 'playing' ? shareQuotes[game.target]?.quote : null;
     return {
       url,
-      plain: [`${title}: ${game.status === 'won' ? `found in ${game.score}${parText}` : 'not found'}`, marks, streak ? `Streak: ${current}` : '', quote ? `"${quote}"` : '', url].filter(Boolean).join(nl),
-      discord: [`🕰️ **${title}**`, `${verdict}${streak}`, marks, quote ? `> ||${quote}||` : '', `<${url}>`].filter(Boolean).join(nl),
+      plain: [`${title}: ${game.status === 'won' ? `found in ${game.score}${parText}` : 'not found'}`, marks, streak ? `Streak: ${current}` : '', url].filter(Boolean).join(nl),
+      discord: [`🕰️ **${title}**`, `${verdict}${streak}`, marks, `<${url}>`].filter(Boolean).join(nl),
     };
   }
 
