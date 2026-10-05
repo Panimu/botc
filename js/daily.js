@@ -199,8 +199,15 @@ export function streaks(results, today) {
 // always asks the offered question that splits the remaining town most evenly,
 // and guesses (alphabetically) only when no question can split what's left.
 export function par(date, characters, questions) {
+  return parRun(date, characters, questions).score;
+}
+
+// Par's whole run: its score (null if it loses) and, for the chart, the
+// characters left and points spent after each of its moves.
+export function parRun(date, characters, questions) {
   const game = new DailyGame({ characters, questions, date });
   const names = new Map(characters.map((c) => [c.id, c.name]));
+  const path = [{ left: game.pool.length, points: 0 }];
   while (game.status === 'playing') {
     if (game.offers.length) {
       const even = (q) => Math.abs(game.pool.filter((id) => q.yesSet.has(id)).length - game.pool.length / 2);
@@ -208,8 +215,9 @@ export function par(date, characters, questions) {
     } else {
       game.guess([...game.pool].sort((a, b) => names.get(a).localeCompare(names.get(b)))[0]);
     }
+    path.push({ left: game.status === 'won' ? 1 : game.pool.length, points: game.score });
   }
-  return game.status === 'won' ? game.score : null;
+  return { score: game.status === 'won' ? game.score : null, path };
 }
 
 // More points than any hunt can take (at most 155 questions plus 3 wrong guesses).

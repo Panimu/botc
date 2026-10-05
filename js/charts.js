@@ -13,10 +13,12 @@ const node = (tag, attrs = {}, text) => {
 // How the town shrank: characters left against points spent, on a log scale so
 // the late, small steps are as readable as the early, big ones. Wrong guesses are
 // hollow points (shape, not just colour, marks them); the right guess costs no
-// point, so it drops straight down. A dashed line marks par. Drawn at the
-// container's real width with a fixed height, so text stays its true size and the
-// chart stays short; redrawn when the container's width changes.
+// point, so it drops straight down. Par's own run is a dashed line from start
+// to finish (dash pattern plus a legend, not colour alone, tells it apart).
+// Drawn at the container's real width with a fixed height, so text stays its
+// true size and the chart stays short; redrawn when the container's width changes.
 // steps: [{ label, left, points, kind: 'start' | 'ask' | 'guess' | 'found' }]
+// par: { score, path: [{ left, points }] } or null
 const drawn = new WeakMap();
 export function timelineChart(container, steps, { par = null } = {}) {
   drawn.set(container, { steps, par });
@@ -37,11 +39,12 @@ function drawTimeline(container, steps, par) {
   const W = Math.max(240, Math.round(container.clientWidth) || 340), H = 150, L = 34, R = 14, T = 20, B = 24;
   const max = steps[0].left;
   const spent = steps.at(-1).points;
-  const domain = Math.max(1, spent, par ?? 0);
+  const parPath = par?.score != null ? par.path : null;
+  const domain = Math.max(1, spent, parPath?.at(-1).points ?? 0);
   const x = (points) => L + (points * (W - L - R)) / domain;
   const y = (v) => T + (1 - Math.log(v) / Math.log(max)) * (H - T - B);
   const svg = node('svg', { viewBox: `0 0 ${W} ${H}`, class: 'timeline', role: 'img',
-    'aria-label': `Characters left after each step: ${steps.map((s) => s.left).join(', ')}, using ${spent} ${spent === 1 ? 'point' : 'points'}${par != null ? `; par is ${par}` : ''}.` });
+    'aria-label': `Characters left after each step: ${steps.map((s) => s.left).join(', ')}, using ${spent} ${spent === 1 ? 'point' : 'points'}${parPath ? `. Par: ${parPath.map((s) => s.left).join(', ')}, using ${par.score}` : ''}.` });
   const anchor = (px) => (px <= L + 1 ? 'start' : px >= W - R - 1 ? 'end' : 'middle');
 
   for (const v of [max, 50, 15, 5, 1].filter((v, i, a) => v <= max && a.indexOf(v) === i)) {
@@ -51,9 +54,10 @@ function drawTimeline(container, steps, par) {
   svg.append(node('text', { x: L, y: H - 6, class: 'tick' }, 'Start'));
   if (spent > 0) svg.append(node('text', { x: x(spent), y: H - 6, class: 'tick', 'text-anchor': anchor(x(spent)) }, `${spent} ${spent === 1 ? 'point' : 'points'}`));
 
-  if (par != null) {
-    svg.append(node('line', { x1: x(par), x2: x(par), y1: T - 4, y2: H - B, class: 'par' }));
-    svg.append(node('text', { x: x(par), y: T - 8, class: 'par-label', 'text-anchor': anchor(x(par)) }, `Par ${par}`));
+  if (parPath) {
+    const line = node('polyline', { points: parPath.map((s) => `${x(s.points)},${y(s.left)}`).join(' '), class: 'par-line' });
+    line.append(node('title', {}, `Par: ${parPath.map((s) => s.left).join(', ')} left, found in ${par.score}`));
+    svg.append(line);
   }
 
   svg.append(node('polyline', { points: steps.map((s) => `${x(s.points)},${y(s.left)}`).join(' '), class: 'line' }));
@@ -75,7 +79,19 @@ function drawTimeline(container, steps, par) {
   // Below the line so it never collides with the start label above it.
   if (steps.length > 2 && biggest < steps.length - 1) label(biggest, `−${steps[biggest - 1].left - steps[biggest].left}`, 18);
   label(steps.length - 1, String(steps.at(-1).left), -9);
-  container.replaceChildren(svg);
+  const legend = document.createElement('p');
+  legend.className = 'chart-legend';
+  legend.setAttribute('aria-hidden', 'true');
+  const key = (cls, text) => {
+    const swatch = node('svg', { viewBox: '0 0 24 8', class: 'legend-key' });
+    swatch.append(node('line', { x1: 1, x2: 23, y1: 4, y2: 4, class: cls }));
+    const item = document.createElement('span');
+    item.append(swatch, text);
+    return item;
+  };
+  legend.append(key('you', 'You'));
+  if (parPath) legend.append(key('par', `Par (${par.score})`));
+  container.replaceChildren(legend, svg);
 }
 
 // Your scores: how many hunts you finished with each score, today's highlighted,

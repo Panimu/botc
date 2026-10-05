@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
-  par, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts, FREEZE_EVERY,
+  par, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts, FREEZE_EVERY,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -187,4 +187,21 @@ test('stored results are repaired: malformed entries go, valid ones stay', () =>
   // The repaired history renders: streaks no longer throws.
   assert.doesNotThrow(() => streaks(cleanResults(stored, today), today));
   assert.throws(() => streaks(stored, today), RangeError, 'the unrepaired history is what used to crash');
+});
+
+test("par's path runs from the full town to one character and ends on par's score", () => {
+  for (let day = 0; day < 10; day++) {
+    const date = addDays(LAUNCH_DATE, day);
+    const { score, path } = parRun(date, characters, questions);
+    if (score == null) continue;
+    assert.equal(score, par(date, characters, questions));
+    assert.equal(path[0].points, 0);
+    assert.equal(path[0].left, new DailyGame({ characters, questions, date }).pool.length);
+    assert.equal(path.at(-1).left, 1);
+    assert.equal(path.at(-1).points, score);
+    path.slice(1).forEach((s, i) => {
+      assert.ok(s.points >= path[i].points, 'points never go down');
+      assert.ok(s.left < path[i].left, 'every move narrows the town');
+    });
+  }
 });

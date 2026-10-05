@@ -1138,12 +1138,16 @@ body {
   .hunt-result .charts { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: end; }
   .hunt-result .charts:has(> #scores-figure[hidden]) { grid-template-columns: minmax(0, 1fr); }
 }
-.timeline .par { stroke: var(--dim); stroke-width: 1.5; stroke-dasharray: 4 3; }
-.timeline .par-label { fill: var(--dim); font: 700 11px var(--body); }
+.timeline .par-line { fill: none; stroke: var(--dim); stroke-width: 1.5; stroke-dasharray: 5 4; stroke-linejoin: round; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin: 0 0 0.25rem; color: var(--dim); font-size: 0.85rem; }
+.chart-legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend-key { width: 1.5rem; height: 0.5rem; }
+.legend-key .you { stroke: var(--chart); stroke-width: 2.5; }
+.legend-key .par { stroke: var(--dim); stroke-width: 1.5; stroke-dasharray: 5 4; }
 
 /* Question codes are there for reference, so they stay small and quiet
    (80% opacity still clears AA contrast on every background in both themes). */
 .offer-id, .path .path-id, .history .path-id { font-size: 0.7rem; opacity: 0.8; }
 .question-id, .card-foot .question-id { font-size: 0.78rem; opacity: 0.8; }
 @media (prefers-contrast: more) { .offer-id, .path-id, .question-id { opacity: 1; } }
-.timeline .value, .timeline .par-label { paint-order: stroke; stroke: var(--panel); stroke-width: 3px; stroke-linejoin: round; }
+.timeline .value { paint-order: stroke; stroke: var(--panel); stroke-width: 3px; stroke-linejoin: round; }

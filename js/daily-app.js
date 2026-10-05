@@ -2,7 +2,7 @@
 // Game rules live in js/daily.js; this file renders, stores progress and
 // handles the extras (par, charts, archive, streak backup, install, reminder).
 import {
-  DailyGame, replay, streaks, utcDate, par, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
+  DailyGame, replay, streaks, utcDate, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, FREEZE_EVERY, MAX_FREEZES,
 } from './daily.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
@@ -100,7 +100,8 @@ function start(characters, questions, clockOffset, shareQuotes) {
   const practiceDate = archiveDate(new URLSearchParams(location.search).get('date'), today);
   const date = practiceDate ?? today;
   const byId = new Map(characters.map((c) => [c.id, c]));
-  const parScore = par(date, characters, questions);
+  const parResult = parRun(date, characters, questions);
+  const parScore = parResult.score;
 
   // Picks up saved progress for this date. startedAt marks the session, so storage
   // can tell a longer copy of this session from an older, different session.
@@ -308,7 +309,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     // Scores first: whether they show changes the timeline's width.
     $('scores-figure').hidden = practice || Object.keys(results).length === 0;
     scoresChart($('scores-chart'), results, practice ? undefined : game.status === 'won' ? game.score : null);
-    timelineChart($('timeline-chart'), timelineSteps(), { par: parScore });
+    timelineChart($('timeline-chart'), timelineSteps(), { par: parResult });
     $('freeze-text').textContent = `You hold ${plural(s.freezes, 'streak freeze')} (at most ${MAX_FREEZES}). You earn one for every ${FREEZE_EVERY} hunts you win, and a missed day spends one instead of breaking your streak.${s.frozen.length ? ` Frozen so far: ${s.frozen.map(longDate).join(', ')}.` : ''}`;
     $('keep').hidden = practice;
     $('countdown').hidden = Boolean(practiceDate);
