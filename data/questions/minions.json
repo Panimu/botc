@@ -419,7 +419,7 @@
   },
   {
     "id": "min-planned-all-along",
-    "plain": "When the town thinks it has won, would you like to reveal it was all your plan, with one day left to prove it?",
+    "plain": "When the town thinks it has won, would you like to reveal your plan and get one final day to prove it?",
     "styled": "Everything proceeding EXACTLY as I foresaw! The fools celebrate, and the goat announces ONE MORE DAY! When the town thinks it's won, would you like to reveal your plan and get one final day to prove it?",
     "voice": "Prepotente",
     "yes": [
@@ -844,7 +844,7 @@
   },
   {
     "id": "min-snv-personal-rival",
-    "plain": "As a Minion in Sects and Violets, would you like your ability to revolve around one good player who knows who you are?",
+    "plain": "As a Sects and Violets Minion, would you like your ability to centre on one good player who knows who you are?",
     "styled": "No nightly powers, no potions, just one person on the other side who knows you, and you know them, and the town has to figure out who's lying. As a Sects and Violets Minion, would you like your ability to centre on one good player who knows you?",
     "voice": "Katia",
     "yes": [
@@ -1143,7 +1143,7 @@
   },
   {
     "id": "min-backup-become-demon",
-    "plain": "Of the Minions who keep evil going after the Demon dies, would you rather become the Demon yourself than gamble on one final day?",
+    "plain": "Of the Minions who keep evil going after the Demon dies, would you rather become the Demon than risk one final day?",
     "styled": "Plan B, darling: either seize the crown yourself, or bet everything on one last dramatic day. Of the Minions who carry on after the Demon dies, would you rather become the Demon than gamble on one final day?",
     "voice": "Princess Donut",
     "yes": [

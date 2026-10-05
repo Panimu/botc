@@ -131,7 +131,7 @@
   },
   {
     "id": "xi-moral-compass",
-    "plain": "Does your ability give you a read on good and evil among the players, whether as a verdict, a comparison, a count or a direction?",
+    "plain": "Does your ability give you a read on good and evil among players, whether as a verdict, comparison, count or direction?",
     "styled": "Patch note: alignment detectors are back in stock! Beep for good, boop for evil, a 'these two match', a tidy tally of the wicked, or an arrow pointing at the nearest one. Does your ability give you that kind of good-or-evil read on players?",
     "voice": "The System AI",
     "yes": {
@@ -404,7 +404,7 @@
   },
   {
     "id": "xi-behind-the-curtain",
-    "plain": "Does your ability let you see behind the scenes, such as the Grimoire, who woke at night, whose abilities malfunctioned, or a secret ability someone holds?",
+    "plain": "Does your ability let you see behind the scenes, like the Grimoire, who woke, malfunctioning abilities or someone's secret ability?",
     "styled": "Most contestants only see the monsters. A rare few get a look at the wiring: the Grimoire, who stirred in the dark, which powers fizzled, what secret tricks are hidden. Does your ability show you that machinery?",
     "voice": "The System AI",
     "yes": {

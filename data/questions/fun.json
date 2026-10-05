@@ -293,7 +293,7 @@
   },
   {
     "id": "fun-noon-murder",
-    "plain": "Can your own ability, not another character's, kill another player during the day without executing them?",
+    "plain": "Can your own ability, not another character's, kill another player during the day, other than by execution?",
     "styled": "Why wait for nightfall like some COWARD? Your goddess murders at NOON, in front of EVERYONE, and then demands applause! Can your own ability, not another character's, kill another player in broad daylight, without executing them?",
     "voice": "Samantha",
     "yes": {
@@ -716,7 +716,7 @@
   },
   {
     "id": "fun-my-sources",
-    "plain": "As an evil player, does your own ability reveal extra secrets about who's who or what's in play, beyond team info and bluffs?",
+    "plain": "As an evil player, does your own ability reveal secrets about who's who or what's in play, beyond team info and bluffs?",
     "styled": "Every villain gets the same little welcome packet, darling. But some of you have SOURCES. As an evil player, does your own ability reveal extra secrets about who's who or what's in play, beyond team info and bluffs?",
     "voice": "Odette",
     "yes": {
@@ -1048,7 +1048,7 @@
   },
   {
     "id": "fun-most-me-ability",
-    "plain": "Is your whole ability that when you learn you died, you must publicly pick a living player, and your team loses if they're evil?",
+    "plain": "Is your whole ability that, on learning you died, you publicly pick a living player, and your team loses if they're evil?",
     "styled": "You die, then you have to point at someone, and if you point wrong, your whole team loses. Honestly? The most me ability ever. Is your whole ability that when you learn you died, you must publicly pick a living player, and your team loses if they are evil?",
     "voice": "Carl",
     "yes": [

@@ -402,8 +402,8 @@
   },
   {
     "id": "tfl-daylight-decisions",
-    "plain": "As a traveller, would you rather make your ability's choices during the day than at night?",
-    "styled": "Some wanderers skulk about after dark. Others do their business in broad daylight with the whole town watching. Bold. Would get you killed on my floor. As a traveller, would you rather make your ability's choices during the day than at night?",
+    "plain": "As a Traveller, would you rather make your ability's choices during the day than at night?",
+    "styled": "Some wanderers skulk about after dark. Others do their business in broad daylight with the whole town watching. Bold. Would get you killed on my floor. As a Traveller, would you rather make your ability's choices during the day than at night?",
     "voice": "Mordecai",
     "yes": [
       "butcher",
@@ -420,8 +420,8 @@
   },
   {
     "id": "tfl-rewrite-the-ballot",
-    "plain": "As a traveller, would you like to change the town's rules on who may nominate or vote?",
-    "styled": "New in town and already rewriting the constitution! The Founding Fathers would be appalled! The audience is THRILLED! As a traveller, would you like to change who may nominate or vote for the entire town?",
+    "plain": "As a Traveller, would you like to change the town's rules on who may nominate or vote?",
+    "styled": "New in town and already rewriting the constitution! The Founding Fathers would be appalled! The audience is THRILLED! As a Traveller, would you like to change who may nominate or vote for the entire town?",
     "voice": "The Host",
     "yes": [
       "bishop",
@@ -433,8 +433,8 @@
   },
   {
     "id": "tfl-one-perfect-moment",
-    "plain": "As a traveller, would you rather save a single big moment for the right time than act every day or night?",
-    "styled": "Patience is a weapon. One shot, one moment, and you've got to pick it right. It's terrifying, but it's also kind of beautiful. As a traveller, would you rather save a single big moment for the right time than act every day or night?",
+    "plain": "As a Traveller, would you rather save a single big moment for the right time than act every day or night?",
+    "styled": "Patience is a weapon. One shot, one moment, and you've got to pick it right. It's terrifying, but it's also kind of beautiful. As a Traveller, would you rather save a single big moment for the right time than act every day or night?",
     "voice": "Katia",
     "yes": [
       "bonecollector",
@@ -446,8 +446,8 @@
   },
   {
     "id": "tfl-living-say-so",
-    "plain": "As a traveller, does your ability need a living player's agreement to work?",
-    "styled": "Consent forms! Initial here, sign there, and only then do the fun things happen! Legal is so proud of you. As a traveller, would you need a living player's agreement before your ability can work?",
+    "plain": "As a Traveller, does your ability need a living player's agreement to work?",
+    "styled": "Consent forms! Initial here, sign there, and only then do the fun things happen! Legal is so proud of you. As a Traveller, would you need a living player's agreement before your ability can work?",
     "voice": "Zev",
     "yes": [
       "harlot",
@@ -459,8 +459,8 @@
   },
   {
     "id": "tfl-drifter-learns",
-    "plain": "As a traveller, would you like your ability to teach you something private about another player?",
-    "styled": "Oh, I'm not here for the scenery, darling. I'm here for the dirt. Who are they? Which side? Spill it. As a traveller, would you like your ability to teach you something private about another player?",
+    "plain": "As a Traveller, would you like your ability to teach you something private about another player?",
+    "styled": "Oh, I'm not here for the scenery, darling. I'm here for the dirt. Who are they? Which side? Spill it. As a Traveller, would you like your ability to teach you something private about another player?",
     "voice": "Odette",
     "yes": [
       "harlot",
@@ -472,8 +472,8 @@
   },
   {
     "id": "tfl-own-neck-on-the-line",
-    "plain": "As a traveller, is your ability entirely about whether the town can execute or exile you?",
-    "styled": "Some travellers have shiny powers. Some just have a very personal relationship with the noose. As a traveller, is your ability entirely about whether you yourself get removed from the game by the town?",
+    "plain": "As a Traveller, is your ability entirely about whether the town can execute or exile you?",
+    "styled": "Some travellers have shiny powers. Some just have a very personal relationship with the noose. As a Traveller, is your ability entirely about whether you yourself get removed from the game by the town?",
     "voice": "Carl",
     "yes": [
       "deviant",
@@ -485,8 +485,8 @@
   },
   {
     "id": "tfl-ability-tinkerer",
-    "plain": "As a traveller, does your ability give, boost, restore or change someone's character or ability?",
-    "styled": "Upgrade station now open! Grants! Buffs! Resurrections of skills! Unexpected transformations! Warranty void if used! As a traveller, does your ability give, boost, restore or change someone's character or ability?",
+    "plain": "As a Traveller, does your ability give, boost, restore or change someone's character or ability?",
+    "styled": "Upgrade station now open! Grants! Buffs! Resurrections of skills! Unexpected transformations! Warranty void if used! As a Traveller, does your ability give, boost, restore or change someone's character or ability?",
     "voice": "The System AI",
     "yes": [
       "barista",
@@ -500,8 +500,8 @@
   },
   {
     "id": "tfl-manners-matter",
-    "plain": "As a traveller, are you fussy about where people sit and how they conduct themselves?",
-    "styled": "Elbows OFF the table. Sit where you are TOLD. No sneaking off for secret chats. Honestly, the manners in this dungeon. As a traveller, are you fussy about where people sit and how they conduct themselves?",
+    "plain": "As a Traveller, are you fussy about where people sit and how they conduct themselves?",
+    "styled": "Elbows OFF the table. Sit where you are TOLD. No sneaking off for secret chats. Honestly, the manners in this dungeon. As a Traveller, are you fussy about where people sit and how they conduct themselves?",
     "voice": "Princess Donut",
     "yes": [
       "matron"

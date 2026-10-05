@@ -605,7 +605,7 @@
   },
   {
     "id": "xm-nk-secret-hangover",
-    "plain": "Of those kept in the dark about themselves, do you know your character, but might your own ability leave you secretly drunk or poisoned?",
+    "plain": "Of those in the dark about themselves, do you know your character, but might your own ability leave you drunk or poisoned?",
     "styled": "You know your name. You know your job. What you don't know is whether your own ability has quietly switched you off tonight. Of you lot kept in the dark, do you know your character, but might your own ability leave you secretly drunk or poisoned?",
     "voice": "Katia",
     "yes": [

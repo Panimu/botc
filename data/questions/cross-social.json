@@ -1,7 +1,7 @@
 [
   {
     "id": "xs-vote-rewrites-the-show-of-hands",
-    "plain": "When a nomination goes to a vote, does your ability change who may or must vote, how votes are cast or counted, whether it passes, or what happens to voters?",
+    "plain": "When a nomination goes to a vote, does your ability change who votes, how voting works, whether it passes, or voters' fates?",
     "styled": "Every day these people raise their hands like it's a fair election. It is not. Some of us quietly rewrite the rules of the show of hands. When a nomination goes to a vote, does your ability change who may or must vote, how votes are cast or counted, whether it passes, or what happens to voters?",
     "voice": "Carl",
     "yes": {
@@ -10,7 +10,7 @@
   },
   {
     "id": "xs-vote-what-raised-hands-do",
-    "plain": "When a nomination goes to a show of hands, would you like your ability to change how that vote works, not just show you who voted?",
+    "plain": "When a nomination goes to a vote, would you like your ability to change how it works, not just show who voted?",
     "styled": "PATCH NOTE: raising your hand is no longer a harmless civic gesture in the presence of certain contestants. Spectators merely take notes. You, though, could rewire the whole ritual. When a nomination goes to a show of hands, would you like your ability to change how that vote works?",
     "voice": "The System AI",
     "yes": {
@@ -28,7 +28,7 @@
   },
   {
     "id": "xs-nom-bends-the-nominating-rules",
-    "plain": "Beyond telling you who nominated, does your ability change who can nominate or be nominated, or how often, or give some nominations consequences of their own?",
+    "plain": "Beyond learning who nominated, does your ability change who can nominate or be nominated, how often, or make nominations themselves do something?",
     "styled": "Pointing at someone and saying 'I nominate' should be simple. Somebody always makes it complicated. Knowing who pointed doesn't count, mind. Does your ability change who can nominate or be nominated, or how often, or give certain nominations consequences of their own?",
     "voice": "Mordecai",
     "yes": {
@@ -37,7 +37,7 @@
   },
   {
     "id": "xs-nom-twist-in-the-nominations",
-    "plain": "When it comes to nominating, does your ability bend the usual rules or add a twist of its own, beyond just giving you information?",
+    "plain": "Does your ability bend the usual nominating rules or add a twist to nominations, beyond just giving you information?",
     "styled": "Nominations are the best part of the show! The finger! The gasp! The dramatic pause before the vote! Some contestants come with a little extra sparkle in that department. Not just intel, a real twist. When it comes to nominating, does your ability bend the usual rules or add a twist of its own?",
     "voice": "Zev",
     "yes": {
@@ -46,7 +46,7 @@
   },
   {
     "id": "xs-nom-tangled-in-nominations",
-    "plain": "Beyond learning about nominations, is your ability tangled up in who makes them, who receives them, how many there are, or what they set off?",
+    "plain": "Beyond learning about nominations, does your ability involve who nominates, who is nominated, how often, or what nominations set off?",
     "styled": "I do NOT simply nominate, peasants. When a star of my calibre points a paw, something HAPPENS. Some of you have abilities wrapped right around nominations, and I mean actually doing something, not just gossiping about them later. Is your ability tangled up in who nominates, who can be nominated, how many times, or what a nomination sets off?",
     "voice": "Princess Donut",
     "yes": {
@@ -55,7 +55,7 @@
   },
   {
     "id": "xs-pub-must-do-it-in-front-of-everyone",
-    "plain": "Beyond nominating and voting, does your ability require you to say or do something in front of the whole town during the day?",
+    "plain": "Beyond nominating and voting, does your ability require you to say or do something in front of the whole town by day?",
     "styled": "Our sponsors LOVE a contestant who performs live, in daylight, with the whole circle watching! No private booths, no night-time whispers. Nominating and voting don't count, folks. Does your ability require you to say or do something in front of the whole town during the day?",
     "voice": "Zev",
     "yes": {
@@ -82,7 +82,7 @@
   },
   {
     "id": "xs-guess-name-what-they-are",
-    "plain": "Beyond just choosing a player to act on, is your ability a guessing game where you name what someone is, or what you are, and being right matters?",
+    "plain": "Beyond just picking a target, does your ability have you guess what someone is, or what you are, where being right matters?",
     "styled": "There's something brave about saying your guess out loud, even just to yourself, and then living with whether you were right. Not attacking, not testing, not just picking a player, but naming it. Is your ability a guessing game where you name what you think someone is, or what you are, and being right matters?",
     "voice": "Katia",
     "yes": {
@@ -100,7 +100,7 @@
   },
   {
     "id": "xs-guess-scored-on-hunches",
-    "plain": "Setting aside simply picking a player to act on, do you want your ability to score your guesses about hidden roles, with a reward or penalty?",
+    "plain": "Beyond simply picking a target, do you want your ability to score your guesses about hidden roles, with a reward or penalty?",
     "styled": "Kid, everyone in this game has hunches. Pointing your ability at a suspect isn't what I mean. Some of you put an actual guess down and the dungeon grades it, good or bad. Do you want your ability to score your guesses about hidden roles and make you live with the result?",
     "voice": "Mordecai",
     "yes": {
@@ -109,7 +109,7 @@
   },
   {
     "id": "xs-spoken-words-set-it-off",
-    "plain": "Can things players say out loud, like a secret word, a claim about who someone is, a joke or a true statement, set off your ability?",
+    "plain": "Can something said aloud, like a secret word, a joke, a true statement or a claim about characters, set off your ability?",
     "styled": "Back in my day you could say any fool thing you liked and the worst you'd get was a dirty look. Now a single word can turn someone or kill someone. Can what players say out loud, a secret word, a claim about who someone is, a joke, or a statement that proves true, set off your ability?",
     "voice": "Elle",
     "yes": {
@@ -118,7 +118,7 @@
   },
   {
     "id": "xs-spoken-hinges-on-what-is-said",
-    "plain": "Does your ability hinge on exactly what players say out loud to each other, the words, claims or truths themselves, not just a choice being announced?",
+    "plain": "Does your ability depend on exactly what players say aloud to each other, not just on a choice someone announces?",
     "styled": "WORDS! Words are knives, mortal! Not pointing, not announcing who you pick, not whispering to the Storyteller, the actual words that pass between players! Does your ability hinge on exactly what players say out loud to each other, the words, claims or truths themselves?",
     "voice": "Samantha",
     "yes": {
@@ -145,7 +145,7 @@
   },
   {
     "id": "xs-alt-written-in-ending",
-    "plain": "Is a special ending, or a twist on who wins, written into your ability, beyond the usual Demon dying or the town running down to two?",
+    "plain": "Is a special ending, or a twist on who wins, written into your ability, beyond the usual ways a game ends?",
     "styled": "Brand alert! Alternate endings test incredibly well with our key demographics. Nothing boosts engagement like the game stopping dead, or the result flipping, for a reason nobody saw coming. Is a special ending, or a twist on who wins, written into your ability, beyond the usual Demon dying or the town running down to two?",
     "voice": "Zev",
     "yes": {
@@ -181,7 +181,7 @@
   },
   {
     "id": "xs-day-act-while-sun-is-up",
-    "plain": "Do you get to act while the sun's up, with a choice, a guess, a claim or a word with the Storyteller, beyond ordinary nominating and voting?",
+    "plain": "Beyond nominating and voting, does your ability let you act by day, with a choice, guess, claim or word with the Storyteller?",
     "styled": "Sleepwalkers, the lot of you. Snore all night, then sit there all day waiting for a vote. Some of us get to actually DO something before dark, a choice, a guess, a claim, a quiet word with the boss. Do you get to act while the sun's up, beyond plain old nominating and voting?",
     "voice": "Elle",
     "yes": {
@@ -241,7 +241,7 @@
   },
   {
     "id": "xs-pub-evil-in-the-open",
-    "plain": "As a Minion or Demon, must you say or do something openly in front of the town to use your ability, beyond nominating and voting?",
+    "plain": "As a Minion or Demon, must you say or do something publicly to use your ability, beyond nominating and voting?",
     "styled": "Behold! The villain who schemes in PLAIN SIGHT! No shadows for the magnificent! Answer me, Minion or Demon: beyond nominating and voting, must you say or do something openly in front of the town to use your ability?",
     "voice": "Prepotente",
     "yes": {
@@ -254,7 +254,7 @@
   },
   {
     "id": "xs-pub-good-speak-up",
-    "plain": "As a Townsfolk or Outsider, does your ability make you speak up or choose in front of everyone during the day, nominations aside?",
+    "plain": "As a Townsfolk or Outsider, does your ability make you speak up or choose in front of everyone by day, nominations aside?",
     "styled": "A true hero performs for her public, darling. None of this skulking off to whisper with the Storyteller. Nominations don't count, either. As a Townsfolk or Outsider, does your ability make you speak up or choose in front of everyone during the day?",
     "voice": "Princess Donut",
     "yes": {
@@ -267,7 +267,7 @@
   },
   {
     "id": "xs-spoken-evil-feeds-on-words",
-    "plain": "As a Minion or Demon, does your ability turn on a particular word or phrase, or a claim about who someone is, said out loud?",
+    "plain": "As a Minion or Demon, does a particular word or phrase, or a claim about someone's character or alignment, trigger your ability?",
     "styled": "Pull up a chair. Some of evil's finest never lift a knife; they just wait for the right words to leave the wrong mouth. As a Minion or Demon, does your ability turn on a particular word or phrase, or a claim about who someone is, said out loud?",
     "voice": "Odette",
     "yes": {
@@ -280,7 +280,7 @@
   },
   {
     "id": "xs-spoken-good-statement-or-claim",
-    "plain": "As a Townsfolk or Outsider, can a claim about characters, or a statement that proves true, said aloud for others to hear, trigger your ability?",
+    "plain": "As a Townsfolk or Outsider, can a claim about characters, or a true statement, said aloud to the group trigger your ability?",
     "styled": "Here's the thing about being one of the good guys: you'd think your mouth would be safe. Not always. As a Townsfolk or Outsider, can a claim about characters, or a statement that proves true, said out loud for others to hear, trigger your ability?",
     "voice": "Carl",
     "yes": {
@@ -319,7 +319,7 @@
   },
   {
     "id": "xs-day-evil-daylight-business",
-    "plain": "As a Minion or Demon, does your ability give you something of your own to do in daylight, beyond the usual nominating and voting?",
+    "plain": "As a Minion or Demon, does your ability give you something to do by day, beyond the usual nominating and voting?",
     "styled": "Our villains are working round the clock, and the viewers adore it! Not just the night shift, the day shift too. As a Minion or Demon, does your ability give you something of your own to do in daylight, beyond the usual nominating and voting?",
     "voice": "Zev",
     "yes": {
@@ -428,7 +428,7 @@
   },
   {
     "id": "xs-spoken-your-own-words",
-    "plain": "Does your ability care exactly what you say in front of the group, the words, claims or jokes themselves, not just a choice you announce?",
+    "plain": "Does your ability care about exactly what you say to the group, not just which choice you announce?",
     "styled": "Honey, I've got a mouth on me, and some days it's the only weapon I need. If your ability cares about the actual words, claims or jokes coming out of YOUR mouth in front of the group, not just who you pick, I want to hear it. Does it?",
     "voice": "Elle",
     "yes": [
@@ -472,7 +472,7 @@
   },
   {
     "id": "xs-spoken-madness",
-    "plain": "Does your ability use madness, where someone must convincingly support a claim, about themselves or another player, with a reward or penalty attached?",
+    "plain": "Does your ability use madness, where someone must convincingly support a claim, with a reward or penalty attached?",
     "styled": "Madness, darling, is simply COMMITMENT. Pick a claim, about yourself or somebody else, sell it all day, and the Storyteller rewards or punishes you for it. I do it every day. Does your ability use madness, where someone must convincingly support a claim, with a reward or penalty attached?",
     "voice": "Princess Donut",
     "yes": [

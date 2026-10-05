@@ -56,7 +56,7 @@
   },
   {
     "id": "xd-death-rattle",
-    "plain": "When you really do die, not just narrowly escape it, does your own ability, not another character's, then make something happen?",
+    "plain": "When you really die, rather than narrowly escaping, does your own ability, not another character's, then make something happen?",
     "styled": "New achievement unlocked: Posthumous Plot Twist! Awarded to contestants whose abilities only get going once they've genuinely kicked the bucket. Dodging death doesn't count. Once you're actually dead, does your own ability, not another character's, make something happen?",
     "voice": "The System AI",
     "yes": {
@@ -340,7 +340,7 @@
   },
   {
     "id": "xd-perform-or-perish",
-    "plain": "When you're sent to your death, can your own ability, not another character's, let you survive by winning a game or being funny?",
+    "plain": "When sent to your death, can your own ability, not another character's, let you survive by winning a game or being funny?",
     "styled": "Charm is a survival skill, darling, I would know. For a lucky few, the right performance at the right moment really does keep the noose off. When the town sends you to your death, can your own ability, not another character's, let winning a game or being funny save you?",
     "voice": "Odette",
     "yes": [
@@ -370,7 +370,7 @@
   },
   {
     "id": "xd-last-public-pick",
-    "plain": "When you learn you've died, does your own ability, not another character's, make you publicly pick a living player for a high-stakes final choice?",
+    "plain": "On learning you've died, does your own ability, not another character's, make you publicly pick a living player as your final act?",
     "styled": "So you're dead. Congratulations. Before you lie down, though, you have to stand up in front of everyone and point at somebody, and if you get it wrong, it hurts. When you learn you've died, does your own ability, not another character's, make you publicly pick a living player for that final choice?",
     "voice": "Carl",
     "yes": [

@@ -635,7 +635,7 @@
   },
   {
     "id": "global-good-with-a-head-start",
-    "plain": "Are you on the good team, with an ability that hands you a clue at the start rather than fresh clues each night?",
+    "plain": "Are you on the good team, with an ability that gives you a starting clue rather than fresh clues each night?",
     "styled": "A good person whose ability hands them a clue the moment they walk in, instead of making them earn one every night? That's the closest thing to a fair start this place offers. Are you one of them?",
     "voice": "Katia",
     "yes": {

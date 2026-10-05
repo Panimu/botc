@@ -55,7 +55,7 @@
   },
   {
     "id": "out-blind-loyalty",
-    "plain": "Is your whole game picking a best friend on the first night and joining their side, without ever knowing which side that is?",
+    "plain": "Is your whole game picking a best friend on the first night and joining their side, never knowing which side it is?",
     "styled": "First night, you point at somebody and decide they're your buddy forever. Good, evil, cannibal cult? You don't find out. You just grin and follow, and that's your entire game. Is that the whole deal you want?",
     "voice": "Elle",
     "yes": [
@@ -100,7 +100,7 @@
   },
   {
     "id": "out-confident-and-wrong",
-    "plain": "Would you like to spend a whole game believing you're a Townsfolk hero, still good but with only fake powers and worthless information?",
+    "plain": "Would you like to spend the whole game believing you're a Townsfolk hero, still good but with fake powers and worthless information?",
     "styled": "I've watched contestants march into the boss room swinging a sword that turned out to be a breadstick. Still on our side, bless them, just useless. Would you want to spend the whole game convinced you're a Townsfolk hero, still good but with nothing except fake powers and worthless info?",
     "voice": "Mordecai",
     "yes": [
@@ -199,7 +199,7 @@
   },
   {
     "id": "out-clumsy-last-pick",
-    "plain": "Do you want your only ability to be one last public pick, which loses your team the game if you choose someone evil?",
+    "plain": "Do you want your only ability to be a final public pick, where choosing someone evil loses your team the game?",
     "styled": "You die, you stand up, you point at someone in front of everybody. Pick a good guy, fine. Pick a bad guy, and your whole team loses. That's your power. Would you want that to be your only ability?",
     "voice": "Carl",
     "yes": [
@@ -235,7 +235,7 @@
   },
   {
     "id": "out-last-public-pick",
-    "plain": "When you find out you've died, would you like to publicly point at one living player and have something happen to them or your team?",
+    "plain": "When you learn you've died, would you like to publicly point at one living player, with consequences for them or your team?",
     "styled": "THE DEATH POINT. You find out you're dead, you raise one accusing paw in front of the entire audience, and consequences follow. Iconic. Would you like to publicly point at a living player when you learn you've died?",
     "voice": "Princess Donut",
     "yes": [
@@ -672,7 +672,7 @@
   },
   {
     "id": "out-s-random-death",
-    "plain": "Could you just drop dead for no reason, without anyone targeting you?",
+    "plain": "Could you suddenly drop dead at random, without anyone targeting you?",
     "styled": "Nobody nominated you. Nobody stabbed you. You're just dead now, apparently, because the dungeon felt like it. Could you drop dead for no reason at all?",
     "voice": "Carl",
     "yes": [

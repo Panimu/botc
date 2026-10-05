@@ -211,7 +211,7 @@
   },
   {
     "id": "xp-hands-off-death-trigger",
-    "plain": "Is your ability completely passive, with nobody ever acting because of it, and does it wait for a death to set it off?",
+    "plain": "Is your ability completely passive, with nobody ever acting because of it, and set off only by a death?",
     "styled": "RAWR! Lie very still. Wait. Nobody has to do anything. Only jump up when something dies. (Translation: is your ability completely passive, with nobody acting because of it, and does it wait for a death to set it off?)",
     "voice": "Mongo",
     "yes": {
@@ -656,7 +656,7 @@
   },
   {
     "id": "xp-rules-table",
-    "plain": "Does your presence change a standing rule for the whole table, such as who can vote or nominate, or what an execution does?",
+    "plain": "Does your presence change a standing rule for everyone, such as who can vote or nominate, or what an execution does?",
     "styled": "Some contestants play the game. Some contestants change the game for everyone in the room and watch them squirm. Does your presence change a rule the whole table has to follow?",
     "voice": "The System AI",
     "yes": {

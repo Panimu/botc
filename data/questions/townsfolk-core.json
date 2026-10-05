@@ -344,7 +344,7 @@
   },
   {
     "id": "tfc-chambermaid-busy-nights",
-    "plain": "Would you like to choose two other alive players each night and learn how many of them woke because of their abilities?",
+    "plain": "Would you like to choose two other living players each night and learn how many of them woke because of their abilities?",
     "styled": "I've noticed people give themselves away by what they do after dark, not by what they say. Would you like to choose two other alive players each night and learn how many of them woke because of their abilities?",
     "voice": "Katia",
     "yes": [
@@ -608,7 +608,7 @@
   },
   {
     "id": "tfc-dreamer-saint-or-sinner",
-    "plain": "Do your dreams show you who someone might really be, one saintly option and one wicked?",
+    "plain": "Do your dreams show you two possible identities for someone, one saintly and one wicked?",
     "styled": "I dream VIVIDLY. Red skies, violets, and two possible faces for whoever I dreamed about, one angelic and one ghastly. Do your dreams show you who someone might really be, one saintly option and one wicked?",
     "voice": "Princess Donut",
     "yes": [
