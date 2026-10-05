@@ -2,7 +2,7 @@
 // Game rules live in js/daily.js; this file renders, stores progress and
 // handles the extras (par, charts, archive, streak backup, install, reminder).
 import {
-  DailyGame, replay, streaks, utcDate, parRun, sparkline, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
+  DailyGame, replay, streaks, utcDate, parRun, paceStrip, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, FREEZE_EVERY, MAX_FREEZES,
 } from './daily.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
@@ -275,16 +275,14 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const verdict = game.status === 'won' ? `🎯 Found in ${game.score}${parText}` : '💀 The town failed';
     const streak = !practice && current > 1 ? ` | 🔥 ${current}-day streak` : '';
     const title = `Clocktower Daily Hunt #${game.number}${practice ? ' (practice)' : ''}`;
-    // The timeline as text: one block per point, yours above par's. In Discord the
-    // blocks sit in inline code so the two lines share a fixed-width font and line up.
-    const steps = timelineSteps();
-    const chart = [[sparkline(steps, steps[0].left), 'You']];
-    if (parScore != null) chart.push([sparkline(parResult.path, steps[0].left), 'Par']);
-    const tick = String.fromCharCode(96);
+    // The timeline as text: a square per point, coloured by characters left,
+    // yours above par's. Labels go after the squares so the strips line up.
+    const pace = [`${paceStrip(timelineSteps())} You`];
+    if (parScore != null) pace.push(`${paceStrip(parResult.path)} Par`);
     return {
       url,
-      plain: [`${title}: ${game.status === 'won' ? `found in ${game.score}${parText}` : 'not found'}`, marks, ...chart.map(([line, who]) => `${line} ${who}`), streak ? `Streak: ${current}` : '', url].filter(Boolean).join(nl),
-      discord: [`🕰️ **${title}**`, `${verdict}${streak}`, marks, ...chart.map(([line, who]) => `${tick}${line}${tick} ${who}`), `<${url}>`].filter(Boolean).join(nl),
+      plain: [`${title}: ${game.status === 'won' ? `found in ${game.score}${parText}` : 'not found'}`, marks, ...pace, streak ? `Streak: ${current}` : '', url].filter(Boolean).join(nl),
+      discord: [`🕰️ **${title}**`, `${verdict}${streak}`, marks, ...pace, `<${url}>`].filter(Boolean).join(nl),
     };
   }
 

@@ -239,22 +239,22 @@ export function cleanResults(results, today = null) {
     .filter(([date, r]) => isHuntDate(date) && (today == null || date <= today) && validResult(r)));
 }
 
-// A one-line text chart of a run for share text: one block per point spent,
-// its height the characters left (log scale, so the full town is the tallest
-// block and one character the lowest). path: [{ left, points }]
-const SPARKS = '▁▂▃▄▅▆▇█';
-export function sparkline(path, max) {
+// A run as a strip of coloured squares for share text, one per point spent,
+// coloured by how many characters were left after it (the bands match the
+// chart's gridlines): red over 50, orange 16 to 50, yellow 6 to 15 (the circle
+// is seated), green 5 or fewer. path: [{ left, points }], starting at 0 points.
+export const PACE_BANDS = [[50, '🟥'], [15, '🟧'], [5, '🟨'], [0, '🟩']];
+export function paceStrip(path) {
   const leftAt = new Map();
   for (const step of path) leftAt.set(step.points, step.left);
   const end = Math.max(...leftAt.keys());
-  let left = max;
-  let line = '';
-  for (let points = 0; points <= end; points++) {
+  let left = leftAt.get(0);
+  let strip = '';
+  for (let points = 1; points <= end; points++) {
     if (leftAt.has(points)) left = leftAt.get(points);
-    const level = max > 1 ? Math.log(Math.max(1, left)) / Math.log(max) : 0;
-    line += SPARKS[Math.min(SPARKS.length - 1, Math.max(0, Math.round(level * (SPARKS.length - 1))))];
+    strip += PACE_BANDS.find(([above]) => left > above)[1];
   }
-  return line;
+  return strip;
 }
 
 // Restore codes carry results between devices: [day number, score or -1 for a
