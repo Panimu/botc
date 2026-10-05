@@ -736,8 +736,8 @@
   },
   {
     "id": "tfc-artist-one-question",
-    "plain": "Would you like to ask the Storyteller any one yes/no question you please?",
-    "styled": "One question! Any question! Answered truthfully by the all-knowing Storyteller, live and exclusive! Would you like to ask the Storyteller any one yes/no question you please?",
+    "plain": "Would you like to ask the Storyteller any yes or no question you please, once per game?",
+    "styled": "One question! Any question! Answered truthfully by the all-knowing Storyteller, live and exclusive! Would you like to ask the Storyteller any yes or no question you please, once per game?",
     "voice": "The Host",
     "yes": [
       "artist"

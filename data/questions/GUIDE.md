@@ -103,7 +103,17 @@ After editing a trait file, run `node scripts/build-characters.js`. That adds ea
 
 **No em dashes** in either phrasing (the validator rejects them). Use a comma, colon, full stop or brackets instead.
 
-**`plain`**: clear British English, one yes/no question, ending in "?". Under about 25 words. No jargon beyond common Clocktower terms (Demon, Minion, Storyteller, nominate, execute, Grimoire).
+**`plain`**: clear British English that a new player understands on the first read. It's what the daily hunt shows and what screen readers announce. `scripts/validate.js` rejects the hard rules below and warns on the soft ones (`--verbose` lists every warning).
+
+- **One yes/no question, ending in "?"**, and only one "?". *(Rejected otherwise.)*
+- **22 words or fewer.** Over 22 is a warning; over 30 is rejected.
+- **One idea.** If the question needs a condition ("Of those who can kill by day,", "As a Townsfolk,"), put it first, then ask one thing.
+- **Everyday words.** Common Clocktower terms are fine: Demon, Minion, Outsider, Townsfolk, Traveller, Storyteller, nominate, execute, Grimoire, drunk, poisoned, mad, registers as. No abbreviations (ST, TB, BMR, SnV, S&V), no "e.g.", "i.e." or "etc." *(Rejected.)*
+- **No brackets, semicolons or slashes.** Write "a yes or no question", not "a yes/no question". *(Rejected.)*
+- **No double negatives.** Ask the positive form: "Can you die without anyone choosing you?" rather than "Could you not survive without nobody targeting you?" *(Warned: the check flags any two negative words, so read each one and keep it if it's genuinely clearest.)*
+- **Keep the precise rules phrases.** Plain doesn't mean loose, and the accuracy rules above win: say "died by execution" when an ability needs a death (an execution can fail to kill), "your own ability, not another character's" where a borrowed ability would otherwise answer yes, and "registers as" for misregistration.
+- **"You" is the player, "your ability" the character's ability.** Keep that consistent.
+- **Read it aloud.** If it needs a second read, cut words or split the idea into two questions.
 
 **`styled`**: the same question, in a voice from Matt Dinniman's *Dungeon Crawler Carl* books, credited in `voice`. One to three sentences, under about 60 words, and it **must end with a yes/no question that means exactly the same as the plain one**. Spread the questions across the cast:
 

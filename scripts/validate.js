@@ -2,7 +2,7 @@
 //
 //   node scripts/validate.js                 full check, coverage and simulated games
 //   node scripts/validate.js townsfolk.json  integrity of just these question files
-//   --verbose                                list every unseparated pair group
+//   --verbose                                list every unseparated pair group and wording warning
 //
 // Integrity problems exit 1. Coverage is reported, not enforced: when no question
 // can split the remaining characters, the game ends listing all of them.
@@ -42,6 +42,28 @@ function checkSelector(selector, label, ids, fields) {
   return errors;
 }
 
+// Plain-wording rules from data/questions/GUIDE.md ("The two phrasings"): hard
+// rules are errors, judgement calls are warnings.
+export const PLAIN_MAX_WORDS = 30;
+export const PLAIN_AIM_WORDS = 22;
+const NEGATIVES = /\b(?:not|never|no|nothing|nobody|none|neither|nor|without|unless)\b|n't\b/gi;
+export function plainWording(plain) {
+  const errors = [];
+  const warnings = [];
+  const text = plain.trim();
+  const words = text.split(/\s+/).length;
+  if (!text.endsWith('?')) errors.push('must end with "?"');
+  if ((text.match(/\?/g) ?? []).length > 1) errors.push('asks more than one question');
+  if (/[()[\]]/.test(text)) errors.push('uses brackets');
+  if (text.includes(';')) errors.push('uses a semicolon');
+  if (text.includes('/')) errors.push('uses a slash; write "yes or no", not "yes/no"');
+  if (/\b(?:e\.g|i\.e|etc)\b|\b(?:ST|TB|BMR|SnV|S&V)\b/.test(text)) errors.push('uses an abbreviation');
+  if (words > PLAIN_MAX_WORDS) errors.push(`is ${words} words (limit ${PLAIN_MAX_WORDS})`);
+  else if (words > PLAIN_AIM_WORDS) warnings.push(`is ${words} words (aim for ${PLAIN_AIM_WORDS} or fewer)`);
+  if ((text.match(NEGATIVES) ?? []).length >= 2) warnings.push('may be a double negative');
+  return { errors, warnings };
+}
+
 export function checkQuestions(questions, characters, seen = { ids: new Set(), texts: new Set() }) {
   const errors = [];
   const ids = new Set(characters.map((c) => c.id));
@@ -55,6 +77,7 @@ export function checkQuestions(questions, characters, seen = { ids: new Set(), t
       if (typeof q[key] !== 'string' || !q[key].trim()) errors.push(`${label} needs a "${key}" phrasing`);
       else if (seen.texts.has(q[key])) errors.push(`${label}: "${key}" text duplicates another question`);
       else if (q[key].includes('\u2014')) errors.push(`${label}: "${key}" contains an em dash; use a comma, colon or full stop`);
+      if (key === 'plain' && typeof q.plain === 'string') errors.push(...plainWording(q.plain).errors.map((e) => `${label}: plain wording ${e}`));
       else seen.texts.add(q[key]);
     }
     if (typeof q.voice !== 'string' || !q.voice.trim()) errors.push(`${label} needs a "voice" crediting the styled line`);
@@ -182,6 +205,14 @@ async function main() {
     console.error(errors.join('\n'));
     console.error(`\n${errors.length} problem(s) found.`);
     process.exit(1);
+  }
+  const warnings = questionFiles.filter((f) => !only.length || only.includes(f.file))
+    .flatMap(({ file, questions: qs }) => qs.flatMap((q) => plainWording(q.plain).warnings.map((w) => `${file}: ${q.id}: plain wording ${w}`)));
+  if (warnings.length) {
+    const shown = args.includes('--verbose') ? warnings : warnings.slice(0, 10);
+    console.log(`Plain wording warnings: ${warnings.length} (see data/questions/GUIDE.md).`);
+    for (const w of shown) console.log(`  ${w}`);
+    if (shown.length < warnings.length) console.log(`  … ${warnings.length - shown.length} more (--verbose)`);
   }
   if (only.length) {
     const count = questionFiles.filter((f) => only.includes(f.file)).reduce((n, f) => n + f.questions.length, 0);

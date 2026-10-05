@@ -852,8 +852,8 @@
   },
   {
     "id": "fun-words-are-my-business",
-    "plain": "Does your own ability, not another character's, respond to what players actually say aloud (a phrase, claim, guess or joke), not just to pointing?",
-    "styled": "Words are my business, darling. One careless sentence and a whole career is over. Does your own ability, not another character's, react to the actual words players say aloud, like a phrase, a claim, a guess or a joke, not just pointing?",
+    "plain": "Does your own ability, not another character's, respond to the words players say aloud, like a phrase, claim, guess or joke?",
+    "styled": "Words are my business, darling. One careless sentence and a whole career is over. Does your own ability, not another character's, respond to the words players say aloud, like a phrase, a claim, a guess or a joke?",
     "voice": "Odette",
     "yes": {
       "spokenTrigger": true

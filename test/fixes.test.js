@@ -52,3 +52,13 @@ test('practice progress: the same session keeps the longer history; a different 
   assert.equal(merge(otherDay, two), otherDay);
   assert.equal(merge(restarted, otherDay), restarted);
 });
+
+test('plain wording: hard rules are errors, length and double negatives are warnings', async () => {
+  const { plainWording } = await import('../scripts/validate.js');
+  assert.deepEqual(plainWording('Are you on the evil team?'), { errors: [], warnings: [] });
+  for (const bad of ['Are you evil', 'Are you evil? Or good?', 'Are you (mostly) evil?', 'Are you evil; truly?', 'Can you ask a yes/no question?', 'Do you wake, e.g. at night?', 'Does the ST wake you?', `Are you ${'very '.repeat(30)}evil?`]) {
+    assert.ok(plainWording(bad).errors.length, `should reject: ${bad}`);
+  }
+  assert.ok(plainWording(`Are you ${'very '.repeat(20)}evil?`).warnings.some((w) => w.includes('words')));
+  assert.ok(plainWording("Can't you not die?").warnings.some((w) => w.includes('double negative')));
+});
