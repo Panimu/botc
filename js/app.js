@@ -130,10 +130,10 @@ function start(characters, questions, shareQuotes) {
     const nl = String.fromCharCode(10);
     texts = {
       url,
-      plain: [`I'm the ${result.name} (${team}) in Which Clocktower character are you?`, quote ? `"${quote.quote}"` : '', nearly ? `(Nearly the ${nearly.name}.)` : '', url].filter(Boolean).join(nl),
+      // The quote is on the link's preview card (scripts/make-share-cards.py), not in the text.
+      plain: [`I'm the ${result.name} (${team}) in Which Clocktower character are you?`, nearly ? `(Nearly the ${nearly.name}.)` : '', url].filter(Boolean).join(nl),
       discord: [
         `🕰️ **I'm the ${result.name}!** ${TEAM_EMOJI[result.team] ?? ''} ${team}`,
-        quote ? `> ${quote.quote}` : '',
         nearly ? `*Nearly the ${nearly.name}.*` : '',
         `🔮 Which Clocktower character are you? ${url}`,
       ].filter(Boolean).join(nl),

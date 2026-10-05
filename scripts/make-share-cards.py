@@ -1,7 +1,8 @@
 """Link-preview cards for each character's share page (/you/<id>.html).
 
 Writes resources/og/characters/<id>.jpg (1200x630) for every character in
-data/characters.json: "I'm the <name>", the team, and the character's token,
+data/characters.json: "I'm the <name>", the team, the character's share quote
+(data/share-quotes.json) and their token,
 in the style of resources/og/quiz.png. Needs Pillow and the Georgia font.
 Rerun after adding characters or changing token art:
 
@@ -26,6 +27,7 @@ TEAM = {'townsfolk': ('Townsfolk', (143, 180, 238)), 'outsider': ('Outsider', (7
         'minion': ('Minion', (242, 149, 75)), 'demon': ('Demon', (240, 138, 142)),
         'traveller': ('Traveller', (224, 185, 100))}
 SERIF = 'C:/Windows/Fonts/georgia.ttf'
+SERIF_ITALIC = 'C:/Windows/Fonts/georgiai.ttf'
 
 
 def font(size):
@@ -46,18 +48,18 @@ def radial(size, centre, radius, inner, outer, power=1.0):
 
 def backdrop():
     w, h = W * SS, H * SS
-    cx, cy = 0.745 * w, 0.5 * h
+    cx, cy = 0.79 * w, 0.5 * h
     bg = radial((w, h), (cx, cy), (w * 0.75, h * 1.1), (44, 33, 62), EDGE, 1.2)
     canvas = bg.convert('RGBA')
     glow = Image.new('RGBA', (w, h), (0, 0, 0, 0))
-    r = 290 * SS
+    r = 250 * SS
     ImageDraw.Draw(glow).ellipse([cx - r, cy - r, cx + r, cy + r], fill=BRASS + (40,))
     canvas.alpha_composite(glow.filter(ImageFilter.GaussianBlur(70 * SS)))
     draw = ImageDraw.Draw(canvas)
     for i in range(60):
         a = math.radians(i * 6 - 90)
         major = i % 5 == 0
-        inner, outer = (262 if major else 270) * SS, 284 * SS
+        inner, outer = (220 if major else 227) * SS, 240 * SS
         draw.line([cx + inner * math.cos(a), cy + inner * math.sin(a), cx + outer * math.cos(a), cy + outer * math.sin(a)],
                   fill=BRASS if major else DIAL, width=(4 if major else 2) * SS)
     return canvas, (cx, cy)
@@ -103,45 +105,72 @@ def name_lines(name, max_width):
     return [name], font(52)
 
 
-def card(character, base, centre):
+def wrap(text, f, max_width):
+    """Greedy word wrap to max_width at font f."""
+    lines, line = [], ''
+    for word in text.split():
+        trial = f'{line} {word}'.strip()
+        if line and f.getlength(trial) > max_width:
+            lines.append(line)
+            line = word
+        else:
+            line = trial
+    if line:
+        lines.append(line)
+    return lines
+
+
+def card(character, quote, base, centre):
     canvas = base.copy()
     cx, cy = centre
-    d = 410 * SS
+    d = 340 * SS
     shadow = Image.new('RGBA', canvas.size, (0, 0, 0, 0))
-    ImageDraw.Draw(shadow).ellipse([cx - d / 2, cy - d / 2 + 18 * SS, cx + d / 2, cy + d / 2 + 18 * SS], fill=(0, 0, 0, 150))
-    canvas.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(18 * SS)))
+    ImageDraw.Draw(shadow).ellipse([cx - d / 2, cy - d / 2 + 16 * SS, cx + d / 2, cy + d / 2 + 16 * SS], fill=(0, 0, 0, 150))
+    canvas.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(16 * SS)))
     tok = token(os.path.join(ROOT, character['image']), d)
     canvas.alpha_composite(tok, (int(cx - d / 2), int(cy - d / 2)))
 
     draw = ImageDraw.Draw(canvas)
-    left, max_width = 66 * SS, 500 * SS
-    lead_font, small_font = font(34), font(28)
+    left, max_width = 64 * SS, 590 * SS
+    lead_font = font(30)
     lines, name_font = name_lines(character['name'], max_width)
-    line_h = name_font.size * 1.12
+    line_h = name_font.size * 1.1
     team_label, team_colour = TEAM[character['team']]
-    block = 34 * SS * 1.4 + line_h * len(lines) + 28 * SS + 6 * SS + 34 * SS + 34 * SS * 1.5 + 28 * SS
+    # The quote shrinks until the whole block fits with a margin top and bottom.
+    for size in (30, 28, 26, 24, 22):
+        quote_font = ImageFont.truetype(SERIF_ITALIC, size * SS)
+        quote_lines = wrap(f'“{quote}”', quote_font, max_width) if quote else []
+        quote_h = quote_font.size * 1.42
+        block = 30 * SS * 1.35 + line_h * len(lines) + 16 * SS + 3 * SS + 22 * SS + 30 * SS * 1.25 + 26 * SS + quote_h * len(quote_lines)
+        if block <= (H - 96) * SS:
+            break
     y = (H * SS - block) / 2
     draw.text((left, y), "I'm the", font=lead_font, fill=DIM)
-    y += 34 * SS * 1.4
+    y += 30 * SS * 1.35
     for line in lines:
         draw.text((left, y), line, font=name_font, fill=VELLUM)
         y += line_h
-    y += 18 * SS
+    y += 16 * SS
     draw.line([left, y, left + 154 * SS, y], fill=BRASS, width=3 * SS)
-    y += 26 * SS
+    y += 22 * SS
     draw.text((left, y), team_label, font=lead_font, fill=team_colour)
-    y += 34 * SS * 1.5
-    draw.text((left, y), 'Which Clocktower character are you?', font=small_font, fill=DIM)
+    y += 30 * SS * 1.25 + 26 * SS
+    for line in quote_lines:
+        draw.text((left, y), line, font=quote_font, fill=DIM)
+        y += quote_h
     return canvas.convert('RGB').resize((W, H), Image.LANCZOS)
 
 
 def main():
     with open(os.path.join(ROOT, 'data', 'characters.json'), encoding='utf8') as f:
         characters = json.load(f)
+    with open(os.path.join(ROOT, 'data', 'share-quotes.json'), encoding='utf8') as f:
+        quotes = {key: value['quote'] for key, value in json.load(f).items()}
     os.makedirs(OUT, exist_ok=True)
     base, centre = backdrop()
     for character in characters:
-        card(character, base, centre).save(os.path.join(OUT, character['id'] + '.jpg'), quality=84, optimize=True, progressive=True)
+        card(character, quotes.get(character['id']), base, centre).save(
+            os.path.join(OUT, character['id'] + '.jpg'), quality=84, optimize=True, progressive=True)
     print(f'Wrote {len(characters)} cards to resources/og/characters/')
 
 
