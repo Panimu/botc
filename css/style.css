@@ -1138,3 +1138,12 @@ body {
   .hunt-result .charts { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: end; }
   .hunt-result .charts:has(> #scores-figure[hidden]) { grid-template-columns: minmax(0, 1fr); }
 }
+.timeline .par { stroke: var(--dim); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.timeline .par-label { fill: var(--dim); font: 700 11px var(--body); }
+
+/* Question codes are there for reference, so they stay small and quiet
+   (80% opacity still clears AA contrast on every background in both themes). */
+.offer-id, .path .path-id, .history .path-id { font-size: 0.7rem; opacity: 0.8; }
+.question-id, .card-foot .question-id { font-size: 0.78rem; opacity: 0.8; }
+@media (prefers-contrast: more) { .offer-id, .path-id, .question-id { opacity: 1; } }
+.timeline .value, .timeline .par-label { paint-order: stroke; stroke: var(--panel); stroke-width: 3px; stroke-linejoin: round; }

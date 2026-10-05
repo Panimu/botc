@@ -221,18 +221,21 @@ function start(characters, questions, clockOffset, shareQuotes) {
     $('path').hidden = playing || count === 0;
   }
 
-  // Characters left after each action, for the timeline chart.
+  // Characters left after each action, and points spent so far, for the timeline chart.
   function timelineSteps() {
     const replayGame = new DailyGame({ characters, questions, date });
-    const steps = [{ label: 'start', left: replayGame.pool.length, kind: 'start' }];
+    const steps = [{ label: 'start', left: replayGame.pool.length, points: 0, kind: 'start' }];
     let asked = 0;
     for (const action of actions) {
       if (replayGame.status !== 'playing') break;
-      if (action.ask) { replayGame.ask(action.ask); asked++; steps.push({ label: String(asked), left: replayGame.pool.length, kind: 'ask' }); }
-      else if (action.guess) {
+      if (action.ask) {
+        replayGame.ask(action.ask);
+        asked++;
+        steps.push({ label: String(asked), left: replayGame.pool.length, points: replayGame.score, kind: 'ask' });
+      } else if (action.guess) {
         const right = action.guess === replayGame.target;
         replayGame.guess(action.guess);
-        steps.push({ label: byId.get(action.guess).name, left: right ? 1 : replayGame.pool.length, kind: right ? 'ask' : 'guess' });
+        steps.push({ label: byId.get(action.guess).name, left: right ? 1 : replayGame.pool.length, points: replayGame.score, kind: right ? 'found' : 'guess' });
       }
     }
     return steps;
@@ -295,7 +298,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     // Scores first: whether they show changes the timeline's width.
     $('scores-figure').hidden = practice || Object.keys(results).length === 0;
     scoresChart($('scores-chart'), results, practice ? undefined : game.status === 'won' ? game.score : null);
-    timelineChart($('timeline-chart'), timelineSteps());
+    timelineChart($('timeline-chart'), timelineSteps(), { par: parScore });
     $('freeze-text').textContent = `You hold ${plural(s.freezes, 'streak freeze')} (at most ${MAX_FREEZES}). You earn one for every ${FREEZE_EVERY} hunts you win, and a missed day spends one instead of breaking your streak.${s.frozen.length ? ` Frozen so far: ${s.frozen.map(longDate).join(', ')}.` : ''}`;
     $('keep').hidden = practice;
     $('countdown').hidden = Boolean(practiceDate);
