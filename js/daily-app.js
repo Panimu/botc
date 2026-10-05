@@ -244,9 +244,10 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const stats = [['Current streak', s.current], ['Best streak', s.best], ['Played', s.played], ['Streak freezes', s.freezes]];
     $('stats').replaceChildren(...stats.flatMap(([term, value]) => [el('dt', '', term), el('dd', '', String(value))]));
     $('stats').hidden = practice;
-    timelineChart($('timeline-chart'), timelineSteps());
-    scoresChart($('scores-chart'), results, practice ? undefined : game.status === 'won' ? game.score : null);
+    // Scores first: whether they show changes the timeline's width.
     $('scores-figure').hidden = practice || Object.keys(results).length === 0;
+    scoresChart($('scores-chart'), results, practice ? undefined : game.status === 'won' ? game.score : null);
+    timelineChart($('timeline-chart'), timelineSteps());
     $('freeze-text').textContent = `You hold ${plural(s.freezes, 'streak freeze')} (at most ${MAX_FREEZES}). You earn one for every ${FREEZE_EVERY} hunts you win, and a missed day spends one instead of breaking your streak.${s.frozen.length ? ` Frozen so far: ${s.frozen.map(longDate).join(', ')}.` : ''}`;
     $('keep').hidden = practice;
     $('countdown').hidden = practice;

@@ -1084,22 +1084,21 @@ body {
 .timeline .line { fill: none; stroke: var(--chart); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
 .timeline .point { fill: var(--chart); stroke: var(--panel); stroke-width: 2; }
 .timeline .point.hollow { fill: var(--panel); stroke: var(--chart); stroke-width: 2; }
-.scores { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3rem; }
-.scores li { display: grid; grid-template-columns: 3rem 1fr; align-items: center; gap: 0.5rem; }
-.scores .score { color: var(--dim); text-align: right; font-weight: 700; }
-.scores .bar {
-  box-sizing: border-box;
-  width: var(--w);
-  min-width: 2rem;
-  padding: 0.05rem 0.5rem;
-  border-radius: 0 4px 4px 0;
-  background: var(--line);
-  color: var(--text);
-  text-align: right;
-  font-weight: 700;
+.scores {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 8rem;
 }
-.scores .today .bar { background: var(--chart); color: var(--panel); }
-.scores .today .score { color: var(--text); }
+.scores li { flex: 1 1 0; min-width: 0; max-width: 2.75rem; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+.scores .bar { width: 100%; height: calc((100% - 2.6rem) * var(--f)); min-height: 4px; border-radius: 4px 4px 0 0; background: var(--line); }
+.scores .today .bar { background: var(--chart); }
+.scores .count { font-weight: 700; font-size: 0.85rem; line-height: 1.3rem; }
+.scores .score { color: var(--dim); font-size: 0.8rem; line-height: 1.3rem; }
+.scores .today .score { color: var(--text); font-weight: 700; }
 
 /* Keep your streak, and past hunts */
 .keep, .past { margin-top: 1.25rem; text-align: left; }
@@ -1116,3 +1115,26 @@ body {
 .past-list a { color: var(--text); }
 .past-list a[aria-current="page"] { font-weight: 700; }
 .past-result { color: var(--dim); white-space: nowrap; }
+
+/* The hunt result framed on one screen (the list of questions may run below):
+   the token beside the name, a short timeline, and the scores beside it. */
+.hunt-result .chart { margin: 0; }
+.hunt-result .charts { display: grid; gap: 1.25rem; margin-top: 1.25rem; }
+@media (min-width: 30rem) {
+  .panel.hunt-result { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 1.25rem; align-items: center; text-align: left; }
+  .hunt-result > * { grid-column: 1 / -1; }
+  .hunt-result > .result-art { grid-column: 1; grid-row: 1 / span 3; width: clamp(6rem, 11vw, 8rem); }
+  .hunt-result > .result-lead { grid-column: 2; grid-row: 1; margin: 0; align-self: end; }
+  .hunt-result > .result-name { grid-column: 2; grid-row: 2; font-size: clamp(2.25rem, 4.5vw, 3.25rem); overflow-wrap: break-word; }
+  .hunt-result > .result-team { grid-column: 2; grid-row: 3; justify-self: start; align-self: start; margin: 0.4rem 0 0; }
+  .hunt-result > .result-summary { margin: 1rem 0 0; max-width: none; font-size: 1.1rem; }
+  .hunt-result > .share-quote { margin: 1.5rem 0 0; max-width: none; padding: 0.9rem 1.25rem 0.8rem; }
+  .hunt-result > .share-quote blockquote { font-size: 1.05rem; }
+  .hunt-result > .stats { margin: 1.25rem 0 0; text-align: center; }
+  .hunt-result .stats dd { font-size: 1.6rem; }
+  .hunt-result > .share-options { justify-content: flex-start; }
+}
+@media (min-width: 36rem) {
+  .hunt-result .charts { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: end; }
+  .hunt-result .charts:has(> #scores-figure[hidden]) { grid-template-columns: minmax(0, 1fr); }
+}

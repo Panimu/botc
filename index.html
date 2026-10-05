@@ -96,7 +96,7 @@
         <p class="guess-locked" id="guess-locked"></p>
       </section>
 
-      <section class="panel result" id="result-panel" aria-labelledby="result-name" hidden>
+      <section class="panel result hunt-result" id="result-panel" aria-labelledby="result-name" hidden>
         <img class="result-art" id="result-art" alt="">
         <p class="result-lead" id="result-lead"></p>
         <h2 class="result-name" id="result-name" tabindex="-1"></h2>
@@ -106,14 +106,16 @@
           <blockquote id="share-quote-text"></blockquote>
         </figure>
         <dl class="stats" id="stats"></dl>
-        <figure class="chart" id="timeline-figure">
-          <figcaption>How the town shrank</figcaption>
-          <div id="timeline-chart"></div>
-        </figure>
-        <figure class="chart" id="scores-figure">
-          <figcaption>Your scores</figcaption>
-          <div id="scores-chart"></div>
-        </figure>
+        <div class="charts">
+          <figure class="chart" id="timeline-figure">
+            <figcaption>How the town shrank</figcaption>
+            <div id="timeline-chart"></div>
+          </figure>
+          <figure class="chart" id="scores-figure">
+            <figcaption>Your scores</figcaption>
+            <div id="scores-chart"></div>
+          </figure>
+        </div>
         <div class="share-options" id="share-options"></div>
         <p class="share-status" id="share-status" role="status"></p>
         <p class="countdown" id="countdown"></p>

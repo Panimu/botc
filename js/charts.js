@@ -12,10 +12,26 @@ const node = (tag, attrs = {}, text) => {
 
 // How the town shrank: characters left after each step, on a log scale so the
 // late, small steps are as readable as the early, big ones. Wrong guesses are
-// hollow points (shape, not just colour, marks them).
+// hollow points (shape, not just colour, marks them). Drawn at the container's
+// real width with a fixed height, so text stays its true size and the chart stays
+// short; redrawn when the container's width changes.
 // steps: [{ label, left, kind: 'start' | 'ask' | 'guess' }]
+const drawn = new WeakMap();
 export function timelineChart(container, steps) {
-  const W = 340, H = 170, L = 34, R = 14, T = 14, B = 26;
+  drawTimeline(container, steps);
+  if (!drawn.has(container) && 'ResizeObserver' in globalThis) {
+    let width = container.clientWidth;
+    new ResizeObserver(() => {
+      if (Math.abs(container.clientWidth - width) < 8) return;
+      width = container.clientWidth;
+      drawTimeline(container, drawn.get(container));
+    }).observe(container);
+  }
+  drawn.set(container, steps);
+}
+
+function drawTimeline(container, steps) {
+  const W = Math.max(240, Math.round(container.clientWidth) || 340), H = 150, L = 34, R = 14, T = 20, B = 24;
   const max = steps[0].left;
   const x = (i) => L + (i * (W - L - R)) / Math.max(1, steps.length - 1);
   const y = (v) => T + (1 - Math.log(v) / Math.log(max)) * (H - T - B);
@@ -48,7 +64,8 @@ export function timelineChart(container, steps) {
   container.replaceChildren(svg);
 }
 
-// Your scores: how many hunts you finished with each score, today's highlighted.
+// Your scores: how many hunts you finished with each score, today's highlighted,
+// as compact columns (count above, score below) so it stays short as it grows.
 // results: { date: { won, score } }
 export function scoresChart(container, results, todayScore) {
   const won = Object.values(results).filter((r) => r.won).map((r) => r.score);
@@ -71,12 +88,11 @@ export function scoresChart(container, results, todayScore) {
     score.textContent = r.label;
     const bar = document.createElement('span');
     bar.className = 'bar';
-    bar.style.setProperty('--w', `${Math.max(6, (r.count / most) * 100)}%`);
+    bar.style.setProperty('--f', String(r.count / most));
     const count = document.createElement('span');
     count.className = 'count';
     count.textContent = String(r.count);
-    bar.append(count);
-    li.append(score, bar);
+    li.append(count, bar, score);
     list.append(li);
   }
   container.replaceChildren(list);
