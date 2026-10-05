@@ -398,8 +398,8 @@
   },
   {
     "id": "tfx-eat-the-executed",
-    "plain": "Would you like to gain the ability of whoever was most recently executed?",
-    "styled": "Somebody swings from the gallows, and you get their powers. Fresh off the rope! Waste not, want not! Would you like to take on the ability of the latest executed player?",
+    "plain": "Would you like to gain the ability of whoever most recently died by execution, knowing that an evil one would poison you instead?",
+    "styled": "Somebody dies on the gallows, and you get their powers. Fresh off the rope! Unless they were evil, in which case enjoy the food poisoning. Waste not, want not! Would you like to take on the ability of whoever most recently died by execution, knowing an evil one would poison you?",
     "voice": "Samantha",
     "yes": [
       "cannibal"
@@ -557,7 +557,9 @@
     "yes": [
       "gambler",
       "acrobat",
-      "grandmother"
+      "grandmother",
+      "lycanthrope",
+      "gossip"
     ],
     "scope": {
       "team": "townsfolk"

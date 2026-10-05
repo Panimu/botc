@@ -132,8 +132,8 @@
   },
   {
     "id": "tfc-undertaker-post-mortem",
-    "plain": "Would you like to learn each night which character was executed that day?",
-    "styled": "Okay, so our sponsors LOVE a post-mortem segment! Each night you'd get the true identity of whoever got hanged that day. Super on-brand. Would you like to learn each night which character was executed that day?",
+    "plain": "Would you like to learn each night which character died by execution that day?",
+    "styled": "Okay, so our sponsors LOVE a post-mortem segment! Each night you'd get the true identity of whoever actually died on the gallows that day. Super on-brand. Would you like to learn each night which character died by execution that day?",
     "voice": "Zev",
     "yes": [
       "undertaker"
@@ -344,8 +344,8 @@
   },
   {
     "id": "tfc-chambermaid-busy-nights",
-    "plain": "Would you rather the Storyteller tell you who was up and about in the night than who is evil?",
-    "styled": "I've noticed people give themselves away by what they do after dark, not by what they say. Would you rather the Storyteller tell you who was up and about in the night than who is evil?",
+    "plain": "Would you like to choose two other alive players each night and learn how many of them woke because of their abilities?",
+    "styled": "I've noticed people give themselves away by what they do after dark, not by what they say. Would you like to choose two other alive players each night and learn how many of them woke because of their abilities?",
     "voice": "Katia",
     "yes": [
       "chambermaid"
@@ -472,8 +472,8 @@
   },
   {
     "id": "tfc-minstrel-sing-them-drunk",
-    "plain": "When a Minion is executed, would you like everyone else to end up drunk?",
-    "styled": "When one of those GHASTLY henchmen swings, I shall sing, and everyone will be far too tipsy to function. It's called art. When a Minion is executed, would you like everyone else to end up drunk?",
+    "plain": "When a Minion dies by execution, would you make all other non-Traveller players drunk until dusk tomorrow?",
+    "styled": "When one of those GHASTLY henchmen actually dies on the gallows, I shall sing, and every other player except the Travellers will be far too tipsy to function until tomorrow's dusk. It's called art. When a Minion dies by execution, would you make all other non-Traveller players drunk until dusk tomorrow?",
     "voice": "Princess Donut",
     "yes": [
       "minstrel"
@@ -481,8 +481,8 @@
   },
   {
     "id": "tfc-minstrel-open-bar",
-    "plain": "Would you celebrate an evil player's execution by leaving the whole town drunk?",
-    "styled": "Nothing says justice like an open bar! One villain on the gallows, one song, and the whole town is seeing double till tomorrow. Great for engagement! Would you celebrate an evil player's execution by leaving the whole town drunk?",
+    "plain": "Would you celebrate a Minion dying by execution by leaving every other non-Traveller player drunk until the following dusk?",
+    "styled": "Nothing says justice like an open bar! One Minion dies on the gallows, one song, and every other non-Traveller is seeing double until dusk tomorrow. Great for engagement! Would you celebrate a Minion dying by execution by leaving every other non-Traveller player drunk until the following dusk?",
     "voice": "Zev",
     "yes": [
       "minstrel"
@@ -1368,7 +1368,8 @@
     "yes": [
       "gambler",
       "acrobat",
-      "grandmother"
+      "grandmother",
+      "lycanthrope"
     ],
     "scope": [
       "steward",

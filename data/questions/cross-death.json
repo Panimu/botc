@@ -537,7 +537,8 @@
       "gangster",
       "gnome",
       "witch",
-      "harpy"
+      "harpy",
+      "yaggababble"
     ],
     "scope": {
       "killsByDay": true
@@ -890,8 +891,8 @@
   },
   {
     "id": "xd-u-daylight-killer",
-    "plain": "Of those whose ability can kill, do you do your killing in daylight rather than at night?",
-    "styled": "Alright, killers, show of hands. Who's a creature of the night, and who's got the nerve to do it at noon? Of you with a killing ability, do you do your killing in daylight?",
+    "plain": "Of those whose ability can kill, can your killing happen in daylight?",
+    "styled": "Alright, killers, show of hands. Who strictly works the night shift, and who's got the nerve to do it at noon? Of you with a killing ability, can your killing happen in daylight?",
     "voice": "Elle",
     "yes": {
       "killsByDay": true

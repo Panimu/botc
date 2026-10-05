@@ -1,8 +1,8 @@
 [
   {
     "id": "out-all-the-quirks",
-    "plain": "Would you like to be a single character holding every Outsider's ability at once?",
-    "styled": "New bundle deal! One contestant, every misfit perk on the shelf, absolutely no refunds. Our legal team calls it 'a bit much'. Would you like to be the one carrying every Outsider ability at once?",
+    "plain": "Would you like to be a single character holding every Outsider ability on the script at once?",
+    "styled": "New bundle deal! One contestant, every misfit perk on the script's shelf, absolutely no refunds. Our legal team calls it 'a bit much'. Would you like to be the one carrying every Outsider ability on the script at once?",
     "voice": "The System AI",
     "yes": [
       "hermit"

@@ -472,8 +472,8 @@
   },
   {
     "id": "xs-spoken-madness",
-    "plain": "Does your ability use madness, where someone must keep insisting they are something, with a reward or penalty attached?",
-    "styled": "Madness, darling, is simply COMMITMENT. Insist you are something, insist it all day, and the Storyteller rewards or punishes you for it. I do it every day. Does your ability use madness, where someone must keep insisting they are something, with a reward or penalty attached?",
+    "plain": "Does your ability use madness, where someone must convincingly support a claim, about themselves or another player, with a reward or penalty attached?",
+    "styled": "Madness, darling, is simply COMMITMENT. Pick a claim, about yourself or somebody else, sell it all day, and the Storyteller rewards or punishes you for it. I do it every day. Does your ability use madness, where someone must convincingly support a claim, with a reward or penalty attached?",
     "voice": "Princess Donut",
     "yes": [
       "cerenovus",

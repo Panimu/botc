@@ -29,7 +29,7 @@
     ]
   },
   "killsByDay": {
-    "definition": "The character's own ability, as written, can kill another player during the day by means other than an execution: a shot, a nomination that kills, a daytime death the Storyteller makes under the ability, or the Riot's day-3 nominations. Executions caused by an ability (Virgin, Vizier, Cerenovus) belong to causesExtraExecution instead, and borrowed abilities don't count.",
+    "definition": "The character's own ability, as written, can kill another player during the day by means other than an execution: a shot, a nomination that kills, a daytime death the Storyteller makes under the ability, the Riot's day-3 nominations, or the Yaggababble's phrase deaths, which can come during the day once the phrase is said. Executions caused by an ability (Virgin, Vizier, Cerenovus) belong to causesExtraExecution instead, and borrowed abilities don't count.",
     "yes": [
       "slayer",
       "golem",
@@ -40,7 +40,8 @@
       "riot",
       "gunslinger",
       "gangster",
-      "gnome"
+      "gnome",
+      "yaggababble"
     ]
   },
   "causesExtraExecution": {
