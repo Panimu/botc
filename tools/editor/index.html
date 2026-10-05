@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Question Editor</title>
+  <link rel="stylesheet" href="editor.css">
+  <script type="module" src="editor.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1>Question editor</h1>
+    <p class="counts" id="counts">Loading…</p>
+    <button type="button" id="validate">Run full validation</button>
+  </header>
+
+  <div class="layout">
+    <aside class="side">
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" id="tab-browse" aria-selected="true">Browse</button>
+        <button type="button" role="tab" id="tab-review" aria-selected="false">Review list</button>
+      </div>
+
+      <section id="panel-browse" class="panel">
+        <label class="field">Search
+          <input type="search" id="search" placeholder="Id or words">
+        </label>
+        <div class="row">
+          <label class="field">File
+            <select id="file-filter"><option value="">All files</option></select>
+          </label>
+          <label class="field">Yes for character
+            <select id="character-filter"><option value="">Anyone</option></select>
+          </label>
+        </div>
+        <div class="row checks">
+          <label><input type="checkbox" id="only-warnings"> Wording warnings</label>
+          <label><input type="checkbox" id="only-changed"> Changed since commit</label>
+          <label><input type="checkbox" id="only-unsaved"> Unsaved</label>
+        </div>
+        <p class="hint" id="result-count"></p>
+        <ol class="list" id="browse-list"></ol>
+      </section>
+
+      <section id="panel-review" class="panel" hidden>
+        <label class="field">Paste question ids, or any text containing them
+          <textarea id="review-input" rows="5" placeholder="e.g. a review report: every known id in it is picked up"></textarea>
+        </label>
+        <div class="row">
+          <button type="button" id="review-load">Load list</button>
+          <label class="file-button">Open file… <input type="file" id="review-file" accept=".txt,.md,.json,.csv"></label>
+          <button type="button" id="review-clear" class="quiet">Clear</button>
+        </div>
+        <p class="hint" id="review-progress"></p>
+        <div class="row">
+          <button type="button" id="review-prev">◀ Previous</button>
+          <button type="button" id="review-next">Next ▶</button>
+        </div>
+        <ol class="list" id="review-list"></ol>
+      </section>
+    </aside>
+
+    <main class="main" id="main">
+      <p class="empty" id="empty">Pick a question from the list.</p>
+
+      <div id="editor" hidden>
+        <div class="title-row">
+          <h2 id="q-id"></h2>
+          <span class="tag" id="q-file"></span>
+          <span class="tag dirty" id="q-dirty" hidden>Unsaved</span>
+          <label class="reviewed" id="reviewed-wrap" hidden><input type="checkbox" id="reviewed"> Reviewed</label>
+        </div>
+
+        <label class="field">Plain <span class="hint" id="plain-count"></span>
+          <textarea id="plain" rows="2"></textarea>
+        </label>
+        <label class="field">Styled
+          <textarea id="styled" rows="3"></textarea>
+        </label>
+        <label class="field short">Voice
+          <input type="text" id="voice">
+        </label>
+        <ul class="issues" id="issues"></ul>
+
+        <h3>Split</h3>
+        <div class="selectors">
+          <p id="yes-summary"></p>
+          <p id="scope-summary"></p>
+        </div>
+        <div class="notice" id="notice" hidden></div>
+        <div class="row mode">
+          <span>Clicking a character changes the</span>
+          <label><input type="radio" name="mode" value="yes" checked> yes side</label>
+          <label><input type="radio" name="mode" value="scope"> scope</label>
+          <input type="search" id="grid-filter" placeholder="Find a character">
+        </div>
+        <p class="split-counts" id="split-counts"></p>
+        <div class="grid" id="grid"></div>
+        <p class="ability" id="ability">Hover a character to see its ability.</p>
+
+        <div class="actions">
+          <button type="button" id="save" class="primary">Save question</button>
+          <button type="button" id="save-trait" hidden></button>
+          <button type="button" id="revert" class="quiet">Discard changes</button>
+          <span class="status" id="status" role="status"></span>
+        </div>
+      </div>
+
+      <section class="validation" id="validation" hidden>
+        <h3>Full validation</h3>
+        <pre id="validation-output"></pre>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

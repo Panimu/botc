@@ -8,6 +8,7 @@
     "validate": "node scripts/validate.js",
     "test": "node --test",
     "build": "node scripts/build-site.js",
-    "upload": "node scripts/validate.js && node --test && node scripts/prepare-upload.js"
+    "upload": "node scripts/validate.js && node --test && node scripts/prepare-upload.js",
+    "editor": "node tools/editor/server.js"
   }
 }
