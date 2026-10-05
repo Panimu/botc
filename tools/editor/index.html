@@ -11,27 +11,27 @@
   <header class="top">
     <h1>Question editor</h1>
     <p class="counts" id="counts">Loading…</p>
+    <button type="button" id="show-keys" class="quiet">Shortcuts</button>
     <button type="button" id="validate">Run full validation</button>
   </header>
 
   <div class="layout">
     <aside class="side">
       <div class="tabs" role="tablist">
-        <button type="button" role="tab" id="tab-browse" aria-selected="true">Browse</button>
-        <button type="button" role="tab" id="tab-review" aria-selected="false">Review list</button>
+        <button type="button" role="tab" data-tab="questions" aria-selected="true">Questions</button>
+        <button type="button" role="tab" data-tab="review" aria-selected="false">Review <span id="review-badge"></span></button>
+        <button type="button" role="tab" data-tab="characters" aria-selected="false">Characters</button>
+        <button type="button" role="tab" data-tab="traits" aria-selected="false">Traits</button>
       </div>
 
-      <section id="panel-browse" class="panel">
-        <label class="field">Search
-          <input type="search" id="search" placeholder="Id or words">
-        </label>
+      <section class="panel" data-panel="questions">
         <div class="row">
-          <label class="field">File
-            <select id="file-filter"><option value="">All files</option></select>
-          </label>
-          <label class="field">Yes for character
-            <select id="character-filter"><option value="">Anyone</option></select>
-          </label>
+          <input type="search" id="search" placeholder="Search ids and wording  ( / )" aria-label="Search questions">
+          <button type="button" id="new-question" class="primary small">New</button>
+        </div>
+        <div class="row">
+          <select id="file-filter" aria-label="File"><option value="">All files</option></select>
+          <select id="character-filter" aria-label="Yes for character"><option value="">Yes for anyone</option></select>
         </div>
         <div class="row checks">
           <label><input type="checkbox" id="only-warnings"> Wording warnings</label>
@@ -39,78 +39,201 @@
           <label><input type="checkbox" id="only-unsaved"> Unsaved</label>
         </div>
         <p class="hint" id="result-count"></p>
-        <ol class="list" id="browse-list"></ol>
+        <ol class="list" id="question-list"></ol>
       </section>
 
-      <section id="panel-review" class="panel" hidden>
-        <label class="field">Paste question ids, or any text containing them
-          <textarea id="review-input" rows="5" placeholder="e.g. a review report: every known id in it is picked up"></textarea>
+      <section class="panel" data-panel="review" hidden>
+        <label class="field">Paste question ids, or any text that mentions them
+          <textarea id="review-input" rows="4" placeholder="A review report, notes, a list of ids: every known id in it is picked up, in order."></textarea>
         </label>
         <div class="row">
           <button type="button" id="review-load">Load list</button>
           <label class="file-button">Open file… <input type="file" id="review-file" accept=".txt,.md,.json,.csv"></label>
+          <button type="button" id="review-add-current" class="quiet">Add current</button>
           <button type="button" id="review-clear" class="quiet">Clear</button>
         </div>
         <p class="hint" id="review-progress"></p>
-        <div class="row">
-          <button type="button" id="review-prev">◀ Previous</button>
-          <button type="button" id="review-next">Next ▶</button>
-        </div>
         <ol class="list" id="review-list"></ol>
+      </section>
+
+      <section class="panel" data-panel="characters" hidden>
+        <div class="row">
+          <input type="search" id="character-search" placeholder="Search characters" aria-label="Search characters">
+          <select id="team-filter" aria-label="Team"><option value="">All teams</option></select>
+        </div>
+        <ol class="list" id="character-list"></ol>
+      </section>
+
+      <section class="panel" data-panel="traits" hidden>
+        <div class="row">
+          <input type="search" id="trait-search" placeholder="Search traits and definitions" aria-label="Search traits">
+          <button type="button" id="new-trait" class="primary small">New</button>
+        </div>
+        <ol class="list" id="trait-list"></ol>
       </section>
     </aside>
 
     <main class="main" id="main">
-      <p class="empty" id="empty">Pick a question from the list.</p>
+      <div class="empty" id="empty">
+        <h2>Pick something to edit</h2>
+        <p>Choose a question, character or trait on the left, or load a review list.</p>
+      </div>
 
-      <div id="editor" hidden>
-        <div class="title-row">
+      <!-- Question -->
+      <div class="editor" id="question-editor" hidden>
+        <div class="toolbar">
+          <button type="button" class="icon" id="q-prev" title="Previous in list (Alt+↑)">◀</button>
+          <button type="button" class="icon" id="q-next" title="Next in list (Alt+↓)">▶</button>
           <h2 id="q-id"></h2>
           <span class="tag" id="q-file"></span>
+          <span class="tag new" id="q-new" hidden>New</span>
           <span class="tag dirty" id="q-dirty" hidden>Unsaved</span>
+          <span class="tag" id="q-changed" hidden title="Different from the last commit">Changed since commit</span>
           <label class="reviewed" id="reviewed-wrap" hidden><input type="checkbox" id="reviewed"> Reviewed</label>
+          <span class="spacer"></span>
+          <button type="button" class="quiet" id="q-duplicate">Duplicate</button>
+          <button type="button" class="quiet" id="q-rename">Rename</button>
+          <button type="button" class="quiet danger" id="q-delete">Delete</button>
         </div>
 
-        <label class="field">Plain <span class="hint" id="plain-count"></span>
-          <textarea id="plain" rows="2"></textarea>
-        </label>
-        <label class="field">Styled
-          <textarea id="styled" rows="3"></textarea>
-        </label>
-        <label class="field short">Voice
-          <input type="text" id="voice">
-        </label>
-        <ul class="issues" id="issues"></ul>
+        <div class="two">
+          <div>
+            <label class="field">Plain <span class="hint" id="plain-count"></span>
+              <textarea id="plain" rows="2"></textarea>
+            </label>
+            <label class="field">Styled
+              <textarea id="styled" rows="4"></textarea>
+            </label>
+            <div class="row">
+              <label class="field">Voice
+                <input type="text" id="voice" list="voices" autocomplete="off">
+              </label>
+              <label class="field">Answer labels <span class="hint">(optional, quiz only)</span>
+                <span class="row tight"><input type="text" id="option-yes" placeholder="Yes"><input type="text" id="option-no" placeholder="No"></span>
+              </label>
+            </div>
+            <datalist id="voices"></datalist>
+            <ul class="issues" id="issues"></ul>
+          </div>
+          <div class="previews">
+            <p class="preview-label">In the daily hunt</p>
+            <div class="preview hunt"><span class="mark">?</span><span><span id="preview-plain"></span><span class="pid" id="preview-id"></span></span></div>
+            <p class="preview-label">In the personality quiz</p>
+            <div class="preview quiz"><p id="preview-styled"></p><div class="answers"><span id="preview-yes">Yes</span><span id="preview-no">No</span></div></div>
+          </div>
+        </div>
 
         <h3>Split</h3>
         <div class="selectors">
           <p id="yes-summary"></p>
           <p id="scope-summary"></p>
+          <p id="same-split" class="note" hidden></p>
         </div>
         <div class="notice" id="notice" hidden></div>
-        <div class="row mode">
-          <span>Clicking a character changes the</span>
-          <label><input type="radio" name="mode" value="yes" checked> yes side</label>
-          <label><input type="radio" name="mode" value="scope"> scope</label>
-          <input type="search" id="grid-filter" placeholder="Find a character">
+        <div class="row split-tools">
+          <span class="segmented" role="radiogroup" aria-label="Clicking a character changes">
+            <label><input type="radio" name="mode" value="yes" checked> Yes side</label>
+            <label><input type="radio" name="mode" value="scope"> Scope</label>
+          </span>
+          <button type="button" class="quiet" id="paste-names">Set yes from names…</button>
+          <button type="button" class="quiet icon" id="undo" title="Undo split change (Ctrl+Z outside text boxes)">↶</button>
+          <button type="button" class="quiet icon" id="redo" title="Redo (Ctrl+Y)">↷</button>
+          <input type="search" id="grid-filter" placeholder="Find a character" aria-label="Find a character">
         </div>
-        <p class="split-counts" id="split-counts"></p>
+        <div class="split-counts" id="split-counts"></div>
         <div class="grid" id="grid"></div>
         <p class="ability" id="ability">Hover a character to see its ability.</p>
+      </div>
 
-        <div class="actions">
-          <button type="button" id="save" class="primary">Save question</button>
-          <button type="button" id="save-trait" hidden></button>
-          <button type="button" id="revert" class="quiet">Discard changes</button>
-          <span class="status" id="status" role="status"></span>
+      <!-- Character -->
+      <div class="editor" id="character-editor" hidden>
+        <div class="toolbar">
+          <img class="portrait" id="c-art" alt="">
+          <div>
+            <h2 id="c-name"></h2>
+            <p class="sub" id="c-meta"></p>
+          </div>
+          <span class="tag dirty" id="c-dirty" hidden>Unsaved</span>
         </div>
+        <p class="summary" id="c-summary"></p>
+
+        <h3>Share quote <span class="hint">(published on the quiz result and its preview card)</span></h3>
+        <div class="row">
+          <label class="field grow">Quote<textarea id="c-quote" rows="2"></textarea></label>
+          <label class="field">Voice<input type="text" id="c-voice" list="voices" autocomplete="off"></label>
+        </div>
+
+        <h3>Traits</h3>
+        <div class="row">
+          <input type="search" id="c-trait-filter" placeholder="Filter traits" aria-label="Filter traits">
+          <label><input type="checkbox" id="c-only-yes"> Only the ones it has</label>
+        </div>
+        <ul class="trait-rows" id="c-traits"></ul>
+
+        <h3>Questions <span class="hint" id="c-question-count"></span></h3>
+        <ol class="mini-list" id="c-questions"></ol>
+      </div>
+
+      <!-- Trait -->
+      <div class="editor" id="trait-editor" hidden>
+        <div class="toolbar">
+          <h2 id="t-title"></h2>
+          <span class="tag" id="t-file"></span>
+          <span class="tag dirty" id="t-dirty" hidden>Unsaved</span>
+          <span class="spacer"></span>
+          <button type="button" class="quiet danger" id="t-delete">Delete trait</button>
+        </div>
+        <div class="row" id="t-new-fields" hidden>
+          <label class="field">Name<input type="text" id="t-name" placeholder="camelCase, like killsByDay"></label>
+          <label class="field">File<select id="t-file-select"></select></label>
+        </div>
+        <label class="field">Definition: what counts, and what doesn't
+          <textarea id="t-definition" rows="4"></textarea>
+        </label>
+        <label class="check"><input type="checkbox" id="t-subjective"> Subjective: keep a "no" list, so borderline characters can be left unclear (adds a <code>…Clear</code> field for scopes)</label>
+        <p class="hint" id="t-help"></p>
+        <div class="split-counts" id="t-counts"></div>
+        <div class="row"><input type="search" id="t-grid-filter" placeholder="Find a character" aria-label="Find a character"></div>
+        <div class="grid" id="t-grid"></div>
+        <p class="ability" id="t-ability">Hover a character to see its ability.</p>
+        <h3>Questions using this trait <span class="hint" id="t-use-count"></span></h3>
+        <ol class="mini-list" id="t-questions"></ol>
       </div>
 
       <section class="validation" id="validation" hidden>
-        <h3>Full validation</h3>
+        <div class="row"><h3>Full validation</h3><button type="button" class="quiet" id="validation-close">Close</button></div>
         <pre id="validation-output"></pre>
       </section>
+
+      <div class="actionbar" id="actionbar" hidden>
+        <button type="button" id="save" class="primary">Save</button>
+        <button type="button" id="discard" class="quiet">Discard changes</button>
+        <span class="status" id="status" role="status"></span>
+      </div>
     </main>
   </div>
+
+  <dialog id="dialog">
+    <form method="dialog" id="dialog-form">
+      <h2 id="dialog-title"></h2>
+      <div id="dialog-body"></div>
+      <div class="row end">
+        <button type="button" class="quiet" id="dialog-cancel">Cancel</button>
+        <button type="submit" class="primary" id="dialog-ok">OK</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="keys">
+    <h2>Shortcuts</h2>
+    <dl class="keys">
+      <dt>Ctrl+S</dt><dd>Save</dd>
+      <dt>Alt+↓ / Alt+↑</dt><dd>Next / previous in the current list</dd>
+      <dt>Ctrl+Z / Ctrl+Y</dt><dd>Undo / redo split changes (outside text boxes; text boxes have their own undo)</dd>
+      <dt>/</dt><dd>Search questions</dd>
+      <dt>Esc</dt><dd>Close a message or dialog</dd>
+    </dl>
+    <form method="dialog" class="row end"><button class="primary">Close</button></form>
+  </dialog>
 </body>
 </html>

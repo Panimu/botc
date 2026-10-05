@@ -1,22 +1,26 @@
-// Local question editor: browse, review and edit questions, their wording and
-// their split. Run `npm run editor`, then open http://localhost:8010.
+// Local question editor: browse, review and edit questions, traits and share
+// quotes. Run `npm run editor`, then open http://localhost:8010.
 //
 // It listens on 127.0.0.1 only and writes straight into data/: question files
-// (data/questions/*.json) and traits (data/traits/*.json, after which it reruns
-// scripts/build-characters.js). Every question save is checked with the
-// validator's own rules first, so it can't write a question the validator
-// would reject. Never published: build-site.js copies an allow-list.
+// (data/questions/*.json), traits (data/traits/*.json, after which it reruns
+// scripts/build-characters.js) and data/share-quotes.json. Every question save
+// is checked with the validator's own rules first, so it can't write a question
+// the validator would reject. Never published: build-site.js copies an allow-list.
 import http from 'node:http';
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { execFile } from 'node:child_process';
 import { extname, join, normalize, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { checkQuestions, plainWording } from '../../scripts/validate.js';
+import { BANNED_PATTERNS } from '../../scripts/build-site.js';
 
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const here = fileURLToPath(new URL('./', import.meta.url));
 const PORT = Number(process.env.PORT) || 8010;
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml' };
+const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)+$/;
+const TRAIT_PATTERN = /^[a-z][A-Za-z0-9]*$/;
+const KEY_ORDER = ['id', 'plain', 'styled', 'voice', 'yes', 'scope', 'options'];
 
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), 'utf8'));
 const writeJson = (path, value) => writeFile(join(root, path), JSON.stringify(value, null, 2) + '\n');
@@ -26,13 +30,24 @@ const run = (args) => new Promise((resolve) => {
 const git = (args) => new Promise((resolve) => {
   execFile('git', args, { cwd: root, maxBuffer: 1 << 26 }, (error, stdout) => resolve(error ? null : stdout));
 });
+const fail = (status, ...errors) => ({ status, body: { errors } });
+const ok = (extra = {}) => ({ status: 200, body: { ok: true, ...extra } });
 
 async function loadTraits() {
   const traits = {};
-  for (const file of (await readdir(join(root, 'data/traits'))).filter((f) => f.endsWith('.json'))) {
+  const files = (await readdir(join(root, 'data/traits'))).filter((f) => f.endsWith('.json')).sort();
+  for (const file of files) {
     for (const [name, trait] of Object.entries(await readJson(`data/traits/${file}`))) traits[name] = { file, ...trait };
   }
-  return traits;
+  return { traits, traitFiles: files };
+}
+
+// Just the data the validator needs (no git lookups), for fast checks.
+async function loadQuestions() {
+  const characters = await readJson('data/characters.json');
+  const files = await readJson('data/questions/index.json');
+  const questions = (await Promise.all(files.map((file) => readJson(`data/questions/${file}`)))).flat();
+  return { characters, files, questions };
 }
 
 async function loadAll() {
@@ -49,64 +64,167 @@ async function loadAll() {
       questions: questions.map((q) => ({ ...q, _changed: before.get(q.id) !== JSON.stringify(q), _warnings: plainWording(q.plain ?? '').warnings })),
     });
   }
-  return { characters, files, questionFiles, traits: await loadTraits() };
+  const { traits, traitFiles } = await loadTraits();
+  const quotes = await readJson('data/share-quotes.json');
+  const voices = [...new Set([...questionFiles.flatMap((f) => f.questions.map((q) => q.voice)), ...Object.values(quotes).map((q) => q.voice)])].filter(Boolean).sort();
+  return { characters, files, questionFiles, traits, traitFiles, quotes, voices };
 }
 
-// Just the data the validator needs (no git lookups), for fast checks.
-async function loadQuestions() {
-  const characters = await readJson('data/characters.json');
-  const files = await readJson('data/questions/index.json');
-  const questions = (await Promise.all(files.map((file) => readJson(`data/questions/${file}`)))).flat();
-  return { characters, questions };
+const strip = ({ _changed, _warnings, ...question }) => question;
+
+// Keep the key order the files use.
+function ordered(question) {
+  const out = {};
+  for (const key of KEY_ORDER) if (question[key] !== undefined) out[key] = question[key];
+  for (const [key, value] of Object.entries(question)) if (!(key in out)) out[key] = value;
+  return out;
 }
 
-// Errors the validator would report for this question if it replaced the saved one.
-async function errorsFor(file, draft) {
+// Errors the validator would report for this question if it replaced the saved one
+// (or joined the set, for a new question).
+async function errorsFor(draft) {
   const { characters, questions } = await loadQuestions();
   const others = questions.filter((q) => q.id !== draft.id);
   const label = `Question ${draft.id}`;
   return checkQuestions([...others, draft], characters).filter((e) => e.startsWith(`${label}:`) || e.startsWith(`${label} `));
 }
 
-const strip = ({ _changed, _warnings, ...question }) => question;
-
-async function saveQuestion({ file, question }) {
+async function checkFile(file) {
   const files = await readJson('data/questions/index.json');
-  if (!files.includes(file)) return { status: 400, body: { errors: [`Unknown file ${file}`] } };
-  const draft = strip(question);
-  const errors = await errorsFor(file, draft);
-  if (errors.length) return { status: 422, body: { errors } };
-  const questions = await readJson(`data/questions/${file}`);
-  const index = questions.findIndex((q) => q.id === draft.id);
-  if (index < 0) return { status: 404, body: { errors: [`${draft.id} isn't in ${file}`] } };
-  // Keep the key order the files use.
-  const ordered = {};
-  for (const key of ['id', 'plain', 'styled', 'voice', 'yes', 'scope', 'options']) if (draft[key] !== undefined) ordered[key] = draft[key];
-  for (const [key, value] of Object.entries(draft)) if (!(key in ordered)) ordered[key] = value;
-  questions[index] = ordered;
-  await writeJson(`data/questions/${file}`, questions);
-  return { status: 200, body: { ok: true } };
+  return files.includes(file);
 }
 
-async function saveTrait({ trait, yes }) {
-  const traits = await loadTraits();
-  const current = traits[trait];
-  if (!current) return { status: 404, body: { errors: [`Unknown trait ${trait}`] } };
-  const ids = new Set((await readJson('data/characters.json')).map((c) => c.id));
-  const unknown = yes.filter((id) => !ids.has(id));
-  if (unknown.length) return { status: 400, body: { errors: [`Unknown characters: ${unknown.join(', ')}`] } };
-  const all = await readJson(`data/traits/${current.file}`);
-  const keep = all[trait].yes.filter((id) => yes.includes(id));
-  all[trait].yes = [...keep, ...yes.filter((id) => !keep.includes(id))];
-  // A character can't be on both lists of a subjective trait.
-  if (Array.isArray(all[trait].no)) all[trait].no = all[trait].no.filter((id) => !yes.includes(id));
-  await writeJson(`data/traits/${current.file}`, all);
+async function saveQuestion({ file, question, create = false }) {
+  if (!(await checkFile(file))) return fail(400, `Unknown file ${file}`);
+  const draft = ordered(strip(question));
+  if (!ID_PATTERN.test(draft.id ?? '')) return fail(422, 'The id must be lower-case words joined by hyphens, like "tfc-quiet-nights".');
+  const { questions: all } = await loadQuestions();
+  const exists = all.some((q) => q.id === draft.id);
+  if (create && exists) return fail(422, `The id ${draft.id} is already taken.`);
+  const errors = await errorsFor(draft);
+  if (errors.length) return fail(422, ...errors);
+  const questions = await readJson(`data/questions/${file}`);
+  const index = questions.findIndex((q) => q.id === draft.id);
+  if (create) questions.push(draft);
+  else if (index < 0) return fail(404, `${draft.id} isn't in ${file}`);
+  else questions[index] = draft;
+  await writeJson(`data/questions/${file}`, questions);
+  return ok();
+}
+
+async function renameQuestion({ file, id, newId }) {
+  if (!(await checkFile(file))) return fail(400, `Unknown file ${file}`);
+  if (!ID_PATTERN.test(newId ?? '')) return fail(422, 'The id must be lower-case words joined by hyphens, like "tfc-quiet-nights".');
+  const { questions: all } = await loadQuestions();
+  if (all.some((q) => q.id === newId)) return fail(422, `The id ${newId} is already taken.`);
+  const questions = await readJson(`data/questions/${file}`);
+  const question = questions.find((q) => q.id === id);
+  if (!question) return fail(404, `${id} isn't in ${file}`);
+  question.id = newId;
+  await writeJson(`data/questions/${file}`, questions);
+  return ok();
+}
+
+async function deleteQuestion({ file, id }) {
+  if (!(await checkFile(file))) return fail(400, `Unknown file ${file}`);
+  const questions = await readJson(`data/questions/${file}`);
+  const kept = questions.filter((q) => q.id !== id);
+  if (kept.length === questions.length) return fail(404, `${id} isn't in ${file}`);
+  await writeJson(`data/questions/${file}`, kept);
+  return ok();
+}
+
+async function rebuildAndCheck() {
   const rebuilt = await run(['scripts/build-characters.js']);
-  if (rebuilt.code) return { status: 500, body: { errors: [`build-characters.js failed:\n${rebuilt.output}`] } };
-  // Other questions using the trait may now be broken; report them, nothing is rolled back.
+  if (rebuilt.code) return { failed: `build-characters.js failed:\n${rebuilt.output}` };
   const { characters, questions } = await loadQuestions();
-  const errors = checkQuestions(questions, characters);
-  return { status: 200, body: { ok: true, errors } };
+  return { errors: checkQuestions(questions, characters) };
+}
+
+// Create or update one trait: { name, file, definition, yes, no (array, or null for a non-subjective trait), create }.
+async function saveTrait({ name, file, definition, yes, no = null, create = false }) {
+  const { traits, traitFiles } = await loadTraits();
+  const characters = await readJson('data/characters.json');
+  const ids = new Set(characters.map((c) => c.id));
+  if (!TRAIT_PATTERN.test(name ?? '')) return fail(422, 'A trait name is camelCase letters and digits, like "killsByDay".');
+  if (create) {
+    if (traits[name]) return fail(422, `There's already a trait called ${name}.`);
+    if (characters.some((c) => name in c)) return fail(422, `${name} is already a character field.`);
+    if (name.endsWith('Clear')) return fail(422, 'Names ending in "Clear" are made by the build for subjective traits.');
+    if (!traitFiles.includes(file)) return fail(422, `Unknown trait file ${file}`);
+  } else if (!traits[name]) {
+    return fail(404, `Unknown trait ${name}`);
+  }
+  if (!definition?.trim()) return fail(422, 'A trait needs a definition: what counts, and what doesn\'t.');
+  const unknown = [...yes, ...(no ?? [])].filter((id) => !ids.has(id));
+  if (unknown.length) return fail(422, `Unknown characters: ${unknown.join(', ')}`);
+  const both = (no ?? []).filter((id) => yes.includes(id));
+  if (both.length) return fail(422, `On both the yes and no lists: ${both.join(', ')}`);
+  const target = create ? file : traits[name].file;
+  const all = await readJson(`data/traits/${target}`);
+  // Keep existing order where possible so diffs stay small.
+  const keepOrder = (before, after) => [...(before ?? []).filter((id) => after.includes(id)), ...after.filter((id) => !(before ?? []).includes(id))];
+  const trait = { definition: definition.trim(), yes: keepOrder(all[name]?.yes, yes) };
+  if (no) trait.no = keepOrder(all[name]?.no, no);
+  all[name] = trait;
+  await writeJson(`data/traits/${target}`, all);
+  const result = await rebuildAndCheck();
+  if (result.failed) return fail(500, result.failed);
+  return ok({ errors: result.errors });
+}
+
+// Remove a trait, only if no question uses it (or its …Clear field).
+async function deleteTrait({ name }) {
+  const { traits } = await loadTraits();
+  if (!traits[name]) return fail(404, `Unknown trait ${name}`);
+  const { questions } = await loadQuestions();
+  const users = questions.filter((q) => {
+    const text = JSON.stringify([q.yes, q.scope ?? null]);
+    return text.includes(`"${name}"`) || text.includes(`"${name}Clear"`);
+  }).map((q) => q.id);
+  if (users.length) return fail(422, `Still used by: ${users.join(', ')}`);
+  const all = await readJson(`data/traits/${traits[name].file}`);
+  delete all[name];
+  await writeJson(`data/traits/${traits[name].file}`, all);
+  const result = await rebuildAndCheck();
+  if (result.failed) return fail(500, result.failed);
+  return ok({ errors: result.errors });
+}
+
+// Set one character's membership across many traits ({ trait: 'yes' | 'no' | 'unclear' }),
+// and optionally its share quote ({ quote, voice }).
+async function saveCharacter({ id, traits: wanted = {}, quote = null }) {
+  const characters = await readJson('data/characters.json');
+  if (!characters.some((c) => c.id === id)) return fail(404, `Unknown character ${id}`);
+  if (quote) {
+    if (!quote.quote?.trim() || !quote.voice?.trim()) return fail(422, 'A share quote needs both the quote and its voice.');
+    if (quote.quote.includes('—')) return fail(422, 'The quote contains an em dash; use a comma, colon or full stop.');
+    // Quotes are published; voices are not.
+    if (BANNED_PATTERNS.some((re) => re.test(quote.quote))) return fail(422, 'The quote names one of the people or characters that must never reach the site.');
+  }
+  const { traits } = await loadTraits();
+  const byFile = new Map();
+  for (const [name, state] of Object.entries(wanted)) {
+    const trait = traits[name];
+    if (!trait) return fail(404, `Unknown trait ${name}`);
+    if (state === 'no' && !Array.isArray(trait.no)) return fail(422, `${name} has no "no" list; a character not on its yes list is already a no.`);
+    if (!byFile.has(trait.file)) byFile.set(trait.file, await readJson(`data/traits/${trait.file}`));
+    const entry = byFile.get(trait.file)[name];
+    entry.yes = entry.yes.filter((x) => x !== id);
+    if (Array.isArray(entry.no)) entry.no = entry.no.filter((x) => x !== id);
+    if (state === 'yes') entry.yes.push(id);
+    if (state === 'no') entry.no.push(id);
+  }
+  for (const [file, content] of byFile) await writeJson(`data/traits/${file}`, content);
+  if (quote) {
+    const quotes = await readJson('data/share-quotes.json');
+    quotes[id] = { voice: quote.voice.trim(), quote: quote.quote.trim() };
+    await writeJson('data/share-quotes.json', quotes);
+  }
+  if (!byFile.size) return ok({ errors: [] });
+  const result = await rebuildAndCheck();
+  if (result.failed) return fail(500, result.failed);
+  return ok({ errors: result.errors });
 }
 
 async function body(req) {
@@ -122,7 +240,7 @@ function send(res, status, value, type = 'application/json') {
 
 async function serveFile(res, base, path) {
   const full = normalize(join(base, path));
-  if (!full.startsWith(normalize(base + sep)) && full !== normalize(base)) return send(res, 403, 'Forbidden', 'text/plain');
+  if (!full.startsWith(normalize(base + sep))) return send(res, 403, 'Forbidden', 'text/plain');
   try {
     send(res, 200, await readFile(full), TYPES[extname(full)] ?? 'application/octet-stream');
   } catch {
@@ -130,21 +248,25 @@ async function serveFile(res, base, path) {
   }
 }
 
+const ACTIONS = {
+  '/api/save': saveQuestion,
+  '/api/rename': renameQuestion,
+  '/api/delete': deleteQuestion,
+  '/api/trait': saveTrait,
+  '/api/trait/delete': deleteTrait,
+  '/api/character': saveCharacter,
+};
+
 const server = http.createServer(async (req, res) => {
   try {
     const { pathname } = new URL(req.url, `http://localhost:${PORT}`);
     if (req.method === 'GET' && pathname === '/api/data') return send(res, 200, await loadAll());
     if (req.method === 'POST' && pathname === '/api/check') {
-      const { file, question } = await body(req);
-      const draft = strip(question);
-      return send(res, 200, { errors: await errorsFor(file, draft), warnings: plainWording(draft.plain ?? '').warnings });
+      const draft = strip((await body(req)).question ?? {});
+      return send(res, 200, { errors: await errorsFor(draft), warnings: plainWording(draft.plain ?? '').warnings });
     }
-    if (req.method === 'POST' && pathname === '/api/save') {
-      const { status, body: result } = await saveQuestion(await body(req));
-      return send(res, status, result);
-    }
-    if (req.method === 'POST' && pathname === '/api/trait') {
-      const { status, body: result } = await saveTrait(await body(req));
+    if (req.method === 'POST' && ACTIONS[pathname]) {
+      const { status, body: result } = await ACTIONS[pathname](await body(req));
       return send(res, status, result);
     }
     if (req.method === 'POST' && pathname === '/api/validate') return send(res, 200, await run(['scripts/validate.js', '--verbose']));
