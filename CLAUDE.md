@@ -13,7 +13,7 @@ Live at https://panimu.github.io/botc/: the home page (`index.html`) is the dail
 ## Commands
 
 - `npm run serve`: builds `_site` and serves it at http://localhost:8000. You can also serve the repo root directly (`python -m http.server`); it works the same, except that source data still carries `voice`.
-- `npm run build`: `scripts/build-site.js` builds the publishable `_site/`: only the site's own files, `voice` stripped, `?v=dev` stamped (with `--version`), and a scan that fails on any banned name. The deploy publishes `_site/`.
+- `npm run build`: `scripts/build-site.js` builds the publishable `_site/`: only the site's own files, `voice` stripped, `?v=dev` stamped (with `--version`), and a scan that fails on any banned name. It also writes `sw.js` with the version and the precache list (`precacheList()`: pages, every script, CSS, game data, icons, generic art), so the site starts offline. In the source `sw.js` the list is empty, so serving the repo root precaches nothing. The deploy publishes `_site/`.
 - `npm test`: Node's built-in test runner (`node --test`). Single test: `node --test --test-name-pattern="undo" test/`.
 - `npm run validate`: data integrity, art presence, separability coverage, and simulated games. `--verbose` lists every unseparated pair. Run after every change to `data/`.
 - `node scripts/build-characters.js`: regenerates `data/characters.json` from `resources/data/`. Don't hand-edit that file.

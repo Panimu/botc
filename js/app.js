@@ -227,6 +227,7 @@ function start(characters, questions, shareQuotes) {
 // so browsers never mix cached files from different versions.
 try {
   setupThemeToggle();
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
   const [{ characters, questions }, shareQuotes] = await Promise.all([
     loadGameData(),
     loadJson('data/share-quotes.json?v=dev').catch(() => ({})),

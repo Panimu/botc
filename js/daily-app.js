@@ -146,15 +146,19 @@ function start(characters, questions, clockOffset, shareQuotes) {
     if (selected) confirm.textContent = `Guess the ${byId.get(selected).name}`;
   }
 
-  // The asked questions and wrong guesses, newest last.
+  // The asked questions and wrong guesses in the order they happened, newest last.
   function historyItems() {
-    const items = game.history.map((h) => {
-      const li = el('li');
-      li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'), el('span', 'path-id', ` ${h.question.id}`));
-      return li;
+    const asked = new Map(game.history.map((h) => [h.question.id, h]));
+    return actions.flatMap((action) => {
+      const h = action.ask && asked.get(action.ask);
+      if (h) {
+        const li = el('li');
+        li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'), el('span', 'path-id', ` ${h.question.id}`));
+        return [li];
+      }
+      if (action.guess && game.wrongGuesses.includes(action.guess)) return [el('li', 'wrong-guess', `Guessed the ${byId.get(action.guess).name}: wrong`)];
+      return [];
     });
-    for (const id of game.wrongGuesses) items.push(el('li', 'wrong-guess', `Guessed the ${byId.get(id).name}: wrong`));
-    return items;
   }
 
   // During the hunt: a collapsible list of everything asked so far. At the end: the full list below.
@@ -185,11 +189,19 @@ function start(characters, questions, clockOffset, shareQuotes) {
     return steps;
   }
 
+  // The page address without unrelated parameters or fragments, keeping a
+  // practice hunt's (validated) date so the link opens the same hunt.
+  function shareUrl() {
+    const url = new URL(location.pathname, location.origin);
+    if (practice) url.searchParams.set('date', date);
+    return url.href;
+  }
+
   // Spoiler-free: 👍/👎 per answer, 🪦 per wrong guess (an innocent executed),
   // 🎯 for the right guess, 🔍 when the questions alone found it, 💀 for a loss.
   function shareTexts() {
     const nl = String.fromCharCode(10);
-    const url = location.href.split(/[?#]/)[0];
+    const url = shareUrl();
     const solvedByQuestions = game.status === 'won' && Boolean(actions.at(-1)?.ask);
     const answers = game.history.map((h) => (h.answer ? '👍' : '👎')).join('');
     const guesses = '🪦'.repeat(game.wrongGuesses.length);

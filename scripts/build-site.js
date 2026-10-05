@@ -30,11 +30,41 @@ async function copyStamped(path) {
   await writeFile(join(out, path), text);
 }
 
+const PAGES = ['index.html', 'quiz.html', 'daily.html'];
+
+// Everything the service worker precaches on install, so the site starts offline:
+// the pages, every script, the styles, the game data, the manifest and icons, the
+// community banner and the generic token art. Versioned URLs match the requests
+// exactly. Character art isn't precached; it's cached as players see it.
+export async function precacheList(v = version) {
+  const files = async (dir) => (await readdir(join(root, dir))).map((name) => `${dir}/${name}`);
+  const questionFiles = (await readJson('data/questions/index.json')).map((file) => `data/questions/${file}`);
+  return [
+    './', ...PAGES, 'manifest.webmanifest',
+    ...[
+      'css/style.css',
+      ...(await files('js')).filter((path) => path.endsWith('.js')),
+      'data/characters.json', 'data/questions/index.json', ...questionFiles, 'data/share-quotes.json',
+    ].map((path) => `${path}?v=${v}`),
+    ...(await files('resources/icons')), ...(await files('resources/community')), ...(await files('resources/characters/generic')),
+  ];
+}
+
+async function writeServiceWorker() {
+  const source = await readFile(join(root, 'sw.js'), 'utf8');
+  const markers = ["const VERSION = 'dev';", 'const PRECACHE = [];'];
+  for (const marker of markers) if (!source.includes(marker)) throw new Error(`sw.js is missing ${marker}`);
+  const text = source
+    .replace(markers[0], `const VERSION = ${JSON.stringify(version)};`)
+    .replace(markers[1], `const PRECACHE = ${JSON.stringify(await precacheList(), null, 2)};`);
+  await writeFile(join(out, 'sw.js'), text);
+}
+
 async function build() {
   await rm(out, { recursive: true, force: true });
   await mkdir(out, { recursive: true });
 
-  for (const page of ['index.html', 'quiz.html', 'daily.html']) await copyStamped(page);
+  for (const page of PAGES) await copyStamped(page);
   for (const file of await readdir(join(root, 'js'))) if (file.endsWith('.js')) await copyStamped(`js/${file}`);
   await cp(join(root, 'css'), join(out, 'css'), { recursive: true });
   await cp(join(root, 'resources/characters'), join(out, 'resources/characters'), { recursive: true });
@@ -42,7 +72,7 @@ async function build() {
   await cp(join(root, 'resources/og'), join(out, 'resources/og'), { recursive: true });
   await cp(join(root, 'resources/icons'), join(out, 'resources/icons'), { recursive: true });
   await cp(join(root, 'manifest.webmanifest'), join(out, 'manifest.webmanifest'));
-  await copyStamped('sw.js');
+  await writeServiceWorker();
   await writeFile(join(out, '.nojekyll'), '');
 
   await writeJson('data/characters.json', await readJson('data/characters.json'));

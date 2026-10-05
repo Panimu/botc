@@ -22,3 +22,20 @@ test('the banned-name check catches plurals and possessives but not words that m
     assert.ok(!hit(text), `should not catch: ${text}`);
   }
 });
+
+test('the service worker precaches every asset the pages and scripts load by a fixed URL', async () => {
+  const { readFile, readdir } = await import('node:fs/promises');
+  const { precacheList } = await import('../scripts/build-site.js');
+  const list = new Set(await precacheList('dev'));
+  const wanted = new Set(['./', 'index.html', 'quiz.html']);
+  for (const page of ['index.html', 'quiz.html']) {
+    const html = await readFile(new URL(`../${page}`, import.meta.url), 'utf8');
+    for (const [, url] of html.matchAll(/(?:href|src)="([^":]+\?v=dev)"/g)) wanted.add(url);
+  }
+  for (const file of (await readdir(new URL('../js/', import.meta.url))).filter((name) => name.endsWith('.js'))) {
+    const source = await readFile(new URL(`../js/${file}`, import.meta.url), 'utf8');
+    for (const [, url] of source.matchAll(/from '\.\/([^']+\?v=dev)'/g)) wanted.add(`js/${url}`);
+    for (const [, url] of source.matchAll(/loadJson\('([^'$]+\?v=dev)'\)/g)) wanted.add(url);
+  }
+  for (const url of wanted) assert.ok(list.has(url), `not precached: ${url}`);
+});
