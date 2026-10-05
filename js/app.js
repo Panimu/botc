@@ -40,6 +40,7 @@ function start(characters, questions, shareQuotes) {
       teamLine.className = `result-team ${side(result.team)}`;
       teamLine.textContent = team;
       $('result-summary').textContent = result.summary;
+      renderVerdict(result);
       renderShare(result);
       announcer.textContent = `You are the ${result.name}, ${team}. ${result.summary}`;
       return;
@@ -52,8 +53,62 @@ function start(characters, questions, shareQuotes) {
     name.textContent = names;
     name.classList.add('several');
     $('result-summary').textContent = 'Their abilities are listed below.';
+    $('why').hidden = true;
+    $('nearly').hidden = true;
+    nearly = null;
     renderShare(null);
     announcer.textContent = `No question can tell these apart yet. You are the ${names}.`;
+  }
+
+  // "What gave you away": the answers that set you apart from the most of the
+  // town at the time (the smallest share of the pool answering the same way).
+  // "You were nearly…": a character ruled out by the final answer, preferring
+  // one on the same team.
+  let nearly = null;
+  function renderVerdict(result) {
+    const defining = game.history
+      .map((h) => {
+        const same = h.pool.filter((id) => h.question.yesSet.has(id) === h.answer).length;
+        return { h, share: same / h.pool.length };
+      })
+      .sort((a, b) => a.share - b.share)
+      .slice(0, 3);
+    $('why-list').replaceChildren(...defining.map(({ h }) => {
+      const li = el('li');
+      li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'));
+      return li;
+    }));
+    $('why').hidden = defining.length === 0;
+
+    const last = game.history.at(-1);
+    const ruledOut = last ? last.pool.filter((id) => !game.pool.includes(id)).map((id) => game.characters.find((c) => c.id === id)) : [];
+    nearly = ruledOut.find((c) => c.team === result.team) ?? ruledOut.sort((a, b) => a.name.localeCompare(b.name))[0] ?? null;
+    $('nearly').hidden = !nearly;
+    if (nearly) {
+      setArt($('nearly-art'), nearly);
+      $('nearly-text').textContent = `You were nearly the ${nearly.name}.`;
+    }
+  }
+
+  // The finale: the winning token lifts out of the circle and becomes the result card's art,
+  // then the rest of the card rises in beneath it.
+  function reveal(id) {
+    const token = document.querySelector(`.ring-token[data-id="${id}"]`);
+    const art = $('result-art');
+    if (!token || !art.animate) return;
+    const from = token.getBoundingClientRect();
+    const to = art.getBoundingClientRect();
+    if (!from.width || !to.width) return;
+    const dx = from.left + from.width / 2 - (to.left + to.width / 2);
+    const dy = from.top + from.height / 2 - (to.top + to.height / 2);
+    art.animate(
+      [{ transform: `translate(${dx}px, ${dy}px) scale(${from.width / to.width})` }, { transform: 'none' }],
+      { duration: 1100, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)' },
+    );
+    [...$('result-panel').children].filter((child) => child !== art && !child.hidden).forEach((child, i) => {
+      child.animate([{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }],
+        { duration: 500, delay: 650 + i * 70, easing: 'ease-out', fill: 'backwards' });
+    });
   }
 
   // Share: copy buttons, Discord first, with the character's quote.
@@ -73,10 +128,11 @@ function start(characters, questions, shareQuotes) {
     const nl = String.fromCharCode(10);
     texts = {
       url,
-      plain: [`I'm the ${result.name} (${team}) in Which Clocktower character are you?`, quote ? `"${quote.quote}"` : '', url].filter(Boolean).join(nl),
+      plain: [`I'm the ${result.name} (${team}) in Which Clocktower character are you?`, quote ? `"${quote.quote}"` : '', nearly ? `(Nearly the ${nearly.name}.)` : '', url].filter(Boolean).join(nl),
       discord: [
         `🕰️ **I'm the ${result.name}!** ${TEAM_EMOJI[result.team] ?? ''} ${team}`,
         quote ? `> ${quote.quote}` : '',
+        nearly ? `*Nearly the ${nearly.name}.*` : '',
         `🔮 Which Clocktower character are you? ${url}`,
       ].filter(Boolean).join(nl),
     };
@@ -132,6 +188,7 @@ function start(characters, questions, shareQuotes) {
     game.answer(yes);
     feedback = `That answer ruled out ${plural(before - game.pool.length, 'character')}.`;
     render({ focus: game.done });
+    if (game.done && game.results.length === 1) reveal(game.results[0].id);
   }
 
   function undo() {

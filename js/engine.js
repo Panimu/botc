@@ -62,15 +62,28 @@ export function splitWeight(yes, poolSize, { exponent, floor } = SPLIT_WEIGHTING
   return entropy ** exponent + floor;
 }
 
+// A question's themes: the character fields its selectors match on (team,
+// killsAtNight, psyPatient…). Id-list selectors have no theme.
+export function themes(question) {
+  const keys = (selector) => (selector && !Array.isArray(selector) ? Object.keys(selector) : []);
+  return new Set([...keys(question.yes), ...keys(question.scope)].map((k) => k.replace(/Clear$/, '')));
+}
+
+// Questions sharing a theme with one of the last few asked are picked less often,
+// so the quiz doesn't ask about the same thing twice in a row.
+export const FRESHNESS = { recent: 2, factor: 0.35 };
+
 // Unasked questions that split the pool, each with its selection weight.
-export function weightedOptions(questions, pool, asked, { weighting = SPLIT_WEIGHTING, circleTarget = CIRCLE_TARGET } = {}) {
+export function weightedOptions(questions, pool, asked, { weighting = SPLIT_WEIGHTING, circleTarget = CIRCLE_TARGET, recentThemes = null } = {}) {
   const options = [];
   for (const q of questions) {
     if (asked.has(q.id)) continue;
     const yes = yesCount(q, pool);
     if (yes <= 0 || yes >= pool.length) continue;
+    const stale = recentThemes && [...themes(q)].some((t) => recentThemes.has(t));
     const weight = (weighting ? splitWeight(yes, pool.length, weighting) : 1)
-      * (circleTarget ? circleFactor(yes, pool.length, circleTarget) : 1);
+      * (circleTarget ? circleFactor(yes, pool.length, circleTarget) : 1)
+      * (stale ? FRESHNESS.factor : 1);
     options.push([q, weight]);
   }
   return options;
@@ -149,7 +162,8 @@ export class Game {
   #pick() {
     if (this.pool.length <= 1) return null;
     const asked = new Set(this.history.map((h) => h.question.id));
-    const options = weightedOptions(this.questions, this.pool, asked, { weighting: this.weighting, circleTarget: this.circleTarget });
+    const recentThemes = new Set(this.history.slice(-FRESHNESS.recent).flatMap((h) => [...themes(h.question)]));
+    const options = weightedOptions(this.questions, this.pool, asked, { weighting: this.weighting, circleTarget: this.circleTarget, recentThemes });
     return drawWeighted(options, this.rng)[0] ?? null;
   }
 }

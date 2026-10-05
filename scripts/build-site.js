@@ -39,6 +39,7 @@ async function build() {
   await cp(join(root, 'css'), join(out, 'css'), { recursive: true });
   await cp(join(root, 'resources/characters'), join(out, 'resources/characters'), { recursive: true });
   await cp(join(root, 'resources/community'), join(out, 'resources/community'), { recursive: true });
+  await cp(join(root, 'resources/og'), join(out, 'resources/og'), { recursive: true });
   await writeFile(join(out, '.nojekyll'), '');
 
   await writeJson('data/characters.json', await readJson('data/characters.json'));

@@ -998,3 +998,21 @@ body {
 }
 .about-body p { margin: 0 0 0.75rem; color: var(--text); }
 .about-body p:last-child { margin-bottom: 0; }
+
+/* Personality result: what gave you away, and who you nearly were. */
+.why { margin: 1.5rem auto 0; max-width: 32rem; text-align: left; }
+.why h3 { margin: 0 0 0.5rem; font: 400 1.35rem/1.2 var(--display); }
+.why ol { margin: 0; padding-left: 1.5rem; }
+.why li { margin-bottom: 0.4rem; }
+.why .reply { font-weight: 700; }
+.nearly {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1.25rem 0 0;
+  padding: 0.35rem 1rem 0.35rem 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--dim);
+}
+.nearly-art { width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--parchment); object-fit: contain; filter: grayscale(0.6); }

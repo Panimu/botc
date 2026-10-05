@@ -108,3 +108,15 @@ test('circle target favours landing in 7-15 and avoids dropping below 7', async 
   assert.equal(circleFactor(20, 40), 1, 'both sides stay above the circle');
   assert.equal(circleFactor(1, 12), 1, 'no steering once seated');
 });
+
+test('questions on a recently asked theme are down-weighted', async () => {
+  const { weightedOptions, themes, FRESHNESS } = await import('../js/engine.js');
+  const killers = prepare(q({ id: 'k', yes: { killsAtNight: true } }), characters);
+  const team = prepare(q({ id: 't', yes: { team: 'demon' } }), characters);
+  assert.deepEqual([...themes(killers)], ['killsAtNight']);
+  const pool = characters.map((c) => c.id);
+  const fresh = new Map(weightedOptions([killers, team], pool, new Set()).map(([x, w]) => [x.id, w]));
+  const recent = new Map(weightedOptions([killers, team], pool, new Set(), { recentThemes: new Set(['killsAtNight']) }).map(([x, w]) => [x.id, w]));
+  assert.ok(Math.abs(recent.get('k') - fresh.get('k') * FRESHNESS.factor) < 1e-9);
+  assert.equal(recent.get('t'), fresh.get('t'));
+});

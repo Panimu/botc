@@ -11,6 +11,11 @@
   <meta property="og:description" content="Answer yes or no until only one Blood on the Clocktower character is left. 156 characters, and questions with attitude.">
   <meta property="og:url" content="https://panimu.github.io/botc/quiz.html">
   <meta name="theme-color" content="#221932">
+  <meta property="og:image" content="https://panimu.github.io/botc/resources/og/quiz.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A clock face ringed with Blood on the Clocktower character tokens around a question mark.">
+  <meta name="twitter:card" content="summary_large_image">
   <script>
     // Apply a saved theme before first paint to avoid a flash.
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
@@ -62,6 +67,11 @@
       <figure class="share-quote" id="share-quote" hidden>
         <blockquote id="share-quote-text"></blockquote>
       </figure>
+      <section class="why" id="why" aria-labelledby="why-heading" hidden>
+        <h3 id="why-heading">What gave you away</h3>
+        <ol id="why-list"></ol>
+      </section>
+      <p class="nearly" id="nearly" hidden><img class="nearly-art" id="nearly-art" alt=""><span id="nearly-text"></span></p>
       <div class="share-options" id="share-options" hidden></div>
       <p class="share-status" id="share-status" role="status"></p>
       <div class="secondary replay">
