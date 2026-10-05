@@ -4,113 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clocktower Daily Hunt</title>
-  <meta name="description" content="Find today's hidden Blood on the Clocktower character by choosing questions. A new hunt every day.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Clocktower Character Quiz">
-  <meta property="og:title" content="Clocktower Daily Hunt">
-  <meta property="og:description" content="One hidden Blood on the Clocktower character, the same for everyone today. Ask questions, narrow the town, and guess.">
-  <meta property="og:url" content="https://panimu.github.io/botc/daily.html">
-  <meta name="theme-color" content="#221932">
-  <script>
-    // Apply a saved theme before first paint to avoid a flash.
-    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=dev">
-  <script type="module" src="js/daily-app.js?v=dev"></script>
+  <link rel="canonical" href="./">
+  <meta http-equiv="refresh" content="0; url=./">
+  <style>body { font: 1.1rem/1.6 system-ui, sans-serif; padding: 2rem 16px; }</style>
 </head>
 <body>
-  <main>
-    <div class="side">
-      <header class="intro">
-        <nav class="topbar" aria-label="Modes">
-          <div class="modes">
-            <a href="./">Personality quiz</a>
-            <a href="daily.html" aria-current="page">Daily hunt</a>
-          </div>
-          <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
-        </nav>
-        <h1>Daily character hunt</h1>
-        <p>One hidden character, the same for everyone today. Choose questions to narrow the town down, and once 15 or fewer remain, tap a token to guess.</p>
-      </header>
-
-      <div class="new-day" id="new-day" role="status" hidden>
-        <p>A new hunt has started.</p>
-        <button type="button" class="answer" id="new-day-reload">Load today's hunt</button>
-      </div>
-
-      <section class="panel hunt-panel" id="hunt-panel" aria-labelledby="hunt-heading">
-        <div class="card-head">
-          <span class="card-number" id="hunt-number">Loading…</span>
-          <span class="card-left"><span id="hunt-score"></span> <span id="hunt-guesses"></span></span>
-        </div>
-
-        <p class="yesterday-note" id="yesterday-note" hidden></p>
-
-        <div class="last-answer" id="last-answer" hidden>
-          <p class="last-question" id="last-question"></p>
-          <p class="last-reply" id="last-reply"></p>
-        </div>
-
-        <details class="history" id="history" hidden>
-          <summary id="history-summary">All questions so far</summary>
-          <ol id="history-list"></ol>
-        </details>
-
-        <h2 class="hunt-heading" id="hunt-heading" tabindex="-1">Choose a question to ask today's character</h2>
-        <div class="offers" id="offers"></div>
-
-        <div class="guessing" id="guessing" hidden>
-          <p class="guess-hint" id="guess-hint"></p>
-          <div class="candidates" id="candidates"></div>
-          <button type="button" class="answer" id="guess-confirm" hidden></button>
-        </div>
-        <p class="guess-locked" id="guess-locked"></p>
-      </section>
-
-      <section class="panel result" id="result-panel" aria-labelledby="result-name" hidden>
-        <img class="result-art" id="result-art" alt="">
-        <p class="result-lead" id="result-lead"></p>
-        <h2 class="result-name" id="result-name" tabindex="-1"></h2>
-        <p class="result-team" id="result-team"></p>
-        <p class="result-summary" id="result-summary"></p>
-        <dl class="stats" id="stats"></dl>
-        <div class="share-options" id="share-options"></div>
-        <p class="share-status" id="share-status" role="status"></p>
-        <p class="countdown" id="countdown"></p>
-      </section>
-
-      <section class="path" id="path" aria-labelledby="path-heading" hidden>
-        <h2 id="path-heading">Questions asked</h2>
-        <ol id="path-list"></ol>
-      </section>
-
-      <details class="pool" id="pool">
-        <summary><h2 id="pool-heading">All remaining characters</h2></summary>
-        <div id="pool-groups"></div>
-      </details>
-    </div>
-
-    <!-- The town circle: beads while many remain, seated tokens once 15 or fewer do.
-         Decorative; the candidate buttons and list carry the same information for assistive tech. -->
-    <div class="stage">
-      <div class="circle" id="circle" aria-hidden="true">
-        <ol class="ring" id="ring"></ol>
-        <div class="circle-centre">
-          <p class="circle-count" id="circle-count"></p>
-          <p class="circle-label" id="circle-label"></p>
-        </div>
-    </div>
-    </div>
-
-    <div class="visually-hidden" id="announcer" aria-live="polite" aria-atomic="true"></div>
-  </main>
-
-  <footer>
-    <img class="ccc ccc-light" src="resources/community/ccc-parchment.png" alt="Community Created Content" width="1058" height="397">
-    <img class="ccc ccc-dark" src="resources/community/ccc-sleeve.png" alt="Community Created Content" width="1072" height="426">
-  </footer>
+  <p>The daily hunt has moved to the home page. <a href="./">Go to today's hunt</a>.</p>
 </body>
 </html>

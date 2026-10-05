@@ -8,7 +8,7 @@ Questions live in `data/questions/*.json`, one file per character group, each li
 {
   "id": "dem-quiet-killer",
   "plain": "Would you rather kill quietly than make a spectacle of it?",
-  "dinniman": "Murder: a craft, or a fireworks show? Some of you file your kills neatly. Some of you want the whole village waking up screaming. Pick a lane, monster.",
+  "styled": "Murder: a craft, or a fireworks show? Some of you file your kills neatly. Some of you want the whole village waking up screaming. Pick a lane, monster.",
   "voice": "The System AI",
   "yes": ["imp", "po"],
   "scope": { "team": "demon" }
@@ -17,7 +17,7 @@ Questions live in `data/questions/*.json`, one file per character group, each li
 
 - `yes`: who answers yes. Either a list of character ids, or a match object on fields in `data/characters.json`, e.g. `{ "team": ["minion", "demon"] }` or `{ "otherNight": true }`. All fields must match.
 - `scope` (optional): the sub-pool the question is about, using the same selector forms. **Without a scope** the question is *global*: everyone not on the yes side is on the no side, and it can be asked at any point. **With a scope**, it's only asked when every remaining character is inside the scope, and the "no" side is the rest of the scope. Every `yes` character must be inside the scope.
-- `voice`: who speaks the `dinniman` line (see below).
+- `voice`: who speaks the `styled` line (see below).
 - `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers, in `travellers.json`), `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files, `fun-` for `fun.json` (comedy-first questions), `icon-` for `icons.json` (questions about the token art), and `psy-` for `psychology.json` (personality inferred from the character).
 
 ## Accuracy is the whole game
@@ -105,7 +105,7 @@ After editing a trait file, run `node scripts/build-characters.js`. That adds ea
 
 **`plain`**: clear British English, one yes/no question, ending in "?". Under about 25 words. No jargon beyond common Clocktower terms (Demon, Minion, Storyteller, nominate, execute, Grimoire).
 
-**`dinniman`**: the same question, in a voice from Matt Dinniman's *Dungeon Crawler Carl* books, credited in `voice`. One to three sentences, under about 60 words, and it **must end with a yes/no question that means exactly the same as the plain one**. Spread the questions across the cast:
+**`styled`**: the same question, in a voice from Matt Dinniman's *Dungeon Crawler Carl* books, credited in `voice`. One to three sentences, under about 60 words, and it **must end with a yes/no question that means exactly the same as the plain one**. Spread the questions across the cast:
 
 - **The System AI** (`"voice": "The System AI"`): gleeful, sadistic and increasingly unhinged. Fake achievements, loot boxes, patch notes, and a keen interest in ratings and sponsors.
 - **Carl** (`"voice": "Carl"`): dry, exasperated, practical and decent underneath. Deadpan understatement, with a contestant's-eye view of how stupid the game is.
@@ -132,21 +132,21 @@ Mild swearing is fine (hell, damn, crap, ass). Nothing stronger, no slurs, no se
   {
     "id": "global-holding-a-clue",
     "plain": "Does your own ability hand you a clue at the very start, rather than fresh information each night?",
-    "dinniman": "Some contestants grind for every scrap of information. Others get a free clue the moment the doors lock, like a participation trophy for being born lucky. Does your ability make you the lucky kind?",
+    "styled": "Some contestants grind for every scrap of information. Others get a free clue the moment the doors lock, like a participation trophy for being born lucky. Does your ability make you the lucky kind?",
     "voice": "The System AI",
     "yes": ["steward", "knight", "chef", "noble", "investigator", "washerwoman", "clockmaker", "grandmother", "librarian", "shugenja", "pixie", "bountyhunter"]
   },
   {
     "id": "global-evil-team",
     "plain": "Are you on the evil team, working against the town?",
-    "dinniman": "Look, I'm not judging. Okay, I'm judging a little. But if you're planning to smile at these people all day and knife them all night, I'd like to know now. Is that you?",
+    "styled": "Look, I'm not judging. Okay, I'm judging a little. But if you're planning to smile at these people all day and knife them all night, I'd like to know now. Is that you?",
     "voice": "Carl",
     "yes": { "team": ["minion", "demon"] }
   },
   {
     "id": "tfc-counting-over-naming",
     "plain": "Do numbers tell you more than names do?",
-    "dinniman": "Names are for gossips, darling. A TRUE star reads the numbers: ratings, followers, how many evil people are sitting next to her. Do you prefer the cold, hard count?",
+    "styled": "Names are for gossips, darling. A TRUE star reads the numbers: ratings, followers, how many evil people are sitting next to her. Do you prefer the cold, hard count?",
     "voice": "Princess Donut",
     "yes": ["chef", "empath", "clockmaker", "mathematician"],
     "scope": ["chef", "empath", "clockmaker", "mathematician", "washerwoman", "librarian", "investigator", "grandmother"]

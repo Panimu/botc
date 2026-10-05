@@ -2,7 +2,7 @@
   {
     "id": "tfl-reverse-a-vote",
     "plain": "Would you like to secretly make someone's vote count against the side they back tomorrow?",
-    "dinniman": "Picture it: they raise their hand, full of conviction, and every bit of that support quietly subtracts itself. No fingerprints. Would you like to secretly make someone's vote count against the side they back tomorrow?",
+    "styled": "Picture it: they raise their hand, full of conviction, and every bit of that support quietly subtracts itself. No fingerprints. Would you like to secretly make someone's vote count against the side they back tomorrow?",
     "voice": "The System AI",
     "yes": [
       "thief"
@@ -11,7 +11,7 @@
   {
     "id": "tfl-pickpocket-the-ballot",
     "plain": "Do you fancy pinching a person's vote overnight so it works backwards for them?",
-    "dinniman": "Wasn't me. Wasn't anybody. Somebody's vote just happens to point the wrong way now, and that's a coincidence I'm not going to investigate. Do you fancy pinching a person's vote overnight so it works backwards for them?",
+    "styled": "Wasn't me. Wasn't anybody. Somebody's vote just happens to point the wrong way now, and that's a coincidence I'm not going to investigate. Do you fancy pinching a person's vote overnight so it works backwards for them?",
     "voice": "Carl",
     "yes": [
       "thief"
@@ -20,7 +20,7 @@
   {
     "id": "tfl-weigh-the-vote",
     "plain": "Would you like to change how much another player's vote is worth?",
-    "dinniman": "One person, one vote is SUCH a peasant idea. Some votes deserve to count more, some deserve to count against, and I should decide which. Would you like to change how much another player's vote is worth?",
+    "styled": "One person, one vote is SUCH a peasant idea. Some votes deserve to count more, some deserve to count against, and I should decide which. Would you like to change how much another player's vote is worth?",
     "voice": "Princess Donut",
     "yes": [
       "thief",
@@ -30,7 +30,7 @@
   {
     "id": "tfl-triple-stamp",
     "plain": "Would you like to hand someone a vote that counts three times over tomorrow?",
-    "dinniman": "Form 3B, the Ballot Amplification Request, signed in triplicate. Approved! Sponsors adore a landslide. Would you like to hand someone a vote that counts three times over tomorrow?",
+    "styled": "Form 3B, the Ballot Amplification Request, signed in triplicate. Approved! Sponsors adore a landslide. Would you like to hand someone a vote that counts three times over tomorrow?",
     "voice": "Zev",
     "yes": [
       "bureaucrat"
@@ -39,7 +39,7 @@
   {
     "id": "tfl-paperwork-clout",
     "plain": "Do you enjoy using official paperwork to give one chosen person a lot more say at the vote?",
-    "dinniman": "Seen this a hundred times. Some clerk with a stamp decides one idiot's hand is worth three, and the whole floor dies because of it. Do you enjoy using official paperwork to give one chosen person a lot more say at the vote?",
+    "styled": "Seen this a hundred times. Some clerk with a stamp decides one idiot's hand is worth three, and the whole floor dies because of it. Do you enjoy using official paperwork to give one chosen person a lot more say at the vote?",
     "voice": "Mordecai",
     "yes": [
       "bureaucrat"
@@ -48,7 +48,7 @@
   {
     "id": "tfl-double-shot",
     "plain": "Would you like to make someone else's ability work twice in one night?",
-    "dinniman": "Double espresso, darling, but for powers! One sip and their little trick fires TWICE. Would you like to make someone else's ability work twice in one night?",
+    "styled": "Double espresso, darling, but for powers! One sip and their little trick fires TWICE. Would you like to make someone else's ability work twice in one night?",
     "voice": "Odette",
     "yes": [
       "barista"
@@ -57,7 +57,7 @@
   {
     "id": "tfl-guaranteed-clarity",
     "plain": "Would you like to make sure one player is sober, healthy and told only the truth for a night?",
-    "dinniman": "Everybody down here is drunk, poisoned or lied to, usually all three. Sometimes the kindest thing is one clear cup for one person. Would you like to make sure one player is sober, healthy and told only the truth for a night?",
+    "styled": "Everybody down here is drunk, poisoned or lied to, usually all three. Sometimes the kindest thing is one clear cup for one person. Would you like to make sure one player is sober, healthy and told only the truth for a night?",
     "voice": "Katia",
     "yes": [
       "barista"
@@ -65,8 +65,8 @@
   },
   {
     "id": "tfl-temporary-boost",
-    "plain": "Would you like to give another player a short boost to their own ability, lasting until the next dusk?",
-    "dinniman": "Limited-time power-up! Expires at dusk! Non-refundable! Side effects include hope! Would you like to give another player a short boost to their own ability, lasting until the next dusk?",
+    "plain": "Would you like to give another player's ability a boost that lasts until the next dusk?",
+    "styled": "Limited-time power-up! Expires at dusk! Non-refundable! Side effects include hope! Would you like to give another player a short boost to their own ability, lasting until the next dusk?",
     "voice": "The System AI",
     "yes": [
       "barista",
@@ -76,7 +76,7 @@
   {
     "id": "tfl-risky-confession",
     "plain": "Would you invite someone to share their secret identity with you, knowing it might kill you both?",
-    "dinniman": "Come sit, sweetheart. Tell me who you really are. Of course, there's a small chance we both end up dead, but isn't honesty worth it? Would you invite someone to share their secret identity with you, knowing it might kill you both?",
+    "styled": "Come sit, sweetheart. Tell me who you really are. Of course, there's a small chance we both end up dead, but isn't honesty worth it? Would you invite someone to share their secret identity with you, knowing it might kill you both?",
     "voice": "Odette",
     "yes": [
       "harlot"
@@ -85,7 +85,7 @@
   {
     "id": "tfl-consent-for-secrets",
     "plain": "Do you only want to learn someone's character if they agree to tell you?",
-    "dinniman": "I'm not prying it out of anyone with a crowbar. If they say yes, great. If they say no, I'll live, which honestly is more than the other option guarantees. Do you only want to learn someone's character if they agree to tell you?",
+    "styled": "I'm not prying it out of anyone with a crowbar. If they say yes, great. If they say no, I'll live, which honestly is more than the other option guarantees. Do you only want to learn someone's character if they agree to tell you?",
     "voice": "Carl",
     "yes": [
       "harlot"
@@ -93,8 +93,8 @@
   },
   {
     "id": "tfl-second-helping",
-    "plain": "Once someone has been executed today, would you like to be allowed to nominate again?",
-    "dinniman": "The crowd has had its hanging and everyone's heading home, and you stand up and say 'more please'. The ratings! Once someone has been executed today, would you like to be allowed to nominate again?",
+    "plain": "Would you like to nominate again after the day's first execution?",
+    "styled": "The crowd has had its hanging and everyone's heading home, and you stand up and say 'more please'. The ratings! Once someone has been executed today, would you like to be allowed to nominate again?",
     "voice": "The Host",
     "yes": [
       "butcher"
@@ -103,7 +103,7 @@
   {
     "id": "tfl-two-trials-a-day",
     "plain": "Would you like the power to hold a second trial on a day that has already had its execution?",
-    "dinniman": "ONE EXECUTION?! What is this, a petting zoo? Bring me another one! Would you like the power to hold a second trial on a day that has already had its execution?",
+    "styled": "ONE EXECUTION?! What is this, a petting zoo? Bring me another one! Would you like the power to hold a second trial on a day that has already had its execution?",
     "voice": "Samantha",
     "yes": [
       "butcher"
@@ -112,7 +112,7 @@
   {
     "id": "tfl-pull-the-lever",
     "plain": "Would you like to point at one player and have somebody else's character change that night?",
-    "dinniman": "You press the big red button marked 'them' and the zap lands on someone completely different. That's not a bug, that's science. Would you like to point at one player and have somebody else's character change that night?",
+    "styled": "You press the big red button marked 'them' and the zap lands on someone completely different. That's not a bug, that's science. Would you like to point at one player and have somebody else's character change that night?",
     "voice": "Elle",
     "yes": [
       "cacklejack"
@@ -121,7 +121,7 @@
   {
     "id": "tfl-mad-experiment",
     "plain": "Do you enjoy daily experiments that turn a player other than your target into a new character?",
-    "dinniman": "Wire alpha to wire beta, buzzer off, stand very still, and BEHOLD! The wrong person has transformed, as planned. Do you enjoy daily experiments that turn a player other than your target into a new character?",
+    "styled": "Wire alpha to wire beta, buzzer off, stand very still, and BEHOLD! The wrong person has transformed, as planned. Do you enjoy daily experiments that turn a player other than your target into a new character?",
     "voice": "Prepotente",
     "yes": [
       "cacklejack"
@@ -130,7 +130,7 @@
   {
     "id": "tfl-shoot-a-voter",
     "plain": "Would you like to shoot someone dead just because of how they voted?",
-    "dinniman": "The first tally's in. You saw who raised a hand. You've got a six-shooter and an attitude. Would you like to shoot someone dead just because of how they voted?",
+    "styled": "The first tally's in. You saw who raised a hand. You've got a six-shooter and an attitude. Would you like to shoot someone dead just because of how they voted?",
     "voice": "Mordecai",
     "yes": [
       "gunslinger"
@@ -139,7 +139,7 @@
   {
     "id": "tfl-watch-the-first-tally",
     "plain": "Do you watch the day's first vote closely, ready to punish someone who took part in it?",
-    "dinniman": "New achievement unlocked: Quick Draw! Awarded for ending a voter's career right after the count. Reward: one dented spittoon. Do you watch the day's first vote closely, ready to punish someone who took part in it?",
+    "styled": "New achievement unlocked: Quick Draw! Awarded for ending a voter's career right after the count. Reward: one dented spittoon. Do you watch the day's first vote closely, ready to punish someone who took part in it?",
     "voice": "The System AI",
     "yes": [
       "gunslinger"
@@ -148,7 +148,7 @@
   {
     "id": "tfl-rearrange-the-seats",
     "plain": "Would you like to rearrange where people sit around the circle?",
-    "dinniman": "Human, you will sit THERE. You, the tall one, beside the window. No, I don't care that you were comfortable. Would you like to rearrange where people sit around the circle?",
+    "styled": "Human, you will sit THERE. You, the tall one, beside the window. No, I don't care that you were comfortable. Would you like to rearrange where people sit around the circle?",
     "voice": "Princess Donut",
     "yes": [
       "matron"
@@ -157,7 +157,7 @@
   {
     "id": "tfl-no-whispering",
     "plain": "Would you forbid players from leaving their seats to talk in private?",
-    "dinniman": "No sneaking off to the corridor. No little huddles by the snack table. If you've got something to say, say it where everyone can hear. Would you forbid players from leaving their seats to talk in private?",
+    "styled": "No sneaking off to the corridor. No little huddles by the snack table. If you've got something to say, say it where everyone can hear. Would you forbid players from leaving their seats to talk in private?",
     "voice": "Elle",
     "yes": [
       "matron"
@@ -166,7 +166,7 @@
   {
     "id": "tfl-neighbourly-hit",
     "plain": "Would you like to kill one of your neighbours, but only if your other neighbour agrees?",
-    "dinniman": "Nice shoes on the fella to your left. Shame if something happened to him. All you need is a nod from the fella on your right. Would you like to kill one of your neighbours, but only if your other neighbour agrees?",
+    "styled": "Nice shoes on the fella to your left. Shame if something happened to him. All you need is a nod from the fella on your right. Would you like to kill one of your neighbours, but only if your other neighbour agrees?",
     "voice": "Zev",
     "yes": [
       "gangster"
@@ -175,7 +175,7 @@
   {
     "id": "tfl-offer-you-cannot-refuse",
     "plain": "Do you prefer your daytime murders arranged with the blessing of the person sitting beside you?",
-    "dinniman": "Here's how it works on this floor: no hit goes down without a handshake from the guy next to you. Honour among killers. Do you prefer your daytime murders arranged with the blessing of the person sitting beside you?",
+    "styled": "Here's how it works on this floor: no hit goes down without a handshake from the guy next to you. Honour among killers. Do you prefer your daytime murders arranged with the blessing of the person sitting beside you?",
     "voice": "Mordecai",
     "yes": [
       "gangster"
@@ -184,7 +184,7 @@
   {
     "id": "tfl-wake-the-dead-power",
     "plain": "Would you like to let a dead player use their ability again for a while, without bringing them back to life?",
-    "dinniman": "They're still dead, mind you. Very dead. But for one short stretch their old trick works again, which is creepy and also useful. Would you like to let a dead player use their ability again for a while, without bringing them back to life?",
+    "styled": "They're still dead, mind you. Very dead. But for one short stretch their old trick works again, which is creepy and also useful. Would you like to let a dead player use their ability again for a while, without bringing them back to life?",
     "voice": "Carl",
     "yes": [
       "bonecollector"
@@ -193,7 +193,7 @@
   {
     "id": "tfl-grave-curios",
     "plain": "Would you save one grisly favour for the whole game, briefly reviving a corpse's power?",
-    "dinniman": "Hair, teeth, fragments of poems, a dead man's talent on loan until sundown. One per customer! Would you save one grisly favour for the whole game, briefly reviving a corpse's power?",
+    "styled": "Hair, teeth, fragments of poems, a dead man's talent on loan until sundown. One per customer! Would you save one grisly favour for the whole game, briefly reviving a corpse's power?",
     "voice": "The System AI",
     "yes": [
       "bonecollector"
@@ -201,8 +201,8 @@
   },
   {
     "id": "tfl-gavel-either-way",
-    "plain": "Would you like a once-per-game power to decide yourself whether a nominated execution passes or fails, whatever the vote says?",
-    "dinniman": "ORDER! The court has heard enough of your pathetic hand-waving. I alone decide if this one swings or walks! Would you like a once-per-game power to decide yourself whether a nominated execution passes or fails, whatever the vote says?",
+    "plain": "Once per game, would you like to decide for yourself whether an execution passes or fails, whatever the vote says?",
+    "styled": "ORDER! The court has heard enough of your pathetic hand-waving. I alone decide if this one swings or walks! Would you like a once-per-game power to decide yourself whether a nominated execution passes or fails, whatever the vote says?",
     "voice": "Prepotente",
     "yes": [
       "judge"
@@ -210,8 +210,8 @@
   },
   {
     "id": "tfl-throw-out-the-verdict",
-    "plain": "Would you like to declare a vote a failure, so the nominee is not executed, even after enough people voted for them?",
-    "dinniman": "The mob has done its counting, the rope is ready, and you get to say case dismissed, not this one. Would you like to declare a vote a failure, so the nominee is not executed, even after enough people voted for them?",
+    "plain": "Would you like to overrule a vote so the nominee survives, even when enough people voted to execute them?",
+    "styled": "The mob has done its counting, the rope is ready, and you get to say case dismissed, not this one. Would you like to declare a vote a failure, so the nominee is not executed, even after enough people voted for them?",
     "voice": "Katia",
     "yes": [
       "judge"
@@ -220,7 +220,7 @@
   {
     "id": "tfl-force-it-through",
     "plain": "After seeing a vote, would you like the power to declare the execution anyway, even without enough hands raised?",
-    "dinniman": "Democracy is lovely, darling, until it gets in your way. Then it is merely a suggestion. After seeing a vote, would you like the power to declare the execution anyway, even without enough hands raised?",
+    "styled": "Democracy is lovely, darling, until it gets in your way. Then it is merely a suggestion. After seeing a vote, would you like the power to declare the execution anyway, even without enough hands raised?",
     "voice": "Odette",
     "yes": [
       "judge",
@@ -229,8 +229,8 @@
   },
   {
     "id": "tfl-trade-by-alignment",
-    "plain": "Would you like to pick up a trade on your first night that depends on your side: a Townsfolk skill if good, a Minion trick if evil?",
-    "dinniman": "Welcome, apprentice! Your starter class is randomised based on your moral compass. Good kids get hammers. Bad kids get knives. Would you like to pick up a trade on your first night that depends on your side: a Townsfolk skill if good, a Minion trick if evil?",
+    "plain": "Would you like to gain a Townsfolk ability on your first night if you're good, or a Minion ability if you're evil?",
+    "styled": "Welcome, apprentice! Your starter class is randomised based on your moral compass. Good kids get hammers. Bad kids get knives. Would you like to pick up a trade on your first night that depends on your side: a Townsfolk skill if good, a Minion trick if evil?",
     "voice": "The System AI",
     "yes": [
       "apprentice"
@@ -239,7 +239,7 @@
   {
     "id": "tfl-arrive-untrained",
     "plain": "As a newcomer, would you like to arrive with no ability of your own and be taught one on your first night?",
-    "dinniman": "Everybody starts somewhere. Showing up with empty hands and learning the local craft overnight isn't weakness, it's how you grow. As a newcomer, would you like to arrive with no ability of your own and be taught one on your first night?",
+    "styled": "Everybody starts somewhere. Showing up with empty hands and learning the local craft overnight isn't weakness, it's how you grow. As a newcomer, would you like to arrive with no ability of your own and be taught one on your first night?",
     "voice": "Katia",
     "yes": [
       "apprentice"
@@ -247,8 +247,8 @@
   },
   {
     "id": "tfl-alms-for-a-vote",
-    "plain": "Would you be content to vote only when someone hands you their vote token?",
-    "dinniman": "Spare a token, guv? Bless you! Look at me, human, I'm an ACTOR. A tragic, starving actor who can only vote on charity. Would you be content to vote only when someone hands you their vote token?",
+    "plain": "Can you vote only when someone hands you their vote token?",
+    "styled": "Spare a token, guv? Bless you! Look at me, human, I'm an ACTOR. A tragic, starving actor who can only vote on charity. Can you vote only when someone hands you their vote token?",
     "voice": "Princess Donut",
     "yes": [
       "beggar"
@@ -257,7 +257,7 @@
   {
     "id": "tfl-gift-reveals-giver",
     "plain": "Would you like to learn a dead player's alignment when they give you something?",
-    "dinniman": "Funny thing about charity. You learn a lot about a person from the fact that they gave it. Would you like to learn a dead player's alignment when they give you something?",
+    "styled": "Funny thing about charity. You learn a lot about a person from the fact that they gave it. Would you like to learn a dead player's alignment when they give you something?",
     "voice": "Mordecai",
     "yes": [
       "beggar"
@@ -266,7 +266,7 @@
   {
     "id": "tfl-never-drunk",
     "plain": "Would you like to be permanently sober and healthy, whatever anyone tries to do to you?",
-    "dinniman": "Poison? Bounces off. Booze? Water to me, honey. I've been through worse than your little potions. Would you like to be permanently sober and healthy, whatever anyone tries to do to you?",
+    "styled": "Poison? Bounces off. Booze? Water to me, honey. I've been through worse than your little potions. Would you like to be permanently sober and healthy, whatever anyone tries to do to you?",
     "voice": "Elle",
     "yes": [
       "beggar"
@@ -275,7 +275,7 @@
   {
     "id": "tfl-joke-your-way-out",
     "plain": "Do you think being funny enough should keep you from being exiled?",
-    "dinniman": "Tough crowd tonight! But if they laugh, they can't throw you out. That's in the contract. Probably. Do you think being funny enough should keep you from being exiled?",
+    "styled": "Tough crowd tonight! But if they laugh, they can't throw you out. That's in the contract. Probably. Do you think being funny enough should keep you from being exiled?",
     "voice": "The Host",
     "yes": [
       "deviant"
@@ -283,8 +283,8 @@
   },
   {
     "id": "tfl-comedy-as-armour",
-    "plain": "Would you rely on your sense of humour, rather than your innocence, to survive the town's judgement?",
-    "dinniman": "Look, nobody believes I'm innocent. But I did get a laugh earlier with the bit about the goblin, and apparently that counts. Would you rely on your sense of humour, rather than your innocence, to survive the town's judgement?",
+    "plain": "Would you count on your sense of humour, not your innocence, to survive the town's judgement?",
+    "styled": "Look, nobody believes I'm innocent. But I did get a laugh earlier with the bit about the goblin, and apparently that counts. Would you rely on your sense of humour, rather than your innocence, to survive the town's judgement?",
     "voice": "Carl",
     "yes": [
       "deviant"
@@ -293,7 +293,7 @@
   {
     "id": "tfl-take-the-fall",
     "plain": "Would you take a teammate's place at the gallows if they were executed?",
-    "dinniman": "Somebody on your team is about to swing. You step forward, smile, and say 'I'll take it from here'. Would you take a teammate's place at the gallows if they were executed?",
+    "styled": "Somebody on your team is about to swing. You step forward, smile, and say 'I'll take it from here'. Would you take a teammate's place at the gallows if they were executed?",
     "voice": "Katia",
     "yes": [
       "scapegoat"
@@ -302,7 +302,7 @@
   {
     "id": "tfl-cheerful-patsy",
     "plain": "Would you happily be the one who gets blamed and hanged so an ally walks free?",
-    "dinniman": "Friendly newcomer! Dandy attitude! Does not ask what the rope is for! Our sponsors call this an ideal brand ambassador. Would you happily be the one who gets blamed and hanged so an ally walks free?",
+    "styled": "Friendly newcomer! Dandy attitude! Does not ask what the rope is for! Our sponsors call this an ideal brand ambassador. Would you happily be the one who gets blamed and hanged so an ally walks free?",
     "voice": "Zev",
     "yes": [
       "scapegoat"
@@ -311,7 +311,7 @@
   {
     "id": "tfl-bodyguard-of-one",
     "plain": "Would you like to kill anyone who dares nominate a particular teammate of yours?",
-    "dinniman": "TOUCH MY FRIEND AND I WILL FEAST ON YOUR SPLEEN! Anyone who nominates them DIES! Would you like to kill anyone who dares nominate a particular teammate of yours?",
+    "styled": "TOUCH MY FRIEND AND I WILL FEAST ON YOUR SPLEEN! Anyone who nominates them DIES! Would you like to kill anyone who dares nominate a particular teammate of yours?",
     "voice": "Samantha",
     "yes": [
       "gnome"
@@ -320,7 +320,7 @@
   {
     "id": "tfl-everyone-knows-your-friend",
     "plain": "Would you like the whole town to start the game knowing a player who shares your alignment?",
-    "dinniman": "RAWR! Stomp stomp! (He means everyone already knows who his best friend is, and they'd better not lay a finger on them.) Would you like the whole town to start the game knowing a player who shares your alignment?",
+    "styled": "RAWR! Stomp stomp! (He means everyone already knows who his best friend is, and they'd better not lay a finger on them.) Would you like the whole town to start the game knowing a player who shares your alignment?",
     "voice": "Mongo",
     "yes": [
       "gnome"
@@ -329,7 +329,7 @@
   {
     "id": "tfl-storyteller-nominates",
     "plain": "Would you like to take nominations away from the players and leave them to the Storyteller alone?",
-    "dinniman": "Hear ye! The faithful shall no longer point their grubby fingers. Only the Storyteller may name the accused! Would you like to take nominations away from the players and leave them to the Storyteller alone?",
+    "styled": "Hear ye! The faithful shall no longer point their grubby fingers. Only the Storyteller may name the accused! Would you like to take nominations away from the players and leave them to the Storyteller alone?",
     "voice": "Prepotente",
     "yes": [
       "bishop"
@@ -337,8 +337,8 @@
   },
   {
     "id": "tfl-enemy-on-trial-daily",
-    "plain": "Would you like to guarantee that at least one member of the opposing team is nominated every day?",
-    "dinniman": "Here's a fun rule: every single day, the other side gets someone in the dock, no excuses. Would you like to guarantee that at least one member of the opposing team is nominated every day?",
+    "plain": "Would you like to make sure someone from the opposing team is nominated every day?",
+    "styled": "Here's a fun rule: every single day, the other side gets someone in the dock, no excuses. Would you like to guarantee that at least one member of the opposing team is nominated every day?",
     "voice": "The Host",
     "yes": [
       "bishop"
@@ -347,7 +347,7 @@
   {
     "id": "tfl-only-you-and-the-dead",
     "plain": "Would you like a vote where only you and the dead get a say?",
-    "dinniman": "The living have had their chance and blew it. From now on, it's you and the ghosts. Would you like a vote where only you and the dead get a say?",
+    "styled": "The living have had their chance and blew it. From now on, it's you and the ghosts. Would you like a vote where only you and the dead get a say?",
     "voice": "Mordecai",
     "yes": [
       "voudon"
@@ -356,7 +356,7 @@
   {
     "id": "tfl-no-majority-needed",
     "plain": "Would you scrap the majority rule, so whoever gets the most votes is executed, even with a single hand?",
-    "dinniman": "Majority? Quorum? That's a lot of paperwork for one hanging. Most hands wins, even if it's one. Would you scrap the majority rule, so whoever gets the most votes is executed, even with a single hand?",
+    "styled": "Majority? Quorum? That's a lot of paperwork for one hanging. Most hands wins, even if it's one. Would you scrap the majority rule, so whoever gets the most votes is executed, even with a single hand?",
     "voice": "Elle",
     "yes": [
       "voudon"
@@ -365,7 +365,7 @@
   {
     "id": "tfl-voice-for-the-dead",
     "plain": "Would you like every dead player in town to have a stronger say at the vote than usual?",
-    "dinniman": "Dead viewers are still viewers! Engagement is engagement! Let us put every ghost back on the ballot. Would you like every dead player in town to have a stronger say at the vote than usual?",
+    "styled": "Dead viewers are still viewers! Engagement is engagement! Let us put every ghost back on the ballot. Would you like every dead player in town to have a stronger say at the vote than usual?",
     "voice": "Zev",
     "yes": [
       "voudon"
@@ -374,7 +374,7 @@
   {
     "id": "tfl-drifter-with-a-weapon",
     "plain": "As someone just passing through, would you like the power to kill a player with your own hand?",
-    "dinniman": "You wander into town with a bedroll and a bad reputation, and you're allowed to end somebody personally. KILL! KILL! As someone just passing through, would you like the power to kill a player with your own hand?",
+    "styled": "You wander into town with a bedroll and a bad reputation, and you're allowed to end somebody personally. KILL! KILL! As someone just passing through, would you like the power to kill a player with your own hand?",
     "voice": "Samantha",
     "yes": [
       "gunslinger",
@@ -388,7 +388,7 @@
   {
     "id": "tfl-night-visitor",
     "plain": "As a late arrival, would you like to wake at night and secretly pick a player to use your ability on?",
-    "dinniman": "Everyone else is asleep. You're up, tiptoeing round the circle, choosing a target. Very creepy. Very effective. As a late arrival, would you like to wake at night and secretly pick a player to use your ability on?",
+    "styled": "Everyone else is asleep. You're up, tiptoeing round the circle, choosing a target. Very creepy. Very effective. As a late arrival, would you like to wake at night and secretly pick a player to use your ability on?",
     "voice": "Carl",
     "yes": [
       "thief",
@@ -403,7 +403,7 @@
   {
     "id": "tfl-daylight-decisions",
     "plain": "As a traveller, would you rather make your ability's choices during the day than at night?",
-    "dinniman": "Some wanderers skulk about after dark. Others do their business in broad daylight with the whole town watching. Bold. Would get you killed on my floor. As a traveller, would you rather make your ability's choices during the day than at night?",
+    "styled": "Some wanderers skulk about after dark. Others do their business in broad daylight with the whole town watching. Bold. Would get you killed on my floor. As a traveller, would you rather make your ability's choices during the day than at night?",
     "voice": "Mordecai",
     "yes": [
       "butcher",
@@ -420,8 +420,8 @@
   },
   {
     "id": "tfl-rewrite-the-ballot",
-    "plain": "As a traveller, would you like to change who may nominate or vote for the entire town?",
-    "dinniman": "New in town and already rewriting the constitution! The Founding Fathers would be appalled! The audience is THRILLED! As a traveller, would you like to change who may nominate or vote for the entire town?",
+    "plain": "As a traveller, would you like to change the town's rules on who may nominate or vote?",
+    "styled": "New in town and already rewriting the constitution! The Founding Fathers would be appalled! The audience is THRILLED! As a traveller, would you like to change who may nominate or vote for the entire town?",
     "voice": "The Host",
     "yes": [
       "bishop",
@@ -434,7 +434,7 @@
   {
     "id": "tfl-one-perfect-moment",
     "plain": "As a traveller, would you rather save a single big moment for the right time than act every day or night?",
-    "dinniman": "Patience is a weapon. One shot, one moment, and you've got to pick it right. It's terrifying, but it's also kind of beautiful. As a traveller, would you rather save a single big moment for the right time than act every day or night?",
+    "styled": "Patience is a weapon. One shot, one moment, and you've got to pick it right. It's terrifying, but it's also kind of beautiful. As a traveller, would you rather save a single big moment for the right time than act every day or night?",
     "voice": "Katia",
     "yes": [
       "bonecollector",
@@ -446,8 +446,8 @@
   },
   {
     "id": "tfl-living-say-so",
-    "plain": "As a traveller, would you need a living player's agreement before your ability can work?",
-    "dinniman": "Consent forms! Initial here, sign there, and only then do the fun things happen! Legal is so proud of you. As a traveller, would you need a living player's agreement before your ability can work?",
+    "plain": "As a traveller, does your ability need a living player's agreement to work?",
+    "styled": "Consent forms! Initial here, sign there, and only then do the fun things happen! Legal is so proud of you. As a traveller, would you need a living player's agreement before your ability can work?",
     "voice": "Zev",
     "yes": [
       "harlot",
@@ -460,7 +460,7 @@
   {
     "id": "tfl-drifter-learns",
     "plain": "As a traveller, would you like your ability to teach you something private about another player?",
-    "dinniman": "Oh, I'm not here for the scenery, darling. I'm here for the dirt. Who are they? Which side? Spill it. As a traveller, would you like your ability to teach you something private about another player?",
+    "styled": "Oh, I'm not here for the scenery, darling. I'm here for the dirt. Who are they? Which side? Spill it. As a traveller, would you like your ability to teach you something private about another player?",
     "voice": "Odette",
     "yes": [
       "harlot",
@@ -472,8 +472,8 @@
   },
   {
     "id": "tfl-own-neck-on-the-line",
-    "plain": "As a traveller, is your ability entirely about whether you yourself get removed from the game by the town?",
-    "dinniman": "Some travellers have shiny powers. Some just have a very personal relationship with the noose. As a traveller, is your ability entirely about whether you yourself get removed from the game by the town?",
+    "plain": "As a traveller, is your ability entirely about whether the town can execute or exile you?",
+    "styled": "Some travellers have shiny powers. Some just have a very personal relationship with the noose. As a traveller, is your ability entirely about whether you yourself get removed from the game by the town?",
     "voice": "Carl",
     "yes": [
       "deviant",
@@ -486,7 +486,7 @@
   {
     "id": "tfl-ability-tinkerer",
     "plain": "As a traveller, does your ability give, boost, restore or change someone's character or ability?",
-    "dinniman": "Upgrade station now open! Grants! Buffs! Resurrections of skills! Unexpected transformations! Warranty void if used! As a traveller, does your ability give, boost, restore or change someone's character or ability?",
+    "styled": "Upgrade station now open! Grants! Buffs! Resurrections of skills! Unexpected transformations! Warranty void if used! As a traveller, does your ability give, boost, restore or change someone's character or ability?",
     "voice": "The System AI",
     "yes": [
       "barista",
@@ -501,7 +501,7 @@
   {
     "id": "tfl-manners-matter",
     "plain": "As a traveller, are you fussy about where people sit and how they conduct themselves?",
-    "dinniman": "Elbows OFF the table. Sit where you are TOLD. No sneaking off for secret chats. Honestly, the manners in this dungeon. As a traveller, are you fussy about where people sit and how they conduct themselves?",
+    "styled": "Elbows OFF the table. Sit where you are TOLD. No sneaking off for secret chats. Honestly, the manners in this dungeon. As a traveller, are you fussy about where people sit and how they conduct themselves?",
     "voice": "Princess Donut",
     "yes": [
       "matron"
@@ -513,7 +513,7 @@
   {
     "id": "tfl-boost-not-sabotage",
     "plain": "Of the two vote-meddlers, would you rather inflate someone's vote than turn it against them?",
-    "dinniman": "Both of you mess with ballots overnight, fine. But one of you adds and one of you subtracts. Which kind of crook are you? Of the two vote-meddlers, would you rather inflate someone's vote than turn it against them?",
+    "styled": "Both of you mess with ballots overnight, fine. But one of you adds and one of you subtracts. Which kind of crook are you? Of the two vote-meddlers, would you rather inflate someone's vote than turn it against them?",
     "voice": "Carl",
     "yes": [
       "bureaucrat"
@@ -526,7 +526,7 @@
   {
     "id": "tfl-nightly-pick-me-up",
     "plain": "Would you rather your boost come round every night than be a single favour for the whole game?",
-    "dinniman": "Loyalty card or one golden ticket, darling? One of these brings coffee every single night. The other brings one spooky miracle and then closes up shop. Would you rather your boost come round every night than be a single favour for the whole game?",
+    "styled": "Loyalty card or one golden ticket, darling? One of these brings coffee every single night. The other brings one spooky miracle and then closes up shop. Would you rather your boost come round every night than be a single favour for the whole game?",
     "voice": "Odette",
     "yes": [
       "barista"
@@ -539,7 +539,7 @@
   {
     "id": "tfl-kill-for-a-friend",
     "plain": "Of these daytime killers, would you rather kill to protect a teammate than to settle a score?",
-    "dinniman": "Some killers shoot voters. Some do favours for neighbours. And some only strike when someone comes after their buddy. Of these daytime killers, would you rather kill to protect a teammate than to settle a score?",
+    "styled": "Some killers shoot voters. Some do favours for neighbours. And some only strike when someone comes after their buddy. Of these daytime killers, would you rather kill to protect a teammate than to settle a score?",
     "voice": "Mordecai",
     "yes": [
       "gnome"
@@ -553,7 +553,7 @@
   {
     "id": "tfl-needs-a-nod",
     "plain": "Of these daytime killers, would you only strike once the person beside you has given the go-ahead?",
-    "dinniman": "Proper organised crime runs on handshakes and favours! Very traditional! Excellent for brand loyalty! Of these daytime killers, would you only strike once the person beside you has given the go-ahead?",
+    "styled": "Proper organised crime runs on handshakes and favours! Very traditional! Excellent for brand loyalty! Of these daytime killers, would you only strike once the person beside you has given the go-ahead?",
     "voice": "Zev",
     "yes": [
       "gangster"
@@ -567,7 +567,7 @@
   {
     "id": "tfl-mercy-from-the-bench",
     "plain": "Of these two execution-forcers, would you want the power to spare the accused as well as condemn them?",
-    "dinniman": "One of you can only ever say 'hang them'. The other gets to say 'let them go', too. Mercy is a choice, and it's the harder one. Of these two execution-forcers, would you want the power to spare the accused as well as condemn them?",
+    "styled": "One of you can only ever say 'hang them'. The other gets to say 'let them go', too. Mercy is a choice, and it's the harder one. Of these two execution-forcers, would you want the power to spare the accused as well as condemn them?",
     "voice": "Katia",
     "yes": [
       "judge"
@@ -579,8 +579,8 @@
   },
   {
     "id": "tfl-ask-to-learn",
-    "plain": "Of these two who ask permission, would you ask in order to learn something rather than to kill?",
-    "dinniman": "You both need a yes from somebody. One of you wants a secret. The other wants a body. Do you want the secret? Of these two who ask permission, would you ask in order to learn something rather than to kill?",
+    "plain": "Of these two who ask permission, would you ask in order to learn something, not to kill?",
+    "styled": "You both need a yes from somebody. One of you wants a secret. The other wants a body. Do you want the secret? Of these two who ask permission, would you ask in order to learn something rather than to kill?",
     "voice": "Carl",
     "yes": [
       "harlot"
@@ -593,7 +593,7 @@
   {
     "id": "tfl-character-not-side",
     "plain": "Of these two curious travellers, would you rather learn someone's exact character than just their alignment?",
-    "dinniman": "Good or evil is the boring headline, darling. I want the full biography, the real name, the dirty laundry. Of these two curious travellers, would you rather learn someone's exact character than just their alignment?",
+    "styled": "Good or evil is the boring headline, darling. I want the full biography, the real name, the dirty laundry. Of these two curious travellers, would you rather learn someone's exact character than just their alignment?",
     "voice": "Odette",
     "yes": [
       "harlot"
@@ -606,7 +606,7 @@
   {
     "id": "tfl-control-the-accusations",
     "plain": "Of these two rule-rewriting travellers, would you rather control nominations than votes?",
-    "dinniman": "Pick your poison: decide who ends up in the dock, or decide who gets to raise a hand. THE ACCUSATION IS EVERYTHING! Of these two rule-rewriting travellers, would you rather control nominations than votes?",
+    "styled": "Pick your poison: decide who ends up in the dock, or decide who gets to raise a hand. THE ACCUSATION IS EVERYTHING! Of these two rule-rewriting travellers, would you rather control nominations than votes?",
     "voice": "Prepotente",
     "yes": [
       "bishop"
@@ -619,7 +619,7 @@
   {
     "id": "tfl-save-your-own-skin",
     "plain": "Of these two, would you rather protect yourself from removal than risk dying in someone else's place?",
-    "dinniman": "One of these guys cracks jokes to stay alive. The other volunteers to hang for his friends. I know which one I'd rather have a beer with, but that's not the question. Of these two, would you rather protect yourself from removal than risk dying in someone else's place?",
+    "styled": "One of these guys cracks jokes to stay alive. The other volunteers to hang for his friends. I know which one I'd rather have a beer with, but that's not the question. Of these two, would you rather protect yourself from removal than risk dying in someone else's place?",
     "voice": "Mordecai",
     "yes": [
       "deviant"
@@ -632,7 +632,7 @@
   {
     "id": "tfl-transform-while-alive",
     "plain": "Of the character-changers, would you set off a transformation without having to die first?",
-    "dinniman": "Some transformations only trigger off your corpse. Others you can fire off whenever, while still breathing. Breathing is good. Of the character-changers, would you set off a transformation without having to die first?",
+    "styled": "Some transformations only trigger off your corpse. Others you can fire off whenever, while still breathing. Breathing is good. Of the character-changers, would you set off a transformation without having to die first?",
     "voice": "Katia",
     "yes": [
       "cacklejack",
@@ -648,7 +648,7 @@
   {
     "id": "tfl-storyteller-picks-the-victim",
     "plain": "Of the character-changers, would you like the Storyteller, not you or your team, to decide exactly who transforms?",
-    "dinniman": "You pull the lever. The Storyteller decides whose face melts. That's not your problem, that's management's problem. Of the character-changers, would you like the Storyteller, not you or your team, to decide exactly who transforms?",
+    "styled": "You pull the lever. The Storyteller decides whose face melts. That's not your problem, that's management's problem. Of the character-changers, would you like the Storyteller, not you or your team, to decide exactly who transforms?",
     "voice": "The System AI",
     "yes": [
       "cacklejack"
@@ -662,8 +662,8 @@
   },
   {
     "id": "tfl-encore-after-execution",
-    "plain": "Of these two double-nominators, would you only want your extra nomination after an execution has already happened?",
-    "dinniman": "One of you gets two nominations after dying. The other waits for the first hanging to finish, then calls for an encore. Of these two double-nominators, would you only want your extra nomination after an execution has already happened?",
+    "plain": "Of these two double-nominators, does your extra nomination come only after the day's execution?",
+    "styled": "One of you gets two nominations after dying. The other waits for the first hanging to finish, then calls for an encore. Of these two double-nominators, does your extra nomination come only after the day's execution?",
     "voice": "Mordecai",
     "yes": [
       "butcher"

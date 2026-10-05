@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Which Clocktower Character Are You?</title>
-  <meta name="description" content="Answer yes or no until only one Blood on the Clocktower character is left.">
+  <title>Clocktower Daily Hunt</title>
+  <meta name="description" content="Find today's hidden Blood on the Clocktower character by choosing questions. A new hunt every day.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Clocktower Character Quiz">
-  <meta property="og:title" content="Which Clocktower character are you?">
-  <meta property="og:description" content="Answer yes or no until only one Blood on the Clocktower character is left. 156 characters, and questions with attitude.">
+  <meta property="og:title" content="Clocktower Daily Hunt">
+  <meta property="og:description" content="One hidden Blood on the Clocktower character, the same for everyone today. Ask questions, narrow the town, and guess.">
   <meta property="og:url" content="https://panimu.github.io/botc/">
   <meta name="theme-color" content="#221932">
   <script>
@@ -19,70 +19,82 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/style.css?v=dev">
-  <script type="module" src="js/app.js?v=dev"></script>
+  <script type="module" src="js/daily-app.js?v=dev"></script>
 </head>
 <body>
   <main>
     <div class="side">
-    <header class="intro">
-      <nav class="topbar" aria-label="Modes">
-        <div class="modes">
-          <a href="./" aria-current="page">Personality quiz</a>
-          <a href="daily.html">Daily hunt</a>
+      <header class="intro">
+        <nav class="topbar" aria-label="Modes">
+          <div class="modes">
+            <a href="./" aria-current="page">Daily hunt</a>
+            <a href="quiz.html">Personality quiz</a>
+          </div>
+          <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
+        </nav>
+        <h1>Daily character hunt</h1>
+        <p>One hidden character, the same for everyone today. Choose questions to narrow the town down, and once 15 or fewer remain, tap a token to guess.</p>
+      </header>
+
+      <div class="new-day" id="new-day" role="status" hidden>
+        <p>A new hunt has started.</p>
+        <button type="button" class="answer" id="new-day-reload">Load today's hunt</button>
+      </div>
+
+      <section class="panel hunt-panel" id="hunt-panel" aria-labelledby="hunt-heading">
+        <div class="card-head">
+          <span class="card-number" id="hunt-number">Loading…</span>
+          <span class="card-left"><span id="hunt-score"></span> <span id="hunt-guesses"></span></span>
         </div>
-        <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
-      </nav>
-      <h1>Which Clocktower character are you?</h1>
-      <p>Answer each question honestly. Every answer rules out characters until only one is left.</p>
-    </header>
-    <section class="panel" id="question-panel" aria-labelledby="question-text">
-      <div class="card-head">
-        <span class="card-number" id="question-number">Loading…</span>
-        <span class="card-left" id="remaining"></span>
-      </div>
-      <h2 class="question voiced" id="question-text" tabindex="-1"></h2>
-      <p class="feedback" id="feedback"></p>
-      <div class="answers" id="answers" hidden>
-        <button type="button" class="answer answer-tile" id="yes"><span class="answer-label">Yes</span><kbd>Y</kbd></button>
-        <button type="button" class="answer answer-tile" id="no"><span class="answer-label">No</span><kbd>N</kbd></button>
-      </div>
-      <div class="card-foot" id="secondary" hidden>
-        <button type="button" class="quiet" id="undo">Undo <kbd>Backspace</kbd></button>
-        <button type="button" class="quiet" id="restart">Start over</button>
-        <p class="question-id">Question <span id="question-id"></span></p>
-      </div>
-    </section>
 
-    <section class="panel result" id="result-panel" aria-labelledby="result-name" hidden>
-      <img class="result-art" id="result-art" alt="">
-      <p class="result-lead" id="result-lead">You are the</p>
-      <h2 class="result-name" id="result-name" tabindex="-1"></h2>
-      <p class="result-team" id="result-team"></p>
-      <p class="result-summary" id="result-summary"></p>
-      <figure class="share-quote" id="share-quote" hidden>
-        <blockquote id="share-quote-text"></blockquote>
-      </figure>
-      <div class="share-options" id="share-options" hidden></div>
-      <p class="share-status" id="share-status" role="status"></p>
-      <div class="secondary replay">
-        <button type="button" class="answer" id="play-again">Play again</button>
-        <button type="button" class="quiet" id="result-undo">Undo last answer</button>
-      </div>
-    </section>
+        <p class="yesterday-note" id="yesterday-note" hidden></p>
 
-    <section class="path" id="path" aria-labelledby="path-heading" hidden>
-      <h2 id="path-heading">How you got here</h2>
-      <ol id="path-list"></ol>
-    </section>
+        <div class="last-answer" id="last-answer" hidden>
+          <p class="last-question" id="last-question"></p>
+          <p class="last-reply" id="last-reply"></p>
+        </div>
 
-    <details class="pool" id="pool">
-      <summary><h2 id="pool-heading">Still in the running</h2></summary>
-      <div id="pool-groups"></div>
-    </details>
+        <details class="history" id="history" hidden>
+          <summary id="history-summary">All questions so far</summary>
+          <ol id="history-list"></ol>
+        </details>
+
+        <h2 class="hunt-heading" id="hunt-heading" tabindex="-1">Choose a question to ask today's character</h2>
+        <div class="offers" id="offers"></div>
+
+        <div class="guessing" id="guessing" hidden>
+          <p class="guess-hint" id="guess-hint"></p>
+          <div class="candidates" id="candidates"></div>
+          <button type="button" class="answer" id="guess-confirm" hidden></button>
+        </div>
+        <p class="guess-locked" id="guess-locked"></p>
+      </section>
+
+      <section class="panel result" id="result-panel" aria-labelledby="result-name" hidden>
+        <img class="result-art" id="result-art" alt="">
+        <p class="result-lead" id="result-lead"></p>
+        <h2 class="result-name" id="result-name" tabindex="-1"></h2>
+        <p class="result-team" id="result-team"></p>
+        <p class="result-summary" id="result-summary"></p>
+        <dl class="stats" id="stats"></dl>
+        <div class="share-options" id="share-options"></div>
+        <p class="share-status" id="share-status" role="status"></p>
+        <p class="countdown" id="countdown"></p>
+      </section>
+
+      <section class="path" id="path" aria-labelledby="path-heading" hidden>
+        <h2 id="path-heading">Questions asked</h2>
+        <ol id="path-list"></ol>
+      </section>
+
+      <details class="pool" id="pool">
+        <summary><h2 id="pool-heading">All remaining characters</h2></summary>
+        <div id="pool-groups"></div>
+      </details>
     </div>
 
     <!-- The town circle: beads while many remain, seated tokens once 15 or fewer do.
-         Decorative; the list below carries the same information for assistive tech. -->
+         Decorative; the candidate buttons and list carry the same information for assistive tech. -->
     <div class="stage">
       <div class="circle" id="circle" aria-hidden="true">
         <ol class="ring" id="ring"></ol>

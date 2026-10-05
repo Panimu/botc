@@ -2,7 +2,7 @@
   {
     "id": "icon-real-animal",
     "plain": "Is your token's picture a real animal, or a real animal's head?",
-    "dinniman": "I've buried contestants killed by things with fur, scales and far too many legs. Some of you carry one of those beasts painted on your token. Is your token's picture a real animal, or a real animal's head?",
+    "styled": "I've buried contestants killed by things with fur, scales and far too many legs. Some of you carry one of those beasts painted on your token. Is your token's picture a real animal, or a real animal's head?",
     "voice": "Mordecai",
     "yes": {
       "iconShowsAnimal": true
@@ -158,7 +158,7 @@
   {
     "id": "icon-vet-patient",
     "plain": "Would a vet look at your token's picture and recognise a real-world animal?",
-    "dinniman": "I have been to the vet, and I was BRAVE and STUNNING about it. A vet knows a real animal when they see one. Would a vet look at your token's picture and recognise a real-world animal?",
+    "styled": "I have been to the vet, and I was BRAVE and STUNNING about it. A vet knows a real animal when they see one. Would a vet look at your token's picture and recognise a real-world animal?",
     "voice": "Princess Donut",
     "yes": {
       "iconShowsAnimal": true
@@ -313,8 +313,8 @@
   },
   {
     "id": "icon-person-shaped",
-    "plain": "Does your token's picture show a whole person-shaped figure, with a body, rather than just part of one?",
-    "dinniman": "I know what it's like to be a body that doesn't stay one shape. Some tokens show a whole figure, arms and all. Does your token's picture show a whole person-shaped figure, with a body, rather than just part of one?",
+    "plain": "Does your token's picture show a whole person-shaped figure with a body, not just part of one?",
+    "styled": "I know what it's like to be a body that doesn't stay one shape. Some tokens show a whole figure, arms and all. Does your token's picture show a whole person-shaped figure, with a body, rather than just part of one?",
     "voice": "Katia",
     "yes": {
       "iconShowsHumanFigure": true
@@ -479,7 +479,7 @@
   {
     "id": "icon-somebody-there",
     "plain": "Is there a person, or the ghost of one, drawn on your token with a body and limbs?",
-    "dinniman": "Darling, my audience adores a human face, but they'll settle for a whole silhouette. So tell me, between us: is there a person, or the ghost of one, drawn on your token with a body and limbs?",
+    "styled": "Darling, my audience adores a human face, but they'll settle for a whole silhouette. So tell me, between us: is there a person, or the ghost of one, drawn on your token with a body and limbs?",
     "voice": "Odette",
     "yes": {
       "iconShowsHumanFigure": true
@@ -644,7 +644,7 @@
   {
     "id": "icon-bits-and-pieces",
     "plain": "Does your token's picture show a body part on its own, like a hand, mouth, eye, brain or bone?",
-    "dinniman": "YOUR GODDESS APPROVES OF PIECES! Hands, teeth, eyeballs, whole brains, scattered like offerings at my altar! Does your token's picture show a body part on its own, like a hand, mouth, eye, brain or bone?",
+    "styled": "YOUR GODDESS APPROVES OF PIECES! Hands, teeth, eyeballs, whole brains, scattered like offerings at my altar! Does your token's picture show a body part on its own, like a hand, mouth, eye, brain or bone?",
     "voice": "Samantha",
     "yes": {
       "iconShowsBodyPart": true
@@ -793,7 +793,7 @@
   {
     "id": "icon-spare-parts",
     "plain": "Does your token show a piece of a body rather than a whole creature?",
-    "dinniman": "Back in my day we kept our body parts attached, thank you very much. Some of these tokens didn't get the memo. Does your token show a piece of a body rather than a whole creature?",
+    "styled": "Back in my day we kept our body parts attached, thank you very much. Some of these tokens didn't get the memo. Does your token show a piece of a body rather than a whole creature?",
     "voice": "Elle",
     "yes": {
       "iconShowsBodyPart": true
@@ -942,7 +942,7 @@
   {
     "id": "icon-skull",
     "plain": "Is there a skull anywhere on your token's picture, even a tiny one?",
-    "dinniman": "Achievement unlocked: Memento Mori! Reward: one decorative cranium, scaled to fit any token. Is there a skull anywhere on your token's picture, even a tiny one?",
+    "styled": "Achievement unlocked: Memento Mori! Reward: one decorative cranium, scaled to fit any token. Is there a skull anywhere on your token's picture, even a tiny one?",
     "voice": "The System AI",
     "yes": {
       "iconHasSkull": true
@@ -1108,7 +1108,7 @@
   {
     "id": "icon-pirate-spots-skull",
     "plain": "Would a sharp-eyed pirate find a skull somewhere in your token's art?",
-    "dinniman": "THIS GOAT has sailed with pirates! In a dream! They taught me to spot a skull at a hundred paces. LOOK CLOSER, MORTAL! Would a sharp-eyed pirate find a skull somewhere in your token's art?",
+    "styled": "THIS GOAT has sailed with pirates! In a dream! They taught me to spot a skull at a hundred paces. LOOK CLOSER, MORTAL! Would a sharp-eyed pirate find a skull somewhere in your token's art?",
     "voice": "Prepotente",
     "yes": {
       "iconHasSkull": true
@@ -1274,7 +1274,7 @@
   {
     "id": "icon-growing-thing",
     "plain": "Does your token's picture include a plant, such as a flower, leaf or tree?",
-    "dinniman": "Everything down here wants to kill me, including some of the shrubbery. I'd still take a nice potted fern over most of the decor. Does your token's picture include a plant, such as a flower, leaf or tree?",
+    "styled": "Everything down here wants to kill me, including some of the shrubbery. I'd still take a nice potted fern over most of the decor. Does your token's picture include a plant, such as a flower, leaf or tree?",
     "voice": "Carl",
     "yes": {
       "iconShowsPlant": true
@@ -1436,7 +1436,7 @@
   {
     "id": "icon-leafy",
     "plain": "Is there a flower, stem, leaf or tree drawn on your token?",
-    "dinniman": "Sniff token. Chew green bit! RAWR! (Translation: he is checking for something leafy.) Is there a flower, stem, leaf or tree drawn on your token?",
+    "styled": "Sniff token. Chew green bit! RAWR! (Translation: he is checking for something leafy.) Is there a flower, stem, leaf or tree drawn on your token?",
     "voice": "Mongo",
     "yes": {
       "iconShowsPlant": true
@@ -1598,7 +1598,7 @@
   {
     "id": "icon-snack",
     "plain": "Is your token's picture something to eat or drink?",
-    "dinniman": "I have STANDARDS, and those standards involve being served promptly. If your token is a snack, I'm claiming it. Is your token's picture something to eat or drink?",
+    "styled": "I have STANDARDS, and those standards involve being served promptly. If your token is a snack, I'm claiming it. Is your token's picture something to eat or drink?",
     "voice": "Princess Donut",
     "yes": {
       "iconShowsFoodOrDrink": true
@@ -1755,7 +1755,7 @@
   {
     "id": "icon-ready-to-serve",
     "plain": "Is there food or drink on your token, ready to eat or drink?",
-    "dinniman": "Our sponsors in the food and beverage sector are watching this round very closely! Brand synergy is everything. Is there food or drink on your token, ready to eat or drink?",
+    "styled": "Our sponsors in the food and beverage sector are watching this round very closely! Brand synergy is everything. Is there food or drink on your token, ready to eat or drink?",
     "voice": "Zev",
     "yes": {
       "iconShowsFoodOrDrink": true
@@ -1912,7 +1912,7 @@
   {
     "id": "icon-weapon",
     "plain": "Is your token's picture a weapon, made for fighting or killing?",
-    "dinniman": "First rule of the dungeon: know what's in your hands. Some of you were issued art that's basically a threat. Is your token's picture a weapon, made for fighting or killing?",
+    "styled": "First rule of the dungeon: know what's in your hands. Some of you were issued art that's basically a threat. Is your token's picture a weapon, made for fighting or killing?",
     "voice": "Mordecai",
     "yes": {
       "iconShowsWeapon": true
@@ -2066,7 +2066,7 @@
   {
     "id": "icon-made-to-hurt",
     "plain": "Was the thing on your token made to hurt someone?",
-    "dinniman": "Blades! Bolts! Bombs! Your goddess would worship any one of them, if she had hands! Was the thing on your token made to hurt someone?",
+    "styled": "Blades! Bolts! Bombs! Your goddess would worship any one of them, if she had hands! Was the thing on your token made to hurt someone?",
     "voice": "Samantha",
     "yes": {
       "iconShowsWeapon": true
@@ -2220,7 +2220,7 @@
   {
     "id": "icon-circle",
     "plain": "Is your token's picture basically a circle?",
-    "dinniman": "Folks, we've got squares, we've got squiggles, and we've got contestants who are just one big beautiful circle! Is your token's picture basically a circle?",
+    "styled": "Folks, we've got squares, we've got squiggles, and we've got contestants who are just one big beautiful circle! Is your token's picture basically a circle?",
     "voice": "The Host",
     "yes": {
       "iconIsRound": true
@@ -2367,7 +2367,7 @@
   {
     "id": "icon-disc-outline",
     "plain": "Is the outline of your token's picture round, like a disc or a ball?",
-    "dinniman": "I've been turned into ice and I still have better posture than most of these drawings. Some of them are just round. Is the outline of your token's picture round, like a disc or a ball?",
+    "styled": "I've been turned into ice and I still have better posture than most of these drawings. Some of them are just round. Is the outline of your token's picture round, like a disc or a ball?",
     "voice": "Elle",
     "yes": {
       "iconIsRound": true
@@ -2514,7 +2514,7 @@
   {
     "id": "icon-hat",
     "plain": "Is there a hat, helmet, crown or tiara on your token's picture?",
-    "dinniman": "A tiara is not an accessory, it is a LIFESTYLE. Lesser headwear is acceptable, I suppose. Is there a hat, helmet, crown or tiara on your token's picture?",
+    "styled": "A tiara is not an accessory, it is a LIFESTYLE. Lesser headwear is acceptable, I suppose. Is there a hat, helmet, crown or tiara on your token's picture?",
     "voice": "Princess Donut",
     "yes": {
       "iconShowsHeadwear": true
@@ -2676,7 +2676,7 @@
   {
     "id": "icon-headgear",
     "plain": "Does your token show headgear, something worn on top of the head?",
-    "dinniman": "My horns are crown enough, but I respect those who must buy theirs! KNEEL! Then answer. Does your token show headgear, something worn on top of the head?",
+    "styled": "My horns are crown enough, but I respect those who must buy theirs! KNEEL! Then answer. Does your token show headgear, something worn on top of the head?",
     "voice": "Prepotente",
     "yes": {
       "iconShowsHeadwear": true
@@ -2838,7 +2838,7 @@
   {
     "id": "icon-wearable",
     "plain": "Is your token's picture something made to be worn, like a hat, mask, glasses, shoe, ring or clothing?",
-    "dinniman": "Merch opportunity alert! Anything a viewer can wear is a product line waiting to happen. Is your token's picture something made to be worn, like a hat, mask, glasses, shoe, ring or clothing?",
+    "styled": "Merch opportunity alert! Anything a viewer can wear is a product line waiting to happen. Is your token's picture something made to be worn, like a hat, mask, glasses, shoe, ring or clothing?",
     "voice": "Zev",
     "yes": {
       "iconShowsWearable": true
@@ -2993,7 +2993,7 @@
   {
     "id": "icon-put-it-on",
     "plain": "Is the thing on your token made to be worn on the body?",
-    "dinniman": "Let's talk fashion, darling. My guests always look their best, even when the lighting is cruel. Is the thing on your token made to be worn on the body?",
+    "styled": "Let's talk fashion, darling. My guests always look their best, even when the lighting is cruel. Is the thing on your token made to be worn on the body?",
     "voice": "Odette",
     "yes": {
       "iconShowsWearable": true
@@ -3148,7 +3148,7 @@
   {
     "id": "icon-paperwork",
     "plain": "Does your token show paper, a book, a scroll or handwriting?",
-    "dinniman": "The dungeon has paperwork. Of course it does. Somewhere there's a form for being eaten. Does your token show paper, a book, a scroll or handwriting?",
+    "styled": "The dungeon has paperwork. Of course it does. Somewhere there's a form for being eaten. Does your token show paper, a book, a scroll or handwriting?",
     "voice": "Carl",
     "yes": {
       "iconShowsWriting": true
@@ -3311,7 +3311,7 @@
   {
     "id": "icon-something-to-read",
     "plain": "Is there writing, or something to read or write on, in your token's picture?",
-    "dinniman": "Patch note: literacy now grants plus one to Smugness. Contestants with reading material on their token may claim the bonus. Is there writing, or something to read or write on, in your token's picture?",
+    "styled": "Patch note: literacy now grants plus one to Smugness. Contestants with reading material on their token may claim the bonus. Is there writing, or something to read or write on, in your token's picture?",
     "voice": "The System AI",
     "yes": {
       "iconShowsWriting": true
@@ -3474,7 +3474,7 @@
   {
     "id": "icon-flame",
     "plain": "Is there a flame drawn on your token's picture?",
-    "dinniman": "FIRE! Your goddess loves fire! It purifies! It screams! It ruins carpets! Is there a flame drawn on your token's picture?",
+    "styled": "FIRE! Your goddess loves fire! It purifies! It screams! It ruins carpets! Is there a flame drawn on your token's picture?",
     "voice": "Samantha",
     "yes": {
       "iconShowsFire": true
@@ -3635,7 +3635,7 @@
   {
     "id": "icon-smoke-alarm",
     "plain": "Would your token's picture set off a smoke alarm, because something in it is burning?",
-    "dinniman": "I'm an ice elemental, sweetheart, so I take open flames personally. Tell me now so I can stand well back. Would your token's picture set off a smoke alarm, because something in it is burning?",
+    "styled": "I'm an ice elemental, sweetheart, so I take open flames personally. Tell me now so I can stand well back. Would your token's picture set off a smoke alarm, because something in it is burning?",
     "voice": "Elle",
     "yes": {
       "iconShowsFire": true
@@ -3796,7 +3796,7 @@
   {
     "id": "icon-light-giver",
     "plain": "Is your token's picture something built to give light, like a candle, lamp or lighthouse?",
-    "dinniman": "The dark down here is the worst part. Anything that pushes it back is a friend of mine. Is your token's picture something built to give light, like a candle, lamp or lighthouse?",
+    "styled": "The dark down here is the worst part. Anything that pushes it back is a friend of mine. Is your token's picture something built to give light, like a candle, lamp or lighthouse?",
     "voice": "Katia",
     "yes": {
       "iconShowsLightSource": true
@@ -3956,7 +3956,7 @@
   {
     "id": "icon-light-the-dark",
     "plain": "Is the thing on your token there to light up the dark?",
-    "dinniman": "The contestants who carry light live longer. Not by much, but by enough. Is the thing on your token there to light up the dark?",
+    "styled": "The contestants who carry light live longer. Not by much, but by enough. Is the thing on your token there to light up the dark?",
     "voice": "Mordecai",
     "yes": {
       "iconShowsLightSource": true
@@ -4116,7 +4116,7 @@
   {
     "id": "icon-symbol",
     "plain": "Is your token's picture a symbol or pattern rather than a real object, creature or place?",
-    "dinniman": "Some people got an actual thing on their token. Others got a squiggle and a lot of meaning. Is your token's picture a symbol or pattern rather than a real object, creature or place?",
+    "styled": "Some people got an actual thing on their token. Others got a squiggle and a lot of meaning. Is your token's picture a symbol or pattern rather than a real object, creature or place?",
     "voice": "Carl",
     "yes": {
       "iconIsAbstractSymbol": true
@@ -4264,7 +4264,7 @@
   {
     "id": "icon-sign-not-thing",
     "plain": "Is your token's picture more of a sign than a thing: a shape, emblem or pattern?",
-    "dinniman": "THIS GOAT sees SYMBOLS everywhere! Sigils! Omens! Possibly a sandwich! Is your token's picture more of a sign than a thing: a shape, emblem or pattern?",
+    "styled": "THIS GOAT sees SYMBOLS everywhere! Sigils! Omens! Possibly a sandwich! Is your token's picture more of a sign than a thing: a shape, emblem or pattern?",
     "voice": "Prepotente",
     "yes": {
       "iconIsAbstractSymbol": true
@@ -4412,7 +4412,7 @@
   {
     "id": "icon-face",
     "plain": "Is there a face on your token's picture, like a person's, an animal's or a skull's?",
-    "dinniman": "I never forget a face, darling. It's the first thing I look for in a guest. Is there a face on your token's picture, like a person's, an animal's or a skull's?",
+    "styled": "I never forget a face, darling. It's the first thing I look for in a guest. Is there a face on your token's picture, like a person's, an animal's or a skull's?",
     "voice": "Odette",
     "yes": {
       "iconHasFace": true
@@ -4553,7 +4553,7 @@
   {
     "id": "icon-looks-back",
     "plain": "Is there a face anywhere in your token's picture, even one seen from the side?",
-    "dinniman": "A face is how one connects with one's FANS. Mine is flawless from every angle, obviously. Is there a face anywhere in your token's picture, even one seen from the side?",
+    "styled": "A face is how one connects with one's FANS. Mine is flawless from every angle, obviously. Is there a face anywhere in your token's picture, even one seen from the side?",
     "voice": "Princess Donut",
     "yes": {
       "iconHasFace": true
@@ -4694,7 +4694,7 @@
   {
     "id": "icon-pocket-sized",
     "plain": "Does your token show something small enough to hold in one hand?",
-    "dinniman": "We love portable products here at the network! Easy to carry, easy to brand. Does your token show something small enough to hold in one hand?",
+    "styled": "We love portable products here at the network! Easy to carry, easy to brand. Does your token show something small enough to hold in one hand?",
     "voice": "Zev",
     "yes": {
       "iconFitsInOneHand": true
@@ -4774,7 +4774,7 @@
   {
     "id": "icon-one-hand-grab",
     "plain": "Is the thing on your token small enough to pick up with one hand?",
-    "dinniman": "Pick it up! Carry it everywhere! RAWR! (Translator here: he's asking whether it's small, and please don't let him eat it.) Is the thing on your token small enough to pick up with one hand?",
+    "styled": "Pick it up! Carry it everywhere! RAWR! (Translator here: he's asking whether it's small, and please don't let him eat it.) Is the thing on your token small enough to pick up with one hand?",
     "voice": "Mongo",
     "yes": {
       "iconFitsInOneHand": true
@@ -4854,7 +4854,7 @@
   {
     "id": "icon-garden",
     "plain": "Would your token's picture look at home in a garden?",
-    "dinniman": "Sometimes I picture somewhere quiet after all this: a little garden, things growing, nobody screaming. Would your token's picture look at home in a garden?",
+    "styled": "Sometimes I picture somewhere quiet after all this: a little garden, things growing, nobody screaming. Would your token's picture look at home in a garden?",
     "voice": "Katia",
     "yes": {
       "iconFoundInGarden": true
@@ -4988,7 +4988,7 @@
   {
     "id": "icon-flowerbeds",
     "plain": "Would a gardener expect to see your token's picture among the flowerbeds?",
-    "dinniman": "I kept roses for forty years before the world ended, and I know what belongs in a garden. Would a gardener expect to see your token's picture among the flowerbeds?",
+    "styled": "I kept roses for forty years before the world ended, and I know what belongs in a garden. Would a gardener expect to see your token's picture among the flowerbeds?",
     "voice": "Elle",
     "yes": {
       "iconFoundInGarden": true
@@ -5122,7 +5122,7 @@
   {
     "id": "icon-toy-box",
     "plain": "Would your token's picture look at home in a child's toy box?",
-    "dinniman": "I do not PLAY with toys. I permit toys to entertain me. There is a difference. Would your token's picture look at home in a child's toy box?",
+    "styled": "I do not PLAY with toys. I permit toys to entertain me. There is a difference. Would your token's picture look at home in a child's toy box?",
     "voice": "Princess Donut",
     "yes": {
       "iconFoundInToyBox": true
@@ -5219,7 +5219,7 @@
   {
     "id": "icon-playtime",
     "plain": "Is your token's picture something a child would play with?",
-    "dinniman": "New loot box tier: Playtime! Contents may include joy, nostalgia, or a choking hazard. Is your token's picture something a child would play with?",
+    "styled": "New loot box tier: Playtime! Contents may include joy, nostalgia, or a choking hazard. Is your token's picture something a child would play with?",
     "voice": "The System AI",
     "yes": {
       "iconFoundInToyBox": true
@@ -5316,7 +5316,7 @@
   {
     "id": "icon-kitchen",
     "plain": "Would your token's picture look at home in a kitchen?",
-    "dinniman": "I'd kill for a normal kitchen. A kettle. A clean pan. Nothing in the sink trying to grab me. Would your token's picture look at home in a kitchen?",
+    "styled": "I'd kill for a normal kitchen. A kettle. A clean pan. Nothing in the sink trying to grab me. Would your token's picture look at home in a kitchen?",
     "voice": "Carl",
     "yes": {
       "iconFoundInKitchen": true
@@ -5457,7 +5457,7 @@
   {
     "id": "icon-cooks-kit",
     "plain": "Would a cook expect to find the thing on your token in their kitchen?",
-    "dinniman": "I used to cook for contestants. Some of them even said thank you before they died. Would a cook expect to find the thing on your token in their kitchen?",
+    "styled": "I used to cook for contestants. Some of them even said thank you before they died. Would a cook expect to find the thing on your token in their kitchen?",
     "voice": "Mordecai",
     "yes": {
       "iconFoundInKitchen": true
@@ -5598,7 +5598,7 @@
   {
     "id": "icon-pub",
     "plain": "Would your token's picture look at home in a pub?",
-    "dinniman": "Now this is my kind of question. I've propped up a few bars in my time, and I know what belongs in one. Would your token's picture look at home in a pub?",
+    "styled": "Now this is my kind of question. I've propped up a few bars in my time, and I know what belongs in one. Would your token's picture look at home in a pub?",
     "voice": "Elle",
     "yes": {
       "iconFoundInPub": true
@@ -5724,7 +5724,7 @@
   {
     "id": "icon-last-orders",
     "plain": "Is your token's picture a pub thing, like a drink or an inn sign?",
-    "dinniman": "Last orders, folks! Some contestants brought the whole tavern with them, and the audience is thirsty! Is your token's picture a pub thing, like a drink or an inn sign?",
+    "styled": "Last orders, folks! Some contestants brought the whole tavern with them, and the audience is thirsty! Is your token's picture a pub thing, like a drink or an inn sign?",
     "voice": "The Host",
     "yes": {
       "iconFoundInPub": true
@@ -5850,7 +5850,7 @@
   {
     "id": "icon-church",
     "plain": "Would your token's picture look at home in a church?",
-    "dinniman": "Confession is good for the soul, darling, and even better for ratings. Let's set the scene somewhere holy. Would your token's picture look at home in a church?",
+    "styled": "Confession is good for the soul, darling, and even better for ratings. Let's set the scene somewhere holy. Would your token's picture look at home in a church?",
     "voice": "Odette",
     "yes": {
       "iconFoundInChurch": true
@@ -5978,7 +5978,7 @@
   {
     "id": "icon-vicar-knows",
     "plain": "Would a vicar recognise your token's picture as something that belongs in church?",
-    "dinniman": "THIS GOAT once ate a hymn book! It was DIVINE! The vicar was less impressed. Would a vicar recognise your token's picture as something that belongs in church?",
+    "styled": "THIS GOAT once ate a hymn book! It was DIVINE! The vicar was less impressed. Would a vicar recognise your token's picture as something that belongs in church?",
     "voice": "Prepotente",
     "yes": {
       "iconFoundInChurch": true
@@ -6106,7 +6106,7 @@
   {
     "id": "icon-sea",
     "plain": "Would your token's picture look at home at sea or on the coast?",
-    "dinniman": "I've never had sea legs, and the dungeon's idea of a beach is mostly teeth. Would your token's picture look at home at sea or on the coast?",
+    "styled": "I've never had sea legs, and the dungeon's idea of a beach is mostly teeth. Would your token's picture look at home at sea or on the coast?",
     "voice": "Carl",
     "yes": {
       "iconFoundAtSea": true
@@ -6254,7 +6254,7 @@
   {
     "id": "icon-by-the-water",
     "plain": "Does your token's picture belong by the sea, on a boat, in the water or on the shore?",
-    "dinniman": "Go swim! Splash splash! RAWR! (Translation, from the cat who owns him: he wants to know if your token is a seaside sort of thing.) Does your token's picture belong by the sea, on a boat, in the water or on the shore?",
+    "styled": "Go swim! Splash splash! RAWR! (Translation, from the cat who owns him: he wants to know if your token is a seaside sort of thing.) Does your token's picture belong by the sea, on a boat, in the water or on the shore?",
     "voice": "Mongo",
     "yes": {
       "iconFoundAtSea": true
@@ -6402,7 +6402,7 @@
   {
     "id": "icon-library",
     "plain": "Would your token's picture look at home in a library or a scholar's study?",
-    "dinniman": "Our educational demographic is small but extremely loyal! They love a good bookshelf backdrop. Would your token's picture look at home in a library or a scholar's study?",
+    "styled": "Our educational demographic is small but extremely loyal! They love a good bookshelf backdrop. Would your token's picture look at home in a library or a scholar's study?",
     "voice": "Zev",
     "yes": {
       "iconFoundInLibraryOrStudy": true
@@ -6529,7 +6529,7 @@
   {
     "id": "icon-librarians-desk",
     "plain": "Would someone who works in a library expect to find the thing on your token on their desk?",
-    "dinniman": "I always felt safest around books. Quiet rooms, patient people, nothing trying to eat you. Would someone who works in a library expect to find the thing on your token on their desk?",
+    "styled": "I always felt safest around books. Quiet rooms, patient people, nothing trying to eat you. Would someone who works in a library expect to find the thing on your token on their desk?",
     "voice": "Katia",
     "yes": {
       "iconFoundInLibraryOrStudy": true
@@ -6656,7 +6656,7 @@
   {
     "id": "icon-graveyard",
     "plain": "Would your token's picture look at home in a graveyard?",
-    "dinniman": "Graveyards! Your goddess's favourite picnic spot! So many friends, all lying down! Would your token's picture look at home in a graveyard?",
+    "styled": "Graveyards! Your goddess's favourite picnic spot! So many friends, all lying down! Would your token's picture look at home in a graveyard?",
     "voice": "Samantha",
     "yes": {
       "iconFoundInGraveyard": true
@@ -6771,7 +6771,7 @@
   {
     "id": "icon-dug-up",
     "plain": "Is your token's picture something grim you'd expect in a cemetery, like bones, a skull or a gravedigger's spade?",
-    "dinniman": "I've helped bury more contestants than I can count. You learn what turns up in the dirt. Is your token's picture something grim you'd expect in a cemetery, like bones, a skull or a gravedigger's spade?",
+    "styled": "I've helped bury more contestants than I can count. You learn what turns up in the dirt. Is your token's picture something grim you'd expect in a cemetery, like bones, a skull or a gravedigger's spade?",
     "voice": "Mordecai",
     "yes": {
       "iconFoundInGraveyard": true
@@ -6886,7 +6886,7 @@
   {
     "id": "icon-bitey",
     "plain": "Does your token's picture look like it could bite you?",
-    "dinniman": "Keep your hands inside the vehicle, folks, because some of these tokens have TEETH! Does your token's picture look like it could bite you?",
+    "styled": "Keep your hands inside the vehicle, folks, because some of these tokens have TEETH! Does your token's picture look like it could bite you?",
     "voice": "The Host",
     "yes": {
       "iconCouldBite": true
@@ -7021,7 +7021,7 @@
   {
     "id": "icon-mind-your-fingers",
     "plain": "Would you keep your fingers away from your token's picture in case it bit them?",
-    "dinniman": "I bite people who annoy me, and I do it with ELEGANCE. Some of these drawings look like they'd do it without any class at all. Would you keep your fingers away from your token's picture in case it bit them?",
+    "styled": "I bite people who annoy me, and I do it with ELEGANCE. Some of these drawings look like they'd do it without any class at all. Would you keep your fingers away from your token's picture in case it bit them?",
     "voice": "Princess Donut",
     "yes": {
       "iconCouldBite": true
@@ -7156,7 +7156,7 @@
   {
     "id": "icon-music",
     "plain": "Is your token's picture about music, like written notes or an instrument?",
-    "dinniman": "Every great show needs a theme tune, darling. Some of my guests brought their own. Is your token's picture about music, like written notes or an instrument?",
+    "styled": "Every great show needs a theme tune, darling. Some of my guests brought their own. Is your token's picture about music, like written notes or an instrument?",
     "voice": "Odette",
     "yes": [
       "choirboy",
@@ -7321,7 +7321,7 @@
   {
     "id": "icon-play-a-tune",
     "plain": "Are there musical notes or a musical instrument drawn on your token?",
-    "dinniman": "Bonus round: Name That Token! Musical contestants receive a complimentary kazoo, which will explode. Are there musical notes or a musical instrument drawn on your token?",
+    "styled": "Bonus round: Name That Token! Musical contestants receive a complimentary kazoo, which will explode. Are there musical notes or a musical instrument drawn on your token?",
     "voice": "The System AI",
     "yes": [
       "choirboy",
@@ -7486,7 +7486,7 @@
   {
     "id": "icon-cross",
     "plain": "Is there a Christian cross, upright or upside down, on your token's picture?",
-    "dinniman": "I wasn't raised religious, but down here I'll take any protection going. Some tokens come pre-blessed, or pre-cursed. Is there a Christian cross, upright or upside down, on your token's picture?",
+    "styled": "I wasn't raised religious, but down here I'll take any protection going. Some tokens come pre-blessed, or pre-cursed. Is there a Christian cross, upright or upside down, on your token's picture?",
     "voice": "Carl",
     "yes": [
       "monk",
@@ -7656,7 +7656,7 @@
   {
     "id": "icon-crucifix-shape",
     "plain": "Is a church-style cross drawn somewhere on your token, the right way up or upside down?",
-    "dinniman": "Your goddess has been worshipped under many symbols, and she remembers every single one! Is a church-style cross drawn somewhere on your token, the right way up or upside down?",
+    "styled": "Your goddess has been worshipped under many symbols, and she remembers every single one! Is a church-style cross drawn somewhere on your token, the right way up or upside down?",
     "voice": "Samantha",
     "yes": [
       "monk",
@@ -7826,7 +7826,7 @@
   {
     "id": "icon-spread-wings",
     "plain": "Are there spread wings on your token's picture?",
-    "dinniman": "If I had wings I'd be unstoppable. More unstoppable. Spread ones, so everyone could see. Are there spread wings on your token's picture?",
+    "styled": "If I had wings I'd be unstoppable. More unstoppable. Spread ones, so everyone could see. Are there spread wings on your token's picture?",
     "voice": "Princess Donut",
     "yes": [
       "highpriestess",
@@ -7991,7 +7991,7 @@
   {
     "id": "icon-open-wings",
     "plain": "Does your token's art show a pair of open wings?",
-    "dinniman": "Wings test brilliantly with focus groups! Aspirational, uplifting, very on-brand. Does your token's art show a pair of open wings?",
+    "styled": "Wings test brilliantly with focus groups! Aspirational, uplifting, very on-brand. Does your token's art show a pair of open wings?",
     "voice": "Zev",
     "yes": [
       "highpriestess",
@@ -8156,7 +8156,7 @@
   {
     "id": "icon-star-shape",
     "plain": "Is there a star shape anywhere on your token's picture?",
-    "dinniman": "Everybody wants to be a star, folks, but only a few tokens actually have one drawn on! Is there a star shape anywhere on your token's picture?",
+    "styled": "Everybody wants to be a star, folks, but only a few tokens actually have one drawn on! Is there a star shape anywhere on your token's picture?",
     "voice": "The Host",
     "yes": [
       "atheist",
@@ -8322,7 +8322,7 @@
   {
     "id": "icon-laboratory",
     "plain": "Would your token's picture look at home in a science laboratory?",
-    "dinniman": "Achievement unlocked: Mad Scientist! Safety goggles not included, nor recommended. Would your token's picture look at home in a science laboratory?",
+    "styled": "Achievement unlocked: Mad Scientist! Safety goggles not included, nor recommended. Would your token's picture look at home in a science laboratory?",
     "voice": "The System AI",
     "yes": [
       "boffin",
@@ -8483,7 +8483,7 @@
   {
     "id": "icon-flask-or-atom",
     "plain": "Is the thing on your token a piece of science, like a flask, a test tube or an atom?",
-    "dinniman": "I used to be scared of chemistry class. Now I'm scared of everything else, so chemistry seems cosy. Is the thing on your token a piece of science, like a flask, a test tube or an atom?",
+    "styled": "I used to be scared of chemistry class. Now I'm scared of everything else, so chemistry seems cosy. Is the thing on your token a piece of science, like a flask, a test tube or an atom?",
     "voice": "Katia",
     "yes": [
       "boffin",
@@ -8644,7 +8644,7 @@
   {
     "id": "icon-look-up",
     "plain": "Would you look up into the sky to see the thing on your token?",
-    "dinniman": "I spend half my time floating these days and the view's lovely. Some of you belong up here with me. Would you look up into the sky to see the thing on your token?",
+    "styled": "I spend half my time floating these days and the view's lovely. Some of you belong up here with me. Would you look up into the sky to see the thing on your token?",
     "voice": "Elle",
     "yes": [
       "balloonist",
@@ -8793,7 +8793,7 @@
   {
     "id": "icon-birthday",
     "plain": "Would your token's picture look at home at a child's birthday party?",
-    "dinniman": "Every day should be MY birthday, with streamers and treats and adoring guests. Would your token's picture look at home at a child's birthday party?",
+    "styled": "Every day should be MY birthday, with streamers and treats and adoring guests. Would your token's picture look at home at a child's birthday party?",
     "voice": "Princess Donut",
     "yes": [
       "acrobat",
@@ -8932,7 +8932,7 @@
   {
     "id": "icon-party-things",
     "plain": "Is your token's picture a party decoration or treat, like bunting, a lollipop or a gift bow?",
-    "dinniman": "Celebrations drive engagement! Nothing says family-friendly viewing like a bit of bunting before the bloodshed. Is your token's picture a party decoration or treat, like bunting, a lollipop or a gift bow?",
+    "styled": "Celebrations drive engagement! Nothing says family-friendly viewing like a bit of bunting before the bloodshed. Is your token's picture a party decoration or treat, like bunting, a lollipop or a gift bow?",
     "voice": "Zev",
     "yes": [
       "acrobat",
@@ -9071,7 +9071,7 @@
   {
     "id": "icon-pirate-ship",
     "plain": "Would your token's picture look at home on a pirate ship?",
-    "dinniman": "THIS GOAT shall be CAPTAIN! Of a ship! Of the seas! Of YOU! Would your token's picture look at home on a pirate ship?",
+    "styled": "THIS GOAT shall be CAPTAIN! Of a ship! Of the seas! Of YOU! Would your token's picture look at home on a pirate ship?",
     "voice": "Prepotente",
     "yes": [
       "sailor",
@@ -9198,7 +9198,7 @@
   {
     "id": "icon-circus-ring",
     "plain": "Would your token's picture look at home in a circus ring?",
-    "dinniman": "Roll up, roll up! Tonight's show features clowns, catastrophes and one very confused goat! Would your token's picture look at home in a circus ring?",
+    "styled": "Roll up, roll up! Tonight's show features clowns, catastrophes and one very confused goat! Would your token's picture look at home in a circus ring?",
     "voice": "The Host",
     "yes": [
       "mutant",
@@ -9342,7 +9342,7 @@
   {
     "id": "icon-barbershop",
     "plain": "Would your token's picture look at home in a shop where men go for a haircut and a shave?",
-    "dinniman": "My late husband went to the same little shop for his haircut for fifty years and came back looking exactly the same every time. Would your token's picture look at home in a shop where men go for a haircut and a shave?",
+    "styled": "My late husband went to the same little shop for his haircut for fifty years and came back looking exactly the same every time. Would your token's picture look at home in a shop where men go for a haircut and a shave?",
     "voice": "Elle",
     "yes": [
       "barber",
@@ -9508,7 +9508,7 @@
   {
     "id": "icon-building",
     "plain": "Is your token's picture a building?",
-    "dinniman": "Most of these tokens are things you could pick up. A couple are things you could live in, if you're desperate. Is your token's picture a building?",
+    "styled": "Most of these tokens are things you could pick up. A couple are things you could live in, if you're desperate. Is your token's picture a building?",
     "voice": "Carl",
     "yes": [
       "mayor",
@@ -9673,7 +9673,7 @@
   {
     "id": "icon-liquid",
     "plain": "Can you see liquid in your token's picture?",
-    "dinniman": "Whatever's sloshing around in your art, don't drink it. That's free advice. Can you see liquid in your token's picture?",
+    "styled": "Whatever's sloshing around in your art, don't drink it. That's free advice. Can you see liquid in your token's picture?",
     "voice": "Mordecai",
     "yes": [
       "courtier",
@@ -9832,7 +9832,7 @@
   {
     "id": "icon-tentacles",
     "plain": "Are there tentacles on your token's picture?",
-    "dinniman": "TENTACLES! The finest of all limbs! Your goddess would trade her entire missing body for eight of them! Are there tentacles on your token's picture?",
+    "styled": "TENTACLES! The finest of all limbs! Your goddess would trade her entire missing body for eight of them! Are there tentacles on your token's picture?",
     "voice": "Samantha",
     "yes": [
       "nodashii",
@@ -9998,7 +9998,7 @@
   {
     "id": "icon-octopus-arm",
     "plain": "Does your token's art have at least one octopus-style tentacle?",
-    "dinniman": "Saw wiggly arm! Scared! Brave! RAWR! (Translation: he's asking about tentacles. Again.) Does your token's art have at least one octopus-style tentacle?",
+    "styled": "Saw wiggly arm! Scared! Brave! RAWR! (Translation: he's asking about tentacles. Again.) Does your token's art have at least one octopus-style tentacle?",
     "voice": "Mongo",
     "yes": [
       "nodashii",
@@ -10164,7 +10164,7 @@
   {
     "id": "icon-spectacles",
     "plain": "Is your token's picture a pair of glasses or spectacles?",
-    "dinniman": "Some of my guests peer at me over their lenses as though I'm the one being interviewed. So, darling: is your token's picture a pair of glasses or spectacles?",
+    "styled": "Some of my guests peer at me over their lenses as though I'm the one being interviewed. So, darling: is your token's picture a pair of glasses or spectacles?",
     "voice": "Odette",
     "yes": [
       "grandmother",
@@ -10331,7 +10331,7 @@
   {
     "id": "icon-hand",
     "plain": "Is a hand or a handprint one of the main things drawn on your token?",
-    "dinniman": "Hands are funny. I can change mine into almost anything now, but I still notice everyone else's. Is a hand or a handprint one of the main things drawn on your token?",
+    "styled": "Hands are funny. I can change mine into almost anything now, but I still notice everyone else's. Is a hand or a handprint one of the main things drawn on your token?",
     "voice": "Katia",
     "yes": [
       "butler",
@@ -10493,7 +10493,7 @@
   {
     "id": "icon-reaching-hand",
     "plain": "Does your token's art show a hand holding something, reaching out, or leaving a print?",
-    "dinniman": "Sponsor shout-out: Handy Gloves, for contestants who still have hands! Does your token's art show a hand holding something, reaching out, or leaving a print?",
+    "styled": "Sponsor shout-out: Handy Gloves, for contestants who still have hands! Does your token's art show a hand holding something, reaching out, or leaving a print?",
     "voice": "The System AI",
     "yes": [
       "butler",
@@ -10655,7 +10655,7 @@
   {
     "id": "icon-mouth",
     "plain": "Is your token's picture a mouth, lips or teeth on their own, without the rest of a face?",
-    "dinniman": "Your goddess is ALL face and no body, so she respects those who are all mouth and no face! Is your token's picture a mouth, lips or teeth on their own, without the rest of a face?",
+    "styled": "Your goddess is ALL face and no body, so she respects those who are all mouth and no face! Is your token's picture a mouth, lips or teeth on their own, without the rest of a face?",
     "voice": "Samantha",
     "yes": [
       "snitch",
@@ -10668,7 +10668,7 @@
   {
     "id": "icon-big-mouth",
     "plain": "Is your token's picture basically just a big mouth?",
-    "dinniman": "THIS GOAT has the LOUDEST mouth in the dungeon! Is there a challenger? SPEAK! Is your token's picture basically just a big mouth?",
+    "styled": "THIS GOAT has the LOUDEST mouth in the dungeon! Is there a challenger? SPEAK! Is your token's picture basically just a big mouth?",
     "voice": "Prepotente",
     "yes": [
       "snitch",
@@ -10681,7 +10681,7 @@
   {
     "id": "icon-lone-eye",
     "plain": "Is there a single eye drawn on its own on your token, not as part of a face?",
-    "dinniman": "One eye, watching, unblinking. I find that very flattering on a guest. Is there a single eye drawn on its own on your token, not as part of a face?",
+    "styled": "One eye, watching, unblinking. I find that very flattering on a guest. Is there a single eye drawn on its own on your token, not as part of a face?",
     "voice": "Odette",
     "yes": [
       "cultleader",
@@ -10849,7 +10849,7 @@
   {
     "id": "icon-watching-eye",
     "plain": "Is something on your token watching you with one lone eye?",
-    "dinniman": "Viewer surveillance is a key part of the experience! We love an eye-catching logo, literally. Is something on your token watching you with one lone eye?",
+    "styled": "Viewer surveillance is a key part of the experience! We love an eye-catching logo, literally. Is something on your token watching you with one lone eye?",
     "voice": "Zev",
     "yes": [
       "cultleader",
@@ -11017,7 +11017,7 @@
   {
     "id": "icon-jeweller",
     "plain": "Would your token's picture look at home in a jeweller's window?",
-    "dinniman": "I have a sparkling collar and a sparkling personality. Both are priceless. Would your token's picture look at home in a jeweller's window?",
+    "styled": "I have a sparkling collar and a sparkling personality. Both are priceless. Would your token's picture look at home in a jeweller's window?",
     "voice": "Princess Donut",
     "yes": [
       "virgin",
@@ -11178,7 +11178,7 @@
   {
     "id": "icon-farm",
     "plain": "Would your token's picture look at home on a farm?",
-    "dinniman": "Like farm! Chase goat! RAWR! (Narration: this dinosaur has been banned from several farms.) Would your token's picture look at home on a farm?",
+    "styled": "Like farm! Chase goat! RAWR! (Narration: this dinosaur has been banned from several farms.) Would your token's picture look at home on a farm?",
     "voice": "Mongo",
     "yes": [
       "farmer",
@@ -11325,7 +11325,7 @@
   {
     "id": "icon-tool-shed",
     "plain": "Would your token's picture look at home in a tool shed?",
-    "dinniman": "Give me a hammer and a quiet afternoon and I'll fix half this dungeon. The other half deserves to stay broken. Would your token's picture look at home in a tool shed?",
+    "styled": "Give me a hammer and a quiet afternoon and I'll fix half this dungeon. The other half deserves to stay broken. Would your token's picture look at home in a tool shed?",
     "voice": "Carl",
     "yes": [
       "tinker",
@@ -11476,7 +11476,7 @@
   {
     "id": "icon-ancient-egypt",
     "plain": "Does your token's picture look like ancient Egyptian art?",
-    "dinniman": "The pharaohs worshipped goats! THIS GOAT is almost certain! Is it true? IT IS TRUE NOW! Does your token's picture look like ancient Egyptian art?",
+    "styled": "The pharaohs worshipped goats! THIS GOAT is almost certain! Is it true? IT IS TRUE NOW! Does your token's picture look like ancient Egyptian art?",
     "voice": "Prepotente",
     "yes": [
       "highpriestess",
@@ -11636,7 +11636,7 @@
   {
     "id": "icon-key",
     "plain": "Is there a key in your token's picture?",
-    "dinniman": "I lost my house keys the day the world ended and honestly that was the bigger inconvenience. Is there a key in your token's picture?",
+    "styled": "I lost my house keys the day the world ended and honestly that was the bigger inconvenience. Is there a key in your token's picture?",
     "voice": "Elle",
     "yes": [
       "vigormortis"
@@ -11645,7 +11645,7 @@
   {
     "id": "icon-gears",
     "plain": "Are there cogs or gears in your token's picture?",
-    "dinniman": "Diagnostic report: machinery detected in some tokens. Results may be catastrophic. Are there cogs or gears in your token's picture?",
+    "styled": "Diagnostic report: machinery detected in some tokens. Results may be catastrophic. Are there cogs or gears in your token's picture?",
     "voice": "The System AI",
     "yes": [
       "clockmaker",
@@ -11656,7 +11656,7 @@
   {
     "id": "icon-heart-shape",
     "plain": "Is your token's picture a heart?",
-    "dinniman": "Aww, folks, isn't this sweet? Somebody brought their heart to the dungeon! Is your token's picture a heart?",
+    "styled": "Aww, folks, isn't this sweet? Somebody brought their heart to the dungeon! Is your token's picture a heart?",
     "voice": "The Host",
     "yes": [
       "empath"
@@ -11665,7 +11665,7 @@
   {
     "id": "icon-teddy",
     "plain": "Is your token's picture a teddy bear?",
-    "dinniman": "Want hug! Hug soft bear! RAWR! (Translation: he will hug it to pieces, I promise you.) Is your token's picture a teddy bear?",
+    "styled": "Want hug! Hug soft bear! RAWR! (Translation: he will hug it to pieces, I promise you.) Is your token's picture a teddy bear?",
     "voice": "Mongo",
     "yes": [
       "pixie"
@@ -11674,7 +11674,7 @@
   {
     "id": "icon-book",
     "plain": "Is your token's picture a book?",
-    "dinniman": "I'd give a lot for a good book and a chair that isn't a trap. Is your token's picture a book?",
+    "styled": "I'd give a lot for a good book and a chair that isn't a trap. Is your token's picture a book?",
     "voice": "Carl",
     "yes": [
       "librarian",
@@ -11684,7 +11684,7 @@
   {
     "id": "icon-tied-bow",
     "plain": "Is there a ribbon tied in a bow on your token's picture?",
-    "dinniman": "My mother tied ribbons in my hair when I was little. It's a silly thing to miss down here. Is there a ribbon tied in a bow on your token's picture?",
+    "styled": "My mother tied ribbons in my hair when I was little. It's a silly thing to miss down here. Is there a ribbon tied in a bow on your token's picture?",
     "voice": "Katia",
     "yes": [
       "sweetheart",

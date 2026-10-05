@@ -2,7 +2,7 @@
   {
     "id": "tfx-loyal-to-one",
     "plain": "Would you like to start the game able to vouch for exactly one good player, without knowing their role?",
-    "dinniman": "One name. That's it. You don't know what they do, but you know they're good, and you'll defend them like a guard dog with a grudge. Is a single trustworthy name, role unknown, how you'd like to begin?",
+    "styled": "One name. That's it. You don't know what they do, but you know they're good, and you'll defend them like a guard dog with a grudge. Is a single trustworthy name, role unknown, how you'd like to begin?",
     "voice": "Mordecai",
     "yes": [
       "steward"
@@ -11,7 +11,7 @@
   {
     "id": "tfx-simplest-start",
     "plain": "Would you like your only starting information to be one guaranteed-good name, with nothing else attached?",
-    "dinniman": "Some of you want spreadsheets. Some of you want a single name on a napkin that says 'this one's fine'. No role, no numbers, no fuss. Would you like that one lonely good name to be all you start with?",
+    "styled": "Some of you want spreadsheets. Some of you want a single name on a napkin that says 'this one's fine'. No role, no numbers, no fuss. Would you like that one lonely good name to be all you start with?",
     "voice": "Carl",
     "yes": [
       "steward"
@@ -20,7 +20,7 @@
   {
     "id": "tfx-two-not-demon",
     "plain": "Would you like to start the game knowing two players who aren't the Demon, without knowing who the Demon is?",
-    "dinniman": "Congratulations, contestant! Your starter pack contains TWO certified Not-The-Demon people! Who the Demon actually is? Sold separately. Warranty void if they turn out to be Minions. Do you want those two names, and no Demon, on night one?",
+    "styled": "Congratulations, contestant! Your starter pack contains TWO certified Not-The-Demon people! Who the Demon actually is? Sold separately. Warranty void if they turn out to be Minions. Do you want those two names, and no Demon, on night one?",
     "voice": "The System AI",
     "yes": [
       "knight"
@@ -28,8 +28,8 @@
   },
   {
     "id": "tfx-honour-clears-two",
-    "plain": "As a good player, would you like to be handed two people already cleared of being the Demon, while still unsure whether they are good?",
-    "dinniman": "There is something noble about standing up for the town and saying: not these two, not the big bad. Even knowing they could still be working for it. As one of the good guys, would you like to be handed that pair, already cleared of being the Demon, without knowing they are good?",
+    "plain": "As a good player, would you like to start with two people cleared of being the Demon, though they might not be good?",
+    "styled": "There is something noble about standing up for the town and saying: not these two, not the big bad. Even knowing they could still be working for it. As one of the good guys, would you like to be handed that pair, already cleared of being the Demon, without knowing they are good?",
     "voice": "Katia",
     "yes": [
       "knight"
@@ -38,7 +38,7 @@
   {
     "id": "tfx-one-in-three",
     "plain": "Would you like to start with three players, knowing exactly one of them is evil?",
-    "dinniman": "Three faces, darling, and only ONE of them is rotten. It's like a reality show elimination, except I get to pick the villain. Would you like to begin the game with that delicious little trio?",
+    "styled": "Three faces, darling, and only ONE of them is rotten. It's like a reality show elimination, except I get to pick the villain. Would you like to begin the game with that delicious little trio?",
     "voice": "Princess Donut",
     "yes": [
       "noble"
@@ -47,7 +47,7 @@
   {
     "id": "tfx-dinner-party-traitor",
     "plain": "Do you like the idea of sitting with three acquaintances, two loyal and one a traitor, and working out which?",
-    "dinniman": "Picture it, sweetheart: three guests at your table, two perfectly lovely and one with a knife up the sleeve. You know the ratio, just not the culprit. Tell me honestly, does that dinner party sound like your idea of fun?",
+    "styled": "Picture it, sweetheart: three guests at your table, two perfectly lovely and one with a knife up the sleeve. You know the ratio, just not the culprit. Tell me honestly, does that dinner party sound like your idea of fun?",
     "voice": "Odette",
     "yes": [
       "noble"
@@ -56,7 +56,7 @@
   {
     "id": "tfx-left-or-right",
     "plain": "Would you like to start knowing only which direction around the circle the nearest evil player sits?",
-    "dinniman": "Left or right. That's your whole clue. No name, no number, just a finger pointing vaguely round the table. Would you like to begin with nothing but the direction of the nearest evil?",
+    "styled": "Left or right. That's your whole clue. No name, no number, just a finger pointing vaguely round the table. Would you like to begin with nothing but the direction of the nearest evil?",
     "voice": "Elle",
     "yes": [
       "shugenja"
@@ -64,8 +64,8 @@
   },
   {
     "id": "tfx-compass-needle",
-    "plain": "Would you be happy to start the game with nothing but a clockwise-or-anticlockwise clue?",
-    "dinniman": "HEAR ME. A compass needle is worth more than a thousand gossiping fools! Clockwise! Anticlockwise! The rest is noise! Would you be content to begin the game with nothing but that one turn of direction?",
+    "plain": "Would you like to start the game with nothing but a clockwise-or-anticlockwise clue?",
+    "styled": "HEAR ME. A compass needle is worth more than a thousand gossiping fools! Clockwise! Anticlockwise! The rest is noise! Would you like to begin the game with nothing but that one turn of direction?",
     "voice": "Prepotente",
     "yes": [
       "shugenja"
@@ -74,7 +74,7 @@
   {
     "id": "tfx-pretend-to-inherit",
     "plain": "Would you pretend to be another player's character, hoping to inherit their power when they die?",
-    "dinniman": "Here's the move: you swan around claiming somebody else's job, loudly, and when they kick the bucket you get to keep their toys. Delightfully cheeky. Would you play pretend for an inheritance like that?",
+    "styled": "Here's the move: you swan around claiming somebody else's job, loudly, and when they kick the bucket you get to keep their toys. Delightfully cheeky. Would you play pretend for an inheritance like that?",
     "voice": "Zev",
     "yes": [
       "pixie"
@@ -83,7 +83,7 @@
   {
     "id": "tfx-role-without-owner",
     "plain": "Would you like to start knowing one Townsfolk character that's in play, with no hint of who has it?",
-    "dinniman": "We've got a name tag, but no name on the person. Someone in this circle is that Townsfolk, and you've got zero clue who. Do you want to start the game holding a role without its owner?",
+    "styled": "We've got a name tag, but no name on the person. Someone in this circle is that Townsfolk, and you've got zero clue who. Do you want to start the game holding a role without its owner?",
     "voice": "Carl",
     "yes": [
       "pixie"
@@ -92,7 +92,7 @@
   {
     "id": "tfx-fresh-bounty",
     "plain": "Would you like to know one evil player from the start, and learn a new one whenever yours dies?",
-    "dinniman": "One target to start. Bag it, and a fresh wanted poster slides under your door that night. Rinse, repeat, stack the bodies. Does a rolling hit list of evil players sound like your kind of job?",
+    "styled": "One target to start. Bag it, and a fresh wanted poster slides under your door that night. Rinse, repeat, stack the bodies. Does a rolling hit list of evil players sound like your kind of job?",
     "voice": "Samantha",
     "yes": [
       "bountyhunter"
@@ -100,8 +100,8 @@
   },
   {
     "id": "tfx-townsfolk-turned",
-    "plain": "Would you like your presence to mean one of the Townsfolk starts the game secretly evil?",
-    "dinniman": "Patch note: when you're in the game, one cheerful Townsfolk has quietly switched teams before the doors even open. Corruption, baked right in! Do you want to be the reason one of the townsfolk is rotten?",
+    "plain": "Would you like one of the Townsfolk to start the game secretly evil because you're in play?",
+    "styled": "Patch note: when you're in the game, one cheerful Townsfolk has quietly switched teams before the doors even open. Corruption, baked right in! Do you want to be the reason one of the townsfolk is rotten?",
     "voice": "The System AI",
     "yes": [
       "bountyhunter"
@@ -110,7 +110,7 @@
   {
     "id": "tfx-who-to-talk-to",
     "plain": "Would you like the Storyteller to tell you each night which player you most need to talk to?",
-    "dinniman": "No facts, no roles, just a nightly nudge: go chat to that one. The person running the show thinks they're important to you. Would you like that kind of nightly pointer?",
+    "styled": "No facts, no roles, just a nightly nudge: go chat to that one. The person running the show thinks they're important to you. Would you like that kind of nightly pointer?",
     "voice": "Katia",
     "yes": [
       "highpriestess"
@@ -119,7 +119,7 @@
   {
     "id": "tfx-deep-conversation",
     "plain": "Would you rather be pointed to the right person to talk to than told anyone's role or alignment?",
-    "dinniman": "Facts are cheap, honey. A real conversation, the kind where the mask slips? That's where the gold is. Would you take a nudge toward the right person over any hard information at all?",
+    "styled": "Facts are cheap, honey. A real conversation, the kind where the mask slips? That's where the gold is. Would you take a nudge toward the right person over any hard information at all?",
     "voice": "Odette",
     "yes": [
       "highpriestess"
@@ -127,8 +127,8 @@
   },
   {
     "id": "tfx-different-type-nightly",
-    "plain": "Would you like to learn one player each night, each time of a different character type than the night before?",
-    "dinniman": "Townsfolk one night, Outsider the next, maybe a Minion after that. Never the same kind twice in a row. It's a sampler platter of people! Do you want that nightly variety pack of names?",
+    "plain": "Would you like to learn a player each night whose character type differs from the night before?",
+    "styled": "Townsfolk one night, Outsider the next, maybe a Minion after that. Never the same kind twice in a row. It's a sampler platter of people! Do you want that nightly variety pack of names?",
     "voice": "The Host",
     "yes": [
       "balloonist"
@@ -137,7 +137,7 @@
   {
     "id": "tfx-never-same-kind-twice",
     "plain": "Would you enjoy information that guarantees you never hear about the same kind of character two nights running?",
-    "dinniman": "Up, down, up again. Every night you drift over someone new, and the rules promise they're a different sort from last time. Do you like a guarantee that each night's name is a new kind of character?",
+    "styled": "Up, down, up again. Every night you drift over someone new, and the rules promise they're a different sort from last time. Do you like a guarantee that each night's name is a new kind of character?",
     "voice": "Elle",
     "yes": [
       "balloonist"
@@ -146,7 +146,7 @@
   {
     "id": "tfx-whos-winning",
     "plain": "Would you like a nightly report on which side the Storyteller thinks is winning?",
-    "dinniman": "Every night, a little scoreboard: good's ahead, evil's ahead, or it's a mess. Straight from the Storyteller's gut. Want that nightly war report?",
+    "styled": "Every night, a little scoreboard: good's ahead, evil's ahead, or it's a mess. Straight from the Storyteller's gut. Want that nightly war report?",
     "voice": "Mordecai",
     "yes": [
       "general"
@@ -155,7 +155,7 @@
   {
     "id": "tfx-skip-the-speeches",
     "plain": "Would you rather hear which side is winning the war than learn anything about a single player?",
-    "dinniman": "Forget individuals. Forget names. Big-picture people want one number on the board: are we winning or not? Ratings LOVE a decisive leader! Would you rather hear who is winning the war than anything about one soldier?",
+    "styled": "Forget individuals. Forget names. Big-picture people want one number on the board: are we winning or not? Ratings LOVE a decisive leader! Would you rather hear who is winning the war than anything about one soldier?",
     "voice": "Zev",
     "yes": [
       "general"
@@ -164,7 +164,7 @@
   {
     "id": "tfx-sermon-strips-power",
     "plain": "Would you like to choose players each night and leave any Minion among them powerless?",
-    "dinniman": "Oh, I LOVE a sermon with consequences. You point at the wicked, and the wicked go limp and useless forever. Do you want to choose players at night and leave any Minion among them powerless?",
+    "styled": "Oh, I LOVE a sermon with consequences. You point at the wicked, and the wicked go limp and useless forever. Do you want to choose players at night and leave any Minion among them powerless?",
     "voice": "Samantha",
     "yes": [
       "preacher"
@@ -172,8 +172,8 @@
   },
   {
     "id": "tfx-caught-minion-knows",
-    "plain": "Would you accept that any Minion you catch is told they've been caught?",
-    "dinniman": "The sinners you nab get a little tap on the shoulder: you've been found out, buddy. So they know. Which means they might come for you. Are you fine with caught Minions knowing they were caught?",
+    "plain": "Does any Minion you catch with your ability find out they've been caught?",
+    "styled": "The sinners you nab get a little tap on the shoulder: you've been found out, buddy. So they know. Which means they might come for you. Do the Minions you catch learn they were caught?",
     "voice": "Carl",
     "yes": [
       "preacher"
@@ -182,7 +182,7 @@
   {
     "id": "tfx-nightly-alignment-check",
     "plain": "Would you like to choose a player every night and learn whether they are good or evil?",
-    "dinniman": "Simple question, simple answer, every night: good or evil? Point, ask, done. Achievement unlocked: Binary Thinker! Do you want a nightly good-or-evil check on someone you pick?",
+    "styled": "Simple question, simple answer, every night: good or evil? Point, ask, done. Achievement unlocked: Binary Thinker! Do you want a nightly good-or-evil check on someone you pick?",
     "voice": "The System AI",
     "yes": [
       "villageidiot"
@@ -190,8 +190,8 @@
   },
   {
     "id": "tfx-shared-job-one-drunk",
-    "plain": "Would you be happy if up to two others secretly had your exact role, and one of you was drunk?",
-    "dinniman": "Imagine you're not the only one wearing your outfit. Two more might turn up, and one of you is sloshed and doesn't know it. Could be you! Would you cheerfully accept that kind of crowded wardrobe?",
+    "plain": "Could up to two other players secretly share your role, with one of you drunk?",
+    "styled": "Imagine you're not the only one wearing your outfit. Two more might turn up, and one of you is sloshed and doesn't know it. Could be you! Could that kind of crowded wardrobe happen to you?",
     "voice": "Princess Donut",
     "yes": [
       "villageidiot"
@@ -200,7 +200,7 @@
   {
     "id": "tfx-wisdom-from-the-dead",
     "plain": "Would you like your information to start only once the dead equal or outnumber the living?",
-    "dinniman": "You sit on the throne and wait. Nothing comes until the graveyard's at least as crowded as the room. Then the secrets roll in. Would you be happy with information that only begins once the dead catch up?",
+    "styled": "You sit on the throne and wait. Nothing comes until the graveyard's at least as crowded as the room. Then the secrets roll in. Would you be happy with information that only begins once the dead catch up?",
     "voice": "Mordecai",
     "yes": [
       "king"
@@ -209,7 +209,7 @@
   {
     "id": "tfx-demon-knows-your-crown",
     "plain": "Would you accept the Demon knowing your role from the start, in exchange for learning living players' roles late in the game?",
-    "dinniman": "Big shiny target on your head, and the worst person in the room knows exactly where it is. But hang on long enough and you start learning who's who among the living. Would you take that deal?",
+    "styled": "Big shiny target on your head, and the worst person in the room knows exactly where it is. But hang on long enough and you start learning who's who among the living. Would you take that deal?",
     "voice": "Katia",
     "yes": [
       "king"
@@ -218,7 +218,7 @@
   {
     "id": "tfx-win-by-cult",
     "plain": "Would you like to win the game by persuading every good player to join your cult?",
-    "dinniman": "BEHOLD ME! FOLLOW ME! When every last good soul kneels at my hooves, VICTORY IS MINE! Would you like to win by gathering all the good players into your flock?",
+    "styled": "BEHOLD ME! FOLLOW ME! When every last good soul kneels at my hooves, VICTORY IS MINE! Would you like to win by gathering all the good players into your flock?",
     "voice": "Prepotente",
     "yes": [
       "cultleader"
@@ -226,8 +226,8 @@
   },
   {
     "id": "tfx-drift-with-neighbour",
-    "plain": "Would you let your alignment change each night to match one of the players sitting next to you?",
-    "dinniman": "Your loyalties, it turns out, depend on who you're sat beside. Good tonight, evil tomorrow, whatever your neighbour is. Would you let your team shift nightly to match a neighbour?",
+    "plain": "Would you like your alignment to change each night to match one of your living neighbours?",
+    "styled": "Your loyalties, it turns out, depend on who you're sat beside. Good tonight, evil tomorrow, whatever your neighbour is. Would you like your team to shift nightly to match a neighbour?",
     "voice": "Elle",
     "yes": [
       "cultleader"
@@ -236,7 +236,7 @@
   {
     "id": "tfx-stake-life-on-sobriety",
     "plain": "Would you stake your life each night on a chosen player staying sober and unpoisoned?",
-    "dinniman": "Ladies and gentlemen, tonight our daredevil ties their own heartbeat to someone else's liver! If that player gets drunk or poisoned, splat! Would you bet your own life, night after night, on someone else staying clean?",
+    "styled": "Ladies and gentlemen, tonight our daredevil ties their own heartbeat to someone else's liver! If that player gets drunk or poisoned, splat! Would you bet your own life, night after night, on someone else staying clean?",
     "voice": "The Host",
     "yes": [
       "acrobat"
@@ -245,7 +245,7 @@
   {
     "id": "tfx-survival-is-the-clue",
     "plain": "Would you like waking up alive to be your proof that the player you picked was neither drunk nor poisoned?",
-    "dinniman": "Every morning you check your pulse. Still ticking? Then the person you leaned on last night was sober and healthy. Not ticking? Well, you won't be checking. Do you want your own survival to be the test result?",
+    "styled": "Every morning you check your pulse. Still ticking? Then the person you leaned on last night was sober and healthy. Not ticking? Well, you won't be checking. Do you want your own survival to be the test result?",
     "voice": "Mordecai",
     "yes": [
       "acrobat"
@@ -254,7 +254,7 @@
   {
     "id": "tfx-good-team-night-victim",
     "plain": "As a good player, would you like to choose someone to kill every night?",
-    "dinniman": "You are on the side of the angels, technically. And yet every night you get to point at somebody and think murderous thoughts. As a good player, would you like to pick someone to kill each night?",
+    "styled": "You are on the side of the angels, technically. And yet every night you get to point at somebody and think murderous thoughts. As a good player, would you like to pick someone to kill each night?",
     "voice": "Carl",
     "yes": [
       "lycanthrope"
@@ -263,7 +263,7 @@
   {
     "id": "tfx-beast-bites-innocent",
     "plain": "Do you have a beast beneath your civilised surface that hunts every night, but whose bite only ever kills the innocent?",
-    "dinniman": "OH, I adore this one! A howling monster hiding under a polite little face, out hunting every night, and it can only rip apart the GOOD people! Delicious irony! Is there a beast like that inside you, one that hunts nightly and only hurts the innocent?",
+    "styled": "OH, I adore this one! A howling monster hiding under a polite little face, out hunting every night, and it can only rip apart the GOOD people! Delicious irony! Is there a beast like that inside you, one that hunts nightly and only hurts the innocent?",
     "voice": "Samantha",
     "yes": [
       "lycanthrope"
@@ -272,7 +272,7 @@
   {
     "id": "tfx-name-the-whole-team",
     "plain": "Would you like to win the game outright by publicly naming every Minion and Demon correctly?",
-    "dinniman": "One speech. Every Minion named, every Demon named, all in public, all correct, and the good team wins on the spot. Talk about a mic drop! Would you like to win by calling out the entire evil team?",
+    "styled": "One speech. Every Minion named, every Demon named, all in public, all correct, and the good team wins on the spot. Talk about a mic drop! Would you like to win by calling out the entire evil team?",
     "voice": "Odette",
     "yes": [
       "alsaahir"
@@ -281,7 +281,7 @@
   {
     "id": "tfx-solve-all-at-once",
     "plain": "Would you rather crack the whole evil team in one grand reveal than catch them one at a time?",
-    "dinniman": "Some people pick off evil one execution at a time. Boring! Our sponsors want the big detective finale: everybody in the parlour, every villain unmasked at once. Would you rather solve the whole evil team in one go?",
+    "styled": "Some people pick off evil one execution at a time. Boring! Our sponsors want the big detective finale: everybody in the parlour, every villain unmasked at once. Would you rather solve the whole evil team in one go?",
     "voice": "Zev",
     "yes": [
       "alsaahir"
@@ -290,7 +290,7 @@
   {
     "id": "tfx-rebuild-evil-team",
     "plain": "As a good player, would you like to choose which Demon or which Minions the evil team gets?",
-    "dinniman": "Right, so you're on the good team, and you get to reach into the evil team's toolbox and swap the parts. Pick their Demon. Or pick their Minions. Would you like that kind of tinkering power from the good side?",
+    "styled": "Right, so you're on the good team, and you get to reach into the evil team's toolbox and swap the parts. Pick their Demon. Or pick their Minions. Would you like that kind of tinkering power from the good side?",
     "voice": "Carl",
     "yes": [
       "engineer"
@@ -299,7 +299,7 @@
   {
     "id": "tfx-weaker-demon",
     "plain": "Would you love to hand the evil team a weaker Demon of your own choosing?",
-    "dinniman": "New feature unlocked: Demon Downgrade! Rip out the scary one and install a budget model you like better. The audience will scream! Would you love to saddle evil with a feebler Demon you picked yourself?",
+    "styled": "New feature unlocked: Demon Downgrade! Rip out the scary one and install a budget model you like better. The audience will scream! Would you love to saddle evil with a feebler Demon you picked yourself?",
     "voice": "The System AI",
     "yes": [
       "engineer"
@@ -307,8 +307,8 @@
   },
   {
     "id": "tfx-reveal-to-one",
-    "plain": "Would you like, once per game, to have the Storyteller confirm your true role to one player of your choice?",
-    "dinniman": "Trust is hard to come by in here. So, once, you get to pick someone and have the Storyteller tell them exactly who you really are. Would you like to spend your power proving yourself to one person?",
+    "plain": "Once per game, would you like the Storyteller to confirm your true role to one player of your choice?",
+    "styled": "Trust is hard to come by in here. So, once, you get to pick someone and have the Storyteller tell them exactly who you really are. Would you like to spend your power proving yourself to one person?",
     "voice": "Katia",
     "yes": [
       "nightwatchman"
@@ -317,7 +317,7 @@
   {
     "id": "tfx-knock-on-one-door",
     "plain": "Would you rather be trusted by one chosen person than learn anything yourself?",
-    "dinniman": "Cold streets, a lantern, and one door you knock on to say 'it's me, I'm real'. You learn nothing, mind. You just get believed. Would you take being trusted by one person over any information of your own?",
+    "styled": "Cold streets, a lantern, and one door you knock on to say 'it's me, I'm real'. You learn nothing, mind. You just get believed. Would you take being trusted by one person over any information of your own?",
     "voice": "Elle",
     "yes": [
       "nightwatchman"
@@ -326,7 +326,7 @@
   {
     "id": "tfx-rescue-the-damsel",
     "plain": "Would you like to rescue a damsel in distress by turning her into a Townsfolk?",
-    "dinniman": "A scream in the valley! A helpless Outsider the Minions are hunting! You stride in, axe on shoulder, and turn her into a proper Townsfolk. Would you like to be the one who rescues the damsel like that?",
+    "styled": "A scream in the valley! A helpless Outsider the Minions are hunting! You stride in, axe on shoulder, and turn her into a proper Townsfolk. Would you like to be the one who rescues the damsel like that?",
     "voice": "Princess Donut",
     "yes": [
       "huntsman"
@@ -335,7 +335,7 @@
   {
     "id": "tfx-liability-to-asset",
     "plain": "Would you like your one big play to be turning a liability the Minions are hunting into a fresh Townsfolk?",
-    "dinniman": "There's someone on your side the bad guys can win by guessing. That's a liability. One swing of your axe and they're a shiny new Townsfolk. Would you like that rescue to be your big play of the game?",
+    "styled": "There's someone on your side the bad guys can win by guessing. That's a liability. One swing of your axe and they're a shiny new Townsfolk. Would you like that rescue to be your big play of the game?",
     "voice": "Mordecai",
     "yes": [
       "huntsman"
@@ -343,8 +343,8 @@
   },
   {
     "id": "tfx-ask-for-advice",
-    "plain": "Would you like, once per game, to ask the Storyteller for advice on how your team can win?",
-    "dinniman": "One free coaching session with the person who knows everything! Not facts, mind you, just tips. Our sponsors call it 'mentorship'. Would you like to cash in one advice session with the Storyteller?",
+    "plain": "Would you like to visit the Storyteller once per game for advice on how your team can win?",
+    "styled": "One free coaching session with the person who knows everything! Not facts, mind you, just tips. Our sponsors call it 'mentorship'. Would you like to cash in one advice session with the Storyteller?",
     "voice": "Zev",
     "yes": [
       "fisherman"
@@ -353,7 +353,7 @@
   {
     "id": "tfx-old-timer-tips",
     "plain": "Would you rather receive one piece of tailored winning advice than one direct answer to a question?",
-    "dinniman": "Some folks want a yes or no. Me? I would rather sit by the river with someone who has seen it all and let them tell me, just the once, where the big fish are. Would you take one bit of tailored advice over one direct answer?",
+    "styled": "Some folks want a yes or no. Me? I would rather sit by the river with someone who has seen it all and let them tell me, just the once, where the big fish are. Would you take one bit of tailored advice over one direct answer?",
     "voice": "Mordecai",
     "yes": [
       "fisherman"
@@ -361,8 +361,8 @@
   },
   {
     "id": "tfx-first-day-decree",
-    "plain": "Would you like your first-day nomination, if it leads to an execution, to stop the Demon killing that night?",
-    "dinniman": "Day one. You nominate, the town executes, and the Demon has to sit on its claws that night. A royal decree with real bite, darling! Would you like your first day's nomination to buy the town a peaceful night?",
+    "plain": "If your first-day nomination leads to an execution, would you like that to stop the Demon killing that night?",
+    "styled": "Day one. You nominate, the town executes, and the Demon has to sit on its claws that night. A royal decree with real bite, darling! Would you like your first day's nomination to buy the town a peaceful night?",
     "voice": "Princess Donut",
     "yes": [
       "princess"
@@ -371,7 +371,7 @@
   {
     "id": "tfx-first-day-moment",
     "plain": "Would you like an ability you can only use on your very first day?",
-    "dinniman": "Most abilities simmer. Yours explodes on day one and then it's done. Blink and the audience misses it! Do you want an ability you can only use on your first day?",
+    "styled": "Most abilities simmer. Yours explodes on day one and then it's done. Blink and the audience misses it! Do you want an ability you can only use on your first day?",
     "voice": "The Host",
     "yes": [
       "princess",
@@ -381,7 +381,7 @@
   {
     "id": "tfx-good-minion-power",
     "plain": "As a good player, would you like to wield a Minion's ability?",
-    "dinniman": "You're one of the good guys, but somewhere in your pocket is a power stolen from the villains' bag of tricks. Turn the poison against the poisoners! As a good player, would you like a Minion's ability to call your own?",
+    "styled": "You're one of the good guys, but somewhere in your pocket is a power stolen from the villains' bag of tricks. Turn the poison against the poisoners! As a good player, would you like a Minion's ability to call your own?",
     "voice": "Katia",
     "yes": [
       "alchemist"
@@ -389,8 +389,8 @@
   },
   {
     "id": "tfx-nudged-to-rechoose",
-    "plain": "Would you be happy for the Storyteller to nudge you to choose differently when your pick doesn't suit the game?",
-    "dinniman": "You aim. The Storyteller winces and says 'maybe try someone else, hmm?' and you go again. Training wheels for the morally confused. Would you be fine with being nudged to rethink your pick like that?",
+    "plain": "Can the Storyteller prompt you to choose differently when you use your ability?",
+    "styled": "You aim. The Storyteller winces and says 'maybe try someone else, hmm?' and you go again. Training wheels for the morally confused. Can the Storyteller nudge you to rethink your pick like that?",
     "voice": "Carl",
     "yes": [
       "alchemist"
@@ -399,7 +399,7 @@
   {
     "id": "tfx-eat-the-executed",
     "plain": "Would you like to gain the ability of whoever was most recently executed?",
-    "dinniman": "Somebody swings from the gallows, and you get their powers. Fresh off the rope! Waste not, want not! Would you like to take on the ability of the latest executed player?",
+    "styled": "Somebody swings from the gallows, and you get their powers. Fresh off the rope! Waste not, want not! Would you like to take on the ability of the latest executed player?",
     "voice": "Samantha",
     "yes": [
       "cannibal"
@@ -407,8 +407,8 @@
   },
   {
     "id": "tfx-you-are-what-you-eat",
-    "plain": "Would you risk being poisoned to gain a power, if the person you took it from turned out to be evil?",
-    "dinniman": "You take what the last corpse had. Lovely. But if that corpse was evil, it tastes funny, and you're poisoned until the town executes someone good. Is that a risk you'd happily swallow for a borrowed power?",
+    "plain": "Would you take on a power knowing you'll be poisoned if its last owner was evil?",
+    "styled": "You take what the last corpse had. Lovely. But if that corpse was evil, it tastes funny, and you're poisoned until the town executes someone good. Is that a risk you'd happily swallow for a borrowed power?",
     "voice": "Elle",
     "yes": [
       "cannibal"
@@ -416,8 +416,8 @@
   },
   {
     "id": "tfx-unknown-own-power",
-    "plain": "Would you be happy not knowing what your own ability is, and guessing at it each day?",
-    "dinniman": "Welcome, contestant! Your ability is: [REDACTED]. Please guess daily. Accuracy feedback provided. Refunds unavailable. Would you be happy to play without knowing your own power, guessing at it every day?",
+    "plain": "Would you like to play without knowing your own ability, guessing at it each day?",
+    "styled": "Welcome, contestant! Your ability is: [REDACTED]. Please guess daily. Accuracy feedback provided. Refunds unavailable. Would you like to play without knowing your own power, guessing at it every day?",
     "voice": "The System AI",
     "yes": [
       "amnesiac"
@@ -426,7 +426,7 @@
   {
     "id": "tfx-hot-and-cold",
     "plain": "Do you enjoy discovering your own powers by trial and error, being told how close each guess is?",
-    "dinniman": "Warmer. Colder. Warmer! It's a children's party game, except the prize is figuring out what the hell you're for. Do you enjoy working out your own ability through hot-and-cold guesses?",
+    "styled": "Warmer. Colder. Warmer! It's a children's party game, except the prize is figuring out what the hell you're for. Do you enjoy working out your own ability through hot-and-cold guesses?",
     "voice": "Elle",
     "yes": [
       "amnesiac"
@@ -435,7 +435,7 @@
   {
     "id": "tfx-pass-the-plough",
     "plain": "Would you like your death at night to pass your role to another good player?",
-    "dinniman": "When you go, your job doesn't go with you. Someone else good picks up the hoe and carries on. Would you like a night-time death to hand your role to another good player?",
+    "styled": "When you go, your job doesn't go with you. Someone else good picks up the hoe and carries on. Would you like a night-time death to hand your role to another good player?",
     "voice": "Katia",
     "yes": [
       "farmer"
@@ -444,7 +444,7 @@
   {
     "id": "tfx-legacy-of-labour",
     "plain": "Would you like your humble trade to live on in someone else after you're gone?",
-    "dinniman": "RAWR! Very sad when friend die. But friend's work keeps going, new friend picks it up! Translation: would you like your humble trade to live on in someone else after you die?",
+    "styled": "RAWR! Very sad when friend die. But friend's work keeps going, new friend picks it up! Translation: would you like your humble trade to live on in someone else after you die?",
     "voice": "Mongo",
     "yes": [
       "farmer"
@@ -453,7 +453,7 @@
   {
     "id": "tfx-royal-death-reveals",
     "plain": "Would you like the Demon's murder of one particular royal player to reveal the Demon to you?",
-    "dinniman": "You're quietly devoted to someone important. If the Demon gets them, you see exactly who did it, clear as a stained-glass window. Would you like a royal murder to unmask the Demon for you?",
+    "styled": "You're quietly devoted to someone important. If the Demon gets them, you see exactly who did it, clear as a stained-glass window. Would you like a royal murder to unmask the Demon for you?",
     "voice": "Odette",
     "yes": [
       "choirboy"
@@ -462,7 +462,7 @@
   {
     "id": "tfx-someone-elses-murder",
     "plain": "Would you like your information to come from the Demon killing someone else, not you?",
-    "dinniman": "Here's the grim bit. You don't learn a thing until the Demon murders a specific somebody who isn't you. Then the lights come on. Would you like your clue to come from someone else being killed by the Demon?",
+    "styled": "Here's the grim bit. You don't learn a thing until the Demon murders a specific somebody who isn't you. Then the lights come on. Would you like your clue to come from someone else being killed by the Demon?",
     "voice": "Mordecai",
     "yes": [
       "choirboy"
@@ -471,7 +471,7 @@
   {
     "id": "tfx-louder-after-death",
     "plain": "Would you like being killed by the Demon to let you nominate twice a day and vote twice per nomination?",
-    "dinniman": "Kill ME? How DARE you! Very well, I shall come back TWICE as loud: two nominations, two votes, and everyone will hear me wail! Would you like a Demon kill to double your say in the town?",
+    "styled": "Kill ME? How DARE you! Very well, I shall come back TWICE as loud: two nominations, two votes, and everyone will hear me wail! Would you like a Demon kill to double your say in the town?",
     "voice": "Princess Donut",
     "yes": [
       "banshee"
@@ -480,7 +480,7 @@
   {
     "id": "tfx-everyone-hears-wail",
     "plain": "Would you like the whole town to be told when the Demon has killed you?",
-    "dinniman": "No quiet exit for you. When the Demon gets you, everyone is told. Loudly. It's your farewell tour! Would you like your death at the Demon's hands announced to the entire town?",
+    "styled": "No quiet exit for you. When the Demon gets you, everyone is told. Loudly. It's your farewell tour! Would you like your death at the Demon's hands announced to the entire town?",
     "voice": "The Host",
     "yes": [
       "banshee"
@@ -489,7 +489,7 @@
   {
     "id": "tfx-fool-the-villains",
     "plain": "As a good player, would you like the evil team to think you're one of them?",
-    "dinniman": "Abracadabra! The Demon thinks you're a Minion, the Minions think you're the Demon, and nobody's quite sure who's who. As a good player, do you want to fool the evil team into thinking you're on their side?",
+    "styled": "Abracadabra! The Demon thinks you're a Minion, the Minions think you're the Demon, and nobody's quite sure who's who. As a good player, do you want to fool the evil team into thinking you're on their side?",
     "voice": "Prepotente",
     "yes": [
       "magician"
@@ -498,7 +498,7 @@
   {
     "id": "tfx-misdirect-the-wicked",
     "plain": "As a good player, would you enjoy sneaking yourself into the evil team's ranks as an impostor?",
-    "dinniman": "Now you see me, now you do not. The bad guys sit down for their team meeting and there is an extra chair, and it is you, grinning. As a good player, would you enjoy slipping into the evil team as an impostor?",
+    "styled": "Now you see me, now you do not. The bad guys sit down for their team meeting and there is an extra chair, and it is you, grinning. As a good player, would you enjoy slipping into the evil team as an impostor?",
     "voice": "Carl",
     "yes": [
       "magician"
@@ -507,7 +507,7 @@
   {
     "id": "tfx-keep-evil-apart",
     "plain": "Would you like to keep the Minions and Demon from knowing each other for as long as you live?",
-    "dinniman": "While you breathe, the villains wander about in the fog, unable to find each other. Bad teamwork for them, great ratings for us! Would you like your life to keep the evil team strangers to one another?",
+    "styled": "While you breathe, the villains wander about in the fog, unable to find each other. Bad teamwork for them, great ratings for us! Would you like your life to keep the evil team strangers to one another?",
     "voice": "Zev",
     "yes": [
       "poppygrower"
@@ -515,8 +515,8 @@
   },
   {
     "id": "tfx-death-reunites-evil",
-    "plain": "Would you accept that your death is the moment the evil team finally finds one another?",
-    "dinniman": "The moment you drop, the fog lifts and every Minion and Demon suddenly sees their teammates. Your corpse is their family reunion. Would you accept your death being what brings the evil team together?",
+    "plain": "Is your death what finally lets the Minions and Demon find each other?",
+    "styled": "The moment you drop, the fog lifts and every Minion and Demon suddenly sees their teammates. Your corpse is their family reunion. Is your death what brings the evil team together?",
     "voice": "Samantha",
     "yes": [
       "poppygrower"
@@ -525,7 +525,7 @@
   {
     "id": "tfx-no-evil-at-all",
     "plain": "Would you like to play in a game where there might be no evil players at all?",
-    "dinniman": "Plot twist! Maybe there is no Demon. Maybe there are no Minions. Maybe everyone's been screaming at shadows. Would you like a game where there may be nobody evil whatsoever?",
+    "styled": "Plot twist! Maybe there is no Demon. Maybe there are no Minions. Maybe everyone's been screaming at shadows. Would you like a game where there may be nobody evil whatsoever?",
     "voice": "The System AI",
     "yes": [
       "atheist"
@@ -534,7 +534,7 @@
   {
     "id": "tfx-sceptic-of-demons",
     "plain": "Are you a sceptic who suspects the whole Demon business might be made up?",
-    "dinniman": "Rational explanation for everything, isn't there? Demons, curses, murders in the night? Pfft. Probably just the Storyteller lying. Are you the sort who suspects there's no Demon at all?",
+    "styled": "Rational explanation for everything, isn't there? Demons, curses, murders in the night? Pfft. Probably just the Storyteller lying. Are you the sort who suspects there's no Demon at all?",
     "voice": "Elle",
     "yes": [
       "atheist"
@@ -543,7 +543,7 @@
   {
     "id": "tfx-execution-wins",
     "plain": "Would you like good to win if the town executes the Storyteller?",
-    "dinniman": "Most people string up their neighbours. You'd rather string up the one running the show, because if the Storyteller hangs, the good team wins. YES! MORE ROPE! Would you like good to win if the town executes the Storyteller?",
+    "styled": "Most people string up their neighbours. You'd rather string up the one running the show, because if the Storyteller hangs, the good team wins. YES! MORE ROPE! Would you like good to win if the town executes the Storyteller?",
     "voice": "Samantha",
     "yes": [
       "atheist"
@@ -552,7 +552,7 @@
   {
     "id": "tfx-ability-could-kill-you",
     "plain": "As a Townsfolk, could your own ability end up killing you?",
-    "dinniman": "Most Townsfolk powers are safe as houses. Yours comes with a little skull printed on the box. Achievement pending: Hoist By Own Petard! Could your own ability be the thing that kills you?",
+    "styled": "Most Townsfolk powers are safe as houses. Yours comes with a little skull printed on the box. Achievement pending: Hoist By Own Petard! Could your own ability be the thing that kills you?",
     "voice": "The System AI",
     "yes": [
       "gambler",
@@ -566,7 +566,7 @@
   {
     "id": "tfx-neighbours-matter",
     "plain": "Of the Townsfolk, does your ability care about the two players sitting right next to you?",
-    "dinniman": "Location, location, location! For some of the town, the folks on either elbow are the whole story. Does your ability revolve around your two immediate neighbours?",
+    "styled": "Location, location, location! For some of the town, the folks on either elbow are the whole story. Does your ability revolve around your two immediate neighbours?",
     "voice": "The Host",
     "yes": [
       "empath",
@@ -580,7 +580,7 @@
   {
     "id": "tfx-shield-someone-nightly",
     "plain": "As a Townsfolk, would you like to pick players each night and keep them safe from death?",
-    "dinniman": "Every night you choose who gets tucked in safe and sound while the monsters prowl. It's a lot of responsibility, and it matters. Would you like to pick people to protect from death each night?",
+    "styled": "Every night you choose who gets tucked in safe and sound while the monsters prowl. It's a lot of responsibility, and it matters. Would you like to pick people to protect from death each night?",
     "voice": "Katia",
     "yes": [
       "monk",
@@ -593,7 +593,7 @@
   {
     "id": "tfx-automatically-hard-to-kill",
     "plain": "As a Townsfolk, does your ability automatically protect you personally from dying at night?",
-    "dinniman": "Some of you are just tough to put down. No choosing, no praying, the rules simply refuse to let the night take you easily. Is your ability a built-in shield against dying at night?",
+    "styled": "Some of you are just tough to put down. No choosing, no praying, the rules simply refuse to let the night take you easily. Is your ability a built-in shield against dying at night?",
     "voice": "Mordecai",
     "yes": [
       "soldier",
@@ -608,7 +608,7 @@
   {
     "id": "tfx-single-shot-saved",
     "plain": "Of the Townsfolk, is your ability a single use that you can save for the moment of your choosing?",
-    "dinniman": "One bullet. You decide when to fire it. Not on day one because the rules say so, not when somebody nominates you, but when YOU feel like it. Is your ability a one-shot you can hold onto until the right moment?",
+    "styled": "One bullet. You decide when to fire it. Not on day one because the rules say so, not when somebody nominates you, but when YOU feel like it. Is your ability a one-shot you can hold onto until the right moment?",
     "voice": "Carl",
     "yes": [
       "engineer",
@@ -629,7 +629,7 @@
   {
     "id": "tfx-special-public-move",
     "plain": "As a Townsfolk, does your ability have you make a special public guess, statement, call or shot during the day?",
-    "dinniman": "Stand up! Speak up! The whole circle stops to watch your big public moment: a shot, a guess, a juicy statement, a call to arms. Darling, does your ability make you take centre stage like that in daylight?",
+    "styled": "Stand up! Speak up! The whole circle stops to watch your big public moment: a shot, a guess, a juicy statement, a call to arms. Darling, does your ability make you take centre stage like that in daylight?",
     "voice": "Odette",
     "yes": [
       "cultleader",
@@ -645,7 +645,7 @@
   {
     "id": "tfx-private-daytime-chat",
     "plain": "Of the Townsfolk, does your ability involve slipping away for a private daytime chat with the Storyteller?",
-    "dinniman": "While everyone else is yelling, you sneak off for a quiet word with management. Very exclusive. Very VIP. Does your ability send you for private daytime chats with the Storyteller?",
+    "styled": "While everyone else is yelling, you sneak off for a quiet word with management. Very exclusive. Very VIP. Does your ability send you for private daytime chats with the Storyteller?",
     "voice": "Princess Donut",
     "yes": [
       "savant",
@@ -660,7 +660,7 @@
   {
     "id": "tfx-nightly-drinks-round",
     "plain": "As a Townsfolk, would you like to choose players each night knowing your choice will make someone drunk?",
-    "dinniman": "Every night you pick your company and somebody in the party winds up legless because of it. Might be them, might be you, might be the other one. Cheers! Do you like a nightly choice that gets someone drunk?",
+    "styled": "Every night you pick your company and somebody in the party winds up legless because of it. Might be them, might be you, might be the other one. Cheers! Do you like a nightly choice that gets someone drunk?",
     "voice": "Elle",
     "yes": [
       "sailor",
@@ -673,7 +673,7 @@
   {
     "id": "tfx-reward-after-death",
     "plain": "Of the Townsfolk, does your ability give you something useful only once you're dead?",
-    "dinniman": "Dying is usually the end of your usefulness. Not for you! Death is when the goodies arrive. Post-mortem loot drop, baby! Is your ability something you only get to enjoy after you die?",
+    "styled": "Dying is usually the end of your usefulness. Not for you! Death is when the goodies arrive. Post-mortem loot drop, baby! Is your ability something you only get to enjoy after you die?",
     "voice": "The System AI",
     "yes": [
       "ravenkeeper",
@@ -687,7 +687,7 @@
   {
     "id": "tfx-start-with-role-name",
     "plain": "Of those who start knowing something, does your starting information name a specific character?",
-    "dinniman": "Night one, you get a little gift. Some gifts are numbers, some are directions, some are just names of people. Yours has an actual character written on it. Does your starting information name a specific character?",
+    "styled": "Night one, you get a little gift. Some gifts are numbers, some are directions, some are just names of people. Yours has an actual character written on it. Does your starting information name a specific character?",
     "voice": "Katia",
     "yes": [
       "investigator",
@@ -714,7 +714,7 @@
   {
     "id": "tfx-start-with-number-or-direction",
     "plain": "Of those who start knowing something, does your starting information come as a number or a direction rather than names?",
-    "dinniman": "Some starting clues have names on them. Yours is a number, or an arrow. Cold, abstract, maddening. Do you start with a count or a direction instead of any names?",
+    "styled": "Some starting clues have names on them. Yours is a number, or an arrow. Cold, abstract, maddening. Do you start with a count or a direction instead of any names?",
     "voice": "Carl",
     "yes": [
       "chef",
@@ -739,7 +739,7 @@
   {
     "id": "tfx-guaranteed-evil-among-names",
     "plain": "Of these start-knowing roles, is at least one of the players you start knowing guaranteed to be evil?",
-    "dinniman": "You've been handed some names. The question is whether there's a snake in the basket. For one of you, there definitely is. Is one of your starting names certain to be evil?",
+    "styled": "You've been handed some names. The question is whether there's a snake in the basket. For one of you, there definitely is. Is one of your starting names certain to be evil?",
     "voice": "Mordecai",
     "yes": [
       "noble"
@@ -753,7 +753,7 @@
   {
     "id": "tfx-all-names-good",
     "plain": "Of these start-knowing roles, can you trust every player you start knowing to be good?",
-    "dinniman": "Total certainty! No Minions sneaking in, no fine print! Everyone you start knowing is a genuine, verified goodie! Can you trust every name you begin with to be good?",
+    "styled": "Total certainty! No Minions sneaking in, no fine print! Everyone you start knowing is a genuine, verified goodie! Can you trust every name you begin with to be good?",
     "voice": "Zev",
     "yes": [
       "steward"
@@ -767,7 +767,7 @@
   {
     "id": "tfx-starting-info-about-demon",
     "plain": "Of these start-knowing roles, is your starting information specifically about who isn't the Demon?",
-    "dinniman": "Forget good and evil in general. Your information is all about one particular monster, and who it definitely isn't. Is your starting knowledge specifically about the Demon?",
+    "styled": "Forget good and evil in general. Your information is all about one particular monster, and who it definitely isn't. Is your starting knowledge specifically about the Demon?",
     "voice": "Elle",
     "yes": [
       "knight"
@@ -781,7 +781,7 @@
   {
     "id": "tfx-alters-the-setup",
     "plain": "Of the experimental Townsfolk, can your presence change the setup, altering which characters or alignments are in play?",
-    "dinniman": "When YOU join the cast, the whole production may get rewritten! Extra characters, missing villains, someone switching teams before the show even starts! Can your mere presence change the setup of the game?",
+    "styled": "When YOU join the cast, the whole production may get rewritten! Extra characters, missing villains, someone switching teams before the show even starts! Can your mere presence change the setup of the game?",
     "voice": "Prepotente",
     "yes": [
       "bountyhunter",
@@ -799,7 +799,7 @@
   {
     "id": "tfx-could-win-outright",
     "plain": "Of the Townsfolk, could your ability win the game outright for your team?",
-    "dinniman": "Forget slowly grinding down the opposition. Some of you have a big red button marked VICTORY. Ratings gold! Could your ability end the game in your team's favour all by itself?",
+    "styled": "Forget slowly grinding down the opposition. Some of you have a big red button marked VICTORY. Ratings gold! Could your ability end the game in your team's favour all by itself?",
     "voice": "Zev",
     "yes": [
       "cultleader",
@@ -815,7 +815,7 @@
   {
     "id": "tfx-borrowed-powers",
     "plain": "As a Townsfolk, would you like to use another character's ability as your own?",
-    "dinniman": "Why settle for your own powers when somebody else's are RIGHT THERE? Borrowing is just stealing with better manners. Would you like to use another character's ability as if it were yours?",
+    "styled": "Why settle for your own powers when somebody else's are RIGHT THERE? Borrowing is just stealing with better manners. Would you like to use another character's ability as if it were yours?",
     "voice": "Princess Donut",
     "yes": [
       "pixie",
@@ -830,7 +830,7 @@
   {
     "id": "tfx-pick-who-dies",
     "plain": "Of the Townsfolk, can you pick a specific player for your ability to kill?",
-    "dinniman": "YES! A Townsfolk with a KILL BUTTON! Point at someone and let them have it! Can you choose exactly who your ability tries to kill?",
+    "styled": "YES! A Townsfolk with a KILL BUTTON! Point at someone and let them have it! Can you choose exactly who your ability tries to kill?",
     "voice": "Samantha",
     "yes": [
       "slayer",
@@ -843,7 +843,7 @@
   {
     "id": "tfx-alignment-in-flux",
     "plain": "As a Townsfolk, could your ability change your own alignment?",
-    "dinniman": "You start as one of the nice ones. You might not finish that way, and your own ability is the reason. Plot twist! Could your ability flip which team you're on?",
+    "styled": "You start as one of the nice ones. You might not finish that way, and your own ability is the reason. Plot twist! Could your ability flip which team you're on?",
     "voice": "Odette",
     "yes": [
       "cultleader",
@@ -856,7 +856,7 @@
   {
     "id": "tfx-storytellers-opinion",
     "plain": "Of the Townsfolk, does your ability give you the Storyteller's opinion about the game, or advice on playing it, rather than facts?",
-    "dinniman": "Not facts. Not numbers. Just what the person behind the screen reckons about the game: their gut, their hunch, their tips. Is the Storyteller's opinion or advice about the game what your ability hands you?",
+    "styled": "Not facts. Not numbers. Just what the person behind the screen reckons about the game: their gut, their hunch, their tips. Is the Storyteller's opinion or advice about the game what your ability hands you?",
     "voice": "Carl",
     "yes": [
       "highpriestess",
@@ -870,7 +870,7 @@
   {
     "id": "tfx-needs-specific-partner",
     "plain": "As a Townsfolk, is your ability built around one particular other character being in the game?",
-    "dinniman": "Your whole job hinges on one specific character showing up. No partner, no purpose. Like a duet with an empty stage. Is your ability built around a particular other character being in play?",
+    "styled": "Your whole job hinges on one specific character showing up. No partner, no purpose. Like a duet with an empty stage. Is your ability built around a particular other character being in play?",
     "voice": "Katia",
     "yes": [
       "huntsman",
@@ -883,7 +883,7 @@
   {
     "id": "tfx-double-vote",
     "plain": "Of the Townsfolk, would you like the power to vote twice on the same nomination?",
-    "dinniman": "VOTE! VOTE AGAIN! RAWR! This dinosaur has discovered democracy and would like more of it. Do you want to be able to vote twice on a single nomination?",
+    "styled": "VOTE! VOTE AGAIN! RAWR! This dinosaur has discovered democracy and would like more of it. Do you want to be able to vote twice on a single nomination?",
     "voice": "Mongo",
     "yes": [
       "banshee"
@@ -895,7 +895,7 @@
   {
     "id": "tfx-scramble-evil-knowledge",
     "plain": "As a Townsfolk, does your ability scramble what the evil team knows about who is on their team?",
-    "dinniman": "Evil's first-night team meeting is supposed to go smoothly: nods, winks, knives. You make it a disaster. Does your ability mess up what the evil team knows about its own members?",
+    "styled": "Evil's first-night team meeting is supposed to go smoothly: nods, winks, knives. You make it a disaster. Does your ability mess up what the evil team knows about its own members?",
     "voice": "Mordecai",
     "yes": [
       "magician",
@@ -908,7 +908,7 @@
   {
     "id": "tfx-demon-always-knows",
     "plain": "Of these characters, does the Demon automatically know who you are, whatever you do?",
-    "dinniman": "Some of you only get spotted if you're careless. One of you is spotted the instant the lights go down, no matter what. Does the Demon automatically know who you are?",
+    "styled": "Some of you only get spotted if you're careless. One of you is spotted the instant the lights go down, no matter what. Does the Demon automatically know who you are?",
     "voice": "The Host",
     "yes": [
       "king"
@@ -923,7 +923,7 @@
   {
     "id": "tfx-in-the-dark-about-self",
     "plain": "As a Townsfolk, are you kept in the dark about what your own ability actually is?",
-    "dinniman": "Everybody else got an instruction manual. You got a blank page and a shrug. Are you left in the dark about what your own ability does?",
+    "styled": "Everybody else got an instruction manual. You got a blank page and a shrug. Are you left in the dark about what your own ability does?",
     "voice": "Elle",
     "yes": [
       "amnesiac"
@@ -935,7 +935,7 @@
   {
     "id": "tfx-ever-learn-anything",
     "plain": "Of these three, can your ability ever teach you something?",
-    "dinniman": "Two of you are all about messing with the villains' heads. The third, if they're patient and the bodies pile up, actually gets to learn things. Can your ability ever give you information?",
+    "styled": "Two of you are all about messing with the villains' heads. The third, if they're patient and the bodies pile up, actually gets to learn things. Can your ability ever give you information?",
     "voice": "Katia",
     "yes": [
       "king"
@@ -949,7 +949,7 @@
   {
     "id": "tfx-death-changes-evil-knowledge",
     "plain": "Of these three, does your death change what the evil team knows?",
-    "dinniman": "When you fall, does anything shift for the bad guys? Any curtain lifted, any secret spilled? Oh, I do hope so. Does your death change what the evil team knows?",
+    "styled": "When you fall, does anything shift for the bad guys? Any curtain lifted, any secret spilled? Oh, I do hope so. Does your death change what the evil team knows?",
     "voice": "Samantha",
     "yes": [
       "poppygrower"
@@ -963,7 +963,7 @@
   {
     "id": "tfx-nightly-chooser",
     "plain": "Of these nightly roles, do you choose a player every night?",
-    "dinniman": "Some night owls just sit there and receive their messages. Others have to point at somebody, every single night. Do you choose a player each night?",
+    "styled": "Some night owls just sit there and receive their messages. Others have to point at somebody, every single night. Do you choose a player each night?",
     "voice": "Carl",
     "yes": [
       "preacher",
@@ -986,7 +986,7 @@
   {
     "id": "tfx-nightly-life-on-line",
     "plain": "As a Townsfolk, would you put your own life on the line every night?",
-    "dinniman": "Every night, the same game: roll the dice with your own neck. I've seen plenty of people do this. Most of them were brave. Most of them are dead. Would you risk your life every single night?",
+    "styled": "Every night, the same game: roll the dice with your own neck. I've seen plenty of people do this. Most of them were brave. Most of them are dead. Would you risk your life every single night?",
     "voice": "Mordecai",
     "yes": [
       "gambler",
@@ -999,7 +999,7 @@
   {
     "id": "tfx-more-than-one-of-you",
     "plain": "Of the Townsfolk, could there end up being more than one player with your role?",
-    "dinniman": "Exclusive? Unique? One of a kind? Not you, sweetie! There could be a whole matching set! Could more than one player end up with your role?",
+    "styled": "Exclusive? Unique? One of a kind? Not you, sweetie! There could be a whole matching set! Could more than one player end up with your role?",
     "voice": "Princess Donut",
     "yes": [
       "villageidiot",
@@ -1012,7 +1012,7 @@
   {
     "id": "tfx-no-demon-tonight",
     "plain": "As a Townsfolk, can your ability directly stop the Demon waking or killing that night, without making anyone drunk or poisoned?",
-    "dinniman": "Not by drugging anyone, not by guarding one door, but by flat-out cancelling the Demon's evening. Night off for the monster! Can your ability directly stop the Demon from waking or killing that night?",
+    "styled": "Not by drugging anyone, not by guarding one door, but by flat-out cancelling the Demon's evening. Night off for the monster! Can your ability directly stop the Demon from waking or killing that night?",
     "voice": "The System AI",
     "yes": [
       "princess",
@@ -1026,7 +1026,7 @@
   {
     "id": "tfx-guess-out-loud",
     "plain": "Of these guessers, do you make your guesses publicly, out loud?",
-    "dinniman": "Some people whisper their guesses in a dark room. Others announce them to the entire circle and let everyone see them be wrong. Do you make your guesses out loud in public?",
+    "styled": "Some people whisper their guesses in a dark room. Others announce them to the entire circle and let everyone see them be wrong. Do you make your guesses out loud in public?",
     "voice": "Odette",
     "yes": [
       "juggler",
@@ -1042,7 +1042,7 @@
   {
     "id": "tfx-storyteller-at-night",
     "plain": "Of those who get insight from the Storyteller, does yours arrive at night?",
-    "dinniman": "Some of you corner the Storyteller in daylight. Some of you get your little message slipped under the door at night. Does your Storyteller-given insight come at night?",
+    "styled": "Some of you corner the Storyteller in daylight. Some of you get your little message slipped under the door at night. Does your Storyteller-given insight come at night?",
     "voice": "Zev",
     "yes": [
       "highpriestess",
@@ -1060,7 +1060,7 @@
   {
     "id": "tfx-storyteller-once",
     "plain": "Of those who get insight from the Storyteller, is your contact with them a one-time thing?",
-    "dinniman": "One visit. One question or one piece of advice. Then the door closes forever. Do you only get a single consultation with the Storyteller?",
+    "styled": "One visit. One question or one piece of advice. Then the door closes forever. Do you only get a single consultation with the Storyteller?",
     "voice": "Mordecai",
     "yes": [
       "fisherman",
@@ -1078,7 +1078,7 @@
   {
     "id": "tfx-borrowed-from-start",
     "plain": "Of the ability-borrowers, do you hold your borrowed power from the very start of the game?",
-    "dinniman": "No waiting, no funerals, no choosing. You walk in already carrying someone else's kind of power. Do you start the game holding your borrowed ability?",
+    "styled": "No waiting, no funerals, no choosing. You walk in already carrying someone else's kind of power. Do you start the game holding your borrowed ability?",
     "voice": "Carl",
     "yes": [
       "alchemist"
@@ -1093,7 +1093,7 @@
   {
     "id": "tfx-borrow-needs-a-death",
     "plain": "Of the ability-borrowers, does someone have to die before you get your borrowed power?",
-    "dinniman": "Inheritance, darling! Somebody has to shuffle off before the goodies are yours. Does a player need to die before you get your new power?",
+    "styled": "Inheritance, darling! Somebody has to shuffle off before the goodies are yours. Does a player need to die before you get your new power?",
     "voice": "Princess Donut",
     "yes": [
       "pixie",
@@ -1109,7 +1109,7 @@
   {
     "id": "tfx-pick-your-power",
     "plain": "Of the ability-borrowers, do you get to choose exactly which power you take?",
-    "dinniman": "A whole shop of powers, and you get to browse the shelves and pick one. Shopping spree! Do you choose exactly which ability you borrow?",
+    "styled": "A whole shop of powers, and you get to browse the shelves and pick one. Shopping spree! Do you choose exactly which ability you borrow?",
     "voice": "Elle",
     "yes": [
       "philosopher"
@@ -1124,7 +1124,7 @@
   {
     "id": "tfx-demon-must-kill-you",
     "plain": "Of those whose ability is triggered by a death, must the Demon specifically kill you?",
-    "dinniman": "It's not enough to die. It has to be the Demon, and it has to be you. Fussy! Does your ability only kick in if the Demon itself kills you?",
+    "styled": "It's not enough to die. It has to be the Demon, and it has to be you. Fussy! Does your ability only kick in if the Demon itself kills you?",
     "voice": "The Host",
     "yes": [
       "sage",
@@ -1142,7 +1142,7 @@
   {
     "id": "tfx-death-hands-on-role",
     "plain": "Of those whose ability is triggered by a death, does your death hand your role to someone else?",
-    "dinniman": "When you drop, the job doesn't. Someone else wakes up wearing your hat. Does your death pass your role on to another player?",
+    "styled": "When you drop, the job doesn't. Someone else wakes up wearing your hat. Does your death pass your role on to another player?",
     "voice": "Katia",
     "yes": [
       "farmer"
@@ -1159,7 +1159,7 @@
   {
     "id": "tfx-nightly-info-names-player",
     "plain": "Of these nightly information roles, does your information point you at a particular player?",
-    "dinniman": "Is your nightly message a face in the crowd, or something vaguer, like a score or a role with no owner? Does your nightly information point at a specific player?",
+    "styled": "Is your nightly message a face in the crowd, or something vaguer, like a score or a role with no owner? Does your nightly information point at a specific player?",
     "voice": "Odette",
     "yes": [
       "highpriestess",
@@ -1177,7 +1177,7 @@
   {
     "id": "tfx-info-needs-bodies",
     "plain": "Of these nightly information roles, does your information depend on how many players have died?",
-    "dinniman": "Your information pipe is connected to the graveyard. No bodies, no news. Lots of bodies, lovely news! Does your nightly information depend on the death count?",
+    "styled": "Your information pipe is connected to the graveyard. No bodies, no news. Lots of bodies, lovely news! Does your nightly information depend on the death count?",
     "voice": "Samantha",
     "yes": [
       "king"
@@ -1193,7 +1193,7 @@
   {
     "id": "tfx-own-execution-triggers",
     "plain": "Of these execution-minded roles, does your ability trigger when the Storyteller, not a player, is executed?",
-    "dinniman": "Plenty of you care which player gets strung up. But for one of you, the magic only happens when the noose goes round the Storyteller's neck. Does your ability trigger when the Storyteller is executed?",
+    "styled": "Plenty of you care which player gets strung up. But for one of you, the magic only happens when the noose goes round the Storyteller's neck. Does your ability trigger when the Storyteller is executed?",
     "voice": "Mordecai",
     "yes": [
       "atheist"
@@ -1210,7 +1210,7 @@
   {
     "id": "tfx-rewrite-someones-character",
     "plain": "As a Townsfolk, can your ability change another player's character?",
-    "dinniman": "You don't just learn what people are. You can make them into something else. Character reassignment, effective immediately! Can your ability change someone else's character?",
+    "styled": "You don't just learn what people are. You can make them into something else. Character reassignment, effective immediately! Can your ability change someone else's character?",
     "voice": "The System AI",
     "yes": [
       "huntsman",
@@ -1225,7 +1225,7 @@
   {
     "id": "tfx-certain-evil-from-start",
     "plain": "Of the Townsfolk, do you start the game knowing for certain that one particular player is evil?",
-    "dinniman": "No 'one of these two', no 'one of these three'. One name, definitely evil, from the very first night. Do you begin the game certain that a specific player is evil?",
+    "styled": "No 'one of these two', no 'one of these three'. One name, definitely evil, from the very first night. Do you begin the game certain that a specific player is evil?",
     "voice": "Carl",
     "yes": [
       "bountyhunter"
@@ -1237,7 +1237,7 @@
   {
     "id": "tfx-entirely-passive",
     "plain": "Of the experimental Townsfolk, is your ability entirely passive, with nothing to choose, wake for, guess or learn?",
-    "dinniman": "No waking. No pointing. No guessing. No learning. Your ability just sits there humming quietly in the background. Is yours completely passive like that?",
+    "styled": "No waking. No pointing. No guessing. No learning. Your ability just sits there humming quietly in the background. Is yours completely passive like that?",
     "voice": "Elle",
     "yes": [
       "farmer",
@@ -1253,7 +1253,7 @@
   {
     "id": "tfx-info-topped-up",
     "plain": "Of these start-knowing roles, will you get more of the same kind of information when a certain player dies?",
-    "dinniman": "Most first-night clues are one and done. Yours comes with a refill: lose the name you've got, and a new one turns up. Will a certain player's death bring you more of the same information?",
+    "styled": "Most first-night clues are one and done. Yours comes with a refill: lose the name you've got, and a new one turns up. Will a certain player's death bring you more of the same information?",
     "voice": "The Host",
     "yes": [
       "bountyhunter"
@@ -1269,7 +1269,7 @@
   {
     "id": "tfx-seating-not-people",
     "plain": "Of these start-knowing roles, is your starting information about the seating rather than any particular player?",
-    "dinniman": "BEHOLD THE CIRCLE! Not who, but WHERE! Your clue is about the shape of the table itself! Is your starting information about seating rather than particular people?",
+    "styled": "BEHOLD THE CIRCLE! Not who, but WHERE! Your clue is about the shape of the table itself! Is your starting information about seating rather than particular people?",
     "voice": "Prepotente",
     "yes": [
       "shugenja"
@@ -1285,7 +1285,7 @@
   {
     "id": "tfx-know-your-own-ability",
     "plain": "Of these two, do you know exactly what your own ability does?",
-    "dinniman": "One of you gets nightly whispers about who to talk to. The other is still trying to work out what their job even is. Do you know exactly what your own ability does?",
+    "styled": "One of you gets nightly whispers about who to talk to. The other is still trying to work out what their job even is. Do you know exactly what your own ability does?",
     "voice": "Zev",
     "yes": [
       "highpriestess"
@@ -1298,7 +1298,7 @@
   {
     "id": "tfx-storyteller-every-cycle",
     "plain": "Of these four, do you hear from the Storyteller every day or every night?",
-    "dinniman": "Regular check-ins with the boss. Daily, nightly, like clockwork. Some of us only get one meeting all game. Do you hear from the Storyteller every day or every night?",
+    "styled": "Regular check-ins with the boss. Daily, nightly, like clockwork. Some of us only get one meeting all game. Do you hear from the Storyteller every day or every night?",
     "voice": "Carl",
     "yes": [
       "highpriestess",
@@ -1315,7 +1315,7 @@
   {
     "id": "tfx-guess-which-is-which",
     "plain": "As a Townsfolk, does your ability involve guessing what other players are?",
-    "dinniman": "Guess who! You point at people and name what you think they are, and the game punishes or rewards you accordingly. Does your ability involve guessing what other players are?",
+    "styled": "Guess who! You point at people and name what you think they are, and the game punishes or rewards you accordingly. Does your ability involve guessing what other players are?",
     "voice": "Princess Donut",
     "yes": [
       "gambler",

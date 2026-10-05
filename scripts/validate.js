@@ -51,13 +51,13 @@ export function checkQuestions(questions, characters, seen = { ids: new Set(), t
     if (!q.id) errors.push(`${label} has no id`);
     if (seen.ids.has(q.id)) errors.push(`${label}: duplicate id`);
     seen.ids.add(q.id);
-    for (const key of ['plain', 'dinniman']) {
+    for (const key of ['plain', 'styled']) {
       if (typeof q[key] !== 'string' || !q[key].trim()) errors.push(`${label} needs a "${key}" phrasing`);
       else if (seen.texts.has(q[key])) errors.push(`${label}: "${key}" text duplicates another question`);
       else if (q[key].includes('\u2014')) errors.push(`${label}: "${key}" contains an em dash; use a comma, colon or full stop`);
       else seen.texts.add(q[key]);
     }
-    if (typeof q.voice !== 'string' || !q.voice.trim()) errors.push(`${label} needs a "voice" crediting the dinniman line`);
+    if (typeof q.voice !== 'string' || !q.voice.trim()) errors.push(`${label} needs a "voice" crediting the styled line`);
     const selectorErrors = [...checkSelector(q.yes, `${label} yes`, ids, fields), ...(q.scope ? checkSelector(q.scope, `${label} scope`, ids, fields) : [])];
     errors.push(...selectorErrors);
     if (selectorErrors.length) continue;

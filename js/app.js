@@ -180,6 +180,6 @@ try {
   $('question-number').textContent = '';
   $('question-text').textContent = 'The quiz couldn’t start.';
   $('feedback').textContent = location.protocol === 'file:'
-    ? 'Opening index.html straight from disk doesn’t work. Serve the folder instead (npm run serve) and visit http://localhost:8000.'
+    ? 'Opening quiz.html straight from disk doesn’t work. Serve the folder instead (npm run serve) and visit http://localhost:8000/quiz.html.'
     : `Refresh the page to try again. (${error.message})`;
 }

@@ -3,7 +3,7 @@
 // runs in the browser (js/daily-app.js) and in the Node tests.
 import { prepare, weightedOptions, drawWeighted, CIRCLE_TARGET } from './engine.js?v=dev';
 
-export const LAUNCH_DATE = '2026-10-04';
+export const LAUNCH_DATE = '2026-10-05';
 export const OFFER_COUNT = 3;
 export const MAX_WRONG_GUESSES = 3;
 // Guessing opens once the town circle is seated.

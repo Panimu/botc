@@ -23,7 +23,7 @@ function playAs(game, target) {
   return steps;
 }
 
-const q = (fields) => ({ id: 'q', plain: '?', dinniman: '?', voice: 'Carl', ...fields });
+const q = (fields) => ({ id: 'q', plain: '?', styled: '?', voice: 'Carl', ...fields });
 
 test('shipped data is valid', () => {
   assert.deepEqual(checkCharacters(characters), []);
@@ -55,8 +55,8 @@ test('scoped questions only apply when the whole pool is inside the scope', () =
 
 test('validator rejects yes characters outside the scope and questions that never split', () => {
   const errors = checkQuestions([
-    q({ id: 'a', plain: 'a', dinniman: 'a', yes: ['chef'], scope: ['imp', 'po'] }),
-    q({ id: 'b', plain: 'b', dinniman: 'b', yes: ['imp', 'po'], scope: ['imp', 'po'] }),
+    q({ id: 'a', plain: 'a', styled: 'a', yes: ['chef'], scope: ['imp', 'po'] }),
+    q({ id: 'b', plain: 'b', styled: 'b', yes: ['imp', 'po'], scope: ['imp', 'po'] }),
   ], characters);
   assert.ok(errors.some((e) => e.includes('outside its scope')));
   assert.ok(errors.some((e) => e.includes('never splits')));
@@ -96,7 +96,7 @@ test('a single remaining character ends the game', () => {
 });
 
 test('minSide drops questions with too few characters on a side', () => {
-  const qs = [q({ id: 'one', plain: '1', dinniman: '1', yes: ['imp'] }), q({ id: 'two', plain: '2', dinniman: '2', yes: ['imp', 'po'] })];
+  const qs = [q({ id: 'one', plain: '1', styled: '1', yes: ['imp'] }), q({ id: 'two', plain: '2', styled: '2', yes: ['imp', 'po'] })];
   const game = new Game({ characters, questions: qs, minSide: 2 });
   assert.deepEqual(game.questions.map((x) => x.id), ['two']);
 });

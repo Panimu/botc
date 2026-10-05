@@ -126,7 +126,7 @@ main {
   }
 
   .stage > .circle {
-    --S: max(18rem, min(calc(100cqw - 2rem), calc(100cqh - 2rem), 980px));
+    --S: max(18rem, min(calc((100cqw - 2rem) / 1.07), calc((100cqh - 2rem) / 1.07), 980px));
     margin: 0;
   }
 
@@ -194,15 +194,6 @@ h1 {
   text-align: center;
 }
 
-.progress {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.25rem 1.25rem;
-  color: var(--dim);
-  font-weight: 500;
-}
 
 .question {
   margin: 1rem 0 0.5rem;
@@ -219,11 +210,6 @@ h1 {
   text-wrap: pretty;
 }
 
-.voice {
-  margin: 0 0 1rem;
-  color: var(--dim);
-  font-size: 1rem;
-}
 
 /* The shareable quote on the result. */
 .share-quote {
@@ -236,10 +222,6 @@ h1 {
   font: italic 500 1.15rem/1.5 var(--serif);
 }
 
-.share-quote figcaption {
-  margin-top: 0.35rem;
-  color: var(--dim);
-}
 
 .share-options {
   margin-top: 1.25rem;
@@ -292,11 +274,6 @@ h1 {
 
 .path .path-id { color: var(--dim); }
 
-.keys {
-  margin: 1rem 0 0;
-  font-size: 1rem;
-  color: var(--dim);
-}
 
 kbd {
   font: 500 0.9em var(--body);
@@ -388,7 +365,7 @@ button:focus-visible {
 /* The town circle (js/circle.js): beads while many remain, seats once few do. */
 .circle {
   /* Never wider than the screen or taller than the window. */
-  --S: max(15rem, min(calc(100vw - 32px), 560px, calc(100svh - 3rem)));
+  --S: max(15rem, min(calc((100vw - 32px) / 1.07), 560px, calc(100svh - 3rem)));
   --bead: calc(var(--S) * 0.017);
   --seat: min(calc(var(--S) * 0.15), 120px);
   --ease: cubic-bezier(0.65, 0, 0.25, 1);
@@ -775,7 +752,6 @@ footer {
 
 
 /* ===== Visual polish: town square at night, with a clocktower ===== */
-html, body { overflow-x: clip; }
 :root {
   --glow: rgba(201, 162, 78, 0.24);
   --dial: #c9b994;
@@ -872,7 +848,7 @@ body {
   border-radius: 1rem;
   font: 700 1.55rem/1 var(--serif);
 }
-.answer-tile kbd { font-size: 0.8rem; opacity: 0.7; border-color: currentColor; }
+.answer-tile kbd { font-size: 0.8rem; border-color: currentColor; }
 
 .card-foot {
   display: flex;
@@ -891,7 +867,7 @@ body {
 .circle::before {
   content: "";
   position: absolute;
-  inset: -6%;
+  inset: -3%;
   border-radius: 50%;
   background: radial-gradient(circle closest-side, var(--glow), transparent 75%);
   pointer-events: none;

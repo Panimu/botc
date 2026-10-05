@@ -2,7 +2,7 @@
   {
     "id": "xp-night-shift-regular",
     "plain": "Does your own ability have you take an action or learn something on most nights, not just once?",
-    "dinniman": "Achievement unlocked: Insomniac! Awarded to contestants whose ability drags them out of bed to do or learn something night after night after night. Sleep is for the loot-less. Does your ability have you act or learn something on most nights?",
+    "styled": "Achievement unlocked: Insomniac! Awarded to contestants whose ability drags them out of bed to do or learn something night after night after night. Sleep is for the loot-less. Does your ability have you act or learn something on most nights?",
     "voice": "The System AI",
     "yes": {
       "wakesMostNights": true
@@ -10,8 +10,8 @@
   },
   {
     "id": "xp-night-shift-routine",
-    "plain": "Does your ability give you a job to do almost every single night?",
-    "dinniman": "Some people want a quiet life. Some people want a clipboard and a night shift. I don't get the second group, but I respect their stamina. Does your ability give you a job on nearly every night?",
+    "plain": "Does your own ability, not a borrowed one, give you a job on most nights?",
+    "styled": "Some people want a quiet life. Some people want a clipboard and a night shift. I don't get the second group, but I respect their stamina. Does your own ability give you a job on nearly every night?",
     "voice": "Carl",
     "yes": {
       "wakesMostNights": true
@@ -19,8 +19,8 @@
   },
   {
     "id": "xp-night-shift-sleeper",
-    "plain": "Is your ability quiet on most nights, giving you no nightly job and no nightly information?",
-    "dinniman": "Darling, a star needs her beauty sleep. I refuse to be shaken awake at three in the morning to do PAPERWORK. Does your ability leave you in peace on most nights, with no nightly job and no nightly news?",
+    "plain": "Is your ability quiet on most nights, with no nightly job or information?",
+    "styled": "Darling, a star needs her beauty sleep. I refuse to be shaken awake at three in the morning to do PAPERWORK. Does your ability leave you in peace on most nights, with no nightly job and no nightly news?",
     "voice": "Princess Donut",
     "yes": {
       "wakesMostNights": false
@@ -29,7 +29,7 @@
   {
     "id": "xp-night-shift-evil",
     "plain": "Are you a Minion or Demon whose ability has you act or learn something on most nights, not just once?",
-    "dinniman": "Evil never sleeps, they say. Usually they're talking about the ones who actually get up night after night and get their hands dirty. Are you a Minion or Demon whose ability puts you to work on most nights?",
+    "styled": "Evil never sleeps, they say. Usually they're talking about the ones who actually get up night after night and get their hands dirty. Are you a Minion or Demon whose ability puts you to work on most nights?",
     "voice": "Mordecai",
     "yes": {
       "wakesMostNights": true,
@@ -42,7 +42,7 @@
   {
     "id": "xp-night-shift-good",
     "plain": "Are you a Townsfolk or Outsider whose own ability has you act or learn something on most nights?",
-    "dinniman": "It's honest work, waking up in the dark for a town that might hang you tomorrow. I think it's brave. Are you a Townsfolk or Outsider whose own ability has you act or learn something most nights?",
+    "styled": "It's honest work, waking up in the dark for a town that might hang you tomorrow. I think it's brave. Are you a Townsfolk or Outsider whose own ability has you act or learn something most nights?",
     "voice": "Katia",
     "yes": {
       "wakesMostNights": true,
@@ -55,7 +55,7 @@
   {
     "id": "xp-night-shift-pointer",
     "plain": "When you're woken in the night, do you pick a player?",
-    "dinniman": "Here's the format, folks: lights out, eyes shut, and then a tap on the shoulder. Some of our night owls just get told things. Others have to point a finger at somebody. When you wake, do you pick a player?",
+    "styled": "Here's the format, folks: lights out, eyes shut, and then a tap on the shoulder. Some of our night owls just get told things. Others have to point a finger at somebody. When you wake, do you pick a player?",
     "voice": "The Host",
     "yes": {
       "wakesMostNights": true,
@@ -67,8 +67,8 @@
   },
   {
     "id": "xp-night-shift-dark-side",
-    "plain": "Of all of you who wake most nights, are you on the evil team, a Minion or Demon?",
-    "dinniman": "So you're up at night. Lots of people are up at night, sweetie. Bakers. Nurses. Murderers. Tell me which kind of night owl you are: a Minion or Demon?",
+    "plain": "Of everyone who wakes on most nights, are you a Minion or Demon?",
+    "styled": "So you're up at night. Lots of people are up at night, sweetie. Bakers. Nurses. Murderers. Tell me which kind of night owl you are: a Minion or Demon?",
     "voice": "Odette",
     "yes": {
       "wakesMostNights": true,
@@ -84,7 +84,7 @@
   {
     "id": "xp-night-shift-no-pointing",
     "plain": "Does your ability have you act or learn something on most nights, but never pick a player?",
-    "dinniman": "Every night the lights come on and somebody whispers secrets at you, and you never once have to point at anybody. Honestly? Sounds like a decent gig. Does your ability keep you busy most nights without ever having you pick a player?",
+    "styled": "Every night the lights come on and somebody whispers secrets at you, and you never once have to point at anybody. Honestly? Sounds like a decent gig. Does your ability keep you busy most nights without ever having you pick a player?",
     "voice": "Elle",
     "yes": {
       "wakesMostNights": true,
@@ -93,8 +93,8 @@
   },
   {
     "id": "xp-night-shift-risky",
-    "plain": "Do you use your ability on most nights, and does it carry a catch for you or your own side?",
-    "dinniman": "New sponsor-approved feature: the Nightly Gamble! Every night you use your power, and every night it might bite you, or your friends, right on the ankle. Ratings GOLD. Do you use your ability most nights, with a catch for you or your side?",
+    "plain": "Do you use your ability on most nights, with a catch that can hurt you or your own side?",
+    "styled": "New sponsor-approved feature: the Nightly Gamble! Every night you use your power, and every night it might bite you, or your friends, right on the ankle. Ratings GOLD. Do you use your ability most nights, with a catch for you or your side?",
     "voice": "The System AI",
     "yes": {
       "wakesMostNights": true,
@@ -104,7 +104,7 @@
   {
     "id": "xp-hands-off-passive",
     "plain": "Does your ability work entirely on its own, with no player, you or anyone else, ever choosing or acting because of it?",
-    "dinniman": "My tip of the day: the abilities that never make anyone do anything are the ones nobody can screw up. No picking, no guessing, no grand speeches, not from you and not from anyone else. Is your ability completely hands-off like that?",
+    "styled": "My tip of the day: the abilities that never make anyone do anything are the ones nobody can screw up. No picking, no guessing, no grand speeches, not from you and not from anyone else. Is your ability completely hands-off like that?",
     "voice": "Mordecai",
     "yes": {
       "neverChooses": true
@@ -113,7 +113,7 @@
   {
     "id": "xp-hands-off-autopilot",
     "plain": "Does your power simply run itself, with nobody at the table ever making a decision because of it?",
-    "dinniman": "Your friendly network liaison here! Our research shows that a lot of viewers love a contestant who's just along for the ride while their power does the talking. Zero decisions from anyone, maximum vibes! Does your power run itself with nobody at the table deciding anything because of it?",
+    "styled": "Your friendly network liaison here! Our research shows that a lot of viewers love a contestant who's just along for the ride while their power does the talking. Zero decisions from anyone, maximum vibes! Does your power run itself with nobody at the table deciding anything because of it?",
     "voice": "Zev",
     "yes": {
       "neverChooses": true
@@ -121,8 +121,8 @@
   },
   {
     "id": "xp-hands-off-decider",
-    "plain": "Does your ability lead to someone making a decision or taking an action, whether that is you or another player?",
-    "dinniman": "I didn't sign up to make choices. Nobody signs up for anything here. But some abilities put a decision in someone's lap anyway, yours or somebody else's. Does your ability lead to someone at the table having to decide or act?",
+    "plain": "Does your ability ever lead someone, you or another player, to make a decision or take an action?",
+    "styled": "I didn't sign up to make choices. Nobody signs up for anything here. But some abilities put a decision in someone's lap anyway, yours or somebody else's. Does your ability lead to someone at the table having to decide or act?",
     "voice": "Carl",
     "yes": {
       "neverChooses": false
@@ -131,7 +131,7 @@
   {
     "id": "xp-hands-off-evil",
     "plain": "Are you a Minion or Demon whose ability never makes anyone at the table choose or act?",
-    "dinniman": "The most TERRIFYING villains never lift a paw, darling, and never make anyone ELSE lift one either. They simply exist and things go wrong around them. Are you a Minion or Demon whose ability never has anyone choose or act?",
+    "styled": "The most TERRIFYING villains never lift a paw, darling, and never make anyone ELSE lift one either. They simply exist and things go wrong around them. Are you a Minion or Demon whose ability never has anyone choose or act?",
     "voice": "Princess Donut",
     "yes": {
       "neverChooses": true,
@@ -144,7 +144,7 @@
   {
     "id": "xp-hands-off-good",
     "plain": "Are you a Townsfolk or Outsider whose ability is completely passive, with no player ever acting because of it?",
-    "dinniman": "There's no shame in a quiet power. Some of the strongest people I know never had to choose a target, and never made anyone else choose one either. Are you a Townsfolk or Outsider with a completely passive ability?",
+    "styled": "There's no shame in a quiet power. Some of the strongest people I know never had to choose a target, and never made anyone else choose one either. Are you a Townsfolk or Outsider with a completely passive ability?",
     "voice": "Katia",
     "yes": {
       "neverChooses": true,
@@ -157,7 +157,7 @@
   {
     "id": "xp-hands-off-still-woken",
     "plain": "Even though nobody ever has to act because of your ability, are you still woken on most nights?",
-    "dinniman": "Ha! The cruellest trick in the dungeon: they wake you up every single night and then nobody gets to DO anything. You just sit there and receive. Are you still woken most nights even though your ability never makes anyone act?",
+    "styled": "Ha! The cruellest trick in the dungeon: they wake you up every single night and then nobody gets to DO anything. You just sit there and receive. Are you still woken most nights even though your ability never makes anyone act?",
     "voice": "Samantha",
     "yes": {
       "neverChooses": true,
@@ -170,7 +170,7 @@
   {
     "id": "xp-hands-off-waits-for-death",
     "plain": "Does your passive ability sit silent until a death sets it off?",
-    "dinniman": "You have a power you can't control, and it does absolutely nothing until somebody croaks. It's like owning a smoke alarm in a burning building. Does your ability wait for a death before it does anything?",
+    "styled": "You have a power you can't control, and it does absolutely nothing until somebody croaks. It's like owning a smoke alarm in a burning building. Does your ability wait for a death before it does anything?",
     "voice": "Carl",
     "yes": {
       "neverChooses": true,
@@ -183,7 +183,7 @@
   {
     "id": "xp-hands-off-drawback",
     "plain": "Does your passive ability carry a built-in drawback that can hurt you or your own side?",
-    "dinniman": "You never have to choose anything. Lovely. But some of these do-nothing powers come with a curse stapled to the back, and you'll carry it whether you like it or not. Does yours carry a drawback for you or your own side?",
+    "styled": "You never have to choose anything. Lovely. But some of these do-nothing powers come with a curse stapled to the back, and you'll carry it whether you like it or not. Does yours carry a drawback for you or your own side?",
     "voice": "Mordecai",
     "yes": {
       "neverChooses": true,
@@ -196,7 +196,7 @@
   {
     "id": "xp-hands-off-dark-side",
     "plain": "Among the characters with completely passive abilities, are you one of the Minions or Demons?",
-    "dinniman": "Sitting still and looking innocent, are we? The audience adores a quiet one, darling, but they adore a quiet VILLAIN even more. Among the completely passive, are you a Minion or Demon?",
+    "styled": "Sitting still and looking innocent, are we? The audience adores a quiet one, darling, but they adore a quiet VILLAIN even more. Among the completely passive, are you a Minion or Demon?",
     "voice": "Odette",
     "yes": {
       "neverChooses": true,
@@ -212,7 +212,7 @@
   {
     "id": "xp-hands-off-death-trigger",
     "plain": "Is your ability completely passive, with nobody ever acting because of it, and does it wait for a death to set it off?",
-    "dinniman": "RAWR! Lie very still. Wait. Nobody has to do anything. Only jump up when something dies. (Translation: is your ability completely passive, with nobody acting because of it, and does it wait for a death to set it off?)",
+    "styled": "RAWR! Lie very still. Wait. Nobody has to do anything. Only jump up when something dies. (Translation: is your ability completely passive, with nobody acting because of it, and does it wait for a death to set it off?)",
     "voice": "Mongo",
     "yes": {
       "neverChooses": true,
@@ -222,7 +222,7 @@
   {
     "id": "xp-dark-pointer",
     "plain": "Does your ability ever have you choose a player while the town sleeps?",
-    "dinniman": "Lights out, contestants! While everyone snores, a few of you get to wave a little finger at somebody and make something happen. Ominous! Thrilling! Does your ability ever have you pick a player at night?",
+    "styled": "Lights out, contestants! While everyone snores, a few of you get to wave a little finger at somebody and make something happen. Ominous! Thrilling! Does your ability ever have you pick a player at night?",
     "voice": "The System AI",
     "yes": {
       "choosesPlayersAtNight": true
@@ -231,7 +231,7 @@
   {
     "id": "xp-dark-pointer-thrill",
     "plain": "Does your ability give you that moment in the dark when you point at someone?",
-    "dinniman": "There's a particular silence when a whole room has its eyes closed and you get to point. I won't lie, it's a rush. Does your ability give you that moment of pointing at someone in the dark?",
+    "styled": "There's a particular silence when a whole room has its eyes closed and you get to point. I won't lie, it's a rush. Does your ability give you that moment of pointing at someone in the dark?",
     "voice": "Elle",
     "yes": {
       "choosesPlayersAtNight": true
@@ -240,7 +240,7 @@
   {
     "id": "xp-dark-pointer-good",
     "plain": "Are you a Townsfolk or Outsider whose ability has you choose players at night?",
-    "dinniman": "A good-hearted soul, creeping around after dark picking people out? Very noble. Very suspicious. Are you a Townsfolk or Outsider who chooses players at night?",
+    "styled": "A good-hearted soul, creeping around after dark picking people out? Very noble. Very suspicious. Are you a Townsfolk or Outsider who chooses players at night?",
     "voice": "Prepotente",
     "yes": {
       "choosesPlayersAtNight": true,
@@ -253,7 +253,7 @@
   {
     "id": "xp-dark-pointer-evil",
     "plain": "Are you a Minion or Demon whose ability has you pick players during the night?",
-    "dinniman": "Blood and shadow! Does your finger fall upon the sleeping like the judgement of a GODDESS? Are you a Minion or Demon who picks players at night?",
+    "styled": "Blood and shadow! Does your finger fall upon the sleeping like the judgement of a GODDESS? Are you a Minion or Demon who picks players at night?",
     "voice": "Samantha",
     "yes": {
       "choosesPlayersAtNight": true,
@@ -266,7 +266,7 @@
   {
     "id": "xp-dark-pointer-once",
     "plain": "Of everyone who picks a player at night, do you get just one night pick in the whole game?",
-    "dinniman": "One shot. One night. One finger. If you miss, you miss forever. I've watched people agonise over a single choice like this for days. Do you get only one night pick in the whole game?",
+    "styled": "One shot. One night. One finger. If you miss, you miss forever. I've watched people agonise over a single choice like this for days. Do you get only one night pick in the whole game?",
     "voice": "Mordecai",
     "yes": {
       "choosesPlayersAtNight": true,
@@ -279,7 +279,7 @@
   {
     "id": "xp-dark-pointer-backfire",
     "plain": "Does your night-time ability carry a catch that can come back on you or your own side?",
-    "dinniman": "So you point at someone in the dark. Fine. But does that little point have teeth on both ends, sweetheart? Can your ability bite you or your own side?",
+    "styled": "So you point at someone in the dark. Fine. But does that little point have teeth on both ends, sweetheart? Can your ability bite you or your own side?",
     "voice": "Odette",
     "yes": {
       "choosesPlayersAtNight": true,
@@ -292,7 +292,7 @@
   {
     "id": "xp-dark-pointer-bond",
     "plain": "Does a night pick bind you to that player, so their vote, alignment or survival decides yours?",
-    "dinniman": "Most night picks are fire-and-forget. Yours might be different: you choose someone and suddenly their vote, their side or their pulse decides yours, like a lease you didn't read. Does a night pick bind you to that player like that?",
+    "styled": "Most night picks are fire-and-forget. Yours might be different: you choose someone and suddenly their vote, their side or their pulse decides yours, like a lease you didn't read. Does a night pick bind you to that player like that?",
     "voice": "Carl",
     "yes": {
       "choosesPlayersAtNight": true,
@@ -305,7 +305,7 @@
   {
     "id": "xp-dark-pointer-evil-scoped",
     "plain": "Among all the night-time choosers, are you a Minion or a Demon?",
-    "dinniman": "Exciting news from the night shift! Our pointers are all lined up, and now the audience wants to know which side of the scoreboard you're on. Are you a Minion or Demon?",
+    "styled": "Exciting news from the night shift! Our pointers are all lined up, and now the audience wants to know which side of the scoreboard you're on. Are you a Minion or Demon?",
     "voice": "Zev",
     "yes": {
       "choosesPlayersAtNight": true,
@@ -321,7 +321,7 @@
   {
     "id": "xp-dark-pointer-risky",
     "plain": "Do you choose players at night with an ability that carries a catch for you or your own team?",
-    "dinniman": "The Dungeon proudly presents: the Cursed Pointer! Pick a player in the dark, and maybe it works, and maybe it costs you or your pals dearly. Do you pick players at night with an ability that carries a catch?",
+    "styled": "The Dungeon proudly presents: the Cursed Pointer! Pick a player in the dark, and maybe it works, and maybe it costs you or your pals dearly. Do you pick players at night with an ability that carries a catch?",
     "voice": "The Host",
     "yes": {
       "choosesPlayersAtNight": true,
@@ -331,7 +331,7 @@
   {
     "id": "xp-bond-partner",
     "plain": "Is your ability built around one particular other player, someone you serve, guard, back up, mirror or depend on?",
-    "dinniman": "Some of us go it alone. Some of us have one person in the game who matters more than the rest, for better or worse. Is your ability built around one particular other player?",
+    "styled": "Some of us go it alone. Some of us have one person in the game who matters more than the rest, for better or worse. Is your ability built around one particular other player?",
     "voice": "Katia",
     "yes": {
       "boundToAnotherPlayer": true
@@ -340,7 +340,7 @@
   {
     "id": "xp-bond-loner",
     "plain": "Does your ability stand on its own, without being built around any one particular partner?",
-    "dinniman": "A TRUE star needs no co-star, darling. No sidekick, no partner, no clingy little shadow. Does your ability stand alone, with no particular partner attached?",
+    "styled": "A TRUE star needs no co-star, darling. No sidekick, no partner, no clingy little shadow. Does your ability stand alone, with no particular partner attached?",
     "voice": "Princess Donut",
     "yes": {
       "boundToAnotherPlayer": false
@@ -349,7 +349,7 @@
   {
     "id": "xp-bond-attachment",
     "plain": "Does your ability give you a special attachment to one specific person in the game?",
-    "dinniman": "THIS GOAT has ONE companion. One! And this goat's destiny is WOVEN with theirs! Does your ability give you a special attachment to one specific person?",
+    "styled": "THIS GOAT has ONE companion. One! And this goat's destiny is WOVEN with theirs! Does your ability give you a special attachment to one specific person?",
     "voice": "Prepotente",
     "yes": {
       "boundToAnotherPlayer": true
@@ -358,7 +358,7 @@
   {
     "id": "xp-bond-good",
     "plain": "Are you a Townsfolk or Outsider whose ability revolves around one particular other player?",
-    "dinniman": "A decent person with one other person they're tied to. I'd find that touching if this place didn't usually kill both of them. Are you a Townsfolk or Outsider whose ability revolves around one particular player?",
+    "styled": "A decent person with one other person they're tied to. I'd find that touching if this place didn't usually kill both of them. Are you a Townsfolk or Outsider whose ability revolves around one particular player?",
     "voice": "Carl",
     "yes": {
       "boundToAnotherPlayer": true,
@@ -371,7 +371,7 @@
   {
     "id": "xp-bond-evil",
     "plain": "Are you a Minion or Demon whose ability is wrapped up with one particular other player?",
-    "dinniman": "Villains in pairs! Twins, hosts, partners in crime! Sponsors LOVE a double act. Are you a Minion or Demon whose ability is wrapped up with one particular other player?",
+    "styled": "Villains in pairs! Twins, hosts, partners in crime! Sponsors LOVE a double act. Are you a Minion or Demon whose ability is wrapped up with one particular other player?",
     "voice": "Zev",
     "yes": {
       "boundToAnotherPlayer": true,
@@ -384,7 +384,7 @@
   {
     "id": "xp-bond-inheritance",
     "plain": "Would your partner's death hand you a new power or new knowledge?",
-    "dinniman": "Grim but true: in here, somebody else's funeral is sometimes your birthday. Would your partner dying hand you a new power or new knowledge?",
+    "styled": "Grim but true: in here, somebody else's funeral is sometimes your birthday. Would your partner dying hand you a new power or new knowledge?",
     "voice": "Mordecai",
     "yes": [
       "pixie",
@@ -398,7 +398,7 @@
   {
     "id": "xp-bond-shared-doom",
     "plain": "If your partner is killed, can you die along with them?",
-    "dinniman": "Two hearts, one coffin! If they fall, you might fall right beside them! If your partner is killed, can you die along with them?",
+    "styled": "Two hearts, one coffin! If they fall, you might fall right beside them! If your partner is killed, can you die along with them?",
     "voice": "Samantha",
     "yes": [
       "grandmother",
@@ -411,7 +411,7 @@
   {
     "id": "xp-bond-picked-partner",
     "plain": "Do you choose your partner yourself, rather than having them assigned?",
-    "dinniman": "Arranged marriage or love match, honey? Some of you get handed a partner. Some of you walk up and pick one. Do you choose your partner yourself?",
+    "styled": "Arranged marriage or love match, honey? Some of you get handed a partner. Some of you walk up and pick one. Do you choose your partner yourself?",
     "voice": "Elle",
     "yes": [
       "butler",
@@ -425,7 +425,7 @@
   {
     "id": "xp-bond-risky",
     "plain": "Does being tied to your partner put you or your own team at risk?",
-    "dinniman": "Attachment is a weakness, contestants! Patch note: bonds now come with free complimentary danger. Does your tie to one particular player put you or your own team at risk?",
+    "styled": "Attachment is a weakness, contestants! Patch note: bonds now come with free complimentary danger. Does your tie to one particular player put you or your own team at risk?",
     "voice": "The System AI",
     "yes": {
       "boundToAnotherPlayer": true,
@@ -435,7 +435,7 @@
   {
     "id": "xp-backfire-catch",
     "plain": "Does your ability come with a catch that can work against you or your own team?",
-    "dinniman": "Every reward in here has a price tag. Some prices are just hidden in the small print. Does your ability come with a catch that can work against you or your own team?",
+    "styled": "Every reward in here has a price tag. Some prices are just hidden in the small print. Does your ability come with a catch that can work against you or your own team?",
     "voice": "Mordecai",
     "yes": {
       "harmsOwnTeam": true
@@ -444,7 +444,7 @@
   {
     "id": "xp-backfire-double-edge",
     "plain": "Is your ability a double-edged sword that can cut your own side as well as the enemy?",
-    "dinniman": "Congratulations! You have received: Sword of Mutual Regret! It cuts in both directions, including towards your own friends. Lovely craftsmanship. Is your ability a double-edged sword like that?",
+    "styled": "Congratulations! You have received: Sword of Mutual Regret! It cuts in both directions, including towards your own friends. Lovely craftsmanship. Is your ability a double-edged sword like that?",
     "voice": "The System AI",
     "yes": {
       "harmsOwnTeam": true
@@ -453,7 +453,7 @@
   {
     "id": "xp-backfire-clean",
     "plain": "Is your ability free of any built-in drawback for you or your own side?",
-    "dinniman": "Wouldn't that be nice? A power with no hidden trapdoor under it. I've met maybe three in my life and I'm suspicious of all of them. Is your ability free of any drawback for you or your side?",
+    "styled": "Wouldn't that be nice? A power with no hidden trapdoor under it. I've met maybe three in my life and I'm suspicious of all of them. Is your ability free of any drawback for you or your side?",
     "voice": "Carl",
     "yes": {
       "harmsOwnTeam": false
@@ -462,7 +462,7 @@
   {
     "id": "xp-backfire-evil",
     "plain": "Are you a Minion or Demon whose own ability can backfire on the evil team?",
-    "dinniman": "Even the wicked get saddled with flaws, darling. Exposed, outed, betrayed by their own gifts! Are you a Minion or Demon whose ability can backfire on your own evil team?",
+    "styled": "Even the wicked get saddled with flaws, darling. Exposed, outed, betrayed by their own gifts! Are you a Minion or Demon whose ability can backfire on your own evil team?",
     "voice": "Princess Donut",
     "yes": {
       "harmsOwnTeam": true,
@@ -475,7 +475,7 @@
   {
     "id": "xp-backfire-townsfolk",
     "plain": "Are you a Townsfolk whose own ability can backfire on the good team?",
-    "dinniman": "You're supposed to be the town's helper. And yet your gift has a sharp edge that could land on your own neighbours. That takes courage to carry. Are you a Townsfolk whose ability can backfire on the good team?",
+    "styled": "You're supposed to be the town's helper. And yet your gift has a sharp edge that could land on your own neighbours. That takes courage to carry. Are you a Townsfolk whose ability can backfire on the good team?",
     "voice": "Katia",
     "yes": {
       "harmsOwnTeam": true,
@@ -485,7 +485,7 @@
   {
     "id": "xp-backfire-dark-side",
     "plain": "Of everyone with a self-sabotaging streak in their ability, are you a Minion or Demon?",
-    "dinniman": "All of you have a power that can stab you in the back. Lovely, very dramatic. Now, which side are you secretly stabbing for? Are you a Minion or Demon?",
+    "styled": "All of you have a power that can stab you in the back. Lovely, very dramatic. Now, which side are you secretly stabbing for? Are you a Minion or Demon?",
     "voice": "Odette",
     "yes": {
       "harmsOwnTeam": true,
@@ -500,8 +500,8 @@
   },
   {
     "id": "xp-backfire-good-side",
-    "plain": "Of everyone whose ability can backfire, are you on the good team, a Townsfolk or Outsider?",
-    "dinniman": "So your power has a flaw. Join the club, kid. Question is, are you a flawed hero or a flawed monster? Are you a Townsfolk or Outsider?",
+    "plain": "Of everyone whose ability can backfire, are you a Townsfolk or Outsider?",
+    "styled": "So your power has a flaw. Join the club, kid. Question is, are you a flawed hero or a flawed monster? Are you a Townsfolk or Outsider?",
     "voice": "Mordecai",
     "yes": {
       "harmsOwnTeam": true,
@@ -517,7 +517,7 @@
   {
     "id": "xp-backfire-passive",
     "plain": "Is your drawback part of a completely passive ability, one that never makes anyone choose or act?",
-    "dinniman": "Some of you take a risk when you act. Others never get to act at all, and nor does anyone else; the trouble just arrives on its own, like weather. Is your drawback built into a completely passive ability like that?",
+    "styled": "Some of you take a risk when you act. Others never get to act at all, and nor does anyone else; the trouble just arrives on its own, like weather. Is your drawback built into a completely passive ability like that?",
     "voice": "Elle",
     "yes": {
       "harmsOwnTeam": true,
@@ -530,7 +530,7 @@
   {
     "id": "xp-death-dormant",
     "plain": "Does your ability lie dormant until somebody dies?",
-    "dinniman": "Some powers do nothing at all until there's a body on the floor. Morbid? Sure. Efficient? Also sure. Does your ability lie dormant until somebody dies?",
+    "styled": "Some powers do nothing at all until there's a body on the floor. Morbid? Sure. Efficient? Also sure. Does your ability lie dormant until somebody dies?",
     "voice": "Elle",
     "yes": {
       "needsDeathToAct": true
@@ -539,7 +539,7 @@
   {
     "id": "xp-death-slow-burner",
     "plain": "Are you a slow burner, whose power only stirs once there's been a death?",
-    "dinniman": "Rawr! RAWR! (He says: some friends only wake up after something has died. Is your power a slow burner that only stirs once there's been a death?)",
+    "styled": "Rawr! RAWR! (He says: some friends only wake up after something has died. Is your power a slow burner that only stirs once there's been a death?)",
     "voice": "Mongo",
     "yes": {
       "needsDeathToAct": true
@@ -548,7 +548,7 @@
   {
     "id": "xp-death-live-now",
     "plain": "Does your ability already matter while everyone is still alive?",
-    "dinniman": "Don't wait for the funeral, darling! A REAL star makes an impact from the very first scene. Does your ability already matter while everybody's still breathing?",
+    "styled": "Don't wait for the funeral, darling! A REAL star makes an impact from the very first scene. Does your ability already matter while everybody's still breathing?",
     "voice": "Princess Donut",
     "yes": {
       "needsDeathToAct": false
@@ -557,7 +557,7 @@
   {
     "id": "xp-death-good",
     "plain": "Are you a Townsfolk or Outsider whose ability only does anything after a death?",
-    "dinniman": "Look, you're on the good side, and your big contribution only arrives after someone's dead. Possibly you. I've had worse job descriptions. Are you a Townsfolk or Outsider whose ability needs a death first?",
+    "styled": "Look, you're on the good side, and your big contribution only arrives after someone's dead. Possibly you. I've had worse job descriptions. Are you a Townsfolk or Outsider whose ability needs a death first?",
     "voice": "Carl",
     "yes": {
       "needsDeathToAct": true,
@@ -570,7 +570,7 @@
   {
     "id": "xp-death-evil",
     "plain": "Are you a Minion or Demon whose ability waits for a death or execution before it does anything?",
-    "dinniman": "Patience, minion, patience! The grave is your trigger and the gallows are your stage! Are you a Minion or Demon whose ability waits for a death before it does anything?",
+    "styled": "Patience, minion, patience! The grave is your trigger and the gallows are your stage! Are you a Minion or Demon whose ability waits for a death before it does anything?",
     "voice": "Prepotente",
     "yes": {
       "needsDeathToAct": true,
@@ -583,7 +583,7 @@
   {
     "id": "xp-death-own-funeral",
     "plain": "Is it your own death that sets your ability off?",
-    "dinniman": "Here's the twist for this crowd: your power wakes up at a funeral. The juicy question, darling, is whose funeral. Is it your own death that sets your ability off?",
+    "styled": "Here's the twist for this crowd: your power wakes up at a funeral. The juicy question, darling, is whose funeral. Is it your own death that sets your ability off?",
     "voice": "Odette",
     "yes": [
       "farmer",
@@ -608,7 +608,7 @@
   {
     "id": "xp-death-dark-side",
     "plain": "Of everyone whose ability waits for a death, are you a Minion or Demon?",
-    "dinniman": "Ooh, a whole room of people waiting for corpses! Ratings through the roof! Now tell our viewers: are you one of the Minions or Demons?",
+    "styled": "Ooh, a whole room of people waiting for corpses! Ratings through the roof! Now tell our viewers: are you one of the Minions or Demons?",
     "voice": "The Host",
     "yes": {
       "needsDeathToAct": true,
@@ -624,7 +624,7 @@
   {
     "id": "xp-death-sting",
     "plain": "Once a death wakes your ability, is there a catch in it that can hurt your own team?",
-    "dinniman": "Your ability springs to life when someone dies. Sometimes it springs straight into your own team's face. Once it wakes, is there a catch in it that can hurt your own side?",
+    "styled": "Your ability springs to life when someone dies. Sometimes it springs straight into your own team's face. Once it wakes, is there a catch in it that can hurt your own side?",
     "voice": "Mordecai",
     "yes": {
       "needsDeathToAct": true,
@@ -657,7 +657,7 @@
   {
     "id": "xp-rules-table",
     "plain": "Does your presence change a standing rule for the whole table, such as who can vote or nominate, or what an execution does?",
-    "dinniman": "Some contestants play the game. Some contestants change the game for everyone in the room and watch them squirm. Does your presence change a rule the whole table has to follow?",
+    "styled": "Some contestants play the game. Some contestants change the game for everyone in the room and watch them squirm. Does your presence change a rule the whole table has to follow?",
     "voice": "The System AI",
     "yes": {
       "changesTheRules": true
@@ -666,7 +666,7 @@
   {
     "id": "xp-rules-house-rules",
     "plain": "Does just having your character in play change one of the game's standing rules for everybody?",
-    "dinniman": "Exciting format change, everyone! With this contestant around, the usual rulebook goes right out the window for the whole table. Fresh! Disruptive! On-brand! Does your character change a standing rule for everyone just by being in play?",
+    "styled": "Exciting format change, everyone! With this contestant around, the usual rulebook goes right out the window for the whole table. Fresh! Disruptive! On-brand! Does your character change a standing rule for everyone just by being in play?",
     "voice": "Zev",
     "yes": {
       "changesTheRules": true
@@ -675,7 +675,7 @@
   {
     "id": "xp-rules-evil",
     "plain": "Are you a Minion or Demon whose ability changes how nominating, voting or executions work for the whole table?",
-    "dinniman": "Why kill the town when you can rig the whole system? Are you a Minion or Demon whose ability changes how nominations, votes or executions work for everyone?",
+    "styled": "Why kill the town when you can rig the whole system? Are you a Minion or Demon whose ability changes how nominations, votes or executions work for everyone?",
     "voice": "Samantha",
     "yes": {
       "changesTheRules": true,
@@ -688,7 +688,7 @@
   {
     "id": "xp-rules-townsfolk",
     "plain": "Are you a Townsfolk whose ability bends one of the game's standing rules for everyone?",
-    "dinniman": "A good citizen who quietly bends the rulebook for the whole town. I've seen worse. I've BEEN worse. Are you a Townsfolk whose ability bends a standing rule for everyone?",
+    "styled": "A good citizen who quietly bends the rulebook for the whole town. I've seen worse. I've BEEN worse. Are you a Townsfolk whose ability bends a standing rule for everyone?",
     "voice": "Elle",
     "yes": {
       "changesTheRules": true,
@@ -698,7 +698,7 @@
   {
     "id": "xp-rules-dark-side",
     "plain": "Of the characters who change the table's rules, are you a Minion or Demon?",
-    "dinniman": "Rule-breakers, every one of you. Delicious. But are you breaking the rules to save the town, or to bury it? Are you a Minion or Demon?",
+    "styled": "Rule-breakers, every one of you. Delicious. But are you breaking the rules to save the town, or to bury it? Are you a Minion or Demon?",
     "voice": "Odette",
     "yes": {
       "changesTheRules": true,
@@ -714,7 +714,7 @@
   {
     "id": "xp-rules-visitor",
     "plain": "Of the characters who change the table's rules, are you a Traveller just passing through?",
-    "dinniman": "Some of you live here. Some of you blew in on the evening coach, rearranged everything, and will be gone by Tuesday. Are you a Traveller passing through?",
+    "styled": "Some of you live here. Some of you blew in on the evening coach, rearranged everything, and will be gone by Tuesday. Are you a Traveller passing through?",
     "voice": "Carl",
     "yes": {
       "changesTheRules": true,
@@ -727,7 +727,7 @@
   {
     "id": "xp-oneshot-spent",
     "plain": "Does your ability only ever take effect once in the whole game?",
-    "dinniman": "One-time consumable detected! Whether you trigger it or it triggers you, the audience enjoys the outcome either way. Does your ability only ever go off once, and then it's gone forever?",
+    "styled": "One-time consumable detected! Whether you trigger it or it triggers you, the audience enjoys the outcome either way. Does your ability only ever go off once, and then it's gone forever?",
     "voice": "The System AI",
     "yes": {
       "takesEffectOnce": true
@@ -739,7 +739,7 @@
   {
     "id": "xp-oneshot-single-move",
     "plain": "Is your whole ability used up in a single go?",
-    "dinniman": "One swing, kid. Maybe you take it, maybe it takes itself. Either way, there's no second one coming. Is your whole ability used up in a single go?",
+    "styled": "One swing, kid. Maybe you take it, maybe it takes itself. Either way, there's no second one coming. Is your whole ability used up in a single go?",
     "voice": "Mordecai",
     "yes": {
       "takesEffectOnce": true
@@ -751,7 +751,7 @@
   {
     "id": "xp-oneshot-evil",
     "plain": "Are you a Minion or Demon whose ability only ever takes effect once?",
-    "dinniman": "One perfect strike, darling, delivered with style and never repeated. That's what makes it ICONIC. Are you a Minion or Demon whose ability only ever goes off once?",
+    "styled": "One perfect strike, darling, delivered with style and never repeated. That's what makes it ICONIC. Are you a Minion or Demon whose ability only ever goes off once?",
     "voice": "Princess Donut",
     "yes": {
       "takesEffectOnce": true,
@@ -767,7 +767,7 @@
   {
     "id": "xp-oneshot-good",
     "plain": "Are you a Townsfolk or Outsider whose ability only ever takes effect once?",
-    "dinniman": "Knowing your moment comes once, and only once, and you can't take it back. I think that's one of the bravest ways to play. Are you a Townsfolk or Outsider whose ability only ever goes off once?",
+    "styled": "Knowing your moment comes once, and only once, and you can't take it back. I think that's one of the bravest ways to play. Are you a Townsfolk or Outsider whose ability only ever goes off once?",
     "voice": "Katia",
     "yes": {
       "takesEffectOnce": true,
@@ -783,7 +783,7 @@
   {
     "id": "xp-oneshot-night-pick",
     "plain": "Is your one use spent picking a player at night?",
-    "dinniman": "Your single precious use. Do you spend it with your eyes open in the dark, pointing at one sleeping fool? Is your one use spent picking a player at night?",
+    "styled": "Your single precious use. Do you spend it with your eyes open in the dark, pointing at one sleeping fool? Is your one use spent picking a player at night?",
     "voice": "Prepotente",
     "yes": {
       "oneShot": true,
@@ -796,7 +796,7 @@
   {
     "id": "xp-oneshot-daylight",
     "plain": "Must your one use happen during the day?",
-    "dinniman": "Big daytime moment, everyone! Some single-use powers go off in front of the whole studio audience, in broad daylight. Must your one use happen during the day?",
+    "styled": "Big daytime moment, everyone! Some single-use powers go off in front of the whole studio audience, in broad daylight. Must your one use happen during the day?",
     "voice": "The Host",
     "yes": [
       "artist",
@@ -816,7 +816,7 @@
   {
     "id": "xp-oneshot-needs-corpse",
     "plain": "Does your one use need someone to be dead first?",
-    "dinniman": "BLOOD FIRST! Then your little power! Does your single use need somebody, maybe you, to be dead first?",
+    "styled": "BLOOD FIRST! Then your little power! Does your single use need somebody, maybe you, to be dead first?",
     "voice": "Samantha",
     "yes": {
       "oneShot": true,
@@ -829,7 +829,7 @@
   {
     "id": "xp-oneshot-dark-side",
     "plain": "Among the characters with a single use, are you a Minion or Demon?",
-    "dinniman": "One shot each, contestants! And now the leaderboard wants to know whose side that shot is fired for. Are you a Minion or Demon?",
+    "styled": "One shot each, contestants! And now the leaderboard wants to know whose side that shot is fired for. Are you a Minion or Demon?",
     "voice": "Zev",
     "yes": {
       "oneShot": true,

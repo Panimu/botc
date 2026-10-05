@@ -2,7 +2,7 @@
   {
     "id": "tfc-chef-evil-pairs",
     "plain": "Would you like to start the game knowing how many pairs of evil players are sitting next to each other?",
-    "dinniman": "Opening loot box! Inside: one (1) number, representing how many evil players are snuggled up side by side. No names. No refunds. Do you want to start the game knowing how many evil pairs are sitting together?",
+    "styled": "Opening loot box! Inside: one (1) number, representing how many evil players are snuggled up side by side. No names. No refunds. Do you want to start the game knowing how many evil pairs are sitting together?",
     "voice": "The System AI",
     "yes": [
       "chef"
@@ -11,7 +11,7 @@
   {
     "id": "tfc-chef-shady-couples",
     "plain": "Do you like judging a dinner party by counting how many shady couples have ended up seated together?",
-    "dinniman": "A proper hostess KNOWS when two disreputable guests have wangled adjoining seats. I don't need their names, darling, I need the headcount. Do you like judging a dinner party by counting the shady couples seated together?",
+    "styled": "A proper hostess KNOWS when two disreputable guests have wangled adjoining seats. I don't need their names, darling, I need the headcount. Do you like judging a dinner party by counting the shady couples seated together?",
     "voice": "Princess Donut",
     "yes": [
       "chef"
@@ -19,8 +19,8 @@
   },
   {
     "id": "tfc-one-number-then-silence",
-    "plain": "Would one number, handed to you on the first night, be all the information you want for the whole game?",
-    "dinniman": "One number. Night one. Then nothing, ever again, and you spend the rest of the game convincing idiots it matters. Some people thrive on that. Would a single first-night number be all the information you want all game?",
+    "plain": "Would a single number on the first night be all the information you want for the whole game?",
+    "styled": "One number. Night one. Then nothing, ever again, and you spend the rest of the game convincing idiots it matters. Some people thrive on that. Would a single first-night number be all the information you want all game?",
     "voice": "Mordecai",
     "yes": [
       "chef",
@@ -29,8 +29,8 @@
   },
   {
     "id": "tfc-investigator-minion-pair",
-    "plain": "Would you like to start the game knowing that one of two players is a particular Minion?",
-    "dinniman": "So the game hands me two names and says one of them works for the bad guy. Great. Now I get to stare at two people over breakfast. Would you like to start knowing that one of two players is a particular Minion?",
+    "plain": "Would you like to begin the game knowing one of two players is a particular Minion?",
+    "styled": "So the game hands me two names and says one of them works for the bad guy. Great. Now I get to stare at two people over breakfast. Would you like to start knowing that one of two players is a particular Minion?",
     "voice": "Carl",
     "yes": [
       "investigator"
@@ -39,7 +39,7 @@
   {
     "id": "tfc-investigator-the-reveal",
     "plain": "Would you like your opening clue to name a specific Minion character and narrow it down to two suspects?",
-    "dinniman": "Oh, I adore a reveal. Two suspects, one secret title, and you get to drop it on them in front of the whole studio audience. Tell me honestly: would you like your opening clue to name a Minion character and narrow it to two suspects?",
+    "styled": "Oh, I adore a reveal. Two suspects, one secret title, and you get to drop it on them in front of the whole studio audience. Tell me honestly: would you like your opening clue to name a Minion character and narrow it to two suspects?",
     "voice": "Odette",
     "yes": [
       "investigator"
@@ -48,7 +48,7 @@
   {
     "id": "tfc-washerwoman-laundry-tag",
     "plain": "Would you like to start the game knowing that one of two players is a particular Townsfolk?",
-    "dinniman": "Folks, our contestant wakes up with a lovely little laundry tag: two names, one Townsfolk, and the fun of working out whose shirt it is! Would you like to start the game knowing that one of two players is a particular Townsfolk?",
+    "styled": "Folks, our contestant wakes up with a lovely little laundry tag: two names, one Townsfolk, and the fun of working out whose shirt it is! Would you like to start the game knowing that one of two players is a particular Townsfolk?",
     "voice": "The Host",
     "yes": [
       "washerwoman"
@@ -57,7 +57,7 @@
   {
     "id": "tfc-good-one-of-two",
     "plain": "Would you like to start the game knowing that one of two players is a particular good character?",
-    "dinniman": "I'd rather begin by learning who might be safe than who's dangerous. Two names, and one of them is a good character I can actually name. Would you like to start the game knowing one of two players is a particular good character?",
+    "styled": "I'd rather begin by learning who might be safe than who's dangerous. Two names, and one of them is a good character I can actually name. Would you like to start the game knowing one of two players is a particular good character?",
     "voice": "Katia",
     "yes": [
       "washerwoman",
@@ -66,8 +66,8 @@
   },
   {
     "id": "tfc-librarian-oddball-pair",
-    "plain": "Would you like to start the game knowing that one of two players is a particular Outsider?",
-    "dinniman": "The misfits! The weirdos! The ones who couldn't get into a PROPER role! You'd get two names and the title of one oddball. Would you like to start the game knowing that one of two players is a particular Outsider?",
+    "plain": "Do you want to start the game knowing one of two players is a particular Outsider?",
+    "styled": "The misfits! The weirdos! The ones who couldn't get into a PROPER role! You'd get two names and the title of one oddball. Would you like to start the game knowing that one of two players is a particular Outsider?",
     "voice": "Princess Donut",
     "yes": [
       "librarian"
@@ -76,7 +76,7 @@
   {
     "id": "tfc-outsiders-only-briefing",
     "plain": "Would you like your own ability's starting information to be about the Outsiders and nothing else?",
-    "dinniman": "Everybody wants the juicy stuff about Demons. Not me, sweetheart. Give me the list of oddballs and losers and I'll make do. Would you like your own ability's starting information to be about the Outsiders and nothing else?",
+    "styled": "Everybody wants the juicy stuff about Demons. Not me, sweetheart. Give me the list of oddballs and losers and I'll make do. Would you like your own ability's starting information to be about the Outsiders and nothing else?",
     "voice": "Elle",
     "yes": [
       "librarian",
@@ -85,8 +85,8 @@
   },
   {
     "id": "tfc-two-doors-one-title",
-    "plain": "Would you like to start with two players and one character, knowing that exactly one of them has it?",
-    "dinniman": "New Achievement Unlocked: Two Doors, One Title! You begin the crawl with a pair of names and a single character to pin on one of them. Do you want to start with two players and one character, knowing exactly one of them has it?",
+    "plain": "Do you want to start with two players and a character, knowing exactly one of them has it?",
+    "styled": "New Achievement Unlocked: Two Doors, One Title! You begin the crawl with a pair of names and a single character to pin on one of them. Do you want to start with two players and one character, knowing exactly one of them has it?",
     "voice": "The System AI",
     "yes": [
       "washerwoman",
@@ -97,7 +97,7 @@
   {
     "id": "tfc-empath-neighbour-count",
     "plain": "Would you like to learn each night how many of your two living neighbours are evil?",
-    "dinniman": "Every night I wake up and find out whether the people on either side of me want me dead. Zero, one or two. Very relaxing. Would you like to learn each night how many of your two living neighbours are evil?",
+    "styled": "Every night I wake up and find out whether the people on either side of me want me dead. Zero, one or two. Very relaxing. Would you like to learn each night how many of your two living neighbours are evil?",
     "voice": "Carl",
     "yes": [
       "empath"
@@ -106,7 +106,7 @@
   {
     "id": "tfc-empath-prickling-skin",
     "plain": "Would you like a nightly headcount of the evil players sitting right beside you?",
-    "dinniman": "My skin simply PRICKLES when something wicked sits too close. It's a gift, like my cheekbones. Would you like a nightly headcount of the evil players sitting right beside you?",
+    "styled": "My skin simply PRICKLES when something wicked sits too close. It's a gift, like my cheekbones. Would you like a nightly headcount of the evil players sitting right beside you?",
     "voice": "Princess Donut",
     "yes": [
       "empath"
@@ -114,8 +114,8 @@
   },
   {
     "id": "tfc-fortune-crystal-ball",
-    "plain": "Would you like to point at two players each night and learn whether either of them is the Demon?",
-    "dinniman": "Step right up to the crystal ball! Pick any two contestants and the spirits will tell you if a Demon is hiding among them! Would you like to point at two players each night and learn whether either is the Demon?",
+    "plain": "Do you want to point at two players each night and learn whether either of them is the Demon?",
+    "styled": "Step right up to the crystal ball! Pick any two contestants and the spirits will tell you if a Demon is hiding among them! Would you like to point at two players each night and learn whether either is the Demon?",
     "voice": "The Host",
     "yes": [
       "fortuneteller"
@@ -124,7 +124,7 @@
   {
     "id": "tfc-fortune-innocent-lookalike",
     "plain": "Would you accept one innocent player always looking like the Demon to you, in return for checking for the Demon each night?",
-    "dinniman": "Here's the catch with your gift: somewhere out there is a perfectly decent person who pings as a Demon every single time. Hang them by mistake and that's on you. Would you accept one innocent player always looking like the Demon to you, in return for checking for the Demon each night?",
+    "styled": "Here's the catch with your gift: somewhere out there is a perfectly decent person who pings as a Demon every single time. Hang them by mistake and that's on you. Would you accept one innocent player always looking like the Demon to you, in return for checking for the Demon each night?",
     "voice": "Mordecai",
     "yes": [
       "fortuneteller"
@@ -133,7 +133,7 @@
   {
     "id": "tfc-undertaker-post-mortem",
     "plain": "Would you like to learn each night which character was executed that day?",
-    "dinniman": "Okay, so our sponsors LOVE a post-mortem segment! Each night you'd get the true identity of whoever got hanged that day. Super on-brand. Would you like to learn each night which character was executed that day?",
+    "styled": "Okay, so our sponsors LOVE a post-mortem segment! Each night you'd get the true identity of whoever got hanged that day. Super on-brand. Would you like to learn each night which character was executed that day?",
     "voice": "Zev",
     "yes": [
       "undertaker"
@@ -142,7 +142,7 @@
   {
     "id": "tfc-undertaker-boots-and-flint",
     "plain": "Do you enjoy examining the freshly executed for clues about who they really were?",
-    "dinniman": "Somebody gets hanged, everybody goes to bed, and you're the weirdo checking the corpse's boots for flint shavings. Do you enjoy examining the freshly executed for clues about who they really were?",
+    "styled": "Somebody gets hanged, everybody goes to bed, and you're the weirdo checking the corpse's boots for flint shavings. Do you enjoy examining the freshly executed for clues about who they really were?",
     "voice": "Carl",
     "yes": [
       "undertaker"
@@ -151,7 +151,7 @@
   {
     "id": "tfc-listening-to-the-dead",
     "plain": "Would you like your nightly information to come from the dead?",
-    "dinniman": "The dead don't lie, mostly because they've got nothing left to lose. A couple of jobs in this town are about listening to them. Would you like your nightly information to come from the dead?",
+    "styled": "The dead don't lie, mostly because they've got nothing left to lose. A couple of jobs in this town are about listening to them. Would you like your nightly information to come from the dead?",
     "voice": "Mordecai",
     "yes": [
       "undertaker",
@@ -161,7 +161,7 @@
   {
     "id": "tfc-monk-one-shield",
     "plain": "Would you like to spend each night shielding one other player from the Demon?",
-    "dinniman": "Guarding someone else feels braver than hiding myself. One person, every night, safe from whatever is out there in the dark. Would you like to spend each night shielding one other player from the Demon?",
+    "styled": "Guarding someone else feels braver than hiding myself. One person, every night, safe from whatever is out there in the dark. Would you like to spend each night shielding one other player from the Demon?",
     "voice": "Katia",
     "yes": [
       "monk"
@@ -170,7 +170,7 @@
   {
     "id": "tfc-selfless-shield",
     "plain": "Would you like to keep others safe from the Demon while having no protection yourself?",
-    "dinniman": "Patch note: selflessness has been buffed for other people and nerfed for you. Your little shield works on everyone except the idiot holding it. Would you like to keep others safe from the Demon while having no protection yourself?",
+    "styled": "Patch note: selflessness has been buffed for other people and nerfed for you. Your little shield works on everyone except the idiot holding it. Would you like to keep others safe from the Demon while having no protection yourself?",
     "voice": "The System AI",
     "yes": [
       "monk",
@@ -180,7 +180,7 @@
   {
     "id": "tfc-choose-who-sleeps-safe",
     "plain": "Would you like to spend your nights choosing which players are safe until morning?",
-    "dinniman": "Tonight on Crawl Rescue, our contestant decides who wakes up breathing! It's heartwarming, it's tense, and the ratings are through the roof! Would you like to spend your nights choosing which players are safe until morning?",
+    "styled": "Tonight on Crawl Rescue, our contestant decides who wakes up breathing! It's heartwarming, it's tense, and the ratings are through the roof! Would you like to spend your nights choosing which players are safe until morning?",
     "voice": "The Host",
     "yes": [
       "monk",
@@ -190,7 +190,7 @@
   {
     "id": "tfc-ravenkeeper-last-look",
     "plain": "If you were killed in the night, would you want to wake and learn one player's character?",
-    "dinniman": "Most folks die and that's the end of it. You'd get one last look at the board: one name, one true character. Make it count. If you were killed in the night, would you want to wake and learn one player's character?",
+    "styled": "Most folks die and that's the end of it. You'd get one last look at the board: one name, one true character. Make it count. If you were killed in the night, would you want to wake and learn one player's character?",
     "voice": "Mordecai",
     "yes": [
       "ravenkeeper"
@@ -199,7 +199,7 @@
   {
     "id": "tfc-ravenkeeper-loyal-birds",
     "plain": "If you were murdered in your sleep, would you want one person's true identity brought to you?",
-    "dinniman": "Should some lowly FIEND murder me in my slumber, my winged servants shall scour the land and return with one wretch's secret! VENGEANCE! If you were murdered in your sleep, would you want one person's true identity brought to you?",
+    "styled": "Should some lowly FIEND murder me in my slumber, my winged servants shall scour the land and return with one wretch's secret! VENGEANCE! If you were murdered in your sleep, would you want one person's true identity brought to you?",
     "voice": "Prepotente",
     "yes": [
       "ravenkeeper"
@@ -208,7 +208,7 @@
   {
     "id": "tfc-death-as-a-clue",
     "plain": "If the Demon killed you at night, would you hope to learn something about another player?",
-    "dinniman": "I'd like to think my death would at least be informative. For somebody. Ideally me, for about a second. If the Demon killed you at night, would you hope to learn something about another player?",
+    "styled": "I'd like to think my death would at least be informative. For somebody. Ideally me, for about a second. If the Demon killed you at night, would you hope to learn something about another player?",
     "voice": "Carl",
     "yes": [
       "ravenkeeper",
@@ -218,7 +218,7 @@
   {
     "id": "tfc-slayer-one-bullet",
     "plain": "Would you like one public chance to strike down a player, which only works if they are the Demon?",
-    "dinniman": "Introducing the One-Shot Wonder Pack! One bullet, fired in broad daylight, that only hurts Demons. Miss, and everybody saw you miss. Would you like one public chance to strike down a player that only works if they are the Demon?",
+    "styled": "Introducing the One-Shot Wonder Pack! One bullet, fired in broad daylight, that only hurts Demons. Miss, and everybody saw you miss. Would you like one public chance to strike down a player that only works if they are the Demon?",
     "voice": "The System AI",
     "yes": [
       "slayer"
@@ -227,7 +227,7 @@
   {
     "id": "tfc-slayer-strike-not-vote",
     "plain": "Would you rather test your Demon theory with a public strike than wait for a vote?",
-    "dinniman": "VOTES ARE FOR COWARDS! Point at the beast and SMITE it where it sits! If it was the wrong one, well, at least it was exciting. Would you rather test your Demon theory with a public strike than wait for a vote?",
+    "styled": "VOTES ARE FOR COWARDS! Point at the beast and SMITE it where it sits! If it was the wrong one, well, at least it was exciting. Would you rather test your Demon theory with a public strike than wait for a vote?",
     "voice": "Samantha",
     "yes": [
       "slayer"
@@ -236,7 +236,7 @@
   {
     "id": "tfc-soldier-no-powers-needed",
     "plain": "Would you like to be completely safe from the Demon, with no ability to use?",
-    "dinniman": "No powers, no night wake-ups, no clever plan. The monster just can't touch me. Honestly, that sounds like the best job in the dungeon. Would you like to be completely safe from the Demon, with no ability to use?",
+    "styled": "No powers, no night wake-ups, no clever plan. The monster just can't touch me. Honestly, that sounds like the best job in the dungeon. Would you like to be completely safe from the Demon, with no ability to use?",
     "voice": "Carl",
     "yes": [
       "soldier"
@@ -245,7 +245,7 @@
   {
     "id": "tfc-soldier-bounce-off",
     "plain": "Would you like the Demon's attacks never to work on you, even though an execution could still finish you?",
-    "dinniman": "The big scary Demon comes knocking and you just don't answer. Ever. The neighbours can still string you up, mind. Would you like the Demon's attacks never to work on you, even though an execution could still finish you?",
+    "styled": "The big scary Demon comes knocking and you just don't answer. Ever. The neighbours can still string you up, mind. Would you like the Demon's attacks never to work on you, even though an execution could still finish you?",
     "voice": "Elle",
     "yes": [
       "soldier"
@@ -254,7 +254,7 @@
   {
     "id": "tfc-demon-proof",
     "plain": "Would you like the Demon to have no way of killing you?",
-    "dinniman": "Viewers at home, imagine it: the big bad comes calling and simply fails, night after night after glorious night! Would you like the Demon to have no way of killing you?",
+    "styled": "Viewers at home, imagine it: the big bad comes calling and simply fails, night after night after glorious night! Would you like the Demon to have no way of killing you?",
     "voice": "The Host",
     "yes": [
       "soldier",
@@ -264,7 +264,7 @@
   {
     "id": "tfc-mayor-final-three",
     "plain": "With three players left, would you like good to win simply because the town chose not to execute?",
-    "dinniman": "Three people standing, and I simply DECLINE to hang anyone and the good side wins? That is the most elegant thing I have ever heard. With three players left, would you like good to win because the town chose not to execute?",
+    "styled": "Three people standing, and I simply DECLINE to hang anyone and the good side wins? That is the most elegant thing I have ever heard. With three players left, would you like good to win because the town chose not to execute?",
     "voice": "Princess Donut",
     "yes": [
       "mayor"
@@ -273,7 +273,7 @@
   {
     "id": "tfc-mayor-someone-else",
     "plain": "If the Demon came for you at night, would you like someone else to die in your place?",
-    "dinniman": "Grim, but practical. The knife comes for you in the dark and somehow lands in somebody else. You won't always know who. If the Demon came for you at night, would you like someone else to die in your place?",
+    "styled": "Grim, but practical. The knife comes for you in the dark and somehow lands in somebody else. You won't always know who. If the Demon came for you at night, would you like someone else to die in your place?",
     "voice": "Mordecai",
     "yes": [
       "mayor"
@@ -281,8 +281,8 @@
   },
   {
     "id": "tfc-virgin-trap-card",
-    "plain": "Would you like a Townsfolk who nominates you for the first time to be executed on the spot?",
-    "dinniman": "Trap card activated! The first goody-two-shoes to point at you gets dragged straight to the gallows. The crowd loves it. The nominator, less so. Would you like a Townsfolk who first nominates you to be executed on the spot?",
+    "plain": "The first time you're nominated, would you like the nominator to be executed on the spot if they're a Townsfolk?",
+    "styled": "Trap card activated! The first goody-two-shoes to point at you gets dragged straight to the gallows. The crowd loves it. The nominator, less so. Would you like a Townsfolk who first nominates you to be executed on the spot?",
     "voice": "The System AI",
     "yes": [
       "virgin"
@@ -291,7 +291,7 @@
   {
     "id": "tfc-virgin-prove-purity",
     "plain": "Would the first time someone nominates you be a chance to prove your innocence beyond doubt?",
-    "dinniman": "Most people dread being accused. You might almost welcome it, because that first accusation could show the whole room exactly what you are. Would the first time someone nominates you be a chance to prove your innocence beyond doubt?",
+    "styled": "Most people dread being accused. You might almost welcome it, because that first accusation could show the whole room exactly what you are. Would the first time someone nominates you be a chance to prove your innocence beyond doubt?",
     "voice": "Katia",
     "yes": [
       "virgin"
@@ -300,7 +300,7 @@
   {
     "id": "tfc-grandmother-favourite",
     "plain": "Would you like to start the game knowing one fellow good player and exactly what character they are?",
-    "dinniman": "One sweet little darling, revealed to you on night one: face, name, job, the lot. You'll want to knit them a scarf. Would you like to start the game knowing one fellow good player and exactly what character they are?",
+    "styled": "One sweet little darling, revealed to you on night one: face, name, job, the lot. You'll want to knit them a scarf. Would you like to start the game knowing one fellow good player and exactly what character they are?",
     "voice": "Elle",
     "yes": [
       "grandmother"
@@ -309,7 +309,7 @@
   {
     "id": "tfc-grandmother-weak-heart",
     "plain": "Are you so devoted to one person that you'd die of grief if the Demon killed them?",
-    "dinniman": "Love's a liability down here. Get attached to one person, and if the monster takes them, it takes you too. Are you so devoted to one person that you'd die of grief if the Demon killed them?",
+    "styled": "Love's a liability down here. Get attached to one person, and if the monster takes them, it takes you too. Are you so devoted to one person that you'd die of grief if the Demon killed them?",
     "voice": "Mordecai",
     "yes": [
       "grandmother"
@@ -318,7 +318,7 @@
   {
     "id": "tfc-sailor-rum-night",
     "plain": "Would you challenge someone to a drinking contest each night, knowing one of you will end up drunk?",
-    "dinniman": "It's Rum Night on the Crawl! Every evening our contestant picks a rival, the bottles come out, and somebody goes down! Would you challenge someone to a drinking contest each night, knowing one of you will end up drunk?",
+    "styled": "It's Rum Night on the Crawl! Every evening our contestant picks a rival, the bottles come out, and somebody goes down! Would you challenge someone to a drinking contest each night, knowing one of you will end up drunk?",
     "voice": "The Host",
     "yes": [
       "sailor"
@@ -327,7 +327,7 @@
   {
     "id": "tfc-sailor-only-the-bottle",
     "plain": "Would you like to be impossible to kill, so long as you stay sober?",
-    "dinniman": "Can't be stabbed, can't be hanged, can't be eaten. The only thing that gets you is the bottle, which, frankly, tracks. Would you like to be impossible to kill, so long as you stay sober?",
+    "styled": "Can't be stabbed, can't be hanged, can't be eaten. The only thing that gets you is the bottle, which, frankly, tracks. Would you like to be impossible to kill, so long as you stay sober?",
     "voice": "Carl",
     "yes": [
       "sailor"
@@ -336,7 +336,7 @@
   {
     "id": "tfc-chambermaid-empty-beds",
     "plain": "Would you like to pick two players each night and learn how many of them woke to use an ability?",
-    "dinniman": "Our audience research says people LOVE housekeeping content! You'd check two rooms every night and report how many beds were empty. Would you like to pick two players each night and learn how many of them woke to use an ability?",
+    "styled": "Our audience research says people LOVE housekeeping content! You'd check two rooms every night and report how many beds were empty. Would you like to pick two players each night and learn how many of them woke to use an ability?",
     "voice": "Zev",
     "yes": [
       "chambermaid"
@@ -345,7 +345,7 @@
   {
     "id": "tfc-chambermaid-busy-nights",
     "plain": "Would you rather the Storyteller tell you who was up and about in the night than who is evil?",
-    "dinniman": "I've noticed people give themselves away by what they do after dark, not by what they say. Would you rather the Storyteller tell you who was up and about in the night than who is evil?",
+    "styled": "I've noticed people give themselves away by what they do after dark, not by what they say. Would you rather the Storyteller tell you who was up and about in the night than who is evil?",
     "voice": "Katia",
     "yes": [
       "chambermaid"
@@ -354,7 +354,7 @@
   {
     "id": "tfc-exorcist-cast-out",
     "plain": "Would you like to choose a player each night and, if they're the Demon, stop it waking?",
-    "dinniman": "Bell, book and candle, now in a convenient nightly subscription! Point at a player. If it is the Demon, it stays in bed and sulks. Would you like to choose a player each night and, if they are the Demon, stop it waking?",
+    "styled": "Bell, book and candle, now in a convenient nightly subscription! Point at a player. If it is the Demon, it stays in bed and sulks. Would you like to choose a player each night and, if they are the Demon, stop it waking?",
     "voice": "The System AI",
     "yes": [
       "exorcist"
@@ -363,7 +363,7 @@
   {
     "id": "tfc-exorcist-show-your-face",
     "plain": "Are you willing to let the Demon learn who you are as the price of driving it out?",
-    "dinniman": "You cast it out for a night, and in return it learns your face. Brave or stupid; I've buried plenty of both. Are you willing to let the Demon learn who you are as the price of driving it out?",
+    "styled": "You cast it out for a night, and in return it learns your face. Brave or stupid; I've buried plenty of both. Are you willing to let the Demon learn who you are as the price of driving it out?",
     "voice": "Mordecai",
     "yes": [
       "exorcist"
@@ -372,7 +372,7 @@
   {
     "id": "tfc-innkeeper-two-guests",
     "plain": "Would you like to protect two players each night, even though one of them ends up drunk?",
-    "dinniman": "Welcome to the Crawl Inn, where two lucky guests sleep safe every night and one of them wakes up with a stonking hangover! Would you like to protect two players each night, even though one of them ends up drunk?",
+    "styled": "Welcome to the Crawl Inn, where two lucky guests sleep safe every night and one of them wakes up with a stonking hangover! Would you like to protect two players each night, even though one of them ends up drunk?",
     "voice": "The Host",
     "yes": [
       "innkeeper"
@@ -381,7 +381,7 @@
   {
     "id": "tfc-innkeeper-warm-bed",
     "plain": "Do you love offering weary travellers a bed, a drink and a night free from death?",
-    "dinniman": "Hospitality is an ART, darling. Fluff the pillows, pour the wine, and nobody gets murdered under MY roof. Do you love offering weary travellers a bed, a drink and a night free from death?",
+    "styled": "Hospitality is an ART, darling. Fluff the pillows, pour the wine, and nobody gets murdered under MY roof. Do you love offering weary travellers a bed, a drink and a night free from death?",
     "voice": "Princess Donut",
     "yes": [
       "innkeeper"
@@ -390,7 +390,7 @@
   {
     "id": "tfc-gambler-name-it-or-die",
     "plain": "Would you like to guess a player's character each night, knowing a wrong guess kills you?",
-    "dinniman": "Every night I'd point at someone, name their job, and if I'm wrong, I die. That's not a strategy, that's a hobby for people who hate themselves. Would you like to guess a player's character each night, knowing a wrong guess kills you?",
+    "styled": "Every night I'd point at someone, name their job, and if I'm wrong, I die. That's not a strategy, that's a hobby for people who hate themselves. Would you like to guess a player's character each night, knowing a wrong guess kills you?",
     "voice": "Carl",
     "yes": [
       "gambler"
@@ -399,7 +399,7 @@
   {
     "id": "tfc-gambler-stake-your-life",
     "plain": "Would you stake your life on naming exactly who someone really is?",
-    "dinniman": "Heads, you win. Tails, I'm afraid we'll need a new guest for my couch. So let's hear it: would you stake your life on naming exactly who someone really is?",
+    "styled": "Heads, you win. Tails, I'm afraid we'll need a new guest for my couch. So let's hear it: would you stake your life on naming exactly who someone really is?",
     "voice": "Odette",
     "yes": [
       "gambler"
@@ -408,7 +408,7 @@
   {
     "id": "tfc-deadly-night-pick",
     "plain": "Would you choose a player each night, knowing a bad pick could kill you that very night?",
-    "dinniman": "Nightly Roulette Bundle now available! Pick a player. Pick wrong and the floor opens beneath you. Pick right and nobody claps. Would you choose a player each night, knowing a bad pick could kill you that very night?",
+    "styled": "Nightly Roulette Bundle now available! Pick a player. Pick wrong and the floor opens beneath you. Pick right and nobody claps. Would you choose a player each night, knowing a bad pick could kill you that very night?",
     "voice": "The System AI",
     "yes": [
       "gambler",
@@ -419,7 +419,7 @@
   {
     "id": "tfc-gossip-true-and-deadly",
     "plain": "Would you like your true public statements to get someone killed that night?",
-    "dinniman": "Say something true in front of everyone and somebody's dead by morning. Say something false and you just look like a liar. Would you like your true public statements to get someone killed that night?",
+    "styled": "Say something true in front of everyone and somebody's dead by morning. Say something false and you just look like a liar. Would you like your true public statements to get someone killed that night?",
     "voice": "Mordecai",
     "yes": [
       "gossip"
@@ -428,7 +428,7 @@
   {
     "id": "tfc-gossip-chatterbox",
     "plain": "Would you chatter away every day, knowing your claims turn deadly whenever they happen to be true?",
-    "dinniman": "Oh, I'll run my mouth all day, honey. Difference is, when I'm right, somebody croaks overnight. Keeps things lively. Would you chatter away every day, knowing your claims turn deadly whenever they happen to be true?",
+    "styled": "Oh, I'll run my mouth all day, honey. Difference is, when I'm right, somebody croaks overnight. Keeps things lively. Would you chatter away every day, knowing your claims turn deadly whenever they happen to be true?",
     "voice": "Elle",
     "yes": [
       "gossip"
@@ -437,7 +437,7 @@
   {
     "id": "tfc-courtier-royal-decree",
     "plain": "Would you like to name a character, just once, and leave them drunk for three days and nights?",
-    "dinniman": "One word from you, and whoever holds that title gets plastered for three full days! A royal decree, live on air! Would you like to name a character, just once, and leave them drunk for three days and nights?",
+    "styled": "One word from you, and whoever holds that title gets plastered for three full days! A royal decree, live on air! Would you like to name a character, just once, and leave them drunk for three days and nights?",
     "voice": "The Host",
     "yes": [
       "courtier"
@@ -446,7 +446,7 @@
   {
     "id": "tfc-courtier-no-face-needed",
     "plain": "Would you like your one big move to leave a character drunk for three days, without needing to find who holds it?",
-    "dinniman": "I need not know which peasant wears the crown! I shall simply decree that the crown is DRUNK! For THREE DAYS! Would you like your one big move to leave a character drunk for three days, without needing to find who holds it?",
+    "styled": "I need not know which peasant wears the crown! I shall simply decree that the crown is DRUNK! For THREE DAYS! Would you like your one big move to leave a character drunk for three days, without needing to find who holds it?",
     "voice": "Prepotente",
     "yes": [
       "courtier"
@@ -455,7 +455,7 @@
   {
     "id": "tfc-professor-raise-the-dead",
     "plain": "Would you like, once per game, to bring a dead Townsfolk back to life?",
-    "dinniman": "Fun fact: death is reversible! Terms and conditions apply! Townsfolk only, one use, lightning not included. Would you like, once per game, to bring a dead Townsfolk back to life?",
+    "styled": "Fun fact: death is reversible! Terms and conditions apply! Townsfolk only, one use, lightning not included. Would you like, once per game, to bring a dead Townsfolk back to life?",
     "voice": "The System AI",
     "yes": [
       "professor"
@@ -464,7 +464,7 @@
   {
     "id": "tfc-professor-mad-science",
     "plain": "Would you like to raise a fallen friend from the dead with a bit of mad science?",
-    "dinniman": "One lightning strike and a pile of questionable equipment, and your dead friend sits up on the slab. What could possibly go wrong. Would you like to raise a fallen friend from the dead with a bit of mad science?",
+    "styled": "One lightning strike and a pile of questionable equipment, and your dead friend sits up on the slab. What could possibly go wrong. Would you like to raise a fallen friend from the dead with a bit of mad science?",
     "voice": "Carl",
     "yes": [
       "professor"
@@ -473,7 +473,7 @@
   {
     "id": "tfc-minstrel-sing-them-drunk",
     "plain": "When a Minion is executed, would you like everyone else to end up drunk?",
-    "dinniman": "When one of those GHASTLY henchmen swings, I shall sing, and everyone will be far too tipsy to function. It's called art. When a Minion is executed, would you like everyone else to end up drunk?",
+    "styled": "When one of those GHASTLY henchmen swings, I shall sing, and everyone will be far too tipsy to function. It's called art. When a Minion is executed, would you like everyone else to end up drunk?",
     "voice": "Princess Donut",
     "yes": [
       "minstrel"
@@ -482,7 +482,7 @@
   {
     "id": "tfc-minstrel-open-bar",
     "plain": "Would you celebrate an evil player's execution by leaving the whole town drunk?",
-    "dinniman": "Nothing says justice like an open bar! One villain on the gallows, one song, and the whole town is seeing double till tomorrow. Great for engagement! Would you celebrate an evil player's execution by leaving the whole town drunk?",
+    "styled": "Nothing says justice like an open bar! One villain on the gallows, one song, and the whole town is seeing double till tomorrow. Great for engagement! Would you celebrate an evil player's execution by leaving the whole town drunk?",
     "voice": "Zev",
     "yes": [
       "minstrel"
@@ -491,7 +491,7 @@
   {
     "id": "tfc-tealady-good-company",
     "plain": "Would you like your two neighbours to be unkillable, as long as they're both good?",
-    "dinniman": "Two good people either side of you and they're untouchable. One bad apple next to you and the whole teapot's useless. Would you like your two neighbours to be unkillable, as long as they're both good?",
+    "styled": "Two good people either side of you and they're untouchable. One bad apple next to you and the whole teapot's useless. Would you like your two neighbours to be unkillable, as long as they're both good?",
     "voice": "Mordecai",
     "yes": [
       "tealady"
@@ -500,7 +500,7 @@
   {
     "id": "tfc-tealady-cup-of-comfort",
     "plain": "Do you look after the people sitting beside you, so long as they're both decent folk?",
-    "dinniman": "Tea fixes most things. If you're cold, it warms you, and if the two people beside me are good, they're safe. Do you look after the people sitting beside you, so long as they're both decent folk?",
+    "styled": "Tea fixes most things. If you're cold, it warms you, and if the two people beside me are good, they're safe. Do you look after the people sitting beside you, so long as they're both decent folk?",
     "voice": "Katia",
     "yes": [
       "tealady"
@@ -509,7 +509,7 @@
   {
     "id": "tfc-pacifist-snapped-rope",
     "plain": "Would you like any good player who gets executed to have a chance of surviving?",
-    "dinniman": "The town sentences an innocent to death and... oops! The rope snapped! What are the odds? Better than you would think. Would you like any good player who gets executed to have a chance of surviving?",
+    "styled": "The town sentences an innocent to death and... oops! The rope snapped! What are the odds? Better than you would think. Would you like any good player who gets executed to have a chance of surviving?",
     "voice": "The System AI",
     "yes": [
       "pacifist"
@@ -518,7 +518,7 @@
   {
     "id": "tfc-pacifist-quiet-mercy",
     "plain": "Would you quietly spare innocent people from the gallows, even after the town has voted?",
-    "dinniman": "The mob votes, the noose goes on, and then the innocent guy just walks off. You didn't stop the vote. You just made it not matter. Would you quietly spare innocent people from the gallows, even after the town has voted?",
+    "styled": "The mob votes, the noose goes on, and then the innocent guy just walks off. You didn't stop the vote. You just made it not matter. Would you quietly spare innocent people from the gallows, even after the town has voted?",
     "voice": "Carl",
     "yes": [
       "pacifist"
@@ -526,8 +526,8 @@
   },
   {
     "id": "tfc-fool-custard-comeback",
-    "plain": "Would you like to survive exactly one death and carry on openly alive?",
-    "dinniman": "RAWR! RAWR! (He watches the jester fall down, bounce back up and tell a joke, and is deeply impressed.) Would you like to survive exactly one death and carry on openly alive?",
+    "plain": "Would you like to survive exactly one death and carry on, with everyone seeing you're still alive?",
+    "styled": "RAWR! RAWR! (He watches the jester fall down, bounce back up and tell a joke, and is deeply impressed.) Would you like to survive exactly one death and carry on openly alive?",
     "voice": "Mongo",
     "yes": [
       "fool"
@@ -536,7 +536,7 @@
   {
     "id": "tfc-one-free-death",
     "plain": "Would you like to survive your first death, but only the first?",
-    "dinniman": "One free death. That is all. Spend it wisely, because the second one sticks. Would you like to survive your first death, but only the first?",
+    "styled": "One free death. That is all. Spend it wisely, because the second one sticks. Would you like to survive your first death, but only the first?",
     "voice": "Mordecai",
     "yes": [
       "fool",
@@ -546,7 +546,7 @@
   {
     "id": "tfc-clockmaker-seat-count",
     "plain": "Would you like to start the game knowing how many seats separate the Demon from its nearest Minion?",
-    "dinniman": "Not who the Demon is. Not who the Minion is. Just how far apart they're sitting. Thanks, game. Would you like to start the game knowing how many seats separate the Demon from its nearest Minion?",
+    "styled": "Not who the Demon is. Not who the Minion is. Just how far apart they're sitting. Thanks, game. Would you like to start the game knowing how many seats separate the Demon from its nearest Minion?",
     "voice": "Carl",
     "yes": [
       "clockmaker"
@@ -555,7 +555,7 @@
   {
     "id": "tfc-clockmaker-ticking-circle",
     "plain": "Do you like measuring how close the Demon keeps its nearest henchman, like counting ticks on a clock face?",
-    "dinniman": "SILENCE! The great wheel turns! Tick, tick, tick, from the beast to its nearest lackey, and I, the genius, shall count every notch! Do you like measuring how close the Demon keeps its nearest henchman, counting ticks around the circle?",
+    "styled": "SILENCE! The great wheel turns! Tick, tick, tick, from the beast to its nearest lackey, and I, the genius, shall count every notch! Do you like measuring how close the Demon keeps its nearest henchman, counting ticks around the circle?",
     "voice": "Prepotente",
     "yes": [
       "clockmaker"
@@ -564,7 +564,7 @@
   {
     "id": "tfc-snakecharmer-body-swap",
     "plain": "Would you like to swap places with the Demon if you found it, leaving it poisoned?",
-    "dinniman": "Our charmer picks a player each night, and if they snag the Demon, the two of them swap bodies and teams right there on the spot! Would you like to swap places with the Demon if you found it, leaving it poisoned?",
+    "styled": "Our charmer picks a player each night, and if they snag the Demon, the two of them swap bodies and teams right there on the spot! Would you like to swap places with the Demon if you found it, leaving it poisoned?",
     "voice": "The Host",
     "yes": [
       "snakecharmer"
@@ -573,7 +573,7 @@
   {
     "id": "tfc-snakecharmer-become-the-snake",
     "plain": "Would you risk turning evil yourself if it meant defanging the Demon?",
-    "dinniman": "Catch the snake and you become the snake. The old one gets your job and a splitting headache. Hell of a trade. Would you risk turning evil yourself if it meant defanging the Demon?",
+    "styled": "Catch the snake and you become the snake. The old one gets your job and a splitting headache. Hell of a trade. Would you risk turning evil yourself if it meant defanging the Demon?",
     "voice": "Mordecai",
     "yes": [
       "snakecharmer"
@@ -582,7 +582,7 @@
   {
     "id": "tfc-mathematician-misfires",
     "plain": "Would you like to learn each night how many abilities misfired because of other characters?",
-    "dinniman": "Diagnostic report incoming! Tonight, a number of abilities malfunctioned! Which ones? Classified! Would you like to learn each night how many abilities misfired because of other characters?",
+    "styled": "Diagnostic report incoming! Tonight, a number of abilities malfunctioned! Which ones? Classified! Would you like to learn each night how many abilities misfired because of other characters?",
     "voice": "The System AI",
     "yes": [
       "mathematician"
@@ -591,7 +591,7 @@
   {
     "id": "tfc-mathematician-tamper-tally",
     "plain": "Would you like a nightly tally of how many players had their abilities tampered with?",
-    "dinniman": "No names, no details, darling, just a tidy little figure telling you how many people were meddled with. Isn't that delicious? Would you like a nightly tally of how many players had their abilities tampered with?",
+    "styled": "No names, no details, darling, just a tidy little figure telling you how many people were meddled with. Isn't that delicious? Would you like a nightly tally of how many players had their abilities tampered with?",
     "voice": "Odette",
     "yes": [
       "mathematician"
@@ -599,8 +599,8 @@
   },
   {
     "id": "tfc-dreamer-two-masks",
-    "plain": "Would you like to pick a player each night and learn two characters, one good and one evil, one of them theirs?",
-    "dinniman": "You pick someone and the game shows you two masks, a nice one and a nasty one, and says 'one of these.' Very helpful. Would you like to pick a player each night and learn one good and one evil character, one of them theirs?",
+    "plain": "Would you like to pick a player each night and learn one good and one evil character, one of which is theirs?",
+    "styled": "You pick someone and the game shows you two masks, a nice one and a nasty one, and says 'one of these.' Very helpful. Would you like to pick a player each night and learn one good and one evil character, one of them theirs?",
     "voice": "Carl",
     "yes": [
       "dreamer"
@@ -609,7 +609,7 @@
   {
     "id": "tfc-dreamer-saint-or-sinner",
     "plain": "Do your dreams show you who someone might really be, one saintly option and one wicked?",
-    "dinniman": "I dream VIVIDLY. Red skies, violets, and two possible faces for whoever I dreamed about, one angelic and one ghastly. Do your dreams show you who someone might really be, one saintly option and one wicked?",
+    "styled": "I dream VIVIDLY. Red skies, violets, and two possible faces for whoever I dreamed about, one angelic and one ghastly. Do your dreams show you who someone might really be, one saintly option and one wicked?",
     "voice": "Princess Donut",
     "yes": [
       "dreamer"
@@ -618,7 +618,7 @@
   {
     "id": "tfc-flowergirl-demon-hand",
     "plain": "Would you like to learn each night whether the Demon voted that day?",
-    "dinniman": "Did the big bad raise its hand today? Our flower seller knows, and she's not telling till sundown! Would you like to learn each night whether the Demon voted that day?",
+    "styled": "Did the big bad raise its hand today? Our flower seller knows, and she's not telling till sundown! Would you like to learn each night whether the Demon voted that day?",
     "voice": "The Host",
     "yes": [
       "flowergirl"
@@ -627,7 +627,7 @@
   {
     "id": "tfc-flowergirl-raised-hands",
     "plain": "Would you like your nightly clue to be whether the Demon's hand went up in that day's votes?",
-    "dinniman": "I watch every hand during the votes, but what I really want to know is whether one particular hand went up. Would you like your nightly clue to be whether the Demon's hand went up in that day's votes?",
+    "styled": "I watch every hand during the votes, but what I really want to know is whether one particular hand went up. Would you like your nightly clue to be whether the Demon's hand went up in that day's votes?",
     "voice": "Katia",
     "yes": [
       "flowergirl"
@@ -636,7 +636,7 @@
   {
     "id": "tfc-towncrier-bulletin",
     "plain": "Would you like to learn each night whether a Minion nominated anyone that day?",
-    "dinniman": "Breaking news segment! Every evening you would get a bulletin: did one of the henchmen put somebody up for the noose today? Would you like to learn each night whether a Minion nominated anyone that day?",
+    "styled": "Breaking news segment! Every evening you would get a bulletin: did one of the henchmen put somebody up for the noose today? Would you like to learn each night whether a Minion nominated anyone that day?",
     "voice": "Zev",
     "yes": [
       "towncrier"
@@ -645,7 +645,7 @@
   {
     "id": "tfc-towncrier-accusers",
     "plain": "Would you like to keep tabs on nominations, hoping to catch a Minion in the act of accusing someone?",
-    "dinniman": "Watch who throws the accusations around. Henchmen love a nomination, and you would know by nightfall if one of them did. Would you like to keep tabs on nominations, hoping to catch a Minion accusing someone?",
+    "styled": "Watch who throws the accusations around. Henchmen love a nomination, and you would know by nightfall if one of them did. Would you like to keep tabs on nominations, hoping to catch a Minion accusing someone?",
     "voice": "Mordecai",
     "yes": [
       "towncrier"
@@ -654,7 +654,7 @@
   {
     "id": "tfc-surveillance-mode",
     "plain": "Would you like your nightly information to be about what evil players did in that day's nominations and votes?",
-    "dinniman": "Bonus feature unlocked: Surveillance Mode! Every nomination, every raised hand, logged and analysed for evil activity! Would you like your nightly information to be about what evil players did in that day's nominations and votes?",
+    "styled": "Bonus feature unlocked: Surveillance Mode! Every nomination, every raised hand, logged and analysed for evil activity! Would you like your nightly information to be about what evil players did in that day's nominations and votes?",
     "voice": "The System AI",
     "yes": [
       "flowergirl",
@@ -664,7 +664,7 @@
   {
     "id": "tfc-oracle-restless-dead",
     "plain": "Would you like to learn how many of the dead players are evil?",
-    "dinniman": "The departed whisper to me, darling. They point at the wicked ones among them. It's DREADFULLY spooky and I look fabulous doing it. Would you like to learn how many of the dead players are evil?",
+    "styled": "The departed whisper to me, darling. They point at the wicked ones among them. It's DREADFULLY spooky and I look fabulous doing it. Would you like to learn how many of the dead players are evil?",
     "voice": "Princess Donut",
     "yes": [
       "oracle"
@@ -673,7 +673,7 @@
   {
     "id": "tfc-oracle-count-the-fallen",
     "plain": "Do you want to count the wicked among the fallen each night?",
-    "dinniman": "THE GRAVEYARD IS FULL OF DELICIOUS SINNERS! Count them! Count every rotten soul among the corpses! Do you want to count the wicked among the fallen each night?",
+    "styled": "THE GRAVEYARD IS FULL OF DELICIOUS SINNERS! Count them! Count every rotten soul among the corpses! Do you want to count the wicked among the fallen each night?",
     "voice": "Samantha",
     "yes": [
       "oracle"
@@ -682,7 +682,7 @@
   {
     "id": "tfc-savant-truth-and-lie",
     "plain": "Would you like to visit the Storyteller every day to hear two things, one true and one false?",
-    "dinniman": "Two facts every day. One's real, one's garbage, and nobody tells you which. Write them down or lose your mind. Would you like to visit the Storyteller every day to hear two things, one true and one false?",
+    "styled": "Two facts every day. One's real, one's garbage, and nobody tells you which. Write them down or lose your mind. Would you like to visit the Storyteller every day to hear two things, one true and one false?",
     "voice": "Mordecai",
     "yes": [
       "savant"
@@ -691,7 +691,7 @@
   {
     "id": "tfc-daily-one-to-one",
     "plain": "Would you like a private chat with the Storyteller every single day?",
-    "dinniman": "A daily one-on-one with the person running the show? Sweetie, that's my whole career. So tell me: would you like a private chat with the Storyteller every single day?",
+    "styled": "A daily one-on-one with the person running the show? Sweetie, that's my whole career. So tell me: would you like a private chat with the Storyteller every single day?",
     "voice": "Odette",
     "yes": [
       "savant",
@@ -701,7 +701,7 @@
   {
     "id": "tfc-seamstress-same-side",
     "plain": "Would you like to choose two players, once per game, and learn whether they're on the same side?",
-    "dinniman": "One question, asked once: are these two people on the same team? It sounds small, but I could build a lot on it. Would you like to choose two players, once per game, and learn whether they're on the same side?",
+    "styled": "One question, asked once: are these two people on the same team? It sounds small, but I could build a lot on it. Would you like to choose two players, once per game, and learn whether they're on the same side?",
     "voice": "Katia",
     "yes": [
       "seamstress"
@@ -710,7 +710,7 @@
   {
     "id": "tfc-seamstress-in-cahoots",
     "plain": "Do you love finding out whether two particular people are secretly on the same side?",
-    "dinniman": "Ooh, I do love knowing who's thick as thieves with whom. Two names, one answer, and I'll be cackling for a week. Do you love finding out whether two particular people are secretly on the same side?",
+    "styled": "Ooh, I do love knowing who's thick as thieves with whom. Two names, one answer, and I'll be cackling for a week. Do you love finding out whether two particular people are secretly on the same side?",
     "voice": "Elle",
     "yes": [
       "seamstress"
@@ -719,7 +719,7 @@
   {
     "id": "tfc-philosopher-pick-a-class",
     "plain": "Would you like to choose any good character's ability, once per game, and make it your own?",
-    "dinniman": "Choose Your Own Class! One time only! Browse the full catalogue of good abilities and take whichever you fancy. Its rightful owner may feel a little woozy. Would you like to choose any good character's ability, once per game, and make it your own?",
+    "styled": "Choose Your Own Class! One time only! Browse the full catalogue of good abilities and take whichever you fancy. Its rightful owner may feel a little woozy. Would you like to choose any good character's ability, once per game, and make it your own?",
     "voice": "The System AI",
     "yes": [
       "philosopher"
@@ -728,7 +728,7 @@
   {
     "id": "tfc-philosopher-wait-and-see",
     "plain": "Would you rather start with no fixed ability and pick the right one once you see how the game unfolds?",
-    "dinniman": "I'd rather not commit until I know what the actual problem is. Watch the game for a bit, then grab the tool that fixes it. Would you rather start with no fixed ability and pick the right one once you see how things unfold?",
+    "styled": "I'd rather not commit until I know what the actual problem is. Watch the game for a bit, then grab the tool that fixes it. Would you rather start with no fixed ability and pick the right one once you see how things unfold?",
     "voice": "Carl",
     "yes": [
       "philosopher"
@@ -737,7 +737,7 @@
   {
     "id": "tfc-artist-one-question",
     "plain": "Would you like to ask the Storyteller any one yes/no question you please?",
-    "dinniman": "One question! Any question! Answered truthfully by the all-knowing Storyteller, live and exclusive! Would you like to ask the Storyteller any one yes/no question you please?",
+    "styled": "One question! Any question! Answered truthfully by the all-knowing Storyteller, live and exclusive! Would you like to ask the Storyteller any one yes/no question you please?",
     "voice": "The Host",
     "yes": [
       "artist"
@@ -746,7 +746,7 @@
   {
     "id": "tfc-artist-masterpiece",
     "plain": "Would you spend days polishing one perfect question rather than collecting lots of small clues?",
-    "dinniman": "A masterpiece takes TIME. I shall craft one exquisite question, polish it like a jewel, and present it to the Storyteller. Would you spend days polishing one perfect question rather than collecting lots of small clues?",
+    "styled": "A masterpiece takes TIME. I shall craft one exquisite question, polish it like a jewel, and present it to the Storyteller. Would you spend days polishing one perfect question rather than collecting lots of small clues?",
     "voice": "Princess Donut",
     "yes": [
       "artist"
@@ -755,7 +755,7 @@
   {
     "id": "tfc-juggler-talent-show",
     "plain": "On your first day, would you like to publicly guess several players' characters, then learn that night how many you got right?",
-    "dinniman": "Day One Talent Show! Juggle up to five guesses in front of the whole town, then find out tonight how many landed! Would you like to publicly guess several players' characters on your first day and learn that night how many were right?",
+    "styled": "Day One Talent Show! Juggle up to five guesses in front of the whole town, then find out tonight how many landed! Would you like to publicly guess several players' characters on your first day and learn that night how many were right?",
     "voice": "The System AI",
     "yes": [
       "juggler"
@@ -764,7 +764,7 @@
   {
     "id": "tfc-juggler-opening-act",
     "plain": "Do you like opening the game with a big public guessing act that only works on your first day?",
-    "dinniman": "BEHOLD! On the very first day I shall stand before you peasants and NAME you, one after another! Applause is mandatory! Do you like opening the game with a big public guessing act that only works on your first day?",
+    "styled": "BEHOLD! On the very first day I shall stand before you peasants and NAME you, one after another! Applause is mandatory! Do you like opening the game with a big public guessing act that only works on your first day?",
     "voice": "Prepotente",
     "yes": [
       "juggler"
@@ -773,7 +773,7 @@
   {
     "id": "tfc-sage-two-suspects",
     "plain": "If the Demon killed you, would you like to learn that it's one of two players?",
-    "dinniman": "Great news, the Demon got me. Better news, I now know it's one of these two people. Shame about the being-dead part. If the Demon killed you, would you like to learn that it's one of two players?",
+    "styled": "Great news, the Demon got me. Better news, I now know it's one of these two people. Shame about the being-dead part. If the Demon killed you, would you like to learn that it's one of two players?",
     "voice": "Carl",
     "yes": [
       "sage"
@@ -782,7 +782,7 @@
   {
     "id": "tfc-sage-fatal-mistake",
     "plain": "Would you like the Demon's decision to kill you to narrow it down to two suspects?",
-    "dinniman": "Let the beast strike me down! My corpse shall point at its hiding place, and then I shall laugh and laugh as it burns! Would you like the Demon's decision to kill you to narrow it down to two suspects?",
+    "styled": "Let the beast strike me down! My corpse shall point at its hiding place, and then I shall laugh and laugh as it burns! Would you like the Demon's decision to kill you to narrow it down to two suspects?",
     "voice": "Samantha",
     "yes": [
       "sage"
@@ -791,7 +791,7 @@
   {
     "id": "tfc-tf-private-day-visit",
     "plain": "Does your ability involve slipping away to see the Storyteller privately during the day?",
-    "dinniman": "Exclusive backstage access is a HUGE perk, and some of our good-guy talent gets it! A private daytime meeting with the Storyteller, no cameras. Well, some cameras. Does your ability involve seeing the Storyteller privately during the day?",
+    "styled": "Exclusive backstage access is a HUGE perk, and some of our good-guy talent gets it! A private daytime meeting with the Storyteller, no cameras. Well, some cameras. Does your ability involve seeing the Storyteller privately during the day?",
     "voice": "Zev",
     "yes": [
       "savant",
@@ -870,7 +870,7 @@
   {
     "id": "tfc-tf-public-declaration",
     "plain": "Does your ability have you publicly announce a guess, claim or target, outside the normal nominations?",
-    "dinniman": "Some of us are simply MADE for the spotlight. Stand up, declare something outrageous to the entire town, and let the consequences fall where they may. Does your ability have you publicly announce a guess, claim or target outside the normal nominations?",
+    "styled": "Some of us are simply MADE for the spotlight. Stand up, declare something outrageous to the entire town, and let the consequences fall where they may. Does your ability have you publicly announce a guess, claim or target outside the normal nominations?",
     "voice": "Princess Donut",
     "yes": [
       "gossip",
@@ -947,8 +947,8 @@
   },
   {
     "id": "tfc-tf-pick-your-moment",
-    "plain": "Do you have a single once-per-game ability that you can save for exactly the right moment?",
-    "dinniman": "One use. You pick when. Most people blow it on night one out of panic, and the rest die clutching it. Do you have a single once-per-game ability you can save for exactly the right moment?",
+    "plain": "Do you have a single once-per-game ability you can use at exactly the moment you choose?",
+    "styled": "One use. You pick when. Most people blow it on night one out of panic, and the rest die clutching it. Do you have a single once-per-game ability you can save for exactly the right moment?",
     "voice": "Mordecai",
     "yes": [
       "engineer",
@@ -1033,7 +1033,7 @@
   {
     "id": "tfc-tf-one-off-gift",
     "plain": "Does all of your information arrive in one go at the start of the game, with nothing more to come?",
-    "dinniman": "You wake up on night one, get handed a clue, and that's it. That's your whole contribution. Better make it sound impressive. Does all of your information arrive in one go at the start, with nothing more to come?",
+    "styled": "You wake up on night one, get handed a clue, and that's it. That's your whole contribution. Better make it sound impressive. Does all of your information arrive in one go at the start, with nothing more to come?",
     "voice": "Carl",
     "yes": [
       "steward",
@@ -1116,7 +1116,7 @@
   {
     "id": "tfc-tf-nightly-pointing",
     "plain": "Do you wake up most nights to choose a player for your ability?",
-    "dinniman": "Nightly Engagement Rewards! Every evening, you get to stab a finger at somebody and make something happen to them! Or for them! Details vary! Do you wake up most nights to choose a player for your ability?",
+    "styled": "Nightly Engagement Rewards! Every evening, you get to stab a finger at somebody and make something happen to them! Or for them! Details vary! Do you wake up most nights to choose a player for your ability?",
     "voice": "The System AI",
     "yes": [
       "sailor",
@@ -1203,7 +1203,7 @@
   {
     "id": "tfc-tf-sit-back-and-receive",
     "plain": "Do you receive information most nights without having to choose anyone?",
-    "dinniman": "Not everyone has to make the hard choices. Some of us just wake up, listen, and carry what we're told back to the group. Do you receive information most nights without having to choose anyone?",
+    "styled": "Not everyone has to make the hard choices. Some of us just wake up, listen, and carry what we're told back to the group. Do you receive information most nights without having to choose anyone?",
     "voice": "Katia",
     "yes": [
       "empath",
@@ -1284,7 +1284,7 @@
   {
     "id": "tfc-tf-gets-people-drunk",
     "plain": "Does your ability make other players drunk?",
-    "dinniman": "Some of us get folks sloshed as part of the job description. Honestly, best job description going. Does your ability make other players drunk?",
+    "styled": "Some of us get folks sloshed as part of the job description. Honestly, best job description going. Does your ability make other players drunk?",
     "voice": "Elle",
     "yes": [
       "sailor",
@@ -1363,7 +1363,7 @@
   {
     "id": "tfc-tf-self-destructive",
     "plain": "Could your own ability directly cause your death?",
-    "dinniman": "Most abilities are tools. Some are tools with a blade on the handle end. Could your own ability directly cause your death?",
+    "styled": "Most abilities are tools. Some are tools with a blade on the handle end. Could your own ability directly cause your death?",
     "voice": "Mordecai",
     "yes": [
       "gambler",
@@ -1439,7 +1439,7 @@
   {
     "id": "tfc-tf-votes-and-nominations",
     "plain": "Is your ability tied to nominations or votes, rather than to executions?",
-    "dinniman": "Let's talk about the voting floor, darling. Raised hands, pointing fingers, all those lovely little tells. Is your ability tied to nominations or votes, rather than to executions?",
+    "styled": "Let's talk about the voting floor, darling. Raised hands, pointing fingers, all those lovely little tells. Is your ability tied to nominations or votes, rather than to executions?",
     "voice": "Odette",
     "yes": [
       "virgin",
@@ -1514,7 +1514,7 @@
   {
     "id": "tfc-tf-after-the-hanging",
     "plain": "Does your ability spring into action when someone is executed?",
-    "dinniman": "The trapdoor drops, the crowd gasps, and for a few of our contestants, that's when the real show starts! Does your ability spring into action when someone is executed?",
+    "styled": "The trapdoor drops, the crowd gasps, and for a few of our contestants, that's when the real show starts! Does your ability spring into action when someone is executed?",
     "voice": "The Host",
     "yes": [
       "undertaker",
@@ -1590,7 +1590,7 @@
   {
     "id": "tfc-tf-borrowed-power",
     "plain": "Is your ability all about getting another character's ability?",
-    "dinniman": "Why toil with one's OWN meagre gift when one may simply TAKE a better one? I am a visionary! Is your ability all about getting another character's ability?",
+    "styled": "Why toil with one's OWN meagre gift when one may simply TAKE a better one? I am a visionary! Is your ability all about getting another character's ability?",
     "voice": "Prepotente",
     "yes": [
       "philosopher",
@@ -1672,7 +1672,7 @@
   {
     "id": "tfc-tf-scramble-evil",
     "plain": "Would you like to confuse the evil team about who their own teammates are?",
-    "dinniman": "The bad guys rely on knowing each other. Mess that up and they're just a bunch of strangers glaring across the room. Would you like to confuse the evil team about who their own teammates are?",
+    "styled": "The bad guys rely on knowing each other. Mess that up and they're just a bunch of strangers glaring across the room. Would you like to confuse the evil team about who their own teammates are?",
     "voice": "Carl",
     "yes": [
       "magician",
@@ -1748,7 +1748,7 @@
   {
     "id": "tfc-tf-own-win-route",
     "plain": "Does your ability give your team its own special way to win?",
-    "dinniman": "Secret ending discovered! Some contestants carry a hidden victory condition, and the sponsors go absolutely feral for an upset. Does your ability give your team its own special way to win?",
+    "styled": "Secret ending discovered! Some contestants carry a hidden victory condition, and the sponsors go absolutely feral for an upset. Does your ability give your team its own special way to win?",
     "voice": "The System AI",
     "yes": [
       "mayor",
@@ -1826,7 +1826,7 @@
   {
     "id": "tfc-tf-turncoat",
     "plain": "Could your ability change which team you are on?",
-    "dinniman": "LOYALTY IS FOR THE WEAK! One night good, the next night a creature of darkness! Glorious! Could your ability change which team you are on?",
+    "styled": "LOYALTY IS FOR THE WEAK! One night good, the next night a creature of darkness! Glorious! Could your ability change which team you are on?",
     "voice": "Samantha",
     "yes": [
       "cultleader",
@@ -1902,7 +1902,7 @@
   {
     "id": "tfc-tf-identity-revealed",
     "plain": "Does your ability have the Storyteller tell another player who you are while you are alive?",
-    "dinniman": "Some jobs come with a spotlight you didn't ask for. The Storyteller hands your name to somebody, maybe the worst somebody. Does your ability have the Storyteller tell another player who you are while you're alive?",
+    "styled": "Some jobs come with a spotlight you didn't ask for. The Storyteller hands your name to somebody, maybe the worst somebody. Does your ability have the Storyteller tell another player who you are while you're alive?",
     "voice": "Mordecai",
     "yes": [
       "king",
@@ -1977,7 +1977,7 @@
   {
     "id": "tfc-tf-cold-numbers",
     "plain": "Does your information usually arrive as a number?",
-    "dinniman": "Names are for GOSSIPS. A true star reads the figures: ratings, followers, how many villains are lurking nearby. Does your information usually arrive as a number?",
+    "styled": "Names are for GOSSIPS. A true star reads the figures: ratings, followers, how many villains are lurking nearby. Does your information usually arrive as a number?",
     "voice": "Princess Donut",
     "yes": [
       "chef",
@@ -2058,7 +2058,7 @@
   {
     "id": "tfc-tf-seating-plan",
     "plain": "Does it matter to your ability where people are sitting around the circle?",
-    "dinniman": "I've spent more time thinking about seating charts in this game than I did at my cousin's wedding. Does it matter to your ability where people are sitting around the circle?",
+    "styled": "I've spent more time thinking about seating charts in this game than I did at my cousin's wedding. Does it matter to your ability where people are sitting around the circle?",
     "voice": "Carl",
     "yes": [
       "chef",
@@ -2138,7 +2138,7 @@
   {
     "id": "tfc-tf-guesswork",
     "plain": "Does your ability ask you to put a guess into words, either out loud or to the Storyteller?",
-    "dinniman": "Rawr? (He tilts his head, sniffs a player, and guesses. He guesses wrong. He is still a good boy.) Does your ability ask you to put a guess into words, out loud or to the Storyteller?",
+    "styled": "Rawr? (He tilts his head, sniffs a player, and guesses. He guesses wrong. He is still a good boy.) Does your ability ask you to put a guess into words, out loud or to the Storyteller?",
     "voice": "Mongo",
     "yes": [
       "gambler",
@@ -2215,7 +2215,7 @@
   {
     "id": "tfc-tf-demon-kill-trigger",
     "plain": "Does your ability trigger specifically when the Demon kills someone?",
-    "dinniman": "When the Demon strikes, most of us just mourn! But for a select few contestants, a Demon kill sets off a little surprise! Does your ability trigger specifically when the Demon kills someone?",
+    "styled": "When the Demon strikes, most of us just mourn! But for a select few contestants, a Demon kill sets off a little surprise! Does your ability trigger specifically when the Demon kills someone?",
     "voice": "The Host",
     "yes": [
       "grandmother",
@@ -2290,7 +2290,7 @@
   {
     "id": "tfc-tf-lethal-good-guy",
     "plain": "Can your ability directly kill another player?",
-    "dinniman": "EVEN THE GOOD ONES CAN SPILL BLOOD! A word, a finger, a nomination, and someone drops! Can your ability directly kill another player?",
+    "styled": "EVEN THE GOOD ONES CAN SPILL BLOOD! A word, a finger, a nomination, and someone drops! Can your ability directly kill another player?",
     "voice": "Samantha",
     "yes": [
       "gossip",
@@ -2367,7 +2367,7 @@
   {
     "id": "tfc-tf-storytellers-opinion",
     "plain": "Is your information the Storyteller's own opinion or advice?",
-    "dinniman": "Our Storyteller is a valued creative partner, and some of you get direct access to their personal take! Very premium. Is your information the Storyteller's own opinion or advice?",
+    "styled": "Our Storyteller is a valued creative partner, and some of you get direct access to their personal take! Very premium. Is your information the Storyteller's own opinion or advice?",
     "voice": "Zev",
     "yes": [
       "highpriestess",
@@ -2444,7 +2444,7 @@
   {
     "id": "tfc-tf-sleep-through",
     "plain": "Does your ability never need the Storyteller to wake you at night, whatever happens?",
-    "dinniman": "Some of us get a full night's sleep every night, and I'm not apologising for it. Does your ability never need the Storyteller to wake you at night, whatever happens?",
+    "styled": "Some of us get a full night's sleep every night, and I'm not apologising for it. Does your ability never need the Storyteller to wake you at night, whatever happens?",
     "voice": "Elle",
     "yes": [
       "soldier",
@@ -2535,7 +2535,7 @@
   {
     "id": "tfc-tf-needs-a-partner",
     "plain": "Does your ability only matter if one specific other character is in play?",
-    "dinniman": "Some abilities only work if a particular someone is out there too. It's a bit like needing a teammate you haven't met yet. Does your ability only matter if one specific other character is in play?",
+    "styled": "Some abilities only work if a particular someone is out there too. It's a bit like needing a teammate you haven't met yet. Does your ability only matter if one specific other character is in play?",
     "voice": "Katia",
     "yes": [
       "choirboy",
@@ -2611,7 +2611,7 @@
   {
     "id": "tfc-tf-bodyguard",
     "plain": "Do you act as a bodyguard for particular other players?",
-    "dinniman": "Standing between a monster and somebody else is noble, and it's also how most bodyguards end up in my obituary column. Do you act as a bodyguard for particular other players?",
+    "styled": "Standing between a monster and somebody else is noble, and it's also how most bodyguards end up in my obituary column. Do you act as a bodyguard for particular other players?",
     "voice": "Mordecai",
     "yes": [
       "monk",
@@ -2687,7 +2687,7 @@
   {
     "id": "tfc-tf-looking-after-number-one",
     "plain": "Does your ability protect you, and only you, from dying?",
-    "dinniman": "Others may perish! The rabble may be slaughtered! But I, magnificent I, shall endure! Does your ability protect you, and only you, from dying?",
+    "styled": "Others may perish! The rabble may be slaughtered! But I, magnificent I, shall endure! Does your ability protect you, and only you, from dying?",
     "voice": "Prepotente",
     "yes": [
       "soldier",
@@ -2763,7 +2763,7 @@
   {
     "id": "tfc-tf-first-day-only",
     "plain": "Does your ability only work on your first day?",
-    "dinniman": "Limited-time offer! Your ability expires at the end of day one, so use it or lose it, sucker! Does your ability only work on your first day?",
+    "styled": "Limited-time offer! Your ability expires at the end of day one, so use it or lose it, sucker! Does your ability only work on your first day?",
     "voice": "The System AI",
     "yes": [
       "princess",
@@ -2839,7 +2839,7 @@
   {
     "id": "tfc-tf-wisdom-from-the-grave",
     "plain": "Does your ability give you information only once you have died?",
-    "dinniman": "Isn't it tragic, and a little bit thrilling, that some people only find out the truth as they're dying? Does your ability give you information only once you have died?",
+    "styled": "Isn't it tragic, and a little bit thrilling, that some people only find out the truth as they're dying? Does your ability give you information only once you have died?",
     "voice": "Odette",
     "yes": [
       "ravenkeeper",
@@ -2915,7 +2915,7 @@
   {
     "id": "tfc-tb-info-gatherer",
     "plain": "Of the Trouble Brewing Townsfolk, is your ability about gathering information?",
-    "dinniman": "In the starter town, about half the good guys are detectives and the rest are, I don't know, furniture with opinions. Is your ability about gathering information?",
+    "styled": "In the starter town, about half the good guys are detectives and the rest are, I don't know, furniture with opinions. Is your ability about gathering information?",
     "voice": "Carl",
     "yes": [
       "washerwoman",
@@ -2935,7 +2935,7 @@
   {
     "id": "tfc-tb-demon-defence",
     "plain": "Of the Trouble Brewing Townsfolk, does your ability protect someone from being killed by the Demon?",
-    "dinniman": "Not everyone in the first town is a detective. A few of us are there to make sure somebody is still breathing in the morning. Does your ability protect someone from being killed by the Demon?",
+    "styled": "Not everyone in the first town is a detective. A few of us are there to make sure somebody is still breathing in the morning. Does your ability protect someone from being killed by the Demon?",
     "voice": "Katia",
     "yes": [
       "monk",
@@ -2950,7 +2950,7 @@
   {
     "id": "tfc-tb-nightly-news",
     "plain": "Of the Trouble Brewing Townsfolk, do you get fresh information night after night?",
-    "dinniman": "Some of our starter-town heroes get one clue and a pat on the head! Others get a brand-new scoop every single night! Do you get fresh information night after night?",
+    "styled": "Some of our starter-town heroes get one clue and a pat on the head! Others get a brand-new scoop every single night! Do you get fresh information night after night?",
     "voice": "The Host",
     "yes": [
       "empath",
@@ -2965,7 +2965,7 @@
   {
     "id": "tfc-tb-no-pointing",
     "plain": "Of the Trouble Brewing Townsfolk, does your ability work without you ever choosing a player?",
-    "dinniman": "Pointing at people is rude, dear, and some of us never have to. The game just does its thing around us. Does your ability work without you ever choosing a player?",
+    "styled": "Pointing at people is rude, dear, and some of us never have to. The game just does its thing around us. Does your ability work without you ever choosing a player?",
     "voice": "Elle",
     "yes": [
       "washerwoman",
@@ -2986,7 +2986,7 @@
   {
     "id": "tfc-tb-daylight-only",
     "plain": "Of the Trouble Brewing Townsfolk, does your ability only ever come into play during the day?",
-    "dinniman": "SOME OF US DO OUR BEST WORK IN BROAD DAYLIGHT, IN FRONT OF EVERYONE, WITH MAXIMUM SCREAMING! Does your ability only ever come into play during the day?",
+    "styled": "SOME OF US DO OUR BEST WORK IN BROAD DAYLIGHT, IN FRONT OF EVERYONE, WITH MAXIMUM SCREAMING! Does your ability only ever come into play during the day?",
     "voice": "Samantha",
     "yes": [
       "slayer",
@@ -3000,7 +3000,7 @@
   {
     "id": "tfc-bmr-drunk-makers",
     "plain": "Of the Bad Moon Rising Townsfolk, does your ability get other players drunk?",
-    "dinniman": "That town is practically a TAVERN, darling. Half the good guys go around getting people sloshed and calling it strategy. Does your ability get other players drunk?",
+    "styled": "That town is practically a TAVERN, darling. Half the good guys go around getting people sloshed and calling it strategy. Does your ability get other players drunk?",
     "voice": "Princess Donut",
     "yes": [
       "sailor",
@@ -3016,7 +3016,7 @@
   {
     "id": "tfc-bmr-cheat-death",
     "plain": "Of the Bad Moon Rising Townsfolk, can your ability stop someone from dying?",
-    "dinniman": "That place is a bloodbath, so some of the good folk come with ways to keep bodies off the floor. Can your ability stop someone from dying?",
+    "styled": "That place is a bloodbath, so some of the good folk come with ways to keep bodies off the floor. Can your ability stop someone from dying?",
     "voice": "Mordecai",
     "yes": [
       "sailor",
@@ -3042,7 +3042,7 @@
   {
     "id": "tfc-bmr-told-something",
     "plain": "Of the Bad Moon Rising Townsfolk, does the Storyteller ever give you information directly?",
-    "dinniman": "Fun stat: in the Bad Moon town, hardly anyone on the good team gets actual information! It's a very action-forward brand. Does the Storyteller ever give you information directly?",
+    "styled": "Fun stat: in the Bad Moon town, hardly anyone on the good team gets actual information! It's a very action-forward brand. Does the Storyteller ever give you information directly?",
     "voice": "Zev",
     "yes": [
       "grandmother",
@@ -3056,7 +3056,7 @@
   {
     "id": "tfc-bmr-own-worst-enemy",
     "plain": "Of the Bad Moon Rising Townsfolk, could your own ability kill you?",
-    "dinniman": "Warning: some abilities in this region have been flagged as Hazardous To Owner! We've decided not to fix that because the ratings are incredible. Could your own ability kill you?",
+    "styled": "Warning: some abilities in this region have been flagged as Hazardous To Owner! We've decided not to fix that because the ratings are incredible. Could your own ability kill you?",
     "voice": "The System AI",
     "yes": [
       "grandmother",
@@ -3080,7 +3080,7 @@
   {
     "id": "tfc-bmr-single-use",
     "plain": "Of the Bad Moon Rising Townsfolk, do you get just one use of your ability, at a time of your choosing?",
-    "dinniman": "One shot, sweetheart, and you pick the moment. Do you hoard it like a secret, or blurt it out on the first night? Either way, tell me: do you get just one use of your ability, at a time of your choosing?",
+    "styled": "One shot, sweetheart, and you pick the moment. Do you hoard it like a secret, or blurt it out on the first night? Either way, tell me: do you get just one use of your ability, at a time of your choosing?",
     "voice": "Odette",
     "yes": [
       "courtier",
@@ -3094,7 +3094,7 @@
   {
     "id": "tfc-bmr-hands-off",
     "plain": "Of the Bad Moon Rising Townsfolk, does your ability work without you ever waking or doing anything?",
-    "dinniman": "Some people in that town have abilities that just sort of happen to them. No decisions, no wake-ups. I'm extremely jealous. Does your ability work without you ever waking or doing anything?",
+    "styled": "Some people in that town have abilities that just sort of happen to them. No decisions, no wake-ups. I'm extremely jealous. Does your ability work without you ever waking or doing anything?",
     "voice": "Carl",
     "yes": [
       "minstrel",
@@ -3110,7 +3110,7 @@
   {
     "id": "tfc-snv-quiet-listener",
     "plain": "Of the Sects and Violets Townsfolk, do you receive information every night without choosing anyone?",
-    "dinniman": "Some of us don't get to point or pick. We just wake up, hear the news, and try to make sense of it. Do you receive information every night without choosing anyone?",
+    "styled": "Some of us don't get to point or pick. We just wake up, hear the news, and try to make sense of it. Do you receive information every night without choosing anyone?",
     "voice": "Katia",
     "yes": [
       "mathematician",
@@ -3126,7 +3126,7 @@
   {
     "id": "tfc-snv-daytime-act",
     "plain": "Of the Sects and Violets Townsfolk, do you use your ability during the day?",
-    "dinniman": "While most of our violet-town heroes work the night shift, a few prefer the daytime crowd! Do you use your ability during the day?",
+    "styled": "While most of our violet-town heroes work the night shift, a few prefer the daytime crowd! Do you use your ability during the day?",
     "voice": "The Host",
     "yes": [
       "savant",
@@ -3141,7 +3141,7 @@
   {
     "id": "tfc-snv-saved-for-later",
     "plain": "Of the Sects and Violets Townsfolk, do you have a once-per-game ability you can use whenever you choose?",
-    "dinniman": "I SHALL BIDE MY TIME! Lesser beings squander their gifts, but I wait, I plot, and I strike when the moment is PERFECT! Do you have a once-per-game ability you can use whenever you choose?",
+    "styled": "I SHALL BIDE MY TIME! Lesser beings squander their gifts, but I wait, I plot, and I strike when the moment is PERFECT! Do you have a once-per-game ability you can use whenever you choose?",
     "voice": "Prepotente",
     "yes": [
       "seamstress",
@@ -3156,7 +3156,7 @@
   {
     "id": "tfc-snv-night-pick",
     "plain": "Of the Sects and Violets Townsfolk, does your ability have you choose players at night?",
-    "dinniman": "Choosing players at night is how you get things done in that town, and also how you make enemies. Does your ability have you choose players at night?",
+    "styled": "Choosing players at night is how you get things done in that town, and also how you make enemies. Does your ability have you choose players at night?",
     "voice": "Mordecai",
     "yes": [
       "dreamer",
@@ -3171,7 +3171,7 @@
   {
     "id": "tfc-snv-lie-in-the-mix",
     "plain": "Of the Sects and Violets Townsfolk, does your information deliberately include a false option next to the true one?",
-    "dinniman": "Half the truth and half hogwash, served on the same plate. Some of us get our clues that way on purpose. Does your information deliberately include a false option next to the true one?",
+    "styled": "Half the truth and half hogwash, served on the same plate. Some of us get our clues that way on purpose. Does your information deliberately include a false option next to the true one?",
     "voice": "Elle",
     "yes": [
       "savant",
@@ -3195,7 +3195,7 @@
   {
     "id": "tfc-snv-demon-focus",
     "plain": "Of the Sects and Violets Townsfolk, does your ability specifically involve the Demon?",
-    "dinniman": "THE DEMON! THE DEMON! Some of you are obsessed with the beast, and I APPROVE! Does your ability specifically involve the Demon?",
+    "styled": "THE DEMON! THE DEMON! Some of you are obsessed with the beast, and I APPROVE! Does your ability specifically involve the Demon?",
     "voice": "Samantha",
     "yes": [
       "clockmaker",
@@ -3211,7 +3211,7 @@
   {
     "id": "tfc-trio-hunting-evil",
     "plain": "Is your starting clue meant to point you towards an evil player?",
-    "dinniman": "Two names, one title. For most of you it's a good guy to trust. For one of you, it's a rat to hunt. Is your starting clue meant to point you towards an evil player?",
+    "styled": "Two names, one title. For most of you it's a good guy to trust. For one of you, it's a rat to hunt. Is your starting clue meant to point you towards an evil player?",
     "voice": "Mordecai",
     "yes": [
       "investigator"
@@ -3225,7 +3225,7 @@
   {
     "id": "tfc-trio-nobody-home",
     "plain": "Could your starting clue tell you that nobody of the kind you are looking for is in play?",
-    "dinniman": "Imagine getting your one clue of the game and it's just 'nope, none of those here.' Honestly, still useful. Annoying, but useful. Could your starting clue tell you that nobody of the kind you're looking for is in play?",
+    "styled": "Imagine getting your one clue of the game and it's just 'nope, none of those here.' Honestly, still useful. Annoying, but useful. Could your starting clue tell you that nobody of the kind you're looking for is in play?",
     "voice": "Carl",
     "yes": [
       "librarian"
@@ -3239,7 +3239,7 @@
   {
     "id": "tfc-trio-fellow-townsfolk",
     "plain": "Does your starting clue point towards a fellow Townsfolk?",
-    "dinniman": "My clue points at one of my OWN, darling: a fellow upstanding citizen, probably with dreadful taste in clothes. Does your starting clue point towards a fellow Townsfolk?",
+    "styled": "My clue points at one of my OWN, darling: a fellow upstanding citizen, probably with dreadful taste in clothes. Does your starting clue point towards a fellow Townsfolk?",
     "voice": "Princess Donut",
     "yes": [
       "washerwoman"
@@ -3253,7 +3253,7 @@
   {
     "id": "tfc-fn-a-number",
     "plain": "Does your starting clue come as a number?",
-    "dinniman": "Starting Bonus: Math! While other contestants get names and faces, you get a single integer. Enjoy! Does your starting clue come as a number?",
+    "styled": "Starting Bonus: Math! While other contestants get names and faces, you get a single integer. Enjoy! Does your starting clue come as a number?",
     "voice": "The System AI",
     "yes": [
       "chef",
@@ -3277,7 +3277,7 @@
   {
     "id": "tfc-fn-names-faces",
     "plain": "Does your starting clue usually point at specific players?",
-    "dinniman": "Some starting packages come with actual names and faces! Our viewers love being able to follow along. Does your starting clue usually point at specific players?",
+    "styled": "Some starting packages come with actual names and faces! Our viewers love being able to follow along. Does your starting clue usually point at specific players?",
     "voice": "Zev",
     "yes": [
       "steward",
@@ -3307,7 +3307,7 @@
   {
     "id": "tfc-fn-toward-evil",
     "plain": "Is your starting clue built to point you towards an evil player?",
-    "dinniman": "Some people begin the game with a lovely little lead on a villain. Do you, darling? Is your starting clue built to point you towards an evil player?",
+    "styled": "Some people begin the game with a lovely little lead on a villain. Do you, darling? Is your starting clue built to point you towards an evil player?",
     "voice": "Odette",
     "yes": [
       "noble",
@@ -3331,7 +3331,7 @@
   {
     "id": "tfc-fn-names-a-character",
     "plain": "Does your starting clue usually name a specific character?",
-    "dinniman": "Knowing a person is one thing. Knowing exactly what they are is something else. Does your starting clue usually name a specific character?",
+    "styled": "Knowing a person is one thing. Knowing exactly what they are is something else. Does your starting clue usually name a specific character?",
     "voice": "Katia",
     "yes": [
       "washerwoman",
@@ -3358,7 +3358,7 @@
   {
     "id": "tfc-pr-self-preservation",
     "plain": "Of the protective characters, do you protect only yourself?",
-    "dinniman": "Some folks guard the whole neighbourhood. I guard me, and I sleep fine, thanks. Of the protective sorts, do you protect only yourself?",
+    "styled": "Some folks guard the whole neighbourhood. I guard me, and I sleep fine, thanks. Of the protective sorts, do you protect only yourself?",
     "voice": "Elle",
     "yes": [
       "soldier",
@@ -3380,7 +3380,7 @@
   {
     "id": "tfc-pr-beats-the-noose",
     "plain": "Of the protective characters, does your protection work against execution, not just night-time deaths?",
-    "dinniman": "Most shields only work in the dark. A few still hold when the mob has the rope. Of the protective sorts, does your protection work against execution, not just night-time deaths?",
+    "styled": "Most shields only work in the dark. A few still hold when the mob has the rope. Of the protective sorts, does your protection work against execution, not just night-time deaths?",
     "voice": "Mordecai",
     "yes": [
       "sailor",
@@ -3402,7 +3402,7 @@
   {
     "id": "tfc-pr-nightly-pick",
     "plain": "Of the protective characters, do you choose who to protect each night?",
-    "dinniman": "Of all our guardian angels, only a couple get to wake up and hand-pick tonight's lucky survivor! Of the protective sorts, do you choose who to protect each night?",
+    "styled": "Of all our guardian angels, only a couple get to wake up and hand-pick tonight's lucky survivor! Of the protective sorts, do you choose who to protect each night?",
     "voice": "The Host",
     "yes": [
       "monk",
@@ -3422,7 +3422,7 @@
   {
     "id": "tfc-opg-daytime-shot",
     "plain": "Of the once-per-game characters, do you use your one shot during the day?",
-    "dinniman": "Most once-a-game tricks happen at night while everyone's asleep. A few happen in daylight, where everyone can watch you mess it up. Do you use your one shot during the day?",
+    "styled": "Most once-a-game tricks happen at night while everyone's asleep. A few happen in daylight, where everyone can watch you mess it up. Do you use your one shot during the day?",
     "voice": "Carl",
     "yes": [
       "artist",
@@ -3445,7 +3445,7 @@
   {
     "id": "tfc-opg-get-told",
     "plain": "Of the once-per-game characters, does your one use make the Storyteller tell you something?",
-    "dinniman": "For a few of our single-use talents, the payoff is pure content: the Storyteller tells you something! Of the once-per-game characters, does your one use make the Storyteller tell you something?",
+    "styled": "For a few of our single-use talents, the payoff is pure content: the Storyteller tells you something! Of the once-per-game characters, does your one use make the Storyteller tell you something?",
     "voice": "Zev",
     "yes": [
       "seamstress",
@@ -3468,7 +3468,7 @@
   {
     "id": "tfc-opg-name-the-role",
     "plain": "Of the once-per-game characters, does your one use have you choose characters rather than players?",
-    "dinniman": "Faces are SO common. When I make my one grand gesture, I choose a TITLE, not some grubby person. Of the once-per-game characters, does your one use have you choose characters rather than players?",
+    "styled": "Faces are SO common. When I make my one grand gesture, I choose a TITLE, not some grubby person. Of the once-per-game characters, does your one use have you choose characters rather than players?",
     "voice": "Princess Donut",
     "yes": [
       "courtier",
@@ -3491,7 +3491,7 @@
   {
     "id": "tfc-nd-about-deaths",
     "plain": "Of those who learn something each night about the day just gone, is your information about players who have died?",
-    "dinniman": "THE DEAD! TELL ME OF THE DEAD! Some of you only care about corpses, and frankly that's the correct priority! Is your nightly information about players who have died?",
+    "styled": "THE DEAD! TELL ME OF THE DEAD! Some of you only care about corpses, and frankly that's the correct priority! Is your nightly information about players who have died?",
     "voice": "Samantha",
     "yes": [
       "oracle",
@@ -3507,7 +3507,7 @@
   {
     "id": "tfc-nd-demon-watch",
     "plain": "Of those who learn something each night about the day just gone, is your information about the Demon specifically?",
-    "dinniman": "Specialised Tracking Module installed! While your peers fuss about corpses and lackeys, you watch exactly one target: the big boss. Is your nightly information about the Demon specifically?",
+    "styled": "Specialised Tracking Module installed! While your peers fuss about corpses and lackeys, you watch exactly one target: the big boss. Is your nightly information about the Demon specifically?",
     "voice": "The System AI",
     "yes": [
       "flowergirl"
@@ -3522,7 +3522,7 @@
   {
     "id": "tfc-ng-who-sits-where",
     "plain": "Of those who learn numbers, is your number about where people are sitting?",
-    "dinniman": "THE SEATING CHART IS EVERYTHING! Who sits beside whom, how many chairs apart, I SEE IT ALL! Of those who learn numbers, is your number about where people are sitting?",
+    "styled": "THE SEATING CHART IS EVERYTHING! Who sits beside whom, how many chairs apart, I SEE IT ALL! Of those who learn numbers, is your number about where people are sitting?",
     "voice": "Prepotente",
     "yes": [
       "chef",
@@ -3542,7 +3542,7 @@
   {
     "id": "tfc-ng-fresh-number",
     "plain": "Of those who learn numbers, do you get a fresh number most nights?",
-    "dinniman": "One number is a hint. A number every night is a pattern, and patterns are what keep you alive. Of those who learn numbers, do you get a fresh number most nights?",
+    "styled": "One number is a hint. A number every night is a pattern, and patterns are what keep you alive. Of those who learn numbers, do you get a fresh number most nights?",
     "voice": "Mordecai",
     "yes": [
       "empath",
@@ -3563,7 +3563,7 @@
   {
     "id": "tfc-ng-your-choice",
     "plain": "Of those who learn numbers, do you get to choose which players your number is about?",
-    "dinniman": "I'd rather decide what I'm investigating than have it decided for me. Of those who learn numbers, do you get to choose which players your number is about?",
+    "styled": "I'd rather decide what I'm investigating than have it decided for me. Of those who learn numbers, do you get to choose which players your number is about?",
     "voice": "Katia",
     "yes": [
       "chambermaid",
@@ -3582,7 +3582,7 @@
   {
     "id": "tfc-pd-body-count",
     "plain": "Of those who make a public play during the day, can yours lead to a death?",
-    "dinniman": "Everybody loves a public performance, but some of them end with a body on the stage. Now, darling, of those who make a public play during the day, can yours lead to a death?",
+    "styled": "Everybody loves a public performance, but some of them end with a body on the stage. Now, darling, of those who make a public play during the day, can yours lead to a death?",
     "voice": "Odette",
     "yes": [
       "gossip",
@@ -3598,7 +3598,7 @@
   {
     "id": "tfc-dm-one-round",
     "plain": "Of those whose ability gets others drunk, does yours only do it once all game?",
-    "dinniman": "Some folks pour every night. Others save it all for one almighty bender. Of those whose ability gets others drunk, does yours only do it once all game?",
+    "styled": "Some folks pour every night. Others save it all for one almighty bender. Of those whose ability gets others drunk, does yours only do it once all game?",
     "voice": "Elle",
     "yes": [
       "courtier",
@@ -3615,7 +3615,7 @@
   {
     "id": "tfc-nc-learn-every-night",
     "plain": "Of those who choose someone each night, does the Storyteller give you information about your choice every night?",
-    "dinniman": "Some of us point at people every night and actually get told something back. Others just point and hope. Does the Storyteller give you information about your choice every night?",
+    "styled": "Some of us point at people every night and actually get told something back. Others just point and hope. Does the Storyteller give you information about your choice every night?",
     "voice": "Carl",
     "yes": [
       "chambermaid",
@@ -3637,7 +3637,7 @@
   {
     "id": "tfc-nc-only-the-demon",
     "plain": "Of those who choose someone each night, does your choice only do anything if you pick the Demon?",
-    "dinniman": "For two of our nightly pickers, it's all or nothing: find the Demon and the fireworks start, miss and nothing happens at all! Does your choice only do anything if you pick the Demon?",
+    "styled": "For two of our nightly pickers, it's all or nothing: find the Demon and the fireworks start, miss and nothing happens at all! Does your choice only do anything if you pick the Demon?",
     "voice": "The Host",
     "yes": [
       "snakecharmer",

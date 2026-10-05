@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Which Clocktower Character Are You?</title>
+  <meta name="description" content="Answer yes or no until only one Blood on the Clocktower character is left.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Clocktower Character Quiz">
+  <meta property="og:title" content="Which Clocktower character are you?">
+  <meta property="og:description" content="Answer yes or no until only one Blood on the Clocktower character is left. 156 characters, and questions with attitude.">
+  <meta property="og:url" content="https://panimu.github.io/botc/quiz.html">
+  <meta name="theme-color" content="#221932">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=dev">
+  <script type="module" src="js/app.js?v=dev"></script>
+</head>
+<body>
+  <main>
+    <div class="side">
+    <header class="intro">
+      <nav class="topbar" aria-label="Modes">
+        <div class="modes">
+          <a href="./">Daily hunt</a>
+          <a href="quiz.html" aria-current="page">Personality quiz</a>
+        </div>
+        <button type="button" class="quiet theme-toggle" id="theme-toggle" hidden></button>
+      </nav>
+      <h1>Which Clocktower character are you?</h1>
+      <p>Answer each question honestly. Every answer rules out characters until only one is left.</p>
+    </header>
+    <section class="panel" id="question-panel" aria-labelledby="question-text">
+      <div class="card-head">
+        <span class="card-number" id="question-number">Loading…</span>
+        <span class="card-left" id="remaining"></span>
+      </div>
+      <h2 class="question voiced" id="question-text" tabindex="-1"></h2>
+      <p class="feedback" id="feedback"></p>
+      <div class="answers" id="answers" hidden>
+        <button type="button" class="answer answer-tile" id="yes" aria-keyshortcuts="Y"><span class="answer-label">Yes</span><kbd aria-hidden="true">Y</kbd></button>
+        <button type="button" class="answer answer-tile" id="no" aria-keyshortcuts="N"><span class="answer-label">No</span><kbd aria-hidden="true">N</kbd></button>
+      </div>
+      <div class="card-foot" id="secondary" hidden>
+        <button type="button" class="quiet" id="undo" aria-keyshortcuts="Backspace">Undo <kbd aria-hidden="true">Backspace</kbd></button>
+        <button type="button" class="quiet" id="restart">Start over</button>
+        <p class="question-id">Question <span id="question-id"></span></p>
+      </div>
+    </section>
+
+    <section class="panel result" id="result-panel" aria-labelledby="result-name" hidden>
+      <img class="result-art" id="result-art" alt="">
+      <p class="result-lead" id="result-lead">You are the</p>
+      <h2 class="result-name" id="result-name" tabindex="-1"></h2>
+      <p class="result-team" id="result-team"></p>
+      <p class="result-summary" id="result-summary"></p>
+      <figure class="share-quote" id="share-quote" hidden>
+        <blockquote id="share-quote-text"></blockquote>
+      </figure>
+      <div class="share-options" id="share-options" hidden></div>
+      <p class="share-status" id="share-status" role="status"></p>
+      <div class="secondary replay">
+        <button type="button" class="answer" id="play-again">Play again</button>
+        <button type="button" class="quiet" id="result-undo">Undo last answer</button>
+      </div>
+    </section>
+
+    <section class="path" id="path" aria-labelledby="path-heading" hidden>
+      <h2 id="path-heading">How you got here</h2>
+      <ol id="path-list"></ol>
+    </section>
+
+    <details class="pool" id="pool">
+      <summary><h2 id="pool-heading">Still in the running</h2></summary>
+      <div id="pool-groups"></div>
+    </details>
+    </div>
+
+    <!-- The town circle: beads while many remain, seated tokens once 15 or fewer do.
+         Decorative; the list below carries the same information for assistive tech. -->
+    <div class="stage">
+      <div class="circle" id="circle" aria-hidden="true">
+        <ol class="ring" id="ring"></ol>
+        <div class="circle-centre">
+          <p class="circle-count" id="circle-count"></p>
+          <p class="circle-label" id="circle-label"></p>
+        </div>
+    </div>
+    </div>
+
+    <div class="visually-hidden" id="announcer" aria-live="polite" aria-atomic="true"></div>
+  </main>
+
+  <footer>
+    <img class="ccc ccc-light" src="resources/community/ccc-parchment.png" alt="Community Created Content" width="1058" height="397">
+    <img class="ccc ccc-dark" src="resources/community/ccc-sleeve.png" alt="Community Created Content" width="1072" height="426">
+  </footer>
+</body>
+</html>

@@ -107,7 +107,6 @@ function start(characters, questions, clockOffset) {
   function historyItems() {
     const items = [];
     game.history.forEach((h, i) => {
-      const after = i + 1 < game.history.length ? game.history[i + 1].poolBefore.length : null;
       const li = el('li');
       li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'), el('span', 'path-id', ` ${h.question.id}`));
       items.push(li);
@@ -142,19 +141,11 @@ function start(characters, questions, clockOffset) {
     const streak = current > 1 ? ` | 🔥 ${current}-day streak` : '';
     return {
       url,
-      plain: shareText(),
+      plain: [`Clocktower Daily Hunt #${game.number}: ${game.status === 'won' ? `found in ${game.score}` : 'not found'}`, marks, current > 1 ? `Streak: ${current}` : '', url].filter(Boolean).join(nl),
       discord: [`🕰️ **Clocktower Daily Hunt #${game.number}**`, `${verdict}${streak}`, marks, `<${url}>`].join(nl),
     };
   }
 
-  function shareText() {
-    const marks = game.history.map((h) => (h.answer ? '👍' : '👎')).join('')
-      + '🪦'.repeat(game.wrongGuesses.length) + (game.status === 'won' ? '🎯' : '💀');
-    const verdict = game.status === 'won' ? `found in ${game.score}` : 'not found';
-    const { current } = streaks(store.get(RESULTS_KEY, {}), date);
-    return [`Clocktower daily hunt #${game.number}: ${verdict}`, marks, current > 1 ? `Streak: ${current}` : '', location.href.split(/[?#]/)[0]]
-      .filter(Boolean).join(String.fromCharCode(10));
-  }
 
   function renderResult() {
     const over = game.status !== 'playing';
@@ -258,6 +249,6 @@ try {
   console.error(error);
   $('hunt-number').textContent = 'The hunt couldn’t start.';
   $('guess-locked').textContent = location.protocol === 'file:'
-    ? 'Opening daily.html straight from disk doesn’t work. Serve the folder instead (npm run serve) and visit http://localhost:8000/daily.html.'
+    ? 'Opening index.html straight from disk doesn’t work. Serve the folder instead (npm run serve) and visit http://localhost:8000.'
     : `Refresh the page to try again. (${error.message})`;
 }

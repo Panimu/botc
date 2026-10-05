@@ -2,7 +2,7 @@
   {
     "id": "psy-perfect-moment",
     "plain": "Would you rather save one big move for the perfect moment than use a small power every day?",
-    "dinniman": "NEW ACHIEVEMENT UNLOCKED: Hoarder of Destiny! Some contestants spend their power like pocket change. Others sit on one glorious button for days, waiting to smash it at exactly the right second. Would you rather save one big move for the perfect moment than use a little power every day?",
+    "styled": "NEW ACHIEVEMENT UNLOCKED: Hoarder of Destiny! Some contestants spend their power like pocket change. Others sit on one glorious button for days, waiting to smash it at exactly the right second. Would you rather save one big move for the perfect moment than use a little power every day?",
     "voice": "The System AI",
     "yes": {
       "psyPatient": true
@@ -14,7 +14,7 @@
   {
     "id": "psy-slow-payoff",
     "plain": "Do you prefer plans that pay off near the end over ones that pay off straight away?",
-    "dinniman": "Most of you want your reward the second you walk through the door. The ones who live longest plant something early and wait for it to grow. Do you prefer a plan that pays off near the end over one that pays off straight away?",
+    "styled": "Most of you want your reward the second you walk through the door. The ones who live longest plant something early and wait for it to grow. Do you prefer a plan that pays off near the end over one that pays off straight away?",
     "voice": "Mordecai",
     "yes": {
       "psyPatient": true
@@ -26,7 +26,7 @@
   {
     "id": "psy-best-bite-last",
     "plain": "Do you save the best thing on your plate until last?",
-    "dinniman": "A lady does NOT wolf down the good salmon first, darling. She savours the little things and saves the finest morsel for a grand finale. Do you save the best thing on your plate until last?",
+    "styled": "A lady does NOT wolf down the good salmon first, darling. She savours the little things and saves the finest morsel for a grand finale. Do you save the best thing on your plate until last?",
     "voice": "Princess Donut",
     "yes": {
       "psyPatient": true
@@ -38,7 +38,7 @@
   {
     "id": "psy-hold-the-trump",
     "plain": "In card games, do you hold your strongest card back until it can win outright?",
-    "dinniman": "Every game night there's one guy who slaps down his best card on turn one, and one guy who sits on it all evening looking smug. Are you the one who holds your strongest card back until it can win outright?",
+    "styled": "Every game night there's one guy who slaps down his best card on turn one, and one guy who sits on it all evening looking smug. Are you the one who holds your strongest card back until it can win outright?",
     "voice": "Carl",
     "yes": {
       "psyPatient": true
@@ -49,8 +49,8 @@
   },
   {
     "id": "psy-waiting-game",
-    "plain": "Is waiting something you are genuinely good at?",
-    "dinniman": "I sat in a doctor's waiting room for four hours once and came out with three new friends and a recipe for flan. Is waiting something you are genuinely good at?",
+    "plain": "Are you good at waiting?",
+    "styled": "I sat in a doctor's waiting room for four hours once and came out with three new friends and a recipe for flan. Is waiting something you are genuinely good at?",
     "voice": "Elle",
     "yes": {
       "psyPatient": true
@@ -62,7 +62,7 @@
   {
     "id": "psy-demon-bide",
     "plain": "As a Demon, would you rather bide your time than strike every single night?",
-    "dinniman": "YOUR GODDESS ADORES A MASSACRE! But even a goddess knows the sweetest slaughter is the one you wait for. Little demon, would you rather bide your time than strike every single night?",
+    "styled": "YOUR GODDESS ADORES A MASSACRE! But even a goddess knows the sweetest slaughter is the one you wait for. Little demon, would you rather bide your time than strike every single night?",
     "voice": "Samantha",
     "yes": {
       "psyPatient": true
@@ -74,8 +74,8 @@
   },
   {
     "id": "psy-minion-reserve",
-    "plain": "As a Minion, would you rather your power waits for one key moment than works right from the start?",
-    "dinniman": "Our sponsors love a slow burn! Big reveal, huge ratings, minimal cleanup costs. So, Minion, for the brand: would you rather your power waits for one key moment than works right from the start?",
+    "plain": "As a Minion, would you rather your power waited for one key moment than worked from the start?",
+    "styled": "Our sponsors love a slow burn! Big reveal, huge ratings, minimal cleanup costs. So, Minion, for the brand: would you rather your power waits for one key moment than works right from the start?",
     "voice": "Zev",
     "yes": {
       "psyPatient": true
@@ -88,7 +88,7 @@
   {
     "id": "psy-townsfolk-one-shot",
     "plain": "Would you rather wait days for one decisive moment than be useful from the very start?",
-    "dinniman": "It's scary, holding on to something precious while everyone around you is acting. But waiting can be its own kind of courage. Would you rather wait days for one decisive moment than be useful from the very start?",
+    "styled": "It's scary, holding on to something precious while everyone around you is acting. But waiting can be its own kind of courage. Would you rather wait days for one decisive moment than be useful from the very start?",
     "voice": "Katia",
     "yes": {
       "psyPatient": true
@@ -101,7 +101,7 @@
   {
     "id": "psy-on-the-line",
     "plain": "Do you enjoy putting something you care about on the line for a big payoff?",
-    "dinniman": "Honey, I didn't get to my age by playing it safe. Okay, maybe I did, and I've regretted it ever since. Do you enjoy putting something you care about on the line for a big payoff?",
+    "styled": "Honey, I didn't get to my age by playing it safe. Okay, maybe I did, and I've regretted it ever since. Do you enjoy putting something you care about on the line for a big payoff?",
     "voice": "Elle",
     "yes": {
       "psyRiskTaker": true
@@ -113,7 +113,7 @@
   {
     "id": "psy-big-risks",
     "plain": "Do you love taking big risks?",
-    "dinniman": "I've buried a lot of contestants who said yes to this one. I've also watched a few of them walk out rich. Do you love taking big risks?",
+    "styled": "I've buried a lot of contestants who said yes to this one. I've also watched a few of them walk out rich. Do you love taking big risks?",
     "voice": "Mordecai",
     "yes": {
       "psyRiskTaker": true
@@ -125,7 +125,7 @@
   {
     "id": "psy-safe-bores",
     "plain": "Do safe, sure things bore you?",
-    "dinniman": "Darling, my audience can smell caution through the screen. So be honest with me, just between us and a few billion viewers. Do safe, sure things bore you?",
+    "styled": "Darling, my audience can smell caution through the screen. So be honest with me, just between us and a few billion viewers. Do safe, sure things bore you?",
     "voice": "Odette",
     "yes": {
       "psyRiskTaker": true
@@ -137,7 +137,7 @@
   {
     "id": "psy-townsfolk-danger",
     "plain": "Do you want a little danger built into everything you do?",
-    "dinniman": "Folks, some heroes come with seatbelts and some come with a lit fuse taped to their chest! Which kind are we looking at tonight? Do you want a little danger built into everything you do?",
+    "styled": "Folks, some heroes come with seatbelts and some come with a lit fuse taped to their chest! Which kind are we looking at tonight? Do you want a little danger built into everything you do?",
     "voice": "The Host",
     "yes": {
       "psyRiskTaker": true
@@ -150,7 +150,7 @@
   {
     "id": "psy-safe-option",
     "plain": "Do you nearly always pick the safe option?",
-    "dinniman": "The left door says 'Certain Death', the right door says 'Probably Fine'. I don't care what the loot is, I'm going right. Do you nearly always pick the safe option?",
+    "styled": "The left door says 'Certain Death', the right door says 'Probably Fine'. I don't care what the loot is, I'm going right. Do you nearly always pick the safe option?",
     "voice": "Carl",
     "yes": {
       "psyRiskTaker": false
@@ -162,7 +162,7 @@
   {
     "id": "psy-set-the-rules",
     "plain": "Do you like being the one who sets the rules for everyone else?",
-    "dinniman": "I DECREE IT! The rules shall be what I say they are, and the peasants shall OBEY! Do you, too, like being the one who sets the rules for everyone else?",
+    "styled": "I DECREE IT! The rules shall be what I say they are, and the peasants shall OBEY! Do you, too, like being the one who sets the rules for everyone else?",
     "voice": "Prepotente",
     "yes": {
       "psyNeedsControl": true
@@ -174,7 +174,7 @@
   {
     "id": "psy-decide-for-them",
     "plain": "When a group can't decide, do you just decide for them?",
-    "dinniman": "Twenty minutes of 'I don't mind, what do you want?' and somebody finally snaps and picks the restaurant. When a group can't decide, are you the one who just decides for them?",
+    "styled": "Twenty minutes of 'I don't mind, what do you want?' and somebody finally snaps and picks the restaurant. When a group can't decide, are you the one who just decides for them?",
     "voice": "Carl",
     "yes": {
       "psyNeedsControl": true
@@ -186,7 +186,7 @@
   {
     "id": "psy-allowed",
     "plain": "Do you enjoy deciding what other people are and are not allowed to do?",
-    "dinniman": "The dinosaur is not ALLOWED on the good cushion. My human is not ALLOWED to touch my snacks. Everyone must clap when I enter. It's called leadership. Do you enjoy deciding what other people are and are not allowed to do?",
+    "styled": "The dinosaur is not ALLOWED on the good cushion. My human is not ALLOWED to touch my snacks. Everyone must clap when I enter. It's called leadership. Do you enjoy deciding what other people are and are not allowed to do?",
     "voice": "Princess Donut",
     "yes": {
       "psyNeedsControl": true
@@ -198,7 +198,7 @@
   {
     "id": "psy-minion-orders",
     "plain": "Even as a Minion, do you want to dictate what other players can do?",
-    "dinniman": "A Minion who gives the orders. How deliciously ironic. Tell me, sweetheart, is that you? Even as a Minion, do you want to dictate what other players can do?",
+    "styled": "A Minion who gives the orders. How deliciously ironic. Tell me, sweetheart, is that you? Even as a Minion, do you want to dictate what other players can do?",
     "voice": "Odette",
     "yes": {
       "psyNeedsControl": true
@@ -211,7 +211,7 @@
   {
     "id": "psy-set-agenda",
     "plain": "In a meeting, do you like being the one who sets the agenda?",
-    "dinniman": "Synergy starts at the top, people! Someone has to own the slide deck, the timetable and the vote. In a meeting, do you like being the one who sets the agenda?",
+    "styled": "Synergy starts at the top, people! Someone has to own the slide deck, the timetable and the vote. In a meeting, do you like being the one who sets the agenda?",
     "voice": "Zev",
     "yes": {
       "psyNeedsControl": true
@@ -224,7 +224,7 @@
   {
     "id": "psy-go-with-flow",
     "plain": "Would you rather leave the rule-making to someone else?",
-    "dinniman": "I used to think I had to control everything to be safe. Now I can let someone else write the rules sometimes, and it's a relief. Would you rather leave the rule-making to someone else?",
+    "styled": "I used to think I had to control everything to be safe. Now I can let someone else write the rules sometimes, and it's a relief. Would you rather leave the rule-making to someone else?",
     "voice": "Katia",
     "yes": {
       "psyNeedsControl": false
@@ -236,7 +236,7 @@
   {
     "id": "psy-centre-attention",
     "plain": "Do you like being the centre of attention?",
-    "dinniman": "Is that even a question? The spotlight was INVENTED for creatures like me. But fine, I'll humour the peasants. Do you like being the centre of attention?",
+    "styled": "Is that even a question? The spotlight was INVENTED for creatures like me. But fine, I'll humour the peasants. Do you like being the centre of attention?",
     "voice": "Princess Donut",
     "yes": {
       "psyShowman": true
@@ -248,7 +248,7 @@
   {
     "id": "psy-full-view",
     "plain": "Would you rather act in full view of everyone than work quietly in the background?",
-    "dinniman": "Lights! Cameras! Questionable life choices! Our contestants can do their thing under a spotlight or in a dark corner. Would you rather act in full view of everyone than work quietly in the background?",
+    "styled": "Lights! Cameras! Questionable life choices! Our contestants can do their thing under a spotlight or in a dark corner. Would you rather act in full view of everyone than work quietly in the background?",
     "voice": "The Host",
     "yes": {
       "psyShowman": true
@@ -260,7 +260,7 @@
   {
     "id": "psy-karaoke-first",
     "plain": "Are you usually first up at karaoke?",
-    "dinniman": "RAWR! [Translation: me first!] He stomps onto the little stage, grabs the microphone in his jaws and roars along to the music. He always goes first. Are you usually first up at karaoke?",
+    "styled": "RAWR! [Translation: me first!] He stomps onto the little stage, grabs the microphone in his jaws and roars along to the music. He always goes first. Are you usually first up at karaoke?",
     "voice": "Mongo",
     "yes": {
       "psyShowman": true
@@ -272,7 +272,7 @@
   {
     "id": "psy-dramatic-reveal",
     "plain": "Do you love a dramatic moment in front of everyone?",
-    "dinniman": "Behold! The goat throws off his cloak! The crowd GASPS! The crowd WEEPS! THE GOAT HAS ARRIVED! Do you love a dramatic moment in front of everyone?",
+    "styled": "Behold! The goat throws off his cloak! The crowd GASPS! The crowd WEEPS! THE GOAT HAS ARRIVED! Do you love a dramatic moment in front of everyone?",
     "voice": "Prepotente",
     "yes": {
       "psyShowman": true
@@ -284,7 +284,7 @@
   {
     "id": "psy-evil-audience",
     "plain": "Even as a villain, do you want an audience watching you work?",
-    "dinniman": "What is carnage without spectators? A WASTE, that is what! Your goddess demands witnesses for her glory! Even as a villain, do you want an audience watching you work?",
+    "styled": "What is carnage without spectators? A WASTE, that is what! Your goddess demands witnesses for her glory! Even as a villain, do you want an audience watching you work?",
     "voice": "Samantha",
     "yes": {
       "psyShowman": true
@@ -300,7 +300,7 @@
   {
     "id": "psy-good-watched",
     "plain": "On the good side, do you do your best work with everyone watching?",
-    "dinniman": "Some of us shrink when people stare. Some of us stand up straighter. I'm still learning which one I am. On the good side, do you do your best work with everyone watching?",
+    "styled": "Some of us shrink when people stare. Some of us stand up straighter. I'm still learning which one I am. On the good side, do you do your best work with everyone watching?",
     "voice": "Katia",
     "yes": {
       "psyShowman": true
@@ -316,7 +316,7 @@
   {
     "id": "psy-demon-daylight",
     "plain": "As a Demon, do you want your killing done out loud, in broad daylight?",
-    "dinniman": "Night-time kills test terribly with our focus groups. Daylight carnage? Through the roof! As a Demon, do you want your killing done out loud, in broad daylight?",
+    "styled": "Night-time kills test terribly with our focus groups. Daylight carnage? Through the roof! As a Demon, do you want your killing done out loud, in broad daylight?",
     "voice": "Zev",
     "yes": {
       "psyShowman": true
@@ -329,7 +329,7 @@
   {
     "id": "psy-unnoticed",
     "plain": "Do you do your best work when nobody is paying attention to you?",
-    "dinniman": "The contestants who last are usually the ones nobody remembers seeing. No fuss, no fanfare, just results. Do you do your best work when nobody is paying attention to you?",
+    "styled": "The contestants who last are usually the ones nobody remembers seeing. No fuss, no fanfare, just results. Do you do your best work when nobody is paying attention to you?",
     "voice": "Mordecai",
     "yes": {
       "psyShowman": false
@@ -341,7 +341,7 @@
   {
     "id": "psy-enjoy-bluffing",
     "plain": "Do you get a kick out of convincing people of something that isn't true?",
-    "dinniman": "Oh, I adore a good liar. They make the best guests, right up until the moment they don't. Do you get a kick out of convincing people of something that isn't true?",
+    "styled": "Oh, I adore a good liar. They make the best guests, right up until the moment they don't. Do you get a kick out of convincing people of something that isn't true?",
     "voice": "Odette",
     "yes": {
       "psyDeceiver": true
@@ -353,7 +353,7 @@
   {
     "id": "psy-secret-identity",
     "plain": "Do you enjoy pretending to be someone you're not for a long time?",
-    "dinniman": "PATCH NOTE 4.2: Masks are now mandatory for a third of contestants. Several have reported enjoying this a worrying amount. Do you enjoy pretending to be someone you're not for a long time?",
+    "styled": "PATCH NOTE 4.2: Masks are now mandatory for a third of contestants. Several have reported enjoying this a worrying amount. Do you enjoy pretending to be someone you're not for a long time?",
     "voice": "The System AI",
     "yes": {
       "psyDeceiver": true
@@ -365,7 +365,7 @@
   {
     "id": "psy-poker-face",
     "plain": "Is lying convincingly one of your proudest skills?",
-    "dinniman": "I once told a cruise ship captain I was a retired brain surgeon. Kept it up for nine days. Best holiday of my life. Is lying convincingly one of your proudest skills?",
+    "styled": "I once told a cruise ship captain I was a retired brain surgeon. Kept it up for nine days. Best holiday of my life. Is lying convincingly one of your proudest skills?",
     "voice": "Elle",
     "yes": {
       "psyDeceiver": true
@@ -377,7 +377,7 @@
   {
     "id": "psy-lies-easy",
     "plain": "Do lies come easily to you?",
-    "dinniman": "Lying's a survival skill down here. Some of you can't do it to save your life, literally. Others don't even notice they're doing it. Do lies come easily to you?",
+    "styled": "Lying's a survival skill down here. Some of you can't do it to save your life, literally. Others don't even notice they're doing it. Do lies come easily to you?",
     "voice": "Mordecai",
     "yes": {
       "psyDeceiver": true
@@ -389,7 +389,7 @@
   {
     "id": "psy-good-mask",
     "plain": "Even on the good side, do you like playing a part that isn't really you?",
-    "dinniman": "Some people are on the right team and still can't resist wearing a fake moustache. I don't get it, but I've stopped asking. Even on the good side, do you like playing a part that isn't really you?",
+    "styled": "Some people are on the right team and still can't resist wearing a fake moustache. I don't get it, but I've stopped asking. Even on the good side, do you like playing a part that isn't really you?",
     "voice": "Carl",
     "yes": {
       "psyDeceiver": true
@@ -405,7 +405,7 @@
   {
     "id": "psy-honest-fault",
     "plain": "Does lying feel unnatural to you?",
-    "dinniman": "I've never been good at pretending. My face gives me away every time, and honestly, I've made peace with that. Does lying feel unnatural to you?",
+    "styled": "I've never been good at pretending. My face gives me away every time, and honestly, I've made peace with that. Does lying feel unnatural to you?",
     "voice": "Katia",
     "yes": {
       "psyDeceiver": false
@@ -417,7 +417,7 @@
   {
     "id": "psy-pull-strings",
     "plain": "Do you like pulling strings behind the scenes so nobody knows it was you?",
-    "dinniman": "The goat does not climb onto the stage. The goat MOVES the stage. And nobody suspects the goat! Do you like pulling strings behind the scenes so nobody knows it was you?",
+    "styled": "The goat does not climb onto the stage. The goat MOVES the stage. And nobody suspects the goat! Do you like pulling strings behind the scenes so nobody knows it was you?",
     "voice": "Prepotente",
     "yes": {
       "psyManipulator": true
@@ -428,8 +428,8 @@
   },
   {
     "id": "psy-mess-with-heads",
-    "plain": "Do you enjoy secretly sabotaging other people's tools so they mislead them?",
-    "dinniman": "Fun fact: thirty percent of the gear in this dungeon has been quietly tampered with. Sponsors pay extra for that. Do you enjoy secretly sabotaging other people's tools so they mislead them?",
+    "plain": "Do you enjoy secretly tampering with other people's tools so they give false results?",
+    "styled": "Fun fact: thirty percent of the gear in this dungeon has been quietly tampered with. Sponsors pay extra for that. Do you enjoy secretly sabotaging other people's tools so they mislead them?",
     "voice": "The System AI",
     "yes": {
       "psyManipulator": true
@@ -441,7 +441,7 @@
   {
     "id": "psy-good-muddle",
     "plain": "On the good side, do you like plans where helping means quietly muddling someone?",
-    "dinniman": "Sometimes being on the right side means someone ends up confused, and they never find out why. I hate that. Some people don't mind it at all. On the good side, do you like plans where helping means quietly muddling someone?",
+    "styled": "Sometimes being on the right side means someone ends up confused, and they never find out why. I hate that. Some people don't mind it at all. On the good side, do you like plans where helping means quietly muddling someone?",
     "voice": "Katia",
     "yes": {
       "psyManipulator": true
@@ -457,7 +457,7 @@
   {
     "id": "psy-demon-confusion",
     "plain": "As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
-    "dinniman": "Bodies are delightful. But bodies AND a village full of befuddled, poisoned survivors? My favourite combination! As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
+    "styled": "Bodies are delightful. But bodies AND a village full of befuddled, poisoned survivors? My favourite combination! As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
     "voice": "Samantha",
     "yes": {
       "psyManipulator": true
@@ -484,7 +484,7 @@
   {
     "id": "psy-group-first",
     "plain": "Do you put the group's needs ahead of your own safety?",
-    "dinniman": "When it really comes down to it, would you step in front of the blow so someone else doesn't have to? I would. I think. Do you put the group's needs ahead of your own safety?",
+    "styled": "When it really comes down to it, would you step in front of the blow so someone else doesn't have to? I would. I think. Do you put the group's needs ahead of your own safety?",
     "voice": "Katia",
     "yes": [
       "monk",
@@ -522,7 +522,7 @@
   {
     "id": "psy-kingmaker",
     "plain": "Do you get more joy from making someone else powerful than from being powerful yourself?",
-    "dinniman": "Behind every superstar is a support team nobody thanks! Our sponsors call them 'enablers'. Do you get more joy from making someone else powerful than from being powerful yourself?",
+    "styled": "Behind every superstar is a support team nobody thanks! Our sponsors call them 'enablers'. Do you get more joy from making someone else powerful than from being powerful yourself?",
     "voice": "Zev",
     "yes": [
       "professor",
@@ -548,7 +548,7 @@
   {
     "id": "psy-evil-crew",
     "plain": "Even as a villain, would you rather lift up your allies than look after yourself?",
-    "dinniman": "Most evil contestants I knew were in it for number one. Every now and then one actually cared about the crew. Even as a villain, would you rather lift up your allies than look after yourself?",
+    "styled": "Most evil contestants I knew were in it for number one. Every now and then one actually cared about the crew. Even as a villain, would you rather lift up your allies than look after yourself?",
     "voice": "Mordecai",
     "yes": {
       "psySelfless": true
@@ -564,7 +564,7 @@
   {
     "id": "psy-good-others-safe",
     "plain": "On the good side, would you rather help other people than look after yourself?",
-    "dinniman": "Some heroes dive on the grenade, and some heroes dive behind the nearest heavy friend! Let's see which this one is. On the good side, would you rather help other people than look after yourself?",
+    "styled": "Some heroes dive on the grenade, and some heroes dive behind the nearest heavy friend! Let's see which this one is. On the good side, would you rather help other people than look after yourself?",
     "voice": "The Host",
     "yes": {
       "psySelfless": true
@@ -580,7 +580,7 @@
   {
     "id": "psy-go-alone",
     "plain": "Do you prefer going it alone over relying on a team?",
-    "dinniman": "Committees are where good ideas go to die, sweetie. I'll do it myself and bring the snacks. Do you prefer going it alone over relying on a team?",
+    "styled": "Committees are where good ideas go to die, sweetie. I'll do it myself and bring the snacks. Do you prefer going it alone over relying on a team?",
     "voice": "Elle",
     "yes": [
       "politician"
@@ -607,7 +607,7 @@
   {
     "id": "psy-pin-down",
     "plain": "Are you happiest when nobody can quite pin you down?",
-    "dinniman": "I've interviewed you three times and I still couldn't tell my viewers who you really are. Infuriating. Delicious. Are you happiest when nobody can quite pin you down?",
+    "styled": "I've interviewed you three times and I still couldn't tell my viewers who you really are. Infuriating. Delicious. Are you happiest when nobody can quite pin you down?",
     "voice": "Odette",
     "yes": [
       "politician"
@@ -626,7 +626,7 @@
   {
     "id": "psy-own-terms",
     "plain": "Do you prefer to win on your own terms rather than with the crowd?",
-    "dinniman": "The herd goes left. The goat goes up the cliff! ALONE! MAGNIFICENT! Do you prefer to win on your own terms rather than with the crowd?",
+    "styled": "The herd goes left. The goat goes up the cliff! ALONE! MAGNIFICENT! Do you prefer to win on your own terms rather than with the crowd?",
     "voice": "Prepotente",
     "yes": [
       "politician"
@@ -653,7 +653,7 @@
   {
     "id": "psy-tell-team",
     "plain": "Would you rather rely on a team than go it alone?",
-    "dinniman": "RAWR! [Translation: shiny thing! For my human!] He drops it right at his best friend's feet. This dinosaur does nothing without his pack. Would you rather rely on a team than go it alone?",
+    "styled": "RAWR! [Translation: shiny thing! For my human!] He drops it right at his best friend's feet. This dinosaur does nothing without his pack. Would you rather rely on a team than go it alone?",
     "voice": "Mongo",
     "yes": [
       "steward",
@@ -694,7 +694,7 @@
   {
     "id": "psy-hate-not-knowing",
     "plain": "Do you hate not knowing things?",
-    "dinniman": "A box falls from the ceiling with a question mark on it. The cat wants to open it. I want to run. And yet I really, really want to know what's inside. Do you hate not knowing things?",
+    "styled": "A box falls from the ceiling with a question mark on it. The cat wants to open it. I want to run. And yet I really, really want to know what's inside. Do you hate not knowing things?",
     "voice": "Carl",
     "yes": {
       "psyCurious": true
@@ -706,7 +706,7 @@
   {
     "id": "psy-wrapped-present",
     "plain": "Do you always try to find out what's in a wrapped present before you're allowed?",
-    "dinniman": "If someone puts a box in front of me, it is MY box, and I will know its contents immediately. Do you always try to find out what is in a wrapped present before you are allowed?",
+    "styled": "If someone puts a box in front of me, it is MY box, and I will know its contents immediately. Do you always try to find out what is in a wrapped present before you are allowed?",
     "voice": "Princess Donut",
     "yes": {
       "psyCurious": true
@@ -718,7 +718,7 @@
   {
     "id": "psy-truth-over-action",
     "plain": "Is finding out the truth more satisfying to you than acting on it?",
-    "dinniman": "Some contestants want to know everything. Others want to hit everything. The first kind spots the trap; the second kind triggers it. Is finding out the truth more satisfying to you than acting on it?",
+    "styled": "Some contestants want to know everything. Others want to hit everything. The first kind spots the trap; the second kind triggers it. Is finding out the truth more satisfying to you than acting on it?",
     "voice": "Mordecai",
     "yes": {
       "psyCurious": true
@@ -730,7 +730,7 @@
   {
     "id": "psy-evil-see-all",
     "plain": "Even as a villain, do you want to see everything that's going on?",
-    "dinniman": "PREMIUM VIEWING PACKAGE: Unlock every camera in the dungeon for the low, low price of your soul! Even as a villain, do you want to see everything that is going on?",
+    "styled": "PREMIUM VIEWING PACKAGE: Unlock every camera in the dungeon for the low, low price of your soul! Even as a villain, do you want to see everything that is going on?",
     "voice": "The System AI",
     "yes": {
       "psyCurious": true
@@ -746,7 +746,7 @@
   {
     "id": "psy-peek-secret",
     "plain": "Would you trade a little safety for a peek at someone's deepest secret?",
-    "dinniman": "Every great interview costs something, darling. Sometimes it costs both of us. Would you trade a little safety for a peek at someone's deepest secret?",
+    "styled": "Every great interview costs something, darling. Sometimes it costs both of us. Would you trade a little safety for a peek at someone's deepest secret?",
     "voice": "Odette",
     "yes": {
       "psyCurious": true
@@ -759,7 +759,7 @@
   {
     "id": "psy-learn-not-change",
     "plain": "Would you rather learn what is going on than change what happens?",
-    "dinniman": "Some folks want to steer the bus. Me, I want the window seat so I can see everything and gossip about it later. Would you rather learn what is going on than change what happens?",
+    "styled": "Some folks want to steer the bus. Me, I want the window seat so I can see everything and gossip about it later. Would you rather learn what is going on than change what happens?",
     "voice": "Elle",
     "yes": {
       "psyCurious": true
@@ -772,7 +772,7 @@
   {
     "id": "psy-gut-over-evidence",
     "plain": "Do you trust your gut over evidence?",
-    "dinniman": "Evidence is for people with time to waste. My gut has been right about every husband I ever had. Well, most of them. Do you trust your gut over evidence?",
+    "styled": "Evidence is for people with time to waste. My gut has been right about every husband I ever had. Well, most of them. Do you trust your gut over evidence?",
     "voice": "Elle",
     "yes": {
       "psyIntuitive": true
@@ -784,7 +784,7 @@
   {
     "id": "psy-bold-guess",
     "plain": "Would you rather make a bold guess than wait for proof?",
-    "dinniman": "There's a door. It's either treasure or a room full of teeth. The cat wants to wait for clues. I'm already reaching for the handle. Would you rather make a bold guess than wait for proof?",
+    "styled": "There's a door. It's either treasure or a room full of teeth. The cat wants to wait for clues. I'm already reaching for the handle. Would you rather make a bold guess than wait for proof?",
     "voice": "Carl",
     "yes": {
       "psyIntuitive": true
@@ -796,7 +796,7 @@
   {
     "id": "psy-instinct",
     "plain": "Do you make big decisions on instinct?",
-    "dinniman": "No research, no spreadsheet, just pure animal instinct! The audience LOVES it and the insurers HATE it! Do you make big decisions on instinct?",
+    "styled": "No research, no spreadsheet, just pure animal instinct! The audience LOVES it and the insurers HATE it! Do you make big decisions on instinct?",
     "voice": "The Host",
     "yes": {
       "psyIntuitive": true
@@ -808,7 +808,7 @@
   {
     "id": "psy-guess-not-told",
     "plain": "Would you rather work things out by guessing than be told the answer?",
-    "dinniman": "I used to want someone to just tell me what to do. Now I'd rather take a swing and find out if I was right. Would you rather work things out by guessing than be told the answer?",
+    "styled": "I used to want someone to just tell me what to do. Now I'd rather take a swing and find out if I was right. Would you rather work things out by guessing than be told the answer?",
     "voice": "Katia",
     "yes": {
       "psyIntuitive": true
@@ -821,7 +821,7 @@
   {
     "id": "psy-logic-puzzle",
     "plain": "Do you love a logic puzzle more than a straight answer?",
-    "dinniman": "Congratulations! Your reward is a riddle wrapped in a mystery wrapped in a slightly damp sock. Some contestants weep. Some contestants SALIVATE. Do you love a logic puzzle more than a straight answer?",
+    "styled": "Congratulations! Your reward is a riddle wrapped in a mystery wrapped in a slightly damp sock. Some contestants weep. Some contestants SALIVATE. Do you love a logic puzzle more than a straight answer?",
     "voice": "The System AI",
     "yes": {
       "psyPuzzler": true
@@ -833,7 +833,7 @@
   {
     "id": "psy-scraps-combine",
     "plain": "Do you enjoy piecing together scraps that only make sense once combined?",
-    "dinniman": "Half a map here, a scribbled number there. Most contestants toss it. The good ones keep every scrap until it clicks. Do you enjoy piecing together scraps that only make sense once combined?",
+    "styled": "Half a map here, a scribbled number there. Most contestants toss it. The good ones keep every scrap until it clicks. Do you enjoy piecing together scraps that only make sense once combined?",
     "voice": "Mordecai",
     "yes": {
       "psyPuzzler": true
@@ -845,7 +845,7 @@
   {
     "id": "psy-half-answer",
     "plain": "Is half an answer more fun than a whole one, because you get to work out the rest?",
-    "dinniman": "Being TOLD things is so boring. I prefer a clue, a little mystery, and then the joy of being right in front of everyone. Is half an answer more fun than a whole one, because you get to work out the rest?",
+    "styled": "Being TOLD things is so boring. I prefer a clue, a little mystery, and then the joy of being right in front of everyone. Is half an answer more fun than a whole one, because you get to work out the rest?",
     "voice": "Princess Donut",
     "yes": {
       "psyPuzzler": true
@@ -857,7 +857,7 @@
   {
     "id": "psy-protect-instinct",
     "plain": "Is your first instinct to protect people?",
-    "dinniman": "When something goes wrong, some people run, some people fight, and some people put themselves between the danger and everyone else. Is your first instinct to protect people?",
+    "styled": "When something goes wrong, some people run, some people fight, and some people put themselves between the danger and everyone else. Is your first instinct to protect people?",
     "voice": "Katia",
     "yes": {
       "psyProtective": true
@@ -869,7 +869,7 @@
   {
     "id": "psy-safe-home",
     "plain": "Are you the friend who makes sure everyone gets home safe?",
-    "dinniman": "RAWR! [Translation: walking everyone home!] The man, the cat, and the strange fellow from the bar too. He is a very good boy. Are you the friend who makes sure everyone gets home safe?",
+    "styled": "RAWR! [Translation: walking everyone home!] The man, the cat, and the strange fellow from the bar too. He is a very good boy. Are you the friend who makes sure everyone gets home safe?",
     "voice": "Mongo",
     "yes": {
       "psyProtective": true
@@ -881,7 +881,7 @@
   {
     "id": "psy-save-not-slay",
     "plain": "Would you rather keep someone alive than take someone down?",
-    "dinniman": "I'd love to punch the bad guy. I really would. But if I have to choose, I'm grabbing the person who's about to fall. Would you rather keep someone alive than take someone down?",
+    "styled": "I'd love to punch the bad guy. I really would. But if I have to choose, I'm grabbing the person who's about to fall. Would you rather keep someone alive than take someone down?",
     "voice": "Carl",
     "yes": [
       "innkeeper",
@@ -935,7 +935,7 @@
   {
     "id": "psy-evil-shield",
     "plain": "As a villain, do you prefer shielding your allies to hurting your enemies?",
-    "dinniman": "A villain with a soft spot. My viewers will eat this up. So, confess: as a villain, do you prefer shielding your allies to hurting your enemies?",
+    "styled": "A villain with a soft spot. My viewers will eat this up. So, confess: as a villain, do you prefer shielding your allies to hurting your enemies?",
     "voice": "Odette",
     "yes": {
       "psyProtective": true
@@ -951,7 +951,7 @@
   {
     "id": "psy-sideways",
     "plain": "Do you love it when everything goes completely sideways?",
-    "dinniman": "Plans are adorable. I like it best when the plan catches fire and everyone has to wing it. Do you love it when everything goes completely sideways?",
+    "styled": "Plans are adorable. I like it best when the plan catches fire and everyone has to wing it. Do you love it when everything goes completely sideways?",
     "voice": "Elle",
     "yes": {
       "psyChaosLover": true
@@ -963,7 +963,7 @@
   {
     "id": "psy-stir-pot",
     "plain": "Do you like stirring the pot just to see what happens?",
-    "dinniman": "The goat kicks over the bucket! The goat headbutts the table! Pandemonium! Glorious, glorious pandemonium! Do you like stirring the pot just to see what happens?",
+    "styled": "The goat kicks over the bucket! The goat headbutts the table! Pandemonium! Glorious, glorious pandemonium! Do you like stirring the pot just to see what happens?",
     "voice": "Prepotente",
     "yes": {
       "psyChaosLover": true
@@ -975,7 +975,7 @@
   {
     "id": "psy-tear-up-rules",
     "plain": "Would you rather tear up the rules than play by them?",
-    "dinniman": "PATCH NOTES: The rules have been changed. Again. Without notice. Because chaos is good for engagement. Would you rather tear up the rules than play by them?",
+    "styled": "PATCH NOTES: The rules have been changed. Again. Without notice. Because chaos is good for engagement. Would you rather tear up the rules than play by them?",
     "voice": "The System AI",
     "yes": {
       "psyChaosLover": true
@@ -987,7 +987,7 @@
   {
     "id": "psy-demon-mayhem",
     "plain": "As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
-    "dinniman": "Quiet killing is for amateurs! Your goddess wants screaming, swapping, sky-falling madness! As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
+    "styled": "Quiet killing is for amateurs! Your goddess wants screaming, swapping, sky-falling madness! As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
     "voice": "Samantha",
     "yes": {
       "psyChaosLover": true
@@ -1000,7 +1000,7 @@
   {
     "id": "psy-good-unpredictable",
     "plain": "On the good side, do you love it when nobody can predict what happens next?",
-    "dinniman": "RAWR! [Translation: knocking over EVERYTHING!] Every time, and nobody ever knows which thing is next. He is having the best day. On the good side, do you love it when nobody can predict what happens next?",
+    "styled": "RAWR! [Translation: knocking over EVERYTHING!] Every time, and nobody ever knows which thing is next. He is having the best day. On the good side, do you love it when nobody can predict what happens next?",
     "voice": "Mongo",
     "yes": {
       "psyChaosLover": true
@@ -1016,7 +1016,7 @@
   {
     "id": "psy-fierce-loyalty",
     "plain": "Are you fiercely loyal to one particular person?",
-    "dinniman": "I know what it's like to have someone who'd walk through fire for you. I'd do the same for them without a second thought. Are you fiercely loyal to one particular person?",
+    "styled": "I know what it's like to have someone who'd walk through fire for you. I'd do the same for them without a second thought. Are you fiercely loyal to one particular person?",
     "voice": "Katia",
     "yes": {
       "psyLoyal": true
@@ -1028,7 +1028,7 @@
   {
     "id": "psy-stick-by",
     "plain": "Do you stick by your people even when it costs you?",
-    "dinniman": "Loyalty's expensive down here. Half the contestants I've guided sold out their party for a better loot box. Do you stick by your people even when it costs you?",
+    "styled": "Loyalty's expensive down here. Half the contestants I've guided sold out their party for a better loot box. Do you stick by your people even when it costs you?",
     "voice": "Mordecai",
     "yes": {
       "psyLoyal": true
@@ -1040,7 +1040,7 @@
   {
     "id": "psy-one-devoted",
     "plain": "Would you rather have one devoted partner than a crowd of casual allies?",
-    "dinniman": "One devoted servant is worth a thousand fair-weather fans. My dinosaur understands this. My human is learning. Would you rather have one devoted partner than a crowd of casual allies?",
+    "styled": "One devoted servant is worth a thousand fair-weather fans. My dinosaur understands this. My human is learning. Would you rather have one devoted partner than a crowd of casual allies?",
     "voice": "Princess Donut",
     "yes": {
       "psyLoyal": true
@@ -1052,7 +1052,7 @@
   {
     "id": "psy-pay-back",
     "plain": "Do you always pay back a wrong?",
-    "dinniman": "I NEVER forget! I keep a list! Your goddess has no hands, but the list is VERY LONG! Do you always pay back a wrong?",
+    "styled": "I NEVER forget! I keep a list! Your goddess has no hands, but the list is VERY LONG! Do you always pay back a wrong?",
     "voice": "Samantha",
     "yes": {
       "psyVengeful": true
@@ -1064,7 +1064,7 @@
   {
     "id": "psy-strike-back",
     "plain": "If someone hurts you or yours, do you strike back?",
-    "dinniman": "Somebody keyed my car in 1987. I know exactly who it was. I am still waiting for my moment. If someone hurts you or yours, do you strike back?",
+    "styled": "Somebody keyed my car in 1987. I know exactly who it was. I am still waiting for my moment. If someone hurts you or yours, do you strike back?",
     "voice": "Elle",
     "yes": {
       "psyVengeful": true
@@ -1076,7 +1076,7 @@
   {
     "id": "psy-grudges",
     "plain": "Do you hold grudges?",
-    "dinniman": "Folks, our next contestant has the memory of an elephant and the temper of a wasp! Or do they? Let's find out! Do you hold grudges?",
+    "styled": "Folks, our next contestant has the memory of an elephant and the temper of a wasp! Or do they? Let's find out! Do you hold grudges?",
     "voice": "The Host",
     "yes": {
       "psyVengeful": true
@@ -1088,7 +1088,7 @@
   {
     "id": "psy-good-make-pay",
     "plain": "On the good side, when someone wrongs you, do you want them to pay for it?",
-    "dinniman": "I'm a forgive-and-forget kind of guy. Mostly. Except for that one gnome. And the elf. On the good side, when someone wrongs you, do you want them to pay for it?",
+    "styled": "I'm a forgive-and-forget kind of guy. Mostly. Except for that one gnome. And the elf. On the good side, when someone wrongs you, do you want them to pay for it?",
     "voice": "Carl",
     "yes": {
       "psyVengeful": true
@@ -1104,7 +1104,7 @@
   {
     "id": "psy-ruthless-streak",
     "plain": "Would you like to be the one who takes people out?",
-    "dinniman": "Everyone has a little darkness, darling. Some of us keep it in a drawer, and some of us keep it sharpened. Would you like to be the one who takes people out?",
+    "styled": "Everyone has a little darkness, darling. Some of us keep it in a drawer, and some of us keep it sharpened. Would you like to be the one who takes people out?",
     "voice": "Odette",
     "yes": {
       "psyRuthless": true
@@ -1116,7 +1116,7 @@
   {
     "id": "psy-remove-obstacle",
     "plain": "When someone's in your way, do you prefer to remove them rather than work around them?",
-    "dinniman": "Two ways past a troll: sneak round it, or put it in the ground. One of those leaves fewer surprises later. When someone is in your way, do you prefer to remove them rather than work around them?",
+    "styled": "Two ways past a troll: sneak round it, or put it in the ground. One of those leaves fewer surprises later. When someone is in your way, do you prefer to remove them rather than work around them?",
     "voice": "Mordecai",
     "yes": {
       "psyRuthless": true
@@ -1128,7 +1128,7 @@
   {
     "id": "psy-good-take-out",
     "plain": "Even on the good side, do you want the power to take someone out?",
-    "dinniman": "I'm one of the good guys. Mostly. But I'd be lying if I said I didn't want a button that deletes the bad guy. Even on the good side, do you want the power to take someone out?",
+    "styled": "I'm one of the good guys. Mostly. But I'd be lying if I said I didn't want a button that deletes the bad guy. Even on the good side, do you want the power to take someone out?",
     "voice": "Carl",
     "yes": {
       "psyRuthless": true
@@ -1144,7 +1144,7 @@
   {
     "id": "psy-quick-permanent",
     "plain": "Do you settle arguments the quick, permanent way?",
-    "dinniman": "The goat does not debate. The goat HEADBUTTS. The debate is now over! Do you settle arguments the quick, permanent way?",
+    "styled": "The goat does not debate. The goat HEADBUTTS. The debate is now over! Do you settle arguments the quick, permanent way?",
     "voice": "Prepotente",
     "yes": {
       "psyRuthless": true
@@ -1157,7 +1157,7 @@
   {
     "id": "psy-talk-round",
     "plain": "Do you love talking people round to your point of view?",
-    "dinniman": "Messaging is everything! A great pitch can sell a sponsor, a war or a lightly used coffin! Do you love talking people round to your point of view?",
+    "styled": "Messaging is everything! A great pitch can sell a sponsor, a war or a lightly used coffin! Do you love talking people round to your point of view?",
     "voice": "Zev",
     "yes": {
       "psyPersuader": true
@@ -1169,7 +1169,7 @@
   {
     "id": "psy-others-act",
     "plain": "Do you love it when your plan only works because you talked people into it?",
-    "dinniman": "Some people do the job. Some people convince twelve other people to do the job for them. I am jealous of the second kind. Do you love it when your plan only works because you talked people into it?",
+    "styled": "Some people do the job. Some people convince twelve other people to do the job for them. I am jealous of the second kind. Do you love it when your plan only works because you talked people into it?",
     "voice": "Carl",
     "yes": {
       "psyPersuader": true
@@ -1181,7 +1181,7 @@
   {
     "id": "psy-hostile-room",
     "plain": "Do you enjoy winning over a room that starts out against you?",
-    "dinniman": "When I walk into a room full of haters, I walk out with a fan club. It is a GIFT. Do you enjoy winning over a room that starts out against you?",
+    "styled": "When I walk into a room full of haters, I walk out with a fan club. It is a GIFT. Do you enjoy winning over a room that starts out against you?",
     "voice": "Princess Donut",
     "yes": {
       "psyPersuader": true
@@ -1193,7 +1193,7 @@
   {
     "id": "psy-evil-talker",
     "plain": "As a villain, does your own power only work if you talk people into something?",
-    "dinniman": "Some villains need a knife. The really frightening ones only need a conversation. Which are you, darling? As a villain, does your own power only work if you talk people into something?",
+    "styled": "Some villains need a knife. The really frightening ones only need a conversation. Which are you, darling? As a villain, does your own power only work if you talk people into something?",
     "voice": "Odette",
     "yes": {
       "psyPersuader": true
@@ -1209,7 +1209,7 @@
   {
     "id": "psy-underestimated",
     "plain": "Would you rather be underestimated than admired?",
-    "dinniman": "Nobody expects much from a guy in his boxers with a cat. That's honestly worked out great for me. Would you rather be underestimated than admired?",
+    "styled": "Nobody expects much from a guy in his boxers with a cat. That's honestly worked out great for me. Would you rather be underestimated than admired?",
     "voice": "Carl",
     "yes": {
       "psyUnderdog": true
@@ -1221,7 +1221,7 @@
   {
     "id": "psy-overlooked",
     "plain": "Do you enjoy being overlooked until the moment it really matters?",
-    "dinniman": "People used to look right through me. Then one day it mattered, and they couldn't look away. Do you enjoy being overlooked until the moment it really matters?",
+    "styled": "People used to look right through me. Then one day it mattered, and they couldn't look away. Do you enjoy being overlooked until the moment it really matters?",
     "voice": "Katia",
     "yes": {
       "psyUnderdog": true
@@ -1233,7 +1233,7 @@
   {
     "id": "psy-hidden-ace",
     "plain": "Do you like having a hidden ace that nobody sees coming?",
-    "dinniman": "Everyone thinks he's just a big silly dinosaur. Then he eats the boss. RAWR! [Translation: surprise!] Do you like having a hidden ace that nobody sees coming?",
+    "styled": "Everyone thinks he's just a big silly dinosaur. Then he eats the boss. RAWR! [Translation: surprise!] Do you like having a hidden ace that nobody sees coming?",
     "voice": "Mongo",
     "yes": {
       "psyUnderdog": true
@@ -1245,7 +1245,7 @@
   {
     "id": "psy-make-it-up",
     "plain": "When plans go wrong, do you love making it up as you go?",
-    "dinniman": "No plan survives the third floor. The ones who live are the ones who build a new plan out of whatever is lying around. When plans go wrong, do you love making it up as you go?",
+    "styled": "No plan survives the third floor. The ones who live are the ones who build a new plan out of whatever is lying around. When plans go wrong, do you love making it up as you go?",
     "voice": "Mordecai",
     "yes": {
       "psyImproviser": true
@@ -1257,7 +1257,7 @@
   {
     "id": "psy-toolbox",
     "plain": "Would you rather have a box of options than one tool that does one job well?",
-    "dinniman": "LOOT BOX OPENED! Contents: one excellent hammer, OR a sack of mystery items that could be anything. Choose wisely. Would you rather have a box of options than one tool that does one job well?",
+    "styled": "LOOT BOX OPENED! Contents: one excellent hammer, OR a sack of mystery items that could be anything. Choose wisely. Would you rather have a box of options than one tool that does one job well?",
     "voice": "The System AI",
     "yes": {
       "psyImproviser": true
@@ -1269,7 +1269,7 @@
   {
     "id": "psy-blank-cheque",
     "plain": "Would you rather have a blank cheque than a carefully chosen gift?",
-    "dinniman": "Our sponsors are offering you one of two prizes: a lovely engraved watch, or a blank cheque with some very fine print. Would you rather have a blank cheque than a carefully chosen gift?",
+    "styled": "Our sponsors are offering you one of two prizes: a lovely engraved watch, or a blank cheque with some very fine print. Would you rather have a blank cheque than a carefully chosen gift?",
     "voice": "Zev",
     "yes": {
       "psyImproviser": true
@@ -1281,7 +1281,7 @@
   {
     "id": "psy-evil-options",
     "plain": "As a villain, do you want endless options for how to cause trouble?",
-    "dinniman": "One way to ruin a village? BORING! Your goddess wants a menu, a buffet, a thousand flavours of ruin! As a villain, do you want endless options for how to cause trouble?",
+    "styled": "One way to ruin a village? BORING! Your goddess wants a menu, a buffet, a thousand flavours of ruin! As a villain, do you want endless options for how to cause trouble?",
     "voice": "Samantha",
     "yes": {
       "psyImproviser": true
@@ -1297,7 +1297,7 @@
   {
     "id": "psy-good-free-form",
     "plain": "Do you like being free to decide exactly what your power does?",
-    "dinniman": "Tonight's hero gets a power with no instruction manual! Will they shine, or will they set their own trousers on fire? Do you like being free to decide exactly what your power does?",
+    "styled": "Tonight's hero gets a power with no instruction manual! Will they shine, or will they set their own trousers on fire? Do you like being free to decide exactly what your power does?",
     "voice": "The Host",
     "yes": {
       "psyImproviser": true
@@ -1310,7 +1310,7 @@
   {
     "id": "psy-other-side",
     "plain": "Do you instinctively argue the other side?",
-    "dinniman": "Whatever my guest says, there's always someone in the audience itching to say the opposite. Is that you, sweetheart? Do you instinctively argue the other side?",
+    "styled": "Whatever my guest says, there's always someone in the audience itching to say the opposite. Is that you, sweetheart? Do you instinctively argue the other side?",
     "voice": "Odette",
     "yes": {
       "psyContrarian": true
@@ -1322,7 +1322,7 @@
   {
     "id": "psy-all-agree",
     "plain": "When everyone agrees, do you feel the urge to disagree?",
-    "dinniman": "Unanimous? Oh, now I am worried. Nobody has ever been right all at once. When everyone agrees, do you feel the urge to disagree?",
+    "styled": "Unanimous? Oh, now I am worried. Nobody has ever been right all at once. When everyone agrees, do you feel the urge to disagree?",
     "voice": "Elle",
     "yes": {
       "psyContrarian": true
@@ -1334,7 +1334,7 @@
   {
     "id": "psy-long-con",
     "plain": "Do you enjoy a long con, lying patiently until your moment comes?",
-    "dinniman": "Some people lie to get out of trouble. Some people lie for days so they can spring one perfect trap. The second kind terrifies me. Do you enjoy a long con, lying patiently until your moment comes?",
+    "styled": "Some people lie to get out of trouble. Some people lie for days so they can spring one perfect trap. The second kind terrifies me. Do you enjoy a long con, lying patiently until your moment comes?",
     "voice": "Carl",
     "yes": {
       "psyPatient": true,
@@ -1397,7 +1397,7 @@
   {
     "id": "psy-loud-takedown",
     "plain": "Do you like your takedowns loud and public?",
-    "dinniman": "Nobody tunes in for a quiet disappearance, folks! They want it LIVE, in front of everyone, with replays! Do you like your takedowns loud and public?",
+    "styled": "Nobody tunes in for a quiet disappearance, folks! They want it LIVE, in front of everyone, with replays! Do you like your takedowns loud and public?",
     "voice": "The Host",
     "yes": {
       "psyShowman": true,
@@ -1432,7 +1432,7 @@
   {
     "id": "psy-others-before-self",
     "plain": "Do you look out for other people before yourself?",
-    "dinniman": "The dinosaur stands in front of his friends when the monsters come. He eats last. He does not mind. Do you look out for other people before yourself?",
+    "styled": "The dinosaur stands in front of his friends when the monsters come. He eats last. He does not mind. Do you look out for other people before yourself?",
     "voice": "Mongo",
     "yes": {
       "psyProtective": true,
@@ -1446,7 +1446,7 @@
   {
     "id": "psy-one-perfect-clue",
     "plain": "Would you rather wait for one perfect clue than collect small ones as you go?",
-    "dinniman": "Crumbs are for pigeons. A REAL detective waits for the one magnificent revelation, served on a silver platter. Would you rather wait for one perfect clue than collect small ones as you go?",
+    "styled": "Crumbs are for pigeons. A REAL detective waits for the one magnificent revelation, served on a silver platter. Would you rather wait for one perfect clue than collect small ones as you go?",
     "voice": "Princess Donut",
     "yes": {
       "psyCurious": true,
@@ -1491,7 +1491,7 @@
   {
     "id": "psy-bet-on-gut",
     "plain": "Do you bet big on gut feelings?",
-    "dinniman": "Put it all on red, sweetie. Why? Because red feels lucky today, that is why. Do you bet big on gut feelings?",
+    "styled": "Put it all on red, sweetie. Why? Because red feels lucky today, that is why. Do you bet big on gut feelings?",
     "voice": "Elle",
     "yes": {
       "psyRiskTaker": true,
@@ -1510,7 +1510,7 @@
   {
     "id": "psy-sell-the-lie",
     "plain": "Do you love selling a lie to a whole room?",
-    "dinniman": "One lie to one person is a secret. One lie to a whole room is a performance, and I do love a performance. Do you love selling a lie to a whole room?",
+    "styled": "One lie to one person is a secret. One lie to a whole room is a performance, and I do love a performance. Do you love selling a lie to a whole room?",
     "voice": "Odette",
     "yes": {
       "psyDeceiver": true,
@@ -1594,7 +1594,7 @@
   {
     "id": "psy-secret-scramble",
     "plain": "Do you love secretly scrambling things just to watch people cope?",
-    "dinniman": "BEHIND THE SCENES BONUS: Somebody swapped all the signposts again. Viewers are thrilled. Contestants are less thrilled. Do you love secretly scrambling things just to watch people cope?",
+    "styled": "BEHIND THE SCENES BONUS: Somebody swapped all the signposts again. Viewers are thrilled. Contestants are less thrilled. Do you love secretly scrambling things just to watch people cope?",
     "voice": "The System AI",
     "yes": {
       "psyManipulator": true,
@@ -1653,7 +1653,7 @@
   {
     "id": "psy-loud-and-true",
     "plain": "Do you like being loud and honest about exactly who you are?",
-    "dinniman": "It took me a long time to stop hiding. Now I'd rather stand up, say who I am, and let people deal with it. Do you like being loud and honest about exactly who you are?",
+    "styled": "It took me a long time to stop hiding. Now I'd rather stand up, say who I am, and let people deal with it. Do you like being loud and honest about exactly who you are?",
     "voice": "Katia",
     "yes": [
       "cultleader",
@@ -1707,7 +1707,7 @@
   {
     "id": "psy-sleeper",
     "plain": "Do you like lying low until one big moment makes you matter?",
-    "dinniman": "I've seen quiet contestants nobody rated turn a whole floor around in one move. Takes patience, and a thick skin. Do you like lying low until one big moment makes you matter?",
+    "styled": "I've seen quiet contestants nobody rated turn a whole floor around in one move. Takes patience, and a thick skin. Do you like lying low until one big moment makes you matter?",
     "voice": "Mordecai",
     "yes": {
       "psyUnderdog": true,
@@ -1738,7 +1738,7 @@
   {
     "id": "psy-lonely-secret",
     "plain": "Do you guard a secret you cannot share with anyone, not even your friends?",
-    "dinniman": "The goat carries a secret SO terrible, SO magnificent, that not even his dearest allies may know it! Do you guard a secret you cannot share with anyone, not even your friends?",
+    "styled": "The goat carries a secret SO terrible, SO magnificent, that not even his dearest allies may know it! Do you guard a secret you cannot share with anyone, not even your friends?",
     "voice": "Prepotente",
     "yes": {
       "psyDeceiver": true
@@ -1754,7 +1754,7 @@
   {
     "id": "psy-centre-stage-boss",
     "plain": "Do you like running the show from centre stage?",
-    "dinniman": "Every great production needs a director, a star and a dictator. Luckily the goat is all three! Do you like running the show from centre stage?",
+    "styled": "Every great production needs a director, a star and a dictator. Luckily the goat is all three! Do you like running the show from centre stage?",
     "voice": "Prepotente",
     "yes": {
       "psyNeedsControl": true,
@@ -1787,7 +1787,7 @@
   {
     "id": "psy-pour-everything",
     "plain": "Do you pour everything you have into the people you are devoted to?",
-    "dinniman": "When I care about someone, I don't hold anything back. It's the thing I'm proudest of, and the thing that scares me most. Do you pour everything you have into the people you are devoted to?",
+    "styled": "When I care about someone, I don't hold anything back. It's the thing I'm proudest of, and the thing that scares me most. Do you pour everything you have into the people you are devoted to?",
     "voice": "Katia",
     "yes": {
       "psyLoyal": true,
@@ -1801,7 +1801,7 @@
   {
     "id": "psy-killer-waits",
     "plain": "When you strike, would you rather wait for one perfect blow than strike again and again?",
-    "dinniman": "One perfect, glorious, PERFECTLY TIMED blow, or a hundred messy little ones? Your goddess loves both, but you must choose! When you strike, would you rather wait for one perfect blow than strike again and again?",
+    "styled": "One perfect, glorious, PERFECTLY TIMED blow, or a hundred messy little ones? Your goddess loves both, but you must choose! When you strike, would you rather wait for one perfect blow than strike again and again?",
     "voice": "Samantha",
     "yes": {
       "psyPatient": true
@@ -1835,7 +1835,7 @@
   {
     "id": "psy-protect-or-punish",
     "plain": "Would you rather punish people who hurt your side than stop the hurt happening?",
-    "dinniman": "Our market research shows two kinds of hero: the bodyguard and the avenger. Both move merchandise! Would you rather punish people who hurt your side than stop the hurt happening?",
+    "styled": "Our market research shows two kinds of hero: the bodyguard and the avenger. Both move merchandise! Would you rather punish people who hurt your side than stop the hurt happening?",
     "voice": "Zev",
     "yes": [
       "godfather",

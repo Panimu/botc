@@ -38,7 +38,7 @@ Work out each question's two sides by resolving its selectors against `data/char
 - Trait-based selectors (fields defined in `data/traits/*.json`): check the trait's definition and tags too. A wrong trait tag breaks every question that uses it, so report trait errors prominently. Only edit a trait file if the user asked you to review traits.
 
 **Technical accuracy**
-- `plain` and `dinniman` ask the same yes/no question, so "yes" means the same thing in both. The dinniman line ends with that question.
+- `plain` and `styled` ask the same yes/no question, so "yes" means the same thing in both. The styled line ends with that question.
 - `voice` matches the speaker's style as described in the guide.
 - Neither phrasing names a yes-side character. Team names are fine.
 - The wording is answerable by a person about themselves, isn't ambiguous, and isn't a trick.

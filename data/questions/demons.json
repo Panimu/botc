@@ -2,7 +2,7 @@
   {
     "id": "dem-phrase-body-count",
     "plain": "Would you like your kills to depend on how often you slip a secret phrase into daytime conversation?",
-    "dinniman": "New mechanic unlocked! You get a magic phrase, and every time you work it into the town gossip, somebody might not wake up. Talk more, kill more. Do you want your body count tied to how often you sneak that secret phrase into the chatter?",
+    "styled": "New mechanic unlocked! You get a magic phrase, and every time you work it into the town gossip, somebody might not wake up. Talk more, kill more. Do you want your body count tied to how often you sneak that secret phrase into the chatter?",
     "voice": "The System AI",
     "yes": [
       "yaggababble"
@@ -11,7 +11,7 @@
   {
     "id": "dem-muttering-mantra",
     "plain": "Would you enjoy repeating the same strange phrase out loud, knowing each repetition could get someone killed?",
-    "dinniman": "There's always one old crank muttering the same sentence over and over. Usually harmless. Unless every time they say it, somebody keels over. Would you enjoy repeating one odd phrase out loud, knowing every repeat might cost a life?",
+    "styled": "There's always one old crank muttering the same sentence over and over. Usually harmless. Unless every time they say it, somebody keels over. Would you enjoy repeating one odd phrase out loud, knowing every repeat might cost a life?",
     "voice": "Elle",
     "yes": [
       "yaggababble"
@@ -19,8 +19,8 @@
   },
   {
     "id": "dem-venom-finishes",
-    "plain": "Would you like the poison you give someone to be the very thing that kills them?",
-    "dinniman": "Most poisoners are content to make you a bit useless for a day. Amateurs. A REAL artist lets her poison finish the job, darling. Do you want the poison you hand out to be what eventually kills your victim?",
+    "plain": "Do you want the poison you give someone to be the very thing that kills them?",
+    "styled": "Most poisoners are content to make you a bit useless for a day. Amateurs. A REAL artist lets her poison finish the job, darling. Do you want the poison you hand out to be what eventually kills your victim?",
     "voice": "Princess Donut",
     "yes": [
       "pukka"
@@ -29,7 +29,7 @@
   {
     "id": "dem-one-last-day",
     "plain": "Would you like your victims to spend one last day unknowingly poisoned, then die the following night?",
-    "dinniman": "Here's the nasty bit. The poor sod gets a whole day of walking around, talking, voting, completely unaware they're already done for. Then night comes. Do you want your victims to live one more poisoned day before they finally drop?",
+    "styled": "Here's the nasty bit. The poor sod gets a whole day of walking around, talking, voting, completely unaware they're already done for. Then night comes. Do you want your victims to live one more poisoned day before they finally drop?",
     "voice": "Mordecai",
     "yes": [
       "pukka"
@@ -38,7 +38,7 @@
   {
     "id": "dem-babysitter-rota",
     "plain": "Would you like your Minions to take turns looking after you, deciding each night which of them holds you?",
-    "dinniman": "Our sponsors absolutely love this segment! The cutest little horror in the dungeon gets passed round the evil team, with a brand-new babysitter every night if they like. Would you like your Minions to take turns holding you, choosing a fresh minder each night?",
+    "styled": "Our sponsors absolutely love this segment! The cutest little horror in the dungeon gets passed round the evil team, with a brand-new babysitter every night if they like. Would you like your Minions to take turns holding you, choosing a fresh minder each night?",
     "voice": "Zev",
     "yes": [
       "lilmonsta"
@@ -47,7 +47,7 @@
   {
     "id": "dem-token-not-seat",
     "plain": "Would you rather be a little token passed between your friends than a player with a seat of your own?",
-    "dinniman": "No chair. No name tag. No vote. Just a tiny terror getting handed from lap to lap while it plots world domination and breakfast. Honestly, that sounds kind of relaxing. Would you rather be a token passed between friends than sit in a seat yourself?",
+    "styled": "No chair. No name tag. No vote. Just a tiny terror getting handed from lap to lap while it plots world domination and breakfast. Honestly, that sounds kind of relaxing. Would you rather be a token passed between friends than sit in a seat yourself?",
     "voice": "Carl",
     "yes": [
       "lilmonsta"
@@ -56,7 +56,7 @@
   {
     "id": "dem-poisoned-neighbours",
     "plain": "Would you like to poison the nearest Townsfolk on either side of you, just by being there?",
-    "dinniman": "Passive aura acquired: Rotten Neighbour! No casting, no cooldown. The nearest do-gooder on your left and the nearest on your right simply go bad. Property values plummet. Would you like to poison the closest Townsfolk on each side of you just by existing?",
+    "styled": "Passive aura acquired: Rotten Neighbour! No casting, no cooldown. The nearest do-gooder on your left and the nearest on your right simply go bad. Property values plummet. Would you like to poison the closest Townsfolk on each side of you just by existing?",
     "voice": "The System AI",
     "yes": [
       "nodashii"
@@ -64,8 +64,8 @@
   },
   {
     "id": "dem-corrupting-presence",
-    "plain": "Would you like the good people closest to you to be quietly corrupted by your presence alone?",
-    "dinniman": "Some monsters have to work at being horrible. You'd just sit there, and the nice people either side of you would start going wrong without knowing why. I've had roommates like that. Do you want your mere presence to quietly corrupt the good folk nearest you?",
+    "plain": "Would you like your presence alone to quietly corrupt the good people closest to you?",
+    "styled": "Some monsters have to work at being horrible. You'd just sit there, and the nice people either side of you would start going wrong without knowing why. I've had roommates like that. Do you want your mere presence to quietly corrupt the good folk nearest you?",
     "voice": "Mordecai",
     "yes": [
       "nodashii"
@@ -73,8 +73,8 @@
   },
   {
     "id": "dem-fall-on-sword",
-    "plain": "Would you be willing to kill yourself so that one of your Minions could take over?",
-    "dinniman": "When all seems lost, the great one falls upon his own blade, and a lowly servant rises to wear his horns! Such tragedy! Such GENIUS! Would you be willing to kill yourself so one of your Minions could take your place?",
+    "plain": "Would you kill yourself so that one of your Minions could take over?",
+    "styled": "When all seems lost, the great one falls upon his own blade, and a lowly servant rises to wear his horns! Such tragedy! Such GENIUS! Would you be willing to kill yourself so one of your Minions could take your place?",
     "voice": "Prepotente",
     "yes": [
       "imp"
@@ -83,7 +83,7 @@
   {
     "id": "dem-abdicate-at-will",
     "plain": "Would you like to be able to abdicate whenever you choose, leaving a loyal servant to inherit your power?",
-    "dinniman": "A TRUE queen knows when to make a dramatic exit, sweetie. One night you're on the throne, the next you've swept off stage and some grateful underling is wearing your crown. Would you like to abdicate whenever you please and leave a loyal servant your power?",
+    "styled": "A TRUE queen knows when to make a dramatic exit, sweetie. One night you're on the throne, the next you've swept off stage and some grateful underling is wearing your crown. Would you like to abdicate whenever you please and leave a loyal servant your power?",
     "voice": "Princess Donut",
     "yes": [
       "imp"
@@ -92,7 +92,7 @@
   {
     "id": "dem-spit-them-back",
     "plain": "Would you like to occasionally spit one of your victims back out alive?",
-    "dinniman": "Behold! I devour my enemies, and then, on a whim, I return one to the world, slick and trembling, so all may know my MERCY! MEEEH! Would you like to now and then spit one of your victims back out alive?",
+    "styled": "Behold! I devour my enemies, and then, on a whim, I return one to the world, slick and trembling, so all may know my MERCY! MEEEH! Would you like to now and then spit one of your victims back out alive?",
     "voice": "Prepotente",
     "yes": [
       "shabaloth"
@@ -100,8 +100,8 @@
   },
   {
     "id": "dem-two-course-dinner",
-    "plain": "Do you have an appetite for two victims every single night?",
-    "dinniman": "RAWR! RAWR! (He has eaten one villager, is eyeing a second, and plainly intends to do this every night. One is never enough.) Is your appetite big enough for two victims every single night?",
+    "plain": "Do you have an appetite for two victims every night?",
+    "styled": "RAWR! RAWR! (He has eaten one villager, is eyeing a second, and plainly intends to do this every night. One is never enough.) Is your appetite big enough for two victims every single night?",
     "voice": "Mongo",
     "yes": [
       "shabaloth"
@@ -110,7 +110,7 @@
   {
     "id": "dem-name-the-role",
     "plain": "Would you like to name a character and have whoever holds it die, without needing to know who they are?",
-    "dinniman": "Forget faces. You just say a job title into the dark, and whoever's got that job stops breathing. Saves a lot of detective work. Would you like to kill by naming a character, whoever turns out to be holding it?",
+    "styled": "Forget faces. You just say a job title into the dark, and whoever's got that job stops breathing. Saves a lot of detective work. Would you like to kill by naming a character, whoever turns out to be holding it?",
     "voice": "Mordecai",
     "yes": [
       "ojo"
@@ -119,7 +119,7 @@
   {
     "id": "dem-missed-guess-roulette",
     "plain": "Would you like to aim at a role, and if nobody has it, let the Storyteller choose your victim instead?",
-    "dinniman": "Guess the role right and you get the exact kill you wanted. Guess wrong and the house picks someone for you. Either way, ladies and gentlemen, somebody's going home in a box! Would you aim at a role and let the Storyteller pick a victim if nobody has it?",
+    "styled": "Guess the role right and you get the exact kill you wanted. Guess wrong and the house picks someone for you. Either way, ladies and gentlemen, somebody's going home in a box! Would you aim at a role and let the Storyteller pick a victim if nobody has it?",
     "voice": "The Host",
     "yes": [
       "ojo"
@@ -128,7 +128,7 @@
   {
     "id": "dem-recruit-minions",
     "plain": "Would you like to recruit your whole Minion team yourself at the start of the game?",
-    "dinniman": "Patch note: the evil team no longer ships pre-assembled. Some assembly required! You walk the room on night one and draft your own henchmen like a fantasy league. Would you like to personally recruit your entire Minion team at the start of the game?",
+    "styled": "Patch note: the evil team no longer ships pre-assembled. Some assembly required! You walk the room on night one and draft your own henchmen like a fantasy league. Would you like to personally recruit your entire Minion team at the start of the game?",
     "voice": "The System AI",
     "yes": [
       "kazali"
@@ -137,7 +137,7 @@
   {
     "id": "dem-casting-director",
     "plain": "Would you like to pick which players join your evil team, and cast each of them as a particular Minion?",
-    "dinniman": "YOU, darling, are joining my team as the poisoner. You over there, the spy. No, no, don't argue, I have a VISION. Would you like to pick which players join your evil team and cast each of them as a particular Minion?",
+    "styled": "YOU, darling, are joining my team as the poisoner. You over there, the spy. No, no, don't argue, I have a VISION. Would you like to pick which players join your evil team and cast each of them as a particular Minion?",
     "voice": "Princess Donut",
     "yes": [
       "kazali"
@@ -146,7 +146,7 @@
   {
     "id": "dem-quiet-then-three",
     "plain": "Would you hold back your kill for a night so you could strike three people the next?",
-    "dinniman": "Skip a night, save it up, then spend it all at once. It's the same logic as my dad's lottery strategy, except this one actually pays out. Would you hold off killing for a night so you can take three people the next?",
+    "styled": "Skip a night, save it up, then spend it all at once. It's the same logic as my dad's lottery strategy, except this one actually pays out. Would you hold off killing for a night so you can take three people the next?",
     "voice": "Carl",
     "yes": [
       "po"
@@ -155,7 +155,7 @@
   {
     "id": "dem-calm-before-massacre",
     "plain": "Do you like letting everyone relax after a peaceful night, right before you unleash a massacre?",
-    "dinniman": "So, tell me, and be honest, the audience can always tell. The village wakes up to a peaceful morning, everyone's hugging, and you're just smiling. Do you like letting them relax after a quiet night right before you unleash a massacre?",
+    "styled": "So, tell me, and be honest, the audience can always tell. The village wakes up to a peaceful morning, everyone's hugging, and you're just smiling. Do you like letting them relax after a quiet night right before you unleash a massacre?",
     "voice": "Odette",
     "yes": [
       "po"
@@ -164,7 +164,7 @@
   {
     "id": "dem-fake-your-death",
     "plain": "Would you like to fake your own death and keep plotting from beyond the grave?",
-    "dinniman": "Tragic news, folks: our villain has died! Flowers, tears, a lovely eulogy. Meanwhile the corpse is very much awake and taking notes. Would you like to fake your own death and keep scheming while everyone thinks you're gone?",
+    "styled": "Tragic news, folks: our villain has died! Flowers, tears, a lovely eulogy. Meanwhile the corpse is very much awake and taking notes. Would you like to fake your own death and keep scheming while everyone thinks you're gone?",
     "voice": "The Host",
     "yes": [
       "zombuul"
@@ -173,7 +173,7 @@
   {
     "id": "dem-hungry-on-bloodless-days",
     "plain": "Do you only get hungry on days when nobody else has died?",
-    "dinniman": "Somebody got executed today? Lovely, I'm full, I'll skip dinner. Nobody died? Then I'm STARVING, and someone's getting eaten. Do you only feel the hunger on days when nobody else has died?",
+    "styled": "Somebody got executed today? Lovely, I'm full, I'll skip dinner. Nobody died? Then I'm STARVING, and someone's getting eaten. Do you only feel the hunger on days when nobody else has died?",
     "voice": "Katia",
     "yes": [
       "zombuul"
@@ -182,7 +182,7 @@
   {
     "id": "dem-dead-minions-better",
     "plain": "Would you kill your own Minions if it made them more useful dead than alive?",
-    "dinniman": "Look, I've seen some cold management styles, but this one takes the cake. You murder your own team because they work harder as corpses. Would you kill your own Minions if it made them more useful dead than alive?",
+    "styled": "Look, I've seen some cold management styles, but this one takes the cake. You murder your own team because they work harder as corpses. Would you kill your own Minions if it made them more useful dead than alive?",
     "voice": "Carl",
     "yes": [
       "vigormortis"
@@ -191,7 +191,7 @@
   {
     "id": "dem-undead-crew",
     "plain": "Do you like the idea of building an undead crew out of allies you killed yourself?",
-    "dinniman": "Crafting recipe discovered: Loyal Minion plus Your Own Claws equals Undead Henchman, still fully powered and now oozing poison on the neighbours. Five stars. Do you like building an undead crew out of allies you personally killed?",
+    "styled": "Crafting recipe discovered: Loyal Minion plus Your Own Claws equals Undead Henchman, still fully powered and now oozing poison on the neighbours. Five stars. Do you like building an undead crew out of allies you personally killed?",
     "voice": "The System AI",
     "yes": [
       "vigormortis"
@@ -199,8 +199,8 @@
   },
   {
     "id": "dem-every-clue-a-lie",
-    "plain": "Would you like every piece of information the Townsfolk receive to be false, guaranteed, while you're around?",
-    "dinniman": "Every vision, every reading, every helpful little number the good guys get: wrong. Not sometimes. Always. I'd have a nervous breakdown. Would you like the Townsfolk's information to be guaranteed false for as long as you're in play?",
+    "plain": "Would you like all the Townsfolk's information to be guaranteed false while you're around?",
+    "styled": "Every vision, every reading, every helpful little number the good guys get: wrong. Not sometimes. Always. I'd have a nervous breakdown. Would you like the Townsfolk's information to be guaranteed false for as long as you're in play?",
     "voice": "Carl",
     "yes": [
       "vortox"
@@ -209,7 +209,7 @@
   {
     "id": "dem-execute-or-lose",
     "plain": "Would you like the town to lose on any day it fails to execute someone?",
-    "dinniman": "New house rule! If the villagers can't work up the nerve to string somebody up before sundown, evil simply wins. Hesitation is now a losing strategy. Would you like the town to lose any day it fails to execute someone?",
+    "styled": "New house rule! If the villagers can't work up the nerve to string somebody up before sundown, evil simply wins. Hesitation is now a losing strategy. Would you like the town to lose any day it fails to execute someone?",
     "voice": "The System AI",
     "yes": [
       "vortox"
@@ -217,8 +217,8 @@
   },
   {
     "id": "dem-town-full-of-you",
-    "plain": "Would you like most of the people at the table to secretly be you?",
-    "dinniman": "Look around the circle. That one's you. And that one. And her. Most of these chairs are filled with the same monster wearing different faces. Would you like most of the table to secretly be you?",
+    "plain": "Do you want most of the people at the table to secretly be you?",
+    "styled": "Look around the circle. That one's you. And that one. And her. Most of these chairs are filled with the same monster wearing different faces. Would you like most of the table to secretly be you?",
     "voice": "Mordecai",
     "yes": [
       "legion"
@@ -227,7 +227,7 @@
   {
     "id": "dem-outnumbered-from-start",
     "plain": "Would you like the evil team to outnumber the good players from the very first night?",
-    "dinniman": "Great news from the production office! This episode, evil starts with a clear majority, which focus groups tell us is very exciting for engagement. Would you like evil to outnumber good from the very first night?",
+    "styled": "Great news from the production office! This episode, evil starts with a clear majority, which focus groups tell us is very exciting for engagement. Would you like evil to outnumber good from the very first night?",
     "voice": "Zev",
     "yes": [
       "legion"
@@ -236,7 +236,7 @@
   {
     "id": "dem-evil-votes-dont-count",
     "plain": "Would you like executions to fail unless at least one good player voted for them?",
-    "dinniman": "Ha! The baddies can wave their hands about all they like. If not one decent soul votes along, the whole hanging fizzles out like a damp firework. Would you like executions to fail whenever only evil players voted for them?",
+    "styled": "Ha! The baddies can wave their hands about all they like. If not one decent soul votes along, the whole hanging fizzles out like a damp firework. Would you like executions to fail whenever only evil players voted for them?",
     "voice": "Elle",
     "yes": [
       "legion"
@@ -245,7 +245,7 @@
   {
     "id": "dem-leap-into-outsider",
     "plain": "Would you like to leap into an Outsider's body, leaving your old one dead behind you?",
-    "dinniman": "Body swap achievement! Find the town weirdo, jump inside them, and leave your old meat suit on the floor. They're evil now. Congratulations on the new skin. Would you like to leap into an Outsider's body and leave your old one dead?",
+    "styled": "Body swap achievement! Find the town weirdo, jump inside them, and leave your old meat suit on the floor. They're evil now. Congratulations on the new skin. Would you like to leap into an Outsider's body and leave your old one dead?",
     "voice": "The System AI",
     "yes": [
       "fanggu"
@@ -254,7 +254,7 @@
   {
     "id": "dem-misfit-vessel",
     "plain": "Do you see the town's misfits as the perfect vessel for your next life?",
-    "dinniman": "I know what it's like to change shape and become someone new. But you'd look at the town's outcasts and see a body to take. Do you look at the town's misfits and see the perfect vessel for your next life?",
+    "styled": "I know what it's like to change shape and become someone new. But you'd look at the town's outcasts and see a body to take. Do you look at the town's misfits and see the perfect vessel for your next life?",
     "voice": "Katia",
     "yes": [
       "fanggu"
@@ -263,7 +263,7 @@
   {
     "id": "dem-line-of-evil",
     "plain": "Would you like your evil team seated in one unbroken line, with you right in the middle?",
-    "dinniman": "Formation bonus: the Unholy Row! All the evil players sit shoulder to shoulder and you're the centrepiece. Very tidy. Terrible for secrecy. Would you like your evil team in one unbroken line with you at the centre?",
+    "styled": "Formation bonus: the Unholy Row! All the evil players sit shoulder to shoulder and you're the centrepiece. Very tidy. Terrible for secrecy. Would you like your evil team in one unbroken line with you at the centre?",
     "voice": "The System AI",
     "yes": [
       "lordoftyphon"
@@ -272,7 +272,7 @@
   {
     "id": "dem-lieutenants-both-sides",
     "plain": "Do you like having a loyal lieutenant at your left hand and another at your right?",
-    "dinniman": "A true ruler is never caught without her attendants, sweetie. One on the left, one on the right, both ready to swoon. Do you like having a loyal lieutenant sitting at your left hand and another at your right?",
+    "styled": "A true ruler is never caught without her attendants, sweetie. One on the left, one on the right, both ready to swoon. Do you like having a loyal lieutenant sitting at your left hand and another at your right?",
     "voice": "Princess Donut",
     "yes": [
       "lordoftyphon"
@@ -280,8 +280,8 @@
   },
   {
     "id": "dem-kill-the-host-first",
-    "plain": "Would you like to be impossible to kill unless someone kills your chosen host first?",
-    "dinniman": "Stab it, hang it, set it on fire: nothing happens. The trick is finding the poor soul it's hiding behind and killing them instead. Hope you like murdering innocents. Would you like to be unkillable unless your chosen host dies first?",
+    "plain": "Would you like to be impossible to kill unless your chosen host dies first?",
+    "styled": "Stab it, hang it, set it on fire: nothing happens. The trick is finding the poor soul it's hiding behind and killing them instead. Hope you like murdering innocents. Would you like to be unkillable unless your chosen host dies first?",
     "voice": "Mordecai",
     "yes": [
       "lleech"
@@ -290,7 +290,7 @@
   {
     "id": "dem-parasite-life",
     "plain": "Would you like to latch onto one person, poison them, and live off them like a parasite?",
-    "dinniman": "Pick a host, sink in the hooks, and keep them poisoned while you feed. They don't even know you're there. It's revolting, and I say that as a man who ate dungeon jerky. Would you like to latch onto one person and live off them like a parasite?",
+    "styled": "Pick a host, sink in the hooks, and keep them poisoned while you feed. They don't even know you're there. It's revolting, and I say that as a man who ate dungeon jerky. Would you like to latch onto one person and live off them like a parasite?",
     "voice": "Carl",
     "yes": [
       "lleech"
@@ -299,7 +299,7 @@
   {
     "id": "dem-victims-choose-fate",
     "plain": "Would you like your victims to decide for themselves whether they live or die?",
-    "dinniman": "Free will! Our featured monster doesn't kill anyone, folks. It simply asks three lucky contestants to choose life or death, and there's a catch if they're all greedy. Would you like your victims to decide for themselves whether they live or die?",
+    "styled": "Free will! Our featured monster doesn't kill anyone, folks. It simply asks three lucky contestants to choose life or death, and there's a catch if they're all greedy. Would you like your victims to decide for themselves whether they live or die?",
     "voice": "The Host",
     "yes": [
       "alhadikhia"
@@ -308,7 +308,7 @@
   {
     "id": "dem-announced-targets",
     "plain": "Would you announce your night-time targets to the whole town and enjoy watching them sweat?",
-    "dinniman": "WHY HIDE? Your goddess never hides! When night falls, shout their names to the heavens and let them tremble before the slaughter, as is PROPER! Would you announce your night-time targets to the whole town and enjoy watching them squirm?",
+    "styled": "WHY HIDE? Your goddess never hides! When night falls, shout their names to the heavens and let them tremble before the slaughter, as is PROPER! Would you announce your night-time targets to the whole town and enjoy watching them squirm?",
     "voice": "Samantha",
     "yes": [
       "alhadikhia"
@@ -317,7 +317,7 @@
   {
     "id": "dem-nomination-chain",
     "plain": "Would you like one day to collapse into a frantic chain of deadly nominations?",
-    "dinniman": "One day, the whole town loses its mind. Every nominee drops dead and has to point at someone else on the way down. Point, die, point, die. I've seen floor-wide panics with more dignity. Would you like a day that collapses into a chain of deadly nominations?",
+    "styled": "One day, the whole town loses its mind. Every nominee drops dead and has to point at someone else on the way down. Point, die, point, die. I've seen floor-wide panics with more dignity. Would you like a day that collapses into a chain of deadly nominations?",
     "voice": "Mordecai",
     "yes": [
       "riot"
@@ -326,7 +326,7 @@
   {
     "id": "dem-minions-become-you",
     "plain": "Would you like every one of your Minions to turn into a copy of you partway through the game?",
-    "dinniman": "Mid-season twist, everyone! The sidekicks rip off their costumes and underneath... it's the villain! Again! Several times! Would you like all your Minions to transform into copies of you partway through the game?",
+    "styled": "Mid-season twist, everyone! The sidekicks rip off their costumes and underneath... it's the villain! Again! Several times! Would you like all your Minions to transform into copies of you partway through the game?",
     "voice": "The Host",
     "yes": [
       "riot"
@@ -334,8 +334,8 @@
   },
   {
     "id": "dem-outlast-the-clock",
-    "plain": "Would you be happy never to kill anyone, as long as you survive until time runs out?",
-    "dinniman": "Murder is SO much effort, darling. Why chase people around at night when you can lounge about until the clock runs out and collect your trophy? Would you be happy never killing anyone, as long as you survive until time's up?",
+    "plain": "Would you like to never kill anyone, as long as you survive until time runs out?",
+    "styled": "Murder is SO much effort, darling. Why chase people around at night when you can lounge about until the clock runs out and collect your trophy? Would you be happy never killing anyone, as long as you survive until time's up?",
     "voice": "Princess Donut",
     "yes": [
       "leviathan"
@@ -344,7 +344,7 @@
   {
     "id": "dem-two-innocents-hanged",
     "plain": "Would you like the town to lose outright if it executes more than one innocent?",
-    "dinniman": "Let's talk about mistakes. One wrongful hanging, the town forgives itself. A second, and the game is yours. How does that feel? Would you like the town to lose if it executes more than one innocent?",
+    "styled": "Let's talk about mistakes. One wrongful hanging, the town forgives itself. A second, and the game is yours. How does that feel? Would you like the town to lose if it executes more than one innocent?",
     "voice": "Odette",
     "yes": [
       "leviathan"
@@ -353,7 +353,7 @@
   {
     "id": "dem-three-in-a-night",
     "plain": "Would you like to pick three victims in a single night?",
-    "dinniman": "ONE corpse? Pathetic! Your goddess demands THREE, laid out before her at once like a feast! Would you like to choose three victims in a single night?",
+    "styled": "ONE corpse? Pathetic! Your goddess demands THREE, laid out before her at once like a feast! Would you like to choose three victims in a single night?",
     "voice": "Samantha",
     "yes": [
       "po",
@@ -363,7 +363,7 @@
   {
     "id": "dem-die-for-a-successor",
     "plain": "Would you happily die so another player could carry on as the Demon in your place?",
-    "dinniman": "The Demon is dead! Long live the Demon! Somebody else picks up the horns and the show goes on, viewers. Would you happily die so another player could carry on as the Demon in your place?",
+    "styled": "The Demon is dead! Long live the Demon! Somebody else picks up the horns and the show goes on, viewers. Would you happily die so another player could carry on as the Demon in your place?",
     "voice": "The Host",
     "yes": [
       "imp",
@@ -373,7 +373,7 @@
   {
     "id": "dem-several-victims",
     "plain": "As the Demon, would you like to choose more than one victim at a time?",
-    "dinniman": "One body a night keeps the town guessing. More than one keeps them burying. Different philosophy, same shovel. As the Demon, would you like to choose more than one victim at a time?",
+    "styled": "One body a night keeps the town guessing. More than one keeps them burying. Different philosophy, same shovel. As the Demon, would you like to choose more than one victim at a time?",
     "voice": "Mordecai",
     "yes": [
       "shabaloth",
@@ -386,8 +386,8 @@
   },
   {
     "id": "dem-house-picks-victim",
-    "plain": "As the Demon, would you be happy for the Storyteller to pick who dies, rather than choosing a victim yourself?",
-    "dinniman": "Some Demons agonise over every kill. Others just shrug and let the guy running the game sort it out. Honestly, that's how I'd want it. As the Demon, would you be happy for the Storyteller to pick who dies instead of choosing yourself?",
+    "plain": "As the Demon, would you like the Storyteller to pick who dies, instead of choosing a victim yourself?",
+    "styled": "Some Demons agonise over every kill. Others just shrug and let the guy running the game sort it out. Honestly, that's how I'd want it. As the Demon, would you be happy for the Storyteller to pick who dies instead of choosing yourself?",
     "voice": "Carl",
     "yes": [
       "lilmonsta",
@@ -400,8 +400,8 @@
   },
   {
     "id": "dem-peaceful-nights",
-    "plain": "As the Demon, would you be content never to kill anyone at night?",
-    "dinniman": "Not every monster needs to creep into bedrooms after dark. Some do their damage in daylight, or just by being there. As the Demon, would you be content never to kill anyone at night?",
+    "plain": "As the Demon, would you like never to kill anyone at night?",
+    "styled": "Not every monster needs to creep into bedrooms after dark. Some do their damage in daylight, or just by being there. As the Demon, would you be content never to kill anyone at night?",
     "voice": "Katia",
     "yes": [
       "leviathan",
@@ -414,7 +414,7 @@
   {
     "id": "dem-poison-in-kit",
     "plain": "As the Demon, would you like poison to be part of your ability?",
-    "dinniman": "Loot box opened! Inside: one vial of something green and fizzy, plus your usual murder kit. Combo potential: excellent. As the Demon, would you like poison to be part of your ability?",
+    "styled": "Loot box opened! Inside: one vial of something green and fizzy, plus your usual murder kit. Combo potential: excellent. As the Demon, would you like poison to be part of your ability?",
     "voice": "The System AI",
     "yes": [
       "pukka",
@@ -429,7 +429,7 @@
   {
     "id": "dem-bonus-minion",
     "plain": "As the Demon, would you like more Minions than usual on your side?",
-    "dinniman": "Exciting staffing update! This season the evil team gets an extra Minion on the payroll, which really helps with our content output. As the Demon, would you like more Minions than usual on your side?",
+    "styled": "Exciting staffing update! This season the evil team gets an extra Minion on the payroll, which really helps with our content output. As the Demon, would you like more Minions than usual on your side?",
     "voice": "Zev",
     "yes": [
       "lilmonsta",
@@ -442,7 +442,7 @@
   {
     "id": "dem-gallows-every-day",
     "plain": "As the Demon, would you like the town to be forced to execute someone every single day?",
-    "dinniman": "Oh, I love this. No dithering, no 'let's sleep on it', no hand-wringing. Somebody swings every day or the whole town's stuffed. As the Demon, would you like the town forced to execute someone every single day?",
+    "styled": "Oh, I love this. No dithering, no 'let's sleep on it', no hand-wringing. Somebody swings every day or the whole town's stuffed. As the Demon, would you like the town forced to execute someone every single day?",
     "voice": "Elle",
     "yes": [
       "vortox"
@@ -454,7 +454,7 @@
   {
     "id": "dem-night-one-choice",
     "plain": "As the Demon, would you like to make a choice on the very first night?",
-    "dinniman": "Most Demons spend that first night twiddling their thumbs. Not you, I suspect. You'd want to get your claws in early, wouldn't you? As the Demon, would you like to make a choice on the very first night?",
+    "styled": "Most Demons spend that first night twiddling their thumbs. Not you, I suspect. You'd want to get your claws in early, wouldn't you? As the Demon, would you like to make a choice on the very first night?",
     "voice": "Odette",
     "yes": [
       "pukka",
@@ -485,7 +485,7 @@
   {
     "id": "dem-reshape-the-setup",
     "plain": "As the Demon, would you like your arrival to change the usual mix of characters before the game even begins?",
-    "dinniman": "When I arrive, the very STAGE must be rebuilt! Different players, different roles, all rearranged in my honour before the curtain rises! As the Demon, would you like your arrival to change the usual mix of characters before the game begins?",
+    "styled": "When I arrive, the very STAGE must be rebuilt! Different players, different roles, all rearranged in my honour before the curtain rises! As the Demon, would you like your arrival to change the usual mix of characters before the game begins?",
     "voice": "Prepotente",
     "yes": [
       "lilmonsta",
@@ -502,7 +502,7 @@
   {
     "id": "dem-good-turned-evil",
     "plain": "As the Demon, would you like your ability to turn good players evil?",
-    "dinniman": "Converts! I adore converts! Take the pure-hearted fools and twist them into servants of darkness, then laugh as they turn on their friends! As the Demon, would you like your ability to turn good players evil?",
+    "styled": "Converts! I adore converts! Take the pure-hearted fools and twist them into servants of darkness, then laugh as they turn on their friends! As the Demon, would you like your ability to turn good players evil?",
     "voice": "Samantha",
     "yes": [
       "fanggu",
@@ -515,7 +515,7 @@
   {
     "id": "dem-shared-horns",
     "plain": "As the Demon, would you like several players to share your Demon character at the same time?",
-    "dinniman": "Usually there's only ONE star of the show, and normally I'd insist that star is me. But imagine a whole chorus line of identical monsters. As the Demon, would you like several players to share your Demon character at once?",
+    "styled": "Usually there's only ONE star of the show, and normally I'd insist that star is me. But imagine a whole chorus line of identical monsters. As the Demon, would you like several players to share your Demon character at once?",
     "voice": "Princess Donut",
     "yes": [
       "legion",
@@ -528,7 +528,7 @@
   {
     "id": "dem-nomination-killer",
     "plain": "As the Demon, would you like your killing to happen through daytime nominations?",
-    "dinniman": "Forget the night shift, folks! This Demon clocks in at the town square, where every nomination is a death sentence and the crowd goes WILD. As the Demon, would you like your killing to happen through daytime nominations?",
+    "styled": "Forget the night shift, folks! This Demon clocks in at the town square, where every nomination is a death sentence and the crowd goes WILD. As the Demon, would you like your killing to happen through daytime nominations?",
     "voice": "The Host",
     "yes": [
       "riot"
@@ -539,8 +539,8 @@
   },
   {
     "id": "dem-sleep-through-night",
-    "plain": "As the Demon, would you rather have no decisions to make at night at all?",
-    "dinniman": "No picking victims, no pointing in the dark, no being woken up at stupid o'clock. You just sleep. That's the dream, really. As the Demon, would you rather have no decisions to make at night at all?",
+    "plain": "As the Demon, would you rather make no decisions at night?",
+    "styled": "No picking victims, no pointing in the dark, no being woken up at stupid o'clock. You just sleep. That's the dream, really. As the Demon, would you rather have no decisions to make at night at all?",
     "voice": "Carl",
     "yes": [
       "yaggababble",
@@ -572,7 +572,7 @@
   {
     "id": "dem-targets-revealed",
     "plain": "As the Demon, would you like the whole town to learn who you targeted?",
-    "dinniman": "Transparency is a core brand value! Every morning the town gets a full list of who the Demon's picked. Huge for engagement. As the Demon, would you like the whole town to learn who you targeted?",
+    "styled": "Transparency is a core brand value! Every morning the town gets a full list of who the Demon's picked. Huge for engagement. As the Demon, would you like the whole town to learn who you targeted?",
     "voice": "Zev",
     "yes": [
       "alhadikhia"
@@ -584,7 +584,7 @@
   {
     "id": "dem-what-not-who",
     "plain": "As the Demon, when choosing a victim, do you care more about what someone is than who they are?",
-    "dinniman": "Faces lie. Names lie. When you go hunting, the thing worth aiming at is the job someone's holding, not the face they're wearing. As the Demon, when you pick a victim, do you care more about what someone is than about who they are?",
+    "styled": "Faces lie. Names lie. When you go hunting, the thing worth aiming at is the job someone's holding, not the face they're wearing. As the Demon, when you pick a victim, do you care more about what someone is than about who they are?",
     "voice": "Mordecai",
     "yes": [
       "ojo"
@@ -596,7 +596,7 @@
   {
     "id": "dem-win-without-blood",
     "plain": "As the Demon, would you like evil to have a route to victory that needs no more deaths?",
-    "dinniman": "Everyone assumes the Demon wins by piling up bodies. But there are cleverer ways, aren't there? Tell me about yours. As the Demon, would you like evil to have a route to victory that needs no more deaths?",
+    "styled": "Everyone assumes the Demon wins by piling up bodies. But there are cleverer ways, aren't there? Tell me about yours. As the Demon, would you like evil to have a route to victory that needs no more deaths?",
     "voice": "Odette",
     "yes": [
       "vortox",
@@ -609,7 +609,7 @@
   {
     "id": "dem-shrug-off-death",
     "plain": "Would you like to shrug off a death that would finish any other Demon?",
-    "dinniman": "They hanged me! They stabbed me! And yet, LO, I endure, while lesser fiends crumble at the first scratch! MEEEEH! Would you like to shrug off a death that would finish any other Demon?",
+    "styled": "They hanged me! They stabbed me! And yet, LO, I endure, while lesser fiends crumble at the first scratch! MEEEEH! Would you like to shrug off a death that would finish any other Demon?",
     "voice": "Prepotente",
     "yes": [
       "zombuul",
@@ -628,8 +628,8 @@
   },
   {
     "id": "dem-bmr-quiet-nights",
-    "plain": "As the Demon, would you be fine with some nights, after the first, where you choose no victim at all?",
-    "dinniman": "Restraint can be a weapon too. A night with no bodies makes people careless, or suspicious of the wrong person. As the Demon, would you be fine with some nights after the first where you choose no victim at all?",
+    "plain": "As the Demon, would you like some nights after the first where you choose no victim?",
+    "styled": "Restraint can be a weapon too. A night with no bodies makes people careless, or suspicious of the wrong person. As the Demon, would you be fine with some nights after the first where you choose no victim at all?",
     "voice": "Katia",
     "yes": [
       "po",
@@ -643,7 +643,7 @@
   {
     "id": "dem-bmr-double-kill",
     "plain": "As the Demon, would you like to take more than one life in a single night?",
-    "dinniman": "One life? ONE? Your goddess spits on your single death! Give her a heap of the fallen by sunrise! As the Demon, would you like to take more than one life in a single night?",
+    "styled": "One life? ONE? Your goddess spits on your single death! Give her a heap of the fallen by sunrise! As the Demon, would you like to take more than one life in a single night?",
     "voice": "Samantha",
     "yes": [
       "shabaloth",
@@ -657,7 +657,7 @@
   {
     "id": "dem-bmr-delayed-death",
     "plain": "As the Demon, would you like your victims to die a night later than the night you chose them?",
-    "dinniman": "Hit them tonight, bury them tomorrow night. Gives you a full day to watch them walk around not knowing. Cruel. Effective. As the Demon, would you like your victims to die a night after you chose them?",
+    "styled": "Hit them tonight, bury them tomorrow night. Gives you a full day to watch them walk around not knowing. Cruel. Effective. As the Demon, would you like your victims to die a night after you chose them?",
     "voice": "Mordecai",
     "yes": [
       "pukka"
@@ -670,7 +670,7 @@
   {
     "id": "dem-snv-outsider-count",
     "plain": "As the Demon, would you like your presence to change how many Outsiders are in play?",
-    "dinniman": "Patch 6.6.6: Demon selection now modifies the Outsider population. Some get more weirdos, some get fewer. Balance is a myth. As the Demon, would you like your presence to change how many Outsiders are in play?",
+    "styled": "Patch 6.6.6: Demon selection now modifies the Outsider population. Some get more weirdos, some get fewer. Balance is a myth. As the Demon, would you like your presence to change how many Outsiders are in play?",
     "voice": "The System AI",
     "yes": [
       "vigormortis",
@@ -684,7 +684,7 @@
   {
     "id": "dem-snv-spoil-townsfolk",
     "plain": "As the Demon, would you like some Townsfolk to get bad information because of you?",
-    "dinniman": "The good guys rely on their little clues. It would be a real shame if some of those clues went rotten because a certain monster was in town. As the Demon, would you like some Townsfolk to get bad information because of you?",
+    "styled": "The good guys rely on their little clues. It would be a real shame if some of those clues went rotten because a certain monster was in town. As the Demon, would you like some Townsfolk to get bad information because of you?",
     "voice": "Carl",
     "yes": [
       "nodashii",
@@ -699,7 +699,7 @@
   {
     "id": "dem-crowded-evil-table",
     "plain": "As the Demon, would you like more evil players at the table than a game normally has?",
-    "dinniman": "Bigger cast, bigger drama, bigger ratings! This Demon brings more villains to the table than the usual line-up allows. As the Demon, would you like more evil players at the table than a game normally has?",
+    "styled": "Bigger cast, bigger drama, bigger ratings! This Demon brings more villains to the table than the usual line-up allows. As the Demon, would you like more evil players at the table than a game normally has?",
     "voice": "The Host",
     "yes": [
       "lordoftyphon",
@@ -720,7 +720,7 @@
   {
     "id": "dem-one-finger-one-death",
     "plain": "As the Demon, would you like to point at exactly one player each night and have them die?",
-    "dinniman": "None of this fancy nonsense. You point, they drop, everybody goes back to bed. Simple, honest work. As the Demon, would you like to point at exactly one player each night and have them die?",
+    "styled": "None of this fancy nonsense. You point, they drop, everybody goes back to bed. Simple, honest work. As the Demon, would you like to point at exactly one player each night and have them die?",
     "voice": "Elle",
     "yes": [
       "kazali",
@@ -742,7 +742,7 @@
   {
     "id": "dem-bring-one-back",
     "plain": "Would you like the chance to bring back someone you killed?",
-    "dinniman": "Death is SO final, darling. Sometimes a girl changes her mind and wants her victim returned, slightly damp but otherwise fine. Would you like the chance to bring back someone you killed?",
+    "styled": "Death is SO final, darling. Sometimes a girl changes her mind and wants her victim returned, slightly damp but otherwise fine. Would you like the chance to bring back someone you killed?",
     "voice": "Princess Donut",
     "yes": [
       "shabaloth"
@@ -756,7 +756,7 @@
   {
     "id": "dem-bloodless-day-hunger",
     "plain": "Would you like your hunger to depend on whether today passed without a death?",
-    "dinniman": "Rawr? Rawr... (He sniffs the air. Nobody died today. His eyes go wide and he starts drooling.) RAWR! Would you like your hunger to depend on whether today passed without a death?",
+    "styled": "Rawr? Rawr... (He sniffs the air. Nobody died today. His eyes go wide and he starts drooling.) RAWR! Would you like your hunger to depend on whether today passed without a death?",
     "voice": "Mongo",
     "yes": [
       "zombuul"
@@ -770,7 +770,7 @@
   {
     "id": "dem-twist-no-execution",
     "plain": "Would you like your special twist to punish the town whenever it fails to execute?",
-    "dinniman": "Twist selected: Cowardice Tax! Any day the town can't decide on a hanging, they lose everything. The audience is going to EAT THIS UP. Would you like your special twist to punish the town whenever it fails to execute?",
+    "styled": "Twist selected: Cowardice Tax! Any day the town can't decide on a hanging, they lose everything. The audience is going to EAT THIS UP. Would you like your special twist to punish the town whenever it fails to execute?",
     "voice": "The System AI",
     "yes": [
       "vortox"
@@ -789,7 +789,7 @@
   {
     "id": "dem-twist-poison-beside",
     "plain": "Would you like your special twist to poison Townsfolk sitting beside a particular player?",
-    "dinniman": "Some twists are about the seating chart. A certain person in the circle, and the Townsfolk beside them quietly sickening. Would you like your special twist to poison Townsfolk sitting beside a particular player?",
+    "styled": "Some twists are about the seating chart. A certain person in the circle, and the Townsfolk beside them quietly sickening. Would you like your special twist to poison Townsfolk sitting beside a particular player?",
     "voice": "Katia",
     "yes": [
       "nodashii",
@@ -809,7 +809,7 @@
   {
     "id": "dem-twist-role-moves",
     "plain": "Would you like your special twist to let the Demon role move to another player?",
-    "dinniman": "Succession planning is so important for a sustainable brand! With this twist, the horns can be handed on and the show keeps going. Would you like your special twist to let the Demon role move to another player?",
+    "styled": "Succession planning is so important for a sustainable brand! With this twist, the horns can be handed on and the show keeps going. Would you like your special twist to let the Demon role move to another player?",
     "voice": "Zev",
     "yes": [
       "imp",
@@ -829,7 +829,7 @@
   {
     "id": "dem-twist-minion-control",
     "plain": "Would you like your special twist to decide who your Minions are, or where they sit?",
-    "dinniman": "Every Demon has a team, but only a few get to shape it. Who's in it, where they sit. Are you one of those? Would you like your special twist to decide who your Minions are, or where they sit?",
+    "styled": "Every Demon has a team, but only a few get to shape it. Who's in it, where they sit. Are you one of those? Would you like your special twist to decide who your Minions are, or where they sit?",
     "voice": "Odette",
     "yes": [
       "kazali",
@@ -849,7 +849,7 @@
   {
     "id": "dem-twist-life-tied",
     "plain": "Would you like your special twist to tie your life to someone else's?",
-    "dinniman": "Your heartbeat, chained to some poor sap's. They live, you live. They die, so do you. I've seen worse deals, but not many. Would you like your special twist to tie your life to someone else's?",
+    "styled": "Your heartbeat, chained to some poor sap's. They live, you live. They die, so do you. I've seen worse deals, but not many. Would you like your special twist to tie your life to someone else's?",
     "voice": "Mordecai",
     "yes": [
       "lleech"
@@ -868,7 +868,7 @@
   {
     "id": "dem-chatter-body-count",
     "plain": "Would you like how much you talk to decide how many people die?",
-    "dinniman": "Finally, a reward for running your mouth! The more you yap, the more people go cold. I'd have levelled that town in an afternoon. Would you like how much you talk to decide how many people die?",
+    "styled": "Finally, a reward for running your mouth! The more you yap, the more people go cold. I'd have levelled that town in an afternoon. Would you like how much you talk to decide how many people die?",
     "voice": "Elle",
     "yes": [
       "yaggababble"
@@ -882,7 +882,7 @@
   {
     "id": "dem-no-chair-demon",
     "plain": "Would you like to be the Demon without having a seat at the table?",
-    "dinniman": "Everyone's sitting in a circle, accusing each other, and the actual monster doesn't even have a chair. It's just getting carried around like a handbag. Would you like to be the Demon without having a seat at the table?",
+    "styled": "Everyone's sitting in a circle, accusing each other, and the actual monster doesn't even have a chair. It's just getting carried around like a handbag. Would you like to be the Demon without having a seat at the table?",
     "voice": "Carl",
     "yes": [
       "lilmonsta"
@@ -896,7 +896,7 @@
   {
     "id": "dem-simply-outlast",
     "plain": "Would you like to win simply by outlasting the town?",
-    "dinniman": "No frenzy? No blood? Your goddess is DISGUSTED. And yet, to watch them crumble as the days run out... acceptable. Would you like to win simply by outlasting the town?",
+    "styled": "No frenzy? No blood? Your goddess is DISGUSTED. And yet, to watch them crumble as the days run out... acceptable. Would you like to win simply by outlasting the town?",
     "voice": "Samantha",
     "yes": [
       "leviathan"
@@ -909,7 +909,7 @@
   {
     "id": "dem-victims-have-say",
     "plain": "Would you like your victims to have a say in whether they die?",
-    "dinniman": "How GENEROUS of you, darling. Pick three peasants and let them vote on their own fates, like a little reality show inside the reality show. Would you like your victims to have a say in whether they die?",
+    "styled": "How GENEROUS of you, darling. Pick three peasants and let them vote on their own fates, like a little reality show inside the reality show. Would you like your victims to have a say in whether they die?",
     "voice": "Princess Donut",
     "yes": [
       "alhadikhia"
@@ -923,7 +923,7 @@
   {
     "id": "dem-outsider-over-minions",
     "plain": "Would your plans hinge on an Outsider rather than on your Minions?",
-    "dinniman": "Ooh, a plot twist, folks! This Demon isn't counting on its loyal henchmen at all. It's got its eye on one of the town's oddballs! Would your plans hinge on an Outsider rather than on your Minions?",
+    "styled": "Ooh, a plot twist, folks! This Demon isn't counting on its loyal henchmen at all. It's got its eye on one of the town's oddballs! Would your plans hinge on an Outsider rather than on your Minions?",
     "voice": "The Host",
     "yes": [
       "fanggu"
@@ -941,7 +941,7 @@
   {
     "id": "dem-minions-better-dead",
     "plain": "Would you rather your Minions were dead than alive?",
-    "dinniman": "My servants serve me best as CORPSES! Their loyalty, eternal! Their usefulness, undiminished! Their complaints, at last, silenced! Would you rather your Minions were dead than alive?",
+    "styled": "My servants serve me best as CORPSES! Their loyalty, eternal! Their usefulness, undiminished! Their complaints, at last, silenced! Would you rather your Minions were dead than alive?",
     "voice": "Prepotente",
     "yes": [
       "vigormortis"
@@ -959,7 +959,7 @@
   {
     "id": "dem-minions-take-turns",
     "plain": "Would you like your Minions to be the Demon themselves as a matter of routine?",
-    "dinniman": "Normally a Minion only gets the top job when the boss croaks. In some setups, though, they wear the horns as standard practice. Would you like your Minions to be the Demon themselves as a matter of routine?",
+    "styled": "Normally a Minion only gets the top job when the boss croaks. In some setups, though, they wear the horns as standard practice. Would you like your Minions to be the Demon themselves as a matter of routine?",
     "voice": "Mordecai",
     "yes": [
       "lilmonsta",
@@ -978,7 +978,7 @@
   {
     "id": "dem-evil-poisoners",
     "plain": "As an evil player, would you like your ability to poison other players?",
-    "dinniman": "Sponsor message! This episode's toxic moments are brought to you by Grandma's Mystery Tea. As an evil player, would you like your ability to poison other players?",
+    "styled": "Sponsor message! This episode's toxic moments are brought to you by Grandma's Mystery Tea. As an evil player, would you like your ability to poison other players?",
     "voice": "The System AI",
     "yes": [
       "poisoner",
@@ -999,7 +999,7 @@
   {
     "id": "dem-evil-secret-words",
     "plain": "As an evil player, would you like to start the game knowing a secret word or phrase?",
-    "dinniman": "Some of us start with nothing but our wits. Others get a secret, a word that matters more than anyone at the table realises. As an evil player, would you like to start the game knowing a secret word or phrase?",
+    "styled": "Some of us start with nothing but our wits. Others get a secret, a word that matters more than anyone at the table realises. As an evil player, would you like to start the game knowing a secret word or phrase?",
     "voice": "Katia",
     "yes": [
       "yaggababble",
@@ -1015,7 +1015,7 @@
   {
     "id": "dem-evil-appointed-hour",
     "plain": "As an evil player, would your big moment arrive on a set day or night partway through the game?",
-    "dinniman": "Mark your calendars, viewers! Some villains strike whenever they please, but others have a date circled in red, and when it comes, KABOOM! As an evil player, would your big moment arrive on a set day or night partway through the game?",
+    "styled": "Mark your calendars, viewers! Some villains strike whenever they please, but others have a date circled in red, and when it comes, KABOOM! As an evil player, would your big moment arrive on a set day or night partway through the game?",
     "voice": "The Host",
     "yes": [
       "riot",
@@ -1033,7 +1033,7 @@
   {
     "id": "dem-evil-fixed-seating",
     "plain": "As an evil player, would you like your character to fix where you sit relative to your evil teammates?",
-    "dinniman": "Seating charts are VERY important, darling. Some evil characters insist the team sits exactly where they're told. As an evil player, would you like your character to fix where you sit relative to your evil teammates?",
+    "styled": "Seating charts are VERY important, darling. Some evil characters insist the team sits exactly where they're told. As an evil player, would you like your character to fix where you sit relative to your evil teammates?",
     "voice": "Princess Donut",
     "yes": [
       "lordoftyphon",
@@ -1049,7 +1049,7 @@
   {
     "id": "dem-evil-false-type",
     "plain": "As an evil player, would you like to register as a different character type from your real one?",
-    "dinniman": "You're one thing, but when the good guys check, you show up as another kind of thing. It's like having a fake ID, except the bouncer has magic. As an evil player, would you like to register as a different character type from your real one?",
+    "styled": "You're one thing, but when the good guys check, you show up as another kind of thing. It's like having a fake ID, except the bouncer has magic. As an evil player, would you like to register as a different character type from your real one?",
     "voice": "Carl",
     "yes": [
       "spy",
@@ -1106,7 +1106,7 @@
   {
     "id": "dem-evil-bigger-team",
     "plain": "As an evil player, would you like your character to start the game with more evil players at the table than usual?",
-    "dinniman": "Headcount update from the network! Some evil characters arrive with a bigger team than the standard package. As an evil player, would you like your character to start the game with more evil players at the table than usual?",
+    "styled": "Headcount update from the network! Some evil characters arrive with a bigger team than the standard package. As an evil player, would you like your character to start the game with more evil players at the table than usual?",
     "voice": "Zev",
     "yes": [
       "lordoftyphon",
@@ -1163,7 +1163,7 @@
   {
     "id": "dem-evil-spoken-trigger",
     "plain": "As an evil player, would your ability be triggered by particular words you say out loud yourself?",
-    "dinniman": "Words have power, don't they? For some of you, quite literally: say the right thing, out loud, and your ability springs to life. As an evil player, would your ability be triggered by particular words you say out loud yourself?",
+    "styled": "Words have power, don't they? For some of you, quite literally: say the right thing, out loud, and your ability springs to life. As an evil player, would your ability be triggered by particular words you say out loud yourself?",
     "voice": "Odette",
     "yes": [
       "yaggababble",

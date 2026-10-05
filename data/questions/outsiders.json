@@ -1,8 +1,8 @@
 [
   {
     "id": "out-all-the-quirks",
-    "plain": "Would you like every Outsider's ability rolled into a single character, and that character to be you?",
-    "dinniman": "New bundle deal! One contestant, every misfit perk on the shelf, absolutely no refunds. Our legal team calls it 'a bit much'. Would you like to be the one carrying every Outsider ability at once?",
+    "plain": "Would you like to be a single character holding every Outsider's ability at once?",
+    "styled": "New bundle deal! One contestant, every misfit perk on the shelf, absolutely no refunds. Our legal team calls it 'a bit much'. Would you like to be the one carrying every Outsider ability at once?",
     "voice": "The System AI",
     "yes": [
       "hermit"
@@ -11,7 +11,7 @@
   {
     "id": "out-one-person-crowd",
     "plain": "Would you rather be one outcast who stands in for several, so fewer misfits need to turn up?",
-    "dinniman": "Some people bring a plus-one. You'd turn up alone and quietly count as the whole awkward guest list, so the host can uninvite a couple of weirdos. Is being a one-person crowd of outcasts your thing?",
+    "styled": "Some people bring a plus-one. You'd turn up alone and quietly count as the whole awkward guest list, so the host can uninvite a couple of weirdos. Is being a one-person crowd of outcasts your thing?",
     "voice": "Katia",
     "yes": [
       "hermit"
@@ -19,8 +19,8 @@
   },
   {
     "id": "out-only-if-master-votes",
-    "plain": "Would you like your one and only power to be picking a master each night and voting only when they do?",
-    "dinniman": "So the whole deal is you pick a boss every night, and you're not allowed to raise your hand unless they raise theirs. That's it. That's the ability. Would you actually want that to be your only power?",
+    "plain": "Would you like your only power to be choosing a master each night and voting only when they do?",
+    "styled": "So the whole deal is you pick a boss every night, and you're not allowed to raise your hand unless they raise theirs. That's it. That's the ability. Would you actually want that to be your only power?",
     "voice": "Carl",
     "yes": [
       "butler"
@@ -28,8 +28,8 @@
   },
   {
     "id": "out-borrowed-hand",
-    "plain": "Would you be content if your entire role in the game were following one chosen person's lead on votes?",
-    "dinniman": "Tell me, darling, and be honest for the cameras: no secrets, no powers, just devotion. You watch your chosen one, and when their hand goes up, yours follows. Would you be happy if that were your whole part in the game?",
+    "plain": "Would you be happy for your whole part in the game to be following one chosen player's lead on votes?",
+    "styled": "Tell me, darling, and be honest for the cameras: no secrets, no powers, just devotion. You watch your chosen one, and when their hand goes up, yours follows. Would you be happy if that were your whole part in the game?",
     "voice": "Odette",
     "yes": [
       "butler"
@@ -37,8 +37,8 @@
   },
   {
     "id": "out-drunk-on-contact",
-    "plain": "Would you like your only trick to be making the first person who targets you at night drunk, then joining their side?",
-    "dinniman": "Whoever pokes you first after dark gets a faceful of booze and a new best mate: you. You pick up their colours and go stagger after them. Would you want that to be your one and only trick?",
+    "plain": "Would you like your only trick to be getting the first player who targets you each night drunk, then joining their side?",
+    "styled": "Whoever pokes you first after dark gets a faceful of booze and a new best mate: you. You pick up their colours and go stagger after them. Would you want that to be your one and only trick?",
     "voice": "Mordecai",
     "yes": [
       "goon"
@@ -47,7 +47,7 @@
   {
     "id": "out-hired-muscle",
     "plain": "Are you basically hired muscle, siding with whoever grabs you first and shrugging off the bruises?",
-    "dinniman": "RAWR! RAWR! [Translation: stomp for first friend who comes close! No care about scratches!] He'd follow whoever reaches him first and laugh off the bruises. Is that you: loyal muscle for whoever claims you first?",
+    "styled": "RAWR! RAWR! [Translation: stomp for first friend who comes close! No care about scratches!] He'd follow whoever reaches him first and laugh off the bruises. Is that you: loyal muscle for whoever claims you first?",
     "voice": "Mongo",
     "yes": [
       "goon"
@@ -56,7 +56,7 @@
   {
     "id": "out-blind-loyalty",
     "plain": "Is your whole game picking a best friend on the first night and joining their side, without ever knowing which side that is?",
-    "dinniman": "First night, you point at somebody and decide they're your buddy forever. Good, evil, cannibal cult? You don't find out. You just grin and follow, and that's your entire game. Is that the whole deal you want?",
+    "styled": "First night, you point at somebody and decide they're your buddy forever. Good, evil, cannibal cult? You don't find out. You just grin and follow, and that's your entire game. Is that the whole deal you want?",
     "voice": "Elle",
     "yes": [
       "ogre"
@@ -65,7 +65,7 @@
   {
     "id": "out-grunt-and-follow",
     "plain": "Is the only choice you ever make picking a friend whose side you copy, never knowing whether you are good or evil?",
-    "dinniman": "BEHOLD the simple brute, who makes exactly one decision all game: a companion, whose cause he adopts without knowing what it is! I find it almost noble. ALMOST. Is picking that one friend the only choice you ever make, leaving your own side a mystery?",
+    "styled": "BEHOLD the simple brute, who makes exactly one decision all game: a companion, whose cause he adopts without knowing what it is! I find it almost noble. ALMOST. Is picking that one friend the only choice you ever make, leaving your own side a mystery?",
     "voice": "Prepotente",
     "yes": [
       "ogre"
@@ -73,8 +73,8 @@
   },
   {
     "id": "out-think-im-demon",
-    "plain": "Would you like your whole role to be believing you are the Demon when you are actually nothing of the sort?",
-    "dinniman": "Congratulations on your promotion to Lord of Darkness! Terms and conditions apply. Promotion is imaginary. Would you enjoy that being your entire role: believing you're the Demon when you aren't one at all?",
+    "plain": "Would you like your whole role to be believing you're the Demon when you aren't one?",
+    "styled": "Congratulations on your promotion to Lord of Darkness! Terms and conditions apply. Promotion is imaginary. Would you enjoy that being your entire role: believing you're the Demon when you aren't one at all?",
     "voice": "The System AI",
     "yes": [
       "lunatic"
@@ -83,7 +83,7 @@
   {
     "id": "out-watched-delusion",
     "plain": "Would you be fine with the real Demon secretly watching every night-time 'kill' you think you're making?",
-    "dinniman": "Picture it, viewers: our contestant creeps about choosing victims, while the actual monster sits in the dark taking notes and stealing the credit! Ratings gold! Would you be fine with the real Demon secretly watching every kill you think you're making?",
+    "styled": "Picture it, viewers: our contestant creeps about choosing victims, while the actual monster sits in the dark taking notes and stealing the credit! Ratings gold! Would you be fine with the real Demon secretly watching every kill you think you're making?",
     "voice": "The Host",
     "yes": [
       "lunatic"
@@ -92,7 +92,7 @@
   {
     "id": "out-fake-townsfolk",
     "plain": "Would you like to be told you're a Townsfolk when really you're a powerless Outsider?",
-    "dinniman": "Sweetheart, the costume is PERFECT. The hero badge, the sincere little face. Shame the badge is plastic and you're actually one of the misfits. Would you like to be handed a Townsfolk identity when you're really a powerless Outsider?",
+    "styled": "Sweetheart, the costume is PERFECT. The hero badge, the sincere little face. Shame the badge is plastic and you're actually one of the misfits. Would you like to be handed a Townsfolk identity when you're really a powerless Outsider?",
     "voice": "Princess Donut",
     "yes": [
       "drunk"
@@ -100,8 +100,8 @@
   },
   {
     "id": "out-confident-and-wrong",
-    "plain": "Would you like to play a whole game believing you are a Townsfolk hero, still on the good team but with nothing except fake powers and worthless information?",
-    "dinniman": "I've watched contestants march into the boss room swinging a sword that turned out to be a breadstick. Still on our side, bless them, just useless. Would you want to spend the whole game convinced you're a Townsfolk hero, still good but with nothing except fake powers and worthless info?",
+    "plain": "Would you like to spend a whole game believing you're a Townsfolk hero, still good but with only fake powers and worthless information?",
+    "styled": "I've watched contestants march into the boss room swinging a sword that turned out to be a breadstick. Still on our side, bless them, just useless. Would you want to spend the whole game convinced you're a Townsfolk hero, still good but with nothing except fake powers and worthless info?",
     "voice": "Mordecai",
     "yes": [
       "drunk"
@@ -109,8 +109,8 @@
   },
   {
     "id": "out-drop-dead-anytime",
-    "plain": "Would you like your one and only quirk to be that the Storyteller can kill you whenever they fancy?",
-    "dinniman": "Hi! Your friendly liaison here from Production. Your contract has a small clause where you can be removed from the show at any moment for no reason at all. It's your only clause! Would you like that to be your whole deal?",
+    "plain": "Do you want your one quirk to be that the Storyteller can kill you whenever they fancy?",
+    "styled": "Hi! Your friendly liaison here from Production. Your contract has a small clause where you can be removed from the show at any moment for no reason at all. It's your only clause! Would you like that to be your whole deal?",
     "voice": "Zev",
     "yes": [
       "tinker"
@@ -118,8 +118,8 @@
   },
   {
     "id": "out-defining-sudden-death",
-    "plain": "Would you like your defining trait to be dropping dead at random, for no reason at all?",
-    "dinniman": "One minute you're chatting, the next you're face down in the soup and nobody did anything. Glorious! Pointless! Would you like dropping dead at random to be the thing you're known for?",
+    "plain": "Would you like your defining trait to be dropping dead at random, for no reason?",
+    "styled": "One minute you're chatting, the next you're face down in the soup and nobody did anything. Glorious! Pointless! Would you like dropping dead at random to be the thing you're known for?",
     "voice": "Samantha",
     "yes": [
       "tinker"
@@ -127,8 +127,8 @@
   },
   {
     "id": "out-good-but-flagged",
-    "plain": "Would you like your defining quirk to be that you're good, yet can show up as evil, or even as a Minion or Demon?",
-    "dinniman": "Every scan we run on you lights up red. Minion? Demon? The machine shrugs. You're actually lovely, of course, but the paperwork says monster. Would you like that to be your defining quirk?",
+    "plain": "Would you like your defining quirk to be that you're good but can register as evil, even as a Minion or Demon?",
+    "styled": "Every scan we run on you lights up red. Minion? Demon? The machine shrugs. You're actually lovely, of course, but the paperwork says monster. Would you like that to be your defining quirk?",
     "voice": "The System AI",
     "yes": [
       "recluse"
@@ -137,7 +137,7 @@
   {
     "id": "out-get-off-my-land",
     "plain": "Do you snarl at visitors to get off your land, then wonder why everyone thinks you're a monster?",
-    "dinniman": "There's always one guy who yells at everybody from his porch and then acts shocked when the village decides he's the werewolf. Are you that guy, growling people away and then puzzled that they think you're evil?",
+    "styled": "There's always one guy who yells at everybody from his porch and then acts shocked when the village decides he's the werewolf. Are you that guy, growling people away and then puzzled that they think you're evil?",
     "voice": "Carl",
     "yes": [
       "recluse"
@@ -145,8 +145,8 @@
   },
   {
     "id": "out-one-nomination-smash",
-    "plain": "Would you like your one and only power to be a single nomination that kills anyone who isn't the Demon?",
-    "dinniman": "You get one swing all game. Hit the Demon and nothing happens. Hit anybody else and they're paste. It's a terrible trade, and it's the only thing you've got. Would you want that to be your entire power?",
+    "plain": "Would you want your entire power to be one nomination that kills anyone who isn't the Demon?",
+    "styled": "You get one swing all game. Hit the Demon and nothing happens. Hit anybody else and they're paste. It's a terrible trade, and it's the only thing you've got. Would you want that to be your entire power?",
     "voice": "Mordecai",
     "yes": [
       "golem"
@@ -155,7 +155,7 @@
   {
     "id": "out-big-simple-swing",
     "plain": "Is your whole game plan one huge accusation, with no take-backs if it flattens an innocent?",
-    "dinniman": "RAWR! [Translation: point! SMASH! Say sorry later!] In other words: one enormous accusation, and if he squashes the wrong person, too bad. Is that your whole plan for the game?",
+    "styled": "RAWR! [Translation: point! SMASH! Say sorry later!] In other words: one enormous accusation, and if he squashes the wrong person, too bad. Is that your whole plan for the game?",
     "voice": "Mongo",
     "yes": [
       "golem"
@@ -164,7 +164,7 @@
   {
     "id": "out-grief-drunk",
     "plain": "Would you like your one ability to be leaving someone hopelessly drunk with grief once you die?",
-    "dinniman": "When I go, I want SOMEONE weeping into a bottle for the rest of the season. That's the legacy. That's the entire ability. Would you like your only power to be leaving someone drunk with grief after you die?",
+    "styled": "When I go, I want SOMEONE weeping into a bottle for the rest of the season. That's the legacy. That's the entire ability. Would you like your only power to be leaving someone drunk with grief after you die?",
     "voice": "Princess Donut",
     "yes": [
       "sweetheart"
@@ -173,7 +173,7 @@
   {
     "id": "out-unforgettable",
     "plain": "Do you want someone to never, ever get over losing you?",
-    "dinniman": "Be honest with me, love. When you're gone, do you want them to move on, find peace, all that? Or do you want them ruined, forever? Do you want someone to never get over losing you?",
+    "styled": "Be honest with me, love. When you're gone, do you want them to move on, find peace, all that? Or do you want them ruined, forever? Do you want someone to never get over losing you?",
     "voice": "Odette",
     "yes": [
       "sweetheart"
@@ -181,8 +181,8 @@
   },
   {
     "id": "out-death-feeds-storyteller",
-    "plain": "Would you like your only effect to be that dying hands the Storyteller a Minion's power?",
-    "dinniman": "Patch note: when this contestant dies, the Game Master receives a free villain ability! Complimentary! Forever! Would you like your only contribution to be handing the Storyteller a Minion power when you die?",
+    "plain": "Would you like your only effect to be giving the Storyteller a Minion's power when you die?",
+    "styled": "Patch note: when this contestant dies, the Game Master receives a free villain ability! Complimentary! Forever! Would you like your only contribution to be handing the Storyteller a Minion power when you die?",
     "voice": "The System AI",
     "yes": [
       "plaguedoctor"
@@ -191,7 +191,7 @@
   {
     "id": "out-beaked-mask",
     "plain": "Would you enjoy stalking the sickbeds in a beaked mask, offering cures of very dubious value?",
-    "dinniman": "Big leather beak, stuffed with herbs, a stick for poking the patients, and absolutely no idea what you're doing. I've met worse doctors. Not many. Would you enjoy playing the beaked healer with the questionable cures?",
+    "styled": "Big leather beak, stuffed with herbs, a stick for poking the patients, and absolutely no idea what you're doing. I've met worse doctors. Not many. Would you enjoy playing the beaked healer with the questionable cures?",
     "voice": "Elle",
     "yes": [
       "plaguedoctor"
@@ -199,8 +199,8 @@
   },
   {
     "id": "out-clumsy-last-pick",
-    "plain": "Would you like your only ability to be a final public pick that loses the game for your team if it lands on someone evil?",
-    "dinniman": "You die, you stand up, you point at someone in front of everybody. Pick a good guy, fine. Pick a bad guy, and your whole team loses. That's your power. Would you want that to be your only ability?",
+    "plain": "Do you want your only ability to be one last public pick, which loses your team the game if you choose someone evil?",
+    "styled": "You die, you stand up, you point at someone in front of everybody. Pick a good guy, fine. Pick a bad guy, and your whole team loses. That's your power. Would you want that to be your only ability?",
     "voice": "Carl",
     "yes": [
       "klutz"
@@ -209,7 +209,7 @@
   {
     "id": "out-oops",
     "plain": "Are you famously clumsy, prone to an 'oops' at the worst possible moment?",
-    "dinniman": "Some contestants trip over the loot box. Some trip into the lava. Some trip, grab their friend, and take the whole party into the lava with them. Are you the one with the legendary, badly timed oops?",
+    "styled": "Some contestants trip over the loot box. Some trip into the lava. Some trip, grab their friend, and take the whole party into the lava with them. Are you the one with the legendary, badly timed oops?",
     "voice": "The Host",
     "yes": [
       "klutz"
@@ -218,7 +218,7 @@
   {
     "id": "out-dying-curse",
     "plain": "Would you like your only ability to be a dying curse that kills whoever you name, if they're good?",
-    "dinniman": "Ah, a final curse! With your last breath you name someone, and if they are good, the night swallows them! Exquisite! Would you want your sole power to be a curse that kills the good person you name as you die?",
+    "styled": "Ah, a final curse! With your last breath you name someone, and if they are good, the night swallows them! Exquisite! Would you want your sole power to be a curse that kills the good person you name as you die?",
     "voice": "Samantha",
     "yes": [
       "moonchild"
@@ -227,7 +227,7 @@
   {
     "id": "out-spite-from-grave",
     "plain": "Would you secretly enjoy dragging an innocent person down with you, out of pure spite, when you die?",
-    "dinniman": "I'm not saying it's healthy. I'm saying I understand it. You're going down, and you'd quite like company, preferably someone who didn't deserve it. Would you secretly enjoy taking an innocent with you?",
+    "styled": "I'm not saying it's healthy. I'm saying I understand it. You're going down, and you'd quite like company, preferably someone who didn't deserve it. Would you secretly enjoy taking an innocent with you?",
     "voice": "Katia",
     "yes": [
       "moonchild"
@@ -236,7 +236,7 @@
   {
     "id": "out-last-public-pick",
     "plain": "When you find out you've died, would you like to publicly point at one living player and have something happen to them or your team?",
-    "dinniman": "THE DEATH POINT. You find out you're dead, you raise one accusing paw in front of the entire audience, and consequences follow. Iconic. Would you like to publicly point at a living player when you learn you've died?",
+    "styled": "THE DEATH POINT. You find out you're dead, you raise one accusing paw in front of the entire audience, and consequences follow. Iconic. Would you like to publicly point at a living player when you learn you've died?",
     "voice": "Princess Donut",
     "yes": [
       "klutz",
@@ -246,8 +246,8 @@
   },
   {
     "id": "out-martyr-loses",
-    "plain": "Would you like your only ability to be that your execution costs your team the game?",
-    "dinniman": "Here's the clause, and there is only one clause. If the town hangs you, your side loses on the spot. No appeals. Would you want that to be your entire ability?",
+    "plain": "Do you want an ability that does nothing except lose your team the game if you're executed?",
+    "styled": "Here's the clause, and there is only one clause. If the town hangs you, your side loses on the spot. No appeals. Would you want that to be your entire ability?",
     "voice": "Mordecai",
     "yes": [
       "saint"
@@ -255,8 +255,8 @@
   },
   {
     "id": "out-execution-catastrophe",
-    "plain": "Even though you are on the good team, would your execution be an outright catastrophe that loses the game for your whole side?",
-    "dinniman": "Pitch meeting! A gentle soul, a crowd with a rope, and a twist ending where your entire side loses because they strung up the wrong nice person! Sponsors love a tragedy. Even though you're one of the good guys, would your execution lose the game for your team?",
+    "plain": "Even though you're on the good team, would your execution lose the game for your whole side?",
+    "styled": "Pitch meeting! A gentle soul, a crowd with a rope, and a twist ending where your entire side loses because they strung up the wrong nice person! Sponsors love a tragedy. Even though you're one of the good guys, would your execution lose the game for your team?",
     "voice": "Zev",
     "yes": [
       "saint",
@@ -266,7 +266,7 @@
   {
     "id": "out-shave-and-chat",
     "plain": "Would you enjoy nattering away about everything and nothing while giving someone a close shave?",
-    "dinniman": "A razor at someone's throat and a head full of trivia you're dying to share. Did you know? Well, now they do. Would you enjoy chattering away while giving someone a close shave?",
+    "styled": "A razor at someone's throat and a head full of trivia you're dying to share. Did you know? Well, now they do. Would you enjoy chattering away while giving someone a close shave?",
     "voice": "Elle",
     "yes": [
       "barber"
@@ -274,8 +274,8 @@
   },
   {
     "id": "out-death-swap",
-    "plain": "Would you like your one effect to be that dying lets the Demon swap two players' characters?",
-    "dinniman": "Upon your death, the dungeon's top monster gets to grab two contestants and switch their class cards. That's your whole legacy, folks! Would you want your only effect to be letting the Demon swap two people's characters?",
+    "plain": "Would you like your only effect to be letting the Demon swap two players' characters when you die?",
+    "styled": "Upon your death, the dungeon's top monster gets to grab two contestants and switch their class cards. That's your whole legacy, folks! Would you want your only effect to be letting the Demon swap two people's characters?",
     "voice": "The Host",
     "yes": [
       "barber"
@@ -284,7 +284,7 @@
   {
     "id": "out-hat-collection",
     "plain": "Do you own far more hats than any sensible person could ever need?",
-    "dinniman": "I have counted your hats. I stopped counting your hats. The hats have started counting themselves. Do you own far more hats than any sensible person needs?",
+    "styled": "I have counted your hats. I stopped counting your hats. The hats have started counting themselves. Do you own far more hats than any sensible person needs?",
     "voice": "Carl",
     "yes": [
       "hatter"
@@ -292,8 +292,8 @@
   },
   {
     "id": "out-costume-change",
-    "plain": "Would you like your only effect to be that dying lets the evil team pick brand-new characters?",
-    "dinniman": "When you drop, every villain at the table gets a wardrobe change. New Minion, new Demon, same horrible people. That's all you do! Would you want your only effect to be giving the evil team new characters when you die?",
+    "plain": "Do you want your death to do nothing except let the evil team pick new characters?",
+    "styled": "When you drop, every villain at the table gets a wardrobe change. New Minion, new Demon, same horrible people. That's all you do! Would you want your only effect to be giving the evil team new characters when you die?",
     "voice": "The System AI",
     "yes": [
       "hatter"
@@ -302,7 +302,7 @@
   {
     "id": "out-reshuffle-on-death",
     "plain": "Would your death hand the evil players a choice about who becomes which character?",
-    "dinniman": "When you die, the bad guys get to shuffle the deck and hand out new roles while everyone's still mourning. Brutal. Would your death hand the evil side a choice about who becomes which character?",
+    "styled": "When you die, the bad guys get to shuffle the deck and hand out new roles while everyone's still mourning. Brutal. Would your death hand the evil side a choice about who becomes which character?",
     "voice": "Katia",
     "yes": [
       "barber",
@@ -313,7 +313,7 @@
   {
     "id": "out-deny-outsider",
     "plain": "Would you like your one rule to be that you must never admit you're an Outsider, or risk execution?",
-    "dinniman": "One rule, and the punishment is the rope. Do not, under any circumstances, let on that you're one of the misfits. Would you like that to be the single rule that defines you?",
+    "styled": "One rule, and the punishment is the rope. Do not, under any circumstances, let on that you're one of the misfits. Would you like that to be the single rule that defines you?",
     "voice": "Mordecai",
     "yes": [
       "mutant"
@@ -322,7 +322,7 @@
   {
     "id": "out-not-a-freak",
     "plain": "Would you insist, loudly and often, that you're not a freak but a perfectly ordinary person?",
-    "dinniman": "I AM NOT A FREAK. I AM A PERFECTLY NORMAL GOAT WITH PERFECTLY NORMAL AMBITIONS. Ahem. Would you, too, loudly insist that you're entirely ordinary and not a freak at all?",
+    "styled": "I AM NOT A FREAK. I AM A PERFECTLY NORMAL GOAT WITH PERFECTLY NORMAL AMBITIONS. Ahem. Would you, too, loudly insist that you're entirely ordinary and not a freak at all?",
     "voice": "Prepotente",
     "yes": [
       "mutant"
@@ -331,7 +331,7 @@
   {
     "id": "out-blunder-to-victory",
     "plain": "Would you like your one ability to be switching sides and winning if you were the main reason your team lost?",
-    "dinniman": "You torpedo your own team, and as the wreckage sinks, you step onto the winning boat and wave. That's the whole power. Would you want your only ability to be turning your own blunder into a personal victory?",
+    "styled": "You torpedo your own team, and as the wreckage sinks, you step onto the winning boat and wave. That's the whole power. Would you want your only ability to be turning your own blunder into a personal victory?",
     "voice": "Odette",
     "yes": [
       "politician"
@@ -340,7 +340,7 @@
   {
     "id": "out-land-on-feet",
     "plain": "Do you always manage to come out on top, even when you're the one who wrecked things for your side?",
-    "dinniman": "Every disaster, somehow, you're standing at the podium afterwards shaking hands. Your team is on fire. You're fine. Do you always end up on top even after wrecking things for your own side?",
+    "styled": "Every disaster, somehow, you're standing at the podium afterwards shaking hands. Your team is on fire. You're fine. Do you always end up on top even after wrecking things for your own side?",
     "voice": "Carl",
     "yes": [
       "politician"
@@ -348,8 +348,8 @@
   },
   {
     "id": "out-vote-every-time",
-    "plain": "Would you like your only duty to be raising your hand for every single nomination while plenty of players are alive?",
-    "dinniman": "Hand up! Hand up! Hand up again! Achievement unlocked: Unconditional Enthusiasm. While the crowd is still big, you vote yes on everything, every time. Would you want that to be your only duty?",
+    "plain": "Would you like your only duty to be voting on every nomination while five or more players are alive?",
+    "styled": "Hand up! Hand up! Hand up again! Achievement unlocked: Unconditional Enthusiasm. While the crowd is still big, you vote yes on everything, every time. Would you want that to be your only duty?",
     "voice": "The System AI",
     "yes": [
       "zealot"
@@ -357,8 +357,8 @@
   },
   {
     "id": "out-never-sit-out",
-    "plain": "Is backing every accusation going, rather than ever sitting out a vote, what you are all about?",
-    "dinniman": "Abstain? ABSTAIN? Cowards abstain. Real believers vote for everything and sort out the bodies afterwards! Is backing every single accusation, and never sitting one out, what you're all about?",
+    "plain": "Are you all about backing every accusation and never sitting out a vote?",
+    "styled": "Abstain? ABSTAIN? Cowards abstain. Real believers vote for everything and sort out the bodies afterwards! Is backing every single accusation, and never sitting one out, what you're all about?",
     "voice": "Samantha",
     "yes": [
       "zealot"
@@ -366,8 +366,8 @@
   },
   {
     "id": "out-minion-guess-loses",
-    "plain": "Would you like your only ability to be that a Minion correctly naming you loses your team the game?",
-    "dinniman": "The villains know you're in the building. If one of them works out which face is yours and says it out loud, your side loses. That's it. Would you like that to be your only ability?",
+    "plain": "Would you like your only ability to be that your team loses if a Minion correctly guesses who you are?",
+    "styled": "The villains know you're in the building. If one of them works out which face is yours and says it out loud, your side loses. That's it. Would you like that to be your only ability?",
     "voice": "Katia",
     "yes": [
       "damsel"
@@ -376,7 +376,7 @@
   {
     "id": "out-in-distress",
     "plain": "Do you enjoy playing the one in distress, hoping a rescuer arrives before the villains find you?",
-    "dinniman": "Darling, a damsel in danger is the BEST role on any show. The swooning, the hiding, the hero galloping in at the last second. Don't touch the hair. Do you love being the one in distress, waiting for rescue before the villains find you?",
+    "styled": "Darling, a damsel in danger is the BEST role on any show. The swooning, the hiding, the hero galloping in at the last second. Don't touch the hair. Do you love being the one in distress, waiting for rescue before the villains find you?",
     "voice": "Princess Donut",
     "yes": [
       "damsel"
@@ -385,7 +385,7 @@
   {
     "id": "out-feed-bluffs",
     "plain": "Would you like your only effect to be handing every Minion three extra bluffs?",
-    "dinniman": "Your presence entitles every Minion to three bonus cover stories, gift-wrapped! You gain nothing! Would you like your only effect to be giving each Minion three extra bluffs?",
+    "styled": "Your presence entitles every Minion to three bonus cover stories, gift-wrapped! You gain nothing! Would you like your only effect to be giving each Minion three extra bluffs?",
     "voice": "The Host",
     "yes": [
       "snitch"
@@ -394,7 +394,7 @@
   {
     "id": "out-accidental-alibis",
     "plain": "Is your main contribution to the game accidentally handing the bad guys a stack of convincing alibis?",
-    "dinniman": "You walk in, and suddenly every villain has a fresh fake identity to hide behind. Nobody asked you to. You just leak. Is handing the bad guys convincing alibis basically your main contribution?",
+    "styled": "You walk in, and suddenly every villain has a fresh fake identity to hide behind. Nobody asked you to. You just leak. Is handing the bad guys convincing alibis basically your main contribution?",
     "voice": "Elle",
     "yes": [
       "snitch"
@@ -402,8 +402,8 @@
   },
   {
     "id": "out-flip-result",
-    "plain": "Would you like your only ability to be turning the final result upside down, so the winners lose and the losers win?",
-    "dinniman": "At the end, whoever thinks they won? They lost. Whoever lost? They won. That's your one trick, and it's beautiful. Would you want your only ability to be flipping the result upside down?",
+    "plain": "Do you want an ability that does nothing but flip the final result, so the winners lose and the losers win?",
+    "styled": "At the end, whoever thinks they won? They lost. Whoever lost? They won. That's your one trick, and it's beautiful. Would you want your only ability to be flipping the result upside down?",
     "voice": "Prepotente",
     "yes": [
       "heretic"
@@ -411,8 +411,8 @@
   },
   {
     "id": "out-losing-is-winning",
-    "plain": "Is rooting for your own team to lose, because that is how they truly win, the heart of your character?",
-    "dinniman": "I have explained this to the cat four times. Losing is winning. Winning is losing. She bit me. Is cheering for your own team to lose, because that's how they actually win, the core of who you are?",
+    "plain": "Is the heart of your character rooting for your own team to lose, because that's how they actually win?",
+    "styled": "I have explained this to the cat four times. Losing is winning. Winning is losing. She bit me. Is cheering for your own team to lose, because that's how they actually win, the core of who you are?",
     "voice": "Carl",
     "yes": [
       "heretic"
@@ -421,7 +421,7 @@
   {
     "id": "out-find-the-drunk",
     "plain": "Is your main job in the game working out which one player is secretly drunk?",
-    "dinniman": "Somewhere in this room is one contestant who's absolutely sloshed and doesn't know it. Finding them is your main job. It's a puzzle box with a hangover. Is hunting down the secret drunk what your game is all about?",
+    "styled": "Somewhere in this room is one contestant who's absolutely sloshed and doesn't know it. Finding them is your main job. It's a puzzle box with a hangover. Is hunting down the secret drunk what your game is all about?",
     "voice": "Zev",
     "yes": [
       "puzzlemaster"
@@ -429,8 +429,8 @@
   },
   {
     "id": "out-guess-for-demon",
-    "plain": "Would you build your whole game around one guess that either reveals the Demon or leaves you fed false information for good?",
-    "dinniman": "One guess. Get it right and I hand you the Demon. Get it wrong and everything I tell you afterwards is garbage. I don't know why anyone builds their whole game around these deals, but they always do. Would you?",
+    "plain": "Would you build your whole game around one guess that either reveals the Demon or leaves you with false information for good?",
+    "styled": "One guess. Get it right and I hand you the Demon. Get it wrong and everything I tell you afterwards is garbage. I don't know why anyone builds their whole game around these deals, but they always do. Would you?",
     "voice": "Mordecai",
     "yes": [
       "puzzlemaster"
@@ -439,7 +439,7 @@
   {
     "id": "out-s-death-sets-off",
     "plain": "As an Outsider, could your death set something nasty in motion?",
-    "dinniman": "Every misfit is a liability, but some of you are liabilities with a timer. You die, and the floor opens, the lights flicker, somebody screams. Could your death set something nasty in motion?",
+    "styled": "Every misfit is a liability, but some of you are liabilities with a timer. You die, and the floor opens, the lights flicker, somebody screams. Could your death set something nasty in motion?",
     "voice": "The System AI",
     "yes": [
       "sweetheart",
@@ -458,7 +458,7 @@
   {
     "id": "out-s-instant-loss",
     "plain": "Could your team lose instantly because of one moment involving you: your execution, your final pick, or someone guessing who you are?",
-    "dinniman": "Some of you just make life harder. A few of you are a trapdoor under the whole team: one execution, one bad point, one correct guess, and it's over. Could a single moment involving you lose your team the game on the spot?",
+    "styled": "Some of you just make life harder. A few of you are a trapdoor under the whole team: one execution, one bad point, one correct guess, and it's over. Could a single moment involving you lose your team the game on the spot?",
     "voice": "Mordecai",
     "yes": [
       "saint",
@@ -473,7 +473,7 @@
   {
     "id": "out-s-side-can-change",
     "plain": "Does your own ability let you end up on a different side from the one you started on?",
-    "dinniman": "It's scary, not knowing whose side you'll finish on. Some misfits drift, or get pulled, or jump ship when things go wrong. Does your own ability let your side change during the game?",
+    "styled": "It's scary, not knowing whose side you'll finish on. Some misfits drift, or get pulled, or jump ship when things go wrong. Does your own ability let your side change during the game?",
     "voice": "Katia",
     "yes": [
       "goon",
@@ -488,7 +488,7 @@
   {
     "id": "out-s-vote-rules",
     "plain": "Does your ability tell you when you can or must vote?",
-    "dinniman": "Most people get to vote like adults. Some of us have a little rulebook stapled to our hand saying when it's allowed to go up, or when it has to. Does your ability control when you vote?",
+    "styled": "Most people get to vote like adults. Some of us have a little rulebook stapled to our hand saying when it's allowed to go up, or when it has to. Does your ability control when you vote?",
     "voice": "Carl",
     "yes": [
       "butler",
@@ -502,7 +502,7 @@
   {
     "id": "out-s-night-picker",
     "plain": "Does your actual ability have you wake at night to choose a player?",
-    "dinniman": "Night shift sign-up sheet! Some Outsiders get a cosy alarm call in the dark to point at somebody. Others sleep through the whole thing. Does your real ability wake you at night to choose a player?",
+    "styled": "Night shift sign-up sheet! Some Outsiders get a cosy alarm call in the dark to point at somebody. Others sleep through the whole thing. Does your real ability wake you at night to choose a player?",
     "voice": "Zev",
     "yes": [
       "butler",
@@ -517,7 +517,7 @@
   {
     "id": "out-s-death-gifts-evil",
     "plain": "When you die, do the Demon, Minions or Storyteller gain a new power or a chance to change characters?",
-    "dinniman": "Your corpse is a PRESENT, mortal! Wrapped for the villains or the dungeon master: a new power, or a fresh set of masks! Delicious! When you die, do the Demon, Minions or Storyteller gain a new power or a chance to change characters?",
+    "styled": "Your corpse is a PRESENT, mortal! Wrapped for the villains or the dungeon master: a new power, or a fresh set of masks! Delicious! When you die, do the Demon, Minions or Storyteller gain a new power or a chance to change characters?",
     "voice": "Samantha",
     "yes": [
       "plaguedoctor",
@@ -532,7 +532,7 @@
   {
     "id": "out-s-public-point",
     "plain": "Does your ability give you a dramatic public moment where you point at a player and something happens?",
-    "dinniman": "Lights! Cameras! One finger, aimed straight at a contestant in front of the entire studio audience, and BOOM, consequences! Does your ability give you that big public pointing moment?",
+    "styled": "Lights! Cameras! One finger, aimed straight at a contestant in front of the entire studio audience, and BOOM, consequences! Does your ability give you that big public pointing moment?",
     "voice": "The Host",
     "yes": [
       "golem",
@@ -568,7 +568,7 @@
   {
     "id": "out-s-minions-receive",
     "plain": "Do the Minions learn or receive something because you are in the game?",
-    "dinniman": "Let's talk about your relationship with the villains, darling. Do they get a little something because of you: a secret, a fresh alibi, a new face? Do the Minions learn or receive something because you're in play?",
+    "styled": "Let's talk about your relationship with the villains, darling. Do they get a little something because of you: a secret, a fresh alibi, a new face? Do the Minions learn or receive something because you're in play?",
     "voice": "Odette",
     "yes": [
       "damsel",
@@ -604,7 +604,7 @@
   {
     "id": "out-s-wrong-about-self",
     "plain": "Could your ability leave you believing you are a different character from the one you really are?",
-    "dinniman": "Imagine thinking you're the star of the show and actually being the understudy's understudy. I could NEVER. But some of you do it every game. Could your ability leave you believing you're a different character from the one you really are?",
+    "styled": "Imagine thinking you're the star of the show and actually being the understudy's understudy. I could NEVER. But some of you do it every game. Could your ability leave you believing you're a different character from the one you really are?",
     "voice": "Princess Donut",
     "yes": [
       "lunatic",
@@ -618,7 +618,7 @@
   {
     "id": "out-s-makes-drunk",
     "plain": "Does your ability itself leave another player drunk?",
-    "dinniman": "Some people are just bad influences. You wander past, and somebody else ends up legless and useless. Does your ability itself get another player drunk?",
+    "styled": "Some people are just bad influences. You wander past, and somebody else ends up legless and useless. Does your ability itself get another player drunk?",
     "voice": "Elle",
     "yes": [
       "goon",
@@ -633,7 +633,7 @@
   {
     "id": "out-s-chooses-player",
     "plain": "Does your ability ever ask you to choose or name a player?",
-    "dinniman": "Plenty of misfits just sit there and let bad things happen to them. Others have to pick someone: by night, by nomination, or with their dying breath. Does your ability ever make you choose a player?",
+    "styled": "Plenty of misfits just sit there and let bad things happen to them. Others have to pick someone: by night, by nomination, or with their dying breath. Does your ability ever make you choose a player?",
     "voice": "Mordecai",
     "yes": [
       "butler",
@@ -672,8 +672,8 @@
   },
   {
     "id": "out-s-random-death",
-    "plain": "Could you simply drop dead for no reason, with nobody targeting you at all?",
-    "dinniman": "Nobody nominated you. Nobody stabbed you. You're just dead now, apparently, because the dungeon felt like it. Could you drop dead for no reason at all?",
+    "plain": "Could you just drop dead for no reason, without anyone targeting you?",
+    "styled": "Nobody nominated you. Nobody stabbed you. You're just dead now, apparently, because the dungeon felt like it. Could you drop dead for no reason at all?",
     "voice": "Carl",
     "yes": [
       "tinker",
@@ -686,7 +686,7 @@
   {
     "id": "out-s-changes-winner",
     "plain": "Does your ability have any say over who wins or loses the game?",
-    "dinniman": "Some creatures merely play. Others hold the very SCALES of victory in their hooves! Mostly by knocking them over. Does your ability have any power over who wins or loses?",
+    "styled": "Some creatures merely play. Others hold the very SCALES of victory in their hooves! Mostly by knocking them over. Does your ability have any power over who wins or loses?",
     "voice": "Prepotente",
     "yes": [
       "saint",
@@ -703,7 +703,7 @@
   {
     "id": "out-s-secrecy-punished",
     "plain": "Does your ability punish you or your team if your true character becomes known?",
-    "dinniman": "Hiding who you are is exhausting. Some misfits have it worse: if the truth comes out, the punishment is real. Does your ability punish you or your team when your real character is discovered?",
+    "styled": "Hiding who you are is exhausting. Some misfits have it worse: if the truth comes out, the punishment is real. Does your ability punish you or your team when your real character is discovered?",
     "voice": "Katia",
     "yes": [
       "damsel",
@@ -717,7 +717,7 @@
   {
     "id": "out-s-one-shot",
     "plain": "Does your ability give you a single choice that you make once and never again?",
-    "dinniman": "Limited-time offer! One choice, one use, then the button crumbles to dust and the sponsors laugh at you. Does your ability give you a single decision you only ever make once?",
+    "styled": "Limited-time offer! One choice, one use, then the button crumbles to dust and the sponsors laugh at you. Does your ability give you a single decision you only ever make once?",
     "voice": "The System AI",
     "yes": [
       "golem",
@@ -734,7 +734,7 @@
   {
     "id": "out-s-evil-know-you",
     "plain": "Does the evil team know something about you from the start?",
-    "dinniman": "Some contestants walk in anonymous. Others arrive with the villains already whispering about them in the green room. Tell me: does the evil team know something about you from the beginning?",
+    "styled": "Some contestants walk in anonymous. Others arrive with the villains already whispering about them in the green room. Tell me: does the evil team know something about you from the beginning?",
     "voice": "Odette",
     "yes": [
       "damsel",
@@ -768,7 +768,7 @@
   {
     "id": "out-s-guessing-game",
     "plain": "Does your ability involve someone making a once-only guess?",
-    "dinniman": "Everybody loves a quiz segment! One guess, one shot, very dramatic music. Does your ability involve somebody making a once-only guess?",
+    "styled": "Everybody loves a quiz segment! One guess, one shot, very dramatic music. Does your ability involve somebody making a once-only guess?",
     "voice": "Zev",
     "yes": [
       "damsel",
@@ -782,7 +782,7 @@
   {
     "id": "out-s-changes-setup",
     "plain": "Does your presence change which character tokens go into the bag before the game begins?",
-    "dinniman": "Before anyone even sits down, you've already mucked about with the setup. The bag isn't what it would have been. Typical. Does your presence change which tokens go in the bag?",
+    "styled": "Before anyone even sits down, you've already mucked about with the setup. The bag isn't what it would have been. Typical. Does your presence change which tokens go in the bag?",
     "voice": "Elle",
     "yes": [
       "hermit",
@@ -795,7 +795,7 @@
   {
     "id": "out-g-burden",
     "plain": "Among the good players, are you more of a burden to your own side than a help?",
-    "dinniman": "Look, we're all on the same team. Some of us bring snacks and information. Some of us bring problems, and we're very sorry. Are you more of a burden to the good side than a help?",
+    "styled": "Look, we're all on the same team. Some of us bring snacks and information. Some of us bring problems, and we're very sorry. Are you more of a burden to the good side than a help?",
     "voice": "Carl",
     "yes": {
       "team": "outsider"
@@ -810,7 +810,7 @@
   {
     "id": "out-g-one-moment-loss",
     "plain": "As a good player, could a single moment involving you hand evil the win outright?",
-    "dinniman": "Most good players can only lose slowly. A rare few are a loaded trap: hang them, let them point wrong, or let a Minion spot them, and it's over. As a good player, could one moment involving you give evil the win?",
+    "styled": "Most good players can only lose slowly. A rare few are a loaded trap: hang them, let them point wrong, or let a Minion spot them, and it's over. As a good player, could one moment involving you give evil the win?",
     "voice": "Mordecai",
     "yes": [
       "saint",
@@ -828,7 +828,7 @@
   {
     "id": "out-g-wrong-about-self",
     "plain": "On the good team, could you spend the whole game wrong about which character you are?",
-    "dinniman": "Folks, here's a contestant on the good team with NO IDEA what character they really are, and they never will! Isn't that adorable? Could you play a whole game wrong about your own character?",
+    "styled": "Folks, here's a contestant on the good team with NO IDEA what character they really are, and they never will! Isn't that adorable? Could you play a whole game wrong about your own character?",
     "voice": "The Host",
     "yes": [
       "drunk",
@@ -845,7 +845,7 @@
   {
     "id": "out-g-death-helps-evil",
     "plain": "However you die, does evil automatically gain from it, without you choosing anything?",
-    "dinniman": "Your death feeds the darkness no matter how it comes! Blade, rope, falling piano: the villains profit and you get no say! Glorious! However you die, does evil automatically gain from it, with no choice of yours involved?",
+    "styled": "Your death feeds the darkness no matter how it comes! Blade, rope, falling piano: the villains profit and you get no say! Glorious! However you die, does evil automatically gain from it, with no choice of yours involved?",
     "voice": "Samantha",
     "yes": [
       "sweetheart",
@@ -865,7 +865,7 @@
   {
     "id": "out-g-vote-rules",
     "plain": "Among good players, does your ability limit or dictate when you vote?",
-    "dinniman": "Quick compliance check from Legal! Some good-team contestants have special voting terms in their contracts: when they may, or when they must. Does your ability limit or dictate when you vote?",
+    "styled": "Quick compliance check from Legal! Some good-team contestants have special voting terms in their contracts: when they may, or when they must. Does your ability limit or dictate when you vote?",
     "voice": "Zev",
     "yes": [
       "butler",
@@ -882,7 +882,7 @@
   {
     "id": "out-g-side-flip",
     "plain": "Could your own ability move you from the good team to the evil team?",
-    "dinniman": "You start the game good. You want to stay good. But your own ability might drag you somewhere else, and that's frightening. Could your ability turn you evil?",
+    "styled": "You start the game good. You want to stay good. But your own ability might drag you somewhere else, and that's frightening. Could your ability turn you evil?",
     "voice": "Katia",
     "yes": [
       "goon",
@@ -902,7 +902,7 @@
   {
     "id": "out-g-execution-ends-it",
     "plain": "Would your execution end the game straight away, one way or the other?",
-    "dinniman": "When they march ME to the gallows, the WHOLE SHOW ends. Win or lose, curtain down, credits roll. That is star power. Would your execution end the game immediately?",
+    "styled": "When they march ME to the gallows, the WHOLE SHOW ends. Win or lose, curtain down, credits roll. That is star power. Would your execution end the game immediately?",
     "voice": "Princess Donut",
     "yes": [
       "saint",
@@ -918,7 +918,7 @@
   {
     "id": "out-g-deadly-nomination",
     "plain": "Among good players, could simply nominating someone kill them on the spot?",
-    "dinniman": "RAWR! [Translation: point at bad guy. Bad guy fall down. Very proud.] He means his nomination alone could kill the person nominated. As a good player, could your nomination kill someone outright?",
+    "styled": "RAWR! [Translation: point at bad guy. Bad guy fall down. Very proud.] He means his nomination alone could kill the person nominated. As a good player, could your nomination kill someone outright?",
     "voice": "Mongo",
     "yes": [
       "golem",
@@ -934,7 +934,7 @@
   {
     "id": "out-tb-know-yourself",
     "plain": "Do you know exactly which character you are from the very start?",
-    "dinniman": "Seems like the bare minimum, honestly. You get a card, you read the card, you are the card. Not everyone gets that luxury. Do you know exactly what character you are from the start?",
+    "styled": "Seems like the bare minimum, honestly. You get a card, you read the card, you are the card. Not everyone gets that luxury. Do you know exactly what character you are from the start?",
     "voice": "Carl",
     "yes": [
       "butler",
@@ -949,7 +949,7 @@
   {
     "id": "out-tb-look-evil",
     "plain": "Might the good team's information wrongly point at you as evil?",
-    "dinniman": "You're a perfectly nice cranky old so-and-so, and yet every clue in town points straight at you. Might the good team's information wrongly mark you as evil?",
+    "styled": "You're a perfectly nice cranky old so-and-so, and yet every clue in town points straight at you. Might the good team's information wrongly mark you as evil?",
     "voice": "Elle",
     "yes": [
       "recluse"
@@ -962,7 +962,7 @@
   {
     "id": "out-tb-rope-worst",
     "plain": "Is your execution the worst thing that could happen to your team, not just to you?",
-    "dinniman": "Special event: the Gallows of Consequence! Hang this contestant and the entire party fails the floor! Is being executed the worst thing that could happen to your whole team?",
+    "styled": "Special event: the Gallows of Consequence! Hang this contestant and the entire party fails the floor! Is being executed the worst thing that could happen to your whole team?",
     "voice": "The System AI",
     "yes": [
       "saint"
@@ -975,7 +975,7 @@
   {
     "id": "out-bmr-deadly-ability",
     "plain": "Could your own ability directly cause a death, whether yours or someone else's?",
-    "dinniman": "In this lot, a couple of you are walking funerals. Either the dungeon takes you on a whim, or you take someone with you. Could your own ability directly cause a death?",
+    "styled": "In this lot, a couple of you are walking funerals. Either the dungeon takes you on a whim, or you take someone with you. Could your own ability directly cause a death?",
     "voice": "Mordecai",
     "yes": [
       "tinker",
@@ -989,7 +989,7 @@
   {
     "id": "out-bmr-picked-side",
     "plain": "Could you end up on the evil team just because of who picked you at night?",
-    "dinniman": "So someone reaches for you in the dark, and suddenly you're theirs. Tell the audience how that feels. Could you end up evil simply because of who chose you at night?",
+    "styled": "So someone reaches for you in the dark, and suddenly you're theirs. Tell the audience how that feels. Could you end up evil simply because of who chose you at night?",
     "voice": "Odette",
     "yes": [
       "goon"
@@ -1002,7 +1002,7 @@
   {
     "id": "out-snv-watch-mouth",
     "plain": "Do you have to be careful never to let on what kind of character you are?",
-    "dinniman": "SILENCE! One careless boast about your true nature and they will string you up! I speak from... no experience. Do you have to be careful never to reveal what kind of character you are?",
+    "styled": "SILENCE! One careless boast about your true nature and they will string you up! I speak from... no experience. Do you have to be careful never to reveal what kind of character you are?",
     "voice": "Prepotente",
     "yes": [
       "mutant"
@@ -1015,7 +1015,7 @@
   {
     "id": "out-snv-afterlife-trigger",
     "plain": "Does your ability only kick in once you are dead?",
-    "dinniman": "Some people only matter after they're gone. That's sad, but it's also kind of powerful. Does your ability only take effect once you've died?",
+    "styled": "Some people only matter after they're gone. That's sad, but it's also kind of powerful. Does your ability only take effect once you've died?",
     "voice": "Katia",
     "yes": [
       "sweetheart",
@@ -1030,7 +1030,7 @@
   {
     "id": "out-car-decide-winner",
     "plain": "Can your ability decide which team wins the game?",
-    "dinniman": "Among our experimental misfits, a few hold the trophy hostage! A guess, a blunder, a cosmic flip, and the winner changes! Can your ability decide which team wins?",
+    "styled": "Among our experimental misfits, a few hold the trophy hostage! A guess, a blunder, a cosmic flip, and the winner changes! Can your ability decide which team wins?",
     "voice": "The Host",
     "yes": [
       "damsel",
@@ -1046,7 +1046,7 @@
   {
     "id": "out-car-point-at-someone",
     "plain": "Does your ability let you pick out a specific player?",
-    "dinniman": "Brand engagement tip: audiences love it when you single someone out! Some of our experimental Outsiders get to do exactly that. Does your ability let you pick a specific player?",
+    "styled": "Brand engagement tip: audiences love it when you single someone out! Some of our experimental Outsiders get to do exactly that. Does your ability let you pick a specific player?",
     "voice": "Zev",
     "yes": [
       "ogre",
@@ -1062,7 +1062,7 @@
   {
     "id": "out-la-know-name",
     "plain": "Do you at least know your character's name, even if what it does is a mystery?",
-    "dinniman": "Out of all the confused people at this table, you're the one who at least got the name tag right. You just don't know what it does. Do you know your character's name, even if not its ability?",
+    "styled": "Out of all the confused people at this table, you're the one who at least got the name tag right. You just don't know what it does. Do you know your character's name, even if not its ability?",
     "voice": "Carl",
     "yes": [
       "amnesiac"
@@ -1077,7 +1077,7 @@
   {
     "id": "out-la-think-villain",
     "plain": "Do you believe you are one of the villains?",
-    "dinniman": "Of all the deluded people here, you're the one who thinks they're EVIL. How dramatic. I almost respect it. Do you believe you're one of the villains?",
+    "styled": "Of all the deluded people here, you're the one who thinks they're EVIL. How dramatic. I almost respect it. Do you believe you're one of the villains?",
     "voice": "Princess Donut",
     "yes": [
       "lunatic"
@@ -1092,7 +1092,7 @@
   {
     "id": "out-la-minion-hunt",
     "plain": "Does your danger depend on a Minion working out who you are?",
-    "dinniman": "Your whole problem is some sneaky little villain squinting at you and figuring it out. Hide, honey. Does your danger depend on a Minion working out who you are?",
+    "styled": "Your whole problem is some sneaky little villain squinting at you and figuring it out. Hide, honey. Does your danger depend on a Minion working out who you are?",
     "voice": "Elle",
     "yes": [
       "damsel"
@@ -1109,7 +1109,7 @@
   {
     "id": "out-la-solo-winner",
     "plain": "Could you personally end up a winner while your original teammates lose?",
-    "dinniman": "Let's be candid. If your teammates went down in flames, could you still walk away holding a trophy? Could you personally win while your original team loses?",
+    "styled": "Let's be candid. If your teammates went down in flames, could you still walk away holding a trophy? Could you personally win while your original team loses?",
     "voice": "Odette",
     "yes": [
       "politician"
@@ -1126,7 +1126,7 @@
   {
     "id": "out-la-one-public-pick",
     "plain": "Does it all hinge on one public pick you make?",
-    "dinniman": "Out of this sorry bunch, your risk comes down to a single finger pointed in front of everyone. Choose well. Does it all hinge on one public pick you make?",
+    "styled": "Out of this sorry bunch, your risk comes down to a single finger pointed in front of everyone. Choose well. Does it all hinge on one public pick you make?",
     "voice": "Mordecai",
     "yes": [
       "klutz"
@@ -1143,7 +1143,7 @@
   {
     "id": "out-la-fear-rope",
     "plain": "Is the executioner's rope the thing you fear most?",
-    "dinniman": "Fear audit complete! Some contestants dread guesses, some dread pointing, and some lie awake thinking about the noose. Is the executioner's rope what you fear most?",
+    "styled": "Fear audit complete! Some contestants dread guesses, some dread pointing, and some lie awake thinking about the noose. Is the executioner's rope what you fear most?",
     "voice": "The System AI",
     "yes": [
       "saint",
@@ -1161,7 +1161,7 @@
   {
     "id": "out-la-twist-everyone",
     "plain": "Does your ability twist the final result for everyone, whoever ends up winning?",
-    "dinniman": "Not one fool, not one team, EVERYONE! Whatever the outcome, you reach in and turn it inside out! Does your ability twist the result for everyone, whoever wins?",
+    "styled": "Not one fool, not one team, EVERYONE! Whatever the outcome, you reach in and turn it inside out! Does your ability twist the result for everyone, whoever wins?",
     "voice": "Samantha",
     "yes": [
       "heretic"
@@ -1178,7 +1178,7 @@
   {
     "id": "out-la-dying-choice",
     "plain": "When you die, do you get to make a choice yourself?",
-    "dinniman": "Some people die and things just happen around them. Others get one last decision of their own. When you die, do you get to make a choice yourself?",
+    "styled": "Some people die and things just happen around them. Others get one last decision of their own. When you die, do you get to make a choice yourself?",
     "voice": "Katia",
     "yes": [
       "klutz",
@@ -1196,7 +1196,7 @@
   {
     "id": "out-la-death-hands-evil",
     "plain": "Does your death hand a decision to the evil team?",
-    "dinniman": "Upon your demise, the villains receive a CHOICE! A delicious, scheming choice! Oh, how I envy them. Does your death hand the evil team a decision?",
+    "styled": "Upon your demise, the villains receive a CHOICE! A delicious, scheming choice! Oh, how I envy them. Does your death hand the evil team a decision?",
     "voice": "Prepotente",
     "yes": [
       "barber",
@@ -1214,7 +1214,7 @@
   {
     "id": "out-la-storyteller-call",
     "plain": "When you die, does the Storyteller get to decide what happens next?",
-    "dinniman": "Our showrunners love a little creative control! For some contestants, the moment they die, the Storyteller takes the wheel. When you die, does the Storyteller decide what happens next?",
+    "styled": "Our showrunners love a little creative control! For some contestants, the moment they die, the Storyteller takes the wheel. When you die, does the Storyteller decide what happens next?",
     "voice": "Zev",
     "yes": [
       "sweetheart",
@@ -1232,7 +1232,7 @@
   {
     "id": "out-la-good-underneath",
     "plain": "Whatever the clues say about you, are you genuinely on the good team?",
-    "dinniman": "Between the two of you who show up as the wrong thing, one is actually on our side. Are you genuinely good, no matter what the clues say?",
+    "styled": "Between the two of you who show up as the wrong thing, one is actually on our side. Are you genuinely good, no matter what the clues say?",
     "voice": "Carl",
     "yes": [
       "recluse"
@@ -1245,7 +1245,7 @@
   {
     "id": "out-la-switch-at-end",
     "plain": "Does your change of side only happen once the game is over?",
-    "dinniman": "Some turncoats switch mid-show. One saves it for the final credits, and steals the win! Does your change of side only happen when the game ends?",
+    "styled": "Some turncoats switch mid-show. One saves it for the final credits, and steals the win! Does your change of side only happen when the game ends?",
     "voice": "The Host",
     "yes": [
       "politician"
@@ -1261,7 +1261,7 @@
   {
     "id": "out-la-targeted-switch",
     "plain": "Does your side change because someone else targets you with their ability?",
-    "dinniman": "Out of the turncoats, you're the one who doesn't choose. Somebody uses their ability on you, and you're theirs. Does your side change because someone else targets you?",
+    "styled": "Out of the turncoats, you're the one who doesn't choose. Somebody uses their ability on you, and you're theirs. Does your side change because someone else targets you?",
     "voice": "Mordecai",
     "yes": [
       "goon"
@@ -1277,7 +1277,7 @@
   {
     "id": "out-la-first-night-friend",
     "plain": "Do you pick one person on the very first night and take their side for the rest of the game?",
-    "dinniman": "Night one, you pick your person, and that's that. No take-backs, no peeking at what side they're on. Do you choose one player on the first night and stick with their side for good?",
+    "styled": "Night one, you pick your person, and that's that. No take-backs, no peeking at what side they're on. Do you choose one player on the first night and stick with their side for good?",
     "voice": "Elle",
     "yes": [
       "ogre"
