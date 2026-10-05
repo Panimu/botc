@@ -481,8 +481,8 @@
   },
   {
     "id": "tfc-minstrel-open-bar",
-    "plain": "Would you celebrate a Minion dying by execution by leaving every other non-Traveller player drunk until the following dusk?",
-    "styled": "Nothing says justice like an open bar! One Minion dies on the gallows, one song, and every other non-Traveller is seeing double until dusk tomorrow. Great for engagement! Would you celebrate a Minion dying by execution by leaving every other non-Traveller player drunk until the following dusk?",
+    "plain": "Would you like a Minion's death by execution to leave every other non-Traveller player drunk until dusk tomorrow?",
+    "styled": "Nothing says justice like an open bar! One Minion dies on the gallows, one song, and every other non-Traveller is seeing double until dusk tomorrow. Great for engagement! Would you like a Minion's death by execution to leave every other non-Traveller player drunk until dusk tomorrow?",
     "voice": "Zev",
     "yes": [
       "minstrel"

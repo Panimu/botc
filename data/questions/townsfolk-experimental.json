@@ -551,8 +551,8 @@
   },
   {
     "id": "tfx-ability-could-kill-you",
-    "plain": "As a Townsfolk, could your own ability end up killing you?",
-    "styled": "Most Townsfolk powers are safe as houses. Yours comes with a little skull printed on the box. Achievement pending: Hoist By Own Petard! Could your own ability be the thing that kills you?",
+    "plain": "As a Townsfolk, can the ability written on your own token end up killing you?",
+    "styled": "Most Townsfolk powers are safe as houses. Yours comes with a little skull printed on the box. Achievement pending: Hoist By Own Petard! Could the ability written on your own token be the thing that kills you?",
     "voice": "The System AI",
     "yes": [
       "gambler",
