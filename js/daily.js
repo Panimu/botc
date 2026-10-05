@@ -212,6 +212,25 @@ export function par(date, characters, questions) {
   return game.status === 'won' ? game.score : null;
 }
 
+// More points than any hunt can take (at most 155 questions plus 3 wrong guesses).
+export const MAX_SCORE = 200;
+const validScore = (score) => Number.isInteger(score) && score >= 1 && score <= MAX_SCORE;
+// A real YYYY-MM-DD on or after launch.
+const isHuntDate = (date) => typeof date === 'string' && /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(date)
+  && date >= LAUNCH_DATE && fromUtc(toUtc(date)) === date;
+const validResult = (r) => Boolean(r) && typeof r === 'object'
+  && (r.won === true ? validScore(r.score) : r.won === false && r.score === null);
+
+// Stored results with anything malformed dropped: bad date keys, dates before
+// launch, impossible scores. Dates after `today` are dropped too when today is
+// known for certain (pass null when only the device clock is available, which
+// may run behind the host's).
+export function cleanResults(results, today = null) {
+  if (!results || typeof results !== 'object' || Array.isArray(results)) return {};
+  return Object.fromEntries(Object.entries(results)
+    .filter(([date, r]) => isHuntDate(date) && (today == null || date <= today) && validResult(r)));
+}
+
 // Restore codes carry results between devices: [day number, score or -1 for a
 // loss] pairs, JSON then base64url. Not tamper-proof; it's a daily puzzle.
 export function encodeResults(results) {
@@ -220,14 +239,23 @@ export function encodeResults(results) {
   return btoa(json).replaceAll('+', '-').replaceAll('/', '_').replace(/=+$/, '');
 }
 
-export function decodeResults(code) {
+// Throws unless every entry is a whole day from launch to `today` (once each)
+// with a possible score or -1, so a bad code is rejected whole and never saved.
+export function decodeResults(code, today) {
   const json = atob(code.replace(/-/g, '+').replace(/_/g, '/'));
   const data = JSON.parse(json);
   if (data?.v !== 1 || !Array.isArray(data.r)) throw new Error('Unrecognised restore code');
-  return Object.fromEntries(data.r.map(([day, score]) => [
-    fromUtc(toUtc(LAUNCH_DATE) + day * DAY_MS),
-    score >= 0 ? { won: true, score } : { won: false, score: null },
-  ]));
+  const lastDay = dayNumber(today);
+  const results = {};
+  for (const entry of data.r) {
+    const [day, score] = Array.isArray(entry) && entry.length === 2 ? entry : [];
+    if (!Number.isInteger(day) || day < 0 || day > lastDay) throw new Error(`Restore code has an invalid day: ${day}`);
+    if (score !== -1 && !validScore(score)) throw new Error(`Restore code has an invalid score: ${score}`);
+    const date = fromUtc(toUtc(LAUNCH_DATE) + day * DAY_MS);
+    if (date in results) throw new Error(`Restore code lists day ${day} twice`);
+    results[date] = score === -1 ? { won: false, score: null } : { won: true, score };
+  }
+  return results;
 }
 
 // Every hunt from launch up to (not including) today, newest first, for the archive.
@@ -239,6 +267,5 @@ export function pastHunts(today) {
 
 // A valid archive date: a real YYYY-MM-DD from launch up to yesterday.
 export function archiveDate(requested, today) {
-  if (!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(requested ?? '')) return null;
-  return requested >= LAUNCH_DATE && requested < today && fromUtc(toUtc(requested)) === requested ? requested : null;
+  return isHuntDate(requested) && requested < today ? requested : null;
 }

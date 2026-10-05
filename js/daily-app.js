@@ -2,7 +2,7 @@
 // Game rules live in js/daily.js; this file renders, stores progress and
 // handles the extras (par, charts, archive, streak backup, install, reminder).
 import {
-  DailyGame, replay, streaks, utcDate, par, encodeResults, decodeResults, archiveDate, pastHunts,
+  DailyGame, replay, streaks, utcDate, par, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, FREEZE_EVERY, MAX_FREEZES,
 } from './daily.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
@@ -49,15 +49,25 @@ async function pruneProgress(today) {
 }
 
 // The web host's clock (from the Date response header), so everyone shares the
-// same day; falls back to the device clock. Days roll over at midnight UTC.
+// same day; null when it can't be read (then the device clock is used). Days
+// roll over at midnight UTC.
 async function hostClockOffset() {
   try {
     const response = await fetch(`data/questions/index.json?clock=${Date.now()}`, { method: 'HEAD', cache: 'no-store' });
     const host = Date.parse(response.headers.get('Date'));
-    return Number.isFinite(host) ? host - Date.now() : 0;
+    return Number.isFinite(host) ? host - Date.now() : null;
   } catch {
-    return 0;
+    return null;
   }
+}
+
+// Drops malformed entries from the stored results (e.g. from an old, unchecked
+// restore link) so they can't break rendering, and saves the cleaned copy.
+function repairResults(today) {
+  const results = store.get(RESULTS_KEY, null);
+  if (results == null) return;
+  const clean = cleanResults(results, today);
+  if (JSON.stringify(clean) !== JSON.stringify(results)) store.set(RESULTS_KEY, clean);
 }
 
 // "two under par", "level with par", "one over par"
@@ -70,12 +80,12 @@ function versusPar(score, parScore) {
 }
 
 // A restore link in the address bar (#restore=…) merges its results into this device's.
-function applyRestoreLink() {
+function applyRestoreLink(today) {
   const match = location.hash.match(/^#restore=([A-Za-z0-9_-]+)$/);
   if (!match) return null;
   history.replaceState(null, '', location.pathname + location.search);
   try {
-    const incoming = decodeResults(match[1]);
+    const incoming = decodeResults(match[1], today);
     const results = store.get(RESULTS_KEY, {});
     store.set(RESULTS_KEY, { ...incoming, ...results });
     return `Restored ${plural(Object.keys(incoming).length, 'hunt result')} from your restore link.`;
@@ -458,17 +468,20 @@ function start(characters, questions, clockOffset, shareQuotes) {
 try {
   setupThemeToggle();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
-  const [{ characters, questions }, , clockOffset, shareQuotes] = await Promise.all([
+  const [{ characters, questions }, , hostOffset, shareQuotes] = await Promise.all([
     loadGameData({ exclude: EXCLUDED_FILES }),
     restore([LEGACY_PROGRESS_KEY, PRACTICE_KEY, RESULTS_KEY]),
     hostClockOffset(),
     loadJson('data/share-quotes.json?v=dev').catch(() => ({})),
   ]);
+  const clockOffset = hostOffset ?? 0;
   // Today's progress key depends on the host's date, so it's restored once that's known.
   const today = utcDate(new Date(Date.now() + clockOffset));
   await restore([progressKey(today)]);
   pruneProgress(today).catch(() => {});
-  const restored = applyRestoreLink();
+  // Only trust "after today" when the host's clock was read; the device's may run behind.
+  repairResults(hostOffset == null ? null : today);
+  const restored = applyRestoreLink(today);
   if (restored) { $('restore-status').textContent = restored; $('restore-status').hidden = false; }
   start(characters, questions, clockOffset, shareQuotes);
 } catch (error) {

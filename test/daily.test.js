@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
-  par, encodeResults, decodeResults, archiveDate, pastHunts, FREEZE_EVERY,
+  par, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts, FREEZE_EVERY,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -134,8 +134,8 @@ test('a missed day spends a streak freeze earned by winning; losses still break 
 
 test('restore codes round-trip results', () => {
   const results = { [LAUNCH_DATE]: { won: true, score: 8 }, [addDays(LAUNCH_DATE, 2)]: { won: false, score: null } };
-  assert.deepEqual(decodeResults(encodeResults(results)), results);
-  assert.throws(() => decodeResults('not-a-code'));
+  assert.deepEqual(decodeResults(encodeResults(results), addDays(LAUNCH_DATE, 2)), results);
+  assert.throws(() => decodeResults('not-a-code', LAUNCH_DATE));
 });
 
 test('archive dates must be real past hunts', () => {
@@ -146,4 +146,45 @@ test('archive dates must be real past hunts', () => {
   assert.equal(archiveDate('2026-02-30', today), null);
   assert.equal(pastHunts(today).length, 5);
   assert.equal(pastHunts(today)[0].number, 5);
+});
+
+test('restore codes with any bad entry are rejected whole', () => {
+  const today = addDays(LAUNCH_DATE, 5);
+  const code = (r) => btoa(JSON.stringify({ v: 1, r })).replaceAll('+', '-').replaceAll('/', '_').replace(/=+$/, '');
+  assert.deepEqual(decodeResults(code([[0, 7], [5, -1]]), today), { [LAUNCH_DATE]: { won: true, score: 7 }, [today]: { won: false, score: null } });
+  for (const [what, r] of [
+    ['a day far in the future (the reported payload)', [[0, 7], [3000000, 7]]],
+    ['tomorrow', [[6, 7]]],
+    ['a negative day', [[-1, 7]]],
+    ['a fractional day', [[1.5, 7]]],
+    ['a string day', [['1', 7]]],
+    ['a zero score', [[1, 0]]],
+    ['an impossible score', [[1, 999]]],
+    ['a fractional score', [[1, 6.5]]],
+    ['a negative score other than -1', [[1, -2]]],
+    ['a missing score', [[1]]],
+    ['a non-array entry', [{ day: 1, score: 7 }]],
+    ['a repeated day', [[1, 7], [1, 8]]],
+  ]) assert.throws(() => decodeResults(code(r), today), undefined, what);
+});
+
+test('stored results are repaired: malformed entries go, valid ones stay', () => {
+  const stored = {
+    [LAUNCH_DATE]: { won: true, score: 7 },
+    '+010240-06': { won: true, score: 7 },
+    '2026-02-30': { won: true, score: 7 },
+    '2026-01-01': { won: true, score: 7 },
+    [addDays(LAUNCH_DATE, 1)]: { won: true, score: 0 },
+    [addDays(LAUNCH_DATE, 2)]: { won: false, score: null },
+    [addDays(LAUNCH_DATE, 3)]: { won: 'yes', score: 4 },
+    [addDays(LAUNCH_DATE, 9)]: { won: true, score: 5 },
+  };
+  const today = addDays(LAUNCH_DATE, 3);
+  assert.deepEqual(cleanResults(stored, today), { [LAUNCH_DATE]: { won: true, score: 7 }, [addDays(LAUNCH_DATE, 2)]: { won: false, score: null } });
+  assert.ok(addDays(LAUNCH_DATE, 9) in cleanResults(stored, null), 'future dates stay when today is not known for certain');
+  assert.deepEqual(cleanResults([1, 2], today), {});
+  assert.deepEqual(cleanResults('junk', today), {});
+  // The repaired history renders: streaks no longer throws.
+  assert.doesNotThrow(() => streaks(cleanResults(stored, today), today));
+  assert.throws(() => streaks(stored, today), RangeError, 'the unrepaired history is what used to crash');
 });
