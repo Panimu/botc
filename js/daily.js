@@ -239,6 +239,24 @@ export function cleanResults(results, today = null) {
     .filter(([date, r]) => isHuntDate(date) && (today == null || date <= today) && validResult(r)));
 }
 
+// A one-line text chart of a run for share text: one block per point spent,
+// its height the characters left (log scale, so the full town is the tallest
+// block and one character the lowest). path: [{ left, points }]
+const SPARKS = '▁▂▃▄▅▆▇█';
+export function sparkline(path, max) {
+  const leftAt = new Map();
+  for (const step of path) leftAt.set(step.points, step.left);
+  const end = Math.max(...leftAt.keys());
+  let left = max;
+  let line = '';
+  for (let points = 0; points <= end; points++) {
+    if (leftAt.has(points)) left = leftAt.get(points);
+    const level = max > 1 ? Math.log(Math.max(1, left)) / Math.log(max) : 0;
+    line += SPARKS[Math.min(SPARKS.length - 1, Math.max(0, Math.round(level * (SPARKS.length - 1))))];
+  }
+  return line;
+}
+
 // Restore codes carry results between devices: [day number, score or -1 for a
 // loss] pairs, JSON then base64url. Not tamper-proof; it's a daily puzzle.
 export function encodeResults(results) {

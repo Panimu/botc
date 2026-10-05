@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
-  par, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts, FREEZE_EVERY,
+  par, parRun, sparkline, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts, FREEZE_EVERY,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -204,4 +204,16 @@ test("par's path runs from the full town to one character and ends on par's scor
       assert.ok(s.left < path[i].left, 'every move narrows the town');
     });
   }
+});
+
+test('share sparklines: one block per point, full town tallest, one character lowest', () => {
+  // 156 → 40 → 9 → 2 (wrong guess) → right guess (free, same point) → 1
+  const path = [{ left: 156, points: 0 }, { left: 40, points: 1 }, { left: 9, points: 2 }, { left: 2, points: 3 }, { left: 1, points: 3 }];
+  const line = sparkline(path, 156);
+  assert.equal([...line].length, 4);
+  assert.equal(line[0], '█');
+  assert.equal(line.at(-1), '▁');
+  assert.ok([...line].every((c, i, a) => i === 0 || c <= a[i - 1]), 'never rises');
+  const { path: parPath, score } = parRun(addDays(LAUNCH_DATE, 1), characters, questions);
+  if (score != null) assert.equal([...sparkline(parPath, parPath[0].left)].length, score + 1);
 });
