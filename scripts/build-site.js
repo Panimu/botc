@@ -74,6 +74,7 @@ async function build() {
   await cp(join(root, 'manifest.webmanifest'), join(out, 'manifest.webmanifest'));
   await writeServiceWorker();
   await writeFile(join(out, '.nojekyll'), '');
+  await cp(join(root, '.htaccess'), join(out, '.htaccess'));
 
   await writeJson('data/characters.json', await readJson('data/characters.json'));
   const files = await readJson('data/questions/index.json');

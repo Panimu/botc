@@ -443,7 +443,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const stampOf = (d) => d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
     const url = location.href.split(/[?#]/)[0];
     const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Clocktower Daily Hunt//EN', 'BEGIN:VEVENT',
-      'UID:clocktower-daily-hunt-reminder@panimu.github.io', `DTSTAMP:${stampOf(new Date())}`, `DTSTART:${stampOf(next)}`,
+      'UID:clocktower-daily-hunt-reminder@botc.panimu.com', `DTSTAMP:${stampOf(new Date())}`, `DTSTART:${stampOf(next)}`,
       'DURATION:PT10M', 'RRULE:FREQ=DAILY', 'SUMMARY:Clocktower Daily Hunt', `DESCRIPTION:A new hunt is ready: ${url}`, `URL:${url}`,
       'BEGIN:VALARM', 'TRIGGER:PT0M', 'ACTION:DISPLAY', 'DESCRIPTION:A new Clocktower hunt is ready', 'END:VALARM',
       'END:VEVENT', 'END:VCALENDAR'].join('\r\n');

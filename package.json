@@ -7,6 +7,7 @@
     "serve": "node scripts/build-site.js && python -m http.server 8000 -d _site",
     "validate": "node scripts/validate.js",
     "test": "node --test",
-    "build": "node scripts/build-site.js"
+    "build": "node scripts/build-site.js",
+    "deploy-zip": "node scripts/validate.js && node --test && node scripts/deploy-zip.js"
   }
 }

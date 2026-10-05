@@ -1,0 +1,12 @@
+# Apache settings for botc.panimu.com (Mythic Beasts). Published from _site/.
+# Pages, the service worker and the manifest are revalidated on every visit,
+# so a new deploy shows up at once; scripts, styles and data carry ?v=<commit>
+# in their URLs, so they can be cached normally.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|webmanifest)$|^sw\.js$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+</IfModule>
