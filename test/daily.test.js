@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
+  par, encodeResults, decodeResults, archiveDate, pastHunts, FREEZE_EVERY,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -108,4 +109,41 @@ test("from the start date, yesterday's character begins eliminated", async () =>
   assert.ok(!game.pool.includes(game.yesterday));
   assert.ok(game.pool.includes(game.target));
   assert.equal(game.pool.length, characters.length - 1);
+});
+
+test('par is deterministic and a real score', () => {
+  const date = addDays(LAUNCH_DATE, 4);
+  const a = par(date, characters, questions);
+  assert.equal(a, par(date, characters, questions));
+  assert.ok(Number.isInteger(a) && a >= 1 && a < 40, `par ${a}`);
+});
+
+test('a missed day spends a streak freeze earned by winning; losses still break streaks', () => {
+  const results = {};
+  for (let i = 0; i < FREEZE_EVERY; i++) results[addDays('2026-11-01', i)] = { won: true, score: 7 };
+  const missed = addDays('2026-11-01', FREEZE_EVERY);
+  const after = addDays('2026-11-01', FREEZE_EVERY + 1);
+  results[after] = { won: true, score: 6 };
+  const s = streaks(results, after);
+  assert.deepEqual(s.frozen, [missed]);
+  assert.equal(s.current, FREEZE_EVERY + 1);
+  assert.equal(s.freezes, 0);
+  results[addDays('2026-11-01', FREEZE_EVERY + 2)] = { won: false, score: null };
+  assert.equal(streaks(results, addDays('2026-11-01', FREEZE_EVERY + 2)).current, 0);
+});
+
+test('restore codes round-trip results', () => {
+  const results = { [LAUNCH_DATE]: { won: true, score: 8 }, [addDays(LAUNCH_DATE, 2)]: { won: false, score: null } };
+  assert.deepEqual(decodeResults(encodeResults(results)), results);
+  assert.throws(() => decodeResults('not-a-code'));
+});
+
+test('archive dates must be real past hunts', () => {
+  const today = addDays(LAUNCH_DATE, 5);
+  assert.equal(archiveDate(addDays(LAUNCH_DATE, 1), today), addDays(LAUNCH_DATE, 1));
+  assert.equal(archiveDate(today, today), null, 'today is not the archive');
+  assert.equal(archiveDate('2020-01-01', today), null);
+  assert.equal(archiveDate('2026-02-30', today), null);
+  assert.equal(pastHunts(today).length, 5);
+  assert.equal(pastHunts(today)[0].number, 5);
 });

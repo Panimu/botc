@@ -105,7 +105,7 @@ export function createPoolList(container, headingEl, characters) {
 }
 
 // Copy to the clipboard, with a fallback for browsers without the async API.
-async function copyText(text) {
+export async function copyText(text) {
   try {
     await navigator.clipboard.writeText(text);
     return true;

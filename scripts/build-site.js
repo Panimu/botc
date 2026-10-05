@@ -40,6 +40,9 @@ async function build() {
   await cp(join(root, 'resources/characters'), join(out, 'resources/characters'), { recursive: true });
   await cp(join(root, 'resources/community'), join(out, 'resources/community'), { recursive: true });
   await cp(join(root, 'resources/og'), join(out, 'resources/og'), { recursive: true });
+  await cp(join(root, 'resources/icons'), join(out, 'resources/icons'), { recursive: true });
+  await cp(join(root, 'manifest.webmanifest'), join(out, 'manifest.webmanifest'));
+  await copyStamped('sw.js');
   await writeFile(join(out, '.nojekyll'), '');
 
   await writeJson('data/characters.json', await readJson('data/characters.json'));
@@ -58,7 +61,7 @@ async function* textFiles(dir) {
   for (const name of await readdir(dir)) {
     const path = join(dir, name);
     if ((await stat(path)).isDirectory()) yield* textFiles(path);
-    else if (['.html', '.js', '.css', '.json'].includes(extname(name))) yield path;
+    else if (['.html', '.js', '.css', '.json', '.webmanifest'].includes(extname(name))) yield path;
   }
 }
 

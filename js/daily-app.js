@@ -1,13 +1,21 @@
 // The daily hunt page: choose questions to find the day's hidden character.
-// Game rules live in js/daily.js; this file only renders and stores progress.
-import { DailyGame, replay, streaks, utcDate, EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES } from './daily.js?v=dev';
+// Game rules live in js/daily.js; this file renders, stores progress and
+// handles the extras (par, charts, archive, streak backup, install, reminder).
+import {
+  DailyGame, replay, streaks, utcDate, par, encodeResults, decodeResults, archiveDate, pastHunts,
+  EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, FREEZE_EVERY, MAX_FREEZES,
+} from './daily.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
-import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson, setupShare } from './shared.js?v=dev';
+import { timelineChart, scoresChart } from './charts.js?v=dev';
+import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson, setupShare, copyText } from './shared.js?v=dev';
 import { restore, load, save as persist, requestPersistence } from './storage.js?v=dev';
 
 const PROGRESS_KEY = 'daily-progress';
-const guessesLeft = (n) => `${n} wrong ${n === 1 ? 'guess' : 'guesses'}`;
+const PRACTICE_KEY = 'daily-practice-progress';
 const RESULTS_KEY = 'daily-results';
+const guessesLeft = (n) => `${n} wrong ${n === 1 ? 'guess' : 'guesses'}`;
+const NUMBER_WORDS = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+const longDate = (date) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
 
 // Durable storage (js/storage.js); the hunt still works if storage is unavailable.
 const store = { get: load, set: persist };
@@ -24,20 +32,51 @@ async function hostClockOffset() {
   }
 }
 
+// "two under par", "level with par", "one over par"
+function versusPar(score, parScore) {
+  if (parScore == null) return '';
+  const diff = score - parScore;
+  if (diff === 0) return 'level with par';
+  const n = Math.abs(diff);
+  return `${NUMBER_WORDS[n] ?? n} ${diff < 0 ? 'under' : 'over'} par`;
+}
+
+// A restore link in the address bar (#restore=…) merges its results into this device's.
+function applyRestoreLink() {
+  const match = location.hash.match(/^#restore=([A-Za-z0-9_-]+)$/);
+  if (!match) return null;
+  history.replaceState(null, '', location.pathname + location.search);
+  try {
+    const incoming = decodeResults(match[1]);
+    const results = store.get(RESULTS_KEY, {});
+    store.set(RESULTS_KEY, { ...incoming, ...results });
+    return `Restored ${plural(Object.keys(incoming).length, 'hunt result')} from your restore link.`;
+  } catch {
+    return 'That restore link isn’t valid, so nothing was changed.';
+  }
+}
+
 function start(characters, questions, clockOffset, shareQuotes) {
   const now = () => new Date(Date.now() + clockOffset);
-  const date = utcDate(now());
+  const today = utcDate(now());
+  const practiceDate = archiveDate(new URLSearchParams(location.search).get('date'), today);
+  const practice = Boolean(practiceDate);
+  const date = practiceDate ?? today;
+  const progressKey = practice ? PRACTICE_KEY : PROGRESS_KEY;
   const byId = new Map(characters.map((c) => [c.id, c]));
-  const saved = store.get(PROGRESS_KEY, null);
+  const parScore = par(date, characters, questions);
+
+  const saved = store.get(progressKey, null);
   let actions = saved?.date === date ? saved.actions : [];
   let game = new DailyGame({ characters, questions, date });
   try {
     replay(game, actions);
   } catch {
-    // Saved progress no longer replays (e.g. the questions changed): start today's hunt afresh.
+    // Saved progress no longer replays (e.g. the questions changed): start the hunt afresh.
     game = new DailyGame({ characters, questions, date });
     actions = [];
   }
+  const startCount = game.characters.length - (game.yesterday ? 1 : 0);
 
   const announcer = $('announcer');
   const renderPool = createPoolList($('pool-groups'), $('pool-heading'), characters);
@@ -50,11 +89,11 @@ function start(characters, questions, clockOffset, shareQuotes) {
   });
 
   function save() {
-    store.set(PROGRESS_KEY, { date, actions });
-    if (game.status !== 'playing') {
+    store.set(progressKey, { date, actions });
+    if (!practice && game.status !== 'playing') {
       const results = store.get(RESULTS_KEY, {});
       if (!results[date]) {
-        results[date] = { won: game.status === 'won', score: game.score };
+        results[date] = { won: game.status === 'won', score: game.status === 'won' ? game.score : null };
         store.set(RESULTS_KEY, results);
         requestPersistence();
       }
@@ -71,10 +110,13 @@ function start(characters, questions, clockOffset, shareQuotes) {
   function renderOffers() {
     const offers = game.status === 'playing' ? game.offers : [];
     $('hunt-heading').hidden = !offers.length;
-    $('offers').replaceChildren(...offers.map((q) => {
+    $('offers').replaceChildren(...offers.map((q, i) => {
       const button = el('button', 'offer');
       button.type = 'button';
-      button.append(el('span', 'offer-text', q.plain), el('span', 'offer-id', q.id));
+      button.setAttribute('aria-keyshortcuts', String(i + 1));
+      const key = el('kbd', 'offer-key', String(i + 1));
+      key.setAttribute('aria-hidden', 'true');
+      button.append(el('span', 'offer-text', q.plain), el('span', 'offer-id', q.id), key);
       button.addEventListener('click', () => ask(q.id));
       return button;
     }));
@@ -86,10 +128,11 @@ function start(characters, questions, clockOffset, shareQuotes) {
       ? `Guessing opens when ${GUESS_THRESHOLD} or fewer remain.` : '';
     if (!game.canGuess) return;
     const left = MAX_WRONG_GUESSES - game.wrongGuesses.length;
-    $('guess-hint').textContent = `Guessing is open: tap a token in the circle, or pick a name. A wrong guess costs a point, and you have ${guessesLeft(left)} left.`;
+    $('guess-hint').textContent = `Guessing is open: tap a token, or pick a name (arrow keys move, Enter picks). A wrong guess costs a point, and you have ${guessesLeft(left)} left.`;
     $('candidates').replaceChildren(...game.pool.map((id) => {
       const button = el('button', `candidate${selected === id ? ' selected' : ''}`);
       button.type = 'button';
+      button.dataset.id = id;
       const art = el('img', 'candidate-art');
       art.alt = '';
       setArt(art, byId.get(id));
@@ -105,11 +148,10 @@ function start(characters, questions, clockOffset, shareQuotes) {
 
   // The asked questions and wrong guesses, newest last.
   function historyItems() {
-    const items = [];
-    game.history.forEach((h, i) => {
+    const items = game.history.map((h) => {
       const li = el('li');
       li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'), el('span', 'path-id', ` ${h.question.id}`));
-      items.push(li);
+      return li;
     });
     for (const id of game.wrongGuesses) items.push(el('li', 'wrong-guess', `Guessed the ${byId.get(id).name}: wrong`));
     return items;
@@ -126,6 +168,23 @@ function start(characters, questions, clockOffset, shareQuotes) {
     $('path').hidden = playing || count === 0;
   }
 
+  // Characters left after each action, for the timeline chart.
+  function timelineSteps() {
+    const replayGame = new DailyGame({ characters, questions, date });
+    const steps = [{ label: 'start', left: replayGame.pool.length, kind: 'start' }];
+    let asked = 0;
+    for (const action of actions) {
+      if (replayGame.status !== 'playing') break;
+      if (action.ask) { replayGame.ask(action.ask); asked++; steps.push({ label: String(asked), left: replayGame.pool.length, kind: 'ask' }); }
+      else if (action.guess) {
+        const right = action.guess === replayGame.target;
+        replayGame.guess(action.guess);
+        steps.push({ label: byId.get(action.guess).name, left: right ? 1 : replayGame.pool.length, kind: right ? 'ask' : 'guess' });
+      }
+    }
+    return steps;
+  }
+
   // Spoiler-free: 👍/👎 per answer, 🪦 per wrong guess (an innocent executed),
   // 🎯 for the right guess, 🔍 when the questions alone found it, 💀 for a loss.
   function shareTexts() {
@@ -136,17 +195,18 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const guesses = '🪦'.repeat(game.wrongGuesses.length);
     const finish = game.status === 'won' ? (solvedByQuestions ? '🔍' : '🎯') : '💀';
     const marks = [answers, guesses, finish].filter(Boolean).join(' ');
-    const { current } = streaks(store.get(RESULTS_KEY, {}), date);
-    const verdict = game.status === 'won' ? `🎯 Found in ${game.score}` : '💀 The town failed';
-    const streak = current > 1 ? ` | 🔥 ${current}-day streak` : '';
+    const { current } = streaks(store.get(RESULTS_KEY, {}), today);
+    const parText = game.status === 'won' && parScore != null ? ` (${versusPar(game.score, parScore)})` : '';
+    const verdict = game.status === 'won' ? `🎯 Found in ${game.score}${parText}` : '💀 The town failed';
+    const streak = !practice && current > 1 ? ` | 🔥 ${current}-day streak` : '';
+    const title = `Clocktower Daily Hunt #${game.number}${practice ? ' (practice)' : ''}`;
     const quote = game.status !== 'playing' ? shareQuotes[game.target]?.quote : null;
     return {
       url,
-      plain: [`Clocktower Daily Hunt #${game.number}: ${game.status === 'won' ? `found in ${game.score}` : 'not found'}`, marks, current > 1 ? `Streak: ${current}` : '', quote ? `"${quote}"` : '', url].filter(Boolean).join(nl),
-      discord: [`🕰️ **Clocktower Daily Hunt #${game.number}**`, `${verdict}${streak}`, marks, quote ? `> ||${quote}||` : '', `<${url}>`].filter(Boolean).join(nl),
+      plain: [`${title}: ${game.status === 'won' ? `found in ${game.score}${parText}` : 'not found'}`, marks, streak ? `Streak: ${current}` : '', quote ? `"${quote}"` : '', url].filter(Boolean).join(nl),
+      discord: [`🕰️ **${title}**`, `${verdict}${streak}`, marks, quote ? `> ||${quote}||` : '', `<${url}>`].filter(Boolean).join(nl),
     };
   }
-
 
   function renderResult() {
     const over = game.status !== 'playing';
@@ -156,7 +216,9 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const target = game.targetCharacter;
     setArt($('result-art'), target);
     $('result-art').className = `result-art ${side(target.team)}`;
-    $('result-lead').textContent = game.status === 'won' ? `Found in ${plural(game.score, 'point')}. Today's character is the` : "Out of guesses. Today's character was the";
+    $('result-lead').textContent = game.status === 'won'
+      ? `Found in ${plural(game.score, 'point')}, ${versusPar(game.score, parScore)}. ${practice ? 'That hunt' : 'Today'}'s character ${practice ? 'was' : 'is'} the`
+      : `Out of guesses. ${practice ? 'That hunt' : 'Today'}'s character was the`;
     $('result-name').textContent = target.name;
     $('result-team').className = `result-team ${side(target.team)}`;
     $('result-team').textContent = teamLabel(target.team);
@@ -164,14 +226,38 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const quote = shareQuotes[target.id];
     $('share-quote').hidden = !quote;
     if (quote) $('share-quote-text').textContent = quote.quote;
-    const s = streaks(store.get(RESULTS_KEY, {}), date);
-    const stats = [['Current streak', s.current], ['Best streak', s.best], ['Played', s.played], ['Won', s.wins]];
+
+    const results = store.get(RESULTS_KEY, {});
+    const s = streaks(results, today);
+    const stats = [['Current streak', s.current], ['Best streak', s.best], ['Played', s.played], ['Streak freezes', s.freezes]];
     $('stats').replaceChildren(...stats.flatMap(([term, value]) => [el('dt', '', term), el('dd', '', String(value))]));
+    $('stats').hidden = practice;
+    timelineChart($('timeline-chart'), timelineSteps());
+    scoresChart($('scores-chart'), results, practice ? undefined : game.status === 'won' ? game.score : null);
+    $('scores-figure').hidden = practice || Object.keys(results).length === 0;
+    $('freeze-text').textContent = `You hold ${plural(s.freezes, 'streak freeze')} (at most ${MAX_FREEZES}). You earn one for every ${FREEZE_EVERY} hunts you win, and a missed day spends one instead of breaking your streak.${s.frozen.length ? ` Frozen so far: ${s.frozen.map(longDate).join(', ')}.` : ''}`;
+    $('keep').hidden = practice;
+    $('countdown').hidden = practice;
+  }
+
+  function renderPast() {
+    const results = store.get(RESULTS_KEY, {});
+    const hunts = pastHunts(today);
+    $('past').hidden = hunts.length === 0;
+    $('past-list').replaceChildren(...hunts.map(({ number, date: d }) => {
+      const li = el('li');
+      const link = el('a', '', `Hunt #${number}, ${longDate(d)}`);
+      link.href = `?date=${d}`;
+      if (d === date) link.setAttribute('aria-current', 'page');
+      const r = results[d];
+      li.append(link, el('span', 'past-result', r ? (r.won ? `found in ${r.score}` : 'not found') : 'not played'));
+      return li;
+    }));
   }
 
   function renderCountdown() {
     const t = now();
-    if (utcDate(t) !== date) {
+    if (!practice && utcDate(t) !== date) {
       // A new UTC day started while the page was open: this page still holds yesterday's hunt.
       $('new-day').hidden = false;
       $('countdown').textContent = "Today's hunt is ready.";
@@ -185,9 +271,12 @@ function start(characters, questions, clockOffset, shareQuotes) {
   function render({ focus = null } = {}) {
     if (selected && (!game.canGuess || !game.pool.includes(selected))) selected = null;
     $('hunt-number').textContent = `Hunt #${game.number}`;
+    $('archive-banner').hidden = !practice;
+    if (practice) $('archive-text').textContent = `Practice: Hunt #${game.number} from ${longDate(date)}. This won't affect your streak.`;
     const yesterday = game.yesterday && byId.get(game.yesterday);
     $('yesterday-note').hidden = !yesterday || game.status !== 'playing';
-    if (yesterday) $('yesterday-note').textContent = `Yesterday's character, the ${yesterday.name}, can't come up two days running, so they start out of the circle.`;
+    if (yesterday) $('yesterday-note').textContent = `The previous day's character, the ${yesterday.name}, can't come up two days running, so they start out of the circle.`;
+    $('hunt-par').textContent = parScore != null ? `Par ${parScore}` : '';
     $('hunt-score').textContent = `${plural(game.score, 'point')} so far`;
     $('hunt-guesses').textContent = `${game.wrongGuesses.length} of ${MAX_WRONG_GUESSES} wrong guesses`;
     $('last-answer').hidden = !lastReply;
@@ -199,6 +288,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     renderGuessing();
     renderPath();
     renderResult();
+    renderPast();
     renderPool(game.pool, game.status === 'playing' ? 'All remaining characters' : 'Characters left at the end');
     circle(game.pool, {
       results: game.status === 'won' ? [game.targetCharacter] : [],
@@ -208,16 +298,26 @@ function start(characters, questions, clockOffset, shareQuotes) {
     if (focus) $(focus)?.focus();
   }
 
+  // A rubber stamp on the answer: YES or NO lands on the card.
+  function stamp(answer) {
+    const s = $('stamp');
+    s.textContent = answer ? 'YES' : 'NO';
+    s.className = `stamp ${answer ? 'stamp-yes' : 'stamp-no'}`;
+    void s.offsetWidth; // restart the animation
+    s.classList.add('stamped');
+  }
+
   function ask(id) {
     const before = game.pool.length;
     const question = game.offers.find((q) => q.id === id);
+    if (!question) return;
     const answer = game.ask(id);
     actions = [...actions, { ask: id }];
-    const ruled = before - game.pool.length;
-    lastReply = { question: question.plain, reply: `${answer ? 'Yes' : 'No'}. That ruled out ${plural(ruled, 'character')}.` };
+    lastReply = { question: question.plain, reply: `${answer ? 'Yes' : 'No'}. That ruled out ${plural(before - game.pool.length, 'character')}.` };
     save();
     announcer.textContent = `${lastReply.question} ${lastReply.reply} ${game.pool.length} left.`;
     render({ focus: game.status === 'playing' ? 'hunt-heading' : 'result-name' });
+    if (game.status === 'playing') stamp(answer);
   }
 
   function guess() {
@@ -230,7 +330,56 @@ function start(characters, questions, clockOffset, shareQuotes) {
     save();
     announcer.textContent = right ? `Yes, it's the ${name}!` : `Not the ${name}. ${guessesLeft(MAX_WRONG_GUESSES - game.wrongGuesses.length)} left.`;
     render({ focus: game.status === 'playing' ? 'guess-hint' : 'result-name' });
+    if (!right && game.status === 'playing') stamp(false);
   }
+
+  // Keyboard: 1/2/3 ask the offered questions; arrow keys move through the guess candidates.
+  document.addEventListener('keydown', (event) => {
+    if (event.ctrlKey || event.metaKey || event.altKey || event.repeat) return;
+    if (event.target instanceof Element && event.target.closest('input, textarea, select')) return;
+    const index = ['1', '2', '3'].indexOf(event.key);
+    if (index >= 0 && game.status === 'playing' && game.offers[index]) { event.preventDefault(); ask(game.offers[index].id); }
+  });
+  $('candidates').addEventListener('keydown', (event) => {
+    const buttons = [...$('candidates').querySelectorAll('button')];
+    const at = buttons.indexOf(document.activeElement);
+    if (at < 0) return;
+    const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+    if (!step) return;
+    event.preventDefault();
+    buttons[(at + step + buttons.length) % buttons.length].focus();
+  });
+
+  // Keep your streak: restore link, calendar reminder, install.
+  $('copy-restore').addEventListener('click', async () => {
+    const link = `${location.href.split(/[?#]/)[0]}#restore=${encodeResults(store.get(RESULTS_KEY, {}))}`;
+    $('keep-status').textContent = (await copyText(link)) ? 'Restore link copied. Keep it somewhere safe.' : `Copy this link by hand: ${link}`;
+  });
+  $('add-reminder').addEventListener('click', () => {
+    const next = new Date(Date.UTC(now().getUTCFullYear(), now().getUTCMonth(), now().getUTCDate() + 1, 0, 5));
+    const stampOf = (d) => d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+    const url = location.href.split(/[?#]/)[0];
+    const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Clocktower Daily Hunt//EN', 'BEGIN:VEVENT',
+      'UID:clocktower-daily-hunt-reminder@panimu.github.io', `DTSTAMP:${stampOf(new Date())}`, `DTSTART:${stampOf(next)}`,
+      'DURATION:PT10M', 'RRULE:FREQ=DAILY', 'SUMMARY:Clocktower Daily Hunt', `DESCRIPTION:A new hunt is ready: ${url}`, `URL:${url}`,
+      'BEGIN:VALARM', 'TRIGGER:PT0M', 'ACTION:DISPLAY', 'DESCRIPTION:A new Clocktower hunt is ready', 'END:VALARM',
+      'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+    const link = Object.assign(document.createElement('a'), { href: URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })), download: 'clocktower-daily-hunt.ics' });
+    link.click();
+    URL.revokeObjectURL(link.href);
+    $('keep-status').textContent = 'Reminder downloaded. Open it to add a daily event (just after midnight UTC, in your local time) to your calendar.';
+  });
+  let installPrompt = null;
+  window.addEventListener('beforeinstallprompt', (event) => { event.preventDefault(); installPrompt = event; $('install-app').hidden = false; });
+  $('install-app').addEventListener('click', async () => {
+    if (!installPrompt) return;
+    installPrompt.prompt();
+    await installPrompt.userChoice;
+    installPrompt = null;
+    $('install-app').hidden = true;
+  });
+  const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !matchMedia('(display-mode: standalone)').matches;
+  $('install-hint').hidden = !ios;
 
   $('guess-confirm').addEventListener('click', guess);
   setupShare($('share-options'), $('share-status'), shareTexts);
@@ -243,12 +392,15 @@ function start(characters, questions, clockOffset, shareQuotes) {
 
 try {
   setupThemeToggle();
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
   const [{ characters, questions }, , clockOffset, shareQuotes] = await Promise.all([
     loadGameData({ exclude: EXCLUDED_FILES }),
-    restore([PROGRESS_KEY, RESULTS_KEY]),
+    restore([PROGRESS_KEY, PRACTICE_KEY, RESULTS_KEY]),
     hostClockOffset(),
     loadJson('data/share-quotes.json?v=dev').catch(() => ({})),
   ]);
+  const restored = applyRestoreLink();
+  if (restored) { $('restore-status').textContent = restored; $('restore-status').hidden = false; }
   start(characters, questions, clockOffset, shareQuotes);
 } catch (error) {
   console.error(error);

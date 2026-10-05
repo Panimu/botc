@@ -1016,3 +1016,103 @@ body {
   color: var(--dim);
 }
 .nearly-art { width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--parchment); object-fit: contain; filter: grayscale(0.6); }
+
+/* ===== Daily hunt extras: par, stamp, charts, streak keeping, archive ===== */
+:root { --chart: #9a650a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --chart: #b98425; } }
+:root[data-theme="dark"] { --chart: #b98425; }
+
+.restore-status, .archive-banner {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--brass);
+  border-radius: 1rem;
+  background: var(--panel);
+  text-align: left;
+}
+.archive-banner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.25rem 1rem; }
+.archive-banner p { margin: 0; font-weight: 700; }
+.archive-banner a { color: var(--text); }
+
+/* Answer stamp */
+.last-answer { position: relative; overflow: hidden; }
+.last-answer .last-question, .last-answer .last-reply { padding-right: 4.5rem; }
+.stamp {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.75rem;
+  padding: 0 0.5rem;
+  border: 3px solid currentColor;
+  border-radius: 0.4rem;
+  font: 400 1.4rem/1.2 var(--display);
+  letter-spacing: 0.06em;
+  opacity: 0;
+  transform: rotate(-10deg);
+  pointer-events: none;
+}
+.stamp-yes { color: var(--good); }
+.stamp-no { color: var(--evil); }
+.stamp.stamped { animation: stamp-in 520ms cubic-bezier(0.2, 1.4, 0.4, 1) forwards; }
+@keyframes stamp-in {
+  from { opacity: 0; transform: rotate(-24deg) scale(2.2); }
+  to { opacity: 0.9; transform: rotate(-10deg) scale(1); }
+}
+
+/* Keyboard hints on the offers */
+.offer { padding-right: 2.75rem; }
+.offer-key {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.9rem;
+  min-width: 1.4rem;
+  padding: 0 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 0.3rem;
+  color: var(--dim);
+  font: 700 0.8rem/1.4 var(--body);
+  text-align: center;
+}
+@media (pointer: coarse) { .offer-key { display: none; } .offer { padding-right: 1rem; } }
+
+/* Charts */
+.chart { margin: 1.5rem 0 0; text-align: left; }
+.chart figcaption { margin-bottom: 0.4rem; font: 400 1.3rem/1.2 var(--display); }
+.timeline { display: block; width: 100%; height: auto; overflow: visible; }
+.timeline .grid { stroke: var(--line); stroke-width: 1; }
+.timeline .tick { fill: var(--dim); font: 400 11px var(--body); }
+.timeline .value { fill: var(--text); font: 700 12px var(--body); }
+.timeline .line { fill: none; stroke: var(--chart); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.timeline .point { fill: var(--chart); stroke: var(--panel); stroke-width: 2; }
+.timeline .point.hollow { fill: var(--panel); stroke: var(--chart); stroke-width: 2; }
+.scores { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3rem; }
+.scores li { display: grid; grid-template-columns: 3rem 1fr; align-items: center; gap: 0.5rem; }
+.scores .score { color: var(--dim); text-align: right; font-weight: 700; }
+.scores .bar {
+  box-sizing: border-box;
+  width: var(--w);
+  min-width: 2rem;
+  padding: 0.05rem 0.5rem;
+  border-radius: 0 4px 4px 0;
+  background: var(--line);
+  color: var(--text);
+  text-align: right;
+  font-weight: 700;
+}
+.scores .today .bar { background: var(--chart); color: var(--panel); }
+.scores .today .score { color: var(--text); }
+
+/* Keep your streak, and past hunts */
+.keep, .past { margin-top: 1.25rem; text-align: left; }
+.keep > summary, .past > summary { cursor: pointer; font-weight: 700; min-height: 2.75rem; display: flex; align-items: center; gap: 0.4rem; list-style: none; }
+.keep > summary::-webkit-details-marker, .past > summary::-webkit-details-marker { display: none; }
+.keep > summary::before, .past > summary::before { content: "▸"; }
+.keep[open] > summary::before, .past[open] > summary::before { content: "▾"; }
+.keep-body p { margin: 0 0 0.6rem; }
+.keep-actions { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-bottom: 0.5rem; }
+.keep-hint { color: var(--dim); }
+.past { width: 100%; }
+.past-list { list-style: none; margin: 0.25rem 0 0; padding: 0; columns: 2 16rem; column-gap: 2rem; }
+.past-list li { display: flex; justify-content: space-between; gap: 0.75rem; padding: 0.35rem 0; break-inside: avoid; border-bottom: 1px solid var(--line); }
+.past-list a { color: var(--text); }
+.past-list a[aria-current="page"] { font-weight: 700; }
+.past-result { color: var(--dim); white-space: nowrap; }

@@ -93,6 +93,9 @@ export function createCircle({ root, ring, count, label, characters, side, onSel
   root.addEventListener('pointerover', showName);
 
   let seats = null; // id -> seat angle, fixed from the moment the town sits down
+  let previouslyAlive = new Set(ordered.map((c) => c.id));
+  // Beads knocked out by one answer fade in a ripple round the ring, not all at once.
+  const RIPPLE_MS = 600;
 
   return function render(pool, { results = [], selectable: canSelect = false, selected = null, wrong = [] } = {}) {
     selectable = canSelect;
@@ -111,6 +114,10 @@ export function createCircle({ root, ring, count, label, characters, side, onSel
       justSeated = true;
     }
     root.classList.toggle('seated', seated);
+    const knockedOut = seated ? [] : ordered.filter((c) => previouslyAlive.has(c.id) && !alive.has(c.id)).map((c) => c.id);
+    const rippleStep = knockedOut.length ? Math.min(14, RIPPLE_MS / knockedOut.length) : 0;
+    const rippleOrder = new Map(knockedOut.map((id, i) => [id, i]));
+    previouslyAlive = alive;
 
     for (const [id, { li, img, src, beadAngle }] of tokens) {
       const seat = seats?.get(id);
@@ -119,7 +126,8 @@ export function createCircle({ root, ring, count, label, characters, side, onSel
         : alive.has(id) ? 'seat' : 'seat-out';
       // Only the moment of sitting down floats slowly; later changes use the default.
       const floating = justSeated && state === 'seat';
-      li.style.setProperty('--delay', floating ? `${Math.round(Math.random() * SEAT_STAGGER_MS)}ms` : '0ms');
+      const delay = floating ? Math.random() * SEAT_STAGGER_MS : rippleOrder.has(id) ? rippleOrder.get(id) * rippleStep : 0;
+      li.style.setProperty('--delay', `${Math.round(delay)}ms`);
       li.style.setProperty('--dur', floating ? `${SEAT_FLOAT_MS}ms` : '');
       li.style.setProperty('--a', `${seat ?? beadAngle}deg`);
       li.dataset.state = state;

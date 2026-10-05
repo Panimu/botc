@@ -165,21 +165,80 @@ export function replay(game, actions) {
   return game;
 }
 
-// Streak bookkeeping over { date: { won, score } } results.
+// Streak bookkeeping over { date: { won, score } } results, walking day by day.
+// A missed day spends a streak freeze if one is held; a loss breaks the streak.
+// One freeze is earned per FREEZE_EVERY wins, holding at most MAX_FREEZES.
+export const FREEZE_EVERY = 7;
+export const MAX_FREEZES = 2;
+
 export function streaks(results, today) {
-  const won = (date) => results[date]?.won === true;
-  const prev = (date) => fromUtc(toUtc(date) - DAY_MS);
-  let current = 0;
-  let day = won(today) || results[today] ? today : prev(today);
-  while (won(day)) { current++; day = prev(day); }
-  let best = 0;
-  let run = 0;
   const dates = Object.keys(results).sort();
-  dates.forEach((date, i) => {
-    run = won(date) && (i > 0 && dates[i - 1] === prev(date) && won(dates[i - 1])) ? run + 1 : won(date) ? 1 : 0;
-    best = Math.max(best, run);
-  });
-  const played = dates.length;
-  const wins = dates.filter(won).length;
-  return { current, best, played, wins };
+  const wins = dates.filter((d) => results[d]?.won === true).length;
+  const summary = { current: 0, best: 0, played: dates.length, wins, freezes: 0, frozen: [] };
+  if (!dates.length) return summary;
+  let streak = 0;
+  let wonSoFar = 0;
+  for (let day = dates[0]; day <= today; day = fromUtc(toUtc(day) + DAY_MS)) {
+    const result = results[day];
+    if (result?.won) {
+      streak++;
+      wonSoFar++;
+      if (wonSoFar % FREEZE_EVERY === 0) summary.freezes = Math.min(MAX_FREEZES, summary.freezes + 1);
+    } else if (result) {
+      streak = 0;
+    } else if (day !== today) {
+      if (summary.freezes > 0) { summary.freezes--; summary.frozen.push(day); } else streak = 0;
+    }
+    summary.best = Math.max(summary.best, streak);
+  }
+  summary.current = streak;
+  return summary;
+}
+
+// Par: the score a sensible player gets today without knowing the answer. It
+// always asks the offered question that splits the remaining town most evenly,
+// and guesses (alphabetically) only when no question can split what's left.
+export function par(date, characters, questions) {
+  const game = new DailyGame({ characters, questions, date });
+  const names = new Map(characters.map((c) => [c.id, c.name]));
+  while (game.status === 'playing') {
+    if (game.offers.length) {
+      const even = (q) => Math.abs(game.pool.filter((id) => q.yesSet.has(id)).length - game.pool.length / 2);
+      game.ask([...game.offers].sort((a, b) => even(a) - even(b))[0].id);
+    } else {
+      game.guess([...game.pool].sort((a, b) => names.get(a).localeCompare(names.get(b)))[0]);
+    }
+  }
+  return game.status === 'won' ? game.score : null;
+}
+
+// Restore codes carry results between devices: [day number, score or -1 for a
+// loss] pairs, JSON then base64url. Not tamper-proof; it's a daily puzzle.
+export function encodeResults(results) {
+  const pairs = Object.entries(results).sort().map(([date, r]) => [dayNumber(date), r.won ? r.score : -1]);
+  const json = JSON.stringify({ v: 1, r: pairs });
+  return btoa(json).replaceAll('+', '-').replaceAll('/', '_').replace(/=+$/, '');
+}
+
+export function decodeResults(code) {
+  const json = atob(code.replace(/-/g, '+').replace(/_/g, '/'));
+  const data = JSON.parse(json);
+  if (data?.v !== 1 || !Array.isArray(data.r)) throw new Error('Unrecognised restore code');
+  return Object.fromEntries(data.r.map(([day, score]) => [
+    fromUtc(toUtc(LAUNCH_DATE) + day * DAY_MS),
+    score >= 0 ? { won: true, score } : { won: false, score: null },
+  ]));
+}
+
+// Every hunt from launch up to (not including) today, newest first, for the archive.
+export function pastHunts(today) {
+  const list = [];
+  for (let day = dayNumber(today) - 1; day >= 0; day--) list.push({ number: day + 1, date: fromUtc(toUtc(LAUNCH_DATE) + day * DAY_MS) });
+  return list;
+}
+
+// A valid archive date: a real YYYY-MM-DD from launch up to yesterday.
+export function archiveDate(requested, today) {
+  if (!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(requested ?? '')) return null;
+  return requested >= LAUNCH_DATE && requested < today && fromUtc(toUtc(requested)) === requested ? requested : null;
 }

@@ -23,6 +23,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="resources/icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/icons/icon-192.png">
   <link rel="stylesheet" href="css/style.css?v=dev">
   <script type="module" src="js/daily-app.js?v=dev"></script>
 </head>
@@ -56,15 +59,23 @@
         <button type="button" class="answer" id="new-day-reload">Load today's hunt</button>
       </div>
 
+      <p class="restore-status" id="restore-status" role="status" hidden></p>
+
+      <div class="archive-banner" id="archive-banner" hidden>
+        <p id="archive-text"></p>
+        <a href="./">Back to today's hunt</a>
+      </div>
+
       <section class="panel hunt-panel" id="hunt-panel" aria-labelledby="hunt-heading">
         <div class="card-head">
           <span class="card-number" id="hunt-number">Loading…</span>
-          <span class="card-left"><span id="hunt-score"></span> <span id="hunt-guesses"></span></span>
+          <span class="card-left"><span id="hunt-par"></span> <span id="hunt-score"></span> <span id="hunt-guesses"></span></span>
         </div>
 
         <p class="yesterday-note" id="yesterday-note" hidden></p>
 
         <div class="last-answer" id="last-answer" hidden>
+          <span class="stamp" id="stamp" aria-hidden="true"></span>
           <p class="last-question" id="last-question"></p>
           <p class="last-reply" id="last-reply"></p>
         </div>
@@ -95,10 +106,38 @@
           <blockquote id="share-quote-text"></blockquote>
         </figure>
         <dl class="stats" id="stats"></dl>
+        <figure class="chart" id="timeline-figure">
+          <figcaption>How the town shrank</figcaption>
+          <div id="timeline-chart"></div>
+        </figure>
+        <figure class="chart" id="scores-figure">
+          <figcaption>Your scores</figcaption>
+          <div id="scores-chart"></div>
+        </figure>
         <div class="share-options" id="share-options"></div>
         <p class="share-status" id="share-status" role="status"></p>
         <p class="countdown" id="countdown"></p>
+
+        <details class="keep" id="keep">
+          <summary>Keep your streak</summary>
+          <div class="keep-body">
+            <p id="freeze-text"></p>
+            <p>Your results live on this device. Save your restore link somewhere safe; opening it on another device, or after clearing your browser, brings your streak back.</p>
+            <div class="keep-actions">
+              <button type="button" class="quiet" id="copy-restore">Copy restore link</button>
+              <button type="button" class="quiet" id="add-reminder">Add a daily reminder to your calendar</button>
+              <button type="button" class="quiet" id="install-app" hidden>Install as an app</button>
+            </div>
+            <p class="keep-hint" id="install-hint" hidden>On iPhone or iPad: tap Share, then Add to Home Screen.</p>
+            <p class="share-status" id="keep-status" role="status"></p>
+          </div>
+        </details>
       </section>
+
+      <details class="past" id="past">
+        <summary>Play a past hunt</summary>
+        <ul class="past-list" id="past-list"></ul>
+      </details>
 
       <section class="path" id="path" aria-labelledby="path-heading" hidden>
         <h2 id="path-heading">Questions asked</h2>
