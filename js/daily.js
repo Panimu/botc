@@ -5,6 +5,14 @@ import { prepare, weightedOptions, drawWeighted, CIRCLE_TARGET } from './engine.
 
 export const LAUNCH_DATE = '2026-10-05';
 export const OFFER_COUNT = 3;
+// Budgets, when a game is given the day's par: par + OVER_PAR_QUESTIONS questions
+// and GUESS_BUDGET guesses. A guess with no guess budget left spends a question
+// instead, so a winning score is at most par + 4. A hunt is lost when no legal
+// move remains with more than one character left.
+export const OVER_PAR_QUESTIONS = 1;
+export const GUESS_BUDGET = 3;
+// The old rules, used without a par (the par solver itself, and hunts saved
+// before budgets): unlimited questions, and three wrong guesses lose.
 export const MAX_WRONG_GUESSES = 3;
 // Guessing opens once the town circle is seated.
 export const GUESS_THRESHOLD = CIRCLE_TARGET.max;
@@ -91,7 +99,10 @@ export function dailyCharacterId(date, characters) {
 }
 
 export class DailyGame {
-  constructor({ characters, questions, date }) {
+  // par: the day's par, which sets the budgets. Leave it out (or null) for the
+  // old unbudgeted rules. Callers compute it separately: par() itself builds
+  // a DailyGame, so the constructor can't.
+  constructor({ characters, questions, date, par = null }) {
     this.characters = characters;
     this.questions = questions.map((q) => prepare(q, characters));
     this.date = date;
@@ -102,6 +113,10 @@ export class DailyGame {
     this.pool = characters.map((c) => c.id).filter((id) => id !== this.yesterday);
     this.history = []; // { question, answer, poolBefore }
     this.wrongGuesses = [];
+    this.par = par;
+    this.questionBudget = par == null ? Infinity : par + OVER_PAR_QUESTIONS;
+    this.guessBudget = par == null ? Infinity : GUESS_BUDGET;
+    this.guessesMade = 0;
     this.status = 'playing'; // 'won' | 'lost'
     this.refreshOffers();
   }
@@ -114,18 +129,38 @@ export class DailyGame {
     return this.history.length + this.wrongGuesses.length;
   }
 
+  get budgeted() {
+    return this.par != null;
+  }
+
+  get guessesLeft() {
+    return Math.max(0, this.guessBudget - this.guessesMade);
+  }
+
+  // Guesses beyond the guess budget come out of the question budget.
+  get questionsLeft() {
+    return this.questionBudget - this.history.length - Math.max(0, this.guessesMade - this.guessBudget);
+  }
+
   // Offers depend only on the date and the questions asked so far, so players
-  // who make the same choices see the same offers.
+  // who make the same choices see the same offers. None once the questions run out.
   refreshOffers() {
-    if (this.status !== 'playing' || this.pool.length <= 1) { this.offers = []; return; }
+    if (this.status !== 'playing' || this.pool.length <= 1 || this.questionsLeft <= 0) { this.offers = []; return; }
     const asked = new Set(this.history.map((h) => h.question.id));
     const rng = seededRng(`clocktower-daily|offers|${this.date}|${[...asked].join(',')}`);
     this.offers = drawWeighted(weightedOptions(this.questions, this.pool, asked), rng, OFFER_COUNT);
   }
 
-  // Guessing opens once the circle is seated, or if no question can split the rest.
+  // Guessing opens once the circle is seated, or when no question can be asked
+  // (none splits the rest, or the questions ran out), while a guess can be paid for.
   get canGuess() {
-    return this.status === 'playing' && (this.pool.length <= GUESS_THRESHOLD || this.offers.length === 0);
+    return this.status === 'playing' && (this.pool.length <= GUESS_THRESHOLD || this.offers.length === 0)
+      && (this.guessesLeft > 0 || this.questionsLeft > 0);
+  }
+
+  // Lost when no legal move remains and the character isn't yet found.
+  checkStuck() {
+    if (this.status === 'playing' && this.pool.length > 1 && !this.offers.length && !this.canGuess) this.status = 'lost';
   }
 
   ask(questionId) {
@@ -136,20 +171,23 @@ export class DailyGame {
     this.pool = this.pool.filter((id) => question.yesSet.has(id) === answer);
     if (this.pool.length === 1) this.status = 'won';
     this.refreshOffers();
+    this.checkStuck();
     return answer;
   }
 
   guess(characterId) {
     if (!this.canGuess || !this.pool.includes(characterId)) throw new Error(`Can't guess ${characterId} now`);
+    this.guessesMade++;
     if (characterId === this.target) {
       this.status = 'won';
     } else {
       this.wrongGuesses.push(characterId);
       this.pool = this.pool.filter((id) => id !== characterId);
-      if (this.wrongGuesses.length >= MAX_WRONG_GUESSES) this.status = 'lost';
+      if (!this.budgeted && this.wrongGuesses.length >= MAX_WRONG_GUESSES) this.status = 'lost';
       else if (this.pool.length === 1) this.status = 'won';
     }
     this.refreshOffers();
+    this.checkStuck();
     return characterId === this.target;
   }
 }
@@ -165,34 +203,58 @@ export function replay(game, actions) {
   return game;
 }
 
-// Streak bookkeeping over { date: { won, score } } results, walking day by day.
-// A missed day spends a streak freeze if one is held; a loss breaks the streak.
-// One freeze is earned per FREEZE_EVERY wins, holding at most MAX_FREEZES.
-export const FREEZE_EVERY = 7;
-export const MAX_FREEZES = 2;
-
+// Streak bookkeeping over { date: { won, score, par } } results, walking day by
+// day. Every recorded hunt counts, from before budgets too, so existing streaks
+// carried over. A loss or a missed day (any day but today) ends a streak; there
+// are no freezes.
 export function streaks(results, today) {
   const dates = Object.keys(results).sort();
   const wins = dates.filter((d) => results[d]?.won === true).length;
-  const summary = { current: 0, best: 0, played: dates.length, wins, freezes: 0, frozen: [] };
+  const summary = { current: 0, best: 0, played: dates.length, wins };
   if (!dates.length) return summary;
   let streak = 0;
-  let wonSoFar = 0;
   for (let day = dates[0]; day <= today; day = fromUtc(toUtc(day) + DAY_MS)) {
     const result = results[day];
-    if (result?.won) {
-      streak++;
-      wonSoFar++;
-      if (wonSoFar % FREEZE_EVERY === 0) summary.freezes = Math.min(MAX_FREEZES, summary.freezes + 1);
-    } else if (result) {
-      streak = 0;
-    } else if (day !== today) {
-      if (summary.freezes > 0) { summary.freezes--; summary.frozen.push(day); } else streak = 0;
-    }
+    if (result?.won) streak++;
+    else if (result || day !== today) streak = 0;
     summary.best = Math.max(summary.best, streak);
   }
   summary.current = streak;
   return summary;
+}
+
+// One square per day for the streak line, against the par stored with the result.
+export const TIERS = {
+  under: ['🟦', 'under par'],
+  par: ['🟩', 'par'],
+  plusOne: ['🟨', 'par +1'],
+  scraped: ['🟧', 'par +2 to +4'],
+  lost: ['🟥', 'lost'],
+  missed: ['⬜', 'missed'],
+  untiered: ['▫️', 'played before budgets'],
+  before: ['·', 'not yet playing'],
+};
+
+export function tier(result) {
+  if (!result) return 'missed';
+  if (result.par == null) return 'untiered';
+  if (!result.won) return 'lost';
+  const over = result.score - result.par;
+  return over < 0 ? 'under' : over === 0 ? 'par' : over === 1 ? 'plusOne' : 'scraped';
+}
+
+// The last `days` days ending today, oldest first, as tier keys. Days before
+// the player's first hunt are 'before'; today unplayed is 'before' too, since
+// it can't be missed yet.
+export function streakLine(results, today, days = 10) {
+  const first = Object.keys(results).sort()[0] ?? today;
+  const line = [];
+  for (let back = days - 1; back >= 0; back--) {
+    const day = fromUtc(toUtc(today) - back * DAY_MS);
+    if (day < first || day < LAUNCH_DATE || (day === today && !results[day])) line.push('before');
+    else line.push(tier(results[day]));
+  }
+  return line;
 }
 
 // Par: the score a sensible player gets today without knowing the answer. It
@@ -226,8 +288,10 @@ const validScore = (score) => Number.isInteger(score) && score >= 1 && score <= 
 // A real YYYY-MM-DD on or after launch.
 const isHuntDate = (date) => typeof date === 'string' && /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(date)
   && date >= LAUNCH_DATE && fromUtc(toUtc(date)) === date;
+// par is present on hunts played with budgets.
 const validResult = (r) => Boolean(r) && typeof r === 'object'
-  && (r.won === true ? validScore(r.score) : r.won === false && r.score === null);
+  && (r.won === true ? validScore(r.score) : r.won === false && r.score === null)
+  && (r.par === undefined || validScore(r.par));
 
 // Stored results with anything malformed dropped: bad date keys, dates before
 // launch, impossible scores. Dates after `today` are dropped too when today is
@@ -239,47 +303,38 @@ export function cleanResults(results, today = null) {
     .filter(([date, r]) => isHuntDate(date) && (today == null || date <= today) && validResult(r)));
 }
 
-// A one-line text chart of a run for share text: one block per point spent,
-// its height the characters left (log scale, so the full town is the tallest
-// block and one character the lowest). path: [{ left, points }]
-const SPARKS = '▁▂▃▄▅▆▇█';
-export function sparkline(path, max) {
-  const leftAt = new Map();
-  for (const step of path) leftAt.set(step.points, step.left);
-  const end = Math.max(...leftAt.keys());
-  let left = max;
-  let line = '';
-  for (let points = 0; points <= end; points++) {
-    if (leftAt.has(points)) left = leftAt.get(points);
-    const level = max > 1 ? Math.log(Math.max(1, left)) / Math.log(max) : 0;
-    line += SPARKS[Math.min(SPARKS.length - 1, Math.max(0, Math.round(level * (SPARKS.length - 1))))];
-  }
-  return line;
-}
-
 // Restore codes carry results between devices: [day number, score or -1 for a
-// loss] pairs, JSON then base64url. Not tamper-proof; it's a daily puzzle.
+// loss, par if the hunt had budgets] entries, JSON then base64url. Version 1
+// codes (no par) still restore. Not tamper-proof; it's a daily puzzle.
 export function encodeResults(results) {
-  const pairs = Object.entries(results).sort().map(([date, r]) => [dayNumber(date), r.won ? r.score : -1]);
-  const json = JSON.stringify({ v: 1, r: pairs });
+  const entries = Object.entries(results).sort().map(([date, r]) => {
+    const entry = [dayNumber(date), r.won ? r.score : -1];
+    if (r.par != null) entry.push(r.par);
+    return entry;
+  });
+  const json = JSON.stringify({ v: 2, r: entries });
   return btoa(json).replaceAll('+', '-').replaceAll('/', '_').replace(/=+$/, '');
 }
 
 // Throws unless every entry is a whole day from launch to `today` (once each)
-// with a possible score or -1, so a bad code is rejected whole and never saved.
+// with a possible score or -1 (and, in version 2, an optional possible par), so
+// a bad code is rejected whole and never saved.
 export function decodeResults(code, today) {
   const json = atob(code.replace(/-/g, '+').replace(/_/g, '/'));
   const data = JSON.parse(json);
-  if (data?.v !== 1 || !Array.isArray(data.r)) throw new Error('Unrecognised restore code');
+  if ((data?.v !== 1 && data?.v !== 2) || !Array.isArray(data.r)) throw new Error('Unrecognised restore code');
   const lastDay = dayNumber(today);
+  const sizes = data.v === 1 ? [2] : [2, 3];
   const results = {};
   for (const entry of data.r) {
-    const [day, score] = Array.isArray(entry) && entry.length === 2 ? entry : [];
+    const [day, score, par] = Array.isArray(entry) && sizes.includes(entry.length) ? entry : [];
     if (!Number.isInteger(day) || day < 0 || day > lastDay) throw new Error(`Restore code has an invalid day: ${day}`);
     if (score !== -1 && !validScore(score)) throw new Error(`Restore code has an invalid score: ${score}`);
+    if (entry.length === 3 && !validScore(par)) throw new Error(`Restore code has an invalid par: ${par}`);
     const date = fromUtc(toUtc(LAUNCH_DATE) + day * DAY_MS);
     if (date in results) throw new Error(`Restore code lists day ${day} twice`);
     results[date] = score === -1 ? { won: false, score: null } : { won: true, score };
+    if (entry.length === 3) results[date].par = par;
   }
   return results;
 }

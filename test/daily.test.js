@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
-  par, parRun, sparkline, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts, FREEZE_EVERY,
+  par, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
+  OVER_PAR_QUESTIONS, GUESS_BUDGET, tier, streakLine, TIERS,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -87,16 +88,6 @@ test('replaying saved actions restores the same state', () => {
   assert.equal(again.score, game.score);
 });
 
-test('streaks count consecutive won days', () => {
-  const results = { '2026-10-04': { won: true }, '2026-10-05': { won: true }, '2026-10-06': { won: false }, '2026-10-07': { won: true }, '2026-10-08': { won: true }, '2026-10-09': { won: true } };
-  const s = streaks(results, '2026-10-09');
-  assert.equal(s.current, 3);
-  assert.equal(s.best, 3);
-  assert.equal(s.played, 6);
-  assert.equal(streaks(results, '2026-10-10').current, 3, 'today not played yet keeps yesterday\'s streak');
-  assert.equal(streaks(results, '2026-10-11').current, 0, 'a missed day breaks it');
-});
-
 test("from the start date, yesterday's character begins eliminated", async () => {
   const { PRE_ELIMINATE_FROM } = await import('../js/daily.js');
   const before = new DailyGame({ characters, questions, date: LAUNCH_DATE });
@@ -116,20 +107,6 @@ test('par is deterministic and a real score', () => {
   const a = par(date, characters, questions);
   assert.equal(a, par(date, characters, questions));
   assert.ok(Number.isInteger(a) && a >= 1 && a < 40, `par ${a}`);
-});
-
-test('a missed day spends a streak freeze earned by winning; losses still break streaks', () => {
-  const results = {};
-  for (let i = 0; i < FREEZE_EVERY; i++) results[addDays('2026-11-01', i)] = { won: true, score: 7 };
-  const missed = addDays('2026-11-01', FREEZE_EVERY);
-  const after = addDays('2026-11-01', FREEZE_EVERY + 1);
-  results[after] = { won: true, score: 6 };
-  const s = streaks(results, after);
-  assert.deepEqual(s.frozen, [missed]);
-  assert.equal(s.current, FREEZE_EVERY + 1);
-  assert.equal(s.freezes, 0);
-  results[addDays('2026-11-01', FREEZE_EVERY + 2)] = { won: false, score: null };
-  assert.equal(streaks(results, addDays('2026-11-01', FREEZE_EVERY + 2)).current, 0);
 });
 
 test('restore codes round-trip results', () => {
@@ -206,14 +183,129 @@ test("par's path runs from the full town to one character and ends on par's scor
   }
 });
 
-test('share sparklines: one block per point, full town tallest, one character lowest', () => {
-  // 156 → 40 → 9 → 2 (wrong guess) → right guess (free, same point) → 1
-  const path = [{ left: 156, points: 0 }, { left: 40, points: 1 }, { left: 9, points: 2 }, { left: 2, points: 3 }, { left: 1, points: 3 }];
-  const line = sparkline(path, 156);
-  assert.equal([...line].length, 4);
-  assert.equal(line[0], '█');
-  assert.equal(line.at(-1), '▁');
-  assert.ok([...line].every((c, i, a) => i === 0 || c <= a[i - 1]), 'never rises');
-  const { path: parPath, score } = parRun(addDays(LAUNCH_DATE, 1), characters, questions);
-  if (score != null) assert.equal([...sparkline(parPath, parPath[0].left)].length, score + 1);
+test('a missed day or a loss ends a streak; every recorded hunt counts, with or without a par', () => {
+  const results = {
+    '2026-10-05': { won: true, score: 9 },
+    '2026-10-06': { won: true, score: 8, par: 7 },
+    '2026-10-07': { won: true, score: 7, par: 9 },
+  };
+  assert.equal(streaks(results, '2026-10-07').current, 3, 'the pre-budget hunt carries over');
+  assert.equal(streaks(results, '2026-10-08').current, 3, 'today not played yet keeps the streak');
+  assert.equal(streaks(results, '2026-10-09').current, 0, 'a missed day ends it, with no freeze to spend');
+  results['2026-10-08'] = { won: false, score: null, par: 12 };
+  assert.equal(streaks(results, '2026-10-08').current, 0, 'a loss ends it');
+  assert.equal(streaks(results, '2026-10-08').best, 3);
+  assert.ok(!('freezes' in streaks(results, '2026-10-08')));
+});
+
+test('budgets: par + 1 questions and 3 guesses, overflow into questions, lost only when no move is left', () => {
+  // Find a day where always asking the least even question runs the questions out early.
+  let game = null;
+  for (let day = 0; day < 40 && !game; day++) {
+    const date = addDays(LAUNCH_DATE, day);
+    const p = par(date, characters, questions);
+    const g = new DailyGame({ characters, questions, date, par: p });
+    assert.equal(g.questionsLeft, p + OVER_PAR_QUESTIONS);
+    assert.equal(g.guessesLeft, GUESS_BUDGET);
+    const lopsided = (q) => -Math.abs(g.pool.filter((id) => q.yesSet.has(id)).length - g.pool.length / 2);
+    while (g.status === 'playing' && g.offers.length) g.ask([...g.offers].sort((x, y) => lopsided(x) - lopsided(y))[0].id);
+    if (g.status === 'playing' && g.pool.length > GUESS_BUDGET + 1) game = g;
+  }
+  assert.ok(game, 'some day runs out of questions with several characters left');
+  assert.equal(game.questionsLeft, 0, 'offers stop when the questions run out');
+  assert.equal(game.offers.length, 0);
+  assert.ok(game.canGuess, 'guessing opens once no question can be asked');
+  for (const id of game.pool.filter((c) => c !== game.target)) {
+    if (game.status !== 'playing') break;
+    game.guess(id);
+  }
+  // With no questions left only the 3 guesses were affordable, and all were wrong.
+  assert.equal(game.status, 'lost');
+  assert.equal(game.wrongGuesses.length, GUESS_BUDGET);
+  assert.ok(game.pool.length > 1);
+});
+
+test('a guess with no guess budget left spends a question instead', () => {
+  const date = addDays(LAUNCH_DATE, 4);
+  const p = par(date, characters, questions);
+  const game = new DailyGame({ characters, questions, date, par: p });
+  while (game.status === 'playing' && !(game.pool.length <= GUESS_THRESHOLD)) game.ask(game.offers[0].id);
+  if (game.status !== 'playing') return;
+  const wrong = game.pool.filter((id) => id !== game.target);
+  if (wrong.length < GUESS_BUDGET + 1 || game.questionsLeft < 1) return;
+  for (let i = 0; i < GUESS_BUDGET; i++) game.guess(wrong[i]);
+  assert.equal(game.guessesLeft, 0);
+  const before = game.questionsLeft;
+  if (game.status !== 'playing') return;
+  game.guess(wrong[GUESS_BUDGET]);
+  assert.equal(game.questionsLeft, before - 1);
+  assert.equal(game.score, game.history.length + game.wrongGuesses.length, 'scoring is unchanged');
+});
+
+test('random play never wins above par + 4, and only loses with no legal move left', () => {
+  let seed = 7;
+  const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  let wins = 0;
+  let losses = 0;
+  for (let day = 0; day < 12; day++) {
+    const date = addDays(LAUNCH_DATE, day);
+    const p = par(date, characters, questions);
+    for (let player = 0; player < 25; player++) {
+      const game = new DailyGame({ characters, questions, date, par: p });
+      while (game.status === 'playing') {
+        const canAsk = game.offers.length > 0;
+        if (game.canGuess && (!canAsk || rnd() < 0.35)) game.guess(game.pool[Math.floor(rnd() * game.pool.length)]);
+        else if (canAsk) game.ask(game.offers[Math.floor(rnd() * game.offers.length)].id);
+        else assert.fail('a playing game must have a legal move');
+      }
+      if (game.status === 'won') {
+        wins++;
+        assert.ok(game.score <= p + 4, 'won in ' + game.score + ' with par ' + p);
+      } else {
+        losses++;
+        assert.ok(game.pool.length > 1);
+        assert.equal(game.offers.length, 0);
+        assert.equal(game.canGuess, false);
+      }
+    }
+  }
+  assert.ok(wins > 0 && losses > 0, 'both outcomes happen: ' + wins + ' wins, ' + losses + ' losses');
+});
+
+test('without a par the old rules apply: unlimited questions, three wrong guesses lose', () => {
+  const game = new DailyGame({ characters, questions, date: addDays(LAUNCH_DATE, 3) });
+  assert.equal(game.budgeted, false);
+  assert.equal(game.questionsLeft, Infinity);
+});
+
+test('tiers and the ten-day streak line', () => {
+  assert.equal(tier({ won: true, score: 6, par: 7 }), 'under');
+  assert.equal(tier({ won: true, score: 7, par: 7 }), 'par');
+  assert.equal(tier({ won: true, score: 8, par: 7 }), 'plusOne');
+  assert.equal(tier({ won: true, score: 11, par: 7 }), 'scraped');
+  assert.equal(tier({ won: false, score: null, par: 7 }), 'lost');
+  assert.equal(tier({ won: true, score: 9 }), 'untiered');
+  assert.equal(tier(undefined), 'missed');
+  const results = {
+    '2026-10-10': { won: true, score: 7, par: 7 },
+    '2026-10-12': { won: true, score: 5, par: 7 },
+    '2026-10-13': { won: false, score: null, par: 6 },
+  };
+  const line = streakLine(results, '2026-10-13');
+  assert.equal(line.length, 10);
+  assert.deepEqual(line.slice(-4), ['par', 'missed', 'under', 'lost']);
+  assert.ok(line.slice(0, 6).every((key) => key === 'before'), 'days before the first hunt');
+  assert.equal(streakLine(results, '2026-10-14').at(-1), 'before', 'today unplayed is not missed yet');
+  assert.equal(line.map((key) => TIERS[key][0]).join(''), '······🟩⬜🟦🟥');
+});
+
+test('restore codes keep the par, and old version 1 codes still restore', () => {
+  const today = addDays(LAUNCH_DATE, 3);
+  const results = { [LAUNCH_DATE]: { won: true, score: 9 }, [addDays(LAUNCH_DATE, 1)]: { won: true, score: 6, par: 7 }, [addDays(LAUNCH_DATE, 2)]: { won: false, score: null, par: 8 } };
+  assert.deepEqual(decodeResults(encodeResults(results), today), results);
+  const v1 = btoa(JSON.stringify({ v: 1, r: [[0, 7]] })).replaceAll('=', '');
+  assert.deepEqual(decodeResults(v1, today), { [LAUNCH_DATE]: { won: true, score: 7 } });
+  const badPar = btoa(JSON.stringify({ v: 2, r: [[0, 7, 0]] })).replaceAll('=', '');
+  assert.throws(() => decodeResults(badPar, today));
+  assert.deepEqual(cleanResults({ [LAUNCH_DATE]: { won: true, score: 7, par: 'x' } }, today), {});
 });

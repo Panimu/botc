@@ -2,8 +2,8 @@
 // Game rules live in js/daily.js; this file renders, stores progress and
 // handles the extras (par, charts, archive, streak backup, install, reminder).
 import {
-  DailyGame, replay, streaks, utcDate, parRun, sparkline, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
-  EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, FREEZE_EVERY, MAX_FREEZES,
+  DailyGame, replay, streaks, streakLine, tier, TIERS, utcDate, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
+  EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES,
 } from './daily.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
 import { timelineChart, scoresChart } from './charts.js?v=dev';
@@ -17,7 +17,9 @@ const progressKey = (date) => `daily-progress:${date}`;
 const LEGACY_PROGRESS_KEY = 'daily-progress';
 const PRACTICE_KEY = 'daily-practice-progress';
 const RESULTS_KEY = 'daily-results';
-const guessesLeft = (n) => `${n} wrong ${n === 1 ? 'guess' : 'guesses'}`;
+// Shown once after budgets arrived; dismissing it is remembered on this device.
+const RELEASE_NOTE_KEY = 'release-note-seen';
+const RELEASE_NOTE = 'budgets';
 const NUMBER_WORDS = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 const longDate = (date) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
 
@@ -113,13 +115,24 @@ function start(characters, questions, clockOffset, shareQuotes) {
     }
     const same = saved?.date === date;
     let actions = same ? saved.actions : [];
-    let game = new DailyGame({ characters, questions, date });
+    // The budget comes from par as it was when the session started, so a question
+    // update mid-day can't move it under a player.
+    const sessionPar = same && actions.length && saved.par !== undefined ? saved.par : parScore;
+    let game = new DailyGame({ characters, questions, date, par: sessionPar });
     try {
       replay(game, actions);
     } catch {
-      // Saved progress no longer replays (e.g. the questions changed): start the hunt afresh.
-      game = new DailyGame({ characters, questions, date });
-      actions = [];
+      // Saved before budgets existed, or the questions changed. A hunt finished
+      // under the old rules is shown as it was (untiered); anything else starts afresh.
+      const old = new DailyGame({ characters, questions, date });
+      let finished = false;
+      try { finished = replay(old, actions).status !== 'playing'; } catch {}
+      if (finished) {
+        game = old;
+      } else {
+        game = new DailyGame({ characters, questions, date, par: parScore });
+        actions = [];
+      }
     }
     return { game, actions, startedAt: same && actions.length && saved.startedAt ? saved.startedAt : Date.now() };
   }
@@ -149,11 +162,13 @@ function start(characters, questions, clockOffset, shareQuotes) {
   });
 
   function save() {
-    store.set(saveKey, { date, actions, startedAt });
+    store.set(saveKey, { date, actions, startedAt, par: game.par });
     if (!practice && game.status !== 'playing') {
       const results = store.get(RESULTS_KEY, {});
       if (!results[date]) {
+        // The par is stored so the day's tier never shifts if par is later recomputed.
         results[date] = { won: game.status === 'won', score: game.status === 'won' ? game.score : null };
+        if (game.budgeted) results[date].par = game.par;
         store.set(RESULTS_KEY, results);
         requestPersistence();
       }
@@ -182,13 +197,22 @@ function start(characters, questions, clockOffset, shareQuotes) {
     }));
   }
 
+  const guesses = (n) => `${n} ${n === 1 ? 'guess' : 'guesses'}`;
+
+  // What the next guess costs, for the hint and announcements.
+  function guessBudgetText() {
+    if (!game.budgeted) return `You have ${guesses(MAX_WRONG_GUESSES - game.wrongGuesses.length)} left.`;
+    if (game.guessesLeft > 0) return `You have ${guesses(game.guessesLeft)} left.`;
+    return `You're out of guesses, so a guess now uses one of your ${plural(game.questionsLeft, 'question')} left.`;
+  }
+
   function renderGuessing() {
     $('guessing').hidden = !game.canGuess;
     $('guess-locked').textContent = game.status === 'playing' && !game.canGuess
       ? `Guessing opens when ${GUESS_THRESHOLD} or fewer remain.` : '';
     if (!game.canGuess) return;
-    const left = MAX_WRONG_GUESSES - game.wrongGuesses.length;
-    $('guess-hint').textContent = `Guessing is open: tap a token, or pick a name (arrow keys move, Enter picks). A wrong guess costs a point, and you have ${guessesLeft(left)} left.`;
+    const noQuestions = game.budgeted && game.questionsLeft <= 0 ? "You've used all your questions, so it's down to guesses. " : '';
+    $('guess-hint').textContent = `${noQuestions}Guessing is open: tap a token, or pick a name (arrow keys move, Enter picks). A wrong guess costs a point. ${guessBudgetText()}`;
     $('candidates').replaceChildren(...game.pool.map((id) => {
       const button = el('button', `candidate${selected === id ? ' selected' : ''}`);
       button.type = 'button';
@@ -270,21 +294,19 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const guesses = '🪦'.repeat(game.wrongGuesses.length);
     const finish = game.status === 'won' ? (solvedByQuestions ? '🔍' : '🎯') : '💀';
     const marks = [answers, guesses, finish].filter(Boolean).join(' ');
-    const { current } = streaks(store.get(RESULTS_KEY, {}), today);
-    const parText = game.status === 'won' && parScore != null ? ` (${versusPar(game.score, parScore)})` : '';
-    const verdict = game.status === 'won' ? `🎯 Found in ${game.score}${parText}` : '💀 The town failed';
-    const streak = !practice && current > 1 ? ` | 🔥 ${current}-day streak` : '';
+    const results = store.get(RESULTS_KEY, {});
+    const { current } = streaks(results, today);
+    const shownPar = game.par ?? parScore;
+    const parText = shownPar != null ? ` (par ${shownPar})` : '';
+    const verdict = game.status === 'won' ? `🎯 Found in ${game.score}${parText}` : `💀 The town failed${parText}`;
+    const streak = !practice && current > 0 ? ` · 🔥 ${current}-day streak` : '';
     const title = `Clocktower Daily Hunt #${game.number}${practice ? ' (practice)' : ''}`;
-    // The timeline as text: one block per point, yours above par's. In Discord the
-    // blocks sit in inline code so the two lines share a fixed-width font and line up.
-    const steps = timelineSteps();
-    const chart = [[sparkline(steps, steps[0].left), 'You']];
-    if (parScore != null) chart.push([sparkline(parResult.path, steps[0].left), 'Par']);
-    const tick = String.fromCharCode(96);
+    // The last ten days as tier squares; practice doesn't touch the streak, so it has none.
+    const line = practice ? '' : streakLine(results, today).map((key) => TIERS[key][0]).join('');
     return {
       url,
-      plain: [`${title}: ${game.status === 'won' ? `found in ${game.score}${parText}` : 'not found'}`, marks, ...chart.map(([line, who]) => `${line} ${who}`), streak ? `Streak: ${current}` : '', url].filter(Boolean).join(nl),
-      discord: [`🕰️ **${title}**`, `${verdict}${streak}`, marks, ...chart.map(([line, who]) => `${tick}${line}${tick} ${who}`), `<${url}>`].filter(Boolean).join(nl),
+      plain: [`${title}: ${game.status === 'won' ? `found in ${game.score}${parText}` : `not found${parText}`}${streak ? `, ${current}-day streak` : ''}`, marks, line, url].filter(Boolean).join(nl),
+      discord: [`🕰️ **${title}**`, `${verdict}${streak}`, marks, line, `<${url}>`].filter(Boolean).join(nl),
     };
   }
 
@@ -298,7 +320,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     $('result-art').className = `result-art ${side(target.team)}`;
     $('result-lead').textContent = game.status === 'won'
       ? `${replayOfToday ? 'Practice: found' : 'Found'} in ${plural(game.score, 'point')}, ${versusPar(game.score, parScore)}. ${practiceDate ? 'That hunt' : 'Today'}'s character ${practiceDate ? 'was' : 'is'} the`
-      : `${replayOfToday ? 'Practice: out' : 'Out'} of guesses. ${practiceDate ? 'That hunt' : 'Today'}'s character was the`;
+      : `${replayOfToday ? 'Practice: out' : 'Out'} of ${game.budgeted ? 'questions and guesses' : 'guesses'}. ${practiceDate ? 'That hunt' : 'Today'}'s character was the`;
     $('result-name').textContent = target.name;
     $('result-team').className = `result-team ${side(target.team)}`;
     $('result-team').textContent = teamLabel(target.team);
@@ -309,16 +331,29 @@ function start(characters, questions, clockOffset, shareQuotes) {
 
     const results = store.get(RESULTS_KEY, {});
     const s = streaks(results, today);
-    const stats = [['Current streak', s.current], ['Best streak', s.best], ['Played', s.played], ['Streak freezes', s.freezes]];
+    const stats = [['Current streak', s.current], ['Best streak', s.best], ['Played', s.played]];
     $('stats').replaceChildren(...stats.flatMap(([term, value]) => [el('dt', '', term), el('dd', '', String(value))]));
     $('stats').hidden = practice;
+    renderStreakLine(results, s.current);
     // Scores first: whether they show changes the timeline's width.
     $('scores-figure').hidden = practice || Object.keys(results).length === 0;
     scoresChart($('scores-chart'), results, practice ? undefined : game.status === 'won' ? game.score : null);
     timelineChart($('timeline-chart'), timelineSteps(), { par: parResult });
-    $('freeze-text').textContent = `You hold ${plural(s.freezes, 'streak freeze')} (at most ${MAX_FREEZES}). You earn one for every ${FREEZE_EVERY} hunts you win, and a missed day spends one instead of breaking your streak.${s.frozen.length ? ` Frozen so far: ${s.frozen.map(longDate).join(', ')}.` : ''}`;
     $('keep').hidden = practice;
     $('countdown').hidden = Boolean(practiceDate);
+  }
+
+  // "🔥 23-day streak · today 6 (par 7) 🟦" over the last ten days as squares.
+  function renderStreakLine(results, current) {
+    $('streak-line').hidden = practice;
+    if (practice) return;
+    const mine = results[today];
+    const todayText = !mine ? ''
+      : ` · today ${mine.won ? mine.score : 'lost'}${mine.par != null ? ` (par ${mine.par})` : ''} ${TIERS[tier(mine)][0]}`;
+    $('streak-text').textContent = `${current > 0 ? `🔥 ${current}-day streak` : '💔 No streak'}${todayText}`;
+    const line = streakLine(results, today);
+    $('streak-cells').textContent = line.map((key) => TIERS[key][0]).join('');
+    $('streak-cells').setAttribute('aria-label', `Last ${line.length} days, oldest first: ${line.map((key) => TIERS[key][1]).join(', ')}.`);
   }
 
   function renderPast() {
@@ -359,9 +394,16 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const yesterday = game.yesterday && byId.get(game.yesterday);
     $('yesterday-note').hidden = !yesterday || game.status !== 'playing';
     if (yesterday) $('yesterday-note').textContent = `The previous day's character, the ${yesterday.name}, can't come up two days running, so they start out of the circle.`;
-    $('hunt-par').textContent = parScore != null ? `Par ${parScore}` : '';
-    $('hunt-score').textContent = `${plural(game.score, 'point')} so far`;
-    $('hunt-guesses').textContent = `${game.wrongGuesses.length} of ${MAX_WRONG_GUESSES} wrong guesses`;
+    const shownPar = game.par ?? parScore;
+    $('hunt-par').textContent = shownPar != null ? `Par ${shownPar}` : '';
+    if (game.budgeted) {
+      // Both budgets on show: a player can't weigh a guess against a question otherwise.
+      $('hunt-score').textContent = `${game.questionsLeft} of ${game.questionBudget} questions left`;
+      $('hunt-guesses').textContent = `${guesses(game.guessesLeft)} left`;
+    } else {
+      $('hunt-score').textContent = `${plural(game.score, 'point')} so far`;
+      $('hunt-guesses').textContent = `${game.wrongGuesses.length} of ${MAX_WRONG_GUESSES} wrong guesses`;
+    }
     $('last-answer').hidden = !lastReply;
     if (lastReply) {
       $('last-question').textContent = lastReply.question;
@@ -411,7 +453,8 @@ function start(characters, questions, clockOffset, shareQuotes) {
     lastReply = right ? null : { question: `You guessed the ${name}.`, reply: 'Wrong. Their token is shrouded.' };
     selected = null;
     save();
-    announcer.textContent = right ? `Yes, it's the ${name}!` : `Not the ${name}. ${guessesLeft(MAX_WRONG_GUESSES - game.wrongGuesses.length)} left.`;
+    announcer.textContent = right ? `Yes, it's the ${name}!`
+      : game.status === 'lost' ? `Not the ${name}, and that was your last move.` : `Not the ${name}. ${guessBudgetText()}`;
     render({ focus: game.status === 'playing' ? 'guess-hint' : 'result-name' });
     if (!right && game.status === 'playing') stamp(false);
   }
@@ -452,6 +495,15 @@ function start(characters, questions, clockOffset, shareQuotes) {
     URL.revokeObjectURL(link.href);
     $('keep-status').textContent = 'Reminder downloaded. Open it to add a daily event (just after midnight UTC, in your local time) to your calendar.';
   });
+  // One-time note about the rules change.
+  let noteSeen = false;
+  try { noteSeen = localStorage.getItem(RELEASE_NOTE_KEY) === RELEASE_NOTE; } catch {}
+  $('release-note').hidden = noteSeen;
+  $('release-note-dismiss').addEventListener('click', () => {
+    $('release-note').hidden = true;
+    try { localStorage.setItem(RELEASE_NOTE_KEY, RELEASE_NOTE); } catch {}
+  });
+
   $('install-app').hidden = !installPrompt;
   $('install-app').addEventListener('click', async () => {
     if (!installPrompt) return;
