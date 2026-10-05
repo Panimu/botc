@@ -8,9 +8,13 @@ import {
 import { createCircle } from './circle.js?v=dev';
 import { timelineChart, scoresChart } from './charts.js?v=dev';
 import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson, setupShare, copyText } from './shared.js?v=dev';
-import { restore, load, save as persist, requestPersistence } from './storage.js?v=dev';
+import { restore, load, save as persist, remove, storedKeys, requestPersistence } from './storage.js?v=dev';
 
-const PROGRESS_KEY = 'daily-progress';
+// Each day's progress has its own key, so a tab still open on an earlier day's
+// hunt can never overwrite today's. LEGACY_PROGRESS_KEY is the old shared key,
+// read only to carry over a hunt saved before the change.
+const progressKey = (date) => `daily-progress:${date}`;
+const LEGACY_PROGRESS_KEY = 'daily-progress';
 const PRACTICE_KEY = 'daily-practice-progress';
 const RESULTS_KEY = 'daily-results';
 const guessesLeft = (n) => `${n} wrong ${n === 1 ? 'guess' : 'guesses'}`;
@@ -19,6 +23,30 @@ const longDate = (date) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-
 
 // Durable storage (js/storage.js); the hunt still works if storage is unavailable.
 const store = { get: load, set: persist };
+
+// Registered before the asynchronous startup, so the browser's install offer
+// can't arrive unheard; the button is in the page from the start.
+let installPrompt = null;
+window.addEventListener('beforeinstallprompt', (event) => {
+  event.preventDefault();
+  installPrompt = event;
+  $('install-app').hidden = false;
+});
+window.addEventListener('appinstalled', () => {
+  installPrompt = null;
+  $('install-app').hidden = true;
+});
+
+const dayBefore = (date) => new Date(Date.parse(`${date}T00:00:00Z`) - 86400000).toISOString().slice(0, 10);
+
+// Drops saved progress from before yesterday (yesterday's stays for a tab still open on it).
+async function pruneProgress(today) {
+  const keep = dayBefore(today);
+  for (const key of await storedKeys()) {
+    if (key.startsWith('daily-progress:') && key.slice('daily-progress:'.length) < keep) remove(key);
+  }
+  if ((load(LEGACY_PROGRESS_KEY, null)?.date ?? '') < today) remove(LEGACY_PROGRESS_KEY);
+}
 
 // The web host's clock (from the Date response header), so everyone shares the
 // same day; falls back to the device clock. Days roll over at midnight UTC.
@@ -67,7 +95,11 @@ function start(characters, questions, clockOffset, shareQuotes) {
   // Picks up saved progress for this date. startedAt marks the session, so storage
   // can tell a longer copy of this session from an older, different session.
   function resume(key) {
-    const saved = store.get(key, null);
+    let saved = store.get(key, null);
+    if (!saved && key === progressKey(date)) {
+      const legacy = store.get(LEGACY_PROGRESS_KEY, null);
+      if (legacy?.date === date) saved = legacy;
+    }
     const same = saved?.date === date;
     let actions = same ? saved.actions : [];
     let game = new DailyGame({ characters, questions, date });
@@ -81,15 +113,15 @@ function start(characters, questions, clockOffset, shareQuotes) {
     return { game, actions, startedAt: same && actions.length && saved.startedAt ? saved.startedAt : Date.now() };
   }
 
-  let progressKey = practiceDate ? PRACTICE_KEY : PROGRESS_KEY;
-  let { game, actions, startedAt } = resume(progressKey);
+  let saveKey = practiceDate ? PRACTICE_KEY : progressKey(date);
+  let { game, actions, startedAt } = resume(saveKey);
   // Today's result is already recorded but the moves behind it aren't here (it came
   // from a restore link, or the saved moves no longer replay). The recorded result
   // stands, and playing again is practice, so the official score never changes.
   const recorded = practiceDate ? null : store.get(RESULTS_KEY, {})[today] ?? null;
   const replayOfToday = Boolean(recorded) && game.status === 'playing';
   if (replayOfToday) {
-    progressKey = PRACTICE_KEY;
+    saveKey = PRACTICE_KEY;
     ({ game, actions, startedAt } = resume(PRACTICE_KEY));
   }
   const practice = Boolean(practiceDate) || replayOfToday;
@@ -106,7 +138,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
   });
 
   function save() {
-    store.set(progressKey, { date, actions, startedAt });
+    store.set(saveKey, { date, actions, startedAt });
     if (!practice && game.status !== 'playing') {
       const results = store.get(RESULTS_KEY, {});
       if (!results[date]) {
@@ -400,8 +432,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     URL.revokeObjectURL(link.href);
     $('keep-status').textContent = 'Reminder downloaded. Open it to add a daily event (just after midnight UTC, in your local time) to your calendar.';
   });
-  let installPrompt = null;
-  window.addEventListener('beforeinstallprompt', (event) => { event.preventDefault(); installPrompt = event; $('install-app').hidden = false; });
+  $('install-app').hidden = !installPrompt;
   $('install-app').addEventListener('click', async () => {
     if (!installPrompt) return;
     installPrompt.prompt();
@@ -426,10 +457,14 @@ try {
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
   const [{ characters, questions }, , clockOffset, shareQuotes] = await Promise.all([
     loadGameData({ exclude: EXCLUDED_FILES }),
-    restore([PROGRESS_KEY, PRACTICE_KEY, RESULTS_KEY]),
+    restore([LEGACY_PROGRESS_KEY, PRACTICE_KEY, RESULTS_KEY]),
     hostClockOffset(),
     loadJson('data/share-quotes.json?v=dev').catch(() => ({})),
   ]);
+  // Today's progress key depends on the host's date, so it's restored once that's known.
+  const today = utcDate(new Date(Date.now() + clockOffset));
+  await restore([progressKey(today)]);
+  pruneProgress(today).catch(() => {});
   const restored = applyRestoreLink();
   if (restored) { $('restore-status').textContent = restored; $('restore-status').hidden = false; }
   start(characters, questions, clockOffset, shareQuotes);

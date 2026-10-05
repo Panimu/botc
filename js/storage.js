@@ -65,13 +65,16 @@ export const MERGE = {
   },
 };
 
+// Per-day progress keys (daily-progress:<date>) merge like the old shared key.
+const mergeFor = (key) => MERGE[key] ?? (key.startsWith('daily-progress:') ? MERGE['daily-progress'] : (a) => a);
+
 // Reconciles localStorage and IndexedDB for these keys before the page reads them.
 export async function restore(keys) {
   for (const key of keys) {
     const local = localGet(key);
     let backup = null;
     try { backup = await idb('readonly', (s) => s.get(key)); } catch {}
-    const merged = local && backup ? (MERGE[key] ?? ((a) => a))(local, backup) : local ?? backup;
+    const merged = local && backup ? mergeFor(key)(local, backup) : local ?? backup;
     if (merged == null) continue;
     memory.set(key, copy(merged));
     if (JSON.stringify(merged) !== JSON.stringify(local) && !localSet(key, merged)) staleLocal.add(key);
@@ -88,6 +91,21 @@ export function save(key, value, { localToo = true } = {}) {
   memory.set(key, copy(value));
   if (localToo) { if (localSet(key, value)) staleLocal.delete(key); else staleLocal.add(key); }
   idb('readwrite', (s) => s.put(value, key)).catch(() => {});
+}
+
+export function remove(key) {
+  memory.delete(key);
+  staleLocal.delete(key);
+  try { localStorage.removeItem(key); } catch {}
+  idb('readwrite', (s) => s.delete(key)).catch(() => {});
+}
+
+// Every key held in memory, localStorage or IndexedDB, e.g. to prune old entries.
+export async function storedKeys() {
+  const keys = new Set(memory.keys());
+  try { for (let i = 0; i < localStorage.length; i++) keys.add(localStorage.key(i)); } catch {}
+  try { for (const key of await idb('readonly', (s) => s.getAllKeys())) keys.add(key); } catch {}
+  return [...keys];
 }
 
 // Asks the browser not to evict the site's storage. Some browsers prompt, so
