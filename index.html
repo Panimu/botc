@@ -34,6 +34,16 @@
         </nav>
         <h1>Daily character hunt</h1>
         <p>One hidden character, the same for everyone today. Choose questions to narrow the town down, and once 15 or fewer remain, tap a token to guess.</p>
+        <details class="about">
+          <summary>About the daily hunt</summary>
+          <div class="about-body">
+            <p>Every day there's one hidden Blood on the Clocktower character to find. It's the same character for everyone in the world, and a new hunt starts at midnight UTC.</p>
+            <p><strong>Everyone gets the same questions.</strong> Each turn you're offered three questions to choose from. The offers depend only on the day and on the questions you've already asked, so two players who choose the same questions see exactly the same offers. Nobody gets an easier hunt by luck of the draw; the only difference is the choices you make.</p>
+            <p>Whichever question you pick, the answer is always truthful for today's character, and every character it rules out leaves the circle. Once 15 or fewer remain, the town takes its seats and you can guess by tapping a token or picking a name.</p>
+            <p>Your score is the number of questions you asked plus any wrong guesses, so lower is better. Three wrong guesses and the town fails. Yesterday's character never comes up two days running, so it starts out of the circle.</p>
+            <p>Your streak and stats are saved on this device. When you're done, copy your result for Discord: it shows how you got there without giving the answer away.</p>
+          </div>
+        </details>
       </header>
 
       <div class="new-day" id="new-day" role="status" hidden>
@@ -76,6 +86,9 @@
         <h2 class="result-name" id="result-name" tabindex="-1"></h2>
         <p class="result-team" id="result-team"></p>
         <p class="result-summary" id="result-summary"></p>
+        <figure class="share-quote" id="share-quote" hidden>
+          <blockquote id="share-quote-text"></blockquote>
+        </figure>
         <dl class="stats" id="stats"></dl>
         <div class="share-options" id="share-options"></div>
         <p class="share-status" id="share-status" role="status"></p>

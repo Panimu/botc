@@ -2,7 +2,7 @@
 // Game rules live in js/daily.js; this file only renders and stores progress.
 import { DailyGame, replay, streaks, utcDate, EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES } from './daily.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
-import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, setupShare } from './shared.js?v=dev';
+import { $, side, plural, teamLabel, el, setArt, setupThemeToggle, createPoolList, loadGameData, loadJson, setupShare } from './shared.js?v=dev';
 import { restore, load, save as persist, requestPersistence } from './storage.js?v=dev';
 
 const PROGRESS_KEY = 'daily-progress';
@@ -24,7 +24,7 @@ async function hostClockOffset() {
   }
 }
 
-function start(characters, questions, clockOffset) {
+function start(characters, questions, clockOffset, shareQuotes) {
   const now = () => new Date(Date.now() + clockOffset);
   const date = utcDate(now());
   const byId = new Map(characters.map((c) => [c.id, c]));
@@ -139,10 +139,11 @@ function start(characters, questions, clockOffset) {
     const { current } = streaks(store.get(RESULTS_KEY, {}), date);
     const verdict = game.status === 'won' ? `🎯 Found in ${game.score}` : '💀 The town failed';
     const streak = current > 1 ? ` | 🔥 ${current}-day streak` : '';
+    const quote = game.status !== 'playing' ? shareQuotes[game.target]?.quote : null;
     return {
       url,
-      plain: [`Clocktower Daily Hunt #${game.number}: ${game.status === 'won' ? `found in ${game.score}` : 'not found'}`, marks, current > 1 ? `Streak: ${current}` : '', url].filter(Boolean).join(nl),
-      discord: [`🕰️ **Clocktower Daily Hunt #${game.number}**`, `${verdict}${streak}`, marks, `<${url}>`].join(nl),
+      plain: [`Clocktower Daily Hunt #${game.number}: ${game.status === 'won' ? `found in ${game.score}` : 'not found'}`, marks, current > 1 ? `Streak: ${current}` : '', quote ? `"${quote}"` : '', url].filter(Boolean).join(nl),
+      discord: [`🕰️ **Clocktower Daily Hunt #${game.number}**`, `${verdict}${streak}`, marks, quote ? `> ||${quote}||` : '', `<${url}>`].filter(Boolean).join(nl),
     };
   }
 
@@ -160,6 +161,9 @@ function start(characters, questions, clockOffset) {
     $('result-team').className = `result-team ${side(target.team)}`;
     $('result-team').textContent = teamLabel(target.team);
     $('result-summary').textContent = target.summary;
+    const quote = shareQuotes[target.id];
+    $('share-quote').hidden = !quote;
+    if (quote) $('share-quote-text').textContent = quote.quote;
     const s = streaks(store.get(RESULTS_KEY, {}), date);
     const stats = [['Current streak', s.current], ['Best streak', s.best], ['Played', s.played], ['Won', s.wins]];
     $('stats').replaceChildren(...stats.flatMap(([term, value]) => [el('dt', '', term), el('dd', '', String(value))]));
@@ -239,12 +243,13 @@ function start(characters, questions, clockOffset) {
 
 try {
   setupThemeToggle();
-  const [{ characters, questions }, , clockOffset] = await Promise.all([
+  const [{ characters, questions }, , clockOffset, shareQuotes] = await Promise.all([
     loadGameData({ exclude: EXCLUDED_FILES }),
     restore([PROGRESS_KEY, RESULTS_KEY]),
     hostClockOffset(),
+    loadJson('data/share-quotes.json?v=dev').catch(() => ({})),
   ]);
-  start(characters, questions, clockOffset);
+  start(characters, questions, clockOffset, shareQuotes);
 } catch (error) {
   console.error(error);
   $('hunt-number').textContent = 'The hunt couldn’t start.';

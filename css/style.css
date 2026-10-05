@@ -976,3 +976,25 @@ body {
 }
 .new-day p { margin: 0; font-weight: 700; }
 .new-day .answer { min-height: 2.75rem; padding: 0.3rem 1.1rem; font-size: 1.05rem; }
+
+/* Daily hunt: "About" explainer under the title. */
+.about { margin-top: 0.9rem; max-width: 36rem; }
+.about > summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 700;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.about-body {
+  margin-top: 0.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--panel);
+}
+.about-body p { margin: 0 0 0.75rem; color: var(--text); }
+.about-body p:last-child { margin-bottom: 0; }
