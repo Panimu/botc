@@ -55,6 +55,14 @@ export const MERGE = {
     if ((a?.date ?? '') !== (b?.date ?? '')) return (a?.date ?? '') > (b?.date ?? '') ? a : b;
     return (a?.actions?.length ?? 0) >= (b?.actions?.length ?? 0) ? a : b;
   },
+  // Practice progress can be for any past date, so dates don't say which is newer.
+  // The same session (date and startedAt match) keeps the longer history; otherwise
+  // the session started most recently wins.
+  'daily-practice-progress': (a, b) => {
+    const sameSession = (a?.date ?? '') === (b?.date ?? '') && (a?.startedAt ?? 0) === (b?.startedAt ?? 0);
+    if (sameSession) return (a?.actions?.length ?? 0) >= (b?.actions?.length ?? 0) ? a : b;
+    return (a?.startedAt ?? 0) >= (b?.startedAt ?? 0) ? a : b;
+  },
 };
 
 // Reconciles localStorage and IndexedDB for these keys before the page reads them.

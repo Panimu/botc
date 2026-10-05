@@ -39,3 +39,16 @@ test('the service worker precaches every asset the pages and scripts load by a f
   }
   for (const url of wanted) assert.ok(list.has(url), `not precached: ${url}`);
 });
+
+test('practice progress: the same session keeps the longer history; a different session goes to the newer start', () => {
+  const merge = MERGE['daily-practice-progress'];
+  const one = { date: '2026-10-05', startedAt: 100, actions: [{ ask: 'a' }] };
+  const two = { date: '2026-10-05', startedAt: 100, actions: [{ ask: 'a' }, { ask: 'b' }] };
+  assert.equal(merge(one, two), two);
+  assert.equal(merge(two, one), two);
+  const restarted = { date: '2026-10-05', startedAt: 300, actions: [{ ask: 'c' }] };
+  assert.equal(merge(two, restarted), restarted, 'a newer session on the same date wins even with fewer moves');
+  const otherDay = { date: '2026-10-07', startedAt: 200, actions: [] };
+  assert.equal(merge(otherDay, two), otherDay);
+  assert.equal(merge(restarted, otherDay), restarted);
+});

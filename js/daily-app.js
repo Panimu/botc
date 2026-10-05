@@ -60,22 +60,39 @@ function start(characters, questions, clockOffset, shareQuotes) {
   const now = () => new Date(Date.now() + clockOffset);
   const today = utcDate(now());
   const practiceDate = archiveDate(new URLSearchParams(location.search).get('date'), today);
-  const practice = Boolean(practiceDate);
   const date = practiceDate ?? today;
-  const progressKey = practice ? PRACTICE_KEY : PROGRESS_KEY;
   const byId = new Map(characters.map((c) => [c.id, c]));
   const parScore = par(date, characters, questions);
 
-  const saved = store.get(progressKey, null);
-  let actions = saved?.date === date ? saved.actions : [];
-  let game = new DailyGame({ characters, questions, date });
-  try {
-    replay(game, actions);
-  } catch {
-    // Saved progress no longer replays (e.g. the questions changed): start the hunt afresh.
-    game = new DailyGame({ characters, questions, date });
-    actions = [];
+  // Picks up saved progress for this date. startedAt marks the session, so storage
+  // can tell a longer copy of this session from an older, different session.
+  function resume(key) {
+    const saved = store.get(key, null);
+    const same = saved?.date === date;
+    let actions = same ? saved.actions : [];
+    let game = new DailyGame({ characters, questions, date });
+    try {
+      replay(game, actions);
+    } catch {
+      // Saved progress no longer replays (e.g. the questions changed): start the hunt afresh.
+      game = new DailyGame({ characters, questions, date });
+      actions = [];
+    }
+    return { game, actions, startedAt: same && actions.length && saved.startedAt ? saved.startedAt : Date.now() };
   }
+
+  let progressKey = practiceDate ? PRACTICE_KEY : PROGRESS_KEY;
+  let { game, actions, startedAt } = resume(progressKey);
+  // Today's result is already recorded but the moves behind it aren't here (it came
+  // from a restore link, or the saved moves no longer replay). The recorded result
+  // stands, and playing again is practice, so the official score never changes.
+  const recorded = practiceDate ? null : store.get(RESULTS_KEY, {})[today] ?? null;
+  const replayOfToday = Boolean(recorded) && game.status === 'playing';
+  if (replayOfToday) {
+    progressKey = PRACTICE_KEY;
+    ({ game, actions, startedAt } = resume(PRACTICE_KEY));
+  }
+  const practice = Boolean(practiceDate) || replayOfToday;
   const startCount = game.characters.length - (game.yesterday ? 1 : 0);
 
   const announcer = $('announcer');
@@ -89,7 +106,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
   });
 
   function save() {
-    store.set(progressKey, { date, actions });
+    store.set(progressKey, { date, actions, startedAt });
     if (!practice && game.status !== 'playing') {
       const results = store.get(RESULTS_KEY, {});
       if (!results[date]) {
@@ -193,7 +210,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
   // practice hunt's (validated) date so the link opens the same hunt.
   function shareUrl() {
     const url = new URL(location.pathname, location.origin);
-    if (practice) url.searchParams.set('date', date);
+    if (practiceDate) url.searchParams.set('date', date);
     return url.href;
   }
 
@@ -229,8 +246,8 @@ function start(characters, questions, clockOffset, shareQuotes) {
     setArt($('result-art'), target);
     $('result-art').className = `result-art ${side(target.team)}`;
     $('result-lead').textContent = game.status === 'won'
-      ? `Found in ${plural(game.score, 'point')}, ${versusPar(game.score, parScore)}. ${practice ? 'That hunt' : 'Today'}'s character ${practice ? 'was' : 'is'} the`
-      : `Out of guesses. ${practice ? 'That hunt' : 'Today'}'s character was the`;
+      ? `${replayOfToday ? 'Practice: found' : 'Found'} in ${plural(game.score, 'point')}, ${versusPar(game.score, parScore)}. ${practiceDate ? 'That hunt' : 'Today'}'s character ${practiceDate ? 'was' : 'is'} the`
+      : `${replayOfToday ? 'Practice: out' : 'Out'} of guesses. ${practiceDate ? 'That hunt' : 'Today'}'s character was the`;
     $('result-name').textContent = target.name;
     $('result-team').className = `result-team ${side(target.team)}`;
     $('result-team').textContent = teamLabel(target.team);
@@ -250,7 +267,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     timelineChart($('timeline-chart'), timelineSteps());
     $('freeze-text').textContent = `You hold ${plural(s.freezes, 'streak freeze')} (at most ${MAX_FREEZES}). You earn one for every ${FREEZE_EVERY} hunts you win, and a missed day spends one instead of breaking your streak.${s.frozen.length ? ` Frozen so far: ${s.frozen.map(longDate).join(', ')}.` : ''}`;
     $('keep').hidden = practice;
-    $('countdown').hidden = practice;
+    $('countdown').hidden = Boolean(practiceDate);
   }
 
   function renderPast() {
@@ -270,7 +287,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
 
   function renderCountdown() {
     const t = now();
-    if (!practice && utcDate(t) !== date) {
+    if (!practiceDate && utcDate(t) !== date) {
       // A new UTC day started while the page was open: this page still holds yesterday's hunt.
       $('new-day').hidden = false;
       $('countdown').textContent = "Today's hunt is ready.";
@@ -285,7 +302,9 @@ function start(characters, questions, clockOffset, shareQuotes) {
     if (selected && (!game.canGuess || !game.pool.includes(selected))) selected = null;
     $('hunt-number').textContent = `Hunt #${game.number}`;
     $('archive-banner').hidden = !practice;
-    if (practice) $('archive-text').textContent = `Practice: Hunt #${game.number} from ${longDate(date)}. This won't affect your streak.`;
+    if (practiceDate) $('archive-text').textContent = `Practice: Hunt #${game.number} from ${longDate(date)}. This won't affect your streak.`;
+    if (replayOfToday) $('archive-text').textContent = `You've already finished today's hunt (${recorded.won ? `found in ${plural(recorded.score, 'point')}` : 'not found'}). Playing it again is practice and won't change your result.`;
+    $('archive-banner').querySelector('a').hidden = replayOfToday;
     const yesterday = game.yesterday && byId.get(game.yesterday);
     $('yesterday-note').hidden = !yesterday || game.status !== 'playing';
     if (yesterday) $('yesterday-note').textContent = `The previous day's character, the ${yesterday.name}, can't come up two days running, so they start out of the circle.`;

@@ -53,3 +53,15 @@ test('when localStorage can be read but not written, its stale copy is not read 
   assert.deepEqual(load('daily-progress', null), { date: '2026-10-02', actions: [{ ask: 'q' }] });
   assert.equal(load('missing-key', 'fallback'), 'fallback');
 });
+
+test('with localStorage full, reloading keeps the newer practice progress from IndexedDB', async () => {
+  mode = 'quota';
+  const stale = { date: '2026-10-05', startedAt: 100, actions: [{ ask: 'a' }] };
+  const newer = { date: '2026-10-05', startedAt: 100, actions: [{ ask: 'a' }, { ask: 'b' }] };
+  local.set('daily-practice-progress', JSON.stringify(stale));
+  backup.set('daily-practice-progress', newer);
+  await restore(['daily-practice-progress']);
+  assert.deepEqual(load('daily-practice-progress', null), newer);
+  await settle();
+  assert.deepEqual(backup.get('daily-practice-progress'), newer, 'the backup is not overwritten with the stale copy');
+});
