@@ -60,6 +60,51 @@ async function writeServiceWorker() {
   await writeFile(join(out, 'sw.js'), text);
 }
 
+// The live site's address: link previews need absolute URLs.
+const SITE = 'https://botc.panimu.com/';
+const escapeHtml = (text) => text.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+
+// One small page per character (you/<id>.html) for the quiz's share link: its
+// preview (title, card from scripts/make-share-cards.py) shows the character,
+// and anyone who opens it is sent on to the quiz. The description stays generic
+// because the shared message already carries the character's quote.
+async function writeSharePages(characters) {
+  await mkdir(join(out, 'you'), { recursive: true });
+  for (const character of characters) {
+    const name = escapeHtml(character.name);
+    const page = `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I'm the ${name} | Which Clocktower Character Are You?</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Which Blood on the Clocktower character are you? Answer yes or no until one is left.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Clocktower Character Quiz">
+  <meta property="og:title" content="I'm the ${name}">
+  <meta property="og:description" content="Which Blood on the Clocktower character are you? Answer yes or no until one is left.">
+  <meta property="og:url" content="${SITE}you/${character.id}.html">
+  <meta property="og:image" content="${SITE}resources/og/characters/${character.id}.jpg?v=${version}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The ${name} token beside the words: I'm the ${name}.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="${SITE}quiz.html">
+  <meta http-equiv="refresh" content="0; url=../quiz.html">
+  <script>location.replace('../quiz.html');</script>
+  <style>body { margin: 0; padding: 2rem; background: #221932; color: #f3e9d2; font: 1.1rem/1.5 Georgia, serif; } a { color: inherit; }</style>
+</head>
+<body>
+  <p><a href="../quiz.html">Which Clocktower character are you? Take the quiz.</a></p>
+</body>
+</html>
+`;
+    await writeFile(join(out, 'you', `${character.id}.html`), page);
+  }
+}
+
 async function build() {
   await rm(out, { recursive: true, force: true });
   await mkdir(out, { recursive: true });
@@ -76,7 +121,8 @@ async function build() {
   await writeFile(join(out, '.nojekyll'), '');
   await cp(join(root, '.htaccess'), join(out, '.htaccess'));
 
-  await writeJson('data/characters.json', await readJson('data/characters.json'));
+  const characters = await readJson('data/characters.json');
+  await writeJson('data/characters.json', characters);
   const files = await readJson('data/questions/index.json');
   await writeJson('data/questions/index.json', files);
   for (const file of files) {
@@ -86,6 +132,7 @@ async function build() {
   }
   const quotes = await readJson('data/share-quotes.json');
   await writeJson('data/share-quotes.json', Object.fromEntries(Object.entries(quotes).map(([id, { quote }]) => [id, { quote }])));
+  await writeSharePages(characters);
 }
 
 async function* textFiles(dir) {

@@ -17,6 +17,7 @@ Live at https://botc.panimu.com/ (Mythic Beasts static hosting, Apache): the hom
 - `npm test`: Node's built-in test runner (`node --test`). Single test: `node --test --test-name-pattern="undo" test/`.
 - `npm run validate`: data integrity, art presence, separability coverage, and simulated games. `--verbose` lists every unseparated pair. Run after every change to `data/`.
 - `node scripts/build-characters.js`: regenerates `data/characters.json` from `resources/data/`. Don't hand-edit that file.
+- `python scripts/make-share-cards.py`: regenerates the quiz's per-character link-preview cards in `resources/og/characters/` (needs Pillow). Rerun after adding characters or changing token art. The build turns them into share pages, `you/<id>.html`: each carries the character's preview tags and forwards visitors to the quiz. The quiz's share link points there, left bare so Discord expands it.
 
 There are no dependencies. The site runs from the source files; the build only prepares the published copy.
 

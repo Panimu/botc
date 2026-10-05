@@ -123,7 +123,9 @@ function start(characters, questions, shareQuotes) {
       $('share-quote-text').textContent = quote.quote;
       $('share-quote').hidden = false;
     }
-    const url = location.href.split(/[?#]/)[0];
+    // The character's own share page (built by scripts/build-site.js): its link
+    // preview shows their token, so the link is left bare for Discord to expand.
+    const url = new URL(`you/${result.id}.html`, location.href).href;
     const team = teamLabel(result.team);
     const nl = String.fromCharCode(10);
     texts = {
