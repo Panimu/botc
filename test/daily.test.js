@@ -198,7 +198,7 @@ test('a missed day or a loss ends a streak; every recorded hunt counts, with or 
   assert.ok(!('freezes' in streaks(results, '2026-10-08')));
 });
 
-test('budgets: par + 1 questions and 3 guesses, overflow into questions, lost only when no move is left', () => {
+test('budgets: par + 2 questions and 3 guesses, overflow into questions, lost only when no move is left', () => {
   // Find a day where always asking the least even question runs the questions out early.
   let game = null;
   for (let day = 0; day < 40 && !game; day++) {
@@ -242,7 +242,7 @@ test('a guess with no guess budget left spends a question instead', () => {
   assert.equal(game.score, game.history.length + game.wrongGuesses.length, 'scoring is unchanged');
 });
 
-test('random play never wins above par + 4, and only loses with no legal move left', () => {
+test('random play never wins above par + 5, and only loses with no legal move left', () => {
   let seed = 7;
   const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
   let wins = 0;
@@ -260,7 +260,7 @@ test('random play never wins above par + 4, and only loses with no legal move le
       }
       if (game.status === 'won') {
         wins++;
-        assert.ok(game.score <= p + 4, 'won in ' + game.score + ' with par ' + p);
+        assert.ok(game.score <= p + OVER_PAR_QUESTIONS + GUESS_BUDGET, 'won in ' + game.score + ' with par ' + p);
       } else {
         losses++;
         assert.ok(game.pool.length > 1);

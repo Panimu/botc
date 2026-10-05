@@ -7,9 +7,9 @@ export const LAUNCH_DATE = '2026-10-05';
 export const OFFER_COUNT = 3;
 // Budgets, when a game is given the day's par: par + OVER_PAR_QUESTIONS questions
 // and GUESS_BUDGET guesses. A guess with no guess budget left spends a question
-// instead, so a winning score is at most par + 4. A hunt is lost when no legal
+// instead, so a winning score is at most par + 5. A hunt is lost when no legal
 // move remains with more than one character left.
-export const OVER_PAR_QUESTIONS = 1;
+export const OVER_PAR_QUESTIONS = 2;
 export const GUESS_BUDGET = 3;
 // The old rules, used without a par (the par solver itself, and hunts saved
 // before budgets): unlimited questions, and three wrong guesses lose.
@@ -228,7 +228,7 @@ export const TIERS = {
   under: ['🟦', 'under par'],
   par: ['🟩', 'par'],
   plusOne: ['🟨', 'par +1'],
-  scraped: ['🟧', 'par +2 to +4'],
+  scraped: ['🟧', 'par +2 to +5'],
   lost: ['🟥', 'lost'],
   missed: ['⬜', 'missed'],
   untiered: ['▫️', 'played before budgets'],
