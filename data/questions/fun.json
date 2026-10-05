@@ -293,7 +293,7 @@
   },
   {
     "id": "fun-noon-murder",
-    "plain": "Can your own ability, not another character's, kill another player during the day, other than by execution?",
+    "plain": "Can your own ability, not another character's, kill a player in broad daylight, other than by execution?",
     "styled": "Why wait for nightfall like some COWARD? Your goddess murders at NOON, in front of EVERYONE, and then demands applause! Can your own ability, not another character's, kill another player in broad daylight, without executing them?",
     "voice": "Samantha",
     "yes": {

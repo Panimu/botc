@@ -62,3 +62,17 @@ test('plain wording: hard rules are errors, length and double negatives are warn
   assert.ok(plainWording(`Are you ${'very '.repeat(20)}evil?`).warnings.some((w) => w.includes('words')));
   assert.ok(plainWording("Can't you not die?").warnings.some((w) => w.includes('double negative')));
 });
+
+test('the validator rejects two questions with the same plain or styled text', async () => {
+  const { checkQuestions } = await import('../scripts/validate.js');
+  const { loadData } = await import('../scripts/load.js');
+  const { characters } = await loadData();
+  const base = { voice: 'The Host', yes: [characters[0].id] };
+  const errors = checkQuestions([
+    { ...base, id: 'a', plain: 'Are you the first character?', styled: 'One?' },
+    { ...base, id: 'b', plain: 'Are you the first character?', styled: 'Two?' },
+    { ...base, id: 'c', plain: 'Are you really the first character?', styled: 'Two?' },
+  ], characters);
+  assert.ok(errors.some((e) => e.includes('Question b') && e.includes('"plain" text duplicates')));
+  assert.ok(errors.some((e) => e.includes('Question c') && e.includes('"styled" text duplicates')));
+});
