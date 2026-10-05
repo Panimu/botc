@@ -377,6 +377,13 @@ async function loadReview() {
   } catch {}
 }
 
+// Fetch the latest list from disk (agents or another tab may have added to it).
+async function refreshReview() {
+  await reviewSave;
+  const { body } = await api('/api/review');
+  if (Array.isArray(body.items)) state.review = { items: body.items };
+}
+
 // Adds a question (or another reason for it) to the list.
 function addToReview(id, text, source = 'you') {
   let item = reviewItem(id);
@@ -408,6 +415,7 @@ function entriesIn(text, fallback) {
 async function askForReason(id) {
   const answer = await ask({ title: `Why review ${id}?`, fields: [{ name: 'reason', label: 'Reason', type: 'textarea' }], ok: 'Add' });
   if (!answer) return;
+  await refreshReview();
   addToReview(id, answer.reason.trim() || 'No reason given.', 'you');
   await saveReview();
   renderReviewList();
@@ -1116,6 +1124,7 @@ $('validate').addEventListener('click', async () => {
 $('review-load').addEventListener('click', async () => {
   const entries = entriesIn($('review-input').value, $('review-default-reason').value.trim());
   if (!entries.length) { $('review-progress').textContent = 'No known question ids found in that text.'; return; }
+  await refreshReview();
   for (const { id, reason } of entries) addToReview(id, reason, 'you');
   await saveReview();
   $('review-input').value = '';
@@ -1131,6 +1140,7 @@ $('review-file').addEventListener('change', async (event) => {
 });
 for (const id of ['review-source', 'review-hide-done']) $(id).addEventListener('input', renderReviewList);
 $('review-clear-done').addEventListener('click', async () => {
+  await refreshReview();
   state.review.items = state.review.items.filter((i) => !i.reviewed);
   await saveReview();
   renderReviewList();
@@ -1145,11 +1155,13 @@ $('review-clear').addEventListener('click', async () => {
 $('q-review-add').addEventListener('click', () => askForReason(state.view.id));
 $('review-add-reason').addEventListener('click', () => askForReason(state.view.id));
 $('review-remove').addEventListener('click', async () => {
+  await refreshReview();
   state.review.items = state.review.items.filter((i) => i.id !== state.view.id);
   await saveReview();
   renderReviewList();
 });
 $('reviewed').addEventListener('change', async () => {
+  await refreshReview();
   reviewItem(state.view.id).reviewed = $('reviewed').checked;
   await saveReview();
   renderReviewList();
@@ -1170,6 +1182,11 @@ document.addEventListener('keydown', (event) => {
   if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'z') { event.preventDefault(); undoRedo(event.shiftKey ? 'redo' : 'undo', event.shiftKey ? 'undo' : 'redo'); }
   if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'y') { event.preventDefault(); undoRedo('redo', 'undo'); }
   if (event.key === '/') { event.preventDefault(); showTab('questions'); $('search').focus(); }
+});
+window.addEventListener('focus', async () => {
+  if (!state.data) return;
+  await refreshReview();
+  renderReviewList();
 });
 window.addEventListener('beforeunload', (event) => { if (anyDirty()) event.preventDefault(); });
 
