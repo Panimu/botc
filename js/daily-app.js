@@ -17,9 +17,6 @@ const progressKey = (date) => `daily-progress:${date}`;
 const LEGACY_PROGRESS_KEY = 'daily-progress';
 const PRACTICE_KEY = 'daily-practice-progress';
 const RESULTS_KEY = 'daily-results';
-// Shown once after budgets arrived; dismissing it is remembered on this device.
-const RELEASE_NOTE_KEY = 'release-note-seen';
-const RELEASE_NOTE = 'budgets';
 const NUMBER_WORDS = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 const longDate = (date) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
 
@@ -512,15 +509,6 @@ function start(characters, questions, clockOffset, shareQuotes) {
     URL.revokeObjectURL(link.href);
     $('keep-status').textContent = 'Reminder downloaded. Open it to add a daily event (just after midnight UTC, in your local time) to your calendar.';
   });
-  // One-time note about the rules change.
-  let noteSeen = false;
-  try { noteSeen = localStorage.getItem(RELEASE_NOTE_KEY) === RELEASE_NOTE; } catch {}
-  $('release-note').hidden = noteSeen;
-  $('release-note-dismiss').addEventListener('click', () => {
-    $('release-note').hidden = true;
-    try { localStorage.setItem(RELEASE_NOTE_KEY, RELEASE_NOTE); } catch {}
-  });
-
   $('install-app').hidden = !installPrompt;
   $('install-app').addEventListener('click', async () => {
     if (!installPrompt) return;

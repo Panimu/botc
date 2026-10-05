@@ -1152,9 +1152,7 @@ body {
 @media (prefers-contrast: more) { .offer-id, .path-id, .question-id { opacity: 1; } }
 .timeline .value { paint-order: stroke; stroke: var(--panel); stroke-width: 3px; stroke-linejoin: round; }
 
-/* Rules-change note, and the ten-day streak line on the result. */
-.release-note { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin: 0 0 1rem; padding: 0.75rem 1rem; border: 2px solid var(--brass); border-radius: 1rem; background: var(--panel); text-align: left; }
-.release-note p { margin: 0; flex: 1 1 18rem; }
+/* The ten-day streak line on the result. */
 .streak-line { margin: 1rem 0 0; text-align: center; }
 .streak-line p { margin: 0; }
 .streak-text { font-weight: 700; }
