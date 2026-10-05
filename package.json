@@ -8,6 +8,6 @@
     "validate": "node scripts/validate.js",
     "test": "node --test",
     "build": "node scripts/build-site.js",
-    "deploy-zip": "node scripts/validate.js && node --test && node scripts/deploy-zip.js"
+    "upload": "node scripts/validate.js && node --test && node scripts/prepare-upload.js"
   }
 }
