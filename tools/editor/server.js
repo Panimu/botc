@@ -7,7 +7,7 @@
 // is checked with the validator's own rules first, so it can't write a question
 // the validator would reject. Never published: build-site.js copies an allow-list.
 import http from 'node:http';
-import { readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { execFile } from 'node:child_process';
 import { extname, join, normalize, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -248,7 +248,33 @@ async function serveFile(res, base, path) {
   }
 }
 
+// The review list: questions to look at, each with its reasons. Kept in
+// .cache/review-queue.json (not committed) so agents and scripts can add to it:
+// { items: [{ id, reasons: [{ text, source, added }], reviewed, resolution }] }
+const QUEUE = '.cache/review-queue.json';
+async function readQueue() {
+  try {
+    const queue = JSON.parse(await readFile(join(root, QUEUE), 'utf8'));
+    return { items: Array.isArray(queue.items) ? queue.items : [] };
+  } catch {
+    return { items: [] };
+  }
+}
+async function writeQueue({ items }) {
+  if (!Array.isArray(items)) return fail(400, 'Expected { items: [...] }');
+  const clean = items.filter((i) => typeof i?.id === 'string').map((i) => ({
+    id: i.id,
+    reasons: (Array.isArray(i.reasons) ? i.reasons : []).filter((r) => r?.text).map((r) => ({ text: String(r.text), source: String(r.source ?? ''), added: String(r.added ?? '') })),
+    reviewed: Boolean(i.reviewed),
+    resolution: String(i.resolution ?? ''),
+  }));
+  await mkdir(join(root, '.cache'), { recursive: true });
+  await writeFile(join(root, QUEUE), JSON.stringify({ items: clean }, null, 2) + '\n');
+  return ok();
+}
+
 const ACTIONS = {
+  '/api/review': writeQueue,
   '/api/save': saveQuestion,
   '/api/rename': renameQuestion,
   '/api/delete': deleteQuestion,
@@ -261,6 +287,7 @@ const server = http.createServer(async (req, res) => {
   try {
     const { pathname } = new URL(req.url, `http://localhost:${PORT}`);
     if (req.method === 'GET' && pathname === '/api/data') return send(res, 200, await loadAll());
+    if (req.method === 'GET' && pathname === '/api/review') return send(res, 200, await readQueue());
     if (req.method === 'POST' && pathname === '/api/check') {
       const draft = strip((await body(req)).question ?? {});
       return send(res, 200, { errors: await errorsFor(draft), warnings: plainWording(draft.plain ?? '').warnings });

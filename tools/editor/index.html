@@ -43,17 +43,29 @@
       </section>
 
       <section class="panel" data-panel="review" hidden>
-        <label class="field">Paste question ids, or any text that mentions them
-          <textarea id="review-input" rows="4" placeholder="A review report, notes, a list of ids: every known id in it is picked up, in order."></textarea>
-        </label>
+        <details class="add-box">
+          <summary>Add questions to the list</summary>
+          <label class="field">Paste text: each line's question id is added, and the rest of that line becomes its reason
+            <textarea id="review-input" rows="4" placeholder="xd-broad-daylight: the Gossip's kill comes at night, so it shouldn't be yes"></textarea>
+          </label>
+          <label class="field">Reason for lines that don't give one
+            <input type="text" id="review-default-reason" placeholder="Optional">
+          </label>
+          <div class="row">
+            <button type="button" id="review-load" class="primary small">Add to list</button>
+            <label class="file-button">Open file… <input type="file" id="review-file" accept=".txt,.md,.json,.csv"></label>
+          </div>
+        </details>
         <div class="row">
-          <button type="button" id="review-load">Load list</button>
-          <label class="file-button">Open file… <input type="file" id="review-file" accept=".txt,.md,.json,.csv"></label>
-          <button type="button" id="review-add-current" class="quiet">Add current</button>
-          <button type="button" id="review-clear" class="quiet">Clear</button>
+          <select id="review-source" aria-label="Source"><option value="">From anyone</option></select>
+          <label class="checks"><input type="checkbox" id="review-hide-done"> Hide reviewed</label>
         </div>
         <p class="hint" id="review-progress"></p>
         <ol class="list" id="review-list"></ol>
+        <div class="row">
+          <button type="button" id="review-clear-done" class="quiet small">Remove reviewed</button>
+          <button type="button" id="review-clear" class="quiet small danger">Clear all</button>
+        </div>
       </section>
 
       <section class="panel" data-panel="characters" hidden>
@@ -89,12 +101,26 @@
           <span class="tag new" id="q-new" hidden>New</span>
           <span class="tag dirty" id="q-dirty" hidden>Unsaved</span>
           <span class="tag" id="q-changed" hidden title="Different from the last commit">Changed since commit</span>
-          <label class="reviewed" id="reviewed-wrap" hidden><input type="checkbox" id="reviewed"> Reviewed</label>
           <span class="spacer"></span>
+          <button type="button" class="quiet" id="q-review-add">Add to review…</button>
           <button type="button" class="quiet" id="q-duplicate">Duplicate</button>
           <button type="button" class="quiet" id="q-rename">Rename</button>
           <button type="button" class="quiet danger" id="q-delete">Delete</button>
         </div>
+
+        <section class="review-box" id="review-box" hidden>
+          <div class="row">
+            <strong>In the review list</strong>
+            <label class="reviewed"><input type="checkbox" id="reviewed"> Reviewed</label>
+            <span class="spacer"></span>
+            <button type="button" class="quiet small" id="review-add-reason">Add a reason…</button>
+            <button type="button" class="quiet small danger" id="review-remove">Remove from list</button>
+          </div>
+          <ul class="reasons" id="review-reasons"></ul>
+          <label class="field">What you decided <span class="hint">(kept with the list)</span>
+            <textarea id="review-resolution" rows="2" placeholder="e.g. Fixed: moved the Gossip to no"></textarea>
+          </label>
+        </section>
 
         <div class="two">
           <div>

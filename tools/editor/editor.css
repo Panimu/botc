@@ -173,3 +173,16 @@ dialog .field { margin-bottom: 0.6rem; }
 .keys { display: grid; grid-template-columns: auto 1fr; gap: 0.4rem 1rem; margin: 0; }
 .keys dt { font: 600 0.85rem ui-monospace, Consolas, monospace; color: var(--brass); }
 .keys dd { margin: 0; }
+
+/* Review list entries and the in-editor review box. */
+.list .reason { display: block; margin-top: 0.15rem; color: var(--warn); font-size: 0.8rem; }
+.list .done .reason { color: var(--dim); }
+.add-box { border: 1px solid var(--line); border-radius: 0.5rem; padding: 0.4rem 0.6rem; }
+.add-box summary { cursor: pointer; font-weight: 600; font-size: 0.9rem; }
+.add-box[open] { display: flex; flex-direction: column; gap: 0.5rem; }
+.review-box { margin-top: 0.7rem; padding: 0.6rem 0.8rem; border: 1px solid var(--warn); border-radius: 0.6rem; background: var(--panel); }
+.review-box.done { border-color: var(--yes); }
+.reasons { margin: 0.4rem 0; padding-left: 1.2rem; font-size: 0.92rem; }
+.reasons li { margin: 0.25rem 0; }
+.reasons .src { color: var(--dim); font-size: 0.8rem; }
+.reasons button { margin-left: 0.4rem; padding: 0 0.4rem; font-size: 0.75rem; }

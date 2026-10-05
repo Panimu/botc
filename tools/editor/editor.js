@@ -21,8 +21,7 @@ const state = {
   cDrafts: new Map(), // character id -> { traits: Map(name -> state), quote, voice }
   tDrafts: new Map(), // trait name (or '' for a new one) -> draft
   mode: 'yes',
-  queue: [],
-  reviewed: new Set(),
+  review: { items: [] }, // from .cache/review-queue.json via the server
   listIds: { questions: [], review: [], characters: [], traits: [] },
 };
 
@@ -184,7 +183,7 @@ function renderCounts() {
 
 // ---- Sidebar lists -------------------------------------------------------------
 
-function questionItem(id, { done } = {}) {
+function questionItem(id, { done, reason } = {}) {
   const entry = qEntry(id);
   const li = el('li');
   if (!entry) {
@@ -198,6 +197,7 @@ function questionItem(id, { done } = {}) {
   if (entry.question?._warnings?.length) marks.push('⚠');
   if (entry.question?._changed) marks.push('Δ');
   li.append(el('span', 'marks', `${marks.join(' ')} ${entry.file.replace('.json', '')}`), el('span', 'id', id), document.createTextNode(qDraft(id).plain || '(no wording yet)'));
+  if (reason) li.append(el('span', 'reason', reason));
   li.setAttribute('aria-current', String(state.view?.kind === 'question' && state.view.id === id));
   li.addEventListener('click', () => openQuestion(id));
   return li;
@@ -224,14 +224,45 @@ function renderQuestionList() {
 }
 
 function renderReviewList() {
-  const done = state.queue.filter((id) => state.reviewed.has(id)).length;
-  $('review-progress').textContent = state.queue.length ? `${done} of ${state.queue.length} reviewed` : 'No review list loaded.';
-  $('review-badge').textContent = state.queue.length ? String(state.queue.length - done) : '';
-  state.listIds.review = state.queue;
-  $('review-list').replaceChildren(...state.queue.map((id) => questionItem(id, { done: state.reviewed.has(id) })));
-  const inQueue = state.view?.kind === 'question' && state.queue.includes(state.view.id);
-  $('reviewed-wrap').hidden = !inQueue;
-  $('reviewed').checked = inQueue && state.reviewed.has(state.view.id);
+  const items = state.review.items;
+  const done = items.filter((i) => i.reviewed).length;
+  const select = $('review-source');
+  const sources = [...new Set(items.flatMap((i) => i.reasons.map((r) => r.source)).filter(Boolean))].sort();
+  if ([...select.options].slice(1).map((o) => o.value).join() !== sources.join()) {
+    const current = select.value;
+    select.replaceChildren(new Option('From anyone', ''), ...sources.map((x) => new Option(`From ${x}`, x)));
+    select.value = sources.includes(current) ? current : '';
+  }
+  const shown = items.filter((i) => (!$('review-hide-done').checked || !i.reviewed)
+    && (!select.value || i.reasons.some((r) => r.source === select.value)));
+  $('review-progress').textContent = items.length ? `${done} of ${items.length} reviewed` : 'The review list is empty.';
+  $('review-badge').textContent = items.length - done ? String(items.length - done) : '';
+  state.listIds.review = shown.map((i) => i.id);
+  $('review-list').replaceChildren(...shown.map((i) => questionItem(i.id, {
+    done: i.reviewed,
+    reason: i.reviewed && i.resolution ? `Decided: ${i.resolution}` : i.reasons.map((r) => r.text).join(' · ') || '(no reason given)',
+  })));
+  renderReviewBox();
+}
+
+// The review box in the question editor: why it's on the list, and what was decided.
+function renderReviewBox() {
+  const id = state.view?.kind === 'question' && state.view.id;
+  const item = id && reviewItem(id);
+  $('review-box').hidden = !item;
+  $('q-review-add').hidden = Boolean(item) || !id || state.newQuestions.has(id);
+  if (!item) return;
+  $('review-box').classList.toggle('done', item.reviewed);
+  $('reviewed').checked = item.reviewed;
+  if (document.activeElement !== $('review-resolution')) $('review-resolution').value = item.resolution;
+  $('review-reasons').replaceChildren(...(item.reasons.length ? item.reasons.map((r, index) => {
+    const li = el('li', '', r.text);
+    li.append(' ', el('span', 'src', [r.source, r.added].filter(Boolean).join(', ')));
+    const remove = button('✕', () => { item.reasons.splice(index, 1); saveReview(); renderReviewList(); }, 'quiet');
+    remove.title = 'Remove this reason';
+    li.append(remove);
+    return li;
+  }) : [el('li', 'src', 'No reason given.')]));
 }
 
 function renderCharacterList() {
@@ -317,26 +348,68 @@ function step(delta) {
 }
 
 // ---- Review list ---------------------------------------------------------------
+// Kept by the server in .cache/review-queue.json, so agents and scripts can add to it too.
 
+const reviewItem = (id) => state.review.items.find((i) => i.id === id);
+const today = () => new Date().toISOString().slice(0, 10);
+
+let reviewSave = Promise.resolve();
 function saveReview() {
-  try { localStorage.setItem(REVIEW_KEY, JSON.stringify({ queue: state.queue, reviewed: [...state.reviewed] })); } catch {}
+  const snapshot = clone(state.review);
+  reviewSave = reviewSave.then(() => api('/api/review', snapshot));
+  return reviewSave;
 }
-function loadReview() {
+
+async function loadReview() {
+  const { body } = await api('/api/review');
+  state.review = { items: body.items ?? [] };
+  // One-time move of a list this browser kept before reasons existed.
   try {
-    const saved = JSON.parse(localStorage.getItem(REVIEW_KEY));
-    if (saved) { state.queue = saved.queue ?? []; state.reviewed = new Set(saved.reviewed ?? []); }
+    const old = JSON.parse(localStorage.getItem(REVIEW_KEY));
+    if (old?.queue?.length) {
+      for (const id of old.queue.filter((x) => !reviewItem(x))) {
+        const item = addToReview(id, 'Queued before review reasons were kept.', 'you');
+        if (old.reviewed?.includes(id)) item.reviewed = true;
+      }
+      await saveReview();
+    }
+    localStorage.removeItem(REVIEW_KEY);
   } catch {}
 }
-// Every known question id in the text, in order of first appearance.
-function idsIn(text) {
-  const found = [];
-  for (const token of text.match(/[a-z0-9]+(?:-[a-z0-9]+)+/g) ?? []) if (state.byId.has(token) && !found.includes(token)) found.push(token);
-  return found;
+
+// Adds a question (or another reason for it) to the list.
+function addToReview(id, text, source = 'you') {
+  let item = reviewItem(id);
+  if (!item) {
+    item = { id, reasons: [], reviewed: false, resolution: '' };
+    state.review.items.push(item);
+  }
+  if (text && !item.reasons.some((r) => r.text === text)) {
+    item.reasons.push({ text, source, added: today() });
+    item.reviewed = false;
+  }
+  return item;
 }
-function setQueue(ids) {
-  state.queue = ids;
-  state.reviewed = new Set([...state.reviewed].filter((id) => ids.includes(id)));
-  saveReview();
+
+// Each line of the text: every known question id in it, with the rest of the line as its reason.
+function entriesIn(text, fallback) {
+  const entries = [];
+  for (const line of text.split(/\r?\n/)) {
+    const ids = (line.match(/[a-z0-9]+(?:-[a-z0-9]+)+/g) ?? []).filter((token) => state.byId.has(token));
+    if (!ids.length) continue;
+    let reason = line;
+    for (const id of ids) reason = reason.replace(id, ' ');
+    reason = reason.replace(/^[\s\-*•:|,.)(\][`"']+|[\s|`"',:;-]+$/g, '').replace(/\s+/g, ' ').trim();
+    for (const id of ids) entries.push({ id, reason: reason || fallback });
+  }
+  return entries;
+}
+
+async function askForReason(id) {
+  const answer = await ask({ title: `Why review ${id}?`, fields: [{ name: 'reason', label: 'Reason', type: 'textarea' }], ok: 'Add' });
+  if (!answer) return;
+  addToReview(id, answer.reason.trim() || 'No reason given.', 'you');
+  await saveReview();
   renderReviewList();
 }
 
@@ -709,9 +782,8 @@ async function renameQuestion() {
   if (problem) { setStatus(problem, 'bad'); return; }
   const { ok, body } = await api('/api/rename', { file: qEntry(id).file, id, newId });
   if (!ok) { setStatus(`Not renamed: ${body.errors.join('; ')}`, 'bad'); return; }
-  state.queue = state.queue.map((x) => (x === id ? newId : x));
-  if (state.reviewed.delete(id)) state.reviewed.add(newId);
-  saveReview();
+  const item = reviewItem(id);
+  if (item) { item.id = newId; saveReview(); }
   state.history.delete(id);
   await load();
   openQuestion(newId);
@@ -1041,11 +1113,14 @@ $('validate').addEventListener('click', async () => {
   showValidation(`${body.code ? 'Problems found' : 'Passed'}\n\n${body.output}`);
 });
 
-$('review-load').addEventListener('click', () => {
-  const ids = idsIn($('review-input').value);
-  setQueue(ids);
-  if (ids.length) openQuestion(ids[0]);
-  else $('review-progress').textContent = 'No known question ids found in that text.';
+$('review-load').addEventListener('click', async () => {
+  const entries = entriesIn($('review-input').value, $('review-default-reason').value.trim());
+  if (!entries.length) { $('review-progress').textContent = 'No known question ids found in that text.'; return; }
+  for (const { id, reason } of entries) addToReview(id, reason, 'you');
+  await saveReview();
+  $('review-input').value = '';
+  renderReviewList();
+  setStatus(`Added ${plural(new Set(entries.map((e) => e.id)).size, 'question')} to the review list.`, 'good');
 });
 $('review-file').addEventListener('change', async (event) => {
   const file = event.target.files[0];
@@ -1054,14 +1129,36 @@ $('review-file').addEventListener('change', async (event) => {
   $('review-load').click();
   event.target.value = '';
 });
-$('review-add-current').addEventListener('click', () => {
-  if (state.view?.kind === 'question' && state.byId.has(state.view.id) && !state.queue.includes(state.view.id)) setQueue([...state.queue, state.view.id]);
-});
-$('review-clear').addEventListener('click', () => { setQueue([]); $('review-input').value = ''; });
-$('reviewed').addEventListener('change', () => {
-  if ($('reviewed').checked) state.reviewed.add(state.view.id); else state.reviewed.delete(state.view.id);
-  saveReview();
+for (const id of ['review-source', 'review-hide-done']) $(id).addEventListener('input', renderReviewList);
+$('review-clear-done').addEventListener('click', async () => {
+  state.review.items = state.review.items.filter((i) => !i.reviewed);
+  await saveReview();
   renderReviewList();
+});
+$('review-clear').addEventListener('click', async () => {
+  const answer = await ask({ title: 'Clear the whole review list?', text: `This removes all ${state.review.items.length} entries and their notes.`, ok: 'Clear all', danger: true });
+  if (!answer) return;
+  state.review.items = [];
+  await saveReview();
+  renderReviewList();
+});
+$('q-review-add').addEventListener('click', () => askForReason(state.view.id));
+$('review-add-reason').addEventListener('click', () => askForReason(state.view.id));
+$('review-remove').addEventListener('click', async () => {
+  state.review.items = state.review.items.filter((i) => i.id !== state.view.id);
+  await saveReview();
+  renderReviewList();
+});
+$('reviewed').addEventListener('change', async () => {
+  reviewItem(state.view.id).reviewed = $('reviewed').checked;
+  await saveReview();
+  renderReviewList();
+});
+let resolutionTimer = null;
+$('review-resolution').addEventListener('input', () => {
+  reviewItem(state.view.id).resolution = $('review-resolution').value;
+  clearTimeout(resolutionTimer);
+  resolutionTimer = setTimeout(saveReview, 500);
 });
 
 document.addEventListener('keydown', (event) => {
@@ -1076,8 +1173,9 @@ document.addEventListener('keydown', (event) => {
 });
 window.addEventListener('beforeunload', (event) => { if (anyDirty()) event.preventDefault(); });
 
-loadReview();
 await load();
+await loadReview();
+renderReviewList();
 // Deep links: #q=<question id>, #c=<character id>, #t=<trait>; plain #<question id> too.
 const [kind, value] = (() => {
   const hash = decodeURIComponent(location.hash.slice(1));
@@ -1087,4 +1185,4 @@ const [kind, value] = (() => {
 if (kind === 'q' && state.byId.has(value)) openQuestion(value);
 else if (kind === 'c' && state.charById.has(value)) { showTab('characters'); openCharacter(value); }
 else if (kind === 't' && state.data.traits[value]) openTrait(value);
-else if (state.queue.length) showTab('review');
+else if (state.review.items.some((i) => !i.reviewed)) showTab('review');
