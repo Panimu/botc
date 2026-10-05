@@ -73,6 +73,13 @@ function repairResults(today) {
 }
 
 // "two under par", "level with par", "one over par"
+// A saved par run: [{ left, points }] from the start down to one character at par.
+function validParPath(path, parScore) {
+  return Array.isArray(path) && path.length >= 2
+    && path.every((s) => s && Number.isInteger(s.left) && s.left >= 1 && Number.isInteger(s.points) && s.points >= 0)
+    && path.at(-1).left === 1 && path.at(-1).points === parScore;
+}
+
 function versusPar(score, parScore) {
   if (parScore == null) return '';
   const diff = score - parScore;
@@ -134,11 +141,20 @@ function start(characters, questions, clockOffset, shareQuotes) {
         actions = [];
       }
     }
-    return { game, actions, startedAt: same && actions.length && saved.startedAt ? saved.startedAt : Date.now() };
+    // Par's run for the chart must match the par this hunt is judged against:
+    // today's run while par hasn't moved, otherwise the run saved with the
+    // session, otherwise none (better no comparison than a contradictory one).
+    // Hunts under the old rules never had a par of their own, so they use today's.
+    let comparison = parResult;
+    if (game.budgeted && game.par !== parScore) {
+      const path = actions.length && game.par === sessionPar ? saved?.parPath : null;
+      comparison = validParPath(path, game.par) ? { score: game.par, path } : null;
+    }
+    return { game, actions, comparison, startedAt: same && actions.length && saved.startedAt ? saved.startedAt : Date.now() };
   }
 
   let saveKey = practiceDate ? PRACTICE_KEY : progressKey(date);
-  let { game, actions, startedAt } = resume(saveKey);
+  let { game, actions, comparison, startedAt } = resume(saveKey);
   // Today's result is already recorded but the moves behind it aren't here (it came
   // from a restore link, or the saved moves no longer replay). The recorded result
   // stands, and playing again is practice, so the official score never changes.
@@ -146,9 +162,12 @@ function start(characters, questions, clockOffset, shareQuotes) {
   const replayOfToday = Boolean(recorded) && game.status === 'playing';
   if (replayOfToday) {
     saveKey = PRACTICE_KEY;
-    ({ game, actions, startedAt } = resume(PRACTICE_KEY));
+    ({ game, actions, comparison, startedAt } = resume(PRACTICE_KEY));
   }
   const practice = Boolean(practiceDate) || replayOfToday;
+  // The one par this hunt is judged against, everywhere: header, result, chart,
+  // share text and the stored result all agree.
+  const judgedPar = game.budgeted ? game.par : parScore;
   const startCount = game.characters.length - (game.yesterday ? 1 : 0);
 
   const announcer = $('announcer');
@@ -162,7 +181,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
   });
 
   function save() {
-    store.set(saveKey, { date, actions, startedAt, par: game.par });
+    store.set(saveKey, { date, actions, startedAt, par: game.par, parPath: game.budgeted ? comparison?.path : undefined });
     if (!practice && game.status !== 'playing') {
       const results = store.get(RESULTS_KEY, {});
       if (!results[date]) {
@@ -296,8 +315,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const marks = [answers, guesses, finish].filter(Boolean).join(' ');
     const results = store.get(RESULTS_KEY, {});
     const { current } = streaks(results, today);
-    const shownPar = game.par ?? parScore;
-    const parText = shownPar != null ? ` (par ${shownPar})` : '';
+    const parText = judgedPar != null ? ` (par ${judgedPar})` : '';
     const verdict = game.status === 'won' ? `🎯 Found in ${game.score}${parText}` : `💀 The town failed${parText}`;
     const streak = !practice && current > 0 ? ` · 🔥 ${current}-day streak` : '';
     const title = `Clocktower Daily Hunt #${game.number}${practice ? ' (practice)' : ''}`;
@@ -319,7 +337,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     setArt($('result-art'), target);
     $('result-art').className = `result-art ${side(target.team)}`;
     $('result-lead').textContent = game.status === 'won'
-      ? `${replayOfToday ? 'Practice: found' : 'Found'} in ${plural(game.score, 'point')}, ${versusPar(game.score, parScore)}. ${practiceDate ? 'That hunt' : 'Today'}'s character ${practiceDate ? 'was' : 'is'} the`
+      ? `${replayOfToday ? 'Practice: found' : 'Found'} in ${plural(game.score, 'point')}${judgedPar != null ? `, ${versusPar(game.score, judgedPar)}` : ''}. ${practiceDate ? 'That hunt' : 'Today'}'s character ${practiceDate ? 'was' : 'is'} the`
       : `${replayOfToday ? 'Practice: out' : 'Out'} of ${game.budgeted ? 'questions and guesses' : 'guesses'}. ${practiceDate ? 'That hunt' : 'Today'}'s character was the`;
     $('result-name').textContent = target.name;
     $('result-team').className = `result-team ${side(target.team)}`;
@@ -338,7 +356,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     // Scores first: whether they show changes the timeline's width.
     $('scores-figure').hidden = practice || Object.keys(results).length === 0;
     scoresChart($('scores-chart'), results, practice ? undefined : game.status === 'won' ? game.score : null);
-    timelineChart($('timeline-chart'), timelineSteps(), { par: parResult });
+    timelineChart($('timeline-chart'), timelineSteps(), { par: comparison });
     $('keep').hidden = practice;
     $('countdown').hidden = Boolean(practiceDate);
   }
@@ -394,8 +412,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     const yesterday = game.yesterday && byId.get(game.yesterday);
     $('yesterday-note').hidden = !yesterday || game.status !== 'playing';
     if (yesterday) $('yesterday-note').textContent = `The previous day's character, the ${yesterday.name}, can't come up two days running, so they start out of the circle.`;
-    const shownPar = game.par ?? parScore;
-    $('hunt-par').textContent = shownPar != null ? `Par ${shownPar}` : '';
+    $('hunt-par').textContent = judgedPar != null ? `Par ${judgedPar}` : '';
     if (game.budgeted) {
       // Both budgets on show: a player can't weigh a guess against a question otherwise.
       $('hunt-score').textContent = `${game.questionsLeft} of ${game.questionBudget} questions left`;
