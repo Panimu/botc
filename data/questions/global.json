@@ -1,41 +1,5 @@
 [
   {
-    "id": "global-on-the-towns-side",
-    "plain": "Are you on the town's side, trying to find and stop the Demon?",
-    "styled": "Some of you signed up to be heroes. Unpaid, unthanked, and statistically doomed heroes, but heroes. Are you one of the good ones?",
-    "voice": "Carl",
-    "yes": {
-      "team": [
-        "townsfolk",
-        "outsider"
-      ]
-    }
-  },
-  {
-    "id": "global-honest-at-heart",
-    "plain": "Do you start the game on the good team, hoping it wins?",
-    "styled": "Darling, a star must know which side of the stage she's on before the curtain even rises. Do you start the show with the virtuous villagers, hoping they win?",
-    "voice": "Princess Donut",
-    "yes": {
-      "team": [
-        "townsfolk",
-        "outsider"
-      ]
-    }
-  },
-  {
-    "id": "global-secret-traitor",
-    "plain": "Are you on the evil team, working against the town?",
-    "styled": "Look, I'm not judging. Okay, I'm judging a little. But if you're working for the bad guys, whether you hide it or not, I'd like to know now. Are you on the evil team, working against the town?",
-    "voice": "Carl",
-    "yes": {
-      "team": [
-        "minion",
-        "demon"
-      ]
-    }
-  },
-  {
     "id": "global-wins-with-evil",
     "plain": "Do you win when the Demon wins?",
     "styled": "Our sponsors have asked me to remind everyone that evil is a valid lifestyle choice with excellent merchandising. Do you win when the monster wins?",
@@ -45,15 +9,6 @@
         "minion",
         "demon"
       ]
-    }
-  },
-  {
-    "id": "global-you-are-the-monster",
-    "plain": "Are you the one the whole town is hunting?",
-    "styled": "EVERY torch, EVERY pitchfork, EVERY suspicious glance in that village is for YOU, beloved. Finally, an audience worthy of a goddess. Are you the one they're hunting?",
-    "voice": "Samantha",
-    "yes": {
-      "team": "demon"
     }
   },
   {
@@ -79,15 +34,9 @@
       "lordoftyphon",
       "lleech",
       "alhadikhia"
-    ]
-  },
-  {
-    "id": "global-right-hand",
-    "plain": "Are you evil, serving the Demon rather than being it?",
-    "styled": "Not everyone wants the crown. Some people just want to hold the knife for the person wearing it, and frankly that's where the job security is. Are you the Demon's loyal henchman rather than the Demon?",
-    "voice": "Odette",
-    "yes": {
-      "team": "minion"
+    ],
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -95,15 +44,6 @@
     "plain": "Are you on the good team, but likely to cause it trouble?",
     "styled": "Bless your heart, you're on the right side and you're still a walking disaster. Your teammates love you. Your teammates are also slightly afraid of you. Is that you?",
     "voice": "Elle",
-    "yes": {
-      "team": "outsider"
-    }
-  },
-  {
-    "id": "global-awkward-ally",
-    "plain": "Do you want to help the good team even though your own ability gets in the way?",
-    "styled": "Patch note: certain good-aligned contestants have been issued abilities that actively sabotage them. This is intended behaviour. Viewers find it hilarious. Is this your patch note?",
-    "voice": "The System AI",
     "yes": {
       "team": "outsider"
     }
@@ -127,38 +67,6 @@
     }
   },
   {
-    "id": "global-sides-decided-for-you",
-    "plain": "Are you happy for the Storyteller to choose your side when you join the game?",
-    "styled": "Good, evil, whatever! The Storyteller flips a coin, you shrug, and the audience gets a plot twist. Ratings gold. Will you let them pick your side for you?",
-    "voice": "Zev",
-    "yes": {
-      "team": "traveller"
-    }
-  },
-  {
-    "id": "global-in-the-circle",
-    "plain": "Do you want a seat in the circle from the very start of the game?",
-    "styled": "RAWR! Translation: he wants a proper seat, from the start, with snacks. No wandering in late, no lurking behind the Storyteller. Do you want your seat from the start too?",
-    "voice": "Mongo",
-    "yes": {
-      "team": [
-        "townsfolk",
-        "outsider",
-        "minion",
-        "demon"
-      ]
-    }
-  },
-  {
-    "id": "global-classic-script",
-    "plain": "Do you feel most at home in the classic beginner script, Trouble Brewing?",
-    "styled": "Ah, the classics. Simple, honest, perfect for first-timers and people who peaked in the tutorial. Is Trouble Brewing your home turf?",
-    "voice": "Mordecai",
-    "yes": {
-      "edition": "tb"
-    }
-  },
-  {
     "id": "global-old-reliable",
     "plain": "Do you belong to the original script that everyone learns first?",
     "styled": "Every contestant starts somewhere, and most of them start dying in exactly the same village. Fond memories! Are you from that very first script?",
@@ -177,28 +85,10 @@
     }
   },
   {
-    "id": "global-moonlit-bloodbath",
-    "plain": "Would you feel at home in Bad Moon Rising, where lots of people die and protection really matters?",
-    "styled": "BLOOD FOR THE BLOOD GODDESS! Also shields, apparently, for the cowards. Is your home the script where the moon rises and the bodies hit the floor?",
-    "voice": "Samantha",
-    "yes": {
-      "edition": "bmr"
-    }
-  },
-  {
     "id": "global-sects-and-violets",
     "plain": "Do you belong to Sects & Violets, the script of madness and characters that change?",
     "styled": "Welcome to the script where nobody is sure who they are, and some people are only pretending to be sure. Delicious content. Is Sects & Violets your script?",
     "voice": "Odette",
-    "yes": {
-      "edition": "snv"
-    }
-  },
-  {
-    "id": "global-identity-crisis-script",
-    "plain": "Would you feel at home in Sects & Violets, where people pretend to be other characters and might even turn into them?",
-    "styled": "I spent a long time not knowing what shape I was supposed to be. Turns out there's a whole script for that. Does the one full of madness and shifting identities feel like home?",
-    "voice": "Katia",
     "yes": {
       "edition": "snv"
     }
@@ -220,46 +110,12 @@
     }
   },
   {
-    "id": "global-untested",
-    "plain": "Would you rather be something new and untested than one of the familiar characters from the base scripts?",
-    "styled": "The System has generated several new contestant abilities and would like you to beta test them. Survival rates are an exciting mystery! Are you one of the untested ones?",
-    "voice": "The System AI",
-    "yes": {
-      "edition": "carousel",
-      "team": [
-        "townsfolk",
-        "outsider",
-        "minion",
-        "demon",
-        "traveller"
-      ]
-    }
-  },
-  {
     "id": "global-first-night-wake",
     "plain": "Does your own ability give the Storyteller something to do on the very first night?",
     "styled": "Opening night! Lights, camera, and a Storyteller who already has your ability on their to-do list before anyone has unpacked. Is your ability on the night-one list?",
     "voice": "The Host",
     "yes": {
       "firstNight": true
-    }
-  },
-  {
-    "id": "global-sleep-through-night-one",
-    "plain": "Does your own ability give the Storyteller nothing to do on the very first night?",
-    "styled": "Some abilities have the work ethic of a cat in a sunbeam. While the Storyteller runs around handling everyone else's opening-night powers, yours just sits there. Does your ability give the Storyteller nothing to do on night one?",
-    "voice": "Carl",
-    "yes": {
-      "firstNight": false
-    }
-  },
-  {
-    "id": "global-night-after-night",
-    "plain": "Does the Storyteller have something to do for you on nights after the first?",
-    "styled": "Kid, some people are low maintenance. You're not. Every night the Storyteller has to check on you, deal with you, or clean up after you. Is that you after night one?",
-    "voice": "Mordecai",
-    "yes": {
-      "otherNight": true
     }
   },
   {
@@ -279,39 +135,6 @@
     "yes": {
       "setup": true
     }
-  },
-  {
-    "id": "global-rearrange-the-furniture",
-    "plain": "Do you like to shake up the game's setup before anyone has said a word?",
-    "styled": "THE GOAT REARRANGES THE BOARD BEFORE THE FIRST MOVE. The others may weep. Do you, too, change the board before the game begins?",
-    "voice": "Prepotente",
-    "yes": {
-      "setup": true
-    }
-  },
-  {
-    "id": "global-once-per-game",
-    "plain": "Is your power a one-shot you can use whenever you choose, so the timing is up to you?",
-    "styled": "One shot. No refunds. You pick the moment. If you waste it on day one because you got excited, I will laugh, and so will forty billion viewers. Is your power a one-shot you get to time yourself?",
-    "voice": "The System AI",
-    "yes": [
-      "engineer",
-      "nightwatchman",
-      "courtier",
-      "seamstress",
-      "philosopher",
-      "huntsman",
-      "professor",
-      "artist",
-      "slayer",
-      "fisherman",
-      "golem",
-      "assassin",
-      "wizard",
-      "bonecollector",
-      "judge",
-      "puzzlemaster"
-    ]
   },
   {
     "id": "global-one-big-swing",
@@ -335,33 +158,6 @@
       "bonecollector",
       "judge",
       "puzzlemaster"
-    ]
-  },
-  {
-    "id": "global-head-start",
-    "plain": "Does your ability hand you information at the very start of the game, rather than fresh information each night?",
-    "styled": "Some contestants grind for every scrap of information night after night. Others get a free clue the moment the doors lock, like a participation trophy for being born lucky. Does your ability hand you yours up front?",
-    "voice": "The System AI",
-    "yes": [
-      "steward",
-      "knight",
-      "chef",
-      "noble",
-      "investigator",
-      "washerwoman",
-      "clockmaker",
-      "grandmother",
-      "librarian",
-      "shugenja",
-      "pixie",
-      "bountyhunter",
-      "mezepheles",
-      "godfather",
-      "yaggababble",
-      "eviltwin",
-      "widow",
-      "summoner",
-      "boffin"
     ]
   },
   {
@@ -390,15 +186,6 @@
       "summoner",
       "boffin"
     ]
-  },
-  {
-    "id": "global-madness",
-    "plain": "Does your ability use the madness rule, where someone tries to convince the group that something is true?",
-    "styled": "In this game, madness means committing to a bit until everyone believes it, and I respect commitment. Does your ability use the madness rule?",
-    "voice": "Carl",
-    "yes": {
-      "madness": true
-    }
   },
   {
     "id": "global-poison-and-drink",
@@ -631,6 +418,9 @@
         "demon"
       ],
       "setup": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -677,15 +467,15 @@
       "artist",
       "slayer",
       "fisherman",
-      "soldier",
-      "minstrel",
       "tealady",
-      "mayor",
       "fool",
       "virgin",
       "pacifist",
       "atheist"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "global-demon-who-redesigns",
@@ -695,16 +485,9 @@
     "yes": {
       "team": "demon",
       "setup": true
-    }
-  },
-  {
-    "id": "global-troubled-night-owl",
-    "plain": "Are you a good player whose ability causes you trouble and keeps the Storyteller busy on later nights?",
-    "styled": "Cursed AND high maintenance. The Storyteller sends their warmest regards and a formal complaint. Are you a troubled good player who needs attention on later nights?",
-    "voice": "The System AI",
-    "yes": {
-      "team": "outsider",
-      "otherNight": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   }
 ]

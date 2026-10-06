@@ -64,7 +64,20 @@ export function plainWording(plain) {
   return { errors, warnings };
 }
 
-export function checkQuestions(questions, characters, seen = { ids: new Set(), texts: new Set() }) {
+// Two questions split alike when they put the same characters on each side within
+// the same scope (asked either way round). Only one question per split is allowed:
+// a second one can never be asked once the first is answered, and it doubles how
+// often that split is offered.
+export function splitKey(yesSet, scopeSet, allIds) {
+  const pool = scopeSet ? [...scopeSet] : allIds;
+  const yes = pool.filter((id) => yesSet.has(id)).sort().join();
+  const no = pool.filter((id) => !yesSet.has(id)).sort().join();
+  return `${scopeSet ? [...scopeSet].sort().join() : '*'}|${yes <= no ? yes : no}`;
+}
+
+export function checkQuestions(questions, characters, seen = { ids: new Set(), texts: new Set(), splits: new Map() }) {
+  seen.splits ??= new Map();
+  const allIds = characters.map((c) => c.id);
   const errors = [];
   const ids = new Set(characters.map((c) => c.id));
   const fields = new Set(characters.flatMap((c) => Object.keys(c)));
@@ -93,6 +106,9 @@ export function checkQuestions(questions, characters, seen = { ids: new Set(), t
     if (yesSet.size === 0) errors.push(`${label}: nobody is on the yes side`);
     if (yesSet.size >= scopeSize) errors.push(`${label}: everyone in scope is on the yes side, so it never splits`);
     if (scopeSet && scopeSet.size < 2) errors.push(`${label}: scope has fewer than 2 characters`);
+    const key = splitKey(yesSet, scopeSet, allIds);
+    if (seen.splits.has(key)) errors.push(`${label}: splits exactly like ${seen.splits.get(key)}; keep just one question per split`);
+    else seen.splits.set(key, q.id);
   }
   return errors;
 }
@@ -196,7 +212,7 @@ async function main() {
   const onDisk = (await readdir(new URL('../data/questions/', import.meta.url))).filter((f) => f.endsWith('.json') && f !== 'index.json');
   for (const f of onDisk) if (!files.includes(f)) errors.push(`data/questions/${f} is not listed in data/questions/index.json`);
 
-  const seen = { ids: new Set(), texts: new Set() };
+  const seen = { ids: new Set(), texts: new Set(), splits: new Map() };
   for (const { file, questions: qs } of questionFiles) {
     const fileErrors = checkQuestions(qs, characters, seen);
     if (!only.length || only.includes(file)) errors.push(...fileErrors.map((e) => `${file}: ${e}`));

@@ -6,15 +6,9 @@
     "voice": "The Host",
     "yes": {
       "killsAtNight": true
-    }
-  },
-  {
-    "id": "xd-after-dark",
-    "plain": "Can your own ability, not a borrowed one, kill another player at night?",
-    "styled": "Listen up. Night is when most people in this town stop breathing, and I need to know whose fault that is. Not a power you're borrowing. Yours. Can your own ability kill another player while the town sleeps?",
-    "voice": "Mordecai",
-    "yes": {
-      "killsAtNight": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -24,15 +18,9 @@
     "voice": "Elle",
     "yes": {
       "killsByDay": true
-    }
-  },
-  {
-    "id": "xd-witnessed-kill",
-    "plain": "Can your own ability, not another character's, strike a player dead while the town is awake, without them being executed?",
-    "styled": "YOUR GODDESS ADORES AN AUDIENCE! Blood in the sunlight, gasps from the crowd, no tedious voting required! Can your own ability, not another character's, strike a player dead while the whole town is awake and watching, no execution involved?",
-    "voice": "Samantha",
-    "yes": {
-      "killsByDay": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -42,6 +30,9 @@
     "voice": "Carl",
     "yes": {
       "causesExtraExecution": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -52,7 +43,10 @@
     "yes": [
       "mutant",
       "scapegoat"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-death-rattle",
@@ -61,24 +55,9 @@
     "voice": "The System AI",
     "yes": {
       "triggersOnOwnDeath": true
-    }
-  },
-  {
-    "id": "xd-final-chapter",
-    "plain": "Does dying trigger a final effect from your own ability, not another character's, something that couldn't happen while you were alive?",
-    "styled": "I used to think dying was just the end of the story. Some of you get one last chapter, though: a final effect that only your death can unlock. Does your death trigger something from your own ability, not another character's, that couldn't happen while you lived?",
-    "voice": "Katia",
-    "yes": {
-      "triggersOnOwnDeath": true
-    }
-  },
-  {
-    "id": "xd-someone-elses-funeral",
-    "plain": "Is your ability set off by the death of a particular player, or a particular kind of player, other than you?",
-    "styled": "Darling, we all have one name we're secretly listening for at dawn. For you it's practical, isn't it? Tell our viewers: is your ability set off when a particular other player, or a particular kind of player, dies?",
-    "voice": "Odette",
-    "yes": {
-      "triggersOnOthersDeath": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -86,9 +65,20 @@
     "plain": "Does your ability keep you watching for one particular death, whether you dread it or hope for it?",
     "styled": "Every star has a name she watches for in the headlines, darling, whether she's dreading it or DYING to see it. Does your ability keep you watching for one particular death, whether you dread it or hope for it?",
     "voice": "Princess Donut",
-    "yes": {
-      "triggersOnOthersDeath": true
-    }
+    "yes": [
+      "grandmother",
+      "pixie",
+      "bountyhunter",
+      "minstrel",
+      "choirboy",
+      "godfather",
+      "eviltwin",
+      "mastermind",
+      "scarletwoman",
+      "vigormortis",
+      "fanggu",
+      "lleech"
+    ]
   },
   {
     "id": "xd-shield-bearer",
@@ -97,24 +87,9 @@
     "voice": "Katia",
     "yes": {
       "protectsOthers": true
-    }
-  },
-  {
-    "id": "xd-swoop-and-save",
-    "plain": "Can your own ability, not another character's, directly save another player who would otherwise have died?",
-    "styled": "Every great star needs the moment where she swoops in and SAVES someone, darling. The fans go feral for it. Can your own ability, not another character's, directly save another player who would otherwise have died?",
-    "voice": "Princess Donut",
-    "yes": {
-      "protectsOthers": true
-    }
-  },
-  {
-    "id": "xd-tough-hide",
-    "plain": "Does your ability give you, personally, a way to survive something that would kill anyone else?",
-    "styled": "I've buried a lot of contestants who thought they were tough. A few of you actually are: the thing that would put anybody else in the ground just bounces off. Does your ability give you, personally, a way to survive what would kill anyone else?",
-    "voice": "Mordecai",
-    "yes": {
-      "hardToKill": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -124,15 +99,9 @@
     "voice": "Elle",
     "yes": {
       "hardToKill": true
-    }
-  },
-  {
-    "id": "xd-fine-print",
-    "plain": "Can your own ability's rules, not another character's, kill you or get you executed, a risk most characters don't face?",
-    "styled": "So, you've got a cool power. Great. Read the fine print. Some of these come with a little clause at the bottom that says 'and also you might die.' Can your own ability's rules, not another character's, kill you or get you executed, a risk most characters don't have?",
-    "voice": "Carl",
-    "yes": {
-      "risksOwnLife": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -142,6 +111,9 @@
     "voice": "The System AI",
     "yes": {
       "risksOwnLife": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -155,6 +127,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -165,6 +140,9 @@
     "yes": {
       "killsAtNight": true,
       "team": "minion"
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -180,6 +158,9 @@
         "minion",
         "traveller"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -190,6 +171,9 @@
     "yes": {
       "team": "demon",
       "killsAtNight": false
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -203,6 +187,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -215,7 +202,10 @@
       "gunslinger",
       "gangster",
       "gnome"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-any-kill",
@@ -257,7 +247,10 @@
       "gunslinger",
       "gangster",
       "gnome"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-deathless-killer",
@@ -268,7 +261,10 @@
       "psychopath",
       "zombuul",
       "lleech"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-parting-gift",
@@ -278,7 +274,10 @@
     "yes": [
       "moonchild",
       "boomdandy"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-life-keeper",
@@ -296,6 +295,7 @@
       "mayor",
       "fool",
       "pacifist",
+      "goon",
       "devilsadvocate",
       "psychopath",
       "vizier",
@@ -304,7 +304,10 @@
       "judge",
       "deviant",
       "scapegoat"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-single-shot",
@@ -316,7 +319,10 @@
       "golem",
       "assassin",
       "moonchild"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-innocent-victims",
@@ -326,7 +332,10 @@
     "yes": [
       "lycanthrope",
       "moonchild"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-second-life",
@@ -336,7 +345,10 @@
     "yes": [
       "fool",
       "zombuul"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-perform-or-perish",
@@ -346,7 +358,10 @@
     "yes": [
       "psychopath",
       "deviant"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-tied-lifelines",
@@ -356,7 +371,10 @@
     "yes": [
       "grandmother",
       "lleech"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-demon-kill-payout",
@@ -366,7 +384,10 @@
     "yes": [
       "sage",
       "banshee"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-last-public-pick",
@@ -376,7 +397,10 @@
     "yes": [
       "klutz",
       "moonchild"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xd-k-evil-team",
@@ -391,7 +415,8 @@
       ]
     },
     "scope": {
-      "killsAtNight": true
+      "killsAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -407,7 +432,8 @@
       "legion"
     ],
     "scope": {
-      "killsAtNight": true
+      "killsAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -422,7 +448,8 @@
       "yaggababble"
     ],
     "scope": {
-      "killsAtNight": true
+      "killsAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -438,7 +465,8 @@
       "yaggababble"
     ],
     "scope": {
-      "killsAtNight": true
+      "killsAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -451,7 +479,8 @@
       "risksOwnLife": true
     },
     "scope": {
-      "killsAtNight": true
+      "killsAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -464,7 +493,8 @@
       "hardToKill": true
     },
     "scope": {
-      "killsAtNight": true
+      "killsAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -477,7 +507,8 @@
       "moonchild"
     ],
     "scope": {
-      "killsAtNight": true
+      "killsAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -492,7 +523,8 @@
       "lleech"
     ],
     "scope": {
-      "killsAtNight": true
+      "killsAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -505,7 +537,8 @@
       "harpy"
     ],
     "scope": {
-      "killsByDay": true
+      "killsByDay": true,
+      "abilityVaries": false
     }
   },
   {
@@ -523,7 +556,8 @@
       "riot"
     ],
     "scope": {
-      "killsByDay": true
+      "killsByDay": true,
+      "abilityVaries": false
     }
   },
   {
@@ -541,7 +575,8 @@
       "yaggababble"
     ],
     "scope": {
-      "killsByDay": true
+      "killsByDay": true,
+      "abilityVaries": false
     }
   },
   {
@@ -557,7 +592,8 @@
       ]
     },
     "scope": {
-      "killsByDay": true
+      "killsByDay": true,
+      "abilityVaries": false
     }
   },
   {
@@ -569,7 +605,8 @@
       "slayer"
     ],
     "scope": {
-      "killsByDay": true
+      "killsByDay": true,
+      "abilityVaries": false
     }
   },
   {
@@ -582,7 +619,8 @@
       "scapegoat"
     ],
     "scope": {
-      "causesExtraExecution": true
+      "causesExtraExecution": true,
+      "abilityVaries": false
     }
   },
   {
@@ -596,7 +634,8 @@
       "butcher"
     ],
     "scope": {
-      "causesExtraExecution": true
+      "causesExtraExecution": true,
+      "abilityVaries": false
     }
   },
   {
@@ -610,7 +649,8 @@
       "scapegoat"
     ],
     "scope": {
-      "causesExtraExecution": true
+      "causesExtraExecution": true,
+      "abilityVaries": false
     }
   },
   {
@@ -627,7 +667,8 @@
       "poppygrower"
     ],
     "scope": {
-      "triggersOnOwnDeath": true
+      "triggersOnOwnDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -645,7 +686,8 @@
       "imp"
     ],
     "scope": {
-      "triggersOnOwnDeath": true
+      "triggersOnOwnDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -659,7 +701,8 @@
       "boomdandy"
     ],
     "scope": {
-      "triggersOnOwnDeath": true
+      "triggersOnOwnDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -674,7 +717,8 @@
       "imp"
     ],
     "scope": {
-      "triggersOnOwnDeath": true
+      "triggersOnOwnDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -687,7 +731,8 @@
       "sage"
     ],
     "scope": {
-      "triggersOnOwnDeath": true
+      "triggersOnOwnDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -703,7 +748,8 @@
       ]
     },
     "scope": {
-      "triggersOnOwnDeath": true
+      "triggersOnOwnDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -716,7 +762,8 @@
       "mastermind"
     ],
     "scope": {
-      "triggersOnOthersDeath": true
+      "triggersOnOthersDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -760,7 +807,8 @@
       "undertaker"
     ],
     "scope": {
-      "triggersOnOthersDeath": true
+      "triggersOnOthersDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -773,7 +821,8 @@
       "fanggu"
     ],
     "scope": {
-      "triggersOnOthersDeath": true
+      "triggersOnOthersDeath": true,
+      "abilityVaries": false
     }
   },
   {
@@ -788,7 +837,8 @@
       "judge"
     ],
     "scope": {
-      "protectsOthers": true
+      "protectsOthers": true,
+      "abilityVaries": false
     }
   },
   {
@@ -802,7 +852,8 @@
       "devilsadvocate"
     ],
     "scope": {
-      "protectsOthers": true
+      "protectsOthers": true,
+      "abilityVaries": false
     }
   },
   {
@@ -815,7 +866,8 @@
       "exorcist"
     ],
     "scope": {
-      "protectsOthers": true
+      "protectsOthers": true,
+      "abilityVaries": false
     }
   },
   {
@@ -829,7 +881,8 @@
       "scapegoat"
     ],
     "scope": {
-      "protectsOthers": true
+      "protectsOthers": true,
+      "abilityVaries": false
     }
   },
   {
@@ -845,7 +898,8 @@
       ]
     },
     "scope": {
-      "hardToKill": true
+      "hardToKill": true,
+      "abilityVaries": false
     }
   },
   {
@@ -860,7 +914,8 @@
       "scapegoat"
     ],
     "scope": {
-      "risksOwnLife": true
+      "risksOwnLife": true,
+      "abilityVaries": false
     }
   },
   {
@@ -873,7 +928,8 @@
       "acrobat"
     ],
     "scope": {
-      "risksOwnLife": true
+      "risksOwnLife": true,
+      "abilityVaries": false
     }
   },
   {
@@ -886,7 +942,8 @@
       "fanggu"
     ],
     "scope": {
-      "risksOwnLife": true
+      "risksOwnLife": true,
+      "abilityVaries": false
     }
   },
   {
@@ -1018,10 +1075,8 @@
     },
     "scope": [
       "grandmother",
-      "pixie",
       "bountyhunter",
       "undertaker",
-      "cannibal",
       "farmer",
       "minstrel",
       "ravenkeeper",

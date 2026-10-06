@@ -1,14 +1,5 @@
 [
   {
-    "id": "tfc-chef-evil-pairs",
-    "plain": "Would you like to start the game knowing how many pairs of evil players are sitting next to each other?",
-    "styled": "Opening loot box! Inside: one (1) number, representing how many evil players are snuggled up side by side. No names. No refunds. Do you want to start the game knowing how many evil pairs are sitting together?",
-    "voice": "The System AI",
-    "yes": [
-      "chef"
-    ]
-  },
-  {
     "id": "tfc-chef-shady-couples",
     "plain": "Do you like judging a dinner party by counting how many shady couples have ended up seated together?",
     "styled": "A proper hostess KNOWS when two disreputable guests have wangled adjoining seats. I don't need their names, darling, I need the headcount. Do you like judging a dinner party by counting the shady couples seated together?",
@@ -25,22 +16,16 @@
     "yes": [
       "chef",
       "clockmaker"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-investigator-minion-pair",
     "plain": "Would you like to begin the game knowing one of two players is a particular Minion?",
     "styled": "So the game hands me two names and says one of them works for the bad guy. Great. Now I get to stare at two people over breakfast. Would you like to start knowing that one of two players is a particular Minion?",
     "voice": "Carl",
-    "yes": [
-      "investigator"
-    ]
-  },
-  {
-    "id": "tfc-investigator-the-reveal",
-    "plain": "Would you like your opening clue to name a specific Minion character and narrow it down to two suspects?",
-    "styled": "Oh, I adore a reveal. Two suspects, one secret title, and you get to drop it on them in front of the whole studio audience. Tell me honestly: would you like your opening clue to name a Minion character and narrow it to two suspects?",
-    "voice": "Odette",
     "yes": [
       "investigator"
     ]
@@ -81,7 +66,10 @@
     "yes": [
       "librarian",
       "godfather"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-two-doors-one-title",
@@ -95,22 +83,16 @@
     ]
   },
   {
-    "id": "tfc-empath-neighbour-count",
-    "plain": "Would you like to learn each night how many of your two living neighbours are evil?",
-    "styled": "Every night I wake up and find out whether the people on either side of me want me dead. Zero, one or two. Very relaxing. Would you like to learn each night how many of your two living neighbours are evil?",
-    "voice": "Carl",
-    "yes": [
-      "empath"
-    ]
-  },
-  {
     "id": "tfc-empath-prickling-skin",
     "plain": "Would you like a nightly headcount of the evil players sitting right beside you?",
     "styled": "My skin simply PRICKLES when something wicked sits too close. It's a gift, like my cheekbones. Would you like a nightly headcount of the evil players sitting right beside you?",
     "voice": "Princess Donut",
     "yes": [
       "empath"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-fortune-crystal-ball",
@@ -119,16 +101,10 @@
     "voice": "The Host",
     "yes": [
       "fortuneteller"
-    ]
-  },
-  {
-    "id": "tfc-fortune-innocent-lookalike",
-    "plain": "Would you accept one innocent player always looking like the Demon to you, in return for checking for the Demon each night?",
-    "styled": "Here's the catch with your gift: somewhere out there is a perfectly decent person who pings as a Demon every single time. Hang them by mistake and that's on you. Would you accept one innocent player always looking like the Demon to you, in return for checking for the Demon each night?",
-    "voice": "Mordecai",
-    "yes": [
-      "fortuneteller"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-undertaker-post-mortem",
@@ -137,16 +113,10 @@
     "voice": "Zev",
     "yes": [
       "undertaker"
-    ]
-  },
-  {
-    "id": "tfc-undertaker-boots-and-flint",
-    "plain": "Do you enjoy examining the freshly executed for clues about who they really were?",
-    "styled": "Somebody gets hanged, everybody goes to bed, and you're the weirdo checking the corpse's boots for flint shavings. Do you enjoy examining the freshly executed for clues about who they really were?",
-    "voice": "Carl",
-    "yes": [
-      "undertaker"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-listening-to-the-dead",
@@ -156,7 +126,10 @@
     "yes": [
       "undertaker",
       "oracle"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-monk-one-shield",
@@ -165,7 +138,10 @@
     "voice": "Katia",
     "yes": [
       "monk"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-selfless-shield",
@@ -175,7 +151,10 @@
     "yes": [
       "monk",
       "tealady"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-choose-who-sleeps-safe",
@@ -185,16 +164,10 @@
     "yes": [
       "monk",
       "innkeeper"
-    ]
-  },
-  {
-    "id": "tfc-ravenkeeper-last-look",
-    "plain": "If you were killed in the night, would you want to wake and learn one player's character?",
-    "styled": "Most folks die and that's the end of it. You'd get one last look at the board: one name, one true character. Make it count. If you were killed in the night, would you want to wake and learn one player's character?",
-    "voice": "Mordecai",
-    "yes": [
-      "ravenkeeper"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-ravenkeeper-loyal-birds",
@@ -213,7 +186,10 @@
     "yes": [
       "ravenkeeper",
       "sage"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-slayer-one-bullet",
@@ -231,25 +207,10 @@
     "voice": "Samantha",
     "yes": [
       "slayer"
-    ]
-  },
-  {
-    "id": "tfc-soldier-no-powers-needed",
-    "plain": "Would you like to be completely safe from the Demon, with no ability to use?",
-    "styled": "No powers, no night wake-ups, no clever plan. The monster just can't touch me. Honestly, that sounds like the best job in the dungeon. Would you like to be completely safe from the Demon, with no ability to use?",
-    "voice": "Carl",
-    "yes": [
-      "soldier"
-    ]
-  },
-  {
-    "id": "tfc-soldier-bounce-off",
-    "plain": "Would you like the Demon's attacks never to work on you, even though an execution could still finish you?",
-    "styled": "The big scary Demon comes knocking and you just don't answer. Ever. The neighbours can still string you up, mind. Would you like the Demon's attacks never to work on you, even though an execution could still finish you?",
-    "voice": "Elle",
-    "yes": [
-      "soldier"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-demon-proof",
@@ -259,43 +220,10 @@
     "yes": [
       "soldier",
       "sailor"
-    ]
-  },
-  {
-    "id": "tfc-mayor-final-three",
-    "plain": "With three players left, would you like good to win simply because the town chose not to execute?",
-    "styled": "Three people standing, and I simply DECLINE to hang anyone and the good side wins? That is the most elegant thing I have ever heard. With three players left, would you like good to win because the town chose not to execute?",
-    "voice": "Princess Donut",
-    "yes": [
-      "mayor"
-    ]
-  },
-  {
-    "id": "tfc-mayor-someone-else",
-    "plain": "If the Demon came for you at night, would you like someone else to die in your place?",
-    "styled": "Grim, but practical. The knife comes for you in the dark and somehow lands in somebody else. You won't always know who. If the Demon came for you at night, would you like someone else to die in your place?",
-    "voice": "Mordecai",
-    "yes": [
-      "mayor"
-    ]
-  },
-  {
-    "id": "tfc-virgin-trap-card",
-    "plain": "The first time you're nominated, would you like the nominator to be executed on the spot if they're a Townsfolk?",
-    "styled": "Trap card activated! The first goody-two-shoes to point at you gets dragged straight to the gallows. The crowd loves it. The nominator, less so. Would you like a Townsfolk who first nominates you to be executed on the spot?",
-    "voice": "The System AI",
-    "yes": [
-      "virgin"
-    ]
-  },
-  {
-    "id": "tfc-virgin-prove-purity",
-    "plain": "Would the first time someone nominates you be a chance to prove your innocence beyond doubt?",
-    "styled": "Most people dread being accused. You might almost welcome it, because that first accusation could show the whole room exactly what you are. Would the first time someone nominates you be a chance to prove your innocence beyond doubt?",
-    "voice": "Katia",
-    "yes": [
-      "virgin"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-grandmother-favourite",
@@ -307,31 +235,16 @@
     ]
   },
   {
-    "id": "tfc-grandmother-weak-heart",
-    "plain": "Are you so devoted to one person that you'd die of grief if the Demon killed them?",
-    "styled": "Love's a liability down here. Get attached to one person, and if the monster takes them, it takes you too. Are you so devoted to one person that you'd die of grief if the Demon killed them?",
-    "voice": "Mordecai",
-    "yes": [
-      "grandmother"
-    ]
-  },
-  {
-    "id": "tfc-sailor-rum-night",
-    "plain": "Would you challenge someone to a drinking contest each night, knowing one of you will end up drunk?",
-    "styled": "It's Rum Night on the Crawl! Every evening our contestant picks a rival, the bottles come out, and somebody goes down! Would you challenge someone to a drinking contest each night, knowing one of you will end up drunk?",
-    "voice": "The Host",
-    "yes": [
-      "sailor"
-    ]
-  },
-  {
     "id": "tfc-sailor-only-the-bottle",
     "plain": "Would you like to be impossible to kill, so long as you stay sober?",
     "styled": "Can't be stabbed, can't be hanged, can't be eaten. The only thing that gets you is the bottle, which, frankly, tracks. Would you like to be impossible to kill, so long as you stay sober?",
     "voice": "Carl",
     "yes": [
       "sailor"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-chambermaid-empty-beds",
@@ -340,16 +253,10 @@
     "voice": "Zev",
     "yes": [
       "chambermaid"
-    ]
-  },
-  {
-    "id": "tfc-chambermaid-busy-nights",
-    "plain": "Would you like to choose two other living players each night and learn how many of them woke because of their abilities?",
-    "styled": "I've noticed people give themselves away by what they do after dark, not by what they say. Would you like to choose two other alive players each night and learn how many of them woke because of their abilities?",
-    "voice": "Katia",
-    "yes": [
-      "chambermaid"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-exorcist-cast-out",
@@ -358,25 +265,10 @@
     "voice": "The System AI",
     "yes": [
       "exorcist"
-    ]
-  },
-  {
-    "id": "tfc-exorcist-show-your-face",
-    "plain": "Are you willing to let the Demon learn who you are as the price of driving it out?",
-    "styled": "You cast it out for a night, and in return it learns your face. Brave or stupid; I've buried plenty of both. Are you willing to let the Demon learn who you are as the price of driving it out?",
-    "voice": "Mordecai",
-    "yes": [
-      "exorcist"
-    ]
-  },
-  {
-    "id": "tfc-innkeeper-two-guests",
-    "plain": "Would you like to protect two players each night, even though one of them ends up drunk?",
-    "styled": "Welcome to the Crawl Inn, where two lucky guests sleep safe every night and one of them wakes up with a stonking hangover! Would you like to protect two players each night, even though one of them ends up drunk?",
-    "voice": "The Host",
-    "yes": [
-      "innkeeper"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-innkeeper-warm-bed",
@@ -385,16 +277,10 @@
     "voice": "Princess Donut",
     "yes": [
       "innkeeper"
-    ]
-  },
-  {
-    "id": "tfc-gambler-name-it-or-die",
-    "plain": "Would you like to guess a player's character each night, knowing a wrong guess kills you?",
-    "styled": "Every night I'd point at someone, name their job, and if I'm wrong, I die. That's not a strategy, that's a hobby for people who hate themselves. Would you like to guess a player's character each night, knowing a wrong guess kills you?",
-    "voice": "Carl",
-    "yes": [
-      "gambler"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-gambler-stake-your-life",
@@ -407,14 +293,18 @@
   },
   {
     "id": "tfc-deadly-night-pick",
-    "plain": "Would you choose a player each night, knowing a bad pick could kill you that very night?",
+    "plain": "Do you choose a player each night, knowing a bad pick could kill you that very night?",
     "styled": "Nightly Roulette Bundle now available! Pick a player. Pick wrong and the floor opens beneath you. Pick right and nobody claps. Would you choose a player each night, knowing a bad pick could kill you that very night?",
     "voice": "The System AI",
     "yes": [
       "gambler",
       "acrobat",
+      "fanggu",
       "harlot"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-gossip-true-and-deadly",
@@ -423,16 +313,10 @@
     "voice": "Mordecai",
     "yes": [
       "gossip"
-    ]
-  },
-  {
-    "id": "tfc-gossip-chatterbox",
-    "plain": "Would you chatter away every day, knowing your claims turn deadly whenever they happen to be true?",
-    "styled": "Oh, I'll run my mouth all day, honey. Difference is, when I'm right, somebody croaks overnight. Keeps things lively. Would you chatter away every day, knowing your claims turn deadly whenever they happen to be true?",
-    "voice": "Elle",
-    "yes": [
-      "gossip"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-courtier-royal-decree",
@@ -441,16 +325,10 @@
     "voice": "The Host",
     "yes": [
       "courtier"
-    ]
-  },
-  {
-    "id": "tfc-courtier-no-face-needed",
-    "plain": "Would you like your one big move to leave a character drunk for three days, without needing to find who holds it?",
-    "styled": "I need not know which peasant wears the crown! I shall simply decree that the crown is DRUNK! For THREE DAYS! Would you like your one big move to leave a character drunk for three days, without needing to find who holds it?",
-    "voice": "Prepotente",
-    "yes": [
-      "courtier"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-professor-raise-the-dead",
@@ -459,16 +337,10 @@
     "voice": "The System AI",
     "yes": [
       "professor"
-    ]
-  },
-  {
-    "id": "tfc-professor-mad-science",
-    "plain": "Would you like to raise a fallen friend from the dead with a bit of mad science?",
-    "styled": "One lightning strike and a pile of questionable equipment, and your dead friend sits up on the slab. What could possibly go wrong. Would you like to raise a fallen friend from the dead with a bit of mad science?",
-    "voice": "Carl",
-    "yes": [
-      "professor"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-minstrel-sing-them-drunk",
@@ -477,16 +349,10 @@
     "voice": "Princess Donut",
     "yes": [
       "minstrel"
-    ]
-  },
-  {
-    "id": "tfc-minstrel-open-bar",
-    "plain": "Would you like a Minion's death by execution to leave every other non-Traveller player drunk until dusk tomorrow?",
-    "styled": "Nothing says justice like an open bar! One Minion dies on the gallows, one song, and every other non-Traveller is seeing double until dusk tomorrow. Great for engagement! Would you like a Minion's death by execution to leave every other non-Traveller player drunk until dusk tomorrow?",
-    "voice": "Zev",
-    "yes": [
-      "minstrel"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-tealady-good-company",
@@ -498,31 +364,16 @@
     ]
   },
   {
-    "id": "tfc-tealady-cup-of-comfort",
-    "plain": "Do you look after the people sitting beside you, so long as they're both decent folk?",
-    "styled": "Tea fixes most things. If you're cold, it warms you, and if the two people beside me are good, they're safe. Do you look after the people sitting beside you, so long as they're both decent folk?",
-    "voice": "Katia",
-    "yes": [
-      "tealady"
-    ]
-  },
-  {
     "id": "tfc-pacifist-snapped-rope",
     "plain": "Would you like any good player who gets executed to have a chance of surviving?",
     "styled": "The town sentences an innocent to death and... oops! The rope snapped! What are the odds? Better than you would think. Would you like any good player who gets executed to have a chance of surviving?",
     "voice": "The System AI",
     "yes": [
       "pacifist"
-    ]
-  },
-  {
-    "id": "tfc-pacifist-quiet-mercy",
-    "plain": "Would you quietly spare innocent people from the gallows, even after the town has voted?",
-    "styled": "The mob votes, the noose goes on, and then the innocent guy just walks off. You didn't stop the vote. You just made it not matter. Would you quietly spare innocent people from the gallows, even after the town has voted?",
-    "voice": "Carl",
-    "yes": [
-      "pacifist"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-fool-custard-comeback",
@@ -531,17 +382,10 @@
     "voice": "Mongo",
     "yes": [
       "fool"
-    ]
-  },
-  {
-    "id": "tfc-one-free-death",
-    "plain": "Would you like to survive your first death, but only the first?",
-    "styled": "One free death. That is all. Spend it wisely, because the second one sticks. Would you like to survive your first death, but only the first?",
-    "voice": "Mordecai",
-    "yes": [
-      "fool",
-      "zombuul"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-clockmaker-seat-count",
@@ -553,31 +397,16 @@
     ]
   },
   {
-    "id": "tfc-clockmaker-ticking-circle",
-    "plain": "Do you like measuring how close the Demon keeps its nearest henchman, like counting ticks on a clock face?",
-    "styled": "SILENCE! The great wheel turns! Tick, tick, tick, from the beast to its nearest lackey, and I, the genius, shall count every notch! Do you like measuring how close the Demon keeps its nearest henchman, counting ticks around the circle?",
-    "voice": "Prepotente",
-    "yes": [
-      "clockmaker"
-    ]
-  },
-  {
-    "id": "tfc-snakecharmer-body-swap",
-    "plain": "Would you like to swap places with the Demon if you found it, leaving it poisoned?",
-    "styled": "Our charmer picks a player each night, and if they snag the Demon, the two of them swap bodies and teams right there on the spot! Would you like to swap places with the Demon if you found it, leaving it poisoned?",
-    "voice": "The Host",
-    "yes": [
-      "snakecharmer"
-    ]
-  },
-  {
     "id": "tfc-snakecharmer-become-the-snake",
     "plain": "Would you risk turning evil yourself if it meant defanging the Demon?",
     "styled": "Catch the snake and you become the snake. The old one gets your job and a splitting headache. Hell of a trade. Would you risk turning evil yourself if it meant defanging the Demon?",
     "voice": "Mordecai",
     "yes": [
       "snakecharmer"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-mathematician-misfires",
@@ -586,16 +415,10 @@
     "voice": "The System AI",
     "yes": [
       "mathematician"
-    ]
-  },
-  {
-    "id": "tfc-mathematician-tamper-tally",
-    "plain": "Would you like a nightly tally of how many players had their abilities tampered with?",
-    "styled": "No names, no details, darling, just a tidy little figure telling you how many people were meddled with. Isn't that delicious? Would you like a nightly tally of how many players had their abilities tampered with?",
-    "voice": "Odette",
-    "yes": [
-      "mathematician"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-dreamer-two-masks",
@@ -604,7 +427,10 @@
     "voice": "Carl",
     "yes": [
       "dreamer"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-dreamer-saint-or-sinner",
@@ -622,16 +448,10 @@
     "voice": "The Host",
     "yes": [
       "flowergirl"
-    ]
-  },
-  {
-    "id": "tfc-flowergirl-raised-hands",
-    "plain": "Would you like your nightly clue to be whether the Demon's hand went up in that day's votes?",
-    "styled": "I watch every hand during the votes, but what I really want to know is whether one particular hand went up. Would you like your nightly clue to be whether the Demon's hand went up in that day's votes?",
-    "voice": "Katia",
-    "yes": [
-      "flowergirl"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-towncrier-bulletin",
@@ -640,16 +460,10 @@
     "voice": "Zev",
     "yes": [
       "towncrier"
-    ]
-  },
-  {
-    "id": "tfc-towncrier-accusers",
-    "plain": "Would you like to keep tabs on nominations, hoping to catch a Minion in the act of accusing someone?",
-    "styled": "Watch who throws the accusations around. Henchmen love a nomination, and you would know by nightfall if one of them did. Would you like to keep tabs on nominations, hoping to catch a Minion accusing someone?",
-    "voice": "Mordecai",
-    "yes": [
-      "towncrier"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-surveillance-mode",
@@ -659,16 +473,10 @@
     "yes": [
       "flowergirl",
       "towncrier"
-    ]
-  },
-  {
-    "id": "tfc-oracle-restless-dead",
-    "plain": "Would you like to learn how many of the dead players are evil?",
-    "styled": "The departed whisper to me, darling. They point at the wicked ones among them. It's DREADFULLY spooky and I look fabulous doing it. Would you like to learn how many of the dead players are evil?",
-    "voice": "Princess Donut",
-    "yes": [
-      "oracle"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-oracle-count-the-fallen",
@@ -677,16 +485,10 @@
     "voice": "Samantha",
     "yes": [
       "oracle"
-    ]
-  },
-  {
-    "id": "tfc-savant-truth-and-lie",
-    "plain": "Would you like to visit the Storyteller every day to hear two things, one true and one false?",
-    "styled": "Two facts every day. One's real, one's garbage, and nobody tells you which. Write them down or lose your mind. Would you like to visit the Storyteller every day to hear two things, one true and one false?",
-    "voice": "Mordecai",
-    "yes": [
-      "savant"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-daily-one-to-one",
@@ -705,7 +507,10 @@
     "voice": "Katia",
     "yes": [
       "seamstress"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-seamstress-in-cahoots",
@@ -726,24 +531,6 @@
     ]
   },
   {
-    "id": "tfc-philosopher-wait-and-see",
-    "plain": "Would you rather start with no fixed ability and pick the right one once you see how the game unfolds?",
-    "styled": "I'd rather not commit until I know what the actual problem is. Watch the game for a bit, then grab the tool that fixes it. Would you rather start with no fixed ability and pick the right one once you see how things unfold?",
-    "voice": "Carl",
-    "yes": [
-      "philosopher"
-    ]
-  },
-  {
-    "id": "tfc-artist-one-question",
-    "plain": "Would you like to ask the Storyteller any yes or no question you please, once per game?",
-    "styled": "One question! Any question! Answered truthfully by the all-knowing Storyteller, live and exclusive! Would you like to ask the Storyteller any yes or no question you please, once per game?",
-    "voice": "The Host",
-    "yes": [
-      "artist"
-    ]
-  },
-  {
     "id": "tfc-artist-masterpiece",
     "plain": "Would you spend days polishing one perfect question rather than collecting lots of small clues?",
     "styled": "A masterpiece takes TIME. I shall craft one exquisite question, polish it like a jewel, and present it to the Storyteller. Would you spend days polishing one perfect question rather than collecting lots of small clues?",
@@ -753,22 +540,16 @@
     ]
   },
   {
-    "id": "tfc-juggler-talent-show",
-    "plain": "On your first day, would you like to publicly guess several players' characters, then learn that night how many you got right?",
-    "styled": "Day One Talent Show! Juggle up to five guesses in front of the whole town, then find out tonight how many landed! Would you like to publicly guess several players' characters on your first day and learn that night how many were right?",
-    "voice": "The System AI",
-    "yes": [
-      "juggler"
-    ]
-  },
-  {
     "id": "tfc-juggler-opening-act",
     "plain": "Do you like opening the game with a big public guessing act that only works on your first day?",
     "styled": "BEHOLD! On the very first day I shall stand before you peasants and NAME you, one after another! Applause is mandatory! Do you like opening the game with a big public guessing act that only works on your first day?",
     "voice": "Prepotente",
     "yes": [
       "juggler"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-sage-two-suspects",
@@ -777,16 +558,10 @@
     "voice": "Carl",
     "yes": [
       "sage"
-    ]
-  },
-  {
-    "id": "tfc-sage-fatal-mistake",
-    "plain": "Would you like the Demon's decision to kill you to narrow it down to two suspects?",
-    "styled": "Let the beast strike me down! My corpse shall point at its hiding place, and then I shall laugh and laugh as it burns! Would you like the Demon's decision to kill you to narrow it down to two suspects?",
-    "voice": "Samantha",
-    "yes": [
-      "sage"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfc-tf-private-day-visit",
@@ -2930,7 +2705,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "tb"
+      "edition": "tb",
+      "abilityVaries": false
     }
   },
   {
@@ -2945,7 +2721,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "tb"
+      "edition": "tb",
+      "abilityVaries": false
     }
   },
   {
@@ -2960,7 +2737,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "tb"
+      "edition": "tb",
+      "abilityVaries": false
     }
   },
   {
@@ -2981,7 +2759,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "tb"
+      "edition": "tb",
+      "abilityVaries": false
     }
   },
   {
@@ -2995,7 +2774,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "tb"
+      "edition": "tb",
+      "abilityVaries": false
     }
   },
   {
@@ -3011,7 +2791,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -3022,9 +2803,10 @@
     "yes": [
       "sailor",
       "innkeeper",
+      "courtier",
       "tealady",
-      "pacifist",
-      "fool"
+      "fool",
+      "pacifist"
     ],
     "scope": [
       "grandmother",
@@ -3051,7 +2833,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -3089,7 +2872,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -3105,7 +2889,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -3121,7 +2906,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "snv"
+      "edition": "snv",
+      "abilityVaries": false
     }
   },
   {
@@ -3136,7 +2922,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "snv"
+      "edition": "snv",
+      "abilityVaries": false
     }
   },
   {
@@ -3166,7 +2953,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "snv"
+      "edition": "snv",
+      "abilityVaries": false
     }
   },
   {
@@ -3206,7 +2994,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "snv"
+      "edition": "snv",
+      "abilityVaries": false
     }
   },
   {
@@ -3458,7 +3247,6 @@
       "nightwatchman",
       "courtier",
       "seamstress",
-      "philosopher",
       "huntsman",
       "professor",
       "artist",
@@ -3550,25 +3338,6 @@
       "mathematician",
       "oracle",
       "chambermaid"
-    ],
-    "scope": [
-      "chef",
-      "empath",
-      "clockmaker",
-      "mathematician",
-      "oracle",
-      "juggler",
-      "chambermaid"
-    ]
-  },
-  {
-    "id": "tfc-ng-your-choice",
-    "plain": "Of those who learn numbers, do you get to choose which players your number is about?",
-    "styled": "I'd rather decide what I'm investigating than have it decided for me. Of those who learn numbers, do you get to choose which players your number is about?",
-    "voice": "Katia",
-    "yes": [
-      "chambermaid",
-      "juggler"
     ],
     "scope": [
       "chef",

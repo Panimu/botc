@@ -1,14 +1,5 @@
 [
   {
-    "id": "min-secret-word-convert",
-    "plain": "Would you like to tempt a good player onto your side just by getting them to say a secret word?",
-    "styled": "One word, darling. That's all it takes. Some sweet little goody-goody says it out loud and, poof, they're on MY team by morning. Do you want to win people over by getting them to say your secret word?",
-    "voice": "Princess Donut",
-    "yes": [
-      "mezepheles"
-    ]
-  },
-  {
     "id": "min-listening-for-the-word",
     "plain": "Do you enjoy guarding a secret word and waiting for someone else to blurt it out?",
     "styled": "So you sit there all day with one word rattling around your skull, praying somebody else trips over it in conversation. That's not a strategy, that's fishing. Do you enjoy keeping a secret word and waiting for someone else to say it?",
@@ -18,41 +9,16 @@
     ]
   },
   {
-    "id": "min-secret-phrase",
-    "plain": "Would you like to start the game holding a secret word or phrase that only you know?",
-    "styled": "Congratulations, contestant! Your starter pack contains one (1) password of doom. Do not share it. Do not write it down. Ratings spike every time someone gets close. Would you like to begin with a secret word or phrase only you know?",
-    "voice": "The System AI",
-    "yes": [
-      "mezepheles",
-      "yaggababble"
-    ]
-  },
-  {
-    "id": "min-avenge-the-outsider",
-    "plain": "Do you watch over the town's Outsiders like family, ordering a killing whenever one of them dies by day?",
-    "styled": "The misfits, the oddballs, the ones nobody invites to dinner? Some folks take them under their wing, and God help whoever lays a finger on them in daylight. Would you protect the Outsiders like family and order a hit when one of them dies by day?",
-    "voice": "Katia",
-    "yes": [
-      "godfather"
-    ]
-  },
-  {
     "id": "min-outsider-count-swing",
     "plain": "Does your presence always change the Outsider count by exactly one, with the Storyteller choosing up or down?",
     "styled": "Patch note: your arrival now nudges the Outsider count by exactly one, direction chosen by management. Never zero. We tested zero. Zero was boring. Would you like your presence to always shift the Outsider count by one, with the Storyteller picking up or down?",
     "voice": "The System AI",
     "yes": [
       "godfather"
-    ]
-  },
-  {
-    "id": "min-nightly-poison-no-kill",
-    "plain": "Would you like to poison someone every night, just to scramble their information and not to kill them?",
-    "styled": "Not murder. Sabotage. A drop in the cup, and the poor sod spends tomorrow confidently announcing nonsense. I've watched that ruin more parties than any monster. Would you like to poison someone each night just to wreck their information, not to kill?",
-    "voice": "Mordecai",
-    "yes": [
-      "poisoner"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-dose-wears-off",
@@ -61,16 +27,10 @@
     "voice": "Elle",
     "yes": [
       "poisoner"
-    ]
-  },
-  {
-    "id": "min-execution-immunity",
-    "plain": "Would you like to secretly choose someone each night who won't die if they're executed the next day?",
-    "styled": "Picture it: the mob drags someone to the gallows, the rope goes tight, and nothing happens. The crowd goes WILD, folks! Would you like to pick someone each night who'll survive being executed tomorrow?",
-    "voice": "The Host",
-    "yes": [
-      "devilsadvocate"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-absurd-technicalities",
@@ -88,7 +48,10 @@
     "voice": "Carl",
     "yes": [
       "spy"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-register-as-good",
@@ -116,16 +79,10 @@
     "voice": "Odette",
     "yes": [
       "harpy"
-    ]
-  },
-  {
-    "id": "min-two-targets-threat",
-    "plain": "Do you like choosing two people each night and making their fates hang on how one talks about the other?",
-    "styled": "TWO SKULLS! Your goddess picks TWO! One must condemn the other, or BOTH might be crushed beneath my glorious wrath! Do you like picking two people each night and making their fate depend on what one says about the other?",
-    "voice": "Samantha",
-    "yes": [
-      "harpy"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-curse-nominators",
@@ -134,16 +91,10 @@
     "voice": "The System AI",
     "yes": [
       "witch"
-    ]
-  },
-  {
-    "id": "min-hex-and-watch",
-    "plain": "Do you like placing a nightly hex and then watching whether your victim dares to nominate?",
-    "styled": "So you put the whammy on someone, then spend the whole day watching them sweat over whether to raise their hand. Nasty. Hilarious, but nasty. Do you like hexing someone each night and watching whether they dare to nominate?",
-    "voice": "Elle",
-    "yes": [
-      "witch"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-dictate-a-claim",
@@ -152,7 +103,10 @@
     "voice": "Mordecai",
     "yes": [
       "cerenovus"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-break-character",
@@ -170,7 +124,10 @@
     "voice": "Carl",
     "yes": [
       "fearmonger"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-announced-switch",
@@ -188,34 +145,10 @@
     "voice": "The System AI",
     "yes": [
       "pithag"
-    ]
-  },
-  {
-    "id": "min-extra-demon-chaos",
-    "plain": "Do you like the idea of brewing up an extra Demon, even if it makes that night's deaths unpredictable?",
-    "styled": "MORE DEMONS! MORE CHAOS! Let the bodies fall where they may and let nobody, not even the Storyteller, guess who wakes up dead! Would you dare to create an extra Demon even if that night's deaths become a free-for-all?",
-    "voice": "Samantha",
-    "yes": [
-      "pithag"
-    ]
-  },
-  {
-    "id": "min-daylight-kill",
-    "plain": "Would you like to kill any player you choose, in public, every day before nominations begin?",
-    "styled": "Good morning, town! Before we even get to the nominations, our contestant steps forward, points, and... oh! Oh, that's a body! Every day, folks! Would you like to publicly kill anyone you choose each day before nominations?",
-    "voice": "The Host",
-    "yes": [
-      "psychopath"
-    ]
-  },
-  {
-    "id": "min-roshambo",
-    "plain": "Would you like a game of rock-paper-scissors to decide whether you die when the town executes you?",
-    "styled": "The whole village votes to hang you and you go, 'Best of one, rock-paper-scissors?' And somehow that's legal here. Would you like your execution to come down to a game of rock-paper-scissors?",
-    "voice": "Carl",
-    "yes": [
-      "psychopath"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-unstoppable-kill",
@@ -224,16 +157,10 @@
     "voice": "Mordecai",
     "yes": [
       "assassin"
-    ]
-  },
-  {
-    "id": "min-perfect-night",
-    "plain": "Would you like to spend the game choosing the perfect night for your single, silent kill?",
-    "styled": "No speeches. No fuss. You wait, you watch, and on exactly the right night, one person stops breathing. That's it. That's the whole show. Would you like to spend the game picking the perfect night for your one quiet kill?",
-    "voice": "Katia",
-    "yes": [
-      "assassin"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-make-a-wish",
@@ -245,31 +172,16 @@
     ]
   },
   {
-    "id": "min-unknown-price",
-    "plain": "Would you pay an unknown price, and leave clues behind you, to get exactly what you want?",
-    "styled": "Read the fine print, kiddo. There's always fine print. You get what you asked for, sure, but there's a bill coming and a trail leading straight back to you. Would you take an unknown price and a trail of clues to get exactly what you want?",
-    "voice": "Mordecai",
-    "yes": [
-      "wizard"
-    ]
-  },
-  {
-    "id": "min-first-night-peek",
-    "plain": "Would you like one long look at the Grimoire on the very first night, then never again?",
-    "styled": "One peek, darling. One glorious, scandalous peek at everyone's secrets on opening night, and then the curtain comes down forever. Would you like a single look at the Grimoire on the first night and never again?",
-    "voice": "Princess Donut",
-    "yes": [
-      "widow"
-    ]
-  },
-  {
     "id": "min-one-good-warned",
     "plain": "Does one good player learn that your character is in play, though not who you are?",
     "styled": "Somebody on the other team gets a little note saying you exist. Not your name, not your seat, just a warning. That's going to make for a jumpy day. Does one good player know your character is in play, but not who you are?",
     "voice": "Katia",
     "yes": [
       "widow"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-lingering-poison",
@@ -279,43 +191,10 @@
     "yes": [
       "widow",
       "lleech"
-    ]
-  },
-  {
-    "id": "min-poison-all-townsfolk",
-    "plain": "Would you like to poison every Townsfolk in the game at once, for a night and a day?",
-    "styled": "Server-wide debuff incoming! For one glorious night and day, every single Townsfolk is poisoned. Every clue: garbage. Every claim: suspect. Sponsors are THRILLED. Would you like to poison all the Townsfolk at once?",
-    "voice": "The System AI",
-    "yes": [
-      "xaan"
-    ]
-  },
-  {
-    "id": "min-outsider-countdown",
-    "plain": "Would you like the number of Outsiders to secretly mark the night your big move happens?",
-    "styled": "Count the misfits. That's your clock. However many Outsiders there are, that's the night it all goes sideways. Clever, if you're into that sort of thing. Would you like the Outsider count to set the night your big move happens?",
-    "voice": "Carl",
-    "yes": [
-      "xaan"
-    ]
-  },
-  {
-    "id": "min-puppet-unaware",
-    "plain": "Would you enjoy playing a whole game as an evil puppet who honestly believes they're good?",
-    "styled": "You'd spend all day defending the town, hunting the bad guys, being a sweetheart, and you'd be the bad guy the whole time. Strings and all. Would you be happy as an evil puppet who truly thinks they're good?",
-    "voice": "Katia",
-    "yes": [
-      "marionette"
-    ]
-  },
-  {
-    "id": "min-beside-the-demon",
-    "plain": "Would you like to sit right next to the Demon without knowing it?",
-    "styled": "Elbow to elbow with the monster, passing the bread, chatting about the weather, and you haven't the foggiest. Awkward for you, delightful for the viewers. Would you like to sit beside the Demon without realising it?",
-    "voice": "The Host",
-    "yes": [
-      "marionette"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-eyes-open-night",
@@ -324,16 +203,10 @@
     "voice": "Princess Donut",
     "yes": [
       "wraith"
-    ]
-  },
-  {
-    "id": "min-wake-with-evil",
-    "plain": "Would you like to wake up every time any other evil player wakes during the night?",
-    "styled": "RAWR? RAWR! [Translation: a sound in the night! I am AWAKE!] In short: whenever any of the bad guys wakes up, so do you, like a very loyal and very sneaky dinosaur. Would you like to wake whenever another evil player wakes?",
-    "voice": "Mongo",
-    "yes": [
-      "wraith"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-summon-the-demon",
@@ -351,25 +224,10 @@
     "voice": "Prepotente",
     "yes": [
       "summoner"
-    ]
-  },
-  {
-    "id": "min-opposite-twin",
-    "plain": "Would you like a counterpart on the other team, with each of you knowing exactly who the other is?",
-    "styled": "Somewhere out there is your mirror image, playing for the other side, and they know your face as well as you know theirs. Tell us everything, darling. Would you like a known counterpart on the opposing team?",
-    "voice": "Odette",
-    "yes": [
-      "eviltwin"
-    ]
-  },
-  {
-    "id": "min-which-twin",
-    "plain": "Would you enjoy a public shouting match where the town must decide which of two people is the evil one?",
-    "styled": "Two players, one accusation, nobody blinking. The town has to pick a side and our audience gets to pick a favourite. That's appointment viewing! Would you enjoy a showdown where the town decides which of you two is evil?",
-    "voice": "Zev",
-    "yes": [
-      "eviltwin"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-confess-when-nominated",
@@ -378,7 +236,10 @@
     "voice": "Carl",
     "yes": [
       "goblin"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-win-by-execution",
@@ -388,34 +249,10 @@
     "yes": [
       "goblin",
       "boomdandy"
-    ]
-  },
-  {
-    "id": "min-take-everyone-down",
-    "plain": "If you were executed, would you like to take nearly everyone down with you?",
-    "styled": "YES! YES! THEY HANG YOUR GODDESS AND THE WHOLE TOWN BURSTS LIKE OVERRIPE MELONS! Only three left standing! GLORIOUS! If you were executed, would you want to take almost everyone with you?",
-    "voice": "Samantha",
-    "yes": [
-      "boomdandy"
-    ]
-  },
-  {
-    "id": "min-pointing-countdown",
-    "plain": "Do you love a frantic countdown where everyone points at whoever should die?",
-    "styled": "Ten! Nine! Eight! Everybody's screaming, everybody's pointing, and nobody's making friends! Folks, this is what television was invented for. Do you love a frantic countdown where everyone points at who should die?",
-    "voice": "The Host",
-    "yes": [
-      "boomdandy"
-    ]
-  },
-  {
-    "id": "min-one-more-day",
-    "plain": "If your Demon were executed, would you like the game to go on for one final day that decides everything?",
-    "styled": "The town cheers. The Demon's swinging. And then you clear your throat and say, 'Not so fast.' One more day, one more execution, winner takes all. If the Demon were executed, would you want one last day to decide it all?",
-    "voice": "Mordecai",
-    "yes": [
-      "mastermind"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-planned-all-along",
@@ -424,15 +261,6 @@
     "voice": "Prepotente",
     "yes": [
       "mastermind"
-    ]
-  },
-  {
-    "id": "min-inherit-demon",
-    "plain": "Would you like to become the Demon if it dies while five or more players are still alive?",
-    "styled": "The Demon falls. The crowd gasps. And you, darling, slip into its shoes while the body's still warm. Understudy to STAR in one night! Would you like to become the Demon if it dies while five or more players live?",
-    "voice": "Princess Donut",
-    "yes": [
-      "scarletwoman"
     ]
   },
   {
@@ -460,34 +288,10 @@
     "voice": "Elle",
     "yes": [
       "vizier"
-    ]
-  },
-  {
-    "id": "min-instant-execution",
-    "plain": "Would you like the power to execute a nominee on the spot each day, whenever good players have voted for them?",
-    "styled": "New feature drop: Express Justice! If any of the goodies raised a hand, you can skip the boring tally and send the nominee straight to the gallows. Would you like to execute a nominee on the spot, every day, whenever good players have voted?",
-    "voice": "The System AI",
-    "yes": [
-      "vizier"
-    ]
-  },
-  {
-    "id": "min-eyes-closed-vote",
-    "plain": "Do you want everyone to vote with their eyes closed and the vote count kept secret?",
-    "styled": "Hands up, eyes shut, and nobody gets to know the score. You can't track who voted for what, and that's the point. I hate it already. Would you like all votes cast with eyes closed and the tally kept secret?",
-    "voice": "Mordecai",
-    "yes": [
-      "organgrinder"
-    ]
-  },
-  {
-    "id": "min-choose-drunk",
-    "plain": "Would you like to decide each night whether you'll be drunk, effectively switching your own ability off?",
-    "styled": "Every night you get to ask yourself, 'Do I want my powers tomorrow, or do I want a drink?' Easy choice for some of us. Would you like to choose each night whether to be drunk and switch your ability off?",
-    "voice": "Elle",
-    "yes": [
-      "organgrinder"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-gift-the-demon",
@@ -496,7 +300,10 @@
     "voice": "Zev",
     "yes": [
       "boffin"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "min-mad-inventor",
@@ -517,25 +324,6 @@
     ]
   },
   {
-    "id": "min-bottom-line",
-    "plain": "Are you a pompous aristocrat who cares most about the bottom line and cheap labour?",
-    "styled": "Monocle, moustache, a mine full of underpaid peasants, and a firm belief that hard work never hurt anyone who wasn't you. I know the type. Are you a stuffy aristocrat obsessed with profits and cheap labour?",
-    "voice": "Carl",
-    "yes": [
-      "baron"
-    ]
-  },
-  {
-    "id": "min-make-them-mad",
-    "plain": "Would you like to make other players act 'mad' about something, with a threat hanging over them if they don't play along?",
-    "styled": "Here's the deal, sweetie: you make someone commit to a story, loudly and convincingly, or something terrible happens to them. It's improv with a body count. Would you like to force other players to be 'mad' about something under threat?",
-    "voice": "Odette",
-    "yes": [
-      "harpy",
-      "cerenovus"
-    ]
-  },
-  {
     "id": "min-own-victim",
     "plain": "As a Minion, would you like a power that lets you pick a victim who then dies, whatever that victim does?",
     "styled": "Most of you minions are support staff. Errand boys. But a few of you get to point at someone and have them drop, no tricks, no conditions on the poor sap. Would you like a power that simply kills the victim you choose?",
@@ -546,7 +334,8 @@
       "assassin"
     ],
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -561,7 +350,8 @@
       "mastermind"
     ],
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -574,7 +364,8 @@
       "setup": true
     },
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -588,7 +379,8 @@
       "baron"
     ],
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -602,7 +394,8 @@
       "xaan"
     ],
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -630,7 +423,8 @@
       "fearmonger"
     ],
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -639,11 +433,13 @@
     "styled": "They want you gone. They've got the rope, the votes, the righteous fury. And it just doesn't take, does it? Delicious. As a Minion, would you like natural protection from dying during the day?",
     "voice": "Odette",
     "yes": [
-      "vizier",
-      "psychopath"
+      "devilsadvocate",
+      "psychopath",
+      "vizier"
     ],
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -656,7 +452,8 @@
       "vizier"
     ],
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -686,7 +483,8 @@
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   },
   {
@@ -698,15 +496,17 @@
       "pithag",
       "summoner",
       "imp",
+      "kazali",
       "fanggu",
-      "riot",
-      "kazali"
+      "lordoftyphon",
+      "riot"
     ],
     "scope": {
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   },
   {
@@ -727,7 +527,8 @@
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   },
   {
@@ -747,7 +548,8 @@
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   },
   {
@@ -785,7 +587,8 @@
     ],
     "scope": {
       "team": "minion",
-      "edition": "tb"
+      "edition": "tb",
+      "abilityVaries": false
     }
   },
   {
@@ -812,7 +615,8 @@
     ],
     "scope": {
       "team": "minion",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -825,7 +629,8 @@
     ],
     "scope": {
       "team": "minion",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -852,7 +657,8 @@
     ],
     "scope": {
       "team": "minion",
-      "edition": "snv"
+      "edition": "snv",
+      "abilityVaries": false
     }
   },
   {
@@ -1101,7 +907,8 @@
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   },
   {
@@ -1120,7 +927,8 @@
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   },
   {
@@ -1138,7 +946,8 @@
       "pithag"
     ],
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -1182,7 +991,8 @@
         "minion",
         "demon"
       ],
-      "edition": "tb"
+      "edition": "tb",
+      "abilityVaries": false
     }
   },
   {
@@ -1200,7 +1010,8 @@
         "minion",
         "demon"
       ],
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -1217,7 +1028,8 @@
         "minion",
         "demon"
       ],
-      "edition": "snv"
+      "edition": "snv",
+      "abilityVaries": false
     }
   }
 ]

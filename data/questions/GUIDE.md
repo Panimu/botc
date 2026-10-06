@@ -32,6 +32,8 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 
 ### Known traps (found in review)
 
+- **Characters whose ability varies:** the Philosopher, Cannibal, Pixie and Apprentice gain other abilities during play, the Alchemist and Hermit hold abilities that differ by game or script, and the Amnesiac and Wizard have Storyteller-defined ones. None of them can honestly answer "does your ability…?" questions, so **every question about what an ability does carries the scope `{ "abilityVaries": false }`** (added to any existing scope). It's then asked only once none of them remain. Leave it off questions about team, alignment, edition, personality or art, and off questions deliberately about one of these eight (like "Of these two, do you know exactly what your own ability does?").
+
 - **Permissive phrasing:** "Would you be fine with…", "Would you accept…" and "Could you…" get a yes from anyone who doesn't mind. Ask what they'd *like*, or what their ability *does*. Opinion questions ("Is that the best start?") can draw a no from the character's own fans.
 - **Preference contests between look-alikes:** "Would you rather X than Y" questions can swap answers between similar characters (the High Priestess, General and Fisherman, for instance). Scope them, or tie them to the specific mechanic.
 

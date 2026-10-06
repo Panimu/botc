@@ -1,14 +1,5 @@
 [
   {
-    "id": "tfx-loyal-to-one",
-    "plain": "Would you like to start the game able to vouch for exactly one good player, without knowing their role?",
-    "styled": "One name. That's it. You don't know what they do, but you know they're good, and you'll defend them like a guard dog with a grudge. Is a single trustworthy name, role unknown, how you'd like to begin?",
-    "voice": "Mordecai",
-    "yes": [
-      "steward"
-    ]
-  },
-  {
     "id": "tfx-simplest-start",
     "plain": "Would you like your only starting information to be one guaranteed-good name, with nothing else attached?",
     "styled": "Some of you want spreadsheets. Some of you want a single name on a napkin that says 'this one's fine'. No role, no numbers, no fuss. Would you like that one lonely good name to be all you start with?",
@@ -33,7 +24,10 @@
     "voice": "Katia",
     "yes": [
       "knight"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-one-in-three",
@@ -45,22 +39,16 @@
     ]
   },
   {
-    "id": "tfx-dinner-party-traitor",
-    "plain": "Do you like the idea of sitting with three acquaintances, two loyal and one a traitor, and working out which?",
-    "styled": "Picture it, sweetheart: three guests at your table, two perfectly lovely and one with a knife up the sleeve. You know the ratio, just not the culprit. Tell me honestly, does that dinner party sound like your idea of fun?",
-    "voice": "Odette",
-    "yes": [
-      "noble"
-    ]
-  },
-  {
     "id": "tfx-left-or-right",
     "plain": "Would you like to start knowing only which direction around the circle the nearest evil player sits?",
     "styled": "Left or right. That's your whole clue. No name, no number, just a finger pointing vaguely round the table. Would you like to begin with nothing but the direction of the nearest evil?",
     "voice": "Elle",
     "yes": [
       "shugenja"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-compass-needle",
@@ -81,22 +69,16 @@
     ]
   },
   {
-    "id": "tfx-role-without-owner",
-    "plain": "Would you like to start knowing one Townsfolk character that's in play, with no hint of who has it?",
-    "styled": "We've got a name tag, but no name on the person. Someone in this circle is that Townsfolk, and you've got zero clue who. Do you want to start the game holding a role without its owner?",
-    "voice": "Carl",
-    "yes": [
-      "pixie"
-    ]
-  },
-  {
     "id": "tfx-fresh-bounty",
     "plain": "Would you like to know one evil player from the start, and learn a new one whenever yours dies?",
     "styled": "One target to start. Bag it, and a fresh wanted poster slides under your door that night. Rinse, repeat, stack the bodies. Does a rolling hit list of evil players sound like your kind of job?",
     "voice": "Samantha",
     "yes": [
       "bountyhunter"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-townsfolk-turned",
@@ -114,7 +96,10 @@
     "voice": "Katia",
     "yes": [
       "highpriestess"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-deep-conversation",
@@ -132,16 +117,10 @@
     "voice": "The Host",
     "yes": [
       "balloonist"
-    ]
-  },
-  {
-    "id": "tfx-never-same-kind-twice",
-    "plain": "Would you enjoy information that guarantees you never hear about the same kind of character two nights running?",
-    "styled": "Up, down, up again. Every night you drift over someone new, and the rules promise they're a different sort from last time. Do you like a guarantee that each night's name is a new kind of character?",
-    "voice": "Elle",
-    "yes": [
-      "balloonist"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-whos-winning",
@@ -150,25 +129,10 @@
     "voice": "Mordecai",
     "yes": [
       "general"
-    ]
-  },
-  {
-    "id": "tfx-skip-the-speeches",
-    "plain": "Would you rather hear which side is winning the war than learn anything about a single player?",
-    "styled": "Forget individuals. Forget names. Big-picture people want one number on the board: are we winning or not? Ratings LOVE a decisive leader! Would you rather hear who is winning the war than anything about one soldier?",
-    "voice": "Zev",
-    "yes": [
-      "general"
-    ]
-  },
-  {
-    "id": "tfx-sermon-strips-power",
-    "plain": "Would you like to choose players each night and leave any Minion among them powerless?",
-    "styled": "Oh, I LOVE a sermon with consequences. You point at the wicked, and the wicked go limp and useless forever. Do you want to choose players at night and leave any Minion among them powerless?",
-    "voice": "Samantha",
-    "yes": [
-      "preacher"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-caught-minion-knows",
@@ -177,16 +141,10 @@
     "voice": "Carl",
     "yes": [
       "preacher"
-    ]
-  },
-  {
-    "id": "tfx-nightly-alignment-check",
-    "plain": "Would you like to choose a player every night and learn whether they are good or evil?",
-    "styled": "Simple question, simple answer, every night: good or evil? Point, ask, done. Achievement unlocked: Binary Thinker! Do you want a nightly good-or-evil check on someone you pick?",
-    "voice": "The System AI",
-    "yes": [
-      "villageidiot"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-shared-job-one-drunk",
@@ -195,7 +153,10 @@
     "voice": "Princess Donut",
     "yes": [
       "villageidiot"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-wisdom-from-the-dead",
@@ -204,16 +165,10 @@
     "voice": "Mordecai",
     "yes": [
       "king"
-    ]
-  },
-  {
-    "id": "tfx-demon-knows-your-crown",
-    "plain": "Would you accept the Demon knowing your role from the start, in exchange for learning living players' roles late in the game?",
-    "styled": "Big shiny target on your head, and the worst person in the room knows exactly where it is. But hang on long enough and you start learning who's who among the living. Would you take that deal?",
-    "voice": "Katia",
-    "yes": [
-      "king"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-win-by-cult",
@@ -225,31 +180,16 @@
     ]
   },
   {
-    "id": "tfx-drift-with-neighbour",
-    "plain": "Would you like your alignment to change each night to match one of your living neighbours?",
-    "styled": "Your loyalties, it turns out, depend on who you're sat beside. Good tonight, evil tomorrow, whatever your neighbour is. Would you like your team to shift nightly to match a neighbour?",
-    "voice": "Elle",
-    "yes": [
-      "cultleader"
-    ]
-  },
-  {
     "id": "tfx-stake-life-on-sobriety",
     "plain": "Would you stake your life each night on a chosen player staying sober and unpoisoned?",
     "styled": "Ladies and gentlemen, tonight our daredevil ties their own heartbeat to someone else's liver! If that player gets drunk or poisoned, splat! Would you bet your own life, night after night, on someone else staying clean?",
     "voice": "The Host",
     "yes": [
       "acrobat"
-    ]
-  },
-  {
-    "id": "tfx-survival-is-the-clue",
-    "plain": "Would you like waking up alive to be your proof that the player you picked was neither drunk nor poisoned?",
-    "styled": "Every morning you check your pulse. Still ticking? Then the person you leaned on last night was sober and healthy. Not ticking? Well, you won't be checking. Do you want your own survival to be the test result?",
-    "voice": "Mordecai",
-    "yes": [
-      "acrobat"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-good-team-night-victim",
@@ -258,16 +198,10 @@
     "voice": "Carl",
     "yes": [
       "lycanthrope"
-    ]
-  },
-  {
-    "id": "tfx-beast-bites-innocent",
-    "plain": "Do you hide a beast inside you that hunts every night, but whose bite only ever kills the innocent?",
-    "styled": "OH, I adore this one! A howling monster hiding under a polite little face, out hunting every night, and it can only rip apart the GOOD people! Delicious irony! Is there a beast like that inside you, one that hunts nightly and only hurts the innocent?",
-    "voice": "Samantha",
-    "yes": [
-      "lycanthrope"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-name-the-whole-team",
@@ -279,22 +213,16 @@
     ]
   },
   {
-    "id": "tfx-solve-all-at-once",
-    "plain": "Would you rather crack the whole evil team in one grand reveal than catch them one at a time?",
-    "styled": "Some people pick off evil one execution at a time. Boring! Our sponsors want the big detective finale: everybody in the parlour, every villain unmasked at once. Would you rather solve the whole evil team in one go?",
-    "voice": "Zev",
-    "yes": [
-      "alsaahir"
-    ]
-  },
-  {
     "id": "tfx-rebuild-evil-team",
     "plain": "As a good player, would you like to choose which Demon or which Minions the evil team gets?",
     "styled": "Right, so you're on the good team, and you get to reach into the evil team's toolbox and swap the parts. Pick their Demon. Or pick their Minions. Would you like that kind of tinkering power from the good side?",
     "voice": "Carl",
     "yes": [
       "engineer"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-weaker-demon",
@@ -306,22 +234,16 @@
     ]
   },
   {
-    "id": "tfx-reveal-to-one",
-    "plain": "Once per game, would you like the Storyteller to confirm your true role to one player of your choice?",
-    "styled": "Trust is hard to come by in here. So, once, you get to pick someone and have the Storyteller tell them exactly who you really are. Would you like to spend your power proving yourself to one person?",
-    "voice": "Katia",
-    "yes": [
-      "nightwatchman"
-    ]
-  },
-  {
     "id": "tfx-knock-on-one-door",
     "plain": "Would you rather be trusted by one chosen person than learn anything yourself?",
     "styled": "Cold streets, a lantern, and one door you knock on to say 'it's me, I'm real'. You learn nothing, mind. You just get believed. Would you take being trusted by one person over any information of your own?",
     "voice": "Elle",
     "yes": [
       "nightwatchman"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-rescue-the-damsel",
@@ -330,25 +252,10 @@
     "voice": "Princess Donut",
     "yes": [
       "huntsman"
-    ]
-  },
-  {
-    "id": "tfx-liability-to-asset",
-    "plain": "Would you like your one big play to be turning a liability the Minions are hunting into a fresh Townsfolk?",
-    "styled": "There's someone on your side the bad guys can win by guessing. That's a liability. One swing of your axe and they're a shiny new Townsfolk. Would you like that rescue to be your big play of the game?",
-    "voice": "Mordecai",
-    "yes": [
-      "huntsman"
-    ]
-  },
-  {
-    "id": "tfx-ask-for-advice",
-    "plain": "Would you like to visit the Storyteller once per game for advice on how your team can win?",
-    "styled": "One free coaching session with the person who knows everything! Not facts, mind you, just tips. Our sponsors call it 'mentorship'. Would you like to cash in one advice session with the Storyteller?",
-    "voice": "Zev",
-    "yes": [
-      "fisherman"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-old-timer-tips",
@@ -366,7 +273,10 @@
     "voice": "Princess Donut",
     "yes": [
       "princess"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-first-day-moment",
@@ -376,7 +286,10 @@
     "yes": [
       "princess",
       "juggler"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-good-minion-power",
@@ -388,57 +301,12 @@
     ]
   },
   {
-    "id": "tfx-nudged-to-rechoose",
-    "plain": "Can the Storyteller prompt you to choose differently when you use your ability?",
-    "styled": "You aim. The Storyteller winces and says 'maybe try someone else, hmm?' and you go again. Training wheels for the morally confused. Can the Storyteller nudge you to rethink your pick like that?",
-    "voice": "Carl",
-    "yes": [
-      "alchemist"
-    ]
-  },
-  {
-    "id": "tfx-eat-the-executed",
-    "plain": "Would you like to gain the ability of whoever last died by execution, knowing an evil one would poison you instead?",
-    "styled": "Somebody dies on the gallows, and you get their powers. Fresh off the rope! Unless they were evil, in which case enjoy the food poisoning. Waste not, want not! Would you like to take on the ability of whoever most recently died by execution, knowing an evil one would poison you?",
-    "voice": "Samantha",
-    "yes": [
-      "cannibal"
-    ]
-  },
-  {
-    "id": "tfx-you-are-what-you-eat",
-    "plain": "Would you take on a power knowing you'll be poisoned if its last owner was evil?",
-    "styled": "You take what the last corpse had. Lovely. But if that corpse was evil, it tastes funny, and you're poisoned until the town executes someone good. Is that a risk you'd happily swallow for a borrowed power?",
-    "voice": "Elle",
-    "yes": [
-      "cannibal"
-    ]
-  },
-  {
     "id": "tfx-unknown-own-power",
     "plain": "Would you like to play without knowing your own ability, guessing at it each day?",
     "styled": "Welcome, contestant! Your ability is: [REDACTED]. Please guess daily. Accuracy feedback provided. Refunds unavailable. Would you like to play without knowing your own power, guessing at it every day?",
     "voice": "The System AI",
     "yes": [
       "amnesiac"
-    ]
-  },
-  {
-    "id": "tfx-hot-and-cold",
-    "plain": "Do you enjoy discovering your own powers by trial and error, being told how close each guess is?",
-    "styled": "Warmer. Colder. Warmer! It's a children's party game, except the prize is figuring out what the hell you're for. Do you enjoy working out your own ability through hot-and-cold guesses?",
-    "voice": "Elle",
-    "yes": [
-      "amnesiac"
-    ]
-  },
-  {
-    "id": "tfx-pass-the-plough",
-    "plain": "Would you like your death at night to pass your role to another good player?",
-    "styled": "When you go, your job doesn't go with you. Someone else good picks up the hoe and carries on. Would you like a night-time death to hand your role to another good player?",
-    "voice": "Katia",
-    "yes": [
-      "farmer"
     ]
   },
   {
@@ -466,16 +334,10 @@
     "voice": "Mordecai",
     "yes": [
       "choirboy"
-    ]
-  },
-  {
-    "id": "tfx-louder-after-death",
-    "plain": "Would you like being killed by the Demon to let you nominate twice a day and vote twice per nomination?",
-    "styled": "Kill ME? How DARE you! Very well, I shall come back TWICE as loud: two nominations, two votes, and everyone will hear me wail! Would you like a Demon kill to double your say in the town?",
-    "voice": "Princess Donut",
-    "yes": [
-      "banshee"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-everyone-hears-wail",
@@ -484,22 +346,16 @@
     "voice": "The Host",
     "yes": [
       "banshee"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-fool-the-villains",
     "plain": "As a good player, would you like the evil team to think you're one of them?",
     "styled": "Abracadabra! The Demon thinks you're a Minion, the Minions think you're the Demon, and nobody's quite sure who's who. As a good player, do you want to fool the evil team into thinking you're on their side?",
     "voice": "Prepotente",
-    "yes": [
-      "magician"
-    ]
-  },
-  {
-    "id": "tfx-misdirect-the-wicked",
-    "plain": "As a good player, would you enjoy sneaking yourself into the evil team's ranks as an impostor?",
-    "styled": "Now you see me, now you do not. The bad guys sit down for their team meeting and there is an extra chair, and it is you, grinning. As a good player, would you enjoy slipping into the evil team as an impostor?",
-    "voice": "Carl",
     "yes": [
       "magician"
     ]
@@ -520,16 +376,10 @@
     "voice": "Samantha",
     "yes": [
       "poppygrower"
-    ]
-  },
-  {
-    "id": "tfx-no-evil-at-all",
-    "plain": "Would you like to play in a game where there might be no evil players at all?",
-    "styled": "Plot twist! Maybe there is no Demon. Maybe there are no Minions. Maybe everyone's been screaming at shadows. Would you like a game where there may be nobody evil whatsoever?",
-    "voice": "The System AI",
-    "yes": [
-      "atheist"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-sceptic-of-demons",
@@ -547,7 +397,10 @@
     "voice": "Samantha",
     "yes": [
       "atheist"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "tfx-ability-could-kill-you",
@@ -562,7 +415,8 @@
       "gossip"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -576,7 +430,8 @@
       "tealady"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -589,7 +444,8 @@
       "innkeeper"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -604,7 +460,8 @@
       "mayor"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -641,7 +498,8 @@
       "juggler"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -669,7 +527,8 @@
       "innkeeper"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -683,35 +542,9 @@
       "banshee"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
-  },
-  {
-    "id": "tfx-start-with-role-name",
-    "plain": "Of those who start knowing something, does your starting information name a specific character?",
-    "styled": "Night one, you get a little gift. Some gifts are numbers, some are directions, some are just names of people. Yours has an actual character written on it. Does your starting information name a specific character?",
-    "voice": "Katia",
-    "yes": [
-      "investigator",
-      "washerwoman",
-      "librarian",
-      "grandmother",
-      "pixie"
-    ],
-    "scope": [
-      "steward",
-      "knight",
-      "chef",
-      "noble",
-      "investigator",
-      "washerwoman",
-      "clockmaker",
-      "grandmother",
-      "librarian",
-      "shugenja",
-      "pixie",
-      "bountyhunter"
-    ]
   },
   {
     "id": "tfx-start-with-number-or-direction",
@@ -734,7 +567,6 @@
       "grandmother",
       "librarian",
       "shugenja",
-      "pixie",
       "bountyhunter"
     ]
   },
@@ -789,13 +621,15 @@
       "bountyhunter",
       "balloonist",
       "villageidiot",
+      "engineer",
       "huntsman",
       "choirboy",
       "atheist"
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "carousel"
+      "edition": "carousel",
+      "abilityVaries": false
     }
   },
   {
@@ -811,7 +645,8 @@
       "atheist"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -839,47 +674,8 @@
       "lycanthrope"
     ],
     "scope": {
-      "team": "townsfolk"
-    }
-  },
-  {
-    "id": "tfx-alignment-in-flux",
-    "plain": "As a Townsfolk, could your ability change your own alignment?",
-    "styled": "You start as one of the nice ones. You might not finish that way, and your own ability is the reason. Plot twist! Could your ability flip which team you're on?",
-    "voice": "Odette",
-    "yes": [
-      "cultleader",
-      "snakecharmer"
-    ],
-    "scope": {
-      "team": "townsfolk"
-    }
-  },
-  {
-    "id": "tfx-storytellers-opinion",
-    "plain": "Of the Townsfolk, does your ability give you the Storyteller's opinion about the game, or advice on playing it, rather than facts?",
-    "styled": "Not facts. Not numbers. Just what the person behind the screen reckons about the game: their gut, their hunch, their tips. Is the Storyteller's opinion or advice about the game what your ability hands you?",
-    "voice": "Carl",
-    "yes": [
-      "highpriestess",
-      "general",
-      "fisherman"
-    ],
-    "scope": {
-      "team": "townsfolk"
-    }
-  },
-  {
-    "id": "tfx-needs-specific-partner",
-    "plain": "As a Townsfolk, is your ability built around one particular other character being in the game?",
-    "styled": "Your whole job hinges on one specific character showing up. No partner, no purpose. Like a duet with an empty stage. Is your ability built around a particular other character being in play?",
-    "voice": "Katia",
-    "yes": [
-      "huntsman",
-      "choirboy"
-    ],
-    "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -891,20 +687,8 @@
       "banshee"
     ],
     "scope": {
-      "team": "townsfolk"
-    }
-  },
-  {
-    "id": "tfx-scramble-evil-knowledge",
-    "plain": "As a Townsfolk, does your ability scramble what the evil team knows about who is on their team?",
-    "styled": "Evil's first-night team meeting is supposed to go smoothly: nods, winks, knives. You make it a disaster. Does your ability mess up what the evil team knows about its own members?",
-    "voice": "Mordecai",
-    "yes": [
-      "magician",
-      "poppygrower"
-    ],
-    "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -995,7 +779,8 @@
       "acrobat"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -1022,7 +807,8 @@
       "exorcist"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -1037,7 +823,6 @@
     "scope": [
       "juggler",
       "alsaahir",
-      "amnesiac",
       "gambler"
     ]
   },
@@ -1055,8 +840,7 @@
       "general",
       "fisherman",
       "artist",
-      "savant",
-      "amnesiac"
+      "savant"
     ]
   },
   {
@@ -1073,8 +857,7 @@
       "general",
       "fisherman",
       "artist",
-      "savant",
-      "amnesiac"
+      "savant"
     ]
   },
   {
@@ -1202,7 +985,6 @@
     ],
     "scope": [
       "princess",
-      "cannibal",
       "atheist",
       "undertaker",
       "minstrel",
@@ -1221,7 +1003,8 @@
       "farmer"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   },
   {
@@ -1249,7 +1032,8 @@
     ],
     "scope": {
       "team": "townsfolk",
-      "edition": "carousel"
+      "edition": "carousel",
+      "abilityVaries": false
     }
   },
   {
@@ -1325,7 +1109,8 @@
       "alsaahir"
     ],
     "scope": {
-      "team": "townsfolk"
+      "team": "townsfolk",
+      "abilityVaries": false
     }
   }
 ]

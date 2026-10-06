@@ -1,50 +1,5 @@
 [
   {
-    "id": "out-all-the-quirks",
-    "plain": "Would you like to be a single character holding every Outsider ability on the script at once?",
-    "styled": "New bundle deal! One contestant, every misfit perk on the script's shelf, absolutely no refunds. Our legal team calls it 'a bit much'. Would you like to be the one carrying every Outsider ability on the script at once?",
-    "voice": "The System AI",
-    "yes": [
-      "hermit"
-    ]
-  },
-  {
-    "id": "out-one-person-crowd",
-    "plain": "Would you rather be one outcast who stands in for several, so fewer misfits need to turn up?",
-    "styled": "Some people bring a plus-one. You'd turn up alone and quietly count as the whole awkward guest list, so the host can uninvite a couple of weirdos. Is being a one-person crowd of outcasts your thing?",
-    "voice": "Katia",
-    "yes": [
-      "hermit"
-    ]
-  },
-  {
-    "id": "out-only-if-master-votes",
-    "plain": "Would you like your only power to be choosing a master each night and voting only when they do?",
-    "styled": "So the whole deal is you pick a boss every night, and you're not allowed to raise your hand unless they raise theirs. That's it. That's the ability. Would you actually want that to be your only power?",
-    "voice": "Carl",
-    "yes": [
-      "butler"
-    ]
-  },
-  {
-    "id": "out-borrowed-hand",
-    "plain": "Would you be happy for your whole part in the game to be following one chosen player's lead on votes?",
-    "styled": "Tell me, darling, and be honest for the cameras: no secrets, no powers, just devotion. You watch your chosen one, and when their hand goes up, yours follows. Would you be happy if that were your whole part in the game?",
-    "voice": "Odette",
-    "yes": [
-      "butler"
-    ]
-  },
-  {
-    "id": "out-drunk-on-contact",
-    "plain": "Would you like your only trick to be getting the first player who targets you each night drunk, then joining their side?",
-    "styled": "Whoever pokes you first after dark gets a faceful of booze and a new best mate: you. You pick up their colours and go stagger after them. Would you want that to be your one and only trick?",
-    "voice": "Mordecai",
-    "yes": [
-      "goon"
-    ]
-  },
-  {
     "id": "out-hired-muscle",
     "plain": "Are you basically hired muscle, siding with whoever grabs you first and shrugging off the bruises?",
     "styled": "RAWR! RAWR! [Translation: stomp for first friend who comes close! No care about scratches!] He'd follow whoever reaches him first and laugh off the bruises. Is that you: loyal muscle for whoever claims you first?",
@@ -60,25 +15,10 @@
     "voice": "Elle",
     "yes": [
       "ogre"
-    ]
-  },
-  {
-    "id": "out-grunt-and-follow",
-    "plain": "Is the only choice you ever make picking a friend whose side you copy, never knowing whether you are good or evil?",
-    "styled": "BEHOLD the simple brute, who makes exactly one decision all game: a companion, whose cause he adopts without knowing what it is! I find it almost noble. ALMOST. Is picking that one friend the only choice you ever make, leaving your own side a mystery?",
-    "voice": "Prepotente",
-    "yes": [
-      "ogre"
-    ]
-  },
-  {
-    "id": "out-think-im-demon",
-    "plain": "Would you like your whole role to be believing you're the Demon when you aren't one?",
-    "styled": "Congratulations on your promotion to Lord of Darkness! Terms and conditions apply. Promotion is imaginary. Would you enjoy that being your entire role: believing you're the Demon when you aren't one at all?",
-    "voice": "The System AI",
-    "yes": [
-      "lunatic"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-watched-delusion",
@@ -87,7 +27,10 @@
     "voice": "The Host",
     "yes": [
       "lunatic"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-fake-townsfolk",
@@ -99,57 +42,12 @@
     ]
   },
   {
-    "id": "out-confident-and-wrong",
-    "plain": "Would you like to spend the whole game believing you're a Townsfolk hero, still good but with fake powers and worthless information?",
-    "styled": "I've watched contestants march into the boss room swinging a sword that turned out to be a breadstick. Still on our side, bless them, just useless. Would you want to spend the whole game convinced you're a Townsfolk hero, still good but with nothing except fake powers and worthless info?",
-    "voice": "Mordecai",
-    "yes": [
-      "drunk"
-    ]
-  },
-  {
-    "id": "out-drop-dead-anytime",
-    "plain": "Do you want your one quirk to be that the Storyteller can kill you whenever they fancy?",
-    "styled": "Hi! Your friendly liaison here from Production. Your contract has a small clause where you can be removed from the show at any moment for no reason at all. It's your only clause! Would you like that to be your whole deal?",
-    "voice": "Zev",
-    "yes": [
-      "tinker"
-    ]
-  },
-  {
-    "id": "out-defining-sudden-death",
-    "plain": "Would you like your defining trait to be dropping dead at random, for no reason?",
-    "styled": "One minute you're chatting, the next you're face down in the soup and nobody did anything. Glorious! Pointless! Would you like dropping dead at random to be the thing you're known for?",
-    "voice": "Samantha",
-    "yes": [
-      "tinker"
-    ]
-  },
-  {
-    "id": "out-good-but-flagged",
-    "plain": "Would you like your defining quirk to be that you're good but can register as evil, even as a Minion or Demon?",
-    "styled": "Every scan we run on you lights up red. Minion? Demon? The machine shrugs. You're actually lovely, of course, but the paperwork says monster. Would you like that to be your defining quirk?",
-    "voice": "The System AI",
-    "yes": [
-      "recluse"
-    ]
-  },
-  {
     "id": "out-get-off-my-land",
     "plain": "Do you snarl at visitors to get off your land, then wonder why everyone thinks you're a monster?",
     "styled": "There's always one guy who yells at everybody from his porch and then acts shocked when the village decides he's the werewolf. Are you that guy, growling people away and then puzzled that they think you're evil?",
     "voice": "Carl",
     "yes": [
       "recluse"
-    ]
-  },
-  {
-    "id": "out-one-nomination-smash",
-    "plain": "Would you want your entire power to be one nomination that kills anyone who isn't the Demon?",
-    "styled": "You get one swing all game. Hit the Demon and nothing happens. Hit anybody else and they're paste. It's a terrible trade, and it's the only thing you've got. Would you want that to be your entire power?",
-    "voice": "Mordecai",
-    "yes": [
-      "golem"
     ]
   },
   {
@@ -168,7 +66,10 @@
     "voice": "Princess Donut",
     "yes": [
       "sweetheart"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-unforgettable",
@@ -177,15 +78,6 @@
     "voice": "Odette",
     "yes": [
       "sweetheart"
-    ]
-  },
-  {
-    "id": "out-death-feeds-storyteller",
-    "plain": "Would you like your only effect to be giving the Storyteller a Minion's power when you die?",
-    "styled": "Patch note: when this contestant dies, the Game Master receives a free villain ability! Complimentary! Forever! Would you like your only contribution to be handing the Storyteller a Minion power when you die?",
-    "voice": "The System AI",
-    "yes": [
-      "plaguedoctor"
     ]
   },
   {
@@ -204,7 +96,10 @@
     "voice": "Carl",
     "yes": [
       "klutz"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-oops",
@@ -216,22 +111,16 @@
     ]
   },
   {
-    "id": "out-dying-curse",
-    "plain": "Would you like your only ability to be a dying curse that kills whoever you name, if they're good?",
-    "styled": "Ah, a final curse! With your last breath you name someone, and if they are good, the night swallows them! Exquisite! Would you want your sole power to be a curse that kills the good person you name as you die?",
-    "voice": "Samantha",
-    "yes": [
-      "moonchild"
-    ]
-  },
-  {
     "id": "out-spite-from-grave",
     "plain": "Would you secretly enjoy dragging an innocent person down with you, out of pure spite, when you die?",
     "styled": "I'm not saying it's healthy. I'm saying I understand it. You're going down, and you'd quite like company, preferably someone who didn't deserve it. Would you secretly enjoy taking an innocent with you?",
     "voice": "Katia",
     "yes": [
       "moonchild"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-last-public-pick",
@@ -242,15 +131,6 @@
       "klutz",
       "moonchild",
       "hermit"
-    ]
-  },
-  {
-    "id": "out-martyr-loses",
-    "plain": "Do you want an ability that does nothing except lose your team the game if you're executed?",
-    "styled": "Here's the clause, and there is only one clause. If the town hangs you, your side loses on the spot. No appeals. Would you want that to be your entire ability?",
-    "voice": "Mordecai",
-    "yes": [
-      "saint"
     ]
   },
   {
@@ -279,7 +159,10 @@
     "voice": "The Host",
     "yes": [
       "barber"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-hat-collection",
@@ -297,7 +180,10 @@
     "voice": "The System AI",
     "yes": [
       "hatter"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-reshuffle-on-death",
@@ -311,30 +197,12 @@
     ]
   },
   {
-    "id": "out-deny-outsider",
-    "plain": "Would you like your one rule to be that you must never admit you're an Outsider, or risk execution?",
-    "styled": "One rule, and the punishment is the rope. Do not, under any circumstances, let on that you're one of the misfits. Would you like that to be the single rule that defines you?",
-    "voice": "Mordecai",
-    "yes": [
-      "mutant"
-    ]
-  },
-  {
     "id": "out-not-a-freak",
     "plain": "Would you insist, loudly and often, that you're not a freak but a perfectly ordinary person?",
     "styled": "I AM NOT A FREAK. I AM A PERFECTLY NORMAL GOAT WITH PERFECTLY NORMAL AMBITIONS. Ahem. Would you, too, loudly insist that you're entirely ordinary and not a freak at all?",
     "voice": "Prepotente",
     "yes": [
       "mutant"
-    ]
-  },
-  {
-    "id": "out-blunder-to-victory",
-    "plain": "Would you like your one ability to be switching sides and winning if you were the main reason your team lost?",
-    "styled": "You torpedo your own team, and as the wreckage sinks, you step onto the winning boat and wave. That's the whole power. Would you want your only ability to be turning your own blunder into a personal victory?",
-    "voice": "Odette",
-    "yes": [
-      "politician"
     ]
   },
   {
@@ -347,22 +215,16 @@
     ]
   },
   {
-    "id": "out-vote-every-time",
-    "plain": "Would you like your only duty to be voting on every nomination while five or more players are alive?",
-    "styled": "Hand up! Hand up! Hand up again! Achievement unlocked: Unconditional Enthusiasm. While the crowd is still big, you vote yes on everything, every time. Would you want that to be your only duty?",
-    "voice": "The System AI",
-    "yes": [
-      "zealot"
-    ]
-  },
-  {
     "id": "out-never-sit-out",
     "plain": "Are you all about backing every accusation and never sitting out a vote?",
     "styled": "Abstain? ABSTAIN? Cowards abstain. Real believers vote for everything and sort out the bodies afterwards! Is backing every single accusation, and never sitting one out, what you're all about?",
     "voice": "Samantha",
     "yes": [
       "zealot"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-minion-guess-loses",
@@ -371,7 +233,10 @@
     "voice": "Katia",
     "yes": [
       "damsel"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-in-distress",
@@ -392,24 +257,6 @@
     ]
   },
   {
-    "id": "out-accidental-alibis",
-    "plain": "Is your main contribution to the game accidentally handing the bad guys a stack of convincing alibis?",
-    "styled": "You walk in, and suddenly every villain has a fresh fake identity to hide behind. Nobody asked you to. You just leak. Is handing the bad guys convincing alibis basically your main contribution?",
-    "voice": "Elle",
-    "yes": [
-      "snitch"
-    ]
-  },
-  {
-    "id": "out-flip-result",
-    "plain": "Do you want an ability that does nothing but flip the final result, so the winners lose and the losers win?",
-    "styled": "At the end, whoever thinks they won? They lost. Whoever lost? They won. That's your one trick, and it's beautiful. Would you want your only ability to be flipping the result upside down?",
-    "voice": "Prepotente",
-    "yes": [
-      "heretic"
-    ]
-  },
-  {
     "id": "out-losing-is-winning",
     "plain": "Is the heart of your character rooting for your own team to lose, because that's how they actually win?",
     "styled": "I have explained this to the cat four times. Losing is winning. Winning is losing. She bit me. Is cheering for your own team to lose, because that's how they actually win, the core of who you are?",
@@ -425,16 +272,10 @@
     "voice": "Zev",
     "yes": [
       "puzzlemaster"
-    ]
-  },
-  {
-    "id": "out-guess-for-demon",
-    "plain": "Would you build your whole game around one guess that either reveals the Demon or leaves you with false information for good?",
-    "styled": "One guess. Get it right and I hand you the Demon. Get it wrong and everything I tell you afterwards is garbage. I don't know why anyone builds their whole game around these deals, but they always do. Would you?",
-    "voice": "Mordecai",
-    "yes": [
-      "puzzlemaster"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "out-s-death-sets-off",
@@ -733,7 +574,7 @@
   },
   {
     "id": "out-s-evil-know-you",
-    "plain": "Does the evil team know something about you from the start?",
+    "plain": "Does the evil team know something about you from the start because of your own ability?",
     "styled": "Some contestants walk in anonymous. Others arrive with the villains already whispering about them in the green room. Tell me: does the evil team know something about you from the beginning?",
     "voice": "Odette",
     "yes": [
@@ -767,13 +608,17 @@
   },
   {
     "id": "out-s-guessing-game",
-    "plain": "Does your ability involve someone making a once-only guess?",
+    "plain": "Does your ability involve someone making a once-only choice?",
     "styled": "Everybody loves a quiz segment! One guess, one shot, very dramatic music. Does your ability involve somebody making a once-only guess?",
     "voice": "Zev",
     "yes": [
+      "hermit",
+      "ogre",
+      "golem",
+      "klutz",
+      "moonchild",
       "damsel",
-      "puzzlemaster",
-      "hermit"
+      "puzzlemaster"
     ],
     "scope": {
       "team": "outsider"
@@ -969,7 +814,8 @@
     ],
     "scope": {
       "team": "outsider",
-      "edition": "tb"
+      "edition": "tb",
+      "abilityVaries": false
     }
   },
   {
@@ -983,7 +829,8 @@
     ],
     "scope": {
       "team": "outsider",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -996,20 +843,8 @@
     ],
     "scope": {
       "team": "outsider",
-      "edition": "bmr"
-    }
-  },
-  {
-    "id": "out-snv-watch-mouth",
-    "plain": "Do you have to be careful never to let on what kind of character you are?",
-    "styled": "SILENCE! One careless boast about your true nature and they will string you up! I speak from... no experience. Do you have to be careful never to reveal what kind of character you are?",
-    "voice": "Prepotente",
-    "yes": [
-      "mutant"
-    ],
-    "scope": {
-      "team": "outsider",
-      "edition": "snv"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -1024,7 +859,8 @@
     ],
     "scope": {
       "team": "outsider",
-      "edition": "snv"
+      "edition": "snv",
+      "abilityVaries": false
     }
   },
   {

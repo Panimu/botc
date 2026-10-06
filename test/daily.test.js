@@ -4,7 +4,7 @@ import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
   par, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
-  OVER_PAR_QUESTIONS, GUESS_BUDGET, tier, streakLine, TIERS,
+  OVER_PAR_QUESTIONS, GUESS_BUDGET, HUNT_MIN_SIDE, tier, streakLine, TIERS,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -199,21 +199,18 @@ test('a missed day or a loss ends a streak; every recorded hunt counts, with or 
 });
 
 test('budgets: par + 2 questions and 3 guesses, overflow into questions, lost only when no move is left', () => {
-  // Find a day where always asking the least even question runs the questions out early.
-  let game = null;
-  for (let day = 0; day < 40 && !game; day++) {
-    const date = addDays(LAUNCH_DATE, day);
-    const p = par(date, characters, questions);
-    const g = new DailyGame({ characters, questions, date, par: p });
-    assert.equal(g.questionsLeft, p + OVER_PAR_QUESTIONS);
-    assert.equal(g.guessesLeft, GUESS_BUDGET);
-    const lopsided = (q) => -Math.abs(g.pool.filter((id) => q.yesSet.has(id)).length - g.pool.length / 2);
-    while (g.status === 'playing' && g.offers.length) g.ask([...g.offers].sort((x, y) => lopsided(x) - lopsided(y))[0].id);
-    if (g.status === 'playing' && g.pool.length > GUESS_BUDGET + 1) game = g;
-  }
-  assert.ok(game, 'some day runs out of questions with several characters left');
+  const date = addDays(LAUNCH_DATE, 2);
+  const p = par(date, characters, questions);
+  const full = new DailyGame({ characters, questions, date, par: p });
+  assert.equal(full.questionsLeft, p + OVER_PAR_QUESTIONS);
+  assert.equal(full.guessesLeft, GUESS_BUDGET);
+  // A deliberately tiny budget (as if par were 1) runs the questions out early.
+  const game = new DailyGame({ characters, questions, date, par: 1 });
+  while (game.status === 'playing' && game.offers.length) game.ask(game.offers[0].id);
+  assert.equal(game.status, 'playing');
   assert.equal(game.questionsLeft, 0, 'offers stop when the questions run out');
   assert.equal(game.offers.length, 0);
+  assert.ok(game.pool.length > GUESS_BUDGET + 1);
   assert.ok(game.canGuess, 'guessing opens once no question can be asked');
   for (const id of game.pool.filter((c) => c !== game.target)) {
     if (game.status !== 'playing') break;
@@ -308,4 +305,46 @@ test('restore codes keep the par, and old version 1 codes still restore', () => 
   const badPar = btoa(JSON.stringify({ v: 2, r: [[0, 7, 0]] })).replaceAll('=', '');
   assert.throws(() => decodeResults(badPar, today));
   assert.deepEqual(cleanResults({ [LAUNCH_DATE]: { won: true, score: 7, par: 'x' } }, today), {});
+});
+
+test('hunt offers: above 15 left, no side under 7 when avoidable; at 15 or fewer, no single-character splits when avoidable', () => {
+  let bigChecked = 0;
+  let smallChecked = 0;
+  for (let day = 0; day < 12; day++) {
+    const date = addDays(LAUNCH_DATE, day);
+    const game = new DailyGame({ characters, questions, date });
+    while (game.status === 'playing' && game.offers.length) {
+      const n = game.pool.length;
+      const sides = (q) => { const yes = game.pool.filter((id) => q.yesSet.has(id)).length; return Math.min(yes, n - yes); };
+      const all = game.questions.filter((q) => !game.history.some((h) => h.question === q)
+        && (!q.scopeSet || game.pool.every((id) => q.scopeSet.has(id))) && sides(q) > 0);
+      const minSide = n > GUESS_THRESHOLD ? HUNT_MIN_SIDE : 2;
+      const good = all.filter((q) => sides(q) >= minSide).length;
+      const goodOffered = game.offers.filter((q) => sides(q) >= minSide).length;
+      // As many offers meet the rule as possible.
+      assert.equal(goodOffered, Math.min(good, game.offers.length), `day ${day}, ${n} left`);
+      if (n > GUESS_THRESHOLD) bigChecked++; else smallChecked++;
+      game.ask(game.offers[day % game.offers.length].id);
+    }
+  }
+  assert.ok(bigChecked > 10 && smallChecked > 5);
+});
+
+test('hunt offers: above 15 left they spread across even and bolder splits, and the order is shuffled', () => {
+  let evenFirst = 0;
+  let spreads = 0;
+  let turns = 0;
+  for (let day = 0; day < 20; day++) {
+    const game = new DailyGame({ characters, questions, date: addDays(LAUNCH_DATE, day) });
+    const n = game.pool.length;
+    const share = (q) => { const yes = game.pool.filter((id) => q.yesSet.has(id)).length; return Math.max(yes, n - yes) / n; };
+    const shares = game.offers.map(share);
+    turns++;
+    if (shares.indexOf(Math.min(...shares)) === 0) evenFirst++;
+    if (Math.max(...shares) - Math.min(...shares) >= 0.1) spreads++;
+    // Same seed, same offers in the same order.
+    assert.deepEqual(new DailyGame({ characters, questions, date: addDays(LAUNCH_DATE, day) }).offers.map((q) => q.id), game.offers.map((q) => q.id));
+  }
+  assert.ok(spreads >= turns * 0.7, `offers usually span 50/50 to 70/30: ${spreads} of ${turns}`);
+  assert.ok(evenFirst < turns * 0.7, `the most even offer isn't always shown first: ${evenFirst} of ${turns}`);
 });

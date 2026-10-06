@@ -1,53 +1,5 @@
 [
   {
-    "id": "psy-perfect-moment",
-    "plain": "Would you rather save one big move for the perfect moment than use a small power every day?",
-    "styled": "NEW ACHIEVEMENT UNLOCKED: Hoarder of Destiny! Some contestants spend their power like pocket change. Others sit on one glorious button for days, waiting to smash it at exactly the right second. Would you rather save one big move for the perfect moment than use a little power every day?",
-    "voice": "The System AI",
-    "yes": {
-      "psyPatient": true
-    },
-    "scope": {
-      "psyPatientClear": true
-    }
-  },
-  {
-    "id": "psy-slow-payoff",
-    "plain": "Do you prefer plans that pay off near the end over ones that pay off straight away?",
-    "styled": "Most of you want your reward the second you walk through the door. The ones who live longest plant something early and wait for it to grow. Do you prefer a plan that pays off near the end over one that pays off straight away?",
-    "voice": "Mordecai",
-    "yes": {
-      "psyPatient": true
-    },
-    "scope": {
-      "psyPatientClear": true
-    }
-  },
-  {
-    "id": "psy-best-bite-last",
-    "plain": "Do you save the best thing on your plate until last?",
-    "styled": "A lady does NOT wolf down the good salmon first, darling. She savours the little things and saves the finest morsel for a grand finale. Do you save the best thing on your plate until last?",
-    "voice": "Princess Donut",
-    "yes": {
-      "psyPatient": true
-    },
-    "scope": {
-      "psyPatientClear": true
-    }
-  },
-  {
-    "id": "psy-hold-the-trump",
-    "plain": "In card games, do you hold your strongest card back until it can win outright?",
-    "styled": "Every game night there's one guy who slaps down his best card on turn one, and one guy who sits on it all evening looking smug. Are you the one who holds your strongest card back until it can win outright?",
-    "voice": "Carl",
-    "yes": {
-      "psyPatient": true
-    },
-    "scope": {
-      "psyPatientClear": true
-    }
-  },
-  {
     "id": "psy-waiting-game",
     "plain": "Are you good at waiting?",
     "styled": "I sat in a doctor's waiting room for four hours once and came out with three new friends and a recipe for flan. Is waiting something you are genuinely good at?",
@@ -99,34 +51,10 @@
     }
   },
   {
-    "id": "psy-on-the-line",
-    "plain": "Do you enjoy putting something you care about on the line for a big payoff?",
-    "styled": "Honey, I didn't get to my age by playing it safe. Okay, maybe I did, and I've regretted it ever since. Do you enjoy putting something you care about on the line for a big payoff?",
-    "voice": "Elle",
-    "yes": {
-      "psyRiskTaker": true
-    },
-    "scope": {
-      "psyRiskTakerClear": true
-    }
-  },
-  {
     "id": "psy-big-risks",
     "plain": "Do you love taking big risks?",
     "styled": "I've buried a lot of contestants who said yes to this one. I've also watched a few of them walk out rich. Do you love taking big risks?",
     "voice": "Mordecai",
-    "yes": {
-      "psyRiskTaker": true
-    },
-    "scope": {
-      "psyRiskTakerClear": true
-    }
-  },
-  {
-    "id": "psy-safe-bores",
-    "plain": "Do safe, sure things bore you?",
-    "styled": "Darling, my audience can smell caution through the screen. So be honest with me, just between us and a few billion viewers. Do safe, sure things bore you?",
-    "voice": "Odette",
     "yes": {
       "psyRiskTaker": true
     },
@@ -145,54 +73,6 @@
     "scope": {
       "psyRiskTakerClear": true,
       "team": "townsfolk"
-    }
-  },
-  {
-    "id": "psy-safe-option",
-    "plain": "Do you nearly always pick the safe option?",
-    "styled": "The left door says 'Certain Death', the right door says 'Probably Fine'. I don't care what the loot is, I'm going right. Do you nearly always pick the safe option?",
-    "voice": "Carl",
-    "yes": {
-      "psyRiskTaker": false
-    },
-    "scope": {
-      "psyRiskTakerClear": true
-    }
-  },
-  {
-    "id": "psy-set-the-rules",
-    "plain": "Do you like being the one who sets the rules for everyone else?",
-    "styled": "I DECREE IT! The rules shall be what I say they are, and the peasants shall OBEY! Do you, too, like being the one who sets the rules for everyone else?",
-    "voice": "Prepotente",
-    "yes": {
-      "psyNeedsControl": true
-    },
-    "scope": {
-      "psyNeedsControlClear": true
-    }
-  },
-  {
-    "id": "psy-decide-for-them",
-    "plain": "When a group can't decide, do you just decide for them?",
-    "styled": "Twenty minutes of 'I don't mind, what do you want?' and somebody finally snaps and picks the restaurant. When a group can't decide, are you the one who just decides for them?",
-    "voice": "Carl",
-    "yes": {
-      "psyNeedsControl": true
-    },
-    "scope": {
-      "psyNeedsControlClear": true
-    }
-  },
-  {
-    "id": "psy-allowed",
-    "plain": "Do you enjoy deciding what other people are and are not allowed to do?",
-    "styled": "The dinosaur is not ALLOWED on the good cushion. My human is not ALLOWED to touch my snacks. Everyone must clap when I enter. It's called leadership. Do you enjoy deciding what other people are and are not allowed to do?",
-    "voice": "Princess Donut",
-    "yes": {
-      "psyNeedsControl": true
-    },
-    "scope": {
-      "psyNeedsControlClear": true
     }
   },
   {
@@ -234,46 +114,10 @@
     }
   },
   {
-    "id": "psy-centre-attention",
-    "plain": "Do you like being the centre of attention?",
-    "styled": "Is that even a question? The spotlight was INVENTED for creatures like me. But fine, I'll humour the peasants. Do you like being the centre of attention?",
-    "voice": "Princess Donut",
-    "yes": {
-      "psyShowman": true
-    },
-    "scope": {
-      "psyShowmanClear": true
-    }
-  },
-  {
-    "id": "psy-full-view",
-    "plain": "Would you rather act in full view of everyone than work quietly in the background?",
-    "styled": "Lights! Cameras! Questionable life choices! Our contestants can do their thing under a spotlight or in a dark corner. Would you rather act in full view of everyone than work quietly in the background?",
-    "voice": "The Host",
-    "yes": {
-      "psyShowman": true
-    },
-    "scope": {
-      "psyShowmanClear": true
-    }
-  },
-  {
     "id": "psy-karaoke-first",
     "plain": "Are you usually first up at karaoke?",
     "styled": "RAWR! [Translation: me first!] He stomps onto the little stage, grabs the microphone in his jaws and roars along to the music. He always goes first. Are you usually first up at karaoke?",
     "voice": "Mongo",
-    "yes": {
-      "psyShowman": true
-    },
-    "scope": {
-      "psyShowmanClear": true
-    }
-  },
-  {
-    "id": "psy-dramatic-reveal",
-    "plain": "Do you love a dramatic moment in front of everyone?",
-    "styled": "Behold! The goat throws off his cloak! The crowd GASPS! The crowd WEEPS! THE GOAT HAS ARRIVED! Do you love a dramatic moment in front of everyone?",
-    "voice": "Prepotente",
     "yes": {
       "psyShowman": true
     },
@@ -327,54 +171,6 @@
     }
   },
   {
-    "id": "psy-unnoticed",
-    "plain": "Do you do your best work when nobody is paying attention to you?",
-    "styled": "The contestants who last are usually the ones nobody remembers seeing. No fuss, no fanfare, just results. Do you do your best work when nobody is paying attention to you?",
-    "voice": "Mordecai",
-    "yes": {
-      "psyShowman": false
-    },
-    "scope": {
-      "psyShowmanClear": true
-    }
-  },
-  {
-    "id": "psy-enjoy-bluffing",
-    "plain": "Do you get a kick out of convincing people of something that isn't true?",
-    "styled": "Oh, I adore a good liar. They make the best guests, right up until the moment they don't. Do you get a kick out of convincing people of something that isn't true?",
-    "voice": "Odette",
-    "yes": {
-      "psyDeceiver": true
-    },
-    "scope": {
-      "psyDeceiverClear": true
-    }
-  },
-  {
-    "id": "psy-secret-identity",
-    "plain": "Do you enjoy pretending to be someone you're not for a long time?",
-    "styled": "PATCH NOTE 4.2: Masks are now mandatory for a third of contestants. Several have reported enjoying this a worrying amount. Do you enjoy pretending to be someone you're not for a long time?",
-    "voice": "The System AI",
-    "yes": {
-      "psyDeceiver": true
-    },
-    "scope": {
-      "psyDeceiverClear": true
-    }
-  },
-  {
-    "id": "psy-poker-face",
-    "plain": "Is lying convincingly one of your proudest skills?",
-    "styled": "I once told a cruise ship captain I was a retired brain surgeon. Kept it up for nine days. Best holiday of my life. Is lying convincingly one of your proudest skills?",
-    "voice": "Elle",
-    "yes": {
-      "psyDeceiver": true
-    },
-    "scope": {
-      "psyDeceiverClear": true
-    }
-  },
-  {
     "id": "psy-lies-easy",
     "plain": "Do lies come easily to you?",
     "styled": "Lying's a survival skill down here. Some of you can't do it to save your life, literally. Others don't even notice they're doing it. Do lies come easily to you?",
@@ -387,50 +183,10 @@
     }
   },
   {
-    "id": "psy-good-mask",
-    "plain": "Even on the good side, do you like playing a part that isn't really you?",
-    "styled": "Some people are on the right team and still can't resist wearing a fake moustache. I don't get it, but I've stopped asking. Even on the good side, do you like playing a part that isn't really you?",
-    "voice": "Carl",
-    "yes": {
-      "psyDeceiver": true
-    },
-    "scope": {
-      "psyDeceiverClear": true,
-      "team": [
-        "townsfolk",
-        "outsider"
-      ]
-    }
-  },
-  {
-    "id": "psy-honest-fault",
-    "plain": "Does lying feel unnatural to you?",
-    "styled": "I've never been good at pretending. My face gives me away every time, and honestly, I've made peace with that. Does lying feel unnatural to you?",
-    "voice": "Katia",
-    "yes": {
-      "psyDeceiver": false
-    },
-    "scope": {
-      "psyDeceiverClear": true
-    }
-  },
-  {
     "id": "psy-pull-strings",
     "plain": "Do you like pulling strings behind the scenes so nobody knows it was you?",
     "styled": "The goat does not climb onto the stage. The goat MOVES the stage. And nobody suspects the goat! Do you like pulling strings behind the scenes so nobody knows it was you?",
     "voice": "Prepotente",
-    "yes": {
-      "psyManipulator": true
-    },
-    "scope": {
-      "psyManipulatorClear": true
-    }
-  },
-  {
-    "id": "psy-mess-with-heads",
-    "plain": "Do you enjoy secretly tampering with other people's tools so they give false results?",
-    "styled": "Fun fact: thirty percent of the gear in this dungeon has been quietly tampered with. Sponsors pay extra for that. Do you enjoy secretly sabotaging other people's tools so they mislead them?",
-    "voice": "The System AI",
     "yes": {
       "psyManipulator": true
     },
@@ -624,102 +380,10 @@
     ]
   },
   {
-    "id": "psy-own-terms",
-    "plain": "Do you prefer to win on your own terms rather than with the crowd?",
-    "styled": "The herd goes left. The goat goes up the cliff! ALONE! MAGNIFICENT! Do you prefer to win on your own terms rather than with the crowd?",
-    "voice": "Prepotente",
-    "yes": [
-      "politician"
-    ],
-    "scope": [
-      "steward",
-      "knight",
-      "grandmother",
-      "highpriestess",
-      "cultleader",
-      "choirboy",
-      "tealady",
-      "butler",
-      "politician",
-      "summoner",
-      "boffin",
-      "lilmonsta",
-      "kazali",
-      "vigormortis",
-      "legion",
-      "lordoftyphon"
-    ]
-  },
-  {
-    "id": "psy-tell-team",
-    "plain": "Would you rather rely on a team than go it alone?",
-    "styled": "RAWR! [Translation: shiny thing! For my human!] He drops it right at his best friend's feet. This dinosaur does nothing without his pack. Would you rather rely on a team than go it alone?",
-    "voice": "Mongo",
-    "yes": [
-      "steward",
-      "knight",
-      "grandmother",
-      "highpriestess",
-      "cultleader",
-      "choirboy",
-      "tealady",
-      "butler",
-      "summoner",
-      "boffin",
-      "lilmonsta",
-      "kazali",
-      "vigormortis",
-      "legion",
-      "lordoftyphon"
-    ],
-    "scope": [
-      "steward",
-      "knight",
-      "grandmother",
-      "highpriestess",
-      "cultleader",
-      "choirboy",
-      "tealady",
-      "butler",
-      "politician",
-      "summoner",
-      "boffin",
-      "lilmonsta",
-      "kazali",
-      "vigormortis",
-      "legion",
-      "lordoftyphon"
-    ]
-  },
-  {
     "id": "psy-hate-not-knowing",
     "plain": "Do you hate not knowing things?",
     "styled": "A box falls from the ceiling with a question mark on it. The cat wants to open it. I want to run. And yet I really, really want to know what's inside. Do you hate not knowing things?",
     "voice": "Carl",
-    "yes": {
-      "psyCurious": true
-    },
-    "scope": {
-      "psyCuriousClear": true
-    }
-  },
-  {
-    "id": "psy-wrapped-present",
-    "plain": "Do you always try to find out what's in a wrapped present before you're allowed?",
-    "styled": "If someone puts a box in front of me, it is MY box, and I will know its contents immediately. Do you always try to find out what is in a wrapped present before you are allowed?",
-    "voice": "Princess Donut",
-    "yes": {
-      "psyCurious": true
-    },
-    "scope": {
-      "psyCuriousClear": true
-    }
-  },
-  {
-    "id": "psy-truth-over-action",
-    "plain": "Is finding out the truth more satisfying to you than acting on it?",
-    "styled": "Some contestants want to know everything. Others want to hit everything. The first kind spots the trap; the second kind triggers it. Is finding out the truth more satisfying to you than acting on it?",
-    "voice": "Mordecai",
     "yes": {
       "psyCurious": true
     },
@@ -782,30 +446,6 @@
     }
   },
   {
-    "id": "psy-bold-guess",
-    "plain": "Would you rather make a bold guess than wait for proof?",
-    "styled": "There's a door. It's either treasure or a room full of teeth. The cat wants to wait for clues. I'm already reaching for the handle. Would you rather make a bold guess than wait for proof?",
-    "voice": "Carl",
-    "yes": {
-      "psyIntuitive": true
-    },
-    "scope": {
-      "psyIntuitiveClear": true
-    }
-  },
-  {
-    "id": "psy-instinct",
-    "plain": "Do you make big decisions on instinct?",
-    "styled": "No research, no spreadsheet, just pure animal instinct! The audience LOVES it and the insurers HATE it! Do you make big decisions on instinct?",
-    "voice": "The Host",
-    "yes": {
-      "psyIntuitive": true
-    },
-    "scope": {
-      "psyIntuitiveClear": true
-    }
-  },
-  {
     "id": "psy-guess-not-told",
     "plain": "Would you rather work things out by guessing than be told the answer?",
     "styled": "I used to want someone to just tell me what to do. Now I'd rather take a swing and find out if I was right. Would you rather work things out by guessing than be told the answer?",
@@ -831,46 +471,10 @@
     }
   },
   {
-    "id": "psy-scraps-combine",
-    "plain": "Do you enjoy piecing together scraps that only make sense once combined?",
-    "styled": "Half a map here, a scribbled number there. Most contestants toss it. The good ones keep every scrap until it clicks. Do you enjoy piecing together scraps that only make sense once combined?",
-    "voice": "Mordecai",
-    "yes": {
-      "psyPuzzler": true
-    },
-    "scope": {
-      "psyPuzzlerClear": true
-    }
-  },
-  {
-    "id": "psy-half-answer",
-    "plain": "Is half an answer more fun than a whole one, because you get to work out the rest?",
-    "styled": "Being TOLD things is so boring. I prefer a clue, a little mystery, and then the joy of being right in front of everyone. Is half an answer more fun than a whole one, because you get to work out the rest?",
-    "voice": "Princess Donut",
-    "yes": {
-      "psyPuzzler": true
-    },
-    "scope": {
-      "psyPuzzlerClear": true
-    }
-  },
-  {
     "id": "psy-protect-instinct",
     "plain": "Is your first instinct to protect people?",
     "styled": "When something goes wrong, some people run, some people fight, and some people put themselves between the danger and everyone else. Is your first instinct to protect people?",
     "voice": "Katia",
-    "yes": {
-      "psyProtective": true
-    },
-    "scope": {
-      "psyProtectiveClear": true
-    }
-  },
-  {
-    "id": "psy-safe-home",
-    "plain": "Are you the friend who makes sure everyone gets home safe?",
-    "styled": "RAWR! [Translation: walking everyone home!] The man, the cat, and the strange fellow from the bar too. He is a very good boy. Are you the friend who makes sure everyone gets home safe?",
-    "voice": "Mongo",
     "yes": {
       "psyProtective": true
     },
@@ -961,30 +565,6 @@
     }
   },
   {
-    "id": "psy-stir-pot",
-    "plain": "Do you like stirring the pot just to see what happens?",
-    "styled": "The goat kicks over the bucket! The goat headbutts the table! Pandemonium! Glorious, glorious pandemonium! Do you like stirring the pot just to see what happens?",
-    "voice": "Prepotente",
-    "yes": {
-      "psyChaosLover": true
-    },
-    "scope": {
-      "psyChaosLoverClear": true
-    }
-  },
-  {
-    "id": "psy-tear-up-rules",
-    "plain": "Would you rather tear up the rules than play by them?",
-    "styled": "PATCH NOTES: The rules have been changed. Again. Without notice. Because chaos is good for engagement. Would you rather tear up the rules than play by them?",
-    "voice": "The System AI",
-    "yes": {
-      "psyChaosLover": true
-    },
-    "scope": {
-      "psyChaosLoverClear": true
-    }
-  },
-  {
     "id": "psy-demon-mayhem",
     "plain": "As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
     "styled": "Quiet killing is for amateurs! Your goddess wants screaming, swapping, sky-falling madness! As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
@@ -1026,54 +606,6 @@
     }
   },
   {
-    "id": "psy-stick-by",
-    "plain": "Do you stick by your people even when it costs you?",
-    "styled": "Loyalty's expensive down here. Half the contestants I've guided sold out their party for a better loot box. Do you stick by your people even when it costs you?",
-    "voice": "Mordecai",
-    "yes": {
-      "psyLoyal": true
-    },
-    "scope": {
-      "psyLoyalClear": true
-    }
-  },
-  {
-    "id": "psy-one-devoted",
-    "plain": "Would you rather have one devoted partner than a crowd of casual allies?",
-    "styled": "One devoted servant is worth a thousand fair-weather fans. My dinosaur understands this. My human is learning. Would you rather have one devoted partner than a crowd of casual allies?",
-    "voice": "Princess Donut",
-    "yes": {
-      "psyLoyal": true
-    },
-    "scope": {
-      "psyLoyalClear": true
-    }
-  },
-  {
-    "id": "psy-pay-back",
-    "plain": "Do you always pay back a wrong?",
-    "styled": "I NEVER forget! I keep a list! Your goddess has no hands, but the list is VERY LONG! Do you always pay back a wrong?",
-    "voice": "Samantha",
-    "yes": {
-      "psyVengeful": true
-    },
-    "scope": {
-      "psyVengefulClear": true
-    }
-  },
-  {
-    "id": "psy-strike-back",
-    "plain": "If someone hurts you or yours, do you strike back?",
-    "styled": "Somebody keyed my car in 1987. I know exactly who it was. I am still waiting for my moment. If someone hurts you or yours, do you strike back?",
-    "voice": "Elle",
-    "yes": {
-      "psyVengeful": true
-    },
-    "scope": {
-      "psyVengefulClear": true
-    }
-  },
-  {
     "id": "psy-grudges",
     "plain": "Do you hold grudges?",
     "styled": "Folks, our next contestant has the memory of an elephant and the temper of a wasp! Or do they? Let's find out! Do you hold grudges?",
@@ -1106,18 +638,6 @@
     "plain": "Would you like to be the one who takes people out?",
     "styled": "Everyone has a little darkness, darling. Some of us keep it in a drawer, and some of us keep it sharpened. Would you like to be the one who takes people out?",
     "voice": "Odette",
-    "yes": {
-      "psyRuthless": true
-    },
-    "scope": {
-      "psyRuthlessClear": true
-    }
-  },
-  {
-    "id": "psy-remove-obstacle",
-    "plain": "When someone's in your way, do you prefer to remove them rather than work around them?",
-    "styled": "Two ways past a troll: sneak round it, or put it in the ground. One of those leaves fewer surprises later. When someone is in your way, do you prefer to remove them rather than work around them?",
-    "voice": "Mordecai",
     "yes": {
       "psyRuthless": true
     },
@@ -1167,30 +687,6 @@
     }
   },
   {
-    "id": "psy-others-act",
-    "plain": "Do you love it when your plan only works because you talked people into it?",
-    "styled": "Some people do the job. Some people convince twelve other people to do the job for them. I am jealous of the second kind. Do you love it when your plan only works because you talked people into it?",
-    "voice": "Carl",
-    "yes": {
-      "psyPersuader": true
-    },
-    "scope": {
-      "psyPersuaderClear": true
-    }
-  },
-  {
-    "id": "psy-hostile-room",
-    "plain": "Do you enjoy winning over a room that starts out against you?",
-    "styled": "When I walk into a room full of haters, I walk out with a fan club. It is a GIFT. Do you enjoy winning over a room that starts out against you?",
-    "voice": "Princess Donut",
-    "yes": {
-      "psyPersuader": true
-    },
-    "scope": {
-      "psyPersuaderClear": true
-    }
-  },
-  {
     "id": "psy-evil-talker",
     "plain": "As a villain, does your own power only work if you talk people into something?",
     "styled": "Some villains need a knife. The really frightening ones only need a conversation. Which are you, darling? As a villain, does your own power only work if you talk people into something?",
@@ -1216,54 +712,6 @@
     },
     "scope": {
       "psyUnderdogClear": true
-    }
-  },
-  {
-    "id": "psy-overlooked",
-    "plain": "Do you enjoy being overlooked until the moment it really matters?",
-    "styled": "People used to look right through me. Then one day it mattered, and they couldn't look away. Do you enjoy being overlooked until the moment it really matters?",
-    "voice": "Katia",
-    "yes": {
-      "psyUnderdog": true
-    },
-    "scope": {
-      "psyUnderdogClear": true
-    }
-  },
-  {
-    "id": "psy-hidden-ace",
-    "plain": "Do you like having a hidden ace that nobody sees coming?",
-    "styled": "Everyone thinks he's just a big silly dinosaur. Then he eats the boss. RAWR! [Translation: surprise!] Do you like having a hidden ace that nobody sees coming?",
-    "voice": "Mongo",
-    "yes": {
-      "psyUnderdog": true
-    },
-    "scope": {
-      "psyUnderdogClear": true
-    }
-  },
-  {
-    "id": "psy-make-it-up",
-    "plain": "When plans go wrong, do you love making it up as you go?",
-    "styled": "No plan survives the third floor. The ones who live are the ones who build a new plan out of whatever is lying around. When plans go wrong, do you love making it up as you go?",
-    "voice": "Mordecai",
-    "yes": {
-      "psyImproviser": true
-    },
-    "scope": {
-      "psyImproviserClear": true
-    }
-  },
-  {
-    "id": "psy-toolbox",
-    "plain": "Would you rather have a box of options than one tool that does one job well?",
-    "styled": "LOOT BOX OPENED! Contents: one excellent hammer, OR a sack of mystery items that could be anything. Choose wisely. Would you rather have a box of options than one tool that does one job well?",
-    "voice": "The System AI",
-    "yes": {
-      "psyImproviser": true
-    },
-    "scope": {
-      "psyImproviserClear": true
     }
   },
   {
@@ -1312,18 +760,6 @@
     "plain": "Do you instinctively argue the other side?",
     "styled": "Whatever my guest says, there's always someone in the audience itching to say the opposite. Is that you, sweetheart? Do you instinctively argue the other side?",
     "voice": "Odette",
-    "yes": {
-      "psyContrarian": true
-    },
-    "scope": {
-      "psyContrarianClear": true
-    }
-  },
-  {
-    "id": "psy-all-agree",
-    "plain": "When everyone agrees, do you feel the urge to disagree?",
-    "styled": "Unanimous? Oh, now I am worried. Nobody has ever been right all at once. When everyone agrees, do you feel the urge to disagree?",
-    "voice": "Elle",
     "yes": {
       "psyContrarian": true
     },

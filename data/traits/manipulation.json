@@ -97,7 +97,6 @@
       "sailor",
       "villageidiot",
       "cannibal",
-      "innkeeper",
       "hermit"
     ]
   },
@@ -121,6 +120,19 @@
       "mezepheles",
       "cerenovus",
       "harpy"
+    ]
+  },
+  "abilityVaries": {
+    "definition": "The character's working ability isn't fixed, so it can't answer questions about what its ability does: it gains another character's ability during play (Philosopher, Cannibal, Pixie, Apprentice), holds one that differs by game or script (Alchemist: a Minion's; Hermit: the script's Outsiders'), or has one the Storyteller defines (Amnesiac, Wizard). Questions about what an ability does carry the scope { \"abilityVaries\": false }, so they're only asked once none of these remain.",
+    "yes": [
+      "philosopher",
+      "cannibal",
+      "pixie",
+      "apprentice",
+      "alchemist",
+      "hermit",
+      "amnesiac",
+      "wizard"
     ]
   }
 }

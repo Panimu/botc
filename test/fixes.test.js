@@ -76,3 +76,18 @@ test('the validator rejects two questions with the same plain or styled text', a
   assert.ok(errors.some((e) => e.includes('Question b') && e.includes('"plain" text duplicates')));
   assert.ok(errors.some((e) => e.includes('Question c') && e.includes('"styled" text duplicates')));
 });
+
+test('the validator rejects a second question with the same split, even asked the other way round', async () => {
+  const { checkQuestions } = await import('../scripts/validate.js');
+  const { loadData } = await import('../scripts/load.js');
+  const { characters } = await loadData();
+  const [a, b] = characters;
+  const base = { voice: 'The Host' };
+  const errors = checkQuestions([
+    { ...base, id: 'one', plain: 'Are you the first or second character?', styled: 'One?', yes: [a.id, b.id] },
+    { ...base, id: 'two', plain: 'Are you one of those two characters?', styled: 'Two?', yes: [b.id, a.id] },
+    { ...base, id: 'three', plain: 'Are you anyone but those two?', styled: 'Three?', yes: characters.slice(2).map((c) => c.id) },
+  ], characters);
+  assert.ok(errors.some((e) => e.includes('Question two') && e.includes('splits exactly like one')));
+  assert.ok(errors.some((e) => e.includes('Question three') && e.includes('splits exactly like one')));
+});

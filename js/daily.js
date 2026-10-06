@@ -1,10 +1,20 @@
 // The daily hunt: everyone gets the same hidden character and, for the same
 // choices, the same question offers on a given date. Pure logic, no DOM, so it
 // runs in the browser (js/daily-app.js) and in the Node tests.
-import { prepare, weightedOptions, drawWeighted, CIRCLE_TARGET } from './engine.js?v=dev';
+import { prepare, drawWeighted, splitWeight, CIRCLE_TARGET } from './engine.js?v=dev';
 
 export const LAUNCH_DATE = '2026-10-05';
 export const OFFER_COUNT = 3;
+// How the hunt picks its offers. While more than GUESS_THRESHOLD remain,
+// questions that would leave fewer than HUNT_MIN_SIDE on either side are set
+// aside (used only to fill a slot nothing else can), and the three offers aim
+// at these splits (bigger side's share of the pool), nearer being likelier.
+// At GUESS_THRESHOLD or fewer, questions that would single out one character
+// are set aside the same way, and even splits are favoured. Offers are shown
+// shuffled, so position gives nothing away.
+export const HUNT_MIN_SIDE = 7;
+export const SPLIT_TARGETS = [0.5, 0.6, 0.7];
+const TARGET_SPREAD = 0.05;
 // Budgets, when a game is given the day's par: par + OVER_PAR_QUESTIONS questions
 // and GUESS_BUDGET guesses. A guess with no guess budget left spends a question
 // instead, so a winning score is at most par + 5. A hunt is lost when no legal
@@ -142,13 +152,52 @@ export class DailyGame {
     return this.questionBudget - this.history.length - Math.max(0, this.guessesMade - this.guessBudget);
   }
 
-  // Offers depend only on the date and the questions asked so far, so players
-  // who make the same choices see the same offers. None once the questions run out.
+  // Offers depend only on the date and the questions asked so far (in order),
+  // so every player who makes the same choices sees the same offers: one tree
+  // of options for everyone. None once the questions run out.
   refreshOffers() {
     if (this.status !== 'playing' || this.pool.length <= 1 || this.questionsLeft <= 0) { this.offers = []; return; }
     const asked = new Set(this.history.map((h) => h.question.id));
     const rng = seededRng(`clocktower-daily|offers|${this.date}|${[...asked].join(',')}`);
-    this.offers = drawWeighted(weightedOptions(this.questions, this.pool, asked), rng, OFFER_COUNT);
+    const n = this.pool.length;
+
+    // Every question that applies to the whole pool and splits it.
+    const candidates = [];
+    for (const question of this.questions) {
+      if (asked.has(question.id)) continue;
+      if (question.scopeSet && this.pool.some((id) => !question.scopeSet.has(id))) continue;
+      const yes = this.pool.filter((id) => question.yesSet.has(id)).length;
+      if (yes === 0 || yes === n) continue;
+      candidates.push({ question, small: Math.min(yes, n - yes), large: Math.max(yes, n - yes) });
+    }
+
+    const picked = [];
+    const draw = (pool, weightOf) => {
+      const [choice] = drawWeighted(pool.filter((c) => !picked.includes(c)).map((c) => [c, weightOf(c)]), rng);
+      if (choice) picked.push(choice);
+      return choice;
+    };
+    // The set-aside questions only fill a slot nothing else can, most even first.
+    const even = (c) => splitWeight(c.small, n);
+    const big = n > GUESS_THRESHOLD;
+    const preferred = candidates.filter((c) => c.small >= (big ? HUNT_MIN_SIDE : 2));
+    const available = () => preferred.some((c) => !picked.includes(c));
+    if (big) {
+      for (const target of SPLIT_TARGETS) {
+        if (available()) draw(preferred, (c) => Math.exp(-(((c.large / n - target) / TARGET_SPREAD) ** 2)) + 1e-9);
+        else draw(candidates, even);
+      }
+    } else {
+      while (picked.length < OFFER_COUNT && draw(available() ? preferred : candidates, even));
+    }
+
+    // Shuffle (seeded) so the 50/50 isn't always first.
+    const offers = picked.map((c) => c.question);
+    for (let i = offers.length - 1; i > 0; i--) {
+      const j = Math.floor(rng() * (i + 1));
+      [offers[i], offers[j]] = [offers[j], offers[i]];
+    }
+    this.offers = offers;
   }
 
   // Guessing opens once the circle is seated, or when no question can be asked

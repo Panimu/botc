@@ -1,20 +1,14 @@
 [
   {
-    "id": "xp-night-shift-regular",
-    "plain": "Does your own ability have you take an action or learn something on most nights, not just once?",
-    "styled": "Achievement unlocked: Insomniac! Awarded to contestants whose ability drags them out of bed to do or learn something night after night after night. Sleep is for the loot-less. Does your ability have you act or learn something on most nights?",
-    "voice": "The System AI",
-    "yes": {
-      "wakesMostNights": true
-    }
-  },
-  {
     "id": "xp-night-shift-routine",
     "plain": "Does your own ability, not a borrowed one, give you a job on most nights?",
     "styled": "Some people want a quiet life. Some people want a clipboard and a night shift. I don't get the second group, but I respect their stamina. Does your own ability give you a job on nearly every night?",
     "voice": "Carl",
     "yes": {
       "wakesMostNights": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -37,6 +31,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -50,6 +47,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -62,7 +62,8 @@
       "choosesPlayersAtNight": true
     },
     "scope": {
-      "wakesMostNights": true
+      "wakesMostNights": true,
+      "abilityVaries": false
     }
   },
   {
@@ -78,7 +79,8 @@
       ]
     },
     "scope": {
-      "wakesMostNights": true
+      "wakesMostNights": true,
+      "abilityVaries": false
     }
   },
   {
@@ -89,6 +91,9 @@
     "yes": {
       "wakesMostNights": true,
       "choosesPlayersAtNight": false
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -99,24 +104,9 @@
     "yes": {
       "wakesMostNights": true,
       "harmsOwnTeam": true
-    }
-  },
-  {
-    "id": "xp-hands-off-passive",
-    "plain": "Does your ability work entirely on its own, with no player, you or anyone else, ever choosing or acting because of it?",
-    "styled": "My tip of the day: the abilities that never make anyone do anything are the ones nobody can screw up. No picking, no guessing, no grand speeches, not from you and not from anyone else. Is your ability completely hands-off like that?",
-    "voice": "Mordecai",
-    "yes": {
-      "neverChooses": true
-    }
-  },
-  {
-    "id": "xp-hands-off-autopilot",
-    "plain": "Does your power simply run itself, with nobody at the table ever making a decision because of it?",
-    "styled": "Your friendly network liaison here! Our research shows that a lot of viewers love a contestant who's just along for the ride while their power does the talking. Zero decisions from anyone, maximum vibes! Does your power run itself with nobody at the table deciding anything because of it?",
-    "voice": "Zev",
-    "yes": {
-      "neverChooses": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -139,6 +129,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -152,6 +145,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -164,7 +160,8 @@
       "wakesMostNights": true
     },
     "scope": {
-      "neverChooses": true
+      "neverChooses": true,
+      "abilityVaries": false
     }
   },
   {
@@ -177,7 +174,8 @@
       "needsDeathToAct": true
     },
     "scope": {
-      "neverChooses": true
+      "neverChooses": true,
+      "abilityVaries": false
     }
   },
   {
@@ -190,7 +188,8 @@
       "harmsOwnTeam": true
     },
     "scope": {
-      "neverChooses": true
+      "neverChooses": true,
+      "abilityVaries": false
     }
   },
   {
@@ -206,7 +205,8 @@
       ]
     },
     "scope": {
-      "neverChooses": true
+      "neverChooses": true,
+      "abilityVaries": false
     }
   },
   {
@@ -217,6 +217,9 @@
     "yes": {
       "neverChooses": true,
       "needsDeathToAct": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -226,15 +229,9 @@
     "voice": "The System AI",
     "yes": {
       "choosesPlayersAtNight": true
-    }
-  },
-  {
-    "id": "xp-dark-pointer-thrill",
-    "plain": "Does your ability give you that moment in the dark when you point at someone?",
-    "styled": "There's a particular silence when a whole room has its eyes closed and you get to point. I won't lie, it's a rush. Does your ability give you that moment of pointing at someone in the dark?",
-    "voice": "Elle",
-    "yes": {
-      "choosesPlayersAtNight": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -248,6 +245,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -261,6 +261,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -273,7 +276,8 @@
       "oneShot": true
     },
     "scope": {
-      "choosesPlayersAtNight": true
+      "choosesPlayersAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -286,7 +290,8 @@
       "harmsOwnTeam": true
     },
     "scope": {
-      "choosesPlayersAtNight": true
+      "choosesPlayersAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -299,7 +304,8 @@
       "boundToAnotherPlayer": true
     },
     "scope": {
-      "choosesPlayersAtNight": true
+      "choosesPlayersAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -315,7 +321,8 @@
       ]
     },
     "scope": {
-      "choosesPlayersAtNight": true
+      "choosesPlayersAtNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -326,15 +333,9 @@
     "yes": {
       "choosesPlayersAtNight": true,
       "harmsOwnTeam": true
-    }
-  },
-  {
-    "id": "xp-bond-partner",
-    "plain": "Is your ability built around one particular other player, someone you serve, guard, back up, mirror or depend on?",
-    "styled": "Some of us go it alone. Some of us have one person in the game who matters more than the rest, for better or worse. Is your ability built around one particular other player?",
-    "voice": "Katia",
-    "yes": {
-      "boundToAnotherPlayer": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -344,15 +345,6 @@
     "voice": "Princess Donut",
     "yes": {
       "boundToAnotherPlayer": false
-    }
-  },
-  {
-    "id": "xp-bond-attachment",
-    "plain": "Does your ability give you a special attachment to one specific person in the game?",
-    "styled": "THIS GOAT has ONE companion. One! And this goat's destiny is WOVEN with theirs! Does your ability give you a special attachment to one specific person?",
-    "voice": "Prepotente",
-    "yes": {
-      "boundToAnotherPlayer": true
     }
   },
   {
@@ -379,6 +371,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -405,7 +400,8 @@
       "lleech"
     ],
     "scope": {
-      "boundToAnotherPlayer": true
+      "boundToAnotherPlayer": true,
+      "abilityVaries": false
     }
   },
   {
@@ -419,7 +415,8 @@
       "lleech"
     ],
     "scope": {
-      "boundToAnotherPlayer": true
+      "boundToAnotherPlayer": true,
+      "abilityVaries": false
     }
   },
   {
@@ -430,24 +427,9 @@
     "yes": {
       "boundToAnotherPlayer": true,
       "harmsOwnTeam": true
-    }
-  },
-  {
-    "id": "xp-backfire-catch",
-    "plain": "Does your ability come with a catch that can work against you or your own team?",
-    "styled": "Every reward in here has a price tag. Some prices are just hidden in the small print. Does your ability come with a catch that can work against you or your own team?",
-    "voice": "Mordecai",
-    "yes": {
-      "harmsOwnTeam": true
-    }
-  },
-  {
-    "id": "xp-backfire-double-edge",
-    "plain": "Is your ability a double-edged sword that can cut your own side as well as the enemy?",
-    "styled": "Congratulations! You have received: Sword of Mutual Regret! It cuts in both directions, including towards your own friends. Lovely craftsmanship. Is your ability a double-edged sword like that?",
-    "voice": "The System AI",
-    "yes": {
-      "harmsOwnTeam": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -524,7 +506,8 @@
       "neverChooses": true
     },
     "scope": {
-      "harmsOwnTeam": true
+      "harmsOwnTeam": true,
+      "abilityVaries": false
     }
   },
   {
@@ -534,24 +517,6 @@
     "voice": "Elle",
     "yes": {
       "needsDeathToAct": true
-    }
-  },
-  {
-    "id": "xp-death-slow-burner",
-    "plain": "Are you a slow burner, whose power only stirs once there's been a death?",
-    "styled": "Rawr! RAWR! (He says: some friends only wake up after something has died. Is your power a slow burner that only stirs once there's been a death?)",
-    "voice": "Mongo",
-    "yes": {
-      "needsDeathToAct": true
-    }
-  },
-  {
-    "id": "xp-death-live-now",
-    "plain": "Does your ability already matter while everyone is still alive?",
-    "styled": "Don't wait for the funeral, darling! A REAL star makes an impact from the very first scene. Does your ability already matter while everybody's still breathing?",
-    "voice": "Princess Donut",
-    "yes": {
-      "needsDeathToAct": false
     }
   },
   {
@@ -578,6 +543,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -602,7 +570,8 @@
       "goblin"
     ],
     "scope": {
-      "needsDeathToAct": true
+      "needsDeathToAct": true,
+      "abilityVaries": false
     }
   },
   {
@@ -618,7 +587,8 @@
       ]
     },
     "scope": {
-      "needsDeathToAct": true
+      "needsDeathToAct": true,
+      "abilityVaries": false
     }
   },
   {
@@ -655,21 +625,15 @@
     ]
   },
   {
-    "id": "xp-rules-table",
-    "plain": "Does your presence change a standing rule for everyone, such as who can vote or nominate, or what an execution does?",
-    "styled": "Some contestants play the game. Some contestants change the game for everyone in the room and watch them squirm. Does your presence change a rule the whole table has to follow?",
-    "voice": "The System AI",
-    "yes": {
-      "changesTheRules": true
-    }
-  },
-  {
     "id": "xp-rules-house-rules",
     "plain": "Does just having your character in play change one of the game's standing rules for everybody?",
     "styled": "Exciting format change, everyone! With this contestant around, the usual rulebook goes right out the window for the whole table. Fresh! Disruptive! On-brand! Does your character change a standing rule for everyone just by being in play?",
     "voice": "Zev",
     "yes": {
       "changesTheRules": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -683,6 +647,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -693,6 +660,9 @@
     "yes": {
       "changesTheRules": true,
       "team": "townsfolk"
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -708,7 +678,8 @@
       ]
     },
     "scope": {
-      "changesTheRules": true
+      "changesTheRules": true,
+      "abilityVaries": false
     }
   },
   {
@@ -721,31 +692,8 @@
       "team": "traveller"
     },
     "scope": {
-      "changesTheRules": true
-    }
-  },
-  {
-    "id": "xp-oneshot-spent",
-    "plain": "Does your ability only ever take effect once in the whole game?",
-    "styled": "One-time consumable detected! Whether you trigger it or it triggers you, the audience enjoys the outcome either way. Does your ability only ever go off once, and then it's gone forever?",
-    "voice": "The System AI",
-    "yes": {
-      "takesEffectOnce": true
-    },
-    "scope": {
-      "takesEffectOnceClear": true
-    }
-  },
-  {
-    "id": "xp-oneshot-single-move",
-    "plain": "Is your whole ability used up in a single go?",
-    "styled": "One swing, kid. Maybe you take it, maybe it takes itself. Either way, there's no second one coming. Is your whole ability used up in a single go?",
-    "voice": "Mordecai",
-    "yes": {
-      "takesEffectOnce": true
-    },
-    "scope": {
-      "takesEffectOnceClear": true
+      "changesTheRules": true,
+      "abilityVaries": false
     }
   },
   {
@@ -777,7 +725,8 @@
       ]
     },
     "scope": {
-      "takesEffectOnceClear": true
+      "takesEffectOnceClear": true,
+      "abilityVaries": false
     }
   },
   {
@@ -790,7 +739,8 @@
       "choosesPlayersAtNight": true
     },
     "scope": {
-      "oneShot": true
+      "oneShot": true,
+      "abilityVaries": false
     }
   },
   {
@@ -823,7 +773,8 @@
       "needsDeathToAct": true
     },
     "scope": {
-      "oneShot": true
+      "oneShot": true,
+      "abilityVaries": false
     }
   },
   {

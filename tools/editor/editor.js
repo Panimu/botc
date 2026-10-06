@@ -197,7 +197,7 @@ function questionItem(id, { done, reason } = {}) {
   if (entry.question?._warnings?.length) marks.push('⚠');
   if (entry.question?._changed) marks.push('Δ');
   li.append(el('span', 'marks', `${marks.join(' ')} ${entry.file.replace('.json', '')}`), el('span', 'id', id), document.createTextNode(qDraft(id).plain || '(no wording yet)'));
-  if (reason) li.append(el('span', 'reason', reason));
+  if (reason) { const r = el('span', 'reason', reason); r.title = reason; li.append(r); }
   li.setAttribute('aria-current', String(state.view?.kind === 'question' && state.view.id === id));
   li.addEventListener('click', () => openQuestion(id));
   return li;
@@ -522,21 +522,22 @@ function renderQuestion() {
   } else if (trait) {
     yesLine.append('Yes side: the trait ', el('code', '', trait), ` (used by ${plural(questionsUsing(trait).length, 'question')}).`);
     yesLine.append(button('Open trait', () => openTrait(trait)), button('Change just this question', convertYes));
+    yesLine.append(conditionChips('yes'));
     yesLine.append(el('span', 'definition', state.data.traits[trait].definition));
   } else {
-    yesLine.append('Yes side: characters matching ', el('code', '', JSON.stringify(draft.yes)), '.');
-    yesLine.append(button('Change just this question', convertYes));
+    yesLine.append('Yes side: characters matching all of ', conditionChips('yes'));
+    yesLine.append(button('Make it a fixed list', convertYes));
   }
   const scopeLine = $('scope-summary');
   scopeLine.replaceChildren();
   if (!draft.scope) {
     scopeLine.append('Scope: none, so it can be asked of anyone.');
-    scopeLine.append(button('Add a scope', () => updateQuestion((d) => { d.scope = allIds(); }, { snapshot: true })));
+    scopeLine.append(button('Add a scope (fixed list)', () => updateQuestion((d) => { d.scope = allIds(); }, { snapshot: true })), button('Add a scope condition', () => addCondition('scope')));
   } else if (Array.isArray(draft.scope)) {
     scopeLine.append(`Scope: a fixed list of ${plural(draft.scope.length, 'character')}. It's only asked once every remaining character is inside it.`);
     scopeLine.append(button('Remove scope', () => updateQuestion((d) => { delete d.scope; }, { snapshot: true })));
   } else {
-    scopeLine.append('Scope: characters matching ', el('code', '', JSON.stringify(draft.scope)), '.');
+    scopeLine.append('Scope: characters matching all of ', conditionChips('scope'));
     scopeLine.append(button('Make it a fixed list', () => updateQuestion((d) => { d.scope = resolve(d.scope); }, { snapshot: true })), button('Remove scope', () => updateQuestion((d) => { delete d.scope; }, { snapshot: true })));
   }
 
@@ -553,6 +554,53 @@ function renderQuestion() {
   }
 
   renderQuestionGrid();
+}
+
+// A condition-based selector's conditions ("field: value"), each removable, plus "+ condition".
+function conditionChips(kind) {
+  const selector = qDraft(state.view.id)[kind];
+  const wrap = el('span', 'conditions');
+  for (const [field, value] of Object.entries(selector)) {
+    const chip = el('span', 'condition');
+    chip.append(el('code', '', `${field}: ${Array.isArray(value) ? value.join(' or ') : value}`));
+    if (state.data.traits[field.replace(/Clear$/, '')]) chip.title = state.data.traits[field.replace(/Clear$/, '')].definition;
+    if (field === 'abilityVaries') chip.title = 'Keeps out the eight characters whose ability varies (Philosopher, Cannibal, Pixie, Apprentice, Alchemist, Hermit, Amnesiac, Wizard).';
+    const remove = button('✕', () => updateQuestion((d) => {
+      delete d[kind][field];
+      if (!Object.keys(d[kind]).length) { if (kind === 'scope') delete d.scope; else d.yes = []; }
+    }, { snapshot: true }), 'quiet');
+    remove.title = `Remove the ${field} condition`;
+    chip.append(remove);
+    wrap.append(chip);
+  }
+  wrap.append(button('+ condition', () => addCondition(kind), 'quiet'));
+  return wrap;
+}
+
+async function addCondition(kind) {
+  const skip = new Set(['id', 'name', 'summary', 'image']);
+  const fields = Object.keys(state.characters[0]).filter((k) => !skip.has(k)).sort((a, b) => a.localeCompare(b));
+  const answer = await ask({
+    title: `Add a condition to the ${kind === 'scope' ? 'scope' : 'yes side'}`,
+    text: 'Characters must match every condition. For a trait or other yes/no field, type true or false. For team or edition, type one value or several separated by commas (any of them matches).',
+    fields: [{ name: 'field', label: 'Field', type: 'select', options: fields }, { name: 'value', label: 'Value', value: 'true' }],
+    ok: 'Add condition',
+  });
+  if (!answer) return;
+  const sample = state.characters.find((c) => answer.field in c)?.[answer.field];
+  let value;
+  if (typeof sample === 'boolean') {
+    if (!/^(true|false)$/i.test(answer.value.trim())) { setStatus(`Use true or false for ${answer.field}.`, 'bad'); return; }
+    value = /^true$/i.test(answer.value.trim());
+  } else {
+    const parts = answer.value.split(',').map((x) => x.trim()).filter(Boolean);
+    if (!parts.length) { setStatus('Give a value.', 'bad'); return; }
+    value = parts.length === 1 ? parts[0] : parts;
+  }
+  updateQuestion((d) => {
+    const current = d[kind];
+    d[kind] = { ...(current && !Array.isArray(current) ? current : {}), [answer.field]: value };
+  }, { snapshot: true });
 }
 
 function convertYes() {

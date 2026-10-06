@@ -12,7 +12,8 @@
       "harlot",
       "spy",
       "widow",
-      "eviltwin"
+      "eviltwin",
+      "juggler"
     ]
   },
   "learnsAlignment": {
@@ -74,8 +75,7 @@
       "widow",
       "mathematician",
       "chambermaid",
-      "wraith",
-      "boffin"
+      "wraith"
     ]
   },
   "caresAboutNeighbours": {

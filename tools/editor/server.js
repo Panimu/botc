@@ -207,13 +207,13 @@ async function saveCharacter({ id, traits: wanted = {}, quote = null }) {
   for (const [name, state] of Object.entries(wanted)) {
     const trait = traits[name];
     if (!trait) return fail(404, `Unknown trait ${name}`);
-    if (state === 'no' && !Array.isArray(trait.no)) return fail(422, `${name} has no "no" list; a character not on its yes list is already a no.`);
     if (!byFile.has(trait.file)) byFile.set(trait.file, await readJson(`data/traits/${trait.file}`));
     const entry = byFile.get(trait.file)[name];
     entry.yes = entry.yes.filter((x) => x !== id);
     if (Array.isArray(entry.no)) entry.no = entry.no.filter((x) => x !== id);
+    // For a trait without a "no" list, "no" (or "unclear") just means off the yes list.
     if (state === 'yes') entry.yes.push(id);
-    if (state === 'no') entry.no.push(id);
+    if (state === 'no' && Array.isArray(entry.no)) entry.no.push(id);
   }
   for (const [file, content] of byFile) await writeJson(`data/traits/${file}`, content);
   if (quote) {

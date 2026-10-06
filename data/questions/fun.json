@@ -6,35 +6,10 @@
     "voice": "Princess Donut",
     "yes": [
       "saint"
-    ]
-  },
-  {
-    "id": "fun-mystery-ability",
-    "plain": "Do you know from the start that your own ability is a mystery you'll have to work out?",
-    "styled": "Honestly? Relatable. I've been making it up since the floor collapsed, and I still don't read the tooltips. Do you know from the very first night that your own ability is a mystery you'll have to work out?",
-    "voice": "Carl",
-    "yes": [
-      "amnesiac"
-    ]
-  },
-  {
-    "id": "fun-gallows-finale",
-    "plain": "Does your ability mean your own execution can win the game for your team?",
-    "styled": "Some people see the gallows as a tragedy. I see a FINALE. The lights, the gasps, the standing ovation as your team wins because they got rid of you! Does your ability mean getting executed can actually win the game for your team?",
-    "voice": "Princess Donut",
-    "yes": [
-      "goblin",
-      "boomdandy"
-    ]
-  },
-  {
-    "id": "fun-immortal",
-    "plain": "Does your ability say outright that you can't die?",
-    "styled": "YOUR GODDESS CANNOT BE KILLED. I am ALREADY just a head and I am THRIVING. Does your character's ability flatly declare that you, too, cannot die?",
-    "voice": "Samantha",
-    "yes": [
-      "sailor"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-optional-hangover",
@@ -43,24 +18,9 @@
     "voice": "Elle",
     "yes": [
       "organgrinder"
-    ]
-  },
-  {
-    "id": "fun-democracy-lootbox",
-    "plain": "Can your own ability, not another character's, ever let you vote twice on the same nomination?",
-    "styled": "CONGRATULATIONS! You have opened a Gold Democracy Box! Inside: one (1) extra vote per nomination, unlocked only after something horrible happens to you. Can your own ability, not another character's, ever let you vote twice on the same nomination?",
-    "voice": "The System AI",
-    "yes": [
-      "banshee"
-    ]
-  },
-  {
-    "id": "fun-exile-rebrand",
-    "plain": "When the town wants you gone, does it exile you instead of executing you?",
-    "styled": "Quick note from Legal! When certain guests leave the show early, we don't say 'executed'. We say 'exiled', which tests forty percent better with families. When the town wants you gone, do they exile you instead of executing you?",
-    "voice": "Zev",
-    "yes": {
-      "team": "traveller"
+    ],
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -70,7 +30,10 @@
     "voice": "Prepotente",
     "yes": [
       "bishop"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-leftovers",
@@ -91,22 +54,16 @@
     ]
   },
   {
-    "id": "fun-truth-kills",
-    "plain": "If you say something true in public, can that get someone killed tonight?",
-    "styled": "I've been telling the truth about my neighbours for sixty years and not one of them had the decency to drop dead. If you say something true in public, can that get someone killed tonight?",
-    "voice": "Elle",
-    "yes": [
-      "gossip"
-    ]
-  },
-  {
     "id": "fun-grandchild",
     "plain": "Do you start knowing one good player, and die as well if the Demon kills them?",
     "styled": "There's someone you know is good from the very first night, and you'd follow them anywhere. If the monster gets them, it gets you too. I think that's the bravest kind of caring. Do you start knowing one good player, and die with them if the Demon kills them?",
     "voice": "Katia",
     "yes": [
       "grandmother"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-pure-and-dangerous",
@@ -115,7 +72,10 @@
     "voice": "Odette",
     "yes": [
       "virgin"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-secret-words",
@@ -128,31 +88,16 @@
     ]
   },
   {
-    "id": "fun-rules-optional",
-    "plain": "Does your presence let the Storyteller break the rules of the game?",
-    "styled": "PATCH NOTES v13.2: The Storyteller may now ignore the rulebook entirely. This is not a bug. This is a lifestyle. Does your presence give the Storyteller permission to break the game's rules?",
-    "voice": "The System AI",
-    "yes": [
-      "atheist"
-    ]
-  },
-  {
     "id": "fun-roshambo-host",
     "plain": "Could a game of rock, paper, scissors decide whether you survive your execution?",
     "styled": "Folks, you are NOT going to believe this! A cold-blooded killer is on the chopping block, and it all comes down to a children's hand game! Could rock, paper, scissors decide whether you survive your own execution?",
     "voice": "The Host",
     "yes": [
       "psychopath"
-    ]
-  },
-  {
-    "id": "fun-funny-or-dead",
-    "plain": "If you were funny today, does that stop you dying by exile?",
-    "styled": "And THAT is why we book comedians, folks! Land a good bit and the crowd simply can't bring themselves to get rid of you! If you were funny today, are you safe from dying by exile?",
-    "voice": "The Host",
-    "yes": [
-      "deviant"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-confidently-wrong",
@@ -174,7 +119,10 @@
     "yes": [
       "spy",
       "widow"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-smash",
@@ -183,7 +131,10 @@
     "voice": "Mongo",
     "yes": [
       "golem"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-finale",
@@ -192,17 +143,10 @@
     "voice": "Samantha",
     "yes": [
       "boomdandy"
-    ]
-  },
-  {
-    "id": "fun-practice-death",
-    "plain": "Does your ability hand you a spare life the first time you die?",
-    "styled": "I've died zero times so far, and I'm still annoyed about how close some of those were. Apparently some of you get a free practice run. Does your ability let you survive the first time you die?",
-    "voice": "Carl",
-    "yes": [
-      "fool",
-      "zombuul"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-bring-back",
@@ -212,16 +156,10 @@
     "yes": [
       "professor",
       "shabaloth"
-    ]
-  },
-  {
-    "id": "fun-unstoppable",
-    "plain": "Once per game, does your kill land even if that player should have been impossible to kill?",
-    "styled": "Armour? Blessings? Holy protection? YOUR GODDESS LAUGHS AT YOUR LITTLE CHARMS! Once per game, does your kill land even if something should have made that player impossible to kill?",
-    "voice": "Samantha",
-    "yes": [
-      "assassin"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-casserole-demon",
@@ -230,15 +168,9 @@
     "voice": "Elle",
     "yes": [
       "lilmonsta"
-    ]
-  },
-  {
-    "id": "fun-beauty-sleep",
-    "plain": "Does your ability have you act or learn something on most nights of the game?",
-    "styled": "A star of my calibre NEEDS her beauty sleep, and yet some of you get poked awake every single night like a common alarm clock. Does your ability actually have you doing or learning something on most nights of the game?",
-    "voice": "Princess Donut",
-    "yes": {
-      "wakesMostNights": true
+    ],
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -248,24 +180,9 @@
     "voice": "Carl",
     "yes": {
       "neverChooses": true
-    }
-  },
-  {
-    "id": "fun-fine-print",
-    "plain": "Does your own ability come with a built-in drawback that can hurt your own team?",
-    "styled": "Every piece of loot down here has a catch, and I've buried a lot of contestants who didn't read the fine print. Does your own ability come with a built-in drawback that can hurt your own team?",
-    "voice": "Mordecai",
-    "yes": {
-      "harmsOwnTeam": true
-    }
-  },
-  {
-    "id": "fun-second-husband",
-    "plain": "Does your ability do nothing until somebody dies?",
-    "styled": "Like my second husband: no use to anyone until there's a funeral. Does your ability do nothing at all until somebody dies?",
-    "voice": "Elle",
-    "yes": {
-      "needsDeathToAct": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -289,15 +206,9 @@
       "monk",
       "innkeeper",
       "devilsadvocate"
-    ]
-  },
-  {
-    "id": "fun-noon-murder",
-    "plain": "Can your own ability, not another character's, kill a player in broad daylight, other than by execution?",
-    "styled": "Why wait for nightfall like some COWARD? Your goddess murders at NOON, in front of EVERYONE, and then demands applause! Can your own ability, not another character's, kill another player in broad daylight, without executing them?",
-    "voice": "Samantha",
-    "yes": {
-      "killsByDay": true
+    ],
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -307,24 +218,9 @@
     "voice": "The System AI",
     "yes": {
       "learnsNumbers": true
-    }
-  },
-  {
-    "id": "fun-spin-the-wheel",
-    "plain": "Does your own ability, not another character's, ask you to guess something, with consequences for getting it right or wrong?",
-    "styled": "Spin the wheel, folks! Our next contestant has to GUESS, and the answer could change everything! Does your own ability, not another character's, literally ask you to guess something, with real consequences for getting it right or wrong?",
-    "voice": "The Host",
-    "yes": {
-      "guesses": true
-    }
-  },
-  {
-    "id": "fun-every-voice-matters",
-    "plain": "Does your own ability, not another character's, change how voting on executions works?",
-    "styled": "At Borant we believe every voice matters! Some voices matter three times as much, some count backwards, and some only count if a friend is voting too! Does your own ability, not another character's, change how voting on executions works?",
-    "voice": "Zev",
-    "yes": {
-      "affectsVoting": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -339,7 +235,8 @@
       "yaggababble"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -353,7 +250,8 @@
       "gnome"
     ],
     "scope": {
-      "team": "traveller"
+      "team": "traveller",
+      "abilityVaries": false
     }
   },
   {
@@ -363,7 +261,10 @@
     "voice": "The System AI",
     "yes": [
       "heretic"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-fail-upward",
@@ -372,7 +273,10 @@
     "voice": "Zev",
     "yes": [
       "politician"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-gavel-goat",
@@ -381,7 +285,10 @@
     "voice": "Prepotente",
     "yes": [
       "judge"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-dead-electorate",
@@ -390,7 +297,10 @@
     "voice": "Mordecai",
     "yes": [
       "voudon"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-body-hop",
@@ -399,7 +309,10 @@
     "voice": "Katia",
     "yes": [
       "fanggu"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-costume-trunk",
@@ -409,7 +322,10 @@
     "yes": [
       "barber",
       "hatter"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-eat-the-messenger",
@@ -418,7 +334,10 @@
     "voice": "Princess Donut",
     "yes": [
       "ravenkeeper"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-follows-master",
@@ -427,7 +346,10 @@
     "voice": "Carl",
     "yes": [
       "butler"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-will-reading",
@@ -436,7 +358,10 @@
     "voice": "The Host",
     "yes": [
       "farmer"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-matching-robes",
@@ -445,7 +370,10 @@
     "voice": "Odette",
     "yes": [
       "cultleader"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-understudy",
@@ -454,7 +382,10 @@
     "voice": "Princess Donut",
     "yes": [
       "scarletwoman"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-nobody-kill-anybody",
@@ -463,7 +394,10 @@
     "voice": "Carl",
     "yes": [
       "mayor"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-inversion-patch",
@@ -475,40 +409,16 @@
     ]
   },
   {
-    "id": "fun-combo-meter",
-    "plain": "If you skip a night's kill, do you get to kill three players the next night?",
-    "styled": "COMBO METER CHARGING... Hold your fire for one night and the System rewards your patience with a TRIPLE! Sponsors love a triple. If you skip a night's kill, do you get to kill three players the next night?",
-    "voice": "The System AI",
-    "yes": [
-      "po"
-    ]
-  },
-  {
-    "id": "fun-live-or-die-show",
-    "plain": "Do you pick three players who each secretly choose whether to live or die?",
-    "styled": "Welcome back to everyone's favourite segment: LIVE OR DIE! Three lucky contestants, one silent choice each, and if they all get greedy, they ALL go home in a box! Do you pick three players who each secretly choose whether to live or die?",
-    "voice": "The Host",
-    "yes": [
-      "alhadikhia"
-    ]
-  },
-  {
-    "id": "fun-third-day-uprising",
-    "plain": "On day 3, do your Minions become copies of you while every nominee dies?",
-    "styled": "REVOLUTION! On the third day my loyal followers shall RISE, become ME, and every wretch who is nominated shall perish in the square! On day 3, do your Minions become copies of you while every nominee dies?",
-    "voice": "Prepotente",
-    "yes": [
-      "riot"
-    ]
-  },
-  {
     "id": "fun-job-title-murder",
     "plain": "Do you kill by naming a character instead of pointing at a player?",
     "styled": "Okay, so you don't even need to know who anyone is. You just say a job title and whoever has it drops dead. That's somehow worse. Do you kill by naming a character instead of pointing at a player?",
     "voice": "Carl",
     "yes": [
       "ojo"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-kobold-formation",
@@ -517,15 +427,6 @@
     "voice": "Mordecai",
     "yes": [
       "lordoftyphon"
-    ]
-  },
-  {
-    "id": "fun-cousins-savings",
-    "plain": "Does your own life depend on one player you poisoned at the start staying alive?",
-    "styled": "Oh, I knew a man like you. Latched onto my cousin, drained her savings, and only went away when she did. Does your own life hang on one player you poisoned at the start staying alive?",
-    "voice": "Elle",
-    "yes": [
-      "lleech"
     ]
   },
   {
@@ -544,16 +445,10 @@
     "voice": "Zev",
     "yes": [
       "snitch"
-    ]
-  },
-  {
-    "id": "fun-complimentary-wish",
-    "plain": "Once per game, do you get to make a wish that might come with a price?",
-    "styled": "Borant is proud to offer one complimentary wish! Small print: the wish may be twisted, may cost you something, and may leave clues for the other contestants. Once per game, do you get to make a wish that might come with a price?",
-    "voice": "Zev",
-    "yes": [
-      "wizard"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-reading-glasses",
@@ -562,7 +457,10 @@
     "voice": "Elle",
     "yes": [
       "artist"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-nobody-takes-advice",
@@ -571,16 +469,10 @@
     "voice": "Mordecai",
     "yes": [
       "fisherman"
-    ]
-  },
-  {
-    "id": "fun-seconds",
-    "plain": "After the day's first execution, does your ability let you nominate again?",
-    "styled": "RAWR! Rawr RAWR! (He has watched one execution today and he is still hungry.) Translation: after the day's first execution, does your ability let you nominate again for a second one?",
-    "voice": "Mongo",
-    "yes": [
-      "butcher"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-seating-plan",
@@ -589,44 +481,10 @@
     "voice": "Katia",
     "yes": [
       "matron"
-    ]
-  },
-  {
-    "id": "fun-rigged-ballot",
-    "plain": "Each night, do you pick someone whose vote will count differently tomorrow?",
-    "styled": "I adore a rigged ballot, darling. One little nudge in the dark and someone's vote is worth triple, or worse than nothing. Each night, do you pick someone whose vote will count differently tomorrow?",
-    "voice": "Odette",
-    "yes": [
-      "thief",
-      "bureaucrat"
-    ]
-  },
-  {
-    "id": "fun-big-reveal",
-    "plain": "Once per game, do you choose one player to learn exactly who you are?",
-    "styled": "Coming up after the break: the BIG REVEAL! One lucky player finds out exactly who you are, and the audience goes wild! Once per game, do you choose one player to learn exactly who you are?",
-    "voice": "The Host",
-    "yes": [
-      "nightwatchman"
-    ]
-  },
-  {
-    "id": "fun-wedding-reception",
-    "plain": "Once per game, do you name a character and leave them drunk for three days and three nights?",
-    "styled": "Three days and three nights? That's not a curse, that's my niece's wedding. Once per game, do you name a character and leave them drunk for three days and three nights?",
-    "voice": "Elle",
-    "yes": [
-      "courtier"
-    ]
-  },
-  {
-    "id": "fun-sermon-goat",
-    "plain": "Each night, do you choose a player who loses their ability if they're a Minion?",
-    "styled": "REPENT, SINNERS! I shall preach at you until your wicked powers wither out of sheer embarrassment! Each night, do you choose a player who, if they're a Minion, loses their ability and finds out why?",
-    "voice": "Prepotente",
-    "yes": [
-      "preacher"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-headshot-on-the-wall",
@@ -641,17 +499,9 @@
       "team": [
         "townsfolk",
         "outsider"
-      ]
+      ],
+      "abilityVaries": false
     }
-  },
-  {
-    "id": "fun-manhunt",
-    "plain": "Is your whole ability that the Minions know you're around, and one correct public guess loses your team the game?",
-    "styled": "It's a manhunt, folks! The Minions know our mystery guest is out there, and if they shout the right name, it's GAME OVER for the good guys! Is your whole ability that Minions know you're around, and one correct public guess loses your team the game?",
-    "voice": "The Host",
-    "yes": [
-      "damsel"
-    ]
   },
   {
     "id": "fun-just-my-tuesday",
@@ -660,7 +510,10 @@
     "voice": "Carl",
     "yes": [
       "tinker"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-judged-by-looks",
@@ -669,7 +522,10 @@
     "voice": "Katia",
     "yes": [
       "recluse"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-not-a-goat",
@@ -678,25 +534,10 @@
     "voice": "Prepotente",
     "yes": [
       "mutant"
-    ]
-  },
-  {
-    "id": "fun-remote-evil",
-    "plain": "Does your presence keep the Minions and Demon from knowing each other until you die?",
-    "styled": "Team-building update! Our evil department will be working fully remote this season, with no idea who their colleagues are, until a certain gardener tragically passes! Does your presence keep the Minions and Demon from knowing each other until you die?",
-    "voice": "Zev",
-    "yes": [
-      "poppygrower"
-    ]
-  },
-  {
-    "id": "fun-dream-cast",
-    "plain": "Are most of the players in the game secretly the same character as you?",
-    "styled": "A whole town of ME? Darling, that's not a horror story, that's a dream cast. Are most of the players in the game secretly the same character as you?",
-    "voice": "Princess Donut",
-    "yes": [
-      "legion"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-casting-director",
@@ -719,14 +560,20 @@
     "plain": "As an evil player, does your own ability reveal secrets about who's who or what's in play, beyond team info and bluffs?",
     "styled": "Every villain gets the same little welcome packet, darling. But some of you have SOURCES. As an evil player, does your own ability reveal extra secrets about who's who or what's in play, beyond team info and bluffs?",
     "voice": "Odette",
-    "yes": {
-      "evilWithInfo": true
-    },
+    "yes": [
+      "godfather",
+      "spy",
+      "widow",
+      "wraith",
+      "eviltwin",
+      "boffin"
+    ],
     "scope": {
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   },
   {
@@ -738,18 +585,6 @@
       "team": [
         "townsfolk",
         "outsider"
-      ]
-    }
-  },
-  {
-    "id": "fun-glorious-evil",
-    "plain": "Is your character a Minion or a Demon?",
-    "styled": "JOIN YOUR GODDESS IN GLORIOUS WICKEDNESS! There will be screaming! There will be betrayal! There will be SNACKS made of your enemies! Is your character one of the evil team's, a Minion or a Demon?",
-    "voice": "Samantha",
-    "yes": {
-      "team": [
-        "minion",
-        "demon"
       ]
     }
   },
@@ -772,15 +607,6 @@
     }
   },
   {
-    "id": "fun-cursed-sheet",
-    "plain": "Are you an Outsider: good, but stuck with an ability that tends to get in the way?",
-    "styled": "Some contestants are born with a curse stapled to their character sheet. Good team, bad luck, worse timing. Are you an Outsider?",
-    "voice": "Mordecai",
-    "yes": {
-      "team": "outsider"
-    }
-  },
-  {
     "id": "fun-night-shift",
     "plain": "As a Minion, does your own ability have you act or learn something on most nights?",
     "styled": "NIGHT SHIFT BONUS: none. Overtime pay: none. Chance your supervisor eats you: nonzero! As a Minion, does your own ability have you up doing or learning something on most nights?",
@@ -789,7 +615,8 @@
       "wakesMostNights": true
     },
     "scope": {
-      "team": "minion"
+      "team": "minion",
+      "abilityVaries": false
     }
   },
   {
@@ -804,7 +631,8 @@
       "yaggababble"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -819,7 +647,10 @@
       "politician",
       "puzzlemaster",
       "atheist"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-sloshed",
@@ -831,15 +662,6 @@
     }
   },
   {
-    "id": "fun-surprise-ending",
-    "plain": "Does your own ability, not another character's, add a new way for a team to win or lose the game?",
-    "styled": "Hold onto your seats, folks, because tonight's game might not end the usual way! A brand-new ending, live on air! Does your own ability, not another character's, add a new way for a team to win or lose the game?",
-    "voice": "The Host",
-    "yes": {
-      "alternateWinOrLoss": true
-    }
-  },
-  {
     "id": "fun-booby-trap",
     "plain": "Does your ability set a trap that goes off automatically when another player does one specific thing in public?",
     "styled": "I simply ADORE a booby trap. Somebody makes one wrong move in front of everyone and BOOM, consequences, darling! Does your ability set a trap that goes off automatically when another player does one specific thing in public?",
@@ -848,24 +670,9 @@
       "virgin",
       "witch",
       "mezepheles"
-    ]
-  },
-  {
-    "id": "fun-words-are-my-business",
-    "plain": "Does your own ability, not another character's, respond to the words players say aloud, like a phrase, claim, guess or joke?",
-    "styled": "Words are my business, darling. One careless sentence and a whole career is over. Does your own ability, not another character's, respond to the words players say aloud, like a phrase, a claim, a guess or a joke?",
-    "voice": "Odette",
-    "yes": {
-      "spokenTrigger": true
-    }
-  },
-  {
-    "id": "fun-recast",
-    "plain": "Can your own ability change which character a player is, even your own?",
-    "styled": "I know what it's like to become someone new overnight. It's terrifying the first time and still pretty strange the tenth. Can your own ability change which character a player is, even your own?",
-    "voice": "Katia",
-    "yes": {
-      "changesCharacters": true
+    ],
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -875,6 +682,9 @@
     "voice": "Prepotente",
     "yes": {
       "changesAlignment": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -891,7 +701,10 @@
       "choirboy",
       "puzzlemaster",
       "boffin"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-nosiest-on-the-street",
@@ -900,34 +713,10 @@
     "voice": "Elle",
     "yes": {
       "caresAboutNeighbours": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
-  },
-  {
-    "id": "fun-borrowed-outfit",
-    "plain": "Does your own ability give you another character's ability while you stay yourself?",
-    "styled": "Borrowing someone else's look is not stealing, darling, it's CURATING. Does your own ability give you another character's ability while you stay yourself?",
-    "voice": "Princess Donut",
-    "yes": {
-      "borrowsAbility": true
-    }
-  },
-  {
-    "id": "fun-fresh-clue-nightly",
-    "plain": "Does your own ability bring you fresh information on most nights?",
-    "styled": "Every night, folks, a brand-new clue, delivered straight to our contestant's pillow! Will they use it? Will they die anyway? Does your own ability bring you fresh information on most nights?",
-    "voice": "The Host",
-    "yes": {
-      "infoEveryNight": true
-    }
-  },
-  {
-    "id": "fun-first-day",
-    "plain": "On your first day, if you nominate a player and they're executed, does the Demon skip its kill that night?",
-    "styled": "RAWR! RAWR! (He is strutting, very proud of you.) Translation: on your first day, if you nominate a player and they get executed, does the Demon go hungry that night?",
-    "voice": "Mongo",
-    "yes": [
-      "princess"
-    ]
   },
   {
     "id": "fun-double-or-nothing",
@@ -936,25 +725,10 @@
     "voice": "The System AI",
     "yes": [
       "gambler"
-    ]
-  },
-  {
-    "id": "fun-high-wire",
-    "plain": "Each night, do you pick a player, and die yourself if they're drunk or poisoned?",
-    "styled": "And now, our high-wire act! No net, no safety, and if the wrong person had one drink too many, SPLAT! Each night, do you pick a player, and die yourself if they're drunk or poisoned?",
-    "voice": "The Host",
-    "yes": [
-      "acrobat"
-    ]
-  },
-  {
-    "id": "fun-never-sobers-up",
-    "plain": "Is your whole ability that when you die, one player is drunk for the rest of the game?",
-    "styled": "When they lose you, darling, someone simply never sobers up again. Tragic. Gorgeous. Ratings gold. Is your whole ability that when you die, one player is drunk for the rest of the game?",
-    "voice": "Odette",
-    "yes": [
-      "sweetheart"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-storyteller-levels-up",
@@ -963,16 +737,10 @@
     "voice": "The System AI",
     "yes": [
       "plaguedoctor"
-    ]
-  },
-  {
-    "id": "fun-raised-finger",
-    "plain": "Each night, do you curse a player so that they die if they nominate tomorrow?",
-    "styled": "CURSED! CURSED! If the wretch so much as LIFTS A FINGER to nominate tomorrow, they DROP DEAD and your goddess laughs! Each night, do you curse a player so that they die if they nominate tomorrow?",
-    "voice": "Samantha",
-    "yes": [
-      "witch"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-gracious-guest",
@@ -981,7 +749,10 @@
     "voice": "Odette",
     "yes": [
       "pukka"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-wellness-sponsor",
@@ -990,25 +761,10 @@
     "voice": "Zev",
     "yes": [
       "nodashii"
-    ]
-  },
-  {
-    "id": "fun-monster-sacrifice",
-    "plain": "Can you kill yourself at night so that a Minion becomes the new you?",
-    "styled": "I didn't expect self-sacrifice from a monster. It's strangely honourable, if you ignore the murders. Can you kill yourself at night so that one of your Minions becomes the new you?",
-    "voice": "Katia",
-    "yes": [
-      "imp"
-    ]
-  },
-  {
-    "id": "fun-quiet-day-promo",
-    "plain": "Do you only kill on nights after a day when nobody died?",
-    "styled": "Our Quiet Day Promotion is back! If nobody dies all day, one lucky guest receives a complimentary midnight murder! Do you only kill on nights after a day when nobody died?",
-    "voice": "Zev",
-    "yes": [
-      "zombuul"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-no-slacking-dead",
@@ -1017,16 +773,10 @@
     "voice": "Samantha",
     "yes": [
       "vigormortis"
-    ]
-  },
-  {
-    "id": "fun-coffee-sponsor",
-    "plain": "Does your presence give one player a day of either perfectly true information or a double-strength ability?",
-    "styled": "This segment is brought to you by our coffee sponsor! One lucky player wakes up perfectly clear-headed, or twice as powerful, and they didn't even order. Does your presence give one player a day of either true information or a double-strength ability?",
-    "voice": "Zev",
-    "yes": [
-      "barista"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-one-true-one-false",
@@ -1035,43 +785,10 @@
     "voice": "Odette",
     "yes": [
       "savant"
-    ]
-  },
-  {
-    "id": "fun-five-guesses",
-    "plain": "On your first day, do you publicly guess up to five players' characters, then learn that night how many you got right?",
-    "styled": "Five guesses, folks, all live, all in front of the whole town! Embarrassment is guaranteed and we are SO here for it! On your first day, do you publicly guess up to five characters, then learn that night how many you got right?",
-    "voice": "The Host",
-    "yes": [
-      "juggler"
-    ]
-  },
-  {
-    "id": "fun-most-me-ability",
-    "plain": "Is your whole ability that, on learning you died, you publicly pick a living player, and your team loses if they're evil?",
-    "styled": "You die, then you have to point at someone, and if you point wrong, your whole team loses. Honestly? The most me ability ever. Is your whole ability that when you learn you died, you must publicly pick a living player, and your team loses if they are evil?",
-    "voice": "Carl",
-    "yes": [
-      "klutz"
-    ]
-  },
-  {
-    "id": "fun-dying-curse",
-    "plain": "Is your whole ability that when you learn you died, you pick a player, who dies that night if they're good?",
-    "styled": "A DYING CURSE! Your goddess APPROVES! With your final breath, you point at someone, and if they're one of the nice ones, they join you in the grave! Is your whole ability that when you learn you died, you pick a player who dies that night if they're good?",
-    "voice": "Samantha",
-    "yes": [
-      "moonchild"
-    ]
-  },
-  {
-    "id": "fun-picks-a-side",
-    "plain": "Is your whole ability that on your first night you pick a player and secretly take their alignment, without being told which?",
-    "styled": "Rawr? RAWR! (He has picked a favourite person and will follow them anywhere, though nobody has told him whether they are nice.) Is your whole ability picking a player on your first night and secretly taking their alignment, without being told which?",
-    "voice": "Mongo",
-    "yes": [
-      "ogre"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-hired-muscle",
@@ -1080,7 +797,10 @@
     "voice": "Mordecai",
     "yes": [
       "goon"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-everything-bundle",
@@ -1116,7 +836,10 @@
     "voice": "Prepotente",
     "yes": [
       "mastermind"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-legal-department",
@@ -1125,16 +848,10 @@
     "voice": "Zev",
     "yes": [
       "devilsadvocate"
-    ]
-  },
-  {
-    "id": "fun-method-acting",
-    "plain": "Each night, do you pick a player and a good character they must pretend to be tomorrow, or risk execution?",
-    "styled": "I do love a bit of method acting, darling. Commit to the role, or the audience turns on you. Each night, do you pick a player and a good character they must pretend to be tomorrow, or risk execution?",
-    "voice": "Odette",
-    "yes": [
-      "cerenovus"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-night-x",
@@ -1143,7 +860,10 @@
     "voice": "Samantha",
     "yes": [
       "xaan"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-bones",
@@ -1152,7 +872,10 @@
     "voice": "Mongo",
     "yes": [
       "bonecollector"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-neighbourhood-watch",
@@ -1161,16 +884,10 @@
     "voice": "Elle",
     "yes": [
       "gangster"
-    ]
-  },
-  {
-    "id": "fun-name-them-all",
-    "plain": "Can you win for good by publicly naming exactly which players are the Minions and which are the Demons?",
-    "styled": "Sometimes you just know, deep down, who the monsters are. Saying it out loud takes courage. Can you win for good by publicly naming exactly which players are the Minions and which are the Demons?",
-    "voice": "Katia",
-    "yes": [
-      "alsaahir"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "fun-tough",
@@ -1179,6 +896,9 @@
     "voice": "Mongo",
     "yes": [
       "soldier"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   }
 ]

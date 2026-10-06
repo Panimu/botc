@@ -1,29 +1,14 @@
 [
   {
-    "id": "xi-name-to-a-face",
-    "plain": "Does your ability tell you which character a particular player is, even if only as one of two options?",
-    "styled": "New loot drop: the Name Tag Reveal! Point at a face, get a character name stapled to it, possibly with a decoy stapled next to it for flavour. Is that kind of reveal built right into your ability?",
-    "voice": "The System AI",
-    "yes": {
-      "learnsCharacters": true
-    }
-  },
-  {
-    "id": "xi-see-the-token",
-    "plain": "Does your ability show you a character and tie it to a specific player, or to one of two players?",
-    "styled": "Somewhere in this village, the Storyteller holds up a little disc with a picture on it, nods at a player, and someone finally knows who that person actually is. Does your ability show you a character and pin it on a specific player like that?",
-    "voice": "Carl",
-    "yes": {
-      "learnsCharacters": true
-    }
-  },
-  {
     "id": "xi-unmasker",
     "plain": "Do you love unmasking people, with an ability that actually tells you what character they are?",
     "styled": "Masks are TACKY, darling. Everybody pretending to be somebody else, and only a select few of us get to see past it to the actual character underneath. Does your ability let you see behind the mask like that?",
     "voice": "Princess Donut",
     "yes": {
       "learnsCharacters": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -37,6 +22,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -50,6 +38,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -60,6 +51,9 @@
     "yes": {
       "learnsCharacters": true,
       "infoEveryNight": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -73,7 +67,8 @@
       "harlot"
     ],
     "scope": {
-      "learnsCharacters": true
+      "learnsCharacters": true,
+      "abilityVaries": false
     }
   },
   {
@@ -86,7 +81,8 @@
       "widow"
     ],
     "scope": {
-      "learnsCharacters": true
+      "learnsCharacters": true,
+      "abilityVaries": false
     }
   },
   {
@@ -103,7 +99,8 @@
       "eviltwin"
     ],
     "scope": {
-      "learnsCharacters": true
+      "learnsCharacters": true,
+      "abilityVaries": false
     }
   },
   {
@@ -117,25 +114,8 @@
       "eviltwin"
     ],
     "scope": {
-      "learnsCharacters": true
-    }
-  },
-  {
-    "id": "xi-alignment-reader",
-    "plain": "Does your ability read players' good or evil alignment itself, rather than only whether they're a Demon or Minion?",
-    "styled": "Forget the job titles. I want to know who's rotten. Some abilities only care which monster is which; others go straight for good versus evil. Does yours tell you about players' alignment itself?",
-    "voice": "Carl",
-    "yes": {
-      "learnsAlignment": true
-    }
-  },
-  {
-    "id": "xi-moral-compass",
-    "plain": "Does your ability give you a read on good and evil among players, whether as a verdict, comparison, count or direction?",
-    "styled": "Patch note: alignment detectors are back in stock! Beep for good, boop for evil, a 'these two match', a tidy tally of the wicked, or an arrow pointing at the nearest one. Does your ability give you that kind of good-or-evil read on players?",
-    "voice": "The System AI",
-    "yes": {
-      "learnsAlignment": true
+      "learnsCharacters": true,
+      "abilityVaries": false
     }
   },
   {
@@ -145,6 +125,9 @@
     "voice": "Mongo",
     "yes": {
       "learnsAlignment": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -158,6 +141,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -174,7 +160,8 @@
       "bountyhunter"
     ],
     "scope": {
-      "learnsAlignment": true
+      "learnsAlignment": true,
+      "abilityVaries": false
     }
   },
   {
@@ -192,7 +179,8 @@
       "eviltwin"
     ],
     "scope": {
-      "learnsAlignment": true
+      "learnsAlignment": true,
+      "abilityVaries": false
     }
   },
   {
@@ -206,7 +194,8 @@
       "oracle"
     ],
     "scope": {
-      "learnsAlignment": true
+      "learnsAlignment": true,
+      "abilityVaries": false
     }
   },
   {
@@ -217,6 +206,9 @@
     "yes": {
       "learnsAlignment": true,
       "infoEveryNight": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -227,6 +219,9 @@
     "yes": {
       "learnsAlignment": true,
       "picksInfoTargets": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -238,24 +233,9 @@
       "steward",
       "grandmother",
       "eviltwin"
-    ]
-  },
-  {
-    "id": "xi-numbers-talk",
-    "plain": "Does your ability give you its information as a number?",
-    "styled": "Numbers don't lie. People lie. Storytellers sometimes lie. But a number, at least, is a nice clean thing to argue about. Does your ability hand you its information as a number?",
-    "voice": "Carl",
-    "yes": {
-      "learnsNumbers": true
-    }
-  },
-  {
-    "id": "xi-fingers-up",
-    "plain": "When the Storyteller gives you information, is it usually by holding up a number of fingers?",
-    "styled": "Achievement unlocked: Finger Counter! You've been woken in the dark to squint at a raised hand and do sums. Riveting television. When you get your info, is it usually a number held up on fingers?",
-    "voice": "The System AI",
-    "yes": {
-      "learnsNumbers": true
+    ],
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -266,21 +246,9 @@
     "yes": {
       "learnsNumbers": true,
       "infoEveryNight": true
-    }
-  },
-  {
-    "id": "xi-number-changes",
-    "plain": "Of those who learn numbers, does your number get updated night by night?",
-    "styled": "Some numbers are tattoos: you get one and you're stuck with it. Others are a stock ticker, ticking away all game. Of you number-learners, is yours the kind that updates night by night?",
-    "voice": "Zev",
-    "yes": [
-      "empath",
-      "chambermaid",
-      "mathematician",
-      "oracle"
-    ],
+    },
     "scope": {
-      "learnsNumbers": true
+      "abilityVaries": false
     }
   },
   {
@@ -293,7 +261,8 @@
       "juggler"
     ],
     "scope": {
-      "learnsNumbers": true
+      "learnsNumbers": true,
+      "abilityVaries": false
     }
   },
   {
@@ -303,24 +272,9 @@
     "voice": "Carl",
     "yes": {
       "infoEveryNight": true
-    }
-  },
-  {
-    "id": "xi-clue-subscription",
-    "plain": "Does your ability feed you a steady stream of fresh information, night after night?",
-    "styled": "Information is a renewable resource, for some of you. Night after night, another piece for the pile, until the picture comes together or you go mad trying. Does your ability give you that steady nightly stream?",
-    "voice": "Katia",
-    "yes": {
-      "infoEveryNight": true
-    }
-  },
-  {
-    "id": "xi-woken-for-news",
-    "plain": "Does your ability have you awake most nights, taking in something new?",
-    "styled": "RAWR! RAWR! [Translation: wake up, there's news!] He nudges you awake nearly every night, because there is always news. Does your ability have you up most nights taking in something new?",
-    "voice": "Mongo",
-    "yes": {
-      "infoEveryNight": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -334,6 +288,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -344,6 +301,9 @@
     "yes": {
       "infoEveryNight": true,
       "team": "minion"
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -359,7 +319,8 @@
       "harlot"
     ],
     "scope": {
-      "infoEveryNight": true
+      "infoEveryNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -373,7 +334,8 @@
       "undertaker"
     ],
     "scope": {
-      "infoEveryNight": true
+      "infoEveryNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -386,7 +348,8 @@
       "general"
     ],
     "scope": {
-      "infoEveryNight": true
+      "infoEveryNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -399,16 +362,8 @@
       "wraith"
     ],
     "scope": {
-      "infoEveryNight": true
-    }
-  },
-  {
-    "id": "xi-behind-the-curtain",
-    "plain": "Does your ability let you see behind the scenes, like the Grimoire, who woke, malfunctioning abilities or someone's secret ability?",
-    "styled": "Most contestants only see the monsters. A rare few get a look at the wiring: the Grimoire, who stirred in the dark, which powers fizzled, what secret tricks are hidden. Does your ability show you that machinery?",
-    "voice": "The System AI",
-    "yes": {
-      "seesHiddenInfo": true
+      "infoEveryNight": true,
+      "abilityVaries": false
     }
   },
   {
@@ -418,6 +373,9 @@
     "voice": "Prepotente",
     "yes": {
       "seesHiddenInfo": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -431,6 +389,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -454,29 +415,10 @@
     "yes": [
       "spy",
       "widow",
-      "wraith",
-      "boffin"
+      "wraith"
     ],
     "scope": {
       "seesHiddenInfo": true
-    }
-  },
-  {
-    "id": "xi-left-and-right",
-    "plain": "Does your ability specifically involve the players sitting right next to you?",
-    "styled": "Location, location, location! Some abilities reach across the whole circle. Yours cares deeply about the two chairs on either side of you. Is your ability specifically about your neighbours?",
-    "voice": "Zev",
-    "yes": {
-      "caresAboutNeighbours": true
-    }
-  },
-  {
-    "id": "xi-mind-the-neighbours",
-    "plain": "Do you watch the people on your left and right especially closely, because your ability is tied to them?",
-    "styled": "The village is big. Your world is three chairs wide: yours and the two beside it. Whatever happens to them happens to your game. Is your ability tied to the players either side of you?",
-    "voice": "Carl",
-    "yes": {
-      "caresAboutNeighbours": true
     }
   },
   {
@@ -490,6 +432,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -503,6 +448,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -516,7 +464,8 @@
       "marionette"
     ],
     "scope": {
-      "caresAboutNeighbours": true
+      "caresAboutNeighbours": true,
+      "abilityVaries": false
     }
   },
   {
@@ -530,16 +479,8 @@
       "nodashii"
     ],
     "scope": {
-      "caresAboutNeighbours": true
-    }
-  },
-  {
-    "id": "xi-evil-intel-officer",
-    "plain": "As a Minion or Demon, does your own ability give you extra information beyond the usual evil team introductions?",
-    "styled": "Every evil team gets the standard welcome pack: meet your friends, here are some bluffs, good luck. Your ability throws in a bonus dossier. Are you a Minion or Demon whose ability gives you extra info?",
-    "voice": "The System AI",
-    "yes": {
-      "evilWithInfo": true
+      "caresAboutNeighbours": true,
+      "abilityVaries": false
     }
   },
   {
@@ -549,22 +490,9 @@
     "voice": "Elle",
     "yes": {
       "evilWithInfo": true
-    }
-  },
-  {
-    "id": "xi-evil-intel-once",
-    "plain": "Of the evil characters with extra information, is yours a one-time gift at the start of the game?",
-    "styled": "Night one, a fat envelope lands in your lap. After that? Silence. Better have read carefully. Of you evil intel types, is your extra info a single delivery at the start?",
-    "voice": "Mordecai",
-    "yes": [
-      "widow",
-      "godfather",
-      "eviltwin",
-      "boffin",
-      "summoner"
-    ],
+    },
     "scope": {
-      "evilWithInfo": true
+      "abilityVaries": false
     }
   },
   {
@@ -577,16 +505,8 @@
       "wraith"
     ],
     "scope": {
-      "evilWithInfo": true
-    }
-  },
-  {
-    "id": "xi-demon-clues",
-    "plain": "Does the Storyteller give you clues about who the Demon is through your ability?",
-    "styled": "There's evil, and then there's THE evil, the big boss at the bottom of the floor. Some of you get clues pointing at the Demon itself. Does your ability have the Storyteller hand you clues about who the Demon is?",
-    "voice": "Mordecai",
-    "yes": {
-      "huntsDemon": true
+      "evilWithInfo": true,
+      "abilityVaries": false
     }
   },
   {
@@ -596,6 +516,9 @@
     "voice": "Princess Donut",
     "yes": {
       "huntsDemon": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -608,7 +531,8 @@
       "choirboy"
     ],
     "scope": {
-      "huntsDemon": true
+      "huntsDemon": true,
+      "abilityVaries": false
     }
   },
   {
@@ -629,9 +553,13 @@
     "plain": "Does your ability check for the Demon almost every night?",
     "styled": "Every night, the same question: is the Demon here, did the Demon do that? Ask enough times and eventually you get lucky. Does your ability check for the Demon nearly every night?",
     "voice": "Carl",
-    "yes": {
-      "huntsDemon": true,
-      "infoEveryNight": true
+    "yes": [
+      "snakecharmer",
+      "fortuneteller",
+      "flowergirl"
+    ],
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -641,15 +569,9 @@
     "voice": "Princess Donut",
     "yes": {
       "picksInfoTargets": true
-    }
-  },
-  {
-    "id": "xi-your-call",
-    "plain": "Does your ability ask you to pick players, and then tell you something about the ones you picked?",
-    "styled": "Some of you sit back and take whatever the Storyteller serves. You lot want to aim the flashlight yourselves, and the light shows you whoever you aimed at. Do you pick the players your ability then tells you about?",
-    "voice": "Odette",
-    "yes": {
-      "picksInfoTargets": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -664,7 +586,8 @@
       "harlot"
     ],
     "scope": {
-      "picksInfoTargets": true
+      "picksInfoTargets": true,
+      "abilityVaries": false
     }
   },
   {
@@ -678,7 +601,8 @@
       "seamstress"
     ],
     "scope": {
-      "picksInfoTargets": true
+      "picksInfoTargets": true,
+      "abilityVaries": false
     }
   },
   {
@@ -688,15 +612,9 @@
     "voice": "Mordecai",
     "yes": {
       "infoFromTheDead": true
-    }
-  },
-  {
-    "id": "xi-ask-the-departed",
-    "plain": "Does your ability get you answers from the graveyard, telling you specifically about players who have died?",
-    "styled": "BLOOD! BONES! Graves full of secrets! I adore anyone who rummages through the dead for answers. Does your ability tell you specifically about players who have died?",
-    "voice": "Samantha",
-    "yes": {
-      "infoFromTheDead": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -722,29 +640,5 @@
       "boffin",
       "summoner"
     ]
-  },
-  {
-    "id": "xi-the-full-picture-evil",
-    "plain": "As a Minion or Demon, does your own ability let you see good players' characters and alignments, not just your team's?",
-    "styled": "The good team thinks it's hiding. Adorable. Your ability shows you who they really are and whose side they're on. Are you a Minion or Demon whose ability reveals the good players to you like that?",
-    "voice": "Prepotente",
-    "yes": {
-      "learnsCharacters": true,
-      "learnsAlignment": true,
-      "team": [
-        "minion",
-        "demon"
-      ]
-    }
-  },
-  {
-    "id": "xi-dead-and-nightly",
-    "plain": "Does your ability tell you about the dead almost every night?",
-    "styled": "Every night, a little bulletin from beyond: who just went in the ground, or how many of the departed were rotten. Morbid, but steady work. Does your ability report on the dead nearly every night?",
-    "voice": "The Host",
-    "yes": {
-      "infoFromTheDead": true,
-      "infoEveryNight": true
-    }
   }
 ]

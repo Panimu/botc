@@ -1,23 +1,5 @@
 [
   {
-    "id": "xm-drunk-side-effect",
-    "plain": "Does your ability leave somebody else drunk or poisoned, either on purpose or as a side effect?",
-    "styled": "Patch note: certain contestants now ship with a complimentary hangover, applied to a player who is not them. Sometimes it's the feature, sometimes it's the bug. Does your ability leave somebody else drunk or poisoned?",
-    "voice": "The System AI",
-    "yes": {
-      "makesOthersDrunkOrPoisoned": true
-    }
-  },
-  {
-    "id": "xm-reminder-tokens",
-    "plain": "Would the Storyteller have to mark another player drunk or poisoned because of your ability?",
-    "styled": "Every game the Storyteller's got a little pile of shame tokens. Drunk. Poisoned. Somebody's going to wear one. Would the Storyteller have to slap one of those on another player because of your ability?",
-    "voice": "Mordecai",
-    "yes": {
-      "makesOthersDrunkOrPoisoned": true
-    }
-  },
-  {
     "id": "xm-good-but-befuddling",
     "plain": "Are you a good character whose ability can leave another player drunk or poisoned?",
     "styled": "So you're one of the good guys. Lovely. And yet somehow, someone on your watch ends up seeing double and getting nonsense from the Storyteller. Are you good, with an ability that can leave another player drunk or poisoned?",
@@ -41,6 +23,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -78,6 +63,9 @@
     "yes": {
       "makesOthersDrunkOrPoisoned": true,
       "team": "demon"
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -92,7 +80,8 @@
       "villageidiot"
     ],
     "scope": {
-      "makesOthersDrunkOrPoisoned": true
+      "makesOthersDrunkOrPoisoned": true,
+      "abilityVaries": false
     }
   },
   {
@@ -106,7 +95,8 @@
       "vigormortis"
     ],
     "scope": {
-      "makesOthersDrunkOrPoisoned": true
+      "makesOthersDrunkOrPoisoned": true,
+      "abilityVaries": false
     }
   },
   {
@@ -145,7 +135,8 @@
       "goon"
     ],
     "scope": {
-      "makesOthersDrunkOrPoisoned": true
+      "makesOthersDrunkOrPoisoned": true,
+      "abilityVaries": false
     }
   },
   {
@@ -158,15 +149,6 @@
     }
   },
   {
-    "id": "xm-convincing-performance",
-    "plain": "Because of your ability, must the Storyteller judge whether someone is sincerely selling a claim?",
-    "styled": "I was BORN to be judged, darlings, and I always win. Some of you make the Storyteller sit there scoring how hard someone is selling their story. Because of your ability, must the Storyteller judge whether someone is sincerely selling a claim?",
-    "voice": "Princess Donut",
-    "yes": {
-      "involvesMadness": true
-    }
-  },
-  {
     "id": "xm-inflict-madness",
     "plain": "Does your ability force another player to sell a claim to the group, or pay for refusing?",
     "styled": "BEHOLD! I shall write the script, and some poor fool shall recite it with feeling, or suffer! Does your ability force another player to sell a claim to the group, or pay for refusing?",
@@ -174,7 +156,10 @@
     "yes": [
       "cerenovus",
       "harpy"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xm-mad-yourself",
@@ -191,20 +176,28 @@
   },
   {
     "id": "xm-recast",
-    "plain": "Can your ability turn a player, perhaps even you, into a different character?",
+    "plain": "Does your ability have a feature of changing someone, perhaps even you, into a different character?",
     "styled": "Mid-season recasting! The audience adores it when a contestant goes to sleep as one thing and wakes up as another. Can your ability turn a player, perhaps even you, into a different character?",
     "voice": "The Host",
-    "yes": {
-      "changesCharacters": true
-    }
-  },
-  {
-    "id": "xm-casting-director",
-    "plain": "Does your ability rewrite who's who, so that a player's character is no longer what it was?",
-    "styled": "I've had to explain my own species to four different idiots this week, so believe me, identity is fluid down here. Does your ability rewrite who's who, so that a player's character is no longer what it was?",
-    "voice": "Carl",
-    "yes": {
-      "changesCharacters": true
+    "yes": [
+      "snakecharmer",
+      "engineer",
+      "huntsman",
+      "farmer",
+      "barber",
+      "hatter",
+      "pithag",
+      "summoner",
+      "scarletwoman",
+      "imp",
+      "kazali",
+      "fanggu",
+      "lordoftyphon",
+      "riot",
+      "cacklejack"
+    ],
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -218,6 +211,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -231,6 +227,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -246,7 +245,8 @@
       "riot"
     ],
     "scope": {
-      "changesCharacters": true
+      "changesCharacters": true,
+      "abilityVaries": false
     }
   },
   {
@@ -263,7 +263,8 @@
       "fanggu"
     ],
     "scope": {
-      "changesCharacters": true
+      "changesCharacters": true,
+      "abilityVaries": false
     }
   },
   {
@@ -278,7 +279,8 @@
       "engineer"
     ],
     "scope": {
-      "changesCharacters": true
+      "changesCharacters": true,
+      "abilityVaries": false
     }
   },
   {
@@ -296,16 +298,8 @@
       "snakecharmer"
     ],
     "scope": {
-      "changesCharacters": true
-    }
-  },
-  {
-    "id": "xm-flip-sides",
-    "plain": "Can your ability move a player, perhaps you, from one team to the other?",
-    "styled": "Achievement: Turncoat Enabler! Someone started the day on one team and is finishing it on the other, and it's your fault. Can your ability move a player, perhaps you, from one team to the other?",
-    "voice": "The System AI",
-    "yes": {
-      "changesAlignment": true
+      "changesCharacters": true,
+      "abilityVaries": false
     }
   },
   {
@@ -319,7 +313,10 @@
       "ogre",
       "politician",
       "snakecharmer"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xm-evil-recruiter",
@@ -332,6 +329,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -346,7 +346,8 @@
       "politician"
     ],
     "scope": {
-      "changesAlignment": true
+      "changesAlignment": true,
+      "abilityVaries": false
     }
   },
   {
@@ -359,7 +360,8 @@
       "goon"
     ],
     "scope": {
-      "changesAlignment": true
+      "changesAlignment": true,
+      "abilityVaries": false
     }
   },
   {
@@ -373,7 +375,10 @@
       "kazali",
       "fanggu",
       "lordoftyphon"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xm-chaos-for-notes",
@@ -401,7 +406,10 @@
       "ogre",
       "politician",
       "mezepheles"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xm-false-reading",
@@ -410,15 +418,9 @@
     "voice": "The System AI",
     "yes": {
       "registersFalsely": true
-    }
-  },
-  {
-    "id": "xm-not-what-you-seem",
-    "plain": "Is your own registration unreliable, so you might read as something you aren't even when every ability works properly?",
-    "styled": "I spent a long time looking like things I wasn't. It's lonely, but it's also a kind of armour. Is your own registration unreliable, so you might read as something you aren't even when every ability works properly?",
-    "voice": "Katia",
-    "yes": {
-      "registersFalsely": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -430,7 +432,8 @@
       "recluse"
     ],
     "scope": {
-      "registersFalsely": true
+      "registersFalsely": true,
+      "abilityVaries": false
     }
   },
   {
@@ -442,7 +445,8 @@
       "zombuul"
     ],
     "scope": {
-      "registersFalsely": true
+      "registersFalsely": true,
+      "abilityVaries": false
     }
   },
   {
@@ -452,15 +456,9 @@
     "voice": "Mordecai",
     "yes": {
       "feedsFalseInfo": true
-    }
-  },
-  {
-    "id": "xm-wrong-notes",
-    "plain": "Even with no drink or poison involved, can having you in the game lead to other players being told untrue things?",
-    "styled": "Somebody's grandmother is taking notes in the corner. Lovely handwriting. Totally wrong, and nobody spiked her tea. Can having you in the game lead to other players being told untrue things, with no drink or poison involved?",
-    "voice": "Elle",
-    "yes": {
-      "feedsFalseInfo": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -474,6 +472,9 @@
         "townsfolk",
         "outsider"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -487,6 +488,9 @@
         "minion",
         "demon"
       ]
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -560,15 +564,6 @@
     }
   },
   {
-    "id": "xm-blissful-ignorance",
-    "plain": "Might you be the last to find out the truth about your own character, team, or whether your ability even works?",
-    "styled": "Mystery Box Achievement! Contents: you. Label: possibly incorrect. Warranty: void. Might you be the last to find out the truth about your own character, team, or whether your ability even works?",
-    "voice": "The System AI",
-    "yes": {
-      "mayNotKnowTheTruth": true
-    }
-  },
-  {
     "id": "xm-think-good-really-evil",
     "plain": "Could your role let you sincerely believe you're good while you're actually evil?",
     "styled": "The dinosaur tilts his head. He thinks he is a good boy. Narrator: he may not be a good boy. Could your role let you sincerely believe you're good while you're actually evil?",
@@ -611,8 +606,7 @@
     "yes": [
       "sailor",
       "villageidiot",
-      "cannibal",
-      "innkeeper"
+      "cannibal"
     ],
     "scope": {
       "mayNotKnowTheTruth": true
@@ -623,15 +617,6 @@
     "plain": "Does your ability give you another character's ability to use as your own?",
     "styled": "Why build a power when you can borrow one? Like a library card, but for murder and secrets. Does your ability give you another character's ability to use as your own?",
     "voice": "Zev",
-    "yes": {
-      "borrowsAbility": true
-    }
-  },
-  {
-    "id": "xm-copycat",
-    "plain": "Do you really hold a power that belongs to some other character?",
-    "styled": "Hand-me-downs! I ADORE hand-me-downs, as long as they're designer. Do you really hold a power that belongs to some other character?",
-    "voice": "Princess Donut",
     "yes": {
       "borrowsAbility": true
     }
@@ -662,21 +647,15 @@
     }
   },
   {
-    "id": "xm-trap-setter",
-    "plain": "Does your ability set up a condition where the player who breaks it is the one who suffers?",
-    "styled": "Nobody's forcing them to step on the pressure plate. You just made sure there's one there, and it only bites the foot that lands on it. Does your ability set up a condition so that the very player who breaks it is the one who suffers?",
-    "voice": "Mordecai",
-    "yes": {
-      "setsTraps": true
-    }
-  },
-  {
     "id": "xm-bait",
     "plain": "Does your ability punish another player for their own choices: nominating, saying a certain word, or refusing to play along?",
     "styled": "The waiting is the delicious part, darling. They point, they speak, they refuse to play their part, and snap. Does your ability punish another player for nominating, saying a certain word, or refusing to play along?",
     "voice": "Odette",
     "yes": {
       "setsTraps": true
+    },
+    "scope": {
+      "abilityVaries": false
     }
   },
   {
@@ -690,7 +669,8 @@
       "gnome"
     ],
     "scope": {
-      "setsTraps": true
+      "setsTraps": true,
+      "abilityVaries": false
     }
   },
   {
@@ -704,7 +684,8 @@
       "harpy"
     ],
     "scope": {
-      "setsTraps": true
+      "setsTraps": true,
+      "abilityVaries": false
     }
   },
   {
@@ -773,7 +754,10 @@
       "lordoftyphon",
       "riot",
       "mezepheles"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xm-swap-artist",
@@ -784,17 +768,10 @@
       "snakecharmer",
       "barber",
       "matron"
-    ]
-  },
-  {
-    "id": "xm-secret-word",
-    "plain": "Would you love a secret word or phrase that does terrible things whenever it's spoken aloud?",
-    "styled": "I KNOW A WORD! A WORD OF POWER! Speak it, and the village shall rue the day! Would you love a secret word or phrase that does terrible things whenever it's spoken aloud?",
-    "voice": "Prepotente",
-    "yes": [
-      "mezepheles",
-      "yaggababble"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xm-public-recaster",
@@ -803,7 +780,10 @@
     "voice": "Carl",
     "yes": [
       "cacklejack"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "xm-ca-started-good",
@@ -842,7 +822,8 @@
       "huntsman"
     ],
     "scope": {
-      "changesCharacters": true
+      "changesCharacters": true,
+      "abilityVaries": false
     }
   },
   {

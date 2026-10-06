@@ -1,48 +1,15 @@
 [
   {
-    "id": "dem-phrase-body-count",
-    "plain": "Would you like your kills to depend on how often you slip a secret phrase into daytime conversation?",
-    "styled": "New mechanic unlocked! You get a magic phrase, and every time you work it into the town gossip, somebody might not wake up. Talk more, kill more. Do you want your body count tied to how often you sneak that secret phrase into the chatter?",
-    "voice": "The System AI",
-    "yes": [
-      "yaggababble"
-    ]
-  },
-  {
     "id": "dem-muttering-mantra",
     "plain": "Would you enjoy repeating the same strange phrase out loud, knowing each repetition could get someone killed?",
     "styled": "There's always one old crank muttering the same sentence over and over. Usually harmless. Unless every time they say it, somebody keels over. Would you enjoy repeating one odd phrase out loud, knowing every repeat might cost a life?",
     "voice": "Elle",
     "yes": [
       "yaggababble"
-    ]
-  },
-  {
-    "id": "dem-venom-finishes",
-    "plain": "Do you want the poison you give someone to be the very thing that kills them?",
-    "styled": "Most poisoners are content to make you a bit useless for a day. Amateurs. A REAL artist lets her poison finish the job, darling. Do you want the poison you hand out to be what eventually kills your victim?",
-    "voice": "Princess Donut",
-    "yes": [
-      "pukka"
-    ]
-  },
-  {
-    "id": "dem-one-last-day",
-    "plain": "Would you like your victims to spend one last day unknowingly poisoned, then die the following night?",
-    "styled": "Here's the nasty bit. The poor sod gets a whole day of walking around, talking, voting, completely unaware they're already done for. Then night comes. Do you want your victims to live one more poisoned day before they finally drop?",
-    "voice": "Mordecai",
-    "yes": [
-      "pukka"
-    ]
-  },
-  {
-    "id": "dem-babysitter-rota",
-    "plain": "Would you like your Minions to take turns looking after you, deciding each night which of them holds you?",
-    "styled": "Our sponsors absolutely love this segment! The cutest little horror in the dungeon gets passed round the evil team, with a brand-new babysitter every night if they like. Would you like your Minions to take turns holding you, choosing a fresh minder each night?",
-    "voice": "Zev",
-    "yes": [
-      "lilmonsta"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-token-not-seat",
@@ -51,15 +18,6 @@
     "voice": "Carl",
     "yes": [
       "lilmonsta"
-    ]
-  },
-  {
-    "id": "dem-poisoned-neighbours",
-    "plain": "Would you like to poison the nearest Townsfolk on either side of you, just by being there?",
-    "styled": "Passive aura acquired: Rotten Neighbour! No casting, no cooldown. The nearest do-gooder on your left and the nearest on your right simply go bad. Property values plummet. Would you like to poison the closest Townsfolk on each side of you just by existing?",
-    "voice": "The System AI",
-    "yes": [
-      "nodashii"
     ]
   },
   {
@@ -78,16 +36,10 @@
     "voice": "Prepotente",
     "yes": [
       "imp"
-    ]
-  },
-  {
-    "id": "dem-abdicate-at-will",
-    "plain": "Would you like to be able to abdicate whenever you choose, leaving a loyal servant to inherit your power?",
-    "styled": "A TRUE queen knows when to make a dramatic exit, sweetie. One night you're on the throne, the next you've swept off stage and some grateful underling is wearing your crown. Would you like to abdicate whenever you please and leave a loyal servant your power?",
-    "voice": "Princess Donut",
-    "yes": [
-      "imp"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-spit-them-back",
@@ -105,25 +57,10 @@
     "voice": "Mongo",
     "yes": [
       "shabaloth"
-    ]
-  },
-  {
-    "id": "dem-name-the-role",
-    "plain": "Would you like to name a character and have whoever holds it die, without needing to know who they are?",
-    "styled": "Forget faces. You just say a job title into the dark, and whoever's got that job stops breathing. Saves a lot of detective work. Would you like to kill by naming a character, whoever turns out to be holding it?",
-    "voice": "Mordecai",
-    "yes": [
-      "ojo"
-    ]
-  },
-  {
-    "id": "dem-missed-guess-roulette",
-    "plain": "Would you like to aim at a role, and if nobody has it, let the Storyteller choose your victim instead?",
-    "styled": "Guess the role right and you get the exact kill you wanted. Guess wrong and the house picks someone for you. Either way, ladies and gentlemen, somebody's going home in a box! Would you aim at a role and let the Storyteller pick a victim if nobody has it?",
-    "voice": "The Host",
-    "yes": [
-      "ojo"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-recruit-minions",
@@ -141,16 +78,10 @@
     "voice": "Princess Donut",
     "yes": [
       "kazali"
-    ]
-  },
-  {
-    "id": "dem-quiet-then-three",
-    "plain": "Would you hold back your kill for a night so you could strike three people the next?",
-    "styled": "Skip a night, save it up, then spend it all at once. It's the same logic as my dad's lottery strategy, except this one actually pays out. Would you hold off killing for a night so you can take three people the next?",
-    "voice": "Carl",
-    "yes": [
-      "po"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-calm-before-massacre",
@@ -159,16 +90,10 @@
     "voice": "Odette",
     "yes": [
       "po"
-    ]
-  },
-  {
-    "id": "dem-fake-your-death",
-    "plain": "Would you like to fake your own death and keep plotting from beyond the grave?",
-    "styled": "Tragic news, folks: our villain has died! Flowers, tears, a lovely eulogy. Meanwhile the corpse is very much awake and taking notes. Would you like to fake your own death and keep scheming while everyone thinks you're gone?",
-    "voice": "The Host",
-    "yes": [
-      "zombuul"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-hungry-on-bloodless-days",
@@ -177,34 +102,10 @@
     "voice": "Katia",
     "yes": [
       "zombuul"
-    ]
-  },
-  {
-    "id": "dem-dead-minions-better",
-    "plain": "Would you kill your own Minions if it made them more useful dead than alive?",
-    "styled": "Look, I've seen some cold management styles, but this one takes the cake. You murder your own team because they work harder as corpses. Would you kill your own Minions if it made them more useful dead than alive?",
-    "voice": "Carl",
-    "yes": [
-      "vigormortis"
-    ]
-  },
-  {
-    "id": "dem-undead-crew",
-    "plain": "Do you like the idea of building an undead crew out of allies you killed yourself?",
-    "styled": "Crafting recipe discovered: Loyal Minion plus Your Own Claws equals Undead Henchman, still fully powered and now oozing poison on the neighbours. Five stars. Do you like building an undead crew out of allies you personally killed?",
-    "voice": "The System AI",
-    "yes": [
-      "vigormortis"
-    ]
-  },
-  {
-    "id": "dem-every-clue-a-lie",
-    "plain": "Would you like all the Townsfolk's information to be guaranteed false while you're around?",
-    "styled": "Every vision, every reading, every helpful little number the good guys get: wrong. Not sometimes. Always. I'd have a nervous breakdown. Would you like the Townsfolk's information to be guaranteed false for as long as you're in play?",
-    "voice": "Carl",
-    "yes": [
-      "vortox"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-execute-or-lose",
@@ -213,7 +114,10 @@
     "voice": "The System AI",
     "yes": [
       "vortox"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-town-full-of-you",
@@ -225,31 +129,16 @@
     ]
   },
   {
-    "id": "dem-outnumbered-from-start",
-    "plain": "Would you like the evil team to outnumber the good players from the very first night?",
-    "styled": "Great news from the production office! This episode, evil starts with a clear majority, which focus groups tell us is very exciting for engagement. Would you like evil to outnumber good from the very first night?",
-    "voice": "Zev",
-    "yes": [
-      "legion"
-    ]
-  },
-  {
     "id": "dem-evil-votes-dont-count",
     "plain": "Would you like executions to fail unless at least one good player voted for them?",
     "styled": "Ha! The baddies can wave their hands about all they like. If not one decent soul votes along, the whole hanging fizzles out like a damp firework. Would you like executions to fail whenever only evil players voted for them?",
     "voice": "Elle",
     "yes": [
       "legion"
-    ]
-  },
-  {
-    "id": "dem-leap-into-outsider",
-    "plain": "Would you like to leap into an Outsider's body, leaving your old one dead behind you?",
-    "styled": "Body swap achievement! Find the town weirdo, jump inside them, and leave your old meat suit on the floor. They're evil now. Congratulations on the new skin. Would you like to leap into an Outsider's body and leave your old one dead?",
-    "voice": "The System AI",
-    "yes": [
-      "fanggu"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-misfit-vessel",
@@ -261,40 +150,16 @@
     ]
   },
   {
-    "id": "dem-line-of-evil",
-    "plain": "Would you like your evil team seated in one unbroken line, with you right in the middle?",
-    "styled": "Formation bonus: the Unholy Row! All the evil players sit shoulder to shoulder and you're the centrepiece. Very tidy. Terrible for secrecy. Would you like your evil team in one unbroken line with you at the centre?",
-    "voice": "The System AI",
-    "yes": [
-      "lordoftyphon"
-    ]
-  },
-  {
-    "id": "dem-lieutenants-both-sides",
-    "plain": "Do you like having a loyal lieutenant at your left hand and another at your right?",
-    "styled": "A true ruler is never caught without her attendants, sweetie. One on the left, one on the right, both ready to swoon. Do you like having a loyal lieutenant sitting at your left hand and another at your right?",
-    "voice": "Princess Donut",
-    "yes": [
-      "lordoftyphon"
-    ]
-  },
-  {
     "id": "dem-kill-the-host-first",
     "plain": "Would you like to be impossible to kill unless your chosen host dies first?",
     "styled": "Stab it, hang it, set it on fire: nothing happens. The trick is finding the poor soul it's hiding behind and killing them instead. Hope you like murdering innocents. Would you like to be unkillable unless your chosen host dies first?",
     "voice": "Mordecai",
     "yes": [
       "lleech"
-    ]
-  },
-  {
-    "id": "dem-parasite-life",
-    "plain": "Would you like to latch onto one person, poison them, and live off them like a parasite?",
-    "styled": "Pick a host, sink in the hooks, and keep them poisoned while you feed. They don't even know you're there. It's revolting, and I say that as a man who ate dungeon jerky. Would you like to latch onto one person and live off them like a parasite?",
-    "voice": "Carl",
-    "yes": [
-      "lleech"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-victims-choose-fate",
@@ -303,16 +168,10 @@
     "voice": "The Host",
     "yes": [
       "alhadikhia"
-    ]
-  },
-  {
-    "id": "dem-announced-targets",
-    "plain": "Would you announce your night-time targets to the whole town and enjoy watching them sweat?",
-    "styled": "WHY HIDE? Your goddess never hides! When night falls, shout their names to the heavens and let them tremble before the slaughter, as is PROPER! Would you announce your night-time targets to the whole town and enjoy watching them squirm?",
-    "voice": "Samantha",
-    "yes": [
-      "alhadikhia"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-nomination-chain",
@@ -321,25 +180,10 @@
     "voice": "Mordecai",
     "yes": [
       "riot"
-    ]
-  },
-  {
-    "id": "dem-minions-become-you",
-    "plain": "Would you like every one of your Minions to turn into a copy of you partway through the game?",
-    "styled": "Mid-season twist, everyone! The sidekicks rip off their costumes and underneath... it's the villain! Again! Several times! Would you like all your Minions to transform into copies of you partway through the game?",
-    "voice": "The Host",
-    "yes": [
-      "riot"
-    ]
-  },
-  {
-    "id": "dem-outlast-the-clock",
-    "plain": "Would you like to never kill anyone, as long as you survive until time runs out?",
-    "styled": "Murder is SO much effort, darling. Why chase people around at night when you can lounge about until the clock runs out and collect your trophy? Would you be happy never killing anyone, as long as you survive until time's up?",
-    "voice": "Princess Donut",
-    "yes": [
-      "leviathan"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-two-innocents-hanged",
@@ -348,7 +192,10 @@
     "voice": "Odette",
     "yes": [
       "leviathan"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-three-in-a-night",
@@ -358,7 +205,10 @@
     "yes": [
       "po",
       "alhadikhia"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-die-for-a-successor",
@@ -368,7 +218,10 @@
     "yes": [
       "imp",
       "fanggu"
-    ]
+    ],
+    "scope": {
+      "abilityVaries": false
+    }
   },
   {
     "id": "dem-several-victims",
@@ -381,7 +234,8 @@
       "alhadikhia"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -395,7 +249,8 @@
       "yaggababble"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -408,7 +263,8 @@
       "riot"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -423,7 +279,8 @@
       "vigormortis"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -448,7 +305,8 @@
       "vortox"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -496,7 +354,8 @@
       "lordoftyphon"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -510,7 +369,8 @@
       "lordoftyphon"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -535,7 +395,8 @@
       "riot"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -579,7 +440,8 @@
       "alhadikhia"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -604,7 +466,8 @@
       "leviathan"
     ],
     "scope": {
-      "team": "demon"
+      "team": "demon",
+      "abilityVaries": false
     }
   },
   {
@@ -638,7 +501,8 @@
     ],
     "scope": {
       "team": "demon",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -652,7 +516,8 @@
     ],
     "scope": {
       "team": "demon",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -665,7 +530,8 @@
     ],
     "scope": {
       "team": "demon",
-      "edition": "bmr"
+      "edition": "bmr",
+      "abilityVaries": false
     }
   },
   {
@@ -679,7 +545,8 @@
     ],
     "scope": {
       "team": "demon",
-      "edition": "snv"
+      "edition": "snv",
+      "abilityVaries": false
     }
   },
   {
@@ -977,27 +844,6 @@
     ]
   },
   {
-    "id": "dem-evil-poisoners",
-    "plain": "As an evil player, would you like your ability to poison other players?",
-    "styled": "Sponsor message! This episode's toxic moments are brought to you by Grandma's Mystery Tea. As an evil player, would you like your ability to poison other players?",
-    "voice": "The System AI",
-    "yes": [
-      "poisoner",
-      "widow",
-      "xaan",
-      "pukka",
-      "nodashii",
-      "lleech",
-      "vigormortis"
-    ],
-    "scope": {
-      "team": [
-        "minion",
-        "demon"
-      ]
-    }
-  },
-  {
     "id": "dem-evil-secret-words",
     "plain": "As an evil player, would you like to start the game knowing a secret word or phrase?",
     "styled": "Some of us start with nothing but our wits. Others get a secret, a word that matters more than anyone at the table realises. As an evil player, would you like to start the game knowing a secret word or phrase?",
@@ -1028,7 +874,8 @@
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   },
   {
@@ -1069,7 +916,6 @@
       "pithag",
       "psychopath",
       "assassin",
-      "wizard",
       "widow",
       "xaan",
       "marionette",
@@ -1174,7 +1020,8 @@
       "team": [
         "minion",
         "demon"
-      ]
+      ],
+      "abilityVaries": false
     }
   }
 ]
