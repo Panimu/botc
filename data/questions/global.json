@@ -120,11 +120,11 @@
   },
   {
     "id": "global-beauty-sleep",
-    "plain": "After the first night, can the Storyteller leave you alone every night?",
-    "styled": "A princess requires her BEAUTY SLEEP. If the Storyteller so much as looks my way on night three, there will be CONSEQUENCES. Do they leave you alone on later nights too?",
+    "plain": "Does your own ability ever give the Storyteller something to do on nights after the first?",
+    "styled": "A princess requires her BEAUTY SLEEP, but some of us are simply too important to be ignored. After the first night, does the Storyteller ever have to come and deal with your ability?",
     "voice": "Princess Donut",
     "yes": {
-      "otherNight": false
+      "otherNight": true
     }
   },
   {
