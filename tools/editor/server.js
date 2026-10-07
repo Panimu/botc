@@ -11,7 +11,7 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { execFile } from 'node:child_process';
 import { extname, join, normalize, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { checkQuestions, plainWording } from '../../scripts/validate.js';
+import { checkQuestions, checkTraits, plainWording, traitProblems } from '../../scripts/validate.js';
 import { BANNED_PATTERNS } from '../../scripts/build-site.js';
 
 const root = fileURLToPath(new URL('../../', import.meta.url));
@@ -19,7 +19,6 @@ const here = fileURLToPath(new URL('./', import.meta.url));
 const PORT = Number(process.env.PORT) || 8010;
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml' };
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)+$/;
-const TRAIT_PATTERN = /^[a-z][A-Za-z0-9]*$/;
 const KEY_ORDER = ['id', 'plain', 'styled', 'voice', 'yes', 'scope', 'options'];
 
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), 'utf8'));
@@ -122,6 +121,7 @@ async function renameQuestion({ file, id, newId }) {
   if (!question) return fail(404, `${id} isn't in ${file}`);
   question.id = newId;
   await writeJson(`data/questions/${file}`, questions);
+  await renameInQueue(id, newId);
   return ok();
 }
 
@@ -131,6 +131,7 @@ async function deleteQuestion({ file, id }) {
   const kept = questions.filter((q) => q.id !== id);
   if (kept.length === questions.length) return fail(404, `${id} isn't in ${file}`);
   await writeJson(`data/questions/${file}`, kept);
+  await dropFromQueue(id);
   return ok();
 }
 
@@ -138,7 +139,7 @@ async function rebuildAndCheck() {
   const rebuilt = await run(['scripts/build-characters.js']);
   if (rebuilt.code) return { failed: `build-characters.js failed:\n${rebuilt.output}` };
   const { characters, questions } = await loadQuestions();
-  return { errors: checkQuestions(questions, characters) };
+  return { errors: [...(await checkTraits(characters)), ...checkQuestions(questions, characters)] };
 }
 
 // Create or update one trait: { name, file, definition, yes, no (array, or null for a non-subjective trait), create }.
@@ -146,7 +147,6 @@ async function saveTrait({ name, file, definition, yes, no = null, create = fals
   const { traits, traitFiles } = await loadTraits();
   const characters = await readJson('data/characters.json');
   const ids = new Set(characters.map((c) => c.id));
-  if (!TRAIT_PATTERN.test(name ?? '')) return fail(422, 'A trait name is camelCase letters and digits, like "killsByDay".');
   if (create) {
     if (traits[name]) return fail(422, `There's already a trait called ${name}.`);
     if (characters.some((c) => name in c)) return fail(422, `${name} is already a character field.`);
@@ -155,16 +155,15 @@ async function saveTrait({ name, file, definition, yes, no = null, create = fals
   } else if (!traits[name]) {
     return fail(404, `Unknown trait ${name}`);
   }
-  if (!definition?.trim()) return fail(422, 'A trait needs a definition: what counts, and what doesn\'t.');
-  const unknown = [...yes, ...(no ?? [])].filter((id) => !ids.has(id));
-  if (unknown.length) return fail(422, `Unknown characters: ${unknown.join(', ')}`);
-  const both = (no ?? []).filter((id) => yes.includes(id));
-  if (both.length) return fail(422, `On both the yes and no lists: ${both.join(', ')}`);
+  const draft = { definition: typeof definition === 'string' ? definition.trim() : definition, yes, ...(no ? { no } : {}) };
+  // The same rules the upload validator applies, so nothing saved here can block an upload.
+  const problems = traitProblems(name, draft, ids);
+  if (problems.length) return fail(422, ...problems.map((p) => `${name}: ${p}.`));
   const target = create ? file : traits[name].file;
   const all = await readJson(`data/traits/${target}`);
   // Keep existing order where possible so diffs stay small.
   const keepOrder = (before, after) => [...(before ?? []).filter((id) => after.includes(id)), ...after.filter((id) => !(before ?? []).includes(id))];
-  const trait = { definition: definition.trim(), yes: keepOrder(all[name]?.yes, yes) };
+  const trait = { definition: draft.definition, yes: keepOrder(all[name]?.yes, yes) };
   if (no) trait.no = keepOrder(all[name]?.no, no);
   all[name] = trait;
   await writeJson(`data/traits/${target}`, all);
@@ -215,6 +214,10 @@ async function saveCharacter({ id, traits: wanted = {}, quote = null }) {
     if (state === 'yes') entry.yes.push(id);
     if (state === 'no' && Array.isArray(entry.no)) entry.no.push(id);
   }
+  // Check every changed trait against the validator's rules before writing any file.
+  const ids = new Set(characters.map((c) => c.id));
+  const problems = Object.keys(wanted).flatMap((name) => traitProblems(name, byFile.get(traits[name].file)[name], ids).map((p) => `${name}: ${p}.`));
+  if (problems.length) return fail(422, ...problems);
   for (const [file, content] of byFile) await writeJson(`data/traits/${file}`, content);
   if (quote) {
     const quotes = await readJson('data/share-quotes.json');
@@ -250,31 +253,115 @@ async function serveFile(res, base, path) {
 
 // The review list: questions to look at, each with its reasons. Kept in
 // .cache/review-queue.json (not committed) so agents and scripts can add to it:
-// { items: [{ id, reasons: [{ text, source, added }], reviewed, resolution }] }
+// { items: [{ id, reasons: [{ text, source, added }], reviewed, resolution, rev }] }
+// The editor never sends the whole list: it sends one change at a time, which is
+// applied to the file as it is now. Each entry's rev counts its changes; an update
+// carrying an older rev is refused, so a stale page can't overwrite newer work.
 const QUEUE = '.cache/review-queue.json';
+const today = () => new Date().toISOString().slice(0, 10);
+
 async function readQueue() {
   try {
     const queue = JSON.parse(await readFile(join(root, QUEUE), 'utf8'));
-    return { items: Array.isArray(queue.items) ? queue.items : [] };
+    const items = (Array.isArray(queue.items) ? queue.items : []).filter((i) => typeof i?.id === 'string').map((i) => ({
+      id: i.id,
+      reasons: (Array.isArray(i.reasons) ? i.reasons : []).filter((r) => r?.text).map((r) => ({ text: String(r.text), source: String(r.source ?? ''), added: String(r.added ?? '') })),
+      reviewed: Boolean(i.reviewed),
+      resolution: String(i.resolution ?? ''),
+      rev: Number.isInteger(i.rev) ? i.rev : 0,
+    }));
+    return { items };
   } catch {
     return { items: [] };
   }
 }
-async function writeQueue({ items }) {
-  if (!Array.isArray(items)) return fail(400, 'Expected { items: [...] }');
-  const clean = items.filter((i) => typeof i?.id === 'string').map((i) => ({
-    id: i.id,
-    reasons: (Array.isArray(i.reasons) ? i.reasons : []).filter((r) => r?.text).map((r) => ({ text: String(r.text), source: String(r.source ?? ''), added: String(r.added ?? '') })),
-    reviewed: Boolean(i.reviewed),
-    resolution: String(i.resolution ?? ''),
-  }));
-  await mkdir(join(root, '.cache'), { recursive: true });
-  await writeFile(join(root, QUEUE), JSON.stringify({ items: clean }, null, 2) + '\n');
-  return ok();
+
+// One change at a time: read the file, change it, write it, before the next starts.
+let queueLock = Promise.resolve();
+function changeQueue(change) {
+  const run = queueLock.then(async () => {
+    const queue = await readQueue();
+    const result = change(queue);
+    if (result.status === 200) {
+      await mkdir(join(root, '.cache'), { recursive: true });
+      await writeFile(join(root, QUEUE), JSON.stringify(queue, null, 2) + '\n');
+    }
+    return { status: result.status, body: { ...result.body, items: queue.items } };
+  });
+  queueLock = run.catch(() => {});
+  return run;
+}
+
+// Add questions, or new reasons for questions already listed: { entries: [{ id, text, source }] }.
+function addToQueue({ entries = [] }) {
+  return changeQueue((queue) => {
+    let added = 0;
+    for (const { id, text, source = 'you' } of entries) {
+      if (typeof id !== 'string' || !id) continue;
+      let item = queue.items.find((i) => i.id === id);
+      if (!item) {
+        item = { id, reasons: [], reviewed: false, resolution: '', rev: 0 };
+        queue.items.push(item);
+      }
+      if (text && !item.reasons.some((r) => r.text === text)) {
+        item.reasons.push({ text: String(text), source: String(source), added: today() });
+        item.reviewed = false;
+        item.rev++;
+        added++;
+      }
+    }
+    return { status: 200, body: { ok: true, added } };
+  });
+}
+
+// Change one entry: { id, rev, reviewed?, resolution?, removeReason? (its text) }.
+function updateQueueItem({ id, rev, reviewed, resolution, removeReason }) {
+  return changeQueue((queue) => {
+    const item = queue.items.find((i) => i.id === id);
+    if (!item) return { status: 404, body: { errors: [`${id} isn't on the review list any more.`] } };
+    if (item.rev !== rev) return { status: 409, body: { errors: [`${id} was changed elsewhere since this page loaded it. The list has been reloaded; make your change again.`] } };
+    if (reviewed !== undefined) item.reviewed = Boolean(reviewed);
+    if (resolution !== undefined) item.resolution = String(resolution);
+    if (removeReason !== undefined) item.reasons = item.reasons.filter((r) => r.text !== removeReason);
+    item.rev++;
+    return { status: 200, body: { ok: true } };
+  });
+}
+
+// Remove entries: { items: [{ id, rev }] }. Entries changed since (a newer rev) are kept.
+function removeFromQueue({ items = [] }) {
+  return changeQueue((queue) => {
+    const removed = [];
+    const kept = [];
+    for (const { id, rev } of items) {
+      const item = queue.items.find((i) => i.id === id);
+      if (!item) continue;
+      if (item.rev === rev) removed.push(id); else kept.push(id);
+    }
+    queue.items = queue.items.filter((i) => !removed.includes(i.id));
+    return { status: 200, body: { ok: true, removed, kept } };
+  });
+}
+
+// Keep the list in step when a question is renamed or deleted.
+function renameInQueue(id, newId) {
+  return changeQueue((queue) => {
+    const item = queue.items.find((i) => i.id === id);
+    if (item) { item.id = newId; item.rev++; }
+    return { status: 200, body: { ok: true } };
+  });
+}
+function dropFromQueue(id) {
+  return changeQueue((queue) => {
+    queue.items = queue.items.filter((i) => i.id !== id);
+    return { status: 200, body: { ok: true } };
+  });
 }
 
 const ACTIONS = {
-  '/api/review': writeQueue,
+  '/api/review/add': addToQueue,
+  '/api/review/update': updateQueueItem,
+  '/api/review/remove': removeFromQueue,
   '/api/save': saveQuestion,
   '/api/rename': renameQuestion,
   '/api/delete': deleteQuestion,

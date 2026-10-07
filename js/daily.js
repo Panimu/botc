@@ -259,6 +259,30 @@ export function replay(game, actions) {
   return game;
 }
 
+// A hunt's steps for the result chart: characters left and points spent after
+// each saved action, replayed under the hunt's own rules. Pass the session's par:
+// without it the replay uses the old rules, where a third wrong guess loses, and
+// a hunt won on a fourth guess would chart as a loss.
+// Guess steps are labelled with the guessed character's id.
+export function huntSteps({ characters, questions, date, par = null, actions }) {
+  const game = new DailyGame({ characters, questions, date, par });
+  const steps = [{ label: 'start', left: game.pool.length, points: 0, kind: 'start' }];
+  let asked = 0;
+  for (const action of actions) {
+    if (game.status !== 'playing') break;
+    if (action.ask) {
+      game.ask(action.ask);
+      asked++;
+      steps.push({ label: String(asked), left: game.pool.length, points: game.score, kind: 'ask' });
+    } else if (action.guess) {
+      const right = action.guess === game.target;
+      game.guess(action.guess);
+      steps.push({ label: action.guess, left: right ? 1 : game.pool.length, points: game.score, kind: right ? 'found' : 'guess' });
+    }
+  }
+  return steps;
+}
+
 // Streak bookkeeping over { date: { won, score, par } } results, walking day by
 // day. Every recorded hunt counts, from before budgets too, so existing streaks
 // carried over. A loss or a missed day (any day but today) ends a streak; there

@@ -2,7 +2,7 @@
 // Game rules live in js/daily.js; this file renders, stores progress and
 // handles the extras (par, charts, archive, streak backup, install, reminder).
 import {
-  DailyGame, replay, streaks, streakLine, tier, TIERS, utcDate, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
+  DailyGame, replay, huntSteps, streaks, streakLine, tier, TIERS, utcDate, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES,
 } from './daily.js?v=dev';
 import { createCircle } from './circle.js?v=dev';
@@ -273,23 +273,11 @@ function start(characters, questions, clockOffset, shareQuotes) {
   }
 
   // Characters left after each action, and points spent so far, for the timeline chart.
+  // Characters left after each action, and points spent so far, for the timeline
+  // chart: replayed with the session's par so the chart follows the same rules.
   function timelineSteps() {
-    const replayGame = new DailyGame({ characters, questions, date });
-    const steps = [{ label: 'start', left: replayGame.pool.length, points: 0, kind: 'start' }];
-    let asked = 0;
-    for (const action of actions) {
-      if (replayGame.status !== 'playing') break;
-      if (action.ask) {
-        replayGame.ask(action.ask);
-        asked++;
-        steps.push({ label: String(asked), left: replayGame.pool.length, points: replayGame.score, kind: 'ask' });
-      } else if (action.guess) {
-        const right = action.guess === replayGame.target;
-        replayGame.guess(action.guess);
-        steps.push({ label: byId.get(action.guess).name, left: right ? 1 : replayGame.pool.length, points: replayGame.score, kind: right ? 'found' : 'guess' });
-      }
-    }
-    return steps;
+    return huntSteps({ characters, questions, date, par: game.par, actions })
+      .map((step) => (step.kind === 'guess' || step.kind === 'found' ? { ...step, label: byId.get(step.label).name } : step));
   }
 
   // The page address without unrelated parameters or fragments, keeping a

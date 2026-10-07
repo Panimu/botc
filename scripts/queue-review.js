@@ -1,5 +1,6 @@
 // Adds findings to the editor's review list (.cache/review-queue.json), merging
 // with what's there: a question already listed gets the new reason added.
+// Don't run it while the editor is saving review changes: both write the same file.
 //
 //   node scripts/queue-review.js <findings.json> [more.json ...] [--source "rules check"]
 //
@@ -27,13 +28,15 @@ for (const file of files) {
     const text = finding.confidence ? `[${finding.confidence}] ${finding.reason}` : finding.reason;
     let item = queue.items.find((i) => i.id === finding.id);
     if (!item) {
-      item = { id: finding.id, reasons: [], reviewed: false, resolution: '' };
+      item = { id: finding.id, reasons: [], reviewed: false, resolution: '', rev: 0 };
       queue.items.push(item);
       newItems++;
     }
     if (!item.reasons.some((r) => r.text === text)) {
       item.reasons.push({ text, source, added });
       item.reviewed = false;
+      // A new revision, so an editor page holding the old one can't overwrite this.
+      item.rev = (Number.isInteger(item.rev) ? item.rev : 0) + 1;
       newReasons++;
     }
   }

@@ -130,26 +130,45 @@ export function typeMix(questions, characters) {
   return { mixedYes, mixedBoth };
 }
 
+// The rules for one trait, shared with the editor so it can refuse a draft before
+// writing it. `ids` is the set of known character ids.
+export const TRAIT_NAME = /^[a-z][A-Za-z]+$/;
+export const TRAIT_MIN_DEFINITION = 20;
+export const TRAIT_MIN_YES = 2;
+
+export function traitProblems(name, trait, ids) {
+  const problems = [];
+  if (!TRAIT_NAME.test(name ?? '')) problems.push('the name must be camelCase letters only, like "killsByDay" (no digits or symbols)');
+  if (typeof trait?.definition !== 'string' || trait.definition.trim().length < TRAIT_MIN_DEFINITION) problems.push(`the definition needs at least ${TRAIT_MIN_DEFINITION} characters: say what counts, and what doesn't`);
+  if (!Array.isArray(trait?.yes) || trait.yes.length < TRAIT_MIN_YES) { problems.push(`the yes list needs at least ${TRAIT_MIN_YES} characters`); return problems; }
+  const unknown = trait.yes.filter((id) => !ids.has(id));
+  if (unknown.length) problems.push(`unknown characters in yes: ${unknown.join(', ')}`);
+  const dupes = trait.yes.filter((id, i) => trait.yes.indexOf(id) !== i);
+  if (dupes.length) problems.push(`listed twice in yes: ${[...new Set(dupes)].join(', ')}`);
+  if (trait.no !== undefined && trait.no !== null) {
+    if (!Array.isArray(trait.no)) problems.push('"no" must be a list');
+    else {
+      const unknownNo = trait.no.filter((id) => !ids.has(id));
+      if (unknownNo.length) problems.push(`unknown characters in no: ${unknownNo.join(', ')}`);
+      const both = trait.no.filter((id) => trait.yes.includes(id));
+      if (both.length) problems.push(`on both the yes and no lists: ${both.join(', ')}`);
+    }
+  }
+  return problems;
+}
+
 export async function checkTraits(characters) {
   const errors = [];
   const ids = new Set(characters.map((c) => c.id));
   const dir = new URL('../data/traits/', import.meta.url);
+  const seen = new Map();
   for (const file of (await readdir(dir)).filter((f) => f.endsWith('.json'))) {
     let traits;
     try { traits = JSON.parse(await readFile(new URL(file, dir), 'utf8')); } catch (e) { errors.push(`data/traits/${file}: invalid JSON (${e.message})`); continue; }
     for (const [name, trait] of Object.entries(traits)) {
-      if (!/^[a-z][A-Za-z]+$/.test(name)) errors.push(`Trait ${name} (${file}): use a camelCase name`);
-      if (typeof trait.definition !== 'string' || trait.definition.length < 20) errors.push(`Trait ${name} (${file}): needs a precise definition`);
-      if (!Array.isArray(trait.yes) || trait.yes.length < 2) { errors.push(`Trait ${name} (${file}): needs a yes list of at least 2 characters`); continue; }
-      for (const id of trait.yes) if (!ids.has(id)) errors.push(`Trait ${name} (${file}): unknown character "${id}"`);
-      if (trait.no !== undefined) {
-        if (!Array.isArray(trait.no)) errors.push(`Trait ${name} (${file}): "no" must be a list`);
-        else {
-          for (const id of trait.no) if (!ids.has(id)) errors.push(`Trait ${name} (${file}): unknown character "${id}" in no`);
-          const both = trait.no.filter((id) => trait.yes.includes(id));
-          if (both.length) errors.push(`Trait ${name} (${file}): ${both.join(', ')} listed as both yes and no`);
-        }
-      }
+      for (const problem of traitProblems(name, trait, ids)) errors.push(`Trait ${name} (${file}): ${problem}`);
+      if (seen.has(name)) errors.push(`Trait ${name} (${file}): also defined in ${seen.get(name)}`);
+      seen.set(name, file);
       if (!characters.every((c) => name in c)) errors.push(`Trait ${name} (${file}): not in data/characters.json yet; run node scripts/build-characters.js`);
     }
   }

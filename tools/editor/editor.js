@@ -258,7 +258,7 @@ function renderReviewBox() {
   $('review-reasons').replaceChildren(...(item.reasons.length ? item.reasons.map((r, index) => {
     const li = el('li', '', r.text);
     li.append(' ', el('span', 'src', [r.source, r.added].filter(Boolean).join(', ')));
-    const remove = button('✕', () => { item.reasons.splice(index, 1); saveReview(); renderReviewList(); }, 'quiet');
+    const remove = button('✕', () => reviewChange('/api/review/update', { id: item.id, rev: item.rev, removeReason: r.text }), 'quiet');
     remove.title = 'Remove this reason';
     li.append(remove);
     return li;
@@ -348,54 +348,37 @@ function step(delta) {
 }
 
 // ---- Review list ---------------------------------------------------------------
-// Kept by the server in .cache/review-queue.json, so agents and scripts can add to it too.
+// Kept by the server in .cache/review-queue.json, so agents and scripts can add to
+// it too. The page never sends the whole list: each change goes as a single change,
+// checked against the entry's revision, and the server answers with the fresh list.
 
 const reviewItem = (id) => state.review.items.find((i) => i.id === id);
-const today = () => new Date().toISOString().slice(0, 10);
 
-let reviewSave = Promise.resolve();
-function saveReview() {
-  const snapshot = clone(state.review);
-  reviewSave = reviewSave.then(() => api('/api/review', snapshot));
-  return reviewSave;
+// Take the server's fresh list; report a refused change.
+async function reviewChange(path, payload) {
+  const { ok, body } = await api(path, payload);
+  if (Array.isArray(body.items)) state.review = { items: body.items };
+  renderReviewList();
+  if (!ok) setStatus((body.errors ?? ['The review list could not be updated.']).join(' '), 'bad');
+  return ok;
 }
 
-async function loadReview() {
-  const { body } = await api('/api/review');
-  state.review = { items: body.items ?? [] };
-  // One-time move of a list this browser kept before reasons existed.
-  try {
-    const old = JSON.parse(localStorage.getItem(REVIEW_KEY));
-    if (old?.queue?.length) {
-      for (const id of old.queue.filter((x) => !reviewItem(x))) {
-        const item = addToReview(id, 'Queued before review reasons were kept.', 'you');
-        if (old.reviewed?.includes(id)) item.reviewed = true;
-      }
-      await saveReview();
-    }
-    localStorage.removeItem(REVIEW_KEY);
-  } catch {}
-}
-
-// Fetch the latest list from disk (agents or another tab may have added to it).
 async function refreshReview() {
-  await reviewSave;
   const { body } = await api('/api/review');
   if (Array.isArray(body.items)) state.review = { items: body.items };
 }
 
-// Adds a question (or another reason for it) to the list.
-function addToReview(id, text, source = 'you') {
-  let item = reviewItem(id);
-  if (!item) {
-    item = { id, reasons: [], reviewed: false, resolution: '' };
-    state.review.items.push(item);
-  }
-  if (text && !item.reasons.some((r) => r.text === text)) {
-    item.reasons.push({ text, source, added: today() });
-    item.reviewed = false;
-  }
-  return item;
+async function loadReview() {
+  await refreshReview();
+  // One-time move of a list this browser kept before reasons existed.
+  try {
+    const old = JSON.parse(localStorage.getItem(REVIEW_KEY));
+    if (old?.queue?.length) {
+      const entries = old.queue.filter((x) => !reviewItem(x)).map((id) => ({ id, text: 'Queued before review reasons were kept.', source: 'you' }));
+      if (entries.length) await reviewChange('/api/review/add', { entries });
+    }
+    localStorage.removeItem(REVIEW_KEY);
+  } catch {}
 }
 
 // Each line of the text: every known question id in it, with the rest of the line as its reason.
@@ -415,10 +398,16 @@ function entriesIn(text, fallback) {
 async function askForReason(id) {
   const answer = await ask({ title: `Why review ${id}?`, fields: [{ name: 'reason', label: 'Reason', type: 'textarea' }], ok: 'Add' });
   if (!answer) return;
-  await refreshReview();
-  addToReview(id, answer.reason.trim() || 'No reason given.', 'you');
-  await saveReview();
+  await reviewChange('/api/review/add', { entries: [{ id, text: answer.reason.trim() || 'No reason given.', source: 'you' }] });
+}
+
+// Removes entries, but only as they were when this page last saw them.
+async function removeFromReview(items) {
+  if (!items.length) return;
+  const { ok, body } = await api('/api/review/remove', { items: items.map((i) => ({ id: i.id, rev: i.rev })) });
+  if (Array.isArray(body.items)) state.review = { items: body.items };
   renderReviewList();
+  if (ok && body.kept?.length) setStatus(`Kept ${plural(body.kept.length, 'entry', 'entries')} that changed elsewhere since this page loaded them: ${body.kept.join(', ')}.`, 'bad');
 }
 
 // ---- Views ---------------------------------------------------------------------
@@ -742,6 +731,7 @@ async function saveQuestion() {
   if (!ok) { setStatus(`Not saved: ${(body.errors ?? ['unknown error']).map((e) => e.replace(`Question ${id}: `, '')).join('; ')}`, 'bad'); return; }
   state.newQuestions.delete(id);
   state.qDrafts.delete(id);
+  await refreshReview();
   await load();
   openQuestion(id);
   setStatus(isNew ? `Created in data/questions/${qEntry(id).file}.` : `Saved to data/questions/${qEntry(id).file}.`, 'good');
@@ -838,8 +828,7 @@ async function renameQuestion() {
   if (problem) { setStatus(problem, 'bad'); return; }
   const { ok, body } = await api('/api/rename', { file: qEntry(id).file, id, newId });
   if (!ok) { setStatus(`Not renamed: ${body.errors.join('; ')}`, 'bad'); return; }
-  const item = reviewItem(id);
-  if (item) { item.id = newId; saveReview(); }
+  await refreshReview();
   state.history.delete(id);
   await load();
   openQuestion(newId);
@@ -1172,12 +1161,10 @@ $('validate').addEventListener('click', async () => {
 $('review-load').addEventListener('click', async () => {
   const entries = entriesIn($('review-input').value, $('review-default-reason').value.trim());
   if (!entries.length) { $('review-progress').textContent = 'No known question ids found in that text.'; return; }
-  await refreshReview();
-  for (const { id, reason } of entries) addToReview(id, reason, 'you');
-  await saveReview();
-  $('review-input').value = '';
-  renderReviewList();
-  setStatus(`Added ${plural(new Set(entries.map((e) => e.id)).size, 'question')} to the review list.`, 'good');
+  if (await reviewChange('/api/review/add', { entries: entries.map(({ id, reason }) => ({ id, text: reason, source: 'you' })) })) {
+    $('review-input').value = '';
+    setStatus(`Added ${plural(new Set(entries.map((e) => e.id)).size, 'question')} to the review list.`, 'good');
+  }
 });
 $('review-file').addEventListener('change', async (event) => {
   const file = event.target.files[0];
@@ -1187,38 +1174,31 @@ $('review-file').addEventListener('change', async (event) => {
   event.target.value = '';
 });
 for (const id of ['review-source', 'review-hide-done']) $(id).addEventListener('input', renderReviewList);
-$('review-clear-done').addEventListener('click', async () => {
-  await refreshReview();
-  state.review.items = state.review.items.filter((i) => !i.reviewed);
-  await saveReview();
-  renderReviewList();
-});
+$('review-clear-done').addEventListener('click', () => removeFromReview(state.review.items.filter((i) => i.reviewed)));
 $('review-clear').addEventListener('click', async () => {
   const answer = await ask({ title: 'Clear the whole review list?', text: `This removes all ${state.review.items.length} entries and their notes.`, ok: 'Clear all', danger: true });
-  if (!answer) return;
-  state.review.items = [];
-  await saveReview();
-  renderReviewList();
+  if (answer) await removeFromReview(state.review.items);
 });
 $('q-review-add').addEventListener('click', () => askForReason(state.view.id));
 $('review-add-reason').addEventListener('click', () => askForReason(state.view.id));
-$('review-remove').addEventListener('click', async () => {
-  await refreshReview();
-  state.review.items = state.review.items.filter((i) => i.id !== state.view.id);
-  await saveReview();
-  renderReviewList();
-});
-$('reviewed').addEventListener('change', async () => {
-  await refreshReview();
-  reviewItem(state.view.id).reviewed = $('reviewed').checked;
-  await saveReview();
-  renderReviewList();
-});
+$('review-remove').addEventListener('click', () => removeFromReview([reviewItem(state.view.id)].filter(Boolean)));
+// Entry changes go one at a time, so each carries the revision the last one returned.
+let reviewSaves = Promise.resolve();
+function queueReviewUpdate(id, change) {
+  reviewSaves = reviewSaves.then(() => {
+    const item = reviewItem(id);
+    return item ? reviewChange('/api/review/update', { id, rev: item.rev, ...change }) : null;
+  });
+}
+$('reviewed').addEventListener('change', () => queueReviewUpdate(state.view.id, { reviewed: $('reviewed').checked }));
+// The decision note saves as you type (debounced).
 let resolutionTimer = null;
 $('review-resolution').addEventListener('input', () => {
-  reviewItem(state.view.id).resolution = $('review-resolution').value;
+  const id = state.view.id;
   clearTimeout(resolutionTimer);
-  resolutionTimer = setTimeout(saveReview, 500);
+  resolutionTimer = setTimeout(() => {
+    queueReviewUpdate(id, { resolution: $('review-resolution').value });
+  }, 500);
 });
 
 document.addEventListener('keydown', (event) => {

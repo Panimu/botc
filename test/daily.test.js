@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
-  par, parRun, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
+  par, parRun, huntSteps, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
   OVER_PAR_QUESTIONS, GUESS_BUDGET, HUNT_MIN_SIDE, tier, streakLine, TIERS,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
@@ -367,4 +367,34 @@ test('hunt offers never include two questions that split the remaining character
     }
   }
   assert.ok(turns > 150);
+});
+
+test('a hunt won on a fourth guess (paid from the question budget) charts as a win, with the session par', () => {
+  let checked = 0;
+  for (let day = 0; day < 30 && checked < 3; day++) {
+    const date = addDays(LAUNCH_DATE, day);
+    const p = par(date, characters, questions);
+    const game = new DailyGame({ characters, questions, date, par: p });
+    const actions = [];
+    while (game.status === 'playing' && game.pool.length > GUESS_THRESHOLD) { const id = game.offers[0].id; actions.push({ ask: id }); game.ask(id); }
+    const wrong = game.pool.filter((id) => id !== game.target);
+    if (game.status !== 'playing' || wrong.length < GUESS_BUDGET || game.questionsLeft < 1) continue;
+    for (const id of wrong.slice(0, GUESS_BUDGET)) { actions.push({ guess: id }); game.guess(id); }
+    assert.equal(game.status, 'playing', 'three wrong guesses no longer lose');
+    actions.push({ guess: game.target });
+    game.guess(game.target);
+    assert.equal(game.status, 'won');
+
+    const steps = huntSteps({ characters, questions, date, par: p, actions });
+    assert.equal(steps.length, actions.length + 1, 'every action is charted');
+    assert.equal(steps.at(-1).kind, 'found');
+    assert.equal(steps.at(-1).left, 1);
+    assert.equal(steps.at(-1).points, game.score);
+    assert.equal(steps.filter((s) => s.kind === 'guess').length, GUESS_BUDGET);
+    // The old bug: without the par the replay stops at the third wrong guess.
+    const oldRules = huntSteps({ characters, questions, date, actions });
+    assert.ok(oldRules.at(-1).left > 1);
+    checked++;
+  }
+  assert.ok(checked > 0, 'found a day to test');
 });

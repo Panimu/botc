@@ -91,3 +91,16 @@ test('the validator rejects a second question with the same split, even asked th
   assert.ok(errors.some((e) => e.includes('Question two') && e.includes('splits exactly like one')));
   assert.ok(errors.some((e) => e.includes('Question three') && e.includes('splits exactly like one')));
 });
+
+test('trait rules shared with the editor reject what the upload validator rejects', async () => {
+  const { traitProblems } = await import('../scripts/validate.js');
+  const ids = new Set(['imp', 'vortox', 'chef']);
+  const definition = 'A character that is only a test of the rules.';
+  assert.deepEqual(traitProblems('testTrait', { definition, yes: ['imp', 'vortox'], no: ['chef'] }, ids), []);
+  assert.ok(traitProblems('kills2', { definition, yes: ['imp', 'vortox'] }, ids).some((p) => p.includes('camelCase')));
+  assert.ok(traitProblems('testTrait', { definition: 'Too short.', yes: ['imp', 'vortox'] }, ids).some((p) => p.includes('definition')));
+  assert.ok(traitProblems('testTrait', { definition, yes: [] }, ids).some((p) => p.includes('yes list')));
+  assert.ok(traitProblems('testTrait', { definition, yes: 'imp' }, ids).some((p) => p.includes('yes list')));
+  assert.ok(traitProblems('testTrait', { definition, yes: ['imp', 'nobody'] }, ids).some((p) => p.includes('nobody')));
+  assert.ok(traitProblems('testTrait', { definition, yes: ['imp', 'vortox'], no: ['imp'] }, ids).some((p) => p.includes('both')));
+});
