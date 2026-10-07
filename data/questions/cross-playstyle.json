@@ -514,7 +514,7 @@
     "styled": "Wouldn't that be nice? A power with no hidden trapdoor under it. I've met maybe three in my life and I'm suspicious of all of them. Is your ability free of any drawback for you or your side?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "harmsOwnTeam": false
     }

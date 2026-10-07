@@ -59,8 +59,8 @@
     "plain": "Is your ability meant to help the town, whatever it costs you?",
     "styled": "No secret sabotage, no curse in the fine print. Your power exists to help the good guys, even if it gets you killed. I know, it's suspicious. Is that you anyway?",
     "voice": "Katia",
-    "quality": 5,
-    "complexity": 4,
+    "quality": 6,
+    "complexity": 6,
     "yes": {
       "team": "townsfolk"
     }
@@ -115,7 +115,7 @@
     "styled": "Fresh off the production line, barely tested, possibly unsafe! Legal says I have to stop saying 'possibly'. Are you one of the shiny experimental models?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 6,
+    "complexity": 4,
     "yes": {
       "edition": "carousel",
       "team": [
@@ -143,8 +143,8 @@
     "plain": "Does your own ability ever give the Storyteller something to do on nights after the first?",
     "styled": "A princess requires her BEAUTY SLEEP, but some of us are simply too important to be ignored. After the first night, does the Storyteller ever have to come and deal with your ability?",
     "voice": "Princess Donut",
-    "quality": 5,
-    "complexity": 6,
+    "quality": 3,
+    "complexity": 5,
     "yes": {
       "otherNight": true
     }
@@ -254,7 +254,7 @@
     "styled": "Point at someone! Go on! The System has prepared a delightful consequence for whoever you pick. Does your ability involve choosing players?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 2,
+    "complexity": 1,
     "yes": [
       "sailor",
       "preacher",
@@ -337,8 +337,8 @@
     "plain": "Does your ability talk about dying, death or killing?",
     "styled": "DEATH! GLORIOUS DEATH! Is it written into your very being, mortal? Does your ability speak of dying, the dead, or killing?",
     "voice": "Samantha",
-    "quality": 5,
-    "complexity": 3,
+    "quality": 6,
+    "complexity": 2,
     "yes": [
       "grandmother",
       "pixie",
@@ -426,7 +426,7 @@
     "plain": "Does your ability's text use the word 'good' or 'evil'?",
     "styled": "Some abilities are subtle. Yours apparently comes with a label maker that only prints two words. Does your ability actually say 'good' or 'evil'?",
     "voice": "Carl",
-    "quality": 5,
+    "quality": 4,
     "complexity": 3,
     "yes": {
       "aboutAlignment": true
