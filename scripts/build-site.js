@@ -6,6 +6,7 @@
 //
 // Authoring data keeps `voice` (who each styled line imitates); it is never published.
 import { cp, mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { join, extname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
@@ -72,6 +73,9 @@ async function writeSharePages(characters) {
   await mkdir(join(out, 'you'), { recursive: true });
   for (const character of characters) {
     const name = escapeHtml(character.name);
+    // Stamped with the card's own fingerprint, not the release, so these pages only
+    // change (and need uploading) when the card does.
+    const card = createHash('sha1').update(await readFile(join(root, `resources/og/characters/${character.id}.jpg`))).digest('hex').slice(0, 8);
     const page = `<!doctype html>
 <html lang="en">
 <head>
@@ -85,7 +89,7 @@ async function writeSharePages(characters) {
   <meta property="og:title" content="I'm the ${name}">
   <meta property="og:description" content="Which Blood on the Clocktower character are you? Answer yes or no until one is left.">
   <meta property="og:url" content="${SITE}you/${character.id}.html">
-  <meta property="og:image" content="${SITE}resources/og/characters/${character.id}.jpg?v=${version}">
+  <meta property="og:image" content="${SITE}resources/og/characters/${character.id}.jpg?v=${card}">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
