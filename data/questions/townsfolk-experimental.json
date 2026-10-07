@@ -5,7 +5,7 @@
     "styled": "Some of you want spreadsheets. Some of you want a single name on a napkin that says 'this one's fine'. No role, no numbers, no fuss. Would you like that one lonely good name to be all you start with?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "steward"
     ]
@@ -16,7 +16,7 @@
     "styled": "Congratulations, contestant! Your starter pack contains TWO certified Not-The-Demon people! Who the Demon actually is? Sold separately. Warranty void if they turn out to be Minions. Do you want those two names, and no Demon, on night one?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "knight"
     ]
@@ -27,7 +27,7 @@
     "styled": "There is something noble about standing up for the town and saying: not these two, not the big bad. Even knowing they could still be working for it. As one of the good guys, would you like to be handed that pair, already cleared of being the Demon, without knowing they are good?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "knight"
     ],
@@ -52,7 +52,7 @@
     "styled": "Left or right. That's your whole clue. No name, no number, just a finger pointing vaguely round the table. Would you like to begin with nothing but the direction of the nearest evil?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "shugenja"
     ],
@@ -77,7 +77,7 @@
     "styled": "Here's the move: you swan around claiming somebody else's job, loudly, and when they kick the bucket you get to keep their toys. Delightfully cheeky. Would you play pretend for an inheritance like that?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "pixie"
     ]
@@ -88,7 +88,7 @@
     "styled": "One target to start. Bag it, and a fresh wanted poster slides under your door that night. Rinse, repeat, stack the bodies. Does a rolling hit list of evil players sound like your kind of job?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "bountyhunter"
     ],
@@ -102,7 +102,7 @@
     "styled": "Patch note: when you're in the game, one cheerful Townsfolk has quietly switched teams before the doors even open. Corruption, baked right in! Do you want to be the reason one of the townsfolk is rotten?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "bountyhunter"
     ]
@@ -113,7 +113,7 @@
     "styled": "No facts, no roles, just a nightly nudge: go chat to that one. The person running the show thinks they're important to you. Would you like that kind of nightly pointer?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "highpriestess"
     ],
@@ -127,7 +127,7 @@
     "styled": "Facts are cheap, honey. A real conversation, the kind where the mask slips? That's where the gold is. Would you take a nudge toward the right person over any hard information at all?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "highpriestess"
     ]
@@ -138,7 +138,7 @@
     "styled": "Townsfolk one night, Outsider the next, maybe a Minion after that. Never the same kind twice in a row. It's a sampler platter of people! Do you want that nightly variety pack of names?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "balloonist"
     ],
@@ -180,7 +180,7 @@
     "styled": "Imagine you're not the only one wearing your outfit. Two more might turn up, and one of you is sloshed and doesn't know it. Could be you! Could that kind of crowded wardrobe happen to you?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "villageidiot"
     ],
@@ -194,7 +194,7 @@
     "styled": "You sit on the throne and wait. Nothing comes until the graveyard's at least as crowded as the room. Then the secrets roll in. Would you be happy with information that only begins once the dead catch up?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "king"
     ],
@@ -233,7 +233,7 @@
     "styled": "You are on the side of the angels, technically. And yet every night you get to point at somebody and think murderous thoughts. As a good player, would you like to pick someone to kill each night?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "lycanthrope"
     ],
@@ -247,7 +247,7 @@
     "styled": "One speech. Every Minion named, every Demon named, all in public, all correct, and the good team wins on the spot. Talk about a mic drop! Would you like to win by calling out the entire evil team?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "alsaahir"
     ]
@@ -258,7 +258,7 @@
     "styled": "Right, so you're on the good team, and you get to reach into the evil team's toolbox and swap the parts. Pick their Demon. Or pick their Minions. Would you like that kind of tinkering power from the good side?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "engineer"
     ],
@@ -283,7 +283,7 @@
     "styled": "Cold streets, a lantern, and one door you knock on to say 'it's me, I'm real'. You learn nothing, mind. You just get believed. Would you take being trusted by one person over any information of your own?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "nightwatchman"
     ],
@@ -311,7 +311,7 @@
     "styled": "Some folks want a yes or no. Me? I would rather sit by the river with someone who has seen it all and let them tell me, just the once, where the big fish are. Would you take one bit of tailored advice over one direct answer?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "fisherman"
     ]
@@ -322,7 +322,7 @@
     "styled": "Day one. You nominate, the town executes, and the Demon has to sit on its claws that night. A royal decree with real bite, darling! Would you like your first day's nomination to buy the town a peaceful night?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "princess"
     ],
@@ -336,7 +336,7 @@
     "styled": "Most abilities simmer. Yours explodes on day one and then it's done. Blink and the audience misses it! Do you want an ability you can only use on your first day?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "princess",
       "juggler"
@@ -362,7 +362,7 @@
     "styled": "Welcome, contestant! Your ability is: [REDACTED]. Please guess daily. Accuracy feedback provided. Refunds unavailable. Would you like to play without knowing your own power, guessing at it every day?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "amnesiac"
     ]
@@ -384,7 +384,7 @@
     "styled": "You're quietly devoted to someone important. If the Demon gets them, you see exactly who did it, clear as a stained-glass window. Would you like a royal murder to unmask the Demon for you?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "choirboy"
     ]
@@ -395,7 +395,7 @@
     "styled": "Here's the grim bit. You don't learn a thing until the Demon murders a specific somebody who isn't you. Then the lights come on. Would you like your clue to come from someone else being killed by the Demon?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "choirboy"
     ],
@@ -423,7 +423,7 @@
     "styled": "Abracadabra! The Demon thinks you're a Minion, the Minions think you're the Demon, and nobody's quite sure who's who. As a good player, do you want to fool the evil team into thinking you're on their side?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "magician"
     ]
@@ -434,7 +434,7 @@
     "styled": "While you breathe, the villains wander about in the fog, unable to find each other. Bad teamwork for them, great ratings for us! Would you like your life to keep the evil team strangers to one another?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "poppygrower"
     ]
@@ -445,7 +445,7 @@
     "styled": "The moment you drop, the fog lifts and every Minion and Demon suddenly sees their teammates. Your corpse is their family reunion. Is your death what brings the evil team together?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "poppygrower"
     ],
@@ -470,7 +470,7 @@
     "styled": "Most people string up their neighbours. You'd rather string up the one running the show, because if the Storyteller hangs, the good team wins. YES! MORE ROPE! Would you like good to win if the town executes the Storyteller?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "atheist"
     ],
@@ -484,7 +484,7 @@
     "styled": "Most Townsfolk powers are safe as houses. Yours comes with a little skull printed on the box. Achievement pending: Hoist By Own Petard! Could the ability written on your own token be the thing that kills you?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "gambler",
       "acrobat",
@@ -503,7 +503,7 @@
     "styled": "Location, location, location! For some of the town, the folks on either elbow are the whole story. Does your ability revolve around your two immediate neighbours?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "empath",
       "cultleader",
@@ -520,7 +520,7 @@
     "styled": "Every night you choose who gets tucked in safe and sound while the monsters prowl. It's a lot of responsibility, and it matters. Would you like to pick people to protect from death each night?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "monk",
       "innkeeper"
@@ -536,7 +536,7 @@
     "styled": "Some of you are just tough to put down. No choosing, no praying, the rules simply refuse to let the night take you easily. Is your ability a built-in shield against dying at night?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "soldier",
       "sailor",
@@ -554,7 +554,7 @@
     "styled": "One bullet. You decide when to fire it. Not on day one because the rules say so, not when somebody nominates you, but when YOU feel like it. Is your ability a one-shot you can hold onto until the right moment?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "engineer",
       "nightwatchman",
@@ -577,7 +577,7 @@
     "styled": "Stand up! Speak up! The whole circle stops to watch your big public moment: a shot, a guess, a juicy statement, a call to arms. Darling, does your ability make you take centre stage like that in daylight?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "cultleader",
       "gossip",
@@ -596,7 +596,7 @@
     "styled": "While everyone else is yelling, you sneak off for a quiet word with management. Very exclusive. Very VIP. Does your ability send you for private daytime chats with the Storyteller?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "savant",
       "artist",
@@ -613,7 +613,7 @@
     "styled": "Every night you pick your company and somebody in the party winds up legless because of it. Might be them, might be you, might be the other one. Cheers! Do you like a nightly choice that gets someone drunk?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "sailor",
       "innkeeper"
@@ -629,7 +629,7 @@
     "styled": "Dying is usually the end of your usefulness. Not for you! Death is when the goodies arrive. Post-mortem loot drop, baby! Is your ability something you only get to enjoy after you die?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "ravenkeeper",
       "sage",
@@ -646,7 +646,7 @@
     "styled": "Some starting clues have names on them. Yours is a number, or an arrow. Cold, abstract, maddening. Do you start with a count or a direction instead of any names?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "chef",
       "clockmaker",
@@ -672,7 +672,7 @@
     "styled": "You've been handed some names. The question is whether there's a snake in the basket. For one of you, there definitely is. Is one of your starting names certain to be evil?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "noble"
     ],
@@ -688,7 +688,7 @@
     "styled": "Total certainty! No Minions sneaking in, no fine print! Everyone you start knowing is a genuine, verified goodie! Can you trust every name you begin with to be good?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "steward"
     ],
@@ -704,7 +704,7 @@
     "styled": "Forget good and evil in general. Your information is all about one particular monster, and who it definitely isn't. Is your starting knowledge specifically about the Demon?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "knight"
     ],
@@ -720,7 +720,7 @@
     "styled": "When YOU join the cast, the whole production may get rewritten! Extra characters, missing villains, someone switching teams before the show even starts! Can your mere presence change the setup of the game?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "bountyhunter",
       "balloonist",
@@ -742,7 +742,7 @@
     "styled": "Forget slowly grinding down the opposition. Some of you have a big red button marked VICTORY. Ratings gold! Could your ability end the game in your team's favour all by itself?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "cultleader",
       "alsaahir",
@@ -761,7 +761,7 @@
     "styled": "Why settle for your own powers when somebody else's are RIGHT THERE? Borrowing is just stealing with better manners. Would you like to use another character's ability as if it were yours?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "pixie",
       "alchemist",
@@ -778,7 +778,7 @@
     "styled": "YES! A Townsfolk with a KILL BUTTON! Point at someone and let them have it! Can you choose exactly who your ability tries to kill?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "slayer",
       "lycanthrope"
@@ -794,7 +794,7 @@
     "styled": "VOTE! VOTE AGAIN! RAWR! This dinosaur has discovered democracy and would like more of it. Do you want to be able to vote twice on a single nomination?",
     "voice": "Mongo",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "banshee"
     ],
@@ -809,7 +809,7 @@
     "styled": "Some of you only get spotted if you're careless. One of you is spotted the instant the lights go down, no matter what. Does the Demon automatically know who you are?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "king"
     ],
@@ -826,7 +826,7 @@
     "styled": "Everybody else got an instruction manual. You got a blank page and a shrug. Are you left in the dark about what your own ability does?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "amnesiac"
     ],
@@ -897,7 +897,7 @@
     "styled": "Every night, the same game: roll the dice with your own neck. I've seen plenty of people do this. Most of them were brave. Most of them are dead. Would you risk your life every single night?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "gambler",
       "acrobat"
@@ -913,7 +913,7 @@
     "styled": "Exclusive? Unique? One of a kind? Not you, sweetie! There could be a whole matching set! Could more than one player end up with your role?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "villageidiot",
       "farmer"
@@ -928,7 +928,7 @@
     "styled": "Not by drugging anyone, not by guarding one door, but by flat-out cancelling the Demon's evening. Night off for the monster! Can your ability directly stop the Demon from waking or killing that night?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": [
       "princess",
       "lycanthrope",
@@ -962,7 +962,7 @@
     "styled": "Some of you corner the Storyteller in daylight. Some of you get your little message slipped under the door at night. Does your Storyteller-given insight come at night?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "highpriestess",
       "general"
@@ -981,7 +981,7 @@
     "styled": "One visit. One question or one piece of advice. Then the door closes forever. Do you only get a single consultation with the Storyteller?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "fisherman",
       "artist"
@@ -1000,7 +1000,7 @@
     "styled": "No waiting, no funerals, no choosing. You walk in already carrying someone else's kind of power. Do you start the game holding your borrowed ability?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "alchemist"
     ],
@@ -1017,7 +1017,7 @@
     "styled": "Inheritance, darling! Somebody has to shuffle off before the goodies are yours. Does a player need to die before you get your new power?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "pixie",
       "cannibal"
@@ -1035,7 +1035,7 @@
     "styled": "A whole shop of powers, and you get to browse the shelves and pick one. Shopping spree! Do you choose exactly which ability you borrow?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "philosopher"
     ],
@@ -1052,7 +1052,7 @@
     "styled": "It's not enough to die. It has to be the Demon, and it has to be you. Fussy! Does your ability only kick in if the Demon itself kills you?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "sage",
       "banshee"
@@ -1072,7 +1072,7 @@
     "styled": "When you drop, the job doesn't. Someone else wakes up wearing your hat. Does your death pass your role on to another player?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "farmer"
     ],
@@ -1091,7 +1091,7 @@
     "styled": "Is your nightly message a face in the crowd, or something vaguer, like a score or a role with no owner? Does your nightly information point at a specific player?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "highpriestess",
       "balloonist",
@@ -1111,7 +1111,7 @@
     "styled": "Your information pipe is connected to the graveyard. No bodies, no news. Lots of bodies, lovely news! Does your nightly information depend on the death count?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "king"
     ],
@@ -1129,7 +1129,7 @@
     "styled": "Plenty of you care which player gets strung up. But for one of you, the magic only happens when the noose goes round the Storyteller's neck. Does your ability trigger when the Storyteller is executed?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "atheist"
     ],
@@ -1165,7 +1165,7 @@
     "styled": "No 'one of these two', no 'one of these three'. One name, definitely evil, from the very first night. Do you begin the game certain that a specific player is evil?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "bountyhunter"
     ],
@@ -1179,7 +1179,7 @@
     "styled": "No waking. No pointing. No guessing. No learning. Your ability just sits there humming quietly in the background. Is yours completely passive like that?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": [
       "farmer",
       "magician",
@@ -1198,7 +1198,7 @@
     "styled": "Most first-night clues are one and done. Yours comes with a refill: lose the name you've got, and a new one turns up. Will a certain player's death bring you more of the same information?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "bountyhunter"
     ],
@@ -1216,7 +1216,7 @@
     "styled": "BEHOLD THE CIRCLE! Not who, but WHERE! Your clue is about the shape of the table itself! Is your starting information about seating rather than particular people?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "shugenja"
     ],
@@ -1249,7 +1249,7 @@
     "styled": "Regular check-ins with the boss. Daily, nightly, like clockwork. Some of us only get one meeting all game. Do you hear from the Storyteller every day or every night?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "highpriestess",
       "amnesiac",

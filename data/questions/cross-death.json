@@ -5,7 +5,7 @@
     "styled": "Good morning, Dungeon! Another sunrise, another tasteful list of the freshly deceased. The folks at home want to know: when those names get read out, could your very own ability, not some borrowed knock-off, have killed one of them?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": {
       "killsAtNight": true
     },
@@ -19,7 +19,7 @@
     "styled": "Oh, sweetie, none of that sneaking about in the dark. Some of us do our dirty work at high noon with the whole village gawking. Not a hanging, mind you, an honest-to-goodness daytime death. Can your own ability, not another character's, kill another player during the day?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "killsByDay": true
     },
@@ -33,7 +33,7 @@
     "styled": "Normally it goes nominate, argue, vote, hang, bed. Simple. Stupid, but simple. Some of you have a button that skips the queue, adds a bonus round or swaps who's on the rope. Can your own ability, not another character's, cause an instant, extra or substitute execution outside that usual routine?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": {
       "causesExtraExecution": true
     },
@@ -47,7 +47,7 @@
     "styled": "BEHOLD the tragic hero! THIS GOAT knows the agony of the noble who may be dragged to the gallows by mere RULES, no vote required! Can your own ability, not another character's, get you executed without the town ever voting for you?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "mutant",
       "scapegoat"
@@ -62,7 +62,7 @@
     "styled": "New achievement unlocked: Posthumous Plot Twist! Awarded to contestants whose abilities only get going once they've genuinely kicked the bucket. Dodging death doesn't count. Once you're actually dead, does your own ability, not another character's, make something happen?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": {
       "triggersOnOwnDeath": true
     },
@@ -76,7 +76,7 @@
     "styled": "Every star has a name she watches for in the headlines, darling, whether she's dreading it or DYING to see it. Does your ability keep you watching for one particular death, whether you dread it or hope for it?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "grandmother",
       "pixie",
@@ -98,7 +98,7 @@
     "styled": "I spent a long time being the one who needed protecting. Now I want to know who's doing the protecting. Not by luck, not by getting the killer drunk: can your own ability, not another character's, directly keep other players from dying?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "protectsOthers": true
     },
@@ -126,7 +126,7 @@
     "styled": "Patch note 4.1: some abilities now ship with a FREE self-destruct feature! No enemy required! The System accepts no liability. Could your own ability's rules, not another character's, end with you dead, without any enemy attacking you?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "risksOwnLife": true
     },
@@ -140,7 +140,7 @@
     "styled": "Oh, I love this one. The sweet, trustworthy townsperson, and yet after dark someone stops breathing because of them. Confession time, darling: are you a Townsfolk or Outsider whose own ability, not another character's, can kill another player at night?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "killsAtNight": true,
       "team": [
@@ -158,7 +158,7 @@
     "styled": "Minions! Lackeys! Henchfolk! Most of you just loom behind the Demon looking shifty. But some of you get to do the night-time killing YOURSELVES, and your goddess respects that. Are you a Minion whose own ability can kill a player at night?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "killsAtNight": true,
       "team": "minion"
@@ -173,7 +173,7 @@
     "styled": "Everyone assumes the Demon is the one doing the night-time murdering. Usually that's right. Usually. Can your own ability, not another character's, kill someone at night even though you aren't the Demon?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "killsAtNight": true,
       "team": [
@@ -193,7 +193,7 @@
     "styled": "Most Demons treat the night like a buffet. A couple of you skip the meal entirely and win some other ugly way. Are you a Demon whose ability never kills anyone at night?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "team": "demon",
       "killsAtNight": false
@@ -208,7 +208,7 @@
     "styled": "A heroine doesn't skulk in the dark, darling. She strikes in FULL VIEW of her adoring public. Are you a Townsfolk or Outsider whose own ability, not another character's, can kill a player in broad daylight?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "killsByDay": true,
       "team": [
@@ -226,7 +226,7 @@
     "styled": "Our visiting guest stars are a huge ratings driver, and some of them come with a body count written right into the contract! Are you a Traveller whose own ability, not another character's, can kill another player?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "harlot",
       "gunslinger",
@@ -243,7 +243,7 @@
     "styled": "Sponsor poll! Our partners at Brutal Hygiene Wipes want to know how many of you are packing actual murder. Executions don't count, those are a team effort. Can your own ability, not another character's, kill another player, day or night?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": [
       "lycanthrope",
       "gossip",
@@ -290,7 +290,7 @@
     "styled": "THIS GOAT is DEATH and THIS GOAT is DEATHLESS! Mere killers bore me. Mere survivors bore me MORE! Can your own ability, not another character's, both kill another player without an execution and protect you from dying?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": [
       "psychopath",
       "zombuul",
@@ -306,7 +306,7 @@
     "styled": "Some folks go quietly. Not you, you spiteful little firecracker: your death comes with a parting gift for somebody else. When you die or get executed, does your own ability, not another character's, then cause other players to die?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": [
       "moonchild",
       "boomdandy"
@@ -321,7 +321,7 @@
     "styled": "Staying alive in here takes everything you have, and sometimes a little help. Some abilities are that help. Does your own ability, not another character's, directly keep someone alive, whether that someone is another player or you?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "sailor",
       "innkeeper",
@@ -353,7 +353,7 @@
     "styled": "Limited-edition loot drop: ONE killing blow, single use, no refills, no refunds. Use it wisely, or don't, the System wins either way. Does your ability give you a single shot, once per game, at killing one other player?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "slayer",
       "golem",
@@ -370,7 +370,7 @@
     "styled": "This one's hard to say out loud. Some abilities can only ever hurt the innocent, never the monsters we're hunting. Is your own ability, not another character's, like that: able to kill other players, but only ever good ones?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "lycanthrope",
       "moonchild"
@@ -385,7 +385,7 @@
     "styled": "Folks, you're gonna love this. They go down, the crowd gasps, and then they're BACK! Or at least still breathing! Does your ability let you survive the first time you die?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "fool",
       "zombuul"
@@ -400,7 +400,7 @@
     "styled": "Charm is a survival skill, darling, I would know. For a lucky few, the right performance at the right moment really does keep the noose off. When the town sends you to your death, can your own ability, not another character's, let winning a game or being funny save you?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": [
       "psychopath",
       "deviant"
@@ -415,7 +415,7 @@
     "styled": "Some bonds are SACRED, darling. Like me and my fans. Or, apparently, you and one other poor soul whose funeral would also be yours. Is your life tied to another player's, so that their death can bring about yours?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "grandmother",
       "lleech"
@@ -445,7 +445,7 @@
     "styled": "So you're dead. Congratulations. Before you lie down, though, you have to stand up in front of everyone and point at somebody, and if you get it wrong, it hurts. When you learn you've died, does your own ability, not another character's, make you publicly pick a living player for that final choice?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": [
       "klutz",
       "moonchild"
@@ -460,7 +460,7 @@
     "styled": "Our night-shift killers are in the spotlight, folks, and the audience is dying to know which team they play for! Of those whose ability can kill at night, are you on the evil team as a Minion or Demon?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "killsAtNight": true,
       "team": [
@@ -479,7 +479,7 @@
     "styled": "Delegation is a leadership skill! Some of our contestants simply provide the opportunity, and the Storyteller handles the messy talent selection. Of you night-time killers, is it always the Storyteller, never you, who picks who your ability kills?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "gossip",
       "pithag",
@@ -498,7 +498,7 @@
     "styled": "The best killers have a flair for performance: a public statement, a public choice, a little phrase dropped into conversation. Of you night-time killers, does your deadly ability involve something said or shown in front of everyone?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "gossip",
       "moonchild",
@@ -516,7 +516,7 @@
     "styled": "ONE corpse? ONE? Your goddess weeps at your lack of ambition! Among you night-time killers, can your ability kill more than one other player in a single night?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "shabaloth",
       "po",
@@ -535,7 +535,7 @@
     "styled": "Killing's dangerous work, and I don't just mean for the victim. Some of you hold a power that can bite the hand that wields it. Of you night-time killers, does your ability carry a built-in risk to your own life?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "killsAtNight": true,
       "risksOwnLife": true
@@ -551,7 +551,7 @@
     "styled": "To kill, and NOT be killed! This is the dream of every goat of vision! Of you night-time killers, does your ability also protect you from dying?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "killsAtNight": true,
       "hardToKill": true
@@ -567,7 +567,7 @@
     "styled": "One bullet, one chance, no do-overs. I respect it. Of all you night-time killers, does your ability give you just one kill for the whole game?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "assassin",
       "moonchild"
@@ -583,7 +583,7 @@
     "styled": "Combo bonus! Why settle for a murder when you can add a light dusting of poison for flavour? The System loves a two-for-one. Of you night-time killers, does your ability poison players as well as killing them?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "pukka",
       "nodashii",
@@ -601,7 +601,7 @@
     "styled": "Some daytime killers act in the moment. Others lay the groundwork in the dark and wait to see who walks into it. Of you daylight killers, do you set up tomorrow's victim during the night before?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "witch",
       "harpy"
@@ -617,7 +617,7 @@
     "styled": "No traps, no fine print. You look at someone, you decide, they drop. Of you daylight killers, do you pick your victim yourself, right there and then?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "slayer",
       "golem",
@@ -638,7 +638,7 @@
     "styled": "Recurring content is the backbone of any franchise! Of our daylight killers, can your ability claim a fresh victim day after day, rather than just once?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "psychopath",
       "gunslinger",
@@ -659,7 +659,7 @@
     "styled": "Daylight murder! Glorious! But your goddess must know whose side the blood is on. Of you daylight killers, are you a Minion or a Demon?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "killsByDay": true,
       "team": [
@@ -678,7 +678,7 @@
     "styled": "Darling, I do not waste my talents on extras. Only the headliner will do. Of you daylight killers, does your kill only work if the target turns out to be the Demon?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "slayer"
     ],
@@ -693,7 +693,7 @@
     "styled": "Rawr! Rawr rawr? (Translation: he's asking, very gently, whether the rope your ability brings out is meant for your own neck.) Of you unusual-execution types, is it your own execution your ability can cause?",
     "voice": "Mongo",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "mutant",
       "scapegoat"
@@ -709,7 +709,7 @@
     "styled": "THIS GOAT does not WAIT for fate! THIS GOAT SEIZES the gavel! Of you who bend the gallows rules, do you decide in the moment, during the day, to use that power?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "vizier",
       "judge",
@@ -726,7 +726,7 @@
     "styled": "Power is lovely, but discretion is lovelier, and in your case it isn't yours. Among you gallows-benders, does the Storyteller get the final say on whether your unusual execution happens?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "mutant",
       "cerenovus",
@@ -743,7 +743,7 @@
     "styled": "Good news: when you die, something happens. Bad news: it's bad. For your own side. And you don't get a say. Of those whose death triggers their ability, can your death hurt your own team through no choice of yours?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "saint",
       "sweetheart",
@@ -763,7 +763,7 @@
     "styled": "Even my EXIT would be a gift to my fans, darling. A final bow, a final present. Of those whose death sets off their ability, can your death hand your own team an advantage?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "farmer",
       "ravenkeeper",
@@ -784,7 +784,7 @@
     "styled": "Getting knifed in your sleep? Doesn't count, apparently. Your ability only perks up when the town strings you up proper. Of you death-triggered folks, is it specifically being executed that sets yours off?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "saint",
       "goblin",
@@ -801,7 +801,7 @@
     "styled": "Reshuffle event triggered! When you die, somebody else's character sheet gets a surprise makeover. Character changes are non-refundable. Of those whose death sets off their ability, does your death make other players change characters?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "barber",
       "hatter",
@@ -819,7 +819,7 @@
     "styled": "Dying is frightening. Dying and getting nothing for it is worse. For a few of you, death comes with one last truth. Of those whose death sets off their ability, do you personally learn something when you die?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "ravenkeeper",
       "sage"
@@ -835,7 +835,7 @@
     "styled": "When a villain falls, the earth should SHAKE! Of those whose death sets off their ability, are you a wicked Minion or Demon?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "triggersOnOwnDeath": true,
       "team": [
@@ -854,7 +854,7 @@
     "styled": "Everyone's waiting for somebody to die. In your case, it's the boss. Of those whose ability reacts to someone else's death, is it the Demon's death your ability is waiting for?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "scarletwoman",
       "mastermind"
@@ -870,7 +870,7 @@
     "styled": "Our analytics show execution day is appointment viewing! Of those whose ability reacts to somebody else's death, is it specifically an execution that sets yours off?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "undertaker",
       "cannibal",
@@ -888,7 +888,7 @@
     "styled": "Grief is so much easier with an inheritance, isn't it? Of those whose ability reacts to someone else's death, can that death hand you a new ability or a new character?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "pixie",
       "cannibal",
@@ -904,7 +904,7 @@
     "styled": "Someone died. Tragic. Anyway, what did you learn? Of those whose ability reacts to someone else's death, does that death bring you new information?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "bountyhunter",
       "choirboy",
@@ -921,7 +921,7 @@
     "styled": "Your goddess's victims become LEGENDS! Of those whose ability reacts to somebody else's death, does your ability change what happens to the players you yourself kill?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "vigormortis",
       "fanggu"
@@ -937,7 +937,7 @@
     "styled": "Night-time protection is the usual trick. Yours is stranger: the only thing you save people from is the rope. Of you protectors, does your protection only work against executions?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "pacifist",
       "devilsadvocate",
@@ -955,7 +955,7 @@
     "styled": "Every night you get to point at one person and say: not this one. Not tonight. Of you protectors, do you choose someone each night to keep alive?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "innkeeper",
       "monk",
@@ -972,7 +972,7 @@
     "styled": "Why guard ONE peasant when you can cancel the entire massacre? Of you protectors, can your ability stop the Demon from killing anyone at all for a night?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "princess",
       "exorcist"
@@ -988,7 +988,7 @@
     "styled": "Lazy? No, efficient. Your ability does the guarding while you sit there looking innocent. Of you protectors, does your protection work without you having to choose anything?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "tealady",
       "pacifist",
@@ -1005,7 +1005,7 @@
     "styled": "The unkillables, folks! But are they heroes or horrors? Of those of you who are hard to kill, are you a Minion or a Demon?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "hardToKill": true,
       "team": [
@@ -1024,7 +1024,7 @@
     "styled": "You know what's worse than a power that can kill you? One where the decision belongs to the Storyteller, who is smiling right now. Of those whose ability risks their own life, is it up to the Storyteller whether it actually kills you?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "tinker",
       "mutant",
@@ -1042,7 +1042,7 @@
     "styled": "Error detected! Penalty: death! The System has always believed in strong incentives. Of those whose ability risks their own life, does your ability punish a night-time mistake with your own death?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "gambler",
       "acrobat"
@@ -1058,7 +1058,7 @@
     "styled": "Old Demons die. New ones get promoted. Same dungeon, different management. Of those whose ability risks their own life, when it kills you, does another player become the Demon?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "imp",
       "fanggu"
@@ -1074,7 +1074,7 @@
     "styled": "Alright, killers, show of hands. Who strictly works the night shift, and who's got the nerve to do it at noon? Of you with a killing ability, can your killing happen in daylight?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "killsByDay": true
     },
@@ -1121,7 +1121,7 @@
     "styled": "Killers, we've got a ratings war between the morning shift and the graveyard shift! Of those of you who can kill, does your ability claim its victims while the town's asleep?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "killsAtNight": true
     },
@@ -1168,7 +1168,7 @@
     "styled": "Brand values check! Is your survival ability a self-care product, or is it community-focused? Of those whose ability keeps someone alive, is it other players' lives you protect?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "protectsOthers": true
     },
@@ -1199,7 +1199,7 @@
     "styled": "Every one of you is waiting on a funeral, darling. The only question is whose. Of those whose ability reacts to a death, is it your own rather than someone else's?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "triggersOnOwnDeath": true
     },
@@ -1239,7 +1239,7 @@
     "styled": "The gallows or the blade, mortal? THIS GOAT DEMANDS to know your instrument! Of you daytime dealers of death, does your ability work through executions rather than outright killing?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "causesExtraExecution": true
     },

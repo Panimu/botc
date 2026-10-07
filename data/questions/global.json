@@ -5,7 +5,7 @@
     "styled": "Our sponsors have asked me to remind everyone that evil is a valid lifestyle choice with excellent merchandising. Do you win when the monster wins?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "team": [
         "minion",
@@ -19,7 +19,7 @@
     "styled": "Kid, someone has to do the killing for the bad guys, and it's never the person complaining about it. Are you the one who kills for them each night?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "yaggababble",
       "pukka",
@@ -49,7 +49,7 @@
     "styled": "Bless your heart, you're on the right side and you're still a walking disaster. Your teammates love you. Your teammates are also slightly afraid of you. Is that you?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "team": "outsider"
     }
@@ -60,7 +60,7 @@
     "styled": "No secret sabotage, no curse in the fine print. Your power exists to help the good guys, even if it gets you killed. I know, it's suspicious. Is that you anyway?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "team": "townsfolk"
     }
@@ -71,7 +71,7 @@
     "styled": "The doors are already locked, the bodies are already cooling, and here YOU come, strolling in late like you own the place. Are you the fashionably late type?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "team": "traveller"
     }
@@ -82,7 +82,7 @@
     "styled": "Every contestant starts somewhere, and most of them start dying in exactly the same village. Fond memories! Are you from that very first script?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "edition": "tb"
     }
@@ -93,7 +93,7 @@
     "styled": "Bodies dropping every night, people diving in front of knives, and somebody always crying by morning. My kind of script. Is Bad Moon Rising yours?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "edition": "bmr"
     }
@@ -104,7 +104,7 @@
     "styled": "Welcome to the script where nobody is sure who they are, and some people are only pretending to be sure. Delicious content. Is Sects & Violets your script?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "edition": "snv"
     }
@@ -115,7 +115,7 @@
     "styled": "Fresh off the production line, barely tested, possibly unsafe! Legal says I have to stop saying 'possibly'. Are you one of the shiny experimental models?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "edition": "carousel",
       "team": [
@@ -144,7 +144,7 @@
     "styled": "A princess requires her BEAUTY SLEEP, but some of us are simply too important to be ignored. After the first night, does the Storyteller ever have to come and deal with your ability?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "otherNight": true
     }
@@ -166,7 +166,7 @@
     "styled": "Some folks nickel-and-dime the game. You'd rather keep one swing in your back pocket, wait for your moment, and make it count. Is that your style?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "engineer",
       "nightwatchman",
@@ -192,7 +192,7 @@
     "styled": "Exclusive! Before the first sunrise, our contestant's ability has already slipped them something the others would kill for, without a drop of sweat spent. Viewers, tell me that isn't a story. Did your ability hand you a secret right at the start?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "steward",
       "knight",
@@ -221,7 +221,7 @@
     "styled": "Kid, half the information in this game is soaked in booze or laced with something nasty. Does your ability deal in drunkenness or poison?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "sailor",
       "villageidiot",
@@ -254,7 +254,7 @@
     "styled": "Point at someone! Go on! The System has prepared a delightful consequence for whoever you pick. Does your ability involve choosing players?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 2,
     "yes": [
       "sailor",
       "preacher",
@@ -327,7 +327,7 @@
     "styled": "Courtroom drama tests through the roof! Gavels, accusations, a crowd baying for blood. Does your ability come alive around nominations, votes or executions?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "aboutVoting": true
     }
@@ -338,7 +338,7 @@
     "styled": "DEATH! GLORIOUS DEATH! Is it written into your very being, mortal? Does your ability speak of dying, the dead, or killing?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "grandmother",
       "pixie",
@@ -427,7 +427,7 @@
     "styled": "Some abilities are subtle. Yours apparently comes with a label maker that only prints two words. Does your ability actually say 'good' or 'evil'?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "aboutAlignment": true
     }
@@ -438,7 +438,7 @@
     "styled": "No rest for the wicked, and I mean that contractually. Are you a villain who keeps the Storyteller busy after the first night?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "team": [
         "minion",
@@ -471,7 +471,7 @@
     "styled": "A good person whose ability hands them a clue the moment they walk in, instead of making them earn one every night? That's the closest thing to a fair start this place offers. Are you one of them?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "team": [
         "townsfolk",
@@ -486,7 +486,7 @@
     "styled": "A hero with a single bullet, who gets to pick the moment. Dramatic! Tragic! Merchandisable! Are you a good contestant with a once-per-game play you can time yourself?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "engineer",
       "nightwatchman",
@@ -531,7 +531,7 @@
     "styled": "Oh, honey, you don't just play the game, you show up and the producers have to rewrite the whole episode. Are you a Demon who changes the setup?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "team": "demon",
       "setup": true

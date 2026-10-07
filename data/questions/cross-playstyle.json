@@ -5,7 +5,7 @@
     "styled": "Some people want a quiet life. Some people want a clipboard and a night shift. I don't get the second group, but I respect their stamina. Does your own ability give you a job on nearly every night?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "wakesMostNights": true
     },
@@ -30,7 +30,7 @@
     "styled": "Evil never sleeps, they say. Usually they're talking about the ones who actually get up night after night and get their hands dirty. Are you a Minion or Demon whose ability puts you to work on most nights?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "wakesMostNights": true,
       "team": [
@@ -48,7 +48,7 @@
     "styled": "It's honest work, waking up in the dark for a town that might hang you tomorrow. I think it's brave. Are you a Townsfolk or Outsider whose own ability has you act or learn something most nights?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "wakesMostNights": true,
       "team": [
@@ -66,7 +66,7 @@
     "styled": "Here's the format, folks: lights out, eyes shut, and then a tap on the shoulder. Some of our night owls just get told things. Others have to point a finger at somebody. When you wake, do you pick a player?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "wakesMostNights": true,
       "choosesPlayersAtNight": true
@@ -82,7 +82,7 @@
     "styled": "So you're up at night. Lots of people are up at night, sweetie. Bakers. Nurses. Murderers. Tell me which kind of night owl you are: a Minion or Demon?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "wakesMostNights": true,
       "team": [
@@ -101,7 +101,7 @@
     "styled": "Every night the lights come on and somebody whispers secrets at you, and you never once have to point at anybody. Honestly? Sounds like a decent gig. Does your ability keep you busy most nights without ever having you pick a player?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "wakesMostNights": true,
       "choosesPlayersAtNight": false
@@ -116,7 +116,7 @@
     "styled": "New sponsor-approved feature: the Nightly Gamble! Every night you use your power, and every night it might bite you, or your friends, right on the ankle. Ratings GOLD. Do you use your ability most nights, with a catch for you or your side?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "wakesMostNights": true,
       "harmsOwnTeam": true
@@ -131,7 +131,7 @@
     "styled": "I didn't sign up to make choices. Nobody signs up for anything here. But some abilities put a decision in someone's lap anyway, yours or somebody else's. Does your ability lead to someone at the table having to decide or act?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "neverChooses": false
     }
@@ -142,7 +142,7 @@
     "styled": "The most TERRIFYING villains never lift a paw, darling, and never make anyone ELSE lift one either. They simply exist and things go wrong around them. Are you a Minion or Demon whose ability never has anyone choose or act?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "neverChooses": true,
       "team": [
@@ -160,7 +160,7 @@
     "styled": "There's no shame in a quiet power. Some of the strongest people I know never had to choose a target, and never made anyone else choose one either. Are you a Townsfolk or Outsider with a completely passive ability?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "neverChooses": true,
       "team": [
@@ -178,7 +178,7 @@
     "styled": "Ha! The cruellest trick in the dungeon: they wake you up every single night and then nobody gets to DO anything. You just sit there and receive. Are you still woken most nights even though your ability never makes anyone act?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "neverChooses": true,
       "wakesMostNights": true
@@ -210,7 +210,7 @@
     "styled": "You never have to choose anything. Lovely. But some of these do-nothing powers come with a curse stapled to the back, and you'll carry it whether you like it or not. Does yours carry a drawback for you or your own side?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "neverChooses": true,
       "harmsOwnTeam": true
@@ -226,7 +226,7 @@
     "styled": "Sitting still and looking innocent, are we? The audience adores a quiet one, darling, but they adore a quiet VILLAIN even more. Among the completely passive, are you a Minion or Demon?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "neverChooses": true,
       "team": [
@@ -245,7 +245,7 @@
     "styled": "RAWR! Lie very still. Wait. Nobody has to do anything. Only jump up when something dies. (Translation: is your ability completely passive, with nobody acting because of it, and does it wait for a death to set it off?)",
     "voice": "Mongo",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "neverChooses": true,
       "needsDeathToAct": true
@@ -292,7 +292,7 @@
     "styled": "Blood and shadow! Does your finger fall upon the sleeping like the judgement of a GODDESS? Are you a Minion or Demon who picks players at night?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "choosesPlayersAtNight": true,
       "team": [
@@ -310,7 +310,7 @@
     "styled": "One shot. One night. One finger. If you miss, you miss forever. I've watched people agonise over a single choice like this for days. Do you get only one night pick in the whole game?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "choosesPlayersAtNight": true,
       "oneShot": true
@@ -326,7 +326,7 @@
     "styled": "So you point at someone in the dark. Fine. But does that little point have teeth on both ends, sweetheart? Can your ability bite you or your own side?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "sailor",
       "innkeeper",
@@ -356,7 +356,7 @@
     "styled": "Most night picks are fire-and-forget. Yours might be different: you choose someone and suddenly their vote, their side or their pulse decides yours, like a lease you didn't read. Does a night pick bind you to that player like that?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "choosesPlayersAtNight": true,
       "boundToAnotherPlayer": true
@@ -372,7 +372,7 @@
     "styled": "Exciting news from the night shift! Our pointers are all lined up, and now the audience wants to know which side of the scoreboard you're on. Are you a Minion or Demon?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "choosesPlayersAtNight": true,
       "team": [
@@ -391,7 +391,7 @@
     "styled": "The Dungeon proudly presents: the Cursed Pointer! Pick a player in the dark, and maybe it works, and maybe it costs you or your pals dearly. Do you pick players at night with an ability that carries a catch?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "choosesPlayersAtNight": true,
       "harmsOwnTeam": true
@@ -406,7 +406,7 @@
     "styled": "A TRUE star needs no co-star, darling. No sidekick, no partner, no clingy little shadow. Does your ability stand alone, with no particular partner attached?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "boundToAnotherPlayer": false
     }
@@ -432,7 +432,7 @@
     "styled": "Villains in pairs! Twins, hosts, partners in crime! Sponsors LOVE a double act. Are you a Minion or Demon whose ability is wrapped up with one particular other player?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "boundToAnotherPlayer": true,
       "team": [
@@ -450,7 +450,7 @@
     "styled": "Grim but true: in here, somebody else's funeral is sometimes your birthday. Would your partner dying hand you a new power or new knowledge?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "pixie",
       "choirboy",
@@ -466,7 +466,7 @@
     "styled": "Two hearts, one coffin! If they fall, you might fall right beside them! If your partner is killed, can you die along with them?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "grandmother",
       "lleech"
@@ -482,7 +482,7 @@
     "styled": "Arranged marriage or love match, honey? Some of you get handed a partner. Some of you walk up and pick one. Do you choose your partner yourself?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "butler",
       "ogre",
@@ -525,7 +525,7 @@
     "styled": "Even the wicked get saddled with flaws, darling. Exposed, outed, betrayed by their own gifts! Are you a Minion or Demon whose ability can backfire on your own evil team?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "harmsOwnTeam": true,
       "team": [
@@ -552,7 +552,7 @@
     "styled": "All of you have a power that can stab you in the back. Lovely, very dramatic. Now, which side are you secretly stabbing for? Are you a Minion or Demon?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "harmsOwnTeam": true,
       "team": [
@@ -570,7 +570,7 @@
     "styled": "So your power has a flaw. Join the club, kid. Question is, are you a flawed hero or a flawed monster? Are you a Townsfolk or Outsider?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "harmsOwnTeam": true,
       "team": [
@@ -588,7 +588,7 @@
     "styled": "Some of you take a risk when you act. Others never get to act at all, and nor does anyone else; the trouble just arrives on its own, like weather. Is your drawback built into a completely passive ability like that?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "harmsOwnTeam": true,
       "neverChooses": true
@@ -604,7 +604,7 @@
     "styled": "Some powers do nothing at all until there's a body on the floor. Morbid? Sure. Efficient? Also sure. Does your ability lie dormant until somebody dies?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "needsDeathToAct": true
     }
@@ -615,7 +615,7 @@
     "styled": "Look, you're on the good side, and your big contribution only arrives after someone's dead. Possibly you. I've had worse job descriptions. Are you a Townsfolk or Outsider whose ability needs a death first?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "needsDeathToAct": true,
       "team": [
@@ -630,7 +630,7 @@
     "styled": "Patience, minion, patience! The grave is your trigger and the gallows are your stage! Are you a Minion or Demon whose ability waits for a death before it does anything?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "needsDeathToAct": true,
       "team": [
@@ -648,7 +648,7 @@
     "styled": "Here's the twist for this crowd: your power wakes up at a funeral. The juicy question, darling, is whose funeral. Is it your own death that sets your ability off?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "farmer",
       "ravenkeeper",
@@ -676,7 +676,7 @@
     "styled": "Ooh, a whole room of people waiting for corpses! Ratings through the roof! Now tell our viewers: are you one of the Minions or Demons?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "needsDeathToAct": true,
       "team": [
@@ -695,7 +695,7 @@
     "styled": "Your ability springs to life when someone dies. Sometimes it springs straight into your own team's face. Once it wakes, is there a catch in it that can hurt your own side?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "needsDeathToAct": true,
       "harmsOwnTeam": true
@@ -730,7 +730,7 @@
     "styled": "Exciting format change, everyone! With this contestant around, the usual rulebook goes right out the window for the whole table. Fresh! Disruptive! On-brand! Does your character change a standing rule for everyone just by being in play?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "changesTheRules": true
     },
@@ -744,7 +744,7 @@
     "styled": "Why kill the town when you can rig the whole system? Are you a Minion or Demon whose ability changes how nominations, votes or executions work for everyone?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": {
       "changesTheRules": true,
       "team": [
@@ -777,7 +777,7 @@
     "styled": "Rule-breakers, every one of you. Delicious. But are you breaking the rules to save the town, or to bury it? Are you a Minion or Demon?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "changesTheRules": true,
       "team": [
@@ -796,7 +796,7 @@
     "styled": "Some of you live here. Some of you blew in on the evening coach, rearranged everything, and will be gone by Tuesday. Are you a Traveller passing through?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "changesTheRules": true,
       "team": "traveller"
@@ -849,7 +849,7 @@
     "styled": "Your single precious use. Do you spend it with your eyes open in the dark, pointing at one sleeping fool? Is your one use spent picking a player at night?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "oneShot": true,
       "choosesPlayersAtNight": true
@@ -865,7 +865,7 @@
     "styled": "Big daytime moment, everyone! Some single-use powers go off in front of the whole studio audience, in broad daylight. Must your one use happen during the day?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "artist",
       "slayer",
@@ -887,7 +887,7 @@
     "styled": "BLOOD FIRST! Then your little power! Does your single use need somebody, maybe you, to be dead first?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "oneShot": true,
       "needsDeathToAct": true
@@ -903,7 +903,7 @@
     "styled": "One shot each, contestants! And now the leaderboard wants to know whose side that shot is fired for. Are you a Minion or Demon?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "oneShot": true,
       "team": [

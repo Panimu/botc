@@ -5,7 +5,7 @@
     "styled": "Masks are TACKY, darling. Everybody pretending to be somebody else, and only a select few of us get to see past it to the actual character underneath. Does your ability let you see behind the mask like that?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "learnsCharacters": true
     },
@@ -19,7 +19,7 @@
     "styled": "Every evil team wants a peek at the opposition's hand. Most of you just get the usual handshake with your teammates and a shrug. Are you the Minion or Demon whose own ability lets you read the good players' actual characters?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "learnsCharacters": true,
       "team": [
@@ -37,7 +37,7 @@
     "styled": "There's real courage in being the one who can put a name to a face. Are you on the good side, with an ability that matches players to characters?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "learnsCharacters": true,
       "team": [
@@ -55,7 +55,7 @@
     "styled": "Subscription model, baby! Not one measly name on night one but a fresh character delivered to your pillow, again and again, all season long. Does your ability keep the names coming night after night?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "learnsCharacters": true,
       "infoEveryNight": true
@@ -70,7 +70,7 @@
     "styled": "So you learn characters. Fine. But do you get to aim, or does the Storyteller just toss you whatever name falls out of the bag? Do you choose whose character you learn?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "dreamer",
       "ravenkeeper",
@@ -87,7 +87,7 @@
     "styled": "One name is a clue. Every name, all at once, laid out like a buffet? That's a feast, and I intend to gorge. Of you name-learners, do you get to see the whole board, every character at once?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "spy",
       "widow"
@@ -103,7 +103,7 @@
     "styled": "Some of you get one juicy reveal before breakfast and then spend the rest of the game living off it. Others keep getting fed. Of you character-learners, is yours a single reveal at the start and then nothing?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "investigator",
       "washerwoman",
@@ -123,7 +123,7 @@
     "styled": "BEHOLD! Knowledge is a blade, and I hand mine directly to my dark master like a loyal, devious, magnificent servant! Of those who see characters, are you a Minion passing it all to the Demon?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "spy",
       "widow",
@@ -140,7 +140,7 @@
     "styled": "Sniff, sniff. A growl at one, a happy tail-wag at another. (He is sorting good from evil by scent, and he is thrilled.) Does your ability let you sort players by alignment like that?",
     "voice": "Mongo",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "learnsAlignment": true
     },
@@ -154,7 +154,7 @@
     "styled": "Here's the gig, sweetie: you're on the town's side, and the Storyteller whispers who's naughty and who's nice. Not who they are, just which side they're on. Are you a good character with that kind of ability?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "learnsAlignment": true,
       "team": [
@@ -172,7 +172,7 @@
     "styled": "One good-or-evil reading is a snapshot. A stream of them is a documentary, and documentaries win awards. Of you alignment-readers, does your ability keep feeding you new readings as the game goes on?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "empath",
       "villageidiot",
@@ -192,7 +192,7 @@
     "styled": "You wake up on night one holding a little piece of truth about who's good and who isn't, and that's your lot. Make it last. Of you alignment-readers, is yours a one-off at the start?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "steward",
       "noble",
@@ -213,7 +213,7 @@
     "styled": "Pointing is so gauche. A REAL lady receives a number, elegantly, and works out the rest herself. Of you alignment-readers, does your ability count the evil instead of pointing them out?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "chef",
       "empath",
@@ -260,7 +260,7 @@
     "styled": "Night one. Lights down. The Storyteller taps one specific person and tells you: that one's good. Maybe you love them, maybe you want them dead. Does your own ability single out a good player for you like that?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "steward",
       "grandmother",
@@ -276,7 +276,7 @@
     "styled": "Every night, a number. Every morning, an argument about the number. If you're into that sort of thing, it's very relaxing. Does your ability give you a fresh number nearly every night?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "learnsNumbers": true,
       "infoEveryNight": true
@@ -291,7 +291,7 @@
     "styled": "Is your number about whoever the game decides, or do you get to point and say 'count THESE'? Of you number-learners, do you choose the players your number is about?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "chambermaid",
       "juggler"
@@ -339,7 +339,7 @@
     "styled": "Your Demon wants a report on its desk every morning, and you are only too happy to oblige. Every night, eyes open, notes taken. Are you a Minion whose ability gathers fresh intel every night?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "infoEveryNight": true,
       "team": "minion"
@@ -354,7 +354,7 @@
     "styled": "Nightly info, check. But are you steering the spotlight or just sitting in the audience watching what the Storyteller shows you? Of you nightly learners, do you choose who your information is about?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "villageidiot",
       "dreamer",
@@ -373,7 +373,7 @@
     "styled": "Some of you learn about the night. Others get the evening recap of the day's drama: who voted, who nominated, who got the rope. Of you nightly learners, is your info about what happened at today's votes and execution?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "flowergirl",
       "towncrier",
@@ -390,7 +390,7 @@
     "styled": "Some info is cold fact. Yours is a personal take from the narrator, like a horoscope written by the person running the dungeon. Of you nightly learners, is your info the Storyteller's opinion?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "highpriestess",
       "general"
@@ -406,7 +406,7 @@
     "styled": "Same nightly routine as the town's little detectives, except every scrap you collect goes straight to the bad guys. LOVE the synergy. Of you nightly learners, are you a Minion working for evil?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "spy",
       "wraith"
@@ -422,7 +422,7 @@
     "styled": "Knowing who someone is? Amateur hour. I want to know how the trick works: who woke, what broke, what's written in the secret book. Does your ability show you the hidden workings of the game?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "seesHiddenInfo": true
     },
@@ -436,7 +436,7 @@
     "styled": "Backstage pass, evil edition. While the town fumbles in the dark, you've seen the wiring and you're whispering it to your Demon. Are you a Minion or Demon whose ability shows you how the game is really running?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "seesHiddenInfo": true,
       "team": [
@@ -454,7 +454,7 @@
     "styled": "Every token, every reminder, every dirty little secret in one big book, and you get to read it. Of you behind-the-scenes types, do you see the whole Grimoire?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "spy",
       "widow"
@@ -485,7 +485,7 @@
     "styled": "Your ability has a seating plan, and you're evil. Your neighbours are part of the scheme, whether they know it or not. Are you a Minion or Demon whose ability involves the players beside you?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "caresAboutNeighbours": true,
       "team": [
@@ -521,7 +521,7 @@
     "styled": "Neighbourly, yes. Friendly? Ha! Of you lot whose ability cares about the seats beside you, are you a Minion or Demon?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "nodashii",
       "lordoftyphon",
@@ -538,7 +538,7 @@
     "styled": "Reading your neighbours is one thing. Reaching over and actually DOING something to them is quite another. Of you neighbour-focused players, does your ability protect, poison or kill the people beside you?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "tealady",
       "gangster",
@@ -569,7 +569,7 @@
     "styled": "RAWR! [Translation: awake ALL night. Watching. Reporting.] He's very proud of his night shift. Of you evil intel types, do you keep gathering information every night?",
     "voice": "Mongo",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "spy",
       "wraith"
@@ -585,7 +585,7 @@
     "styled": "Forget the henchmen. Forget the riff-raff. You want the head of the snake, and every scrap your ability hands you is aimed at exactly that. Is finding the Demon the whole point of your information?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "huntsDemon": true
     },
@@ -599,7 +599,7 @@
     "styled": "Some of you only get your answer the hard way: the Demon strikes, and the body tells the tale. Of you Demon-hunters, does your clue depend on the Demon killing someone first?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "sage",
       "choirboy"
@@ -615,7 +615,7 @@
     "styled": "Night one: here's your hint, contestant. Don't lose it, there are no refills. Of you Demon-hunters, is yours a single clue handed over at the very start?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "knight",
       "clockmaker"
@@ -630,7 +630,7 @@
     "styled": "Every night, the same question: is the Demon here, did the Demon do that? Ask enough times and eventually you get lucky. Does your ability check for the Demon nearly every night?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "snakecharmer",
       "fortuneteller",
@@ -646,7 +646,7 @@
     "styled": "Free will! Agency! The thrill of saying 'that one, Storyteller, tell me about THAT one!' Does your ability let you choose which players you learn about?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": {
       "picksInfoTargets": true
     },
@@ -660,7 +660,7 @@
     "styled": "One target, full attention. No juggling, no comparisons, just you and one poor soul under the lamp. Of you choosers, do you pick a single player at a time?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "villageidiot",
       "dreamer",
@@ -678,7 +678,7 @@
     "styled": "Two at a time, side by side, like a very tense double date. Of you choosers, do you always pick a pair of players and learn something about the two of them together?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "fortuneteller",
       "chambermaid",
@@ -695,7 +695,7 @@
     "styled": "The dead don't talk. Except to you, apparently, and they've got plenty to say about who they were and whose side they were on. Is your ability's information specifically about dead players?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "infoFromTheDead": true
     },
@@ -709,7 +709,7 @@
     "styled": "One envelope, delivered on night one because of your own ability. Not fake, not repeated, never topped up. Just you and that one truth for the rest of the game. Is that how your ability gives you information?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "steward",
       "knight",

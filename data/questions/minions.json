@@ -16,7 +16,7 @@
     "styled": "Patch note: your arrival now nudges the Outsider count by exactly one, direction chosen by management. Never zero. We tested zero. Zero was boring. Would you like your presence to always shift the Outsider count by one, with the Storyteller picking up or down?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "godfather"
     ],
@@ -30,7 +30,7 @@
     "styled": "A new victim every night, a dose that fades by sundown, and not a single body to explain to anyone. Honestly? That's the tidiest crime I've ever heard of. Would you like to poison someone new each night, with each dose wearing off by the next dusk?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "poisoner"
     ],
@@ -44,7 +44,7 @@
     "styled": "THE ACCUSED IS INNOCENT BECAUSE THE PROSECUTION SPELLED 'GALLOWS' WRONG! The goat rests his case! The goat ALWAYS rests his case! Do you love arguing a hopeless case and winning on an absurd technicality?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "devilsadvocate"
     ]
@@ -55,7 +55,7 @@
     "styled": "Every night you get to flip through the whole answer key while everyone else is playing guess-the-murderer. It feels like cheating, and it is, and it's allowed. Would you like to look at the Grimoire every night?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "spy"
     ],
@@ -69,7 +69,7 @@
     "styled": "Our brand research shows audiences love a villain with a wholesome public image. When the do-gooders run their little checks, you come back squeaky clean! Would you like to be evil yet able to register as a good Townsfolk or Outsider?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "spy"
     ]
@@ -80,7 +80,7 @@
     "styled": "The Storyteller's big book of secrets, darling, laid open just for you. Every name, every token, every embarrassing little reminder. A star deserves to see the script. Would you like a look at the Grimoire at least once?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "spy",
       "widow"
@@ -92,7 +92,7 @@
     "styled": "Tell me, sweetheart, how does it feel to whisper in someone's ear, 'Say they're evil, or else,' and then watch them do it with a smile? Would you like to make one player insist another is evil, with their lives on the line?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "harpy"
     ],
@@ -120,7 +120,7 @@
     "styled": "You hand some poor soul a character sheet and say, 'This is you now. Sell it, or hang.' I've seen dungeon bosses with more mercy. Would you like to pick a good character and force someone to claim it or risk execution?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "cerenovus"
     ],
@@ -134,7 +134,7 @@
     "styled": "Reality is just a script, isn't it? And you, darling, are the director. Someone fluffs their lines, and we write them out of the show permanently. Would you like to give someone an identity to act out and punish them if they break character?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "cerenovus"
     ]
@@ -145,7 +145,7 @@
     "styled": "Pick one face in the crowd. Stare at it. If you get them up on the block and the town finishes the job, their entire team goes down with them. Is that the kind of grudge you'd like to hold?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "fearmonger"
     ],
@@ -159,7 +159,7 @@
     "styled": "Every time you set your sights on someone new, the whole village hears about it. Not who, just that it happened. Fear sells, people! Would you like everyone to be told when you change targets, but not who?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "fearmonger"
     ]
@@ -209,7 +209,7 @@
     "styled": "Somebody on the other team gets a little note saying you exist. Not your name, not your seat, just a warning. That's going to make for a jumpy day. Does one good player know your character is in play, but not who you are?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "widow"
     ],
@@ -223,7 +223,7 @@
     "styled": "Pick your victim on night one, then put your feet up. They stay poisoned while you sip something fancy and watch it all unravel. Would you like to poison one person at the start and leave them poisoned all game?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "widow",
       "lleech"
@@ -238,7 +238,7 @@
     "styled": "Everyone else squeezes their eyes shut and prays. You? You get a front-row seat to the whole nightly circus. I'd kill for that seat. Would you like to keep your eyes open at night and watch?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "wraith"
     ],
@@ -263,7 +263,7 @@
     "styled": "BEHOLD! Night one: chalk! Night two: candles! Night three: A DEMON RISES AND IT WAS ALL THE GOAT'S DOING! Would you like to spend the opening nights preparing a ritual that brings the Demon into being?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "summoner"
     ],
@@ -277,7 +277,7 @@
     "styled": "Somebody nominates you and you just stand up and say, 'Yep. It's me. The evil one. Go on, then.' And that's somehow a winning move. Would you like to proudly declare your evil character when nominated and dare them to execute you?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "goblin"
     ],
@@ -291,7 +291,7 @@
     "styled": "New strategy guide entry: 'Losing on purpose: why the noose is the shortcut to glory!' Early reviews call it 'deranged' and 'very effective'. Would you like to win by getting yourself executed?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "goblin",
       "boomdandy"
@@ -306,7 +306,7 @@
     "styled": "Everything proceeding EXACTLY as I foresaw! The fools celebrate, and the goat announces ONE MORE DAY! When the town thinks it's won, would you like to reveal your plan and get one final day to prove it?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "mastermind"
     ]
@@ -328,7 +328,7 @@
     "styled": "No bluffing, no hiding, no clever cover story. Everyone at the table knows exactly what you are, and which side you're on, from minute one. Honestly, that's either brave or stupid. Would you like every player to know from the start that you're evil, and your exact character?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "vizier"
     ]
@@ -339,7 +339,7 @@
     "styled": "Everybody knows you're rotten and nobody can touch you while the sun's up. They'll be livid. You'll be smug. Would you like to be unkillable by day even though everyone knows you're evil?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "vizier"
     ],
@@ -353,7 +353,7 @@
     "styled": "Some bring the boss coffee. You bring the boss a stolen good-guy power, gift-wrapped. That's going on the employee-of-the-month wall. Would you like to give your Demon a good character's ability?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "boffin"
     ],
@@ -378,7 +378,7 @@
     "styled": "Two more misfits on the roster, courtesy of you. More confusion, fewer heroes, and a town wondering why everyone seems so useless. Would you like your presence to add two extra Outsiders?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "baron"
     ]
@@ -389,7 +389,7 @@
     "styled": "Most of you minions are support staff. Errand boys. But a few of you get to point at someone and have them drop, no tricks, no conditions on the poor sap. Would you like a power that simply kills the victim you choose?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "godfather",
       "psychopath",
@@ -406,7 +406,7 @@
     "styled": "Forget the slow grind of killing everyone one by one. Some of you minions carry a little trapdoor to victory, and when the right thing happens, the game just ENDS. Would you like an ability that declares a winner or loser the moment its condition is met?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "fearmonger",
       "eviltwin",
@@ -424,7 +424,7 @@
     "styled": "Before the first night, before a single contestant opens their eyes, you've already rearranged the furniture. Seating, headcounts, who's even in the building. Does your presence as a Minion change the game's setup?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "team": "minion",
       "setup": true
@@ -440,7 +440,7 @@
     "styled": "The weirdos, darling. The rejects. The ones who couldn't get a proper job. For some of us evil sorts, they're absolutely central to the plan. Do Outsiders matter to how your Minion ability works?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "godfather",
       "xaan",
@@ -457,7 +457,7 @@
     "styled": "Of all the evil sidekick jobs, the one with the little bottle and the innocent smile is my personal favourite. Nobody dies, everybody's wrong. Would you like your Minion ability to poison people?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "poisoner",
       "widow",
@@ -474,7 +474,7 @@
     "styled": "SAY IT! SAY WHAT YOUR GODDESS TELLS YOU TO SAY, OR I WILL HAVE YOUR HEAD! I know heads! I AM a head! As a Minion, would you like to force someone, under threat, to publicly claim what you dictate?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "harpy",
       "cerenovus"
@@ -489,7 +489,7 @@
     "styled": "Most of your lot do their dirty work in the dark. A few of you have to stand up in front of the whole town, in daylight, and do your thing with everyone watching. Is your Minion ability one you use out loud during the day?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "psychopath",
       "goblin",
@@ -507,7 +507,7 @@
     "styled": "They want you gone. They've got the rope, the votes, the righteous fury. And it just doesn't take, does it? Delicious. As a Minion, would you like natural protection from dying during the day?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "devilsadvocate",
       "psychopath",
@@ -540,7 +540,7 @@
     "styled": "The boss knows your name, your seat, your whole deal. You, meanwhile, think you're one of the good guys. RAWR? [Translation: confused too. Still loyal!] Does the Demon know you while you don't know you're evil?",
     "voice": "Mongo",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "marionette"
     ],
@@ -554,7 +554,7 @@
     "styled": "Killing them is so final, isn't it? Why not just... convert them? Imagine the look on their face when they realise whose side they're on now. As an evil player, would you like to turn a good player evil?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "mezepheles",
       "summoner",
@@ -575,7 +575,7 @@
     "styled": "Character sheets are suggestions. You can scribble on other people's, swap them, upgrade them into monsters. The Storyteller's eraser gets a workout. As an evil player, does your ability normally change other players' characters?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "pithag",
       "summoner",
@@ -623,7 +623,7 @@
     "styled": "Most villains win the old-fashioned way: kill until there's nobody left to argue. Some of you have a secret side door to victory written into your contract. As an evil player, does your ability add its own way to win or lose?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "fearmonger",
       "eviltwin",
@@ -646,7 +646,7 @@
     "styled": "It's weird, right? You're evil, and your big superpower is stopping people from dying. I'm not complaining, I'm just saying it's a strange way to be a villain. As a Minion, would you rather keep someone alive than hurt them?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "devilsadvocate"
     ],
@@ -660,7 +660,7 @@
     "styled": "Every great show needs an understudy, darling, and some of us are simply BORN for the spotlight the moment the lead actor dies tragically. Would you like to be the one who steps up if the Demon falls?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "scarletwoman"
     ],
@@ -675,7 +675,7 @@
     "styled": "You walk in, the setup changes, and then you just sort of hang around being sinister. Low effort, high impact. Honestly, I respect it. Does your Minion ability finish its work before the first night?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "baron"
     ],
@@ -691,7 +691,7 @@
     "styled": "Information is the most powerful weapon in this dungeon, and you want ALL of it. Every night. Every token. Fine. Just don't get smug. As a Trouble Brewing Minion, would you like to know far more than everyone else?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "spy"
     ],
@@ -706,7 +706,7 @@
     "styled": "In this particular nightmare, a couple of the hired help come armed. Bad moon, sharp knives, short life expectancy for everyone else. As a Bad Moon Rising Minion, would you like an ability that can kill?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "godfather",
       "assassin"
@@ -723,7 +723,7 @@
     "styled": "You spend the whole game idle, waiting, and the instant the town hangs your boss, you light up like a festival. Ghoulish timing, but effective. As a Bad Moon Rising Minion, does your moment come only after the Demon is executed?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "mastermind"
     ],
@@ -739,7 +739,7 @@
     "styled": "BEHOLD THE CAULDRON! The goat has always fancied a pointy hat. Toads! Hexes! A bubbling pot of something that WILL NOT come out of the carpet! Do you picture yourself as a witch brewing curses and potions?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "witch",
       "pithag"
@@ -755,7 +755,7 @@
     "styled": "No nightly powers, no potions, just one person on the other side who knows you, and you know them, and the town has to figure out who's lying. As a Sects and Violets Minion, would you like your ability to centre on one good player who knows you?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "eviltwin"
     ],
@@ -771,7 +771,7 @@
     "styled": "Script delivered! Tomorrow, this lucky contestant will be playing the role of Someone Else, and if they ad-lib, they might hang! Do you like deciding what someone has to claim the next day?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "cerenovus"
     ],
@@ -786,7 +786,7 @@
     "styled": "One bullet, darling. But YOU pick the scene. Timing is everything in show business and in assassination. As a Minion, would you like a single-use power you can fire whenever you like?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "assassin",
       "wizard"
@@ -801,7 +801,7 @@
     "styled": "Nightly rotation, nobody safe, nobody sure their info's clean. Rinse, repeat. As a poisoner, would you like a fresh victim every night?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "poisoner"
     ],
@@ -817,7 +817,7 @@
     "styled": "Why poison one when you can poison the entire do-gooder department at once? Bulk discount! As a poisoner, would you like to hit a whole group at the same time?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "xaan"
     ],
@@ -833,7 +833,7 @@
     "styled": "One target, chosen with care, poisoned for keeps. No take-backs, no second thoughts. As a poisoner, would you like your single victim to stay poisoned permanently?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "widow"
     ],
@@ -849,7 +849,7 @@
     "styled": "You can't just go stabbing whenever you feel like it. First, somebody specific has to get hurt, and THEN you get to be very, very upset about it. As a killer, do you need a certain kind of death first before you strike?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "godfather"
     ],
@@ -866,7 +866,7 @@
     "styled": "It's so much more satisfying when they do it to themselves. You merely set the trap; they walk right in. As a killer, would you prefer your victim's own choices to be what kills them?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "witch"
     ],
@@ -883,7 +883,7 @@
     "styled": "NO SHADOWS! NO HIDING! Your goddess picks her prey in the TOWN SQUARE, at NOON, with EVERYONE WATCHING! As a killer, would you like to choose your victim openly, in full view of everyone?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "psychopath"
     ],
@@ -900,7 +900,7 @@
     "styled": "Quality over quantity, kid. One clean shot, no saving throw, nobody coming back from it. As a killer, would you take a single unstoppable kill over many chances?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "assassin"
     ],
@@ -917,7 +917,7 @@
     "styled": "One glance is a TEASE, darling. A true star demands a nightly preview of every secret in town. As one who sees the Grimoire, would you rather look every night than only once?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "spy"
     ],
@@ -932,7 +932,7 @@
     "styled": "Rearranging the starting line-up is nice. But some of you want a second act: a kill, a poisoning, a summoning. Encore! Encore! Of the setup-changing Minions, would you like your ability to do more later in the game?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "godfather",
       "xaan",
@@ -952,7 +952,7 @@
     "styled": "Hang me, you cowards! HANG THE GOAT AND WITNESS HIS TRIUMPH! Of the Minions with their own victory condition, does yours depend on you being executed?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "goblin"
     ],
@@ -969,7 +969,7 @@
     "styled": "You've got to be the one pointing the finger. Not your teammate, not some random goodie. You. Of the Minions with their own win condition, does yours need you to make the nomination yourself?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "fearmonger"
     ],
@@ -986,7 +986,7 @@
     "styled": "The headline villain is gone, the credits are rolling, and then, surprise, a post-credits scene! Of the Minions with their own victory condition, does yours start only once the Demon has died?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "mastermind"
     ],
@@ -1003,7 +1003,7 @@
     "styled": "Your fate's tied to someone on the other team, someone who knows your face as well as you know theirs. That's not a game, that's a family feud. Of the Minions with their own win condition, does yours revolve around a known opponent?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "eviltwin"
     ],
@@ -1020,7 +1020,7 @@
     "styled": "Two ways to torment a contestant: make them pretend to be something they're not, or make them point at their neighbour and scream 'EVIL!' As a madness-maker, do you prefer making someone accuse another player?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "harpy"
     ],
@@ -1035,7 +1035,7 @@
     "styled": "Words have power, honey. Say the wrong one, or the right one, at the wrong moment, and suddenly everything changes. As an evil player, does your ability hinge on particular words being said out loud?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "mezepheles",
       "yaggababble",
@@ -1055,7 +1055,7 @@
     "styled": "Why settle for one? MORE! Two, three, a whole HANDFUL of victims in a single night! Your goddess is never satisfied with one! As an evil player, would you like to choose more than one player in a single night?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "harpy",
       "shabaloth",
@@ -1077,7 +1077,7 @@
     "styled": "Every night, the same ritual: open your eyes, point at a sucker, go back to sleep. It's a steady job, and steady jobs are how you survive down here. As a Minion, would you like to choose a target every night?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "poisoner",
       "devilsadvocate",
@@ -1098,7 +1098,7 @@
     "styled": "Plan B, darling: either seize the crown yourself, or bet everything on one last dramatic day. Of the Minions who carry on after the Demon dies, would you rather become the Demon than gamble on one final day?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "scarletwoman"
     ],
@@ -1113,7 +1113,7 @@
     "styled": "Growth mindset, people! Rather than downsizing the competition, why not onboard them? As an experimental Minion, would you like to recruit someone to your side instead of eliminating them?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "mezepheles",
       "summoner"
@@ -1129,7 +1129,7 @@
     "styled": "Night falls, the evil eyes open, and someone has to choose a victim. In this town, only a couple of you get that job. As a Trouble Brewing evil player, would you like to choose a player most nights?",
     "voice": "The Host",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "poisoner",
       "imp"
@@ -1149,7 +1149,7 @@
     "styled": "Death is supposed to be the one thing in this dungeon you can count on. Some of you keep breaking it. I'd file a complaint, but who would I even send it to? As a Bad Moon Rising evil player, can your ability cheat death?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": [
       "devilsadvocate",
       "shabaloth",
@@ -1170,7 +1170,7 @@
     "styled": "New you, who dis? A few villains on this roster can rewrite another contestant's entire identity overnight. Patch notes to follow. As a Sects and Violets evil player, can your ability change someone else's character?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "pithag",
       "fanggu"

@@ -5,7 +5,7 @@
     "styled": "Darling, imagine EVERY single vote being about YOU, and whether the whole town goes down in flames with you. Exhausting. Glamorous, but exhausting. Is your whole ability that if they execute you, your good team loses?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "saint"
     ],
@@ -33,7 +33,7 @@
     "styled": "SILENCE! The peasants shall no longer point their grubby hooves at one another! From this day forth, only the Storyteller nominates, and they must nominate MY ENEMIES! Does your presence take nominating away from every player?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "bishop"
     ],
@@ -69,7 +69,7 @@
     "styled": "There's someone you know is good from the very first night, and you'd follow them anywhere. If the monster gets them, it gets you too. I think that's the bravest kind of caring. Do you start knowing one good player, and die with them if the Demon kills them?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "grandmother"
     ],
@@ -83,7 +83,7 @@
     "styled": "You come across as so innocent, dear. Pure, even. And yet the last person who accused you didn't make it to the vote, did they? Can nominating you get the nominator executed on the spot?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "virgin"
     ],
@@ -97,7 +97,7 @@
     "styled": "I once watched a whole party die because a dwarf said 'pickles' at the wrong moment. Words are weapons down here. Do you start the game holding a secret word or phrase of your own?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "mezepheles",
       "yaggababble"
@@ -123,7 +123,7 @@
     "styled": "Here's a fun one. Some of you will read your card, trust it completely, and be dead wrong, and nobody will tell you until it's over. Does your ability mean the character you believe you are might not be your real one?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "drunk",
       "lunatic",
@@ -137,7 +137,7 @@
     "styled": "Darling, I always read the file before an interview. Every secret, every lie, every little poisoned teacup. It's so much more fun when they don't know I know. Does your character get to look at the Storyteller's Grimoire?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "spy",
       "widow"
@@ -152,7 +152,7 @@
     "styled": "RAWR! Rawr rawr! (He is pointing one enormous claw at a single player. He only gets to do this once all game.) Translation: is your whole ability one nomination that squashes the nominee unless they are the Demon?",
     "voice": "Mongo",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "golem"
     ],
@@ -180,7 +180,7 @@
     "styled": "I've lost friends down here. If I could bring one back, I would. Even the one who kept stealing my potions. Can your own ability, not another character's, bring a dead player back to life?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "professor",
       "shabaloth"
@@ -195,7 +195,7 @@
     "styled": "I raised four kids and one husband, and the husband was the worst. Now some little horror gets passed round the Minions every night like a hot casserole. Are you the tiny Demon the Minions take turns babysitting?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "lilmonsta"
     ],
@@ -209,7 +209,7 @@
     "styled": "My dream role: show up, sit down, nobody decides anything because of me, and the game happens around me like weather. Is your ability completely passive, with no player, me included, ever making a decision because of it?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 9,
     "yes": {
       "neverChooses": true
     },
@@ -223,7 +223,7 @@
     "styled": "ITEM ACQUIRED: Ability (Single Use). This item will crumble to dust the moment it activates, whether you meant it to or not. No refunds. No exchanges. Does your ability only work once in the whole game?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "takesEffectOnce": true
     },
@@ -253,7 +253,7 @@
     "styled": "Words are for poets. The System prefers STATISTICS. Kill counts. Ratings. Death tallies, lovingly updated in real time. Does your information arrive in the form of a number?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 2,
     "yes": {
       "learnsNumbers": true
     },
@@ -267,7 +267,7 @@
     "styled": "ONE corpse a night? PATHETIC! Your goddess demands a PILE! As a Demon, can your ability kill more than one player in a single night?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "shabaloth",
       "po",
@@ -285,7 +285,7 @@
     "styled": "Most Travellers drift into town, cause some paperwork and leave. Some of you came armed. As a Traveller, does your printed ability let you pick someone to kill, no execution required?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "gunslinger",
       "gangster",
@@ -316,7 +316,7 @@
     "styled": "At Borant, we don't call it 'failing'. We call it 'a pivot'! Tank your own team hard enough and you simply join the winners! Is your whole ability that being most to blame for your team's loss makes you switch sides and win?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "politician"
     ],
@@ -330,7 +330,7 @@
     "styled": "GUILTY! INNOCENT! GUILTY AGAIN! The vote is a mere suggestion, and I, the MAGNIFICENT, shall overrule it! Once per game, can you force the current execution to pass or fail, whatever the vote says?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "judge"
     ],
@@ -344,7 +344,7 @@
     "styled": "Finally, a system where the dead get a say. Lord knows I've buried enough voters. Does your presence mean only you and the dead are allowed to vote?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "voudon"
     ],
@@ -358,7 +358,7 @@
     "styled": "Changing bodies is something I know a little about. It's scary, and a bit thrilling, and you never quite feel the same afterwards. When you kill your first Outsider, do you leap into their body and leave your old one behind?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "fanggu"
     ],
@@ -387,7 +387,7 @@
     "styled": "Birds? Delivering MY information? Absolutely not. I would eat the messenger, darling, and then demand a refund. Still: if you die at night, do you wake to choose a player and learn their character?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "ravenkeeper"
     ],
@@ -401,7 +401,7 @@
     "styled": "I know a thing or two about trailing behind a demanding boss and doing whatever she does. Is your whole ability that you can only vote when the player you picked is voting too?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "butler"
     ],
@@ -457,7 +457,7 @@
     "styled": "Finally, a strategy I can get behind: everybody just stops killing each other. Revolutionary. If only three players live and nobody gets executed, does your team win?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "mayor"
     ],
@@ -471,7 +471,7 @@
     "styled": "PATCH NOTES v15.1: All Townsfolk information has been inverted for your entertainment. Up is down. Friends are foes. The System regrets nothing. Does your presence make every Townsfolk's information false?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": [
       "vortox"
     ]
@@ -482,7 +482,7 @@
     "styled": "Okay, so you don't even need to know who anyone is. You just say a job title and whoever has it drops dead. That's somehow worse. Do you kill by naming a character instead of pointing at a player?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "ojo"
     ],
@@ -518,7 +518,7 @@
     "styled": "Brand-safety update: every Minion now receives free cover stories, generously donated by someone on the good team! Is your whole ability handing each Minion three extra bluffs?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "snitch"
     ],
@@ -546,7 +546,7 @@
     "styled": "Advice is my whole job, kid, and nobody ever takes it. Once per game, can you march up to the Storyteller and get advice on how your team can win?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "fisherman"
     ],
@@ -560,7 +560,7 @@
     "styled": "I'm always the one who fixes the seating plan so the feuding cousins can't plot by the punch bowl. Each day, do you get to make players swap seats and stop them sneaking off for private chats?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "matron"
     ],
@@ -574,7 +574,7 @@
     "styled": "Most good folk hide in the crowd. You, darling, have your headshot pinned to the monster's wall from night one. As a good player, does your ability guarantee the Demon knows exactly which player you are?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "king",
       "lunatic"
@@ -607,7 +607,7 @@
     "styled": "I spent years being judged on how I looked instead of who I was. It's awful, and apparently it's also your whole job. Is your whole ability that you might look evil to other players' abilities, even though you're good?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "recluse"
     ],
@@ -635,7 +635,7 @@
     "styled": "Bring me the scripts! I ALONE decide who plays whom! The hero? The villain? The comic relief? Mine to choose! Does your own ability have you choose a character, rather than just a player or a guess?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "engineer",
       "courtier",
@@ -653,7 +653,7 @@
     "styled": "Every villain gets the same little welcome packet, darling. But some of you have SOURCES. As an evil player, does your own ability reveal extra secrets about who's who or what's in play, beyond team info and bluffs?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 10,
     "yes": [
       "godfather",
       "spy",
@@ -676,7 +676,7 @@
     "styled": "I know it isn't always easy to tell down here, and some days I'm not sure about myself. But I'd like to know where you stand. Is your character one of the good team's characters, a Townsfolk or an Outsider?",
     "voice": "Katia",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "team": [
         "townsfolk",
@@ -690,7 +690,7 @@
     "styled": "Tell me honestly, darling: are you the one with the horns, the night-time murders and the absolutely TRAGIC fashion sense? Are you a Demon?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 1,
     "yes": {
       "team": "demon"
     }
@@ -701,7 +701,7 @@
     "styled": "Middle management is the beating heart of any evil enterprise! Great benefits, flexible hours, a boss who might eat you. Are you a Minion, working for the Demon?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 2,
     "yes": {
       "team": "minion"
     }
@@ -712,7 +712,7 @@
     "styled": "NIGHT SHIFT BONUS: none. Overtime pay: none. Chance your supervisor eats you: nonzero! As a Minion, does your own ability have you up doing or learning something on most nights?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": {
       "wakesMostNights": true
     },
@@ -764,7 +764,7 @@
     "styled": "I've gotten plenty of people sloshed in my time, but never on purpose as a tactical manoeuvre. Can your own ability make another player drunk or poisoned?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "makesOthersDrunkOrPoisoned": true
     }
@@ -775,7 +775,7 @@
     "styled": "I simply ADORE a booby trap. Somebody makes one wrong move in front of everyone and BOOM, consequences, darling! Does your ability set a trap that goes off automatically when another player does one specific thing in public?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "virgin",
       "damsel",
@@ -792,7 +792,7 @@
     "styled": "Today a humble follower, tomorrow a FANATIC! I shall turn hearts like pages in a book of my own greatness! Can your own ability change a player's alignment, even your own?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": {
       "changesAlignment": true
     },
@@ -806,7 +806,7 @@
     "styled": "Forget the henchmen. I would like to speak to the manager. Is the information your ability gives you always about the Demon?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "knight",
       "clockmaker",
@@ -828,7 +828,7 @@
     "styled": "I was the nosiest woman on my street for forty years and I'd do it again. Does your ability specifically involve the players sitting right next to you?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 3,
     "yes": {
       "caresAboutNeighbours": true
     },
@@ -842,7 +842,7 @@
     "styled": "DOUBLE OR NOTHING! Name a stranger's character correctly and live. Get it wrong and the System gets a fresh highlight reel! Each night, do you bet your life on guessing a player's character?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "gambler"
     ],
@@ -856,7 +856,7 @@
     "styled": "STORYTELLER LEVEL UP! Thanks to one unfortunate death, the referee now has a Minion power, and the System could not be more delighted. Is your whole ability that when you die, the Storyteller gains a Minion ability?",
     "voice": "The System AI",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "plaguedoctor"
     ],
@@ -898,7 +898,7 @@
     "styled": "Death is NO EXCUSE FOR SLACKING! Your goddess's corpses keep WORKING! Do the Minions you kill keep their abilities, and poison a Townsfolk neighbour while they're at it?",
     "voice": "Samantha",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "vigormortis"
     ],
@@ -912,7 +912,7 @@
     "styled": "Two little secrets, darling: one true, one a lie. The fun is in watching you squirm while you work out which. Each day, can you visit the Storyteller to hear two things, one true and one false?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "savant"
     ],
@@ -926,7 +926,7 @@
     "styled": "Hired muscle. Whoever grabs you first gets a headache, and you work for them now. I've known worse employment terms. Is your whole ability that the first player to target you each night ends up drunk, and you join their side?",
     "voice": "Mordecai",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 8,
     "yes": [
       "goon"
     ],
@@ -940,7 +940,7 @@
     "styled": "Introducing the Everything Bundle! Every Outsider perk AND every Outsider curse, all in one convenient, terrifying package! Do you hold every Outsider ability on the script at once?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 4,
     "yes": [
       "hermit"
     ]
@@ -973,7 +973,7 @@
     "styled": "Fools! You think killing my master ends this? There is a PLAN behind the plan, and I have ONE MORE DAY to see it through! If the Demon dies by execution, does the game carry on for one more day because of you?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "mastermind"
     ],
@@ -987,7 +987,7 @@
     "styled": "Our legal department has found a loophole! Tomorrow's guest of honour can be hanged and walk away completely fine! Each night, do you pick a living player who won't die if they're executed tomorrow?",
     "voice": "Zev",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "devilsadvocate"
     ],
@@ -1015,7 +1015,7 @@
     "styled": "RAWR! (He has dug up a bone and is extremely pleased with himself.) Translation: once per game, do you choose a dead player to get their ability back until dusk?",
     "voice": "Mongo",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 7,
     "yes": [
       "bonecollector"
     ],
@@ -1029,7 +1029,7 @@
     "styled": "In my day you settled disputes with the people next door with a casserole and a grudge. This is quicker. Once a day, can you kill a living neighbour, if your other neighbour agrees?",
     "voice": "Elle",
     "quality": 5,
-    "complexity": 5,
+    "complexity": 6,
     "yes": [
       "gangster"
     ],
