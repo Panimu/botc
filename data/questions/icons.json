@@ -1273,11 +1273,11 @@
   },
   {
     "id": "icon-hat",
-    "plain": "Is there a hat, helmet, crown or tiara on your token's picture?",
+    "plain": "Is your token picture something worn on top of your head?",
     "styled": "A tiara is not an accessory, it is a LIFESTYLE. Lesser headwear is acceptable, I suppose. Is there a hat, helmet, crown or tiara on your token's picture?",
     "voice": "Princess Donut",
     "quality": 5,
-    "complexity": 4,
+    "complexity": 2,
     "yes": {
       "iconShowsHeadwear": true
     },
@@ -6033,7 +6033,7 @@
     "styled": "THIS GOAT has the LOUDEST mouth in the dungeon! Is there a challenger? SPEAK! Is your token's picture basically just a big mouth?",
     "voice": "Prepotente",
     "quality": 5,
-    "complexity": 2,
+    "complexity": 1,
     "yes": [
       "snitch",
       "scarletwoman",
@@ -6220,10 +6220,11 @@
     "quality": 5,
     "complexity": 2,
     "yes": [
+      "princess",
       "virgin",
       "moonchild",
-      "thief",
-      "princess"
+      "devilsadvocate",
+      "thief"
     ],
     "scope": [
       "steward",
@@ -6530,7 +6531,7 @@
     "styled": "Give me a hammer and a quiet afternoon and I'll fix half this dungeon. The other half deserves to stay broken. Would your token's picture look at home in a tool shed?",
     "voice": "Carl",
     "quality": 5,
-    "complexity": 2,
+    "complexity": 1,
     "yes": [
       "tinker",
       "apprentice",
