@@ -50,9 +50,9 @@ export const UNLIKELY_WEIGHT = 0.15;
 // Yesterday's character can't be today's answer, so from this date the hunt
 // starts with them already eliminated. (Earlier hunts are left as they were.)
 export const PRE_ELIMINATE_FROM = '2026-10-06';
-// Rules-based questions only: personality and token-art questions are too
-// subjective for a puzzle everyone plays against the same answer.
-export const EXCLUDED_FILES = ['psychology.json', 'icons.json'];
+// Personality questions are too subjective for a puzzle everyone plays against
+// the same answer, so they stay in the quiz. Token-art questions are in.
+export const EXCLUDED_FILES = ['psychology.json'];
 
 // cyrb53-style string hash feeding mulberry32: a small seeded PRNG.
 export function seededRng(seed) {
