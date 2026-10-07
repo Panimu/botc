@@ -56,7 +56,7 @@ Strict elimination means one wrong tag permanently removes the right answer. Bef
 
 - **Crude flags:** `learns`, `choosesPlayers`, `aboutDeath`, `aboutVoting`, `madness`, `drunkOrPoisoned`, `aboutAlignment`, `startsKnowing` and `oncePerGame` are keyword matches on ability text, not rules facts, so don't use them as selectors in new questions. For example, `choosesPlayers` really means "makes any choice", and `startsKnowing` misses the Evil Twin, Widow, Summoner and Boffin. Use hand-tagged traits, `team`, `edition`, `setup` or id lists instead.
 - **Night 1:** in games of 7+ players every Minion and Demon wakes on night 1 to meet their team, and the Demon gets bluffs. Questions about starting with knowledge or acting on night 1 must say "because of your own ability".
-- **The night sheet:** `firstNight`/`otherNight` mean the Storyteller has something to do, not that the player wakes.
+- **The night sheet:** `firstNight`/`otherNight` mean the Storyteller has something to do, not that the player wakes. They count only steps before the sheet's Dawn marker: the Leviathan's and the Vizier's announcements come after Dawn, so they happen in the day and neither character is on either flag.
 - **Demons that don't kill at night:** the Riot (kills through nominations on day 3) and the Leviathan (doesn't kill).
 - **Good characters that kill at night:** the Lycanthrope, for one.
 - **The Vizier is publicly known**, so "secretly evil" is false for it.

@@ -12,7 +12,10 @@ const read = async (path) => JSON.parse(await readFile(new URL(path, root), 'utf
 
 const roles = await read('resources/data/roles.json');
 const night = await read('resources/data/nightsheet.json');
-const firstNight = new Set(night.firstNight);
+// The night order ends with a Dawn step; anything after it (the Leviathan's and the
+// Vizier's announcements) happens at dawn, not during the night, so it doesn't count.
+const beforeDawn = (order) => (order.includes('dawn') ? order.slice(0, order.indexOf('dawn')) : order);
+const firstNight = new Set(beforeDawn(night.firstNight));
 
 // Hand-tagged cross-team traits: data/traits/*.json, each { traitName: { definition, yes: [ids], no?: [ids] } }.
 // A trait with a `no` list also gets a `<name>Clear` field (true for clear yes or clear no),
@@ -25,7 +28,7 @@ for (const file of (await readdir(new URL('data/traits/', root))).filter((f) => 
     if (Array.isArray(trait.no)) traits[`${name}Clear`] = new Set([...trait.yes, ...trait.no]);
   }
 }
-const otherNight = new Set(night.otherNight);
+const otherNight = new Set(beforeDawn(night.otherNight));
 
 // Flag name -> pattern tested against the ability text.
 const ABILITY_FLAGS = {
