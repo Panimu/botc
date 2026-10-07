@@ -10,7 +10,7 @@ export const OFFER_COUNT = 3;
 // aside (used only to fill a slot nothing else can), and the three offers aim
 // at these splits (bigger side's share of the pool), nearer being likelier.
 // At GUESS_THRESHOLD or fewer, questions that would single out one character
-// are set aside the same way, and even splits are favoured. Two offers never
+// are set aside the same way, and the rest are equally likely. Two offers never
 // split the remaining characters the same way (either way round), even if the
 // questions differ. Offers are shown shuffled, so position gives nothing away.
 // To keep the wording on screen manageable, the last offer drawn must bring the
@@ -220,7 +220,9 @@ export class DailyGame {
         else draw(candidates, even, last);
       });
     } else {
-      while (picked.length < OFFER_COUNT && draw(available() ? preferred : candidates, even, picked.length === OFFER_COUNT - 1));
+      // No split is favoured: every remaining question is equally likely.
+      const any = () => 1;
+      while (picked.length < OFFER_COUNT && draw(available() ? preferred : candidates, any, picked.length === OFFER_COUNT - 1));
     }
 
     // Shuffle (seeded) so the 50/50 isn't always first.
