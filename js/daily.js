@@ -10,8 +10,9 @@ export const OFFER_COUNT = 3;
 // aside (used only to fill a slot nothing else can), and the three offers aim
 // at these splits (bigger side's share of the pool), nearer being likelier.
 // At GUESS_THRESHOLD or fewer, questions that would single out one character
-// are set aside the same way, and even splits are favoured. Offers are shown
-// shuffled, so position gives nothing away.
+// are set aside the same way, and even splits are favoured. Two offers never
+// split the remaining characters the same way (either way round), even if the
+// questions differ. Offers are shown shuffled, so position gives nothing away.
 export const HUNT_MIN_SIDE = 7;
 export const SPLIT_TARGETS = [0.5, 0.6, 0.7];
 const TARGET_SPREAD = 0.05;
@@ -166,22 +167,28 @@ export class DailyGame {
     for (const question of this.questions) {
       if (asked.has(question.id)) continue;
       if (question.scopeSet && this.pool.some((id) => !question.scopeSet.has(id))) continue;
-      const yes = this.pool.filter((id) => question.yesSet.has(id)).length;
+      const yesIds = this.pool.filter((id) => question.yesSet.has(id));
+      const yes = yesIds.length;
       if (yes === 0 || yes === n) continue;
-      candidates.push({ question, small: Math.min(yes, n - yes), large: Math.max(yes, n - yes) });
+      // How it splits this pool, the same whichever side is "yes".
+      const noIds = this.pool.filter((id) => !question.yesSet.has(id));
+      const split = yesIds[0] < noIds[0] ? yesIds.join() : noIds.join();
+      candidates.push({ question, small: Math.min(yes, n - yes), large: Math.max(yes, n - yes), split });
     }
 
     const picked = [];
+    const shown = new Set(); // splits already on offer
+    const fresh = (c) => !picked.includes(c) && !shown.has(c.split);
     const draw = (pool, weightOf) => {
-      const [choice] = drawWeighted(pool.filter((c) => !picked.includes(c)).map((c) => [c, weightOf(c)]), rng);
-      if (choice) picked.push(choice);
+      const [choice] = drawWeighted(pool.filter(fresh).map((c) => [c, weightOf(c)]), rng);
+      if (choice) { picked.push(choice); shown.add(choice.split); }
       return choice;
     };
     // The set-aside questions only fill a slot nothing else can, most even first.
     const even = (c) => splitWeight(c.small, n);
     const big = n > GUESS_THRESHOLD;
     const preferred = candidates.filter((c) => c.small >= (big ? HUNT_MIN_SIDE : 2));
-    const available = () => preferred.some((c) => !picked.includes(c));
+    const available = () => preferred.some(fresh);
     if (big) {
       for (const target of SPLIT_TARGETS) {
         if (available()) draw(preferred, (c) => Math.exp(-(((c.large / n - target) / TARGET_SPREAD) ** 2)) + 1e-9);

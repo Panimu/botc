@@ -319,7 +319,9 @@ test('hunt offers: above 15 left, no side under 7 when avoidable; at 15 or fewer
       const all = game.questions.filter((q) => !game.history.some((h) => h.question === q)
         && (!q.scopeSet || game.pool.every((id) => q.scopeSet.has(id))) && sides(q) > 0);
       const minSide = n > GUESS_THRESHOLD ? HUNT_MIN_SIDE : 2;
-      const good = all.filter((q) => sides(q) >= minSide).length;
+      // Offers never repeat a split, so count distinct splits that meet the rule.
+      const splitOf = (q) => { const y = game.pool.filter((id) => q.yesSet.has(id)).join(); const o = game.pool.filter((id) => !q.yesSet.has(id)).join(); return y < o ? y : o; };
+      const good = new Set(all.filter((q) => sides(q) >= minSide).map(splitOf)).size;
       const goodOffered = game.offers.filter((q) => sides(q) >= minSide).length;
       // As many offers meet the rule as possible.
       assert.equal(goodOffered, Math.min(good, game.offers.length), `day ${day}, ${n} left`);
@@ -347,4 +349,22 @@ test('hunt offers: above 15 left they spread across even and bolder splits, and 
   }
   assert.ok(spreads >= turns * 0.7, `offers usually span 50/50 to 70/30: ${spreads} of ${turns}`);
   assert.ok(evenFirst < turns * 0.7, `the most even offer isn't always shown first: ${evenFirst} of ${turns}`);
+});
+
+test('hunt offers never include two questions that split the remaining characters the same way', () => {
+  let turns = 0;
+  for (let day = 0; day < 30; day++) {
+    const game = new DailyGame({ characters, questions, date: addDays(LAUNCH_DATE, day) });
+    while (game.status === 'playing' && game.offers.length) {
+      const splits = game.offers.map((q) => {
+        const yes = game.pool.filter((id) => q.yesSet.has(id)).join();
+        const no = game.pool.filter((id) => !q.yesSet.has(id)).join();
+        return yes < no ? yes : no;
+      });
+      assert.equal(new Set(splits).size, splits.length, `day ${day}: two offers split ${game.pool.length} characters alike`);
+      turns++;
+      game.ask(game.offers[(day + turns) % game.offers.length].id);
+    }
+  }
+  assert.ok(turns > 150);
 });
