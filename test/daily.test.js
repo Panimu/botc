@@ -4,7 +4,7 @@ import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
   par, parRun, huntSteps, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
-  OVER_PAR_QUESTIONS, GUESS_BUDGET, HUNT_MIN_SIDE, tier, streakLine, TIERS, COMPLEXITY_BUDGET, withinBudget,
+  OVER_PAR_QUESTIONS, GUESS_BUDGET, HUNT_MIN_SIDE, tier, streakLine, TIERS, COMPLEXITY_BUDGET, withinBudget, MADE_UP_MAX, madeUpQuestion,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -451,4 +451,45 @@ test('complexity budget: most three-offer screens total 15 or less, and one offe
   }
   assert.ok(screens > 50);
   assert.ok(within / screens > 0.65, `only ${within} of ${screens} screens within budget`);
+});
+
+test('made-up questions: named, worded and identified from the characters they list', () => {
+  const one = madeUpQuestion(['imp'], characters);
+  assert.equal(one.plain, 'Are you the Imp?');
+  const three = madeUpQuestion(['po', 'chef', 'imp'], characters);
+  assert.equal(three.plain, 'Are you one of Chef, Imp or Po?');
+  assert.equal(three.id, madeUpQuestion(['imp', 'po', 'chef'], characters).id, 'the id ignores order');
+  assert.notEqual(three.id, madeUpQuestion(['po', 'chef', 'monk'], characters).id);
+  assert.match(three.id, /^pick-[0-9a-z]+$/);
+});
+
+test('made-up questions fill slots the question bank cannot, deterministically, and saved hunts replay', () => {
+  // A bank of two questions runs dry almost at once.
+  const tiny = questions.filter((q) => q.id === 'global-good-and-evil' || q.id === 'global-first-night-wake');
+  assert.equal(tiny.length, 2);
+  let madeUpSeen = 0;
+  for (let day = 0; day < 6; day++) {
+    const date = addDays(LAUNCH_DATE, day);
+    const game = new DailyGame({ characters, questions: tiny, date });
+    const actions = [];
+    while (game.status === 'playing' && game.offers.length) {
+      const n = game.pool.length;
+      const twin = replay(new DailyGame({ characters, questions: tiny, date }), actions);
+      assert.deepEqual(twin.offers.map((q) => q.id), game.offers.map((q) => q.id), 'same choices, same offers');
+      if (n > 2) assert.equal(game.offers.length, OFFER_COUNT, `three offers with ${n} left`);
+      const splits = new Set(game.offers.map((q) => { const y = game.pool.filter((id) => q.yesSet.has(id)); return y.includes(game.pool[0]) ? y.join() : game.pool.filter((id) => !q.yesSet.has(id)).join(); }));
+      assert.equal(splits.size, game.offers.length, 'no two offers split the same way');
+      for (const q of game.offers.filter((o) => o.madeUp)) {
+        madeUpSeen++;
+        assert.equal(q.yesSet.size, Math.min(MADE_UP_MAX, Math.floor(n / 2)));
+        assert.ok([...q.yesSet].every((id) => game.pool.includes(id)));
+      }
+      const q = game.offers[(day + actions.length) % game.offers.length];
+      actions.push({ ask: q.id });
+      game.ask(q.id);
+    }
+    assert.equal(game.status, 'won', 'questions alone can always finish an unbudgeted hunt');
+    assert.equal(replay(new DailyGame({ characters, questions: tiny, date }), actions).status, 'won');
+  }
+  assert.ok(madeUpSeen > 20);
 });

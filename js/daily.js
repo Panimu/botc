@@ -13,6 +13,7 @@ export const OFFER_COUNT = 3;
 // are set aside the same way, and the rest are equally likely. Two offers never
 // split the remaining characters the same way (either way round), even if the
 // questions differ. Offers are shown shuffled, so position gives nothing away.
+// Slots the questions can't fill get made-up "Are you one of …?" questions.
 // To keep the wording on screen manageable, the last offer drawn must bring the
 // three offers' total complexity (1 to 10 each) to COMPLEXITY_BUDGET or less;
 // when nothing fits, the budget rises by 1 until something does. The split
@@ -21,7 +22,22 @@ export const HUNT_MIN_SIDE = 7;
 export const SPLIT_TARGETS = [0.5, 0.6, 0.7];
 const TARGET_SPREAD = 0.05;
 export const COMPLEXITY_BUDGET = 15;
+// When the question bank can't fill all three slots, the hunt makes up
+// "Are you one of …?" questions naming up to MADE_UP_MAX characters (never more
+// than half of those left), chosen by the same seed, so everyone sees the same ones.
+export const MADE_UP_MAX = 7;
 export const complexityOf = (question) => question.complexity ?? 5;
+
+// A made-up question naming these characters. Its id is built from them, so a
+// saved hunt replays to the same question.
+export function madeUpQuestion(ids, characters) {
+  const names = ids.map((id) => characters.find((c) => c.id === id).name).sort((a, b) => a.localeCompare(b));
+  const plain = names.length === 1 ? `Are you the ${names[0]}?`
+    : `Are you one of ${names.slice(0, -1).join(', ')} or ${names.at(-1)}?`;
+  let hash = 2166136261;
+  for (const ch of [...ids].sort().join(',')) hash = Math.imul(hash ^ ch.charCodeAt(0), 16777619) >>> 0;
+  return { id: `pick-${hash.toString(36)}`, plain, complexity: Math.min(10, 1 + names.length), madeUp: true, yesSet: new Set(ids), scopeSet: null };
+}
 
 // The options that keep the offers within the complexity budget, given the
 // complexity already on offer; the budget rises by 1 until at least one fits.
@@ -223,6 +239,22 @@ export class DailyGame {
       // No split is favoured: every remaining question is equally likely.
       const any = () => 1;
       while (picked.length < OFFER_COUNT && draw(available() ? preferred : candidates, any, picked.length === OFFER_COUNT - 1));
+    }
+
+    // Slots the question bank couldn't fill get made-up questions, each with a
+    // split not already on offer. (With two left, only one split exists.)
+    const madeUpSize = Math.min(MADE_UP_MAX, Math.floor(n / 2));
+    for (let tries = 0; picked.length < OFFER_COUNT && madeUpSize > 0 && tries < 50; tries++) {
+      const named = [...this.pool];
+      for (let i = named.length - 1; i > 0; i--) {
+        const j = Math.floor(rng() * (i + 1));
+        [named[i], named[j]] = [named[j], named[i]];
+      }
+      const question = madeUpQuestion(named.slice(0, madeUpSize), this.characters);
+      const yesIds = this.pool.filter((id) => question.yesSet.has(id));
+      const noIds = this.pool.filter((id) => !question.yesSet.has(id));
+      const split = yesIds[0] < noIds[0] ? yesIds.join() : noIds.join();
+      if (!shown.has(split)) { picked.push({ question, split }); shown.add(split); }
     }
 
     // Shuffle (seeded) so the 50/50 isn't always first.
