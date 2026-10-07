@@ -4,6 +4,8 @@
     "plain": "Are you good at waiting?",
     "styled": "I sat in a doctor's waiting room for four hours once and came out with three new friends and a recipe for flan. Is waiting something you are genuinely good at?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPatient": true
     },
@@ -16,6 +18,8 @@
     "plain": "As a Demon, would you rather bide your time than strike every single night?",
     "styled": "YOUR GODDESS ADORES A MASSACRE! But even a goddess knows the sweetest slaughter is the one you wait for. Little demon, would you rather bide your time than strike every single night?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPatient": true
     },
@@ -29,6 +33,8 @@
     "plain": "As a Minion, would you rather your power waited for one key moment than worked from the start?",
     "styled": "Our sponsors love a slow burn! Big reveal, huge ratings, minimal cleanup costs. So, Minion, for the brand: would you rather your power waits for one key moment than works right from the start?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPatient": true
     },
@@ -42,6 +48,8 @@
     "plain": "Would you rather wait days for one decisive moment than be useful from the very start?",
     "styled": "It's scary, holding on to something precious while everyone around you is acting. But waiting can be its own kind of courage. Would you rather wait days for one decisive moment than be useful from the very start?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPatient": true
     },
@@ -55,6 +63,8 @@
     "plain": "Do you love taking big risks?",
     "styled": "I've buried a lot of contestants who said yes to this one. I've also watched a few of them walk out rich. Do you love taking big risks?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyRiskTaker": true
     },
@@ -67,6 +77,8 @@
     "plain": "Do you want a little danger built into everything you do?",
     "styled": "Folks, some heroes come with seatbelts and some come with a lit fuse taped to their chest! Which kind are we looking at tonight? Do you want a little danger built into everything you do?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyRiskTaker": true
     },
@@ -80,6 +92,8 @@
     "plain": "Even as a Minion, do you want to dictate what other players can do?",
     "styled": "A Minion who gives the orders. How deliciously ironic. Tell me, sweetheart, is that you? Even as a Minion, do you want to dictate what other players can do?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyNeedsControl": true
     },
@@ -93,6 +107,8 @@
     "plain": "In a meeting, do you like being the one who sets the agenda?",
     "styled": "Synergy starts at the top, people! Someone has to own the slide deck, the timetable and the vote. In a meeting, do you like being the one who sets the agenda?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyNeedsControl": true
     },
@@ -106,6 +122,8 @@
     "plain": "Would you rather leave the rule-making to someone else?",
     "styled": "I used to think I had to control everything to be safe. Now I can let someone else write the rules sometimes, and it's a relief. Would you rather leave the rule-making to someone else?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyNeedsControl": false
     },
@@ -118,6 +136,8 @@
     "plain": "Are you usually first up at karaoke?",
     "styled": "RAWR! [Translation: me first!] He stomps onto the little stage, grabs the microphone in his jaws and roars along to the music. He always goes first. Are you usually first up at karaoke?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyShowman": true
     },
@@ -130,6 +150,8 @@
     "plain": "Even as a villain, do you want an audience watching you work?",
     "styled": "What is carnage without spectators? A WASTE, that is what! Your goddess demands witnesses for her glory! Even as a villain, do you want an audience watching you work?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyShowman": true
     },
@@ -146,6 +168,8 @@
     "plain": "On the good side, do you do your best work with everyone watching?",
     "styled": "Some of us shrink when people stare. Some of us stand up straighter. I'm still learning which one I am. On the good side, do you do your best work with everyone watching?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyShowman": true
     },
@@ -162,6 +186,8 @@
     "plain": "As a Demon, do you want your killing done out loud, in broad daylight?",
     "styled": "Night-time kills test terribly with our focus groups. Daylight carnage? Through the roof! As a Demon, do you want your killing done out loud, in broad daylight?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyShowman": true
     },
@@ -175,6 +201,8 @@
     "plain": "Do lies come easily to you?",
     "styled": "Lying's a survival skill down here. Some of you can't do it to save your life, literally. Others don't even notice they're doing it. Do lies come easily to you?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyDeceiver": true
     },
@@ -187,6 +215,8 @@
     "plain": "Do you like pulling strings behind the scenes so nobody knows it was you?",
     "styled": "The goat does not climb onto the stage. The goat MOVES the stage. And nobody suspects the goat! Do you like pulling strings behind the scenes so nobody knows it was you?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyManipulator": true
     },
@@ -199,6 +229,8 @@
     "plain": "On the good side, do you like plans where helping means quietly muddling someone?",
     "styled": "Sometimes being on the right side means someone ends up confused, and they never find out why. I hate that. Some people don't mind it at all. On the good side, do you like plans where helping means quietly muddling someone?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyManipulator": true
     },
@@ -215,6 +247,8 @@
     "plain": "As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
     "styled": "Bodies are delightful. But bodies AND a village full of befuddled, poisoned survivors? My favourite combination! As a Demon, do you want your power to leave people drunk, poisoned or misinformed as well as dead?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyManipulator": true
     },
@@ -242,6 +276,8 @@
     "plain": "Do you put the group's needs ahead of your own safety?",
     "styled": "When it really comes down to it, would you step in front of the blow so someone else doesn't have to? I would. I think. Do you put the group's needs ahead of your own safety?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "monk",
       "exorcist",
@@ -280,6 +316,8 @@
     "plain": "Do you get more joy from making someone else powerful than from being powerful yourself?",
     "styled": "Behind every superstar is a support team nobody thanks! Our sponsors call them 'enablers'. Do you get more joy from making someone else powerful than from being powerful yourself?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "professor",
       "boffin",
@@ -306,6 +344,8 @@
     "plain": "Even as a villain, would you rather lift up your allies than look after yourself?",
     "styled": "Most evil contestants I knew were in it for number one. Every now and then one actually cared about the crew. Even as a villain, would you rather lift up your allies than look after yourself?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psySelfless": true
     },
@@ -322,6 +362,8 @@
     "plain": "On the good side, would you rather help other people than look after yourself?",
     "styled": "Some heroes dive on the grenade, and some heroes dive behind the nearest heavy friend! Let's see which this one is. On the good side, would you rather help other people than look after yourself?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psySelfless": true
     },
@@ -338,6 +380,8 @@
     "plain": "Do you prefer going it alone over relying on a team?",
     "styled": "Committees are where good ideas go to die, sweetie. I'll do it myself and bring the snacks. Do you prefer going it alone over relying on a team?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "politician"
     ],
@@ -365,6 +409,8 @@
     "plain": "Are you happiest when nobody can quite pin you down?",
     "styled": "I've interviewed you three times and I still couldn't tell my viewers who you really are. Infuriating. Delicious. Are you happiest when nobody can quite pin you down?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "politician"
     ],
@@ -384,6 +430,8 @@
     "plain": "Do you hate not knowing things?",
     "styled": "A box falls from the ceiling with a question mark on it. The cat wants to open it. I want to run. And yet I really, really want to know what's inside. Do you hate not knowing things?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyCurious": true
     },
@@ -396,6 +444,8 @@
     "plain": "Even as a villain, do you want to see everything that's going on?",
     "styled": "PREMIUM VIEWING PACKAGE: Unlock every camera in the dungeon for the low, low price of your soul! Even as a villain, do you want to see everything that is going on?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyCurious": true
     },
@@ -412,6 +462,8 @@
     "plain": "Would you trade a little safety for a peek at someone's deepest secret?",
     "styled": "Every great interview costs something, darling. Sometimes it costs both of us. Would you trade a little safety for a peek at someone's deepest secret?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyCurious": true
     },
@@ -425,6 +477,8 @@
     "plain": "Would you rather learn what is going on than change what happens?",
     "styled": "Some folks want to steer the bus. Me, I want the window seat so I can see everything and gossip about it later. Would you rather learn what is going on than change what happens?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyCurious": true
     },
@@ -438,6 +492,8 @@
     "plain": "Do you trust your gut over evidence?",
     "styled": "Evidence is for people with time to waste. My gut has been right about every husband I ever had. Well, most of them. Do you trust your gut over evidence?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyIntuitive": true
     },
@@ -450,6 +506,8 @@
     "plain": "Would you rather work things out by guessing than be told the answer?",
     "styled": "I used to want someone to just tell me what to do. Now I'd rather take a swing and find out if I was right. Would you rather work things out by guessing than be told the answer?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyIntuitive": true
     },
@@ -463,6 +521,8 @@
     "plain": "Do you love a logic puzzle more than a straight answer?",
     "styled": "Congratulations! Your reward is a riddle wrapped in a mystery wrapped in a slightly damp sock. Some contestants weep. Some contestants SALIVATE. Do you love a logic puzzle more than a straight answer?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPuzzler": true
     },
@@ -475,6 +535,8 @@
     "plain": "Is your first instinct to protect people?",
     "styled": "When something goes wrong, some people run, some people fight, and some people put themselves between the danger and everyone else. Is your first instinct to protect people?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyProtective": true
     },
@@ -487,6 +549,8 @@
     "plain": "Would you rather keep someone alive than take someone down?",
     "styled": "I'd love to punch the bad guy. I really would. But if I have to choose, I'm grabbing the person who's about to fall. Would you rather keep someone alive than take someone down?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "innkeeper",
       "monk",
@@ -541,6 +605,8 @@
     "plain": "As a villain, do you prefer shielding your allies to hurting your enemies?",
     "styled": "A villain with a soft spot. My viewers will eat this up. So, confess: as a villain, do you prefer shielding your allies to hurting your enemies?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyProtective": true
     },
@@ -557,6 +623,8 @@
     "plain": "Do you love it when everything goes completely sideways?",
     "styled": "Plans are adorable. I like it best when the plan catches fire and everyone has to wing it. Do you love it when everything goes completely sideways?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyChaosLover": true
     },
@@ -569,6 +637,8 @@
     "plain": "As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
     "styled": "Quiet killing is for amateurs! Your goddess wants screaming, swapping, sky-falling madness! As a Demon, would you rather throw the whole game into confusion than just quietly kill?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyChaosLover": true
     },
@@ -582,6 +652,8 @@
     "plain": "On the good side, do you love it when nobody can predict what happens next?",
     "styled": "RAWR! [Translation: knocking over EVERYTHING!] Every time, and nobody ever knows which thing is next. He is having the best day. On the good side, do you love it when nobody can predict what happens next?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyChaosLover": true
     },
@@ -598,6 +670,8 @@
     "plain": "Are you fiercely loyal to one particular person?",
     "styled": "I know what it's like to have someone who'd walk through fire for you. I'd do the same for them without a second thought. Are you fiercely loyal to one particular person?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyLoyal": true
     },
@@ -610,6 +684,8 @@
     "plain": "Do you hold grudges?",
     "styled": "Folks, our next contestant has the memory of an elephant and the temper of a wasp! Or do they? Let's find out! Do you hold grudges?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyVengeful": true
     },
@@ -622,6 +698,8 @@
     "plain": "On the good side, when someone wrongs you, do you want them to pay for it?",
     "styled": "I'm a forgive-and-forget kind of guy. Mostly. Except for that one gnome. And the elf. On the good side, when someone wrongs you, do you want them to pay for it?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyVengeful": true
     },
@@ -638,6 +716,8 @@
     "plain": "Would you like to be the one who takes people out?",
     "styled": "Everyone has a little darkness, darling. Some of us keep it in a drawer, and some of us keep it sharpened. Would you like to be the one who takes people out?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyRuthless": true
     },
@@ -650,6 +730,8 @@
     "plain": "Even on the good side, do you want the power to take someone out?",
     "styled": "I'm one of the good guys. Mostly. But I'd be lying if I said I didn't want a button that deletes the bad guy. Even on the good side, do you want the power to take someone out?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyRuthless": true
     },
@@ -666,6 +748,8 @@
     "plain": "Do you settle arguments the quick, permanent way?",
     "styled": "The goat does not debate. The goat HEADBUTTS. The debate is now over! Do you settle arguments the quick, permanent way?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyRuthless": true
     },
@@ -679,6 +763,8 @@
     "plain": "Do you love talking people round to your point of view?",
     "styled": "Messaging is everything! A great pitch can sell a sponsor, a war or a lightly used coffin! Do you love talking people round to your point of view?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPersuader": true
     },
@@ -691,6 +777,8 @@
     "plain": "As a villain, does your own power only work if you talk people into something?",
     "styled": "Some villains need a knife. The really frightening ones only need a conversation. Which are you, darling? As a villain, does your own power only work if you talk people into something?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPersuader": true
     },
@@ -707,6 +795,8 @@
     "plain": "Would you rather be underestimated than admired?",
     "styled": "Nobody expects much from a guy in his boxers with a cat. That's honestly worked out great for me. Would you rather be underestimated than admired?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyUnderdog": true
     },
@@ -719,6 +809,8 @@
     "plain": "Would you rather have a blank cheque than a carefully chosen gift?",
     "styled": "Our sponsors are offering you one of two prizes: a lovely engraved watch, or a blank cheque with some very fine print. Would you rather have a blank cheque than a carefully chosen gift?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyImproviser": true
     },
@@ -731,6 +823,8 @@
     "plain": "As a villain, do you want endless options for how to cause trouble?",
     "styled": "One way to ruin a village? BORING! Your goddess wants a menu, a buffet, a thousand flavours of ruin! As a villain, do you want endless options for how to cause trouble?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyImproviser": true
     },
@@ -747,6 +841,8 @@
     "plain": "Do you like being free to decide exactly what your power does?",
     "styled": "Tonight's hero gets a power with no instruction manual! Will they shine, or will they set their own trousers on fire? Do you like being free to decide exactly what your power does?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyImproviser": true
     },
@@ -760,6 +856,8 @@
     "plain": "Do you instinctively argue the other side?",
     "styled": "Whatever my guest says, there's always someone in the audience itching to say the opposite. Is that you, sweetheart? Do you instinctively argue the other side?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyContrarian": true
     },
@@ -772,6 +870,8 @@
     "plain": "Do you enjoy a long con, lying patiently until your moment comes?",
     "styled": "Some people lie to get out of trouble. Some people lie for days so they can spring one perfect trap. The second kind terrifies me. Do you enjoy a long con, lying patiently until your moment comes?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPatient": true,
       "psyDeceiver": true
@@ -835,6 +935,8 @@
     "plain": "Do you like your takedowns loud and public?",
     "styled": "Nobody tunes in for a quiet disappearance, folks! They want it LIVE, in front of everyone, with replays! Do you like your takedowns loud and public?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyShowman": true,
       "psyRuthless": true
@@ -870,6 +972,8 @@
     "plain": "Do you look out for other people before yourself?",
     "styled": "The dinosaur stands in front of his friends when the monsters come. He eats last. He does not mind. Do you look out for other people before yourself?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyProtective": true,
       "psySelfless": true
@@ -884,6 +988,8 @@
     "plain": "Would you rather wait for one perfect clue than collect small ones as you go?",
     "styled": "Crumbs are for pigeons. A REAL detective waits for the one magnificent revelation, served on a silver platter. Would you rather wait for one perfect clue than collect small ones as you go?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyCurious": true,
       "psyPatient": true
@@ -929,6 +1035,8 @@
     "plain": "Do you bet big on gut feelings?",
     "styled": "Put it all on red, sweetie. Why? Because red feels lucky today, that is why. Do you bet big on gut feelings?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyRiskTaker": true,
       "psyIntuitive": true
@@ -948,6 +1056,8 @@
     "plain": "Do you love selling a lie to a whole room?",
     "styled": "One lie to one person is a secret. One lie to a whole room is a performance, and I do love a performance. Do you love selling a lie to a whole room?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyDeceiver": true,
       "psyPersuader": true
@@ -1032,6 +1142,8 @@
     "plain": "Do you love secretly scrambling things just to watch people cope?",
     "styled": "BEHIND THE SCENES BONUS: Somebody swapped all the signposts again. Viewers are thrilled. Contestants are less thrilled. Do you love secretly scrambling things just to watch people cope?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyManipulator": true,
       "psyChaosLover": true
@@ -1091,6 +1203,8 @@
     "plain": "Do you like being loud and honest about exactly who you are?",
     "styled": "It took me a long time to stop hiding. Now I'd rather stand up, say who I am, and let people deal with it. Do you like being loud and honest about exactly who you are?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cultleader",
       "gossip",
@@ -1145,6 +1259,8 @@
     "plain": "Do you like lying low until one big moment makes you matter?",
     "styled": "I've seen quiet contestants nobody rated turn a whole floor around in one move. Takes patience, and a thick skin. Do you like lying low until one big moment makes you matter?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyUnderdog": true,
       "psyPatient": true
@@ -1176,6 +1292,8 @@
     "plain": "Do you guard a secret you cannot share with anyone, not even your friends?",
     "styled": "The goat carries a secret SO terrible, SO magnificent, that not even his dearest allies may know it! Do you guard a secret you cannot share with anyone, not even your friends?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyDeceiver": true
     },
@@ -1192,6 +1310,8 @@
     "plain": "Do you like running the show from centre stage?",
     "styled": "Every great production needs a director, a star and a dictator. Luckily the goat is all three! Do you like running the show from centre stage?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyNeedsControl": true,
       "psyShowman": true
@@ -1225,6 +1345,8 @@
     "plain": "Do you pour everything you have into the people you are devoted to?",
     "styled": "When I care about someone, I don't hold anything back. It's the thing I'm proudest of, and the thing that scares me most. Do you pour everything you have into the people you are devoted to?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyLoyal": true,
       "psySelfless": true
@@ -1239,6 +1361,8 @@
     "plain": "When you strike, would you rather wait for one perfect blow than strike again and again?",
     "styled": "One perfect, glorious, PERFECTLY TIMED blow, or a hundred messy little ones? Your goddess loves both, but you must choose! When you strike, would you rather wait for one perfect blow than strike again and again?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "psyPatient": true
     },
@@ -1273,6 +1397,8 @@
     "plain": "Would you rather punish people who hurt your side than stop the hurt happening?",
     "styled": "Our market research shows two kinds of hero: the bodyguard and the avenger. Both move merchandise! Would you rather punish people who hurt your side than stop the hurt happening?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "godfather",
       "boomdandy",

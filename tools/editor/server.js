@@ -19,7 +19,7 @@ const here = fileURLToPath(new URL('./', import.meta.url));
 const PORT = Number(process.env.PORT) || 8010;
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml' };
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)+$/;
-const KEY_ORDER = ['id', 'plain', 'styled', 'voice', 'yes', 'scope', 'options'];
+const KEY_ORDER = ['id', 'plain', 'styled', 'voice', 'quality', 'complexity', 'yes', 'scope', 'options'];
 
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), 'utf8'));
 const writeJson = (path, value) => writeFile(join(root, path), JSON.stringify(value, null, 2) + '\n');

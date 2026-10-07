@@ -134,6 +134,12 @@
               <label class="field">Voice
                 <input type="text" id="voice" list="voices" autocomplete="off">
               </label>
+              <label class="field rating">Quality <span class="hint">1 to 10</span>
+                <input type="number" id="quality" min="1" max="10" step="1" inputmode="numeric">
+              </label>
+              <label class="field rating">Complexity <span class="hint">1 to 10</span>
+                <input type="number" id="complexity" min="1" max="10" step="1" inputmode="numeric">
+              </label>
               <label class="field">Answer labels <span class="hint">(optional, quiz only)</span>
                 <span class="row tight"><input type="text" id="option-yes" placeholder="Yes"><input type="text" id="option-no" placeholder="No"></span>
               </label>

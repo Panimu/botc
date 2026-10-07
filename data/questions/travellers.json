@@ -4,6 +4,8 @@
     "plain": "Do you fancy pinching a person's vote overnight so it works backwards for them?",
     "styled": "Wasn't me. Wasn't anybody. Somebody's vote just happens to point the wrong way now, and that's a coincidence I'm not going to investigate. Do you fancy pinching a person's vote overnight so it works backwards for them?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "thief"
     ],
@@ -16,6 +18,8 @@
     "plain": "Would you like to change how much another player's vote is worth?",
     "styled": "One person, one vote is SUCH a peasant idea. Some votes deserve to count more, some deserve to count against, and I should decide which. Would you like to change how much another player's vote is worth?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "thief",
       "bureaucrat"
@@ -29,6 +33,8 @@
     "plain": "Would you like to hand someone a vote that counts three times over tomorrow?",
     "styled": "Form 3B, the Ballot Amplification Request, signed in triplicate. Approved! Sponsors adore a landslide. Would you like to hand someone a vote that counts three times over tomorrow?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "bureaucrat"
     ],
@@ -41,6 +47,8 @@
     "plain": "Would you like to make someone else's ability work twice in one night?",
     "styled": "Double espresso, darling, but for powers! One sip and their little trick fires TWICE. Would you like to make someone else's ability work twice in one night?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barista"
     ],
@@ -53,6 +61,8 @@
     "plain": "Would you like to give another player's ability a boost that lasts until the next dusk?",
     "styled": "Limited-time power-up! Expires at dusk! Non-refundable! Side effects include hope! Would you like to give another player a short boost to their own ability, lasting until the next dusk?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barista",
       "bonecollector"
@@ -66,6 +76,8 @@
     "plain": "Do you only want to learn someone's character if they agree to tell you?",
     "styled": "I'm not prying it out of anyone with a crowbar. If they say yes, great. If they say no, I'll live, which honestly is more than the other option guarantees. Do you only want to learn someone's character if they agree to tell you?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "harlot"
     ],
@@ -78,6 +90,8 @@
     "plain": "Would you like to nominate again after the day's first execution?",
     "styled": "The crowd has had its hanging and everyone's heading home, and you stand up and say 'more please'. The ratings! Once someone has been executed today, would you like to be allowed to nominate again?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butcher"
     ],
@@ -90,6 +104,8 @@
     "plain": "Would you like to shoot someone dead just because of how they voted?",
     "styled": "The first tally's in. You saw who raised a hand. You've got a six-shooter and an attitude. Would you like to shoot someone dead just because of how they voted?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gunslinger"
     ],
@@ -102,6 +118,8 @@
     "plain": "Would you like to rearrange where people sit around the circle?",
     "styled": "Human, you will sit THERE. You, the tall one, beside the window. No, I don't care that you were comfortable. Would you like to rearrange where people sit around the circle?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "matron"
     ]
@@ -111,6 +129,8 @@
     "plain": "Do you prefer your daytime murders arranged with the blessing of the person sitting beside you?",
     "styled": "Here's how it works on this floor: no hit goes down without a handshake from the guy next to you. Honour among killers. Do you prefer your daytime murders arranged with the blessing of the person sitting beside you?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gangster"
     ]
@@ -120,6 +140,8 @@
     "plain": "Would you save one grisly favour for the whole game, briefly reviving a corpse's power?",
     "styled": "Hair, teeth, fragments of poems, a dead man's talent on loan until sundown. One per customer! Would you save one grisly favour for the whole game, briefly reviving a corpse's power?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "bonecollector"
     ]
@@ -129,6 +151,8 @@
     "plain": "After seeing a vote, would you like the power to declare the execution anyway, even without enough hands raised?",
     "styled": "Democracy is lovely, darling, until it gets in your way. Then it is merely a suggestion. After seeing a vote, would you like the power to declare the execution anyway, even without enough hands raised?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "judge",
       "vizier"
@@ -142,6 +166,8 @@
     "plain": "Would you like to gain a Townsfolk ability on your first night if you're good, or a Minion ability if you're evil?",
     "styled": "Welcome, apprentice! Your starter class is randomised based on your moral compass. Good kids get hammers. Bad kids get knives. Would you like to pick up a trade on your first night that depends on your side: a Townsfolk skill if good, a Minion trick if evil?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "apprentice"
     ]
@@ -151,6 +177,8 @@
     "plain": "Can you vote only when someone hands you their vote token?",
     "styled": "Spare a token, guv? Bless you! Look at me, human, I'm an ACTOR. A tragic, starving actor who can only vote on charity. Can you vote only when someone hands you their vote token?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "beggar"
     ],
@@ -163,6 +191,8 @@
     "plain": "Would you like to be permanently sober and healthy, whatever anyone tries to do to you?",
     "styled": "Poison? Bounces off. Booze? Water to me, honey. I've been through worse than your little potions. Would you like to be permanently sober and healthy, whatever anyone tries to do to you?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "beggar"
     ]
@@ -172,6 +202,8 @@
     "plain": "Do you think being funny enough should keep you from being exiled?",
     "styled": "Tough crowd tonight! But if they laugh, they can't throw you out. That's in the contract. Probably. Do you think being funny enough should keep you from being exiled?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "deviant"
     ]
@@ -181,6 +213,8 @@
     "plain": "Would you take a teammate's place at the gallows if they were executed?",
     "styled": "Somebody on your team is about to swing. You step forward, smile, and say 'I'll take it from here'. Would you take a teammate's place at the gallows if they were executed?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "scapegoat"
     ],
@@ -193,6 +227,8 @@
     "plain": "Would you happily be the one who gets blamed and hanged so an ally walks free?",
     "styled": "Friendly newcomer! Dandy attitude! Does not ask what the rope is for! Our sponsors call this an ideal brand ambassador. Would you happily be the one who gets blamed and hanged so an ally walks free?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "scapegoat"
     ]
@@ -202,6 +238,8 @@
     "plain": "Would you like to kill anyone who dares nominate a particular teammate of yours?",
     "styled": "TOUCH MY FRIEND AND I WILL FEAST ON YOUR SPLEEN! Anyone who nominates them DIES! Would you like to kill anyone who dares nominate a particular teammate of yours?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gnome"
     ],
@@ -214,6 +252,8 @@
     "plain": "Would you like the whole town to start the game knowing a player who shares your alignment?",
     "styled": "RAWR! Stomp stomp! (He means everyone already knows who his best friend is, and they'd better not lay a finger on them.) Would you like the whole town to start the game knowing a player who shares your alignment?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gnome"
     ]
@@ -223,6 +263,8 @@
     "plain": "As a late arrival, would you like to wake at night and secretly pick a player to use your ability on?",
     "styled": "Everyone else is asleep. You're up, tiptoeing round the circle, choosing a target. Very creepy. Very effective. As a late arrival, would you like to wake at night and secretly pick a player to use your ability on?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "thief",
       "bureaucrat",
@@ -239,6 +281,8 @@
     "plain": "As a Traveller, would you rather make your ability's choices during the day than at night?",
     "styled": "Some wanderers skulk about after dark. Others do their business in broad daylight with the whole town watching. Bold. Would get you killed on my floor. As a Traveller, would you rather make your ability's choices during the day than at night?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butcher",
       "cacklejack",
@@ -260,6 +304,8 @@
     "plain": "As a Traveller, would you like to change the town's rules on who may nominate or vote?",
     "styled": "New in town and already rewriting the constitution! The Founding Fathers would be appalled! The audience is THRILLED! As a Traveller, would you like to change who may nominate or vote for the entire town?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "bishop",
       "voudon"
@@ -274,6 +320,8 @@
     "plain": "As a Traveller, would you rather save a single big moment for the right time than act every day or night?",
     "styled": "Patience is a weapon. One shot, one moment, and you've got to pick it right. It's terrifying, but it's also kind of beautiful. As a Traveller, would you rather save a single big moment for the right time than act every day or night?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "bonecollector",
       "judge"
@@ -288,6 +336,8 @@
     "plain": "As a Traveller, does your ability need a living player's agreement to work?",
     "styled": "Consent forms! Initial here, sign there, and only then do the fun things happen! Legal is so proud of you. As a Traveller, would you need a living player's agreement before your ability can work?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "harlot",
       "gangster"
@@ -302,6 +352,8 @@
     "plain": "As a Traveller, would you like your ability to teach you something private about another player?",
     "styled": "Oh, I'm not here for the scenery, darling. I'm here for the dirt. Who are they? Which side? Spill it. As a Traveller, would you like your ability to teach you something private about another player?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "harlot",
       "beggar",
@@ -317,6 +369,8 @@
     "plain": "As a Traveller, is your ability entirely about whether the town can execute or exile you?",
     "styled": "Some travellers have shiny powers. Some just have a very personal relationship with the noose. As a Traveller, is your ability entirely about whether you yourself get removed from the game by the town?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "deviant",
       "scapegoat"
@@ -331,6 +385,8 @@
     "plain": "As a Traveller, does your ability give, boost, restore or change someone's character or ability?",
     "styled": "Upgrade station now open! Grants! Buffs! Resurrections of skills! Unexpected transformations! Warranty void if used! As a Traveller, does your ability give, boost, restore or change someone's character or ability?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barista",
       "bonecollector",
@@ -346,6 +402,8 @@
     "plain": "As a Traveller, are you fussy about where people sit and how they conduct themselves?",
     "styled": "Elbows OFF the table. Sit where you are TOLD. No sneaking off for secret chats. Honestly, the manners in this dungeon. As a Traveller, are you fussy about where people sit and how they conduct themselves?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "matron"
     ],
@@ -358,6 +416,8 @@
     "plain": "Of the two vote-meddlers, would you rather inflate someone's vote than turn it against them?",
     "styled": "Both of you mess with ballots overnight, fine. But one of you adds and one of you subtracts. Which kind of crook are you? Of the two vote-meddlers, would you rather inflate someone's vote than turn it against them?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "bureaucrat"
     ],
@@ -371,6 +431,8 @@
     "plain": "Would you rather your boost come round every night than be a single favour for the whole game?",
     "styled": "Loyalty card or one golden ticket, darling? One of these brings coffee every single night. The other brings one spooky miracle and then closes up shop. Would you rather your boost come round every night than be a single favour for the whole game?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barista"
     ],
@@ -384,6 +446,8 @@
     "plain": "Of these daytime killers, would you rather kill to protect a teammate than to settle a score?",
     "styled": "Some killers shoot voters. Some do favours for neighbours. And some only strike when someone comes after their buddy. Of these daytime killers, would you rather kill to protect a teammate than to settle a score?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gnome"
     ],
@@ -398,6 +462,8 @@
     "plain": "Of these daytime killers, would you only strike once the person beside you has given the go-ahead?",
     "styled": "Proper organised crime runs on handshakes and favours! Very traditional! Excellent for brand loyalty! Of these daytime killers, would you only strike once the person beside you has given the go-ahead?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gangster"
     ],
@@ -412,6 +478,8 @@
     "plain": "Of these two execution-forcers, would you want the power to spare the accused as well as condemn them?",
     "styled": "One of you can only ever say 'hang them'. The other gets to say 'let them go', too. Mercy is a choice, and it's the harder one. Of these two execution-forcers, would you want the power to spare the accused as well as condemn them?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "judge"
     ],
@@ -425,6 +493,8 @@
     "plain": "Of these two who ask permission, would you ask in order to learn something, not to kill?",
     "styled": "You both need a yes from somebody. One of you wants a secret. The other wants a body. Do you want the secret? Of these two who ask permission, would you ask in order to learn something rather than to kill?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "harlot"
     ],
@@ -438,6 +508,8 @@
     "plain": "Of these two curious travellers, would you rather learn someone's exact character than just their alignment?",
     "styled": "Good or evil is the boring headline, darling. I want the full biography, the real name, the dirty laundry. Of these two curious travellers, would you rather learn someone's exact character than just their alignment?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "harlot"
     ],
@@ -451,6 +523,8 @@
     "plain": "Of these two rule-rewriting travellers, would you rather control nominations than votes?",
     "styled": "Pick your poison: decide who ends up in the dock, or decide who gets to raise a hand. THE ACCUSATION IS EVERYTHING! Of these two rule-rewriting travellers, would you rather control nominations than votes?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "bishop"
     ],
@@ -464,6 +538,8 @@
     "plain": "Of these two, would you rather protect yourself from removal than risk dying in someone else's place?",
     "styled": "One of these guys cracks jokes to stay alive. The other volunteers to hang for his friends. I know which one I'd rather have a beer with, but that's not the question. Of these two, would you rather protect yourself from removal than risk dying in someone else's place?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "deviant"
     ],
@@ -477,6 +553,8 @@
     "plain": "Of the character-changers, would you set off a transformation without having to die first?",
     "styled": "Some transformations only trigger off your corpse. Others you can fire off whenever, while still breathing. Breathing is good. Of the character-changers, would you set off a transformation without having to die first?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cacklejack",
       "pithag"
@@ -493,6 +571,8 @@
     "plain": "Of the character-changers, would you like the Storyteller, not you or your team, to decide exactly who transforms?",
     "styled": "You pull the lever. The Storyteller decides whose face melts. That's not your problem, that's management's problem. Of the character-changers, would you like the Storyteller, not you or your team, to decide exactly who transforms?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cacklejack"
     ],
@@ -508,6 +588,8 @@
     "plain": "Of these two double-nominators, does your extra nomination come only after the day's execution?",
     "styled": "One of you gets two nominations after dying. The other waits for the first hanging to finish, then calls for an encore. Of these two double-nominators, does your extra nomination come only after the day's execution?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butcher"
     ],

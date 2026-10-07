@@ -4,6 +4,8 @@
     "plain": "Are you basically hired muscle, siding with whoever grabs you first and shrugging off the bruises?",
     "styled": "RAWR! RAWR! [Translation: stomp for first friend who comes close! No care about scratches!] He'd follow whoever reaches him first and laugh off the bruises. Is that you: loyal muscle for whoever claims you first?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "goon"
     ]
@@ -13,6 +15,8 @@
     "plain": "Is your whole game picking a best friend on the first night and joining their side, never knowing which side it is?",
     "styled": "First night, you point at somebody and decide they're your buddy forever. Good, evil, cannibal cult? You don't find out. You just grin and follow, and that's your entire game. Is that the whole deal you want?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "ogre"
     ],
@@ -25,6 +29,8 @@
     "plain": "Would you be fine with the real Demon secretly watching every night-time 'kill' you think you're making?",
     "styled": "Picture it, viewers: our contestant creeps about choosing victims, while the actual monster sits in the dark taking notes and stealing the credit! Ratings gold! Would you be fine with the real Demon secretly watching every kill you think you're making?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lunatic"
     ],
@@ -37,6 +43,8 @@
     "plain": "Would you like to be told you're a Townsfolk when really you're a powerless Outsider?",
     "styled": "Sweetheart, the costume is PERFECT. The hero badge, the sincere little face. Shame the badge is plastic and you're actually one of the misfits. Would you like to be handed a Townsfolk identity when you're really a powerless Outsider?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "drunk"
     ]
@@ -46,6 +54,8 @@
     "plain": "Do you snarl at visitors to get off your land, then wonder why everyone thinks you're a monster?",
     "styled": "There's always one guy who yells at everybody from his porch and then acts shocked when the village decides he's the werewolf. Are you that guy, growling people away and then puzzled that they think you're evil?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "recluse"
     ]
@@ -55,6 +65,8 @@
     "plain": "Is your whole game plan one huge accusation, with no take-backs if it flattens an innocent?",
     "styled": "RAWR! [Translation: point! SMASH! Say sorry later!] In other words: one enormous accusation, and if he squashes the wrong person, too bad. Is that your whole plan for the game?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "golem"
     ]
@@ -64,6 +76,8 @@
     "plain": "Would you like your one ability to be leaving someone hopelessly drunk with grief once you die?",
     "styled": "When I go, I want SOMEONE weeping into a bottle for the rest of the season. That's the legacy. That's the entire ability. Would you like your only power to be leaving someone drunk with grief after you die?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sweetheart"
     ],
@@ -76,6 +90,8 @@
     "plain": "Do you want someone to never, ever get over losing you?",
     "styled": "Be honest with me, love. When you're gone, do you want them to move on, find peace, all that? Or do you want them ruined, forever? Do you want someone to never get over losing you?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sweetheart"
     ]
@@ -85,6 +101,8 @@
     "plain": "Would you enjoy stalking the sickbeds in a beaked mask, offering cures of very dubious value?",
     "styled": "Big leather beak, stuffed with herbs, a stick for poking the patients, and absolutely no idea what you're doing. I've met worse doctors. Not many. Would you enjoy playing the beaked healer with the questionable cures?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "plaguedoctor"
     ]
@@ -94,6 +112,8 @@
     "plain": "Do you want your only ability to be a final public pick, where choosing someone evil loses your team the game?",
     "styled": "You die, you stand up, you point at someone in front of everybody. Pick a good guy, fine. Pick a bad guy, and your whole team loses. That's your power. Would you want that to be your only ability?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "klutz"
     ],
@@ -106,6 +126,8 @@
     "plain": "Are you famously clumsy, prone to an 'oops' at the worst possible moment?",
     "styled": "Some contestants trip over the loot box. Some trip into the lava. Some trip, grab their friend, and take the whole party into the lava with them. Are you the one with the legendary, badly timed oops?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "klutz"
     ]
@@ -115,6 +137,8 @@
     "plain": "Would you secretly enjoy dragging an innocent person down with you, out of pure spite, when you die?",
     "styled": "I'm not saying it's healthy. I'm saying I understand it. You're going down, and you'd quite like company, preferably someone who didn't deserve it. Would you secretly enjoy taking an innocent with you?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "moonchild"
     ],
@@ -127,6 +151,8 @@
     "plain": "When you learn you've died, would you like to publicly point at one living player, with consequences for them or your team?",
     "styled": "THE DEATH POINT. You find out you're dead, you raise one accusing paw in front of the entire audience, and consequences follow. Iconic. Would you like to publicly point at a living player when you learn you've died?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "klutz",
       "moonchild",
@@ -138,6 +164,8 @@
     "plain": "Even though you're on the good team, would your execution lose the game for your whole side?",
     "styled": "Pitch meeting! A gentle soul, a crowd with a rope, and a twist ending where your entire side loses because they strung up the wrong nice person! Sponsors love a tragedy. Even though you're one of the good guys, would your execution lose the game for your team?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "saint",
       "hermit"
@@ -148,6 +176,8 @@
     "plain": "Would you enjoy nattering away about everything and nothing while giving someone a close shave?",
     "styled": "A razor at someone's throat and a head full of trivia you're dying to share. Did you know? Well, now they do. Would you enjoy chattering away while giving someone a close shave?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barber"
     ]
@@ -157,6 +187,8 @@
     "plain": "Would you like your only effect to be letting the Demon swap two players' characters when you die?",
     "styled": "Upon your death, the dungeon's top monster gets to grab two contestants and switch their class cards. That's your whole legacy, folks! Would you want your only effect to be letting the Demon swap two people's characters?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barber"
     ],
@@ -169,6 +201,8 @@
     "plain": "Do you own far more hats than any sensible person could ever need?",
     "styled": "I have counted your hats. I stopped counting your hats. The hats have started counting themselves. Do you own far more hats than any sensible person needs?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "hatter"
     ]
@@ -178,6 +212,8 @@
     "plain": "Do you want your death to do nothing except let the evil team pick new characters?",
     "styled": "When you drop, every villain at the table gets a wardrobe change. New Minion, new Demon, same horrible people. That's all you do! Would you want your only effect to be giving the evil team new characters when you die?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "hatter"
     ],
@@ -190,6 +226,8 @@
     "plain": "Would your death hand the evil players a choice about who becomes which character?",
     "styled": "When you die, the bad guys get to shuffle the deck and hand out new roles while everyone's still mourning. Brutal. Would your death hand the evil side a choice about who becomes which character?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barber",
       "hatter",
@@ -201,6 +239,8 @@
     "plain": "Would you insist, loudly and often, that you're not a freak but a perfectly ordinary person?",
     "styled": "I AM NOT A FREAK. I AM A PERFECTLY NORMAL GOAT WITH PERFECTLY NORMAL AMBITIONS. Ahem. Would you, too, loudly insist that you're entirely ordinary and not a freak at all?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "mutant"
     ]
@@ -210,6 +250,8 @@
     "plain": "Do you always manage to come out on top, even when you're the one who wrecked things for your side?",
     "styled": "Every disaster, somehow, you're standing at the podium afterwards shaking hands. Your team is on fire. You're fine. Do you always end up on top even after wrecking things for your own side?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "politician"
     ]
@@ -219,6 +261,8 @@
     "plain": "Are you all about backing every accusation and never sitting out a vote?",
     "styled": "Abstain? ABSTAIN? Cowards abstain. Real believers vote for everything and sort out the bodies afterwards! Is backing every single accusation, and never sitting one out, what you're all about?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "zealot"
     ],
@@ -231,6 +275,8 @@
     "plain": "Would you like your only ability to be that your team loses if a Minion correctly guesses who you are?",
     "styled": "The villains know you're in the building. If one of them works out which face is yours and says it out loud, your side loses. That's it. Would you like that to be your only ability?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "damsel"
     ],
@@ -243,6 +289,8 @@
     "plain": "Do you enjoy playing the one in distress, hoping a rescuer arrives before the villains find you?",
     "styled": "Darling, a damsel in danger is the BEST role on any show. The swooning, the hiding, the hero galloping in at the last second. Don't touch the hair. Do you love being the one in distress, waiting for rescue before the villains find you?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "damsel"
     ]
@@ -252,6 +300,8 @@
     "plain": "Would you like your only effect to be handing every Minion three extra bluffs?",
     "styled": "Your presence entitles every Minion to three bonus cover stories, gift-wrapped! You gain nothing! Would you like your only effect to be giving each Minion three extra bluffs?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "snitch"
     ]
@@ -261,6 +311,8 @@
     "plain": "Is the heart of your character rooting for your own team to lose, because that's how they actually win?",
     "styled": "I have explained this to the cat four times. Losing is winning. Winning is losing. She bit me. Is cheering for your own team to lose, because that's how they actually win, the core of who you are?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "heretic"
     ]
@@ -270,6 +322,8 @@
     "plain": "Is your main job in the game working out which one player is secretly drunk?",
     "styled": "Somewhere in this room is one contestant who's absolutely sloshed and doesn't know it. Finding them is your main job. It's a puzzle box with a hangover. Is hunting down the secret drunk what your game is all about?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "puzzlemaster"
     ],
@@ -282,6 +336,8 @@
     "plain": "As an Outsider, could your death set something nasty in motion?",
     "styled": "Every misfit is a liability, but some of you are liabilities with a timer. You die, and the floor opens, the lights flicker, somebody screams. Could your death set something nasty in motion?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sweetheart",
       "plaguedoctor",
@@ -301,6 +357,8 @@
     "plain": "Could your team lose instantly because of one moment involving you: your execution, your final pick, or someone guessing who you are?",
     "styled": "Some of you just make life harder. A few of you are a trapdoor under the whole team: one execution, one bad point, one correct guess, and it's over. Could a single moment involving you lose your team the game on the spot?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "saint",
       "klutz",
@@ -316,6 +374,8 @@
     "plain": "Does your own ability let you end up on a different side from the one you started on?",
     "styled": "It's scary, not knowing whose side you'll finish on. Some misfits drift, or get pulled, or jump ship when things go wrong. Does your own ability let your side change during the game?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "goon",
       "ogre",
@@ -331,6 +391,8 @@
     "plain": "Does your ability tell you when you can or must vote?",
     "styled": "Most people get to vote like adults. Some of us have a little rulebook stapled to our hand saying when it's allowed to go up, or when it has to. Does your ability control when you vote?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butler",
       "zealot",
@@ -345,6 +407,8 @@
     "plain": "Does your actual ability have you wake at night to choose a player?",
     "styled": "Night shift sign-up sheet! Some Outsiders get a cosy alarm call in the dark to point at somebody. Others sleep through the whole thing. Does your real ability wake you at night to choose a player?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butler",
       "ogre",
@@ -360,6 +424,8 @@
     "plain": "When you die, do the Demon, Minions or Storyteller gain a new power or a chance to change characters?",
     "styled": "Your corpse is a PRESENT, mortal! Wrapped for the villains or the dungeon master: a new power, or a fresh set of masks! Delicious! When you die, do the Demon, Minions or Storyteller gain a new power or a chance to change characters?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "plaguedoctor",
       "barber",
@@ -375,6 +441,8 @@
     "plain": "Does your ability give you a dramatic public moment where you point at a player and something happens?",
     "styled": "Lights! Cameras! One finger, aimed straight at a contestant in front of the entire studio audience, and BOOM, consequences! Does your ability give you that big public pointing moment?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "golem",
       "klutz",
@@ -411,6 +479,8 @@
     "plain": "Do the Minions learn or receive something because you are in the game?",
     "styled": "Let's talk about your relationship with the villains, darling. Do they get a little something because of you: a secret, a fresh alibi, a new face? Do the Minions learn or receive something because you're in play?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "damsel",
       "snitch",
@@ -447,6 +517,8 @@
     "plain": "Could your ability leave you believing you are a different character from the one you really are?",
     "styled": "Imagine thinking you're the star of the show and actually being the understudy's understudy. I could NEVER. But some of you do it every game. Could your ability leave you believing you're a different character from the one you really are?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lunatic",
       "drunk",
@@ -461,6 +533,8 @@
     "plain": "Does your ability itself leave another player drunk?",
     "styled": "Some people are just bad influences. You wander past, and somebody else ends up legless and useless. Does your ability itself get another player drunk?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "goon",
       "sweetheart",
@@ -476,6 +550,8 @@
     "plain": "Does your ability ever ask you to choose or name a player?",
     "styled": "Plenty of misfits just sit there and let bad things happen to them. Others have to pick someone: by night, by nomination, or with their dying breath. Does your ability ever make you choose a player?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butler",
       "ogre",
@@ -516,6 +592,8 @@
     "plain": "Could you suddenly drop dead at random, without anyone targeting you?",
     "styled": "Nobody nominated you. Nobody stabbed you. You're just dead now, apparently, because the dungeon felt like it. Could you drop dead for no reason at all?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "tinker",
       "hermit"
@@ -529,6 +607,8 @@
     "plain": "Does your ability have any say over who wins or loses the game?",
     "styled": "Some creatures merely play. Others hold the very SCALES of victory in their hooves! Mostly by knocking them over. Does your ability have any power over who wins or loses?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "saint",
       "klutz",
@@ -546,6 +626,8 @@
     "plain": "Does your ability punish you or your team if your true character becomes known?",
     "styled": "Hiding who you are is exhausting. Some misfits have it worse: if the truth comes out, the punishment is real. Does your ability punish you or your team when your real character is discovered?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "damsel",
       "mutant",
@@ -560,6 +642,8 @@
     "plain": "Does your ability give you a single choice that you make once and never again?",
     "styled": "Limited-time offer! One choice, one use, then the button crumbles to dust and the sponsors laugh at you. Does your ability give you a single decision you only ever make once?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "golem",
       "puzzlemaster",
@@ -577,6 +661,8 @@
     "plain": "Does the evil team know something about you from the start because of your own ability?",
     "styled": "Some contestants walk in anonymous. Others arrive with the villains already whispering about them in the green room. Tell me: does the evil team know something about you from the beginning?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "damsel",
       "lunatic"
@@ -611,6 +697,8 @@
     "plain": "Does your ability involve someone making a once-only choice?",
     "styled": "Everybody loves a quiz segment! One guess, one shot, very dramatic music. Does your ability involve somebody making a once-only guess?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "hermit",
       "ogre",
@@ -629,6 +717,8 @@
     "plain": "Does your presence change which character tokens go into the bag before the game begins?",
     "styled": "Before anyone even sits down, you've already mucked about with the setup. The bag isn't what it would have been. Typical. Does your presence change which tokens go in the bag?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "hermit",
       "drunk"
@@ -642,6 +732,8 @@
     "plain": "Among the good players, are you more of a burden to your own side than a help?",
     "styled": "Look, we're all on the same team. Some of us bring snacks and information. Some of us bring problems, and we're very sorry. Are you more of a burden to the good side than a help?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": "outsider"
     },
@@ -657,6 +749,8 @@
     "plain": "As a good player, could a single moment involving you hand evil the win outright?",
     "styled": "Most good players can only lose slowly. A rare few are a loaded trap: hang them, let them point wrong, or let a Minion spot them, and it's over. As a good player, could one moment involving you give evil the win?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "saint",
       "klutz",
@@ -675,6 +769,8 @@
     "plain": "On the good team, could you spend the whole game wrong about which character you are?",
     "styled": "Folks, here's a contestant on the good team with NO IDEA what character they really are, and they never will! Isn't that adorable? Could you play a whole game wrong about your own character?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "drunk",
       "lunatic",
@@ -692,6 +788,8 @@
     "plain": "However you die, does evil automatically gain from it, without you choosing anything?",
     "styled": "Your death feeds the darkness no matter how it comes! Blade, rope, falling piano: the villains profit and you get no say! Glorious! However you die, does evil automatically gain from it, with no choice of yours involved?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sweetheart",
       "plaguedoctor",
@@ -712,6 +810,8 @@
     "plain": "Among good players, does your ability limit or dictate when you vote?",
     "styled": "Quick compliance check from Legal! Some good-team contestants have special voting terms in their contracts: when they may, or when they must. Does your ability limit or dictate when you vote?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butler",
       "zealot",
@@ -729,6 +829,8 @@
     "plain": "Could your own ability move you from the good team to the evil team?",
     "styled": "You start the game good. You want to stay good. But your own ability might drag you somewhere else, and that's frightening. Could your ability turn you evil?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "goon",
       "ogre",
@@ -749,6 +851,8 @@
     "plain": "Would your execution end the game straight away, one way or the other?",
     "styled": "When they march ME to the gallows, the WHOLE SHOW ends. Win or lose, curtain down, credits roll. That is star power. Would your execution end the game immediately?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "saint",
       "hermit"
@@ -765,6 +869,8 @@
     "plain": "Among good players, could simply nominating someone kill them on the spot?",
     "styled": "RAWR! [Translation: point at bad guy. Bad guy fall down. Very proud.] He means his nomination alone could kill the person nominated. As a good player, could your nomination kill someone outright?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "golem",
       "hermit"
@@ -781,6 +887,8 @@
     "plain": "Do you know exactly which character you are from the very start?",
     "styled": "Seems like the bare minimum, honestly. You get a card, you read the card, you are the card. Not everyone gets that luxury. Do you know exactly what character you are from the start?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butler",
       "recluse",
@@ -796,6 +904,8 @@
     "plain": "Might the good team's information wrongly point at you as evil?",
     "styled": "You're a perfectly nice cranky old so-and-so, and yet every clue in town points straight at you. Might the good team's information wrongly mark you as evil?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "recluse"
     ],
@@ -809,6 +919,8 @@
     "plain": "Is your execution the worst thing that could happen to your team, not just to you?",
     "styled": "Special event: the Gallows of Consequence! Hang this contestant and the entire party fails the floor! Is being executed the worst thing that could happen to your whole team?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "saint"
     ],
@@ -823,6 +935,8 @@
     "plain": "Could your own ability directly cause a death, whether yours or someone else's?",
     "styled": "In this lot, a couple of you are walking funerals. Either the dungeon takes you on a whim, or you take someone with you. Could your own ability directly cause a death?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "tinker",
       "moonchild"
@@ -838,6 +952,8 @@
     "plain": "Could you end up on the evil team just because of who picked you at night?",
     "styled": "So someone reaches for you in the dark, and suddenly you're theirs. Tell the audience how that feels. Could you end up evil simply because of who chose you at night?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "goon"
     ],
@@ -852,6 +968,8 @@
     "plain": "Does your ability only kick in once you are dead?",
     "styled": "Some people only matter after they're gone. That's sad, but it's also kind of powerful. Does your ability only take effect once you've died?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sweetheart",
       "klutz",
@@ -868,6 +986,8 @@
     "plain": "Can your ability decide which team wins the game?",
     "styled": "Among our experimental misfits, a few hold the trophy hostage! A guess, a blunder, a cosmic flip, and the winner changes! Can your ability decide which team wins?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "damsel",
       "politician",
@@ -884,6 +1004,8 @@
     "plain": "Does your ability let you pick out a specific player?",
     "styled": "Brand engagement tip: audiences love it when you single someone out! Some of our experimental Outsiders get to do exactly that. Does your ability let you pick a specific player?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "ogre",
       "golem",
@@ -900,6 +1022,8 @@
     "plain": "Do you at least know your character's name, even if what it does is a mystery?",
     "styled": "Out of all the confused people at this table, you're the one who at least got the name tag right. You just don't know what it does. Do you know your character's name, even if not its ability?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "amnesiac"
     ],
@@ -915,6 +1039,8 @@
     "plain": "Do you believe you are one of the villains?",
     "styled": "Of all the deluded people here, you're the one who thinks they're EVIL. How dramatic. I almost respect it. Do you believe you're one of the villains?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lunatic"
     ],
@@ -930,6 +1056,8 @@
     "plain": "Does your danger depend on a Minion working out who you are?",
     "styled": "Your whole problem is some sneaky little villain squinting at you and figuring it out. Hide, honey. Does your danger depend on a Minion working out who you are?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "damsel"
     ],
@@ -947,6 +1075,8 @@
     "plain": "Could you personally end up a winner while your original teammates lose?",
     "styled": "Let's be candid. If your teammates went down in flames, could you still walk away holding a trophy? Could you personally win while your original team loses?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "politician"
     ],
@@ -964,6 +1094,8 @@
     "plain": "Does it all hinge on one public pick you make?",
     "styled": "Out of this sorry bunch, your risk comes down to a single finger pointed in front of everyone. Choose well. Does it all hinge on one public pick you make?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "klutz"
     ],
@@ -981,6 +1113,8 @@
     "plain": "Is the executioner's rope the thing you fear most?",
     "styled": "Fear audit complete! Some contestants dread guesses, some dread pointing, and some lie awake thinking about the noose. Is the executioner's rope what you fear most?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "saint",
       "mutant"
@@ -999,6 +1133,8 @@
     "plain": "Does your ability twist the final result for everyone, whoever ends up winning?",
     "styled": "Not one fool, not one team, EVERYONE! Whatever the outcome, you reach in and turn it inside out! Does your ability twist the result for everyone, whoever wins?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "heretic"
     ],
@@ -1016,6 +1152,8 @@
     "plain": "When you die, do you get to make a choice yourself?",
     "styled": "Some people die and things just happen around them. Others get one last decision of their own. When you die, do you get to make a choice yourself?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "klutz",
       "moonchild"
@@ -1034,6 +1172,8 @@
     "plain": "Does your death hand a decision to the evil team?",
     "styled": "Upon your demise, the villains receive a CHOICE! A delicious, scheming choice! Oh, how I envy them. Does your death hand the evil team a decision?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barber",
       "hatter"
@@ -1052,6 +1192,8 @@
     "plain": "When you die, does the Storyteller get to decide what happens next?",
     "styled": "Our showrunners love a little creative control! For some contestants, the moment they die, the Storyteller takes the wheel. When you die, does the Storyteller decide what happens next?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sweetheart",
       "plaguedoctor"
@@ -1070,6 +1212,8 @@
     "plain": "Whatever the clues say about you, are you genuinely on the good team?",
     "styled": "Between the two of you who show up as the wrong thing, one is actually on our side. Are you genuinely good, no matter what the clues say?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "recluse"
     ],
@@ -1083,6 +1227,8 @@
     "plain": "Does your change of side only happen once the game is over?",
     "styled": "Some turncoats switch mid-show. One saves it for the final credits, and steals the win! Does your change of side only happen when the game ends?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "politician"
     ],
@@ -1099,6 +1245,8 @@
     "plain": "Does your side change because someone else targets you with their ability?",
     "styled": "Out of the turncoats, you're the one who doesn't choose. Somebody uses their ability on you, and you're theirs. Does your side change because someone else targets you?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "goon"
     ],
@@ -1115,6 +1263,8 @@
     "plain": "Do you pick one person on the very first night and take their side for the rest of the game?",
     "styled": "Night one, you pick your person, and that's that. No take-backs, no peeking at what side they're on. Do you choose one player on the first night and stick with their side for good?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "ogre"
     ],

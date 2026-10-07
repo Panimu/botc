@@ -10,6 +10,8 @@ Questions live in `data/questions/*.json`, one file per character group, each li
   "plain": "Would you rather kill quietly than make a spectacle of it?",
   "styled": "Murder: a craft, or a fireworks show? Some of you file your kills neatly. Some of you want the whole village waking up screaming. Pick a lane, monster.",
   "voice": "The System AI",
+  "quality": 5,
+  "complexity": 4,
   "yes": ["imp", "po"],
   "scope": { "team": "demon" }
 }
@@ -18,7 +20,22 @@ Questions live in `data/questions/*.json`, one file per character group, each li
 - `yes`: who answers yes. Either a list of character ids, or a match object on fields in `data/characters.json`, e.g. `{ "team": ["minion", "demon"] }` or `{ "otherNight": true }`. All fields must match.
 - `scope` (optional): the sub-pool the question is about, using the same selector forms. **Without a scope** the question is *global*: everyone not on the yes side is on the no side, and it can be asked at any point. **With a scope**, it's only asked when every remaining character is inside the scope, and the "no" side is the rest of the scope. Every `yes` character must be inside the scope.
 - `voice`: who speaks the `styled` line (see below).
+- `quality` and `complexity`: authoring ratings, whole numbers from 1 (low) to 10 (high). A new question starts at 5 for both. Neither is published. See "Ratings" below.
 - `id`: kebab-case and unique, prefixed by file: `global-`, `tfc-` (core townsfolk), `tfx-` (experimental townsfolk), `out-`, `min-`, `dem-`, `tfl-` (travellers, in `travellers.json`), `xd-`, `xi-`, `xm-`, `xs-`, `xp-` for the cross-type files, `fun-` for `fun.json` (comedy-first questions), `icon-` for `icons.json` (questions about the token art), and `psy-` for `psychology.json` (personality inferred from the character).
+
+## Ratings
+
+**`quality`** is how good a question it is: accurate, worth asking, clearly split. The user sets it. Leave it at 5 unless asked to change it.
+
+**`complexity`** is how hard the **plain** wording is to take in on a first read. It is mostly about length and sentence structure, and partly about the rules knowledge the wording assumes. The styled line isn't rated, since it ends with the same question. Rate the wording, not the split or how hard the true answer is to work out.
+
+- **1 to 2**: a few short, everyday words and one idea. "Are you evil?" "Is there a face on your token?"
+- **3 to 4**: one clear idea in a short sentence, with at most one game term. "Do you win when the Demon wins?"
+- **5 to 6**: the typical question. One main idea plus a qualifier, a condition or a couple of game terms. "Does your ability give you new information almost every night?"
+- **7 to 8**: long or layered. Two conditions, an exception ("other than", "without", "not counting"), a scoping lead-in ("Of those who…", "As a Minion…"), precise timing, or a mechanic the reader has to recall exactly.
+- **9 to 10**: the hardest few percent. Long sentences stacking several qualifiers, exceptions or negations, or uncommon mechanics described in detail.
+
+Across the whole set, use every value from 1 to 10, in a rough bell shape around 5 and 6, with 1 and 10 kept for the clearest extremes (a couple of percent each). `node scripts/ratings.js report complexity` shows the spread; `dump` lists every question with its rating and word count; `set` applies a `{ "id": rating }` file. The `complexity-rater` agent (`.claude/agents/complexity-rater.md`) rates the whole set.
 
 ## Accuracy is the whole game
 

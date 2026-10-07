@@ -439,6 +439,8 @@ function openQuestion(id) {
   $('plain').value = draft.plain ?? '';
   $('styled').value = draft.styled ?? '';
   $('voice').value = draft.voice ?? '';
+  $('quality').value = draft.quality ?? '';
+  $('complexity').value = draft.complexity ?? '';
   $('option-yes').value = draft.options?.[0] ?? '';
   $('option-no').value = draft.options?.[1] ?? '';
   renderQuestion();
@@ -806,7 +808,7 @@ async function newQuestion(copyFrom = null) {
   const id = answer.id.trim();
   const problem = idProblem(id);
   if (problem) { setStatus(problem, 'bad'); return; }
-  const draft = copyFrom ? { ...clone(qDraft(copyFrom)), id } : { id, plain: '', styled: '', voice: '', yes: [] };
+  const draft = copyFrom ? { ...clone(qDraft(copyFrom)), id } : { id, plain: '', styled: '', voice: '', quality: 5, complexity: 5, yes: [] };
   state.newQuestions.set(id, { file: answer.file, draft });
   showTab('questions');
   openQuestion(id);
@@ -1110,6 +1112,13 @@ for (const [field, apply] of [
   ['styled', (d, v) => { d.styled = v; }],
   ['voice', (d, v) => { d.voice = v; }],
 ]) $(field).addEventListener('input', () => updateQuestion((d) => apply(d, $(field).value)));
+// Ratings: whole numbers 1 to 10; anything else is saved as typed and the validator explains.
+for (const field of ['quality', 'complexity']) {
+  $(field).addEventListener('input', () => updateQuestion((d) => {
+    const value = $(field).value.trim();
+    d[field] = value === '' ? undefined : Number(value);
+  }));
+}
 for (const field of ['option-yes', 'option-no']) {
   $(field).addEventListener('input', () => updateQuestion((d) => {
     const labels = [$('option-yes').value.trim(), $('option-no').value.trim()];

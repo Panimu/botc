@@ -4,6 +4,8 @@
     "plain": "Is your token's picture a real animal, or a real animal's head?",
     "styled": "I've buried contestants killed by things with fur, scales and far too many legs. Some of you carry one of those beasts painted on your token. Is your token's picture a real animal, or a real animal's head?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsAnimal": true
     },
@@ -160,6 +162,8 @@
     "plain": "Does your token's picture show a whole person-shaped figure with a body, not just part of one?",
     "styled": "I know what it's like to be a body that doesn't stay one shape. Some tokens show a whole figure, arms and all. Does your token's picture show a whole person-shaped figure, with a body, rather than just part of one?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsHumanFigure": true
     },
@@ -325,6 +329,8 @@
     "plain": "Does your token show a piece of a body rather than a whole creature?",
     "styled": "Back in my day we kept our body parts attached, thank you very much. Some of these tokens didn't get the memo. Does your token show a piece of a body rather than a whole creature?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsBodyPart": true
     },
@@ -474,6 +480,8 @@
     "plain": "Would a sharp-eyed pirate find a skull somewhere in your token's art?",
     "styled": "THIS GOAT has sailed with pirates! In a dream! They taught me to spot a skull at a hundred paces. LOOK CLOSER, MORTAL! Would a sharp-eyed pirate find a skull somewhere in your token's art?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconHasSkull": true
     },
@@ -640,6 +648,8 @@
     "plain": "Is there a flower, stem, leaf or tree drawn on your token?",
     "styled": "Sniff token. Chew green bit! RAWR! (Translation: he is checking for something leafy.) Is there a flower, stem, leaf or tree drawn on your token?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsPlant": true
     },
@@ -802,6 +812,8 @@
     "plain": "Is your token's picture something to eat or drink?",
     "styled": "I have STANDARDS, and those standards involve being served promptly. If your token is a snack, I'm claiming it. Is your token's picture something to eat or drink?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsFoodOrDrink": true
     },
@@ -959,6 +971,8 @@
     "plain": "Was the thing on your token made to hurt someone?",
     "styled": "Blades! Bolts! Bombs! Your goddess would worship any one of them, if she had hands! Was the thing on your token made to hurt someone?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsWeapon": true
     },
@@ -1113,6 +1127,8 @@
     "plain": "Is your token's picture basically a circle?",
     "styled": "Folks, we've got squares, we've got squiggles, and we've got contestants who are just one big beautiful circle! Is your token's picture basically a circle?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconIsRound": true
     },
@@ -1260,6 +1276,8 @@
     "plain": "Is there a hat, helmet, crown or tiara on your token's picture?",
     "styled": "A tiara is not an accessory, it is a LIFESTYLE. Lesser headwear is acceptable, I suppose. Is there a hat, helmet, crown or tiara on your token's picture?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsHeadwear": true
     },
@@ -1422,6 +1440,8 @@
     "plain": "Is the thing on your token made to be worn on the body?",
     "styled": "Let's talk fashion, darling. My guests always look their best, even when the lighting is cruel. Is the thing on your token made to be worn on the body?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsWearable": true
     },
@@ -1577,6 +1597,8 @@
     "plain": "Does your token show paper, a book, a scroll or handwriting?",
     "styled": "The dungeon has paperwork. Of course it does. Somewhere there's a form for being eaten. Does your token show paper, a book, a scroll or handwriting?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsWriting": true
     },
@@ -1740,6 +1762,8 @@
     "plain": "Is there a flame drawn on your token's picture?",
     "styled": "FIRE! Your goddess loves fire! It purifies! It screams! It ruins carpets! Is there a flame drawn on your token's picture?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsFire": true
     },
@@ -1901,6 +1925,8 @@
     "plain": "Is the thing on your token there to light up the dark?",
     "styled": "The contestants who carry light live longer. Not by much, but by enough. Is the thing on your token there to light up the dark?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconShowsLightSource": true
     },
@@ -2061,6 +2087,8 @@
     "plain": "Is your token's picture a symbol or pattern rather than a real object, creature or place?",
     "styled": "Some people got an actual thing on their token. Others got a squiggle and a lot of meaning. Is your token's picture a symbol or pattern rather than a real object, creature or place?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconIsAbstractSymbol": true
     },
@@ -2209,6 +2237,8 @@
     "plain": "Is there a face anywhere in your token's picture, even one seen from the side?",
     "styled": "A face is how one connects with one's FANS. Mine is flawless from every angle, obviously. Is there a face anywhere in your token's picture, even one seen from the side?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconHasFace": true
     },
@@ -2350,6 +2380,8 @@
     "plain": "Does your token show something small enough to hold in one hand?",
     "styled": "We love portable products here at the network! Easy to carry, easy to brand. Does your token show something small enough to hold in one hand?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFitsInOneHand": true
     },
@@ -2430,6 +2462,8 @@
     "plain": "Would your token's picture look at home in a garden?",
     "styled": "Sometimes I picture somewhere quiet after all this: a little garden, things growing, nobody screaming. Would your token's picture look at home in a garden?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFoundInGarden": true
     },
@@ -2564,6 +2598,8 @@
     "plain": "Is your token's picture something a child would play with?",
     "styled": "New loot box tier: Playtime! Contents may include joy, nostalgia, or a choking hazard. Is your token's picture something a child would play with?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFoundInToyBox": true
     },
@@ -2661,6 +2697,8 @@
     "plain": "Would your token's picture look at home in a kitchen?",
     "styled": "I'd kill for a normal kitchen. A kettle. A clean pan. Nothing in the sink trying to grab me. Would your token's picture look at home in a kitchen?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFoundInKitchen": true
     },
@@ -2802,6 +2840,8 @@
     "plain": "Would your token's picture look at home in a pub?",
     "styled": "Now this is my kind of question. I've propped up a few bars in my time, and I know what belongs in one. Would your token's picture look at home in a pub?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFoundInPub": true
     },
@@ -2928,6 +2968,8 @@
     "plain": "Would your token's picture look at home in a church?",
     "styled": "Confession is good for the soul, darling, and even better for ratings. Let's set the scene somewhere holy. Would your token's picture look at home in a church?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFoundInChurch": true
     },
@@ -3056,6 +3098,8 @@
     "plain": "Would your token's picture look at home at sea or on the coast?",
     "styled": "I've never had sea legs, and the dungeon's idea of a beach is mostly teeth. Would your token's picture look at home at sea or on the coast?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFoundAtSea": true
     },
@@ -3204,6 +3248,8 @@
     "plain": "Would your token's picture look at home in a library or a scholar's study?",
     "styled": "Our educational demographic is small but extremely loyal! They love a good bookshelf backdrop. Would your token's picture look at home in a library or a scholar's study?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFoundInLibraryOrStudy": true
     },
@@ -3331,6 +3377,8 @@
     "plain": "Would your token's picture look at home in a graveyard?",
     "styled": "Graveyards! Your goddess's favourite picnic spot! So many friends, all lying down! Would your token's picture look at home in a graveyard?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconFoundInGraveyard": true
     },
@@ -3446,6 +3494,8 @@
     "plain": "Does your token's picture look like it could bite you?",
     "styled": "Keep your hands inside the vehicle, folks, because some of these tokens have TEETH! Does your token's picture look like it could bite you?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "iconCouldBite": true
     },
@@ -3581,6 +3631,8 @@
     "plain": "Is your token's picture about music, like written notes or an instrument?",
     "styled": "Every great show needs a theme tune, darling. Some of my guests brought their own. Is your token's picture about music, like written notes or an instrument?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "choirboy",
       "minstrel"
@@ -3746,6 +3798,8 @@
     "plain": "Is there a Christian cross, upright or upside down, on your token's picture?",
     "styled": "I wasn't raised religious, but down here I'll take any protection going. Some tokens come pre-blessed, or pre-cursed. Is there a Christian cross, upright or upside down, on your token's picture?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "monk",
       "preacher",
@@ -3916,6 +3970,8 @@
     "plain": "Are there spread wings on your token's picture?",
     "styled": "If I had wings I'd be unstoppable. More unstoppable. Spread ones, so everyone could see. Are there spread wings on your token's picture?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "highpriestess",
       "pacifist",
@@ -4081,6 +4137,8 @@
     "plain": "Is there a star shape anywhere on your token's picture?",
     "styled": "Everybody wants to be a star, folks, but only a few tokens actually have one drawn on! Is there a star shape anywhere on your token's picture?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "atheist",
       "magician",
@@ -4247,6 +4305,8 @@
     "plain": "Would your token's picture look at home in a science laboratory?",
     "styled": "Achievement unlocked: Mad Scientist! Safety goggles not included, nor recommended. Would your token's picture look at home in a science laboratory?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "boffin",
       "poisoner",
@@ -4408,6 +4468,8 @@
     "plain": "Would you look up into the sky to see the thing on your token?",
     "styled": "I spend half my time floating these days and the view's lovely. Some of you belong up here with me. Would you look up into the sky to see the thing on your token?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "balloonist",
       "pacifist",
@@ -4557,6 +4619,8 @@
     "plain": "Would your token's picture look at home at a child's birthday party?",
     "styled": "Every day should be MY birthday, with streamers and treats and adoring guests. Would your token's picture look at home at a child's birthday party?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "acrobat",
       "villageidiot",
@@ -4696,6 +4760,8 @@
     "plain": "Would your token's picture look at home on a pirate ship?",
     "styled": "THIS GOAT shall be CAPTAIN! Of a ship! Of the seas! Of YOU! Would your token's picture look at home on a pirate ship?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "gunslinger"
@@ -4823,6 +4889,8 @@
     "plain": "Would your token's picture look at home in a circus ring?",
     "styled": "Roll up, roll up! Tonight's show features clowns, catastrophes and one very confused goat! Would your token's picture look at home in a circus ring?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "mutant",
       "juggler"
@@ -4967,6 +5035,8 @@
     "plain": "Would your token's picture look at home in a shop where men go for a haircut and a shave?",
     "styled": "My late husband went to the same little shop for his haircut for fifty years and came back looking exactly the same every time. Would your token's picture look at home in a shop where men go for a haircut and a shave?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barber",
       "goon"
@@ -5133,6 +5203,8 @@
     "plain": "Is your token's picture a building?",
     "styled": "Most of these tokens are things you could pick up. A couple are things you could live in, if you're desperate. Is your token's picture a building?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "mayor",
       "hermit"
@@ -5298,6 +5370,8 @@
     "plain": "Can you see liquid in your token's picture?",
     "styled": "Whatever's sloshing around in your art, don't drink it. That's free advice. Can you see liquid in your token's picture?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "courtier",
       "drunk",
@@ -5457,6 +5531,8 @@
     "plain": "Are there tentacles on your token's picture?",
     "styled": "TENTACLES! The finest of all limbs! Your goddess would trade her entire missing body for eight of them! Are there tentacles on your token's picture?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "nodashii",
       "lleech",
@@ -5623,6 +5699,8 @@
     "plain": "Is your token's picture a pair of glasses or spectacles?",
     "styled": "Some of my guests peer at me over their lenses as though I'm the one being interviewed. So, darling: is your token's picture a pair of glasses or spectacles?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "grandmother",
       "bountyhunter",
@@ -5790,6 +5868,8 @@
     "plain": "Is a hand or a handprint one of the main things drawn on your token?",
     "styled": "Hands are funny. I can change mine into almost anything now, but I still notice everyone else's. Is a hand or a handprint one of the main things drawn on your token?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butler",
       "zombuul",
@@ -5952,6 +6032,8 @@
     "plain": "Is your token's picture basically just a big mouth?",
     "styled": "THIS GOAT has the LOUDEST mouth in the dungeon! Is there a challenger? SPEAK! Is your token's picture basically just a big mouth?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "snitch",
       "scarletwoman",
@@ -5965,6 +6047,8 @@
     "plain": "Is something on your token watching you with one lone eye?",
     "styled": "Viewer surveillance is a key part of the experience! We love an eye-catching logo, literally. Is something on your token watching you with one lone eye?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cultleader",
       "fortuneteller",
@@ -6133,6 +6217,8 @@
     "plain": "Would your token's picture look at home in a jeweller's window?",
     "styled": "I have a sparkling collar and a sparkling personality. Both are priceless. Would your token's picture look at home in a jeweller's window?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "virgin",
       "moonchild",
@@ -6294,6 +6380,8 @@
     "plain": "Would your token's picture look at home on a farm?",
     "styled": "Like farm! Chase goat! RAWR! (Narration: this dinosaur has been banned from several farms.) Would your token's picture look at home on a farm?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "farmer",
       "scapegoat",
@@ -6441,6 +6529,8 @@
     "plain": "Would your token's picture look at home in a tool shed?",
     "styled": "Give me a hammer and a quiet afternoon and I'll fix half this dungeon. The other half deserves to stay broken. Would your token's picture look at home in a tool shed?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "tinker",
       "apprentice",
@@ -6592,6 +6682,8 @@
     "plain": "Does your token's picture look like ancient Egyptian art?",
     "styled": "The pharaohs worshipped goats! THIS GOAT is almost certain! Is it true? IT IS TRUE NOW! Does your token's picture look like ancient Egyptian art?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "highpriestess",
       "oracle"
@@ -6752,6 +6844,8 @@
     "plain": "Is there a key in your token's picture?",
     "styled": "I lost my house keys the day the world ended and honestly that was the bigger inconvenience. Is there a key in your token's picture?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "vigormortis"
     ]
@@ -6761,6 +6855,8 @@
     "plain": "Are there cogs or gears in your token's picture?",
     "styled": "Diagnostic report: machinery detected in some tokens. Results may be catastrophic. Are there cogs or gears in your token's picture?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "clockmaker",
       "engineer",
@@ -6772,6 +6868,8 @@
     "plain": "Is your token's picture a heart?",
     "styled": "Aww, folks, isn't this sweet? Somebody brought their heart to the dungeon! Is your token's picture a heart?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "empath"
     ]
@@ -6781,6 +6879,8 @@
     "plain": "Is your token's picture a book?",
     "styled": "I'd give a lot for a good book and a chair that isn't a trap. Is your token's picture a book?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "librarian",
       "preacher"
@@ -6791,6 +6891,8 @@
     "plain": "Is there a ribbon tied in a bow on your token's picture?",
     "styled": "My mother tied ribbons in my hair when I was little. It's a silly thing to miss down here. Is there a ribbon tied in a bow on your token's picture?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sweetheart",
       "villageidiot"

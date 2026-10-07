@@ -131,8 +131,9 @@ async function build() {
   await writeJson('data/questions/index.json', files);
   for (const file of files) {
     const questions = await readJson(`data/questions/${file}`);
-    // Everything except `voice` is published (including optional `options` answer labels).
-    await writeJson(`data/questions/${file}`, questions.map(({ voice, ...question }) => question));
+    // Everything except the authoring fields (`voice`, and the `quality` and `complexity`
+    // ratings) is published, including optional `options` answer labels.
+    await writeJson(`data/questions/${file}`, questions.map(({ voice, quality, complexity, ...question }) => question));
   }
   const quotes = await readJson('data/share-quotes.json');
   await writeJson('data/share-quotes.json', Object.fromEntries(Object.entries(quotes).map(([id, { quote }]) => [id, { quote }])));

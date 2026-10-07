@@ -4,6 +4,8 @@
     "plain": "When a nomination goes to a vote, does your ability change who votes, how voting works, whether it passes, or voters' fates?",
     "styled": "Every day these people raise their hands like it's a fair election. It is not. Some of us quietly rewrite the rules of the show of hands. When a nomination goes to a vote, does your ability change who may or must vote, how votes are cast or counted, whether it passes, or what happens to voters?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "affectsVoting": true
     },
@@ -16,6 +18,8 @@
     "plain": "Does your ability bend the usual nominating rules or add a twist to nominations, beyond just giving you information?",
     "styled": "Nominations are the best part of the show! The finger! The gasp! The dramatic pause before the vote! Some contestants come with a little extra sparkle in that department. Not just intel, a real twist. When it comes to nominating, does your ability bend the usual rules or add a twist of its own?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "affectsNominations": true
     },
@@ -28,6 +32,8 @@
     "plain": "Setting nominations aside, can your ability only be used out loud, in front of everyone, in daylight?",
     "styled": "Some powers are whispered. Some are pointed at in the dark. And some only work if you stand up in broad daylight and do it where everyone can hear you. Nominations aside, can your ability only be used out loud, in front of everyone, in daylight?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "publicAbility": true
     },
@@ -40,6 +46,8 @@
     "plain": "Does your ability literally ask you to make a guess?",
     "styled": "NEW ACHIEVEMENT UNLOCKED: Professional Hunch-Haver! Some abilities spell it out in black and white: guess. Not 'choose', not 'learn'. Guess. Does your ability literally ask you to make a guess?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "guesses": true
     }
@@ -49,6 +57,8 @@
     "plain": "Does your ability depend on exactly what players say aloud to each other, not just on a choice someone announces?",
     "styled": "WORDS! Words are knives, mortal! Not pointing, not announcing who you pick, not whispering to the Storyteller, the actual words that pass between players! Does your ability hinge on exactly what players say out loud to each other, the words, claims or truths themselves?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "spokenTrigger": true
     }
@@ -58,6 +68,8 @@
     "plain": "Does your ability carry a special winning or losing rule of its own that can decide, or flip, who wins?",
     "styled": "Most of you will die waiting for someone to finally stab the right person. A few of you carry a rule that just settles the matter, bang, or turns the result on its head. Does your ability carry a special winning or losing rule of its own that can decide, or flip, who wins?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "alternateWinOrLoss": true
     },
@@ -70,6 +82,8 @@
     "plain": "Leaving ordinary nominating and voting aside, does your ability give you a daytime choice or action of your own?",
     "styled": "Look, everyone gets to raise their hand and point at people. That's just the baseline humiliation. I'm asking whether your ability hands you something extra to do while the sun's up. Leaving ordinary nominating and voting aside, does it give you a daytime choice or action of your own?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "daytimeAction": true
     }
@@ -79,6 +93,8 @@
     "plain": "As a Minion or Demon, when a nomination goes to a vote, does your ability change how that vote works?",
     "styled": "I've interviewed a lot of villains, and the clever ones never bother hiding the body. They simply rearrange the vote. So, as a Minion or Demon, when a nomination goes to a vote, does your ability change how that vote works?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "affectsVoting": true,
       "team": [
@@ -95,6 +111,8 @@
     "plain": "As a Townsfolk or Outsider, does your ability change how you yourself get to vote?",
     "styled": "For most good folk, voting is easy: hand up, hand down. But for some of us the rules are different, stricter or more generous. As a Townsfolk or Outsider, does your ability change how you yourself get to vote?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "affectsVoting": true,
       "team": [
@@ -111,6 +129,8 @@
     "plain": "As a Minion or Demon, is your ability set off by nominations, either by who makes them or who receives them?",
     "styled": "Yes! YES! The finger points, and blood answers! Tell your goddess, little Minion or Demon: is your ability set off by nominations, by who makes them or by who receives them?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "affectsNominations": true,
       "team": [
@@ -127,6 +147,8 @@
     "plain": "As a Townsfolk or Outsider, is your ability tied to your own nominations, or to someone nominating you?",
     "styled": "Good guys usually treat nominations like a chore. A few of you have a real stake in it: your ability cares about who you nominate, or who dares nominate you. As a Townsfolk or Outsider, is your ability tied to your own nominations, or to someone nominating you?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "princess",
       "virgin",
@@ -142,6 +164,8 @@
     "plain": "As a Minion or Demon, must you say or do something publicly to use your ability, beyond nominating and voting?",
     "styled": "Behold! The villain who schemes in PLAIN SIGHT! No shadows for the magnificent! Answer me, Minion or Demon: beyond nominating and voting, must you say or do something openly in front of the town to use your ability?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "publicAbility": true,
       "team": [
@@ -158,6 +182,8 @@
     "plain": "As a Townsfolk or Outsider, does your ability make you speak up or choose in front of everyone by day, nominations aside?",
     "styled": "A true hero performs for her public, darling. None of this skulking off to whisper with the Storyteller. Nominations don't count, either. As a Townsfolk or Outsider, does your ability make you speak up or choose in front of everyone during the day?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "publicAbility": true,
       "team": [
@@ -174,6 +200,8 @@
     "plain": "As a Minion or Demon, does a particular word or phrase, or a claim about someone's character or alignment, trigger your ability?",
     "styled": "Pull up a chair. Some of evil's finest never lift a knife; they just wait for the right words to leave the wrong mouth. As a Minion or Demon, does your ability turn on a particular word or phrase, or a claim about who someone is, said out loud?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "spokenTrigger": true,
       "team": [
@@ -190,6 +218,8 @@
     "plain": "As a Townsfolk or Outsider, can a claim about characters, or a true statement, said aloud to the group trigger your ability?",
     "styled": "Here's the thing about being one of the good guys: you'd think your mouth would be safe. Not always. As a Townsfolk or Outsider, can a claim about characters, or a statement that proves true, said out loud for others to hear, trigger your ability?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "spokenTrigger": true,
       "team": [
@@ -203,6 +233,8 @@
     "plain": "As a Townsfolk or Outsider, does your ability hold a special way for you or your side to win or lose outright?",
     "styled": "It's okay to be a little scared of a rule that can end everything, for better or worse. It's also okay to love it. As a Townsfolk or Outsider, does your ability hold a special way for you or your side to win or lose outright?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "alternateWinOrLoss": true,
       "team": [
@@ -219,6 +251,8 @@
     "plain": "As a Minion or Demon, does your ability add a special way for the game to be won or lost outright?",
     "styled": "Most of evil plays the long, grubby game of stabbing people one at a time. Some of you came with a shortcut, or a trapdoor. As a Minion or Demon, does your ability add a special way for the game to be won or lost outright?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "alternateWinOrLoss": true,
       "team": [
@@ -235,6 +269,8 @@
     "plain": "As a Minion or Demon, does your ability give you something to do by day, beyond the usual nominating and voting?",
     "styled": "Our villains are working round the clock, and the viewers adore it! Not just the night shift, the day shift too. As a Minion or Demon, does your ability give you something of your own to do in daylight, beyond the usual nominating and voting?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "daytimeAction": true,
       "team": [
@@ -248,6 +284,8 @@
     "plain": "As a Townsfolk or Outsider, does your ability give you a daytime move of your own, beyond the usual nominating and voting?",
     "styled": "RAWR! [Translation: stomping around in the sunshine!] He wants to know: as a Townsfolk or Outsider, does your ability give you a daytime move of your own, beyond the usual nominating and voting?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "daytimeAction": true,
       "team": [
@@ -261,6 +299,8 @@
     "plain": "Does your ability change the rules of nominating or voting, or make a nomination or its vote do something special?",
     "styled": "WELCOME TO THE GALLOWS, where the rules are more like suggestions! Some contestants just watch the paperwork. Others get to stamp it, shred it or set it on fire. Does your ability change the rules of nominating or voting, or make a nomination, or the vote on it, do something special?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "banshee",
       "butler",
@@ -295,6 +335,8 @@
     "plain": "Would you like to declare, once the votes are in, something that overrides the result or punishes the voters?",
     "styled": "Here's how a real gunfight goes, kid. Everyone shows their hand. Then one person stands up and says what happens next. Would you like to declare, once the votes are in, something that overrides the result or punishes the voters?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "vizier",
       "gunslinger",
@@ -309,6 +351,8 @@
     "plain": "Could one public announcement you make with your ability end the whole game on the spot, with no one dying?",
     "styled": "No stabbings, no executions, no dramatic last words. Just one sentence, out of your own mouth, in front of everybody, and the whole show is over. Could one public announcement you make with your ability end the game on the spot, with no one dying?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cultleader",
       "alsaahir",
@@ -323,6 +367,8 @@
     "plain": "Nominations aside, does your ability let you point at someone in daylight and kill them on the spot, no execution needed?",
     "styled": "THERE! THAT ONE! DEAD! RIGHT NOW! No trial, no vote, no tedious nominations, just a finger and a body hitting the floor! Does your ability let you point at someone in daylight and kill them on the spot, no execution needed?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "slayer",
       "psychopath",
@@ -339,6 +385,8 @@
     "plain": "Executing the Demon aside, can an execution, or a day without one, win or lose the game outright because of your ability?",
     "styled": "Folks, the gallows isn't just for Demons tonight! Thanks to some very special contestants, the right hanging, or no hanging at all, can end the whole season! Beyond executing the Demon, can an execution, or a day without one, win or lose the game outright because of your ability?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "saint",
       "eviltwin",
@@ -359,6 +407,8 @@
     "plain": "Does your ability care about exactly what you say to the group, not just which choice you announce?",
     "styled": "Honey, I've got a mouth on me, and some days it's the only weapon I need. If your ability cares about the actual words, claims or jokes coming out of YOUR mouth in front of the group, not just who you pick, I want to hear it. Does it?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gossip",
       "goblin",
@@ -375,6 +425,8 @@
     "plain": "Does your ability come with a secret word or phrase that only you know at the start?",
     "styled": "Sniff... RAWR! [Translation: I know a secret!] Of everyone set off by spoken words, he asks: does your ability come with a secret word or phrase that only you know at the start?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "mezepheles",
       "yaggababble"
@@ -389,6 +441,8 @@
     "plain": "Is it other people's words, not your own, that set your ability off?",
     "styled": "Of all you chatterboxes whose abilities hang on speech, some of you are your own worst enemy. Others sit back and wait for somebody else to put their foot in it. Is it other people's words, not your own, that set your ability off?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "mezepheles",
       "damsel",
@@ -405,6 +459,8 @@
     "plain": "Does your ability use madness, where someone must convincingly support a claim, with a reward or penalty attached?",
     "styled": "Madness, darling, is simply COMMITMENT. Pick a claim, about yourself or somebody else, sell it all day, and the Storyteller rewards or punishes you for it. I do it every day. Does your ability use madness, where someone must convincingly support a claim, with a reward or penalty attached?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cerenovus",
       "mutant",
@@ -420,6 +476,8 @@
     "plain": "Is your aim to keep everyone laughing?",
     "styled": "Of the contestants whose words are their whole act, one of you is basically a stand-up comedian with a death wish. Ratings gold. Is your aim to keep everyone laughing?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "deviant"
     ],
@@ -432,6 +490,8 @@
     "plain": "Is your big public moment something you only get once in the whole game?",
     "styled": "Of all you show-offs who perform in front of the crowd, some get a fresh stage every day. Some get ONE curtain call and then it's over, forever. LOOT BOX CONTENTS: one (1) moment. Is your big public moment something you only get once in the whole game?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "slayer",
       "juggler",
@@ -448,6 +508,8 @@
     "plain": "Does your public moment only come once you've died?",
     "styled": "Some people get their best lines at their own funeral. Of you lot who do things in front of the whole crowd, does your public moment only come once you've died?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "klutz",
       "moonchild"
@@ -462,6 +524,8 @@
     "plain": "Is what you do in front of everyone a guess about which players are which characters?",
     "styled": "Of the contestants who act in public, a couple of you stand up and basically announce your whole theory of the game. Bold. Possibly stupid. Is what you do in front of everyone a guess about which players are which characters?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "alsaahir",
       "juggler"
@@ -476,6 +540,8 @@
     "plain": "Is there a Minion or Demon behind your public act?",
     "styled": "So many of you perform for the crowd. But I always ask the question the audience is dying to hear answered. Behind that public act of yours, is there a Minion or Demon?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": [
         "minion",
@@ -491,6 +557,8 @@
     "plain": "Does your ability change how many votes a particular player's vote counts as?",
     "styled": "Among the vote-tinkerers, some of you fiddle with the arithmetic directly. One hand, three votes. One hand, minus one. One player, two votes. Does your ability change how many votes a particular player's vote counts as?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "thief",
       "bureaucrat",
@@ -506,6 +574,8 @@
     "plain": "Does your ability put limits or demands on your own voting?",
     "styled": "Of everyone who messes with the vote, a few of you mostly mess with yourselves. Rules about when you may vote, when you must, what you need first. Does your ability put limits or demands on your own voting?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "butler",
       "zealot",
@@ -521,6 +591,8 @@
     "plain": "Can your ability make an execution fail outright, no matter how many hands went up?",
     "styled": "Of you vote-benders, a couple can throw the whole tally out the window. Doesn't matter if every hand in the room went up. Can your ability make an execution fail outright, no matter how many hands went up?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "judge",
       "legion"
@@ -535,6 +607,8 @@
     "plain": "Does your ability punish the person who makes a nomination?",
     "styled": "Of those whose powers circle around nominations, some of you set traps for whoever dares to point. Point at the wrong person and it's YOU who suffers. Delicious. Does your ability punish the person who makes a nomination?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "virgin",
       "witch",
@@ -550,13 +624,14 @@
     "plain": "Is it nominations you make yourself that set your ability in motion?",
     "styled": "Of everyone whose ability cares about nominations, some of you sit and wait to be pointed at, or watch other people point. Others do the pointing themselves. Is it nominations you make yourself that set your ability in motion?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "princess",
       "golem",
       "fearmonger",
-      "butcher",
-      "banshee",
-      "riot"
+      "riot",
+      "butcher"
     ],
     "scope": {
       "affectsNominations": true,
@@ -568,6 +643,8 @@
     "plain": "Does your ability let you nominate more than the usual once a day?",
     "styled": "One nomination a day? How DREARY. Among those whose powers involve nominations, some of us get an encore. Does your ability let you nominate more than the usual once a day?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "banshee",
       "butcher"
@@ -582,6 +659,8 @@
     "plain": "Is your ability triggered when you yourself are nominated?",
     "styled": "Among nomination specialists, some of us want the finger pointed at US! Let them come! Is your ability triggered when you yourself are nominated?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "virgin",
       "goblin"
@@ -596,6 +675,8 @@
     "plain": "Are you a Minion or Demon with a special ending up your sleeve?",
     "styled": "Among everyone carrying a special ending in their pocket, here's the question that decides whether the audience cheers or boos. Are you a Minion or Demon with that ending up your sleeve?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": [
         "minion",
@@ -611,6 +692,8 @@
     "plain": "Can your ability change the result after the game would normally be decided?",
     "styled": "Of you special-ending types, some don't stop the game early. They wait until it's supposedly over and then flip the table. Can your ability change the result after the game would normally be decided?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "politician",
       "heretic",
@@ -627,6 +710,8 @@
     "plain": "Can your daytime move be made privately, in a quiet word with the Storyteller?",
     "styled": "Of all you daytime busybodies, some of you get to slip off for a quiet chat with the Storyteller while everyone else is shouting. Can your daytime move be made privately, in a quiet word with the Storyteller?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "savant",
       "artist",
@@ -645,6 +730,8 @@
     "plain": "Is your daytime move a way to kill someone outright, there and then, without an execution?",
     "styled": "Of the contestants who act in daylight, some just ask questions. Some leave a body on the floor before lunch. Is your daytime move a way to kill someone outright, there and then, without an execution?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "slayer",
       "golem",
@@ -664,6 +751,8 @@
     "plain": "Is your daytime move limited to one use, or one particular day, in the whole game?",
     "styled": "Among our daylight performers, some get to play every single day. Others get exactly one shot, or one marked day on the calendar, and then the curtain drops. Is your daytime move limited to one use, or one particular day, in the whole game?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "slayer",
       "fisherman",
@@ -686,6 +775,8 @@
     "plain": "Nominations aside, must your daytime move happen in front of everyone?",
     "styled": "So you've got something to do in daylight. Lovely. Now, does it happen in a corner, or centre stage? Nominations aside, must your daytime move happen in front of everyone?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "publicAbility": true
     },
@@ -699,6 +790,8 @@
     "plain": "Must your guesses be made out loud in front of the whole town?",
     "styled": "Among the guessers, some whisper their theories to the Storyteller, or point quietly in the dark. Others have to say it to everyone's face. Must your guesses be made out loud in front of the whole town?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "juggler",
       "alsaahir"
@@ -713,6 +806,8 @@
     "plain": "Are your guesses about your own ability rather than other players?",
     "styled": "Of all you guessers, one of you is guessing about the most confusing person in the dungeon: yourself. Are your guesses about your own ability rather than other players?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "amnesiac"
     ],
@@ -725,6 +820,8 @@
     "plain": "Could a wrong guess cost you your life?",
     "styled": "WAGER ACCEPTED! Among our guessers, one of you is betting with the only currency that really matters. Could a wrong guess cost you your life?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gambler"
     ],
@@ -738,6 +835,8 @@
     "plain": "Do you get only one go at your guessing, ever?",
     "styled": "Of you guessers, some get to guess again and again until they're right or dead. A couple get one go, ever. Do you get only one go at your guessing?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "juggler",
       "puzzlemaster"

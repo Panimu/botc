@@ -4,6 +4,8 @@
     "plain": "Do you like judging a dinner party by counting how many shady couples have ended up seated together?",
     "styled": "A proper hostess KNOWS when two disreputable guests have wangled adjoining seats. I don't need their names, darling, I need the headcount. Do you like judging a dinner party by counting the shady couples seated together?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "chef"
     ]
@@ -13,6 +15,8 @@
     "plain": "Would a single number on the first night be all the information you want for the whole game?",
     "styled": "One number. Night one. Then nothing, ever again, and you spend the rest of the game convincing idiots it matters. Some people thrive on that. Would a single first-night number be all the information you want all game?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "chef",
       "clockmaker"
@@ -26,6 +30,8 @@
     "plain": "Would you like to begin the game knowing one of two players is a particular Minion?",
     "styled": "So the game hands me two names and says one of them works for the bad guy. Great. Now I get to stare at two people over breakfast. Would you like to start knowing that one of two players is a particular Minion?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "investigator"
     ]
@@ -35,6 +41,8 @@
     "plain": "Would you like to start the game knowing that one of two players is a particular Townsfolk?",
     "styled": "Folks, our contestant wakes up with a lovely little laundry tag: two names, one Townsfolk, and the fun of working out whose shirt it is! Would you like to start the game knowing that one of two players is a particular Townsfolk?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "washerwoman"
     ]
@@ -44,6 +52,8 @@
     "plain": "Would you like to start the game knowing that one of two players is a particular good character?",
     "styled": "I'd rather begin by learning who might be safe than who's dangerous. Two names, and one of them is a good character I can actually name. Would you like to start the game knowing one of two players is a particular good character?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "washerwoman",
       "librarian"
@@ -54,6 +64,8 @@
     "plain": "Do you want to start the game knowing one of two players is a particular Outsider?",
     "styled": "The misfits! The weirdos! The ones who couldn't get into a PROPER role! You'd get two names and the title of one oddball. Would you like to start the game knowing that one of two players is a particular Outsider?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "librarian"
     ]
@@ -63,6 +75,8 @@
     "plain": "Would you like your own ability's starting information to be about the Outsiders and nothing else?",
     "styled": "Everybody wants the juicy stuff about Demons. Not me, sweetheart. Give me the list of oddballs and losers and I'll make do. Would you like your own ability's starting information to be about the Outsiders and nothing else?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "librarian",
       "godfather"
@@ -76,6 +90,8 @@
     "plain": "Do you want to start with two players and a character, knowing exactly one of them has it?",
     "styled": "New Achievement Unlocked: Two Doors, One Title! You begin the crawl with a pair of names and a single character to pin on one of them. Do you want to start with two players and one character, knowing exactly one of them has it?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "washerwoman",
       "librarian",
@@ -87,6 +103,8 @@
     "plain": "Would you like a nightly headcount of the evil players sitting right beside you?",
     "styled": "My skin simply PRICKLES when something wicked sits too close. It's a gift, like my cheekbones. Would you like a nightly headcount of the evil players sitting right beside you?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "empath"
     ],
@@ -99,6 +117,8 @@
     "plain": "Do you want to point at two players each night and learn whether either of them is the Demon?",
     "styled": "Step right up to the crystal ball! Pick any two contestants and the spirits will tell you if a Demon is hiding among them! Would you like to point at two players each night and learn whether either is the Demon?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "fortuneteller"
     ],
@@ -111,6 +131,8 @@
     "plain": "Would you like to learn each night which character died by execution that day?",
     "styled": "Okay, so our sponsors LOVE a post-mortem segment! Each night you'd get the true identity of whoever actually died on the gallows that day. Super on-brand. Would you like to learn each night which character died by execution that day?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "undertaker"
     ],
@@ -123,6 +145,8 @@
     "plain": "Would you like your nightly information to come from the dead?",
     "styled": "The dead don't lie, mostly because they've got nothing left to lose. A couple of jobs in this town are about listening to them. Would you like your nightly information to come from the dead?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "undertaker",
       "oracle"
@@ -136,6 +160,8 @@
     "plain": "Would you like to spend each night shielding one other player from the Demon?",
     "styled": "Guarding someone else feels braver than hiding myself. One person, every night, safe from whatever is out there in the dark. Would you like to spend each night shielding one other player from the Demon?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "monk"
     ],
@@ -148,6 +174,8 @@
     "plain": "Would you like to keep others safe from the Demon while having no protection yourself?",
     "styled": "Patch note: selflessness has been buffed for other people and nerfed for you. Your little shield works on everyone except the idiot holding it. Would you like to keep others safe from the Demon while having no protection yourself?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "monk",
       "tealady"
@@ -161,6 +189,8 @@
     "plain": "Would you like to spend your nights choosing which players are safe until morning?",
     "styled": "Tonight on Crawl Rescue, our contestant decides who wakes up breathing! It's heartwarming, it's tense, and the ratings are through the roof! Would you like to spend your nights choosing which players are safe until morning?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "monk",
       "innkeeper"
@@ -174,6 +204,8 @@
     "plain": "If you were murdered in your sleep, would you want one person's true identity brought to you?",
     "styled": "Should some lowly FIEND murder me in my slumber, my winged servants shall scour the land and return with one wretch's secret! VENGEANCE! If you were murdered in your sleep, would you want one person's true identity brought to you?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "ravenkeeper"
     ]
@@ -183,6 +215,8 @@
     "plain": "If the Demon killed you at night, would you hope to learn something about another player?",
     "styled": "I'd like to think my death would at least be informative. For somebody. Ideally me, for about a second. If the Demon killed you at night, would you hope to learn something about another player?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "ravenkeeper",
       "sage"
@@ -196,6 +230,8 @@
     "plain": "Would you like one public chance to strike down a player, which only works if they are the Demon?",
     "styled": "Introducing the One-Shot Wonder Pack! One bullet, fired in broad daylight, that only hurts Demons. Miss, and everybody saw you miss. Would you like one public chance to strike down a player that only works if they are the Demon?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "slayer"
     ]
@@ -205,6 +241,8 @@
     "plain": "Would you rather test your Demon theory with a public strike than wait for a vote?",
     "styled": "VOTES ARE FOR COWARDS! Point at the beast and SMITE it where it sits! If it was the wrong one, well, at least it was exciting. Would you rather test your Demon theory with a public strike than wait for a vote?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "slayer"
     ],
@@ -217,6 +255,8 @@
     "plain": "Would you like the Demon to have no way of killing you?",
     "styled": "Viewers at home, imagine it: the big bad comes calling and simply fails, night after night after glorious night! Would you like the Demon to have no way of killing you?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "soldier",
       "sailor"
@@ -230,6 +270,8 @@
     "plain": "Would you like to start the game knowing one fellow good player and exactly what character they are?",
     "styled": "One sweet little darling, revealed to you on night one: face, name, job, the lot. You'll want to knit them a scarf. Would you like to start the game knowing one fellow good player and exactly what character they are?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "grandmother"
     ]
@@ -239,6 +281,8 @@
     "plain": "Would you like to be impossible to kill, so long as you stay sober?",
     "styled": "Can't be stabbed, can't be hanged, can't be eaten. The only thing that gets you is the bottle, which, frankly, tracks. Would you like to be impossible to kill, so long as you stay sober?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor"
     ],
@@ -251,6 +295,8 @@
     "plain": "Would you like to pick two players each night and learn how many of them woke to use an ability?",
     "styled": "Our audience research says people LOVE housekeeping content! You'd check two rooms every night and report how many beds were empty. Would you like to pick two players each night and learn how many of them woke to use an ability?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "chambermaid"
     ],
@@ -263,6 +309,8 @@
     "plain": "Would you like to choose a player each night and, if they're the Demon, stop it waking?",
     "styled": "Bell, book and candle, now in a convenient nightly subscription! Point at a player. If it is the Demon, it stays in bed and sulks. Would you like to choose a player each night and, if they are the Demon, stop it waking?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "exorcist"
     ],
@@ -275,6 +323,8 @@
     "plain": "Do you love offering weary travellers a bed, a drink and a night free from death?",
     "styled": "Hospitality is an ART, darling. Fluff the pillows, pour the wine, and nobody gets murdered under MY roof. Do you love offering weary travellers a bed, a drink and a night free from death?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "innkeeper"
     ],
@@ -287,6 +337,8 @@
     "plain": "Would you stake your life on naming exactly who someone really is?",
     "styled": "Heads, you win. Tails, I'm afraid we'll need a new guest for my couch. So let's hear it: would you stake your life on naming exactly who someone really is?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gambler"
     ]
@@ -296,6 +348,8 @@
     "plain": "Do you choose a player each night, knowing a bad pick could kill you that very night?",
     "styled": "Nightly Roulette Bundle now available! Pick a player. Pick wrong and the floor opens beneath you. Pick right and nobody claps. Would you choose a player each night, knowing a bad pick could kill you that very night?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gambler",
       "acrobat",
@@ -311,6 +365,8 @@
     "plain": "Would you like your true public statements to get someone killed that night?",
     "styled": "Say something true in front of everyone and somebody's dead by morning. Say something false and you just look like a liar. Would you like your true public statements to get someone killed that night?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gossip"
     ],
@@ -323,6 +379,8 @@
     "plain": "Would you like to name a character, just once, and leave them drunk for three days and nights?",
     "styled": "One word from you, and whoever holds that title gets plastered for three full days! A royal decree, live on air! Would you like to name a character, just once, and leave them drunk for three days and nights?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "courtier"
     ],
@@ -335,6 +393,8 @@
     "plain": "Would you like, once per game, to bring a dead Townsfolk back to life?",
     "styled": "Fun fact: death is reversible! Terms and conditions apply! Townsfolk only, one use, lightning not included. Would you like, once per game, to bring a dead Townsfolk back to life?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "professor"
     ],
@@ -347,6 +407,8 @@
     "plain": "When a Minion dies by execution, would you make all other non-Traveller players drunk until dusk tomorrow?",
     "styled": "When one of those GHASTLY henchmen actually dies on the gallows, I shall sing, and every other player except the Travellers will be far too tipsy to function until tomorrow's dusk. It's called art. When a Minion dies by execution, would you make all other non-Traveller players drunk until dusk tomorrow?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "minstrel"
     ],
@@ -359,6 +421,8 @@
     "plain": "Would you like your two neighbours to be unkillable, as long as they're both good?",
     "styled": "Two good people either side of you and they're untouchable. One bad apple next to you and the whole teapot's useless. Would you like your two neighbours to be unkillable, as long as they're both good?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "tealady"
     ]
@@ -368,6 +432,8 @@
     "plain": "Would you like any good player who gets executed to have a chance of surviving?",
     "styled": "The town sentences an innocent to death and... oops! The rope snapped! What are the odds? Better than you would think. Would you like any good player who gets executed to have a chance of surviving?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "pacifist"
     ],
@@ -380,6 +446,8 @@
     "plain": "Would you like to survive exactly one death and carry on, with everyone seeing you're still alive?",
     "styled": "RAWR! RAWR! (He watches the jester fall down, bounce back up and tell a joke, and is deeply impressed.) Would you like to survive exactly one death and carry on openly alive?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "fool"
     ],
@@ -392,6 +460,8 @@
     "plain": "Would you like to start the game knowing how many seats separate the Demon from its nearest Minion?",
     "styled": "Not who the Demon is. Not who the Minion is. Just how far apart they're sitting. Thanks, game. Would you like to start the game knowing how many seats separate the Demon from its nearest Minion?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "clockmaker"
     ]
@@ -401,6 +471,8 @@
     "plain": "Would you risk turning evil yourself if it meant defanging the Demon?",
     "styled": "Catch the snake and you become the snake. The old one gets your job and a splitting headache. Hell of a trade. Would you risk turning evil yourself if it meant defanging the Demon?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "snakecharmer"
     ],
@@ -413,6 +485,8 @@
     "plain": "Would you like to learn each night how many abilities misfired because of other characters?",
     "styled": "Diagnostic report incoming! Tonight, a number of abilities malfunctioned! Which ones? Classified! Would you like to learn each night how many abilities misfired because of other characters?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "mathematician"
     ],
@@ -425,6 +499,8 @@
     "plain": "Would you like to pick a player each night and learn one good and one evil character, one of which is theirs?",
     "styled": "You pick someone and the game shows you two masks, a nice one and a nasty one, and says 'one of these.' Very helpful. Would you like to pick a player each night and learn one good and one evil character, one of them theirs?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "dreamer"
     ],
@@ -437,6 +513,8 @@
     "plain": "Do your dreams show you two possible identities for someone, one saintly and one wicked?",
     "styled": "I dream VIVIDLY. Red skies, violets, and two possible faces for whoever I dreamed about, one angelic and one ghastly. Do your dreams show you who someone might really be, one saintly option and one wicked?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "dreamer"
     ]
@@ -446,6 +524,8 @@
     "plain": "Would you like to learn each night whether the Demon voted that day?",
     "styled": "Did the big bad raise its hand today? Our flower seller knows, and she's not telling till sundown! Would you like to learn each night whether the Demon voted that day?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "flowergirl"
     ],
@@ -458,6 +538,8 @@
     "plain": "Would you like to learn each night whether a Minion nominated anyone that day?",
     "styled": "Breaking news segment! Every evening you would get a bulletin: did one of the henchmen put somebody up for the noose today? Would you like to learn each night whether a Minion nominated anyone that day?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "towncrier"
     ],
@@ -470,6 +552,8 @@
     "plain": "Would you like your nightly information to be about what evil players did in that day's nominations and votes?",
     "styled": "Bonus feature unlocked: Surveillance Mode! Every nomination, every raised hand, logged and analysed for evil activity! Would you like your nightly information to be about what evil players did in that day's nominations and votes?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "flowergirl",
       "towncrier"
@@ -483,6 +567,8 @@
     "plain": "Do you want to count the wicked among the fallen each night?",
     "styled": "THE GRAVEYARD IS FULL OF DELICIOUS SINNERS! Count them! Count every rotten soul among the corpses! Do you want to count the wicked among the fallen each night?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "oracle"
     ],
@@ -495,6 +581,8 @@
     "plain": "Would you like a private chat with the Storyteller every single day?",
     "styled": "A daily one-on-one with the person running the show? Sweetie, that's my whole career. So tell me: would you like a private chat with the Storyteller every single day?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "savant",
       "amnesiac"
@@ -505,6 +593,8 @@
     "plain": "Would you like to choose two players, once per game, and learn whether they're on the same side?",
     "styled": "One question, asked once: are these two people on the same team? It sounds small, but I could build a lot on it. Would you like to choose two players, once per game, and learn whether they're on the same side?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "seamstress"
     ],
@@ -517,6 +607,8 @@
     "plain": "Do you love finding out whether two particular people are secretly on the same side?",
     "styled": "Ooh, I do love knowing who's thick as thieves with whom. Two names, one answer, and I'll be cackling for a week. Do you love finding out whether two particular people are secretly on the same side?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "seamstress"
     ]
@@ -526,6 +618,8 @@
     "plain": "Would you like to choose any good character's ability, once per game, and make it your own?",
     "styled": "Choose Your Own Class! One time only! Browse the full catalogue of good abilities and take whichever you fancy. Its rightful owner may feel a little woozy. Would you like to choose any good character's ability, once per game, and make it your own?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "philosopher"
     ]
@@ -535,6 +629,8 @@
     "plain": "Would you spend days polishing one perfect question rather than collecting lots of small clues?",
     "styled": "A masterpiece takes TIME. I shall craft one exquisite question, polish it like a jewel, and present it to the Storyteller. Would you spend days polishing one perfect question rather than collecting lots of small clues?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "artist"
     ]
@@ -544,6 +640,8 @@
     "plain": "Do you like opening the game with a big public guessing act that only works on your first day?",
     "styled": "BEHOLD! On the very first day I shall stand before you peasants and NAME you, one after another! Applause is mandatory! Do you like opening the game with a big public guessing act that only works on your first day?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "juggler"
     ],
@@ -556,6 +654,8 @@
     "plain": "If the Demon killed you, would you like to learn that it's one of two players?",
     "styled": "Great news, the Demon got me. Better news, I now know it's one of these two people. Shame about the being-dead part. If the Demon killed you, would you like to learn that it's one of two players?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sage"
     ],
@@ -568,6 +668,8 @@
     "plain": "Does your ability involve slipping away to see the Storyteller privately during the day?",
     "styled": "Exclusive backstage access is a HUGE perk, and some of our good-guy talent gets it! A private daytime meeting with the Storyteller, no cameras. Well, some cameras. Does your ability involve seeing the Storyteller privately during the day?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "savant",
       "artist",
@@ -647,6 +749,8 @@
     "plain": "Does your ability have you publicly announce a guess, claim or target, outside the normal nominations?",
     "styled": "Some of us are simply MADE for the spotlight. Stand up, declare something outrageous to the entire town, and let the consequences fall where they may. Does your ability have you publicly announce a guess, claim or target outside the normal nominations?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gossip",
       "alsaahir",
@@ -725,6 +829,8 @@
     "plain": "Do you have a single once-per-game ability you can use at exactly the moment you choose?",
     "styled": "One use. You pick when. Most people blow it on night one out of panic, and the rest die clutching it. Do you have a single once-per-game ability you can save for exactly the right moment?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "engineer",
       "nightwatchman",
@@ -810,6 +916,8 @@
     "plain": "Does all of your information arrive in one go at the start of the game, with nothing more to come?",
     "styled": "You wake up on night one, get handed a clue, and that's it. That's your whole contribution. Better make it sound impressive. Does all of your information arrive in one go at the start, with nothing more to come?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "steward",
       "knight",
@@ -893,6 +1001,8 @@
     "plain": "Do you wake up most nights to choose a player for your ability?",
     "styled": "Nightly Engagement Rewards! Every evening, you get to stab a finger at somebody and make something happen to them! Or for them! Details vary! Do you wake up most nights to choose a player for your ability?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "preacher",
@@ -980,6 +1090,8 @@
     "plain": "Do you receive information most nights without having to choose anyone?",
     "styled": "Not everyone has to make the hard choices. Some of us just wake up, listen, and carry what we're told back to the group. Do you receive information most nights without having to choose anyone?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "empath",
       "highpriestess",
@@ -1061,6 +1173,8 @@
     "plain": "Does your ability make other players drunk?",
     "styled": "Some of us get folks sloshed as part of the job description. Honestly, best job description going. Does your ability make other players drunk?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "innkeeper",
@@ -1140,6 +1254,8 @@
     "plain": "Could your own ability directly cause your death?",
     "styled": "Most abilities are tools. Some are tools with a blade on the handle end. Could your own ability directly cause your death?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gambler",
       "acrobat",
@@ -1217,6 +1333,8 @@
     "plain": "Is your ability tied to nominations or votes, rather than to executions?",
     "styled": "Let's talk about the voting floor, darling. Raised hands, pointing fingers, all those lovely little tells. Is your ability tied to nominations or votes, rather than to executions?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "virgin",
       "banshee",
@@ -1292,6 +1410,8 @@
     "plain": "Does your ability spring into action when someone is executed?",
     "styled": "The trapdoor drops, the crowd gasps, and for a few of our contestants, that's when the real show starts! Does your ability spring into action when someone is executed?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "undertaker",
       "minstrel",
@@ -1368,6 +1488,8 @@
     "plain": "Is your ability all about getting another character's ability?",
     "styled": "Why toil with one's OWN meagre gift when one may simply TAKE a better one? I am a visionary! Is your ability all about getting another character's ability?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "philosopher",
       "pixie",
@@ -1450,6 +1572,8 @@
     "plain": "Would you like to confuse the evil team about who their own teammates are?",
     "styled": "The bad guys rely on knowing each other. Mess that up and they're just a bunch of strangers glaring across the room. Would you like to confuse the evil team about who their own teammates are?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "magician",
       "poppygrower"
@@ -1526,6 +1650,8 @@
     "plain": "Does your ability give your team its own special way to win?",
     "styled": "Secret ending discovered! Some contestants carry a hidden victory condition, and the sponsors go absolutely feral for an upset. Does your ability give your team its own special way to win?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "mayor",
       "alsaahir",
@@ -1604,6 +1730,8 @@
     "plain": "Could your ability change which team you are on?",
     "styled": "LOYALTY IS FOR THE WEAK! One night good, the next night a creature of darkness! Glorious! Could your ability change which team you are on?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cultleader",
       "snakecharmer"
@@ -1680,6 +1808,8 @@
     "plain": "Does your ability have the Storyteller tell another player who you are while you are alive?",
     "styled": "Some jobs come with a spotlight you didn't ask for. The Storyteller hands your name to somebody, maybe the worst somebody. Does your ability have the Storyteller tell another player who you are while you're alive?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "king",
       "nightwatchman",
@@ -1755,6 +1885,8 @@
     "plain": "Does your information usually arrive as a number?",
     "styled": "Names are for GOSSIPS. A true star reads the figures: ratings, followers, how many villains are lurking nearby. Does your information usually arrive as a number?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "chef",
       "empath",
@@ -1836,6 +1968,8 @@
     "plain": "Does it matter to your ability where people are sitting around the circle?",
     "styled": "I've spent more time thinking about seating charts in this game than I did at my cousin's wedding. Does it matter to your ability where people are sitting around the circle?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "chef",
       "empath",
@@ -1916,6 +2050,8 @@
     "plain": "Does your ability ask you to put a guess into words, either out loud or to the Storyteller?",
     "styled": "Rawr? (He tilts his head, sniffs a player, and guesses. He guesses wrong. He is still a good boy.) Does your ability ask you to put a guess into words, out loud or to the Storyteller?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gambler",
       "juggler",
@@ -1993,6 +2129,8 @@
     "plain": "Does your ability trigger specifically when the Demon kills someone?",
     "styled": "When the Demon strikes, most of us just mourn! But for a select few contestants, a Demon kill sets off a little surprise! Does your ability trigger specifically when the Demon kills someone?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "grandmother",
       "sage",
@@ -2068,6 +2206,8 @@
     "plain": "Can your ability directly kill another player?",
     "styled": "EVEN THE GOOD ONES CAN SPILL BLOOD! A word, a finger, a nomination, and someone drops! Can your ability directly kill another player?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gossip",
       "lycanthrope",
@@ -2145,6 +2285,8 @@
     "plain": "Is your information the Storyteller's own opinion or advice?",
     "styled": "Our Storyteller is a valued creative partner, and some of you get direct access to their personal take! Very premium. Is your information the Storyteller's own opinion or advice?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "highpriestess",
       "general",
@@ -2222,6 +2364,8 @@
     "plain": "Does your ability never need the Storyteller to wake you at night, whatever happens?",
     "styled": "Some of us get a full night's sleep every night, and I'm not apologising for it. Does your ability never need the Storyteller to wake you at night, whatever happens?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "soldier",
       "virgin",
@@ -2313,6 +2457,8 @@
     "plain": "Does your ability only matter if one specific other character is in play?",
     "styled": "Some abilities only work if a particular someone is out there too. It's a bit like needing a teammate you haven't met yet. Does your ability only matter if one specific other character is in play?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "choirboy",
       "huntsman"
@@ -2389,6 +2535,8 @@
     "plain": "Do you act as a bodyguard for particular other players?",
     "styled": "Standing between a monster and somebody else is noble, and it's also how most bodyguards end up in my obituary column. Do you act as a bodyguard for particular other players?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "monk",
       "innkeeper",
@@ -2465,6 +2613,8 @@
     "plain": "Does your ability protect you, and only you, from dying?",
     "styled": "Others may perish! The rabble may be slaughtered! But I, magnificent I, shall endure! Does your ability protect you, and only you, from dying?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "soldier",
       "sailor",
@@ -2541,6 +2691,8 @@
     "plain": "Does your ability only work on your first day?",
     "styled": "Limited-time offer! Your ability expires at the end of day one, so use it or lose it, sucker! Does your ability only work on your first day?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "princess",
       "juggler"
@@ -2617,6 +2769,8 @@
     "plain": "Does your ability give you information only once you have died?",
     "styled": "Isn't it tragic, and a little bit thrilling, that some people only find out the truth as they're dying? Does your ability give you information only once you have died?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "ravenkeeper",
       "sage"
@@ -2693,6 +2847,8 @@
     "plain": "Of the Trouble Brewing Townsfolk, is your ability about gathering information?",
     "styled": "In the starter town, about half the good guys are detectives and the rest are, I don't know, furniture with opinions. Is your ability about gathering information?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "washerwoman",
       "librarian",
@@ -2714,6 +2870,8 @@
     "plain": "Of the Trouble Brewing Townsfolk, does your ability protect someone from being killed by the Demon?",
     "styled": "Not everyone in the first town is a detective. A few of us are there to make sure somebody is still breathing in the morning. Does your ability protect someone from being killed by the Demon?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "monk",
       "soldier",
@@ -2730,6 +2888,8 @@
     "plain": "Of the Trouble Brewing Townsfolk, do you get fresh information night after night?",
     "styled": "Some of our starter-town heroes get one clue and a pat on the head! Others get a brand-new scoop every single night! Do you get fresh information night after night?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "empath",
       "fortuneteller",
@@ -2746,6 +2906,8 @@
     "plain": "Of the Trouble Brewing Townsfolk, does your ability work without you ever choosing a player?",
     "styled": "Pointing at people is rude, dear, and some of us never have to. The game just does its thing around us. Does your ability work without you ever choosing a player?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "washerwoman",
       "librarian",
@@ -2768,6 +2930,8 @@
     "plain": "Of the Trouble Brewing Townsfolk, does your ability only ever come into play during the day?",
     "styled": "SOME OF US DO OUR BEST WORK IN BROAD DAYLIGHT, IN FRONT OF EVERYONE, WITH MAXIMUM SCREAMING! Does your ability only ever come into play during the day?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "slayer",
       "virgin"
@@ -2783,6 +2947,8 @@
     "plain": "Of the Bad Moon Rising Townsfolk, does your ability get other players drunk?",
     "styled": "That town is practically a TAVERN, darling. Half the good guys go around getting people sloshed and calling it strategy. Does your ability get other players drunk?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "innkeeper",
@@ -2800,6 +2966,8 @@
     "plain": "Of the Bad Moon Rising Townsfolk, can your ability stop someone from dying?",
     "styled": "That place is a bloodbath, so some of the good folk come with ways to keep bodies off the floor. Can your ability stop someone from dying?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "innkeeper",
@@ -2827,6 +2995,8 @@
     "plain": "Of the Bad Moon Rising Townsfolk, does the Storyteller ever give you information directly?",
     "styled": "Fun stat: in the Bad Moon town, hardly anyone on the good team gets actual information! It's a very action-forward brand. Does the Storyteller ever give you information directly?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "grandmother",
       "chambermaid"
@@ -2842,6 +3012,8 @@
     "plain": "Of the Bad Moon Rising Townsfolk, could your own ability kill you?",
     "styled": "Warning: some abilities in this region have been flagged as Hazardous To Owner! We've decided not to fix that because the ratings are incredible. Could your own ability kill you?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "grandmother",
       "gambler"
@@ -2866,6 +3038,8 @@
     "plain": "Of the Bad Moon Rising Townsfolk, do you get just one use of your ability, at a time of your choosing?",
     "styled": "One shot, sweetheart, and you pick the moment. Do you hoard it like a secret, or blurt it out on the first night? Either way, tell me: do you get just one use of your ability, at a time of your choosing?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "courtier",
       "professor"
@@ -2881,6 +3055,8 @@
     "plain": "Of the Bad Moon Rising Townsfolk, does your ability work without you ever waking or doing anything?",
     "styled": "Some people in that town have abilities that just sort of happen to them. No decisions, no wake-ups. I'm extremely jealous. Does your ability work without you ever waking or doing anything?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "minstrel",
       "tealady",
@@ -2898,6 +3074,8 @@
     "plain": "Of the Sects and Violets Townsfolk, do you receive information every night without choosing anyone?",
     "styled": "Some of us don't get to point or pick. We just wake up, hear the news, and try to make sense of it. Do you receive information every night without choosing anyone?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "mathematician",
       "flowergirl",
@@ -2915,6 +3093,8 @@
     "plain": "Of the Sects and Violets Townsfolk, do you use your ability during the day?",
     "styled": "While most of our violet-town heroes work the night shift, a few prefer the daytime crowd! Do you use your ability during the day?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "savant",
       "artist",
@@ -2931,6 +3111,8 @@
     "plain": "Of the Sects and Violets Townsfolk, do you have a once-per-game ability you can use whenever you choose?",
     "styled": "I SHALL BIDE MY TIME! Lesser beings squander their gifts, but I wait, I plot, and I strike when the moment is PERFECT! Do you have a once-per-game ability you can use whenever you choose?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "seamstress",
       "philosopher",
@@ -2946,6 +3128,8 @@
     "plain": "Of the Sects and Violets Townsfolk, does your ability have you choose players at night?",
     "styled": "Choosing players at night is how you get things done in that town, and also how you make enemies. Does your ability have you choose players at night?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "dreamer",
       "snakecharmer",
@@ -2962,6 +3146,8 @@
     "plain": "Of the Sects and Violets Townsfolk, does your information deliberately include a false option next to the true one?",
     "styled": "Half the truth and half hogwash, served on the same plate. Some of us get our clues that way on purpose. Does your information deliberately include a false option next to the true one?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "savant",
       "dreamer"
@@ -2986,6 +3172,8 @@
     "plain": "Of the Sects and Violets Townsfolk, does your ability specifically involve the Demon?",
     "styled": "THE DEMON! THE DEMON! Some of you are obsessed with the beast, and I APPROVE! Does your ability specifically involve the Demon?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "clockmaker",
       "snakecharmer",
@@ -3003,6 +3191,8 @@
     "plain": "Is your starting clue meant to point you towards an evil player?",
     "styled": "Two names, one title. For most of you it's a good guy to trust. For one of you, it's a rat to hunt. Is your starting clue meant to point you towards an evil player?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "investigator"
     ],
@@ -3017,6 +3207,8 @@
     "plain": "Could your starting clue tell you that nobody of the kind you are looking for is in play?",
     "styled": "Imagine getting your one clue of the game and it's just 'nope, none of those here.' Honestly, still useful. Annoying, but useful. Could your starting clue tell you that nobody of the kind you're looking for is in play?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "librarian"
     ],
@@ -3031,6 +3223,8 @@
     "plain": "Does your starting clue point towards a fellow Townsfolk?",
     "styled": "My clue points at one of my OWN, darling: a fellow upstanding citizen, probably with dreadful taste in clothes. Does your starting clue point towards a fellow Townsfolk?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "washerwoman"
     ],
@@ -3045,6 +3239,8 @@
     "plain": "Does your starting clue come as a number?",
     "styled": "Starting Bonus: Math! While other contestants get names and faces, you get a single integer. Enjoy! Does your starting clue come as a number?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "chef",
       "clockmaker"
@@ -3069,6 +3265,8 @@
     "plain": "Does your starting clue usually point at specific players?",
     "styled": "Some starting packages come with actual names and faces! Our viewers love being able to follow along. Does your starting clue usually point at specific players?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "steward",
       "knight",
@@ -3099,6 +3297,8 @@
     "plain": "Is your starting clue built to point you towards an evil player?",
     "styled": "Some people begin the game with a lovely little lead on a villain. Do you, darling? Is your starting clue built to point you towards an evil player?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "noble",
       "investigator",
@@ -3123,6 +3323,8 @@
     "plain": "Does your starting clue usually name a specific character?",
     "styled": "Knowing a person is one thing. Knowing exactly what they are is something else. Does your starting clue usually name a specific character?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "washerwoman",
       "librarian",
@@ -3150,6 +3352,8 @@
     "plain": "Of the protective characters, do you protect only yourself?",
     "styled": "Some folks guard the whole neighbourhood. I guard me, and I sleep fine, thanks. Of the protective sorts, do you protect only yourself?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "soldier",
       "sailor",
@@ -3172,6 +3376,8 @@
     "plain": "Of the protective characters, does your protection work against execution, not just night-time deaths?",
     "styled": "Most shields only work in the dark. A few still hold when the mob has the rope. Of the protective sorts, does your protection work against execution, not just night-time deaths?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "pacifist",
@@ -3194,6 +3400,8 @@
     "plain": "Of the protective characters, do you choose who to protect each night?",
     "styled": "Of all our guardian angels, only a couple get to wake up and hand-pick tonight's lucky survivor! Of the protective sorts, do you choose who to protect each night?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "monk",
       "innkeeper"
@@ -3214,6 +3422,8 @@
     "plain": "Of the once-per-game characters, do you use your one shot during the day?",
     "styled": "Most once-a-game tricks happen at night while everyone's asleep. A few happen in daylight, where everyone can watch you mess it up. Do you use your one shot during the day?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "artist",
       "slayer",
@@ -3237,6 +3447,8 @@
     "plain": "Of the once-per-game characters, does your one use make the Storyteller tell you something?",
     "styled": "For a few of our single-use talents, the payoff is pure content: the Storyteller tells you something! Of the once-per-game characters, does your one use make the Storyteller tell you something?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "seamstress",
       "artist",
@@ -3259,6 +3471,8 @@
     "plain": "Of the once-per-game characters, does your one use have you choose characters rather than players?",
     "styled": "Faces are SO common. When I make my one grand gesture, I choose a TITLE, not some grubby person. Of the once-per-game characters, does your one use have you choose characters rather than players?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "courtier",
       "philosopher",
@@ -3282,6 +3496,8 @@
     "plain": "Of those who learn something each night about the day just gone, is your information about players who have died?",
     "styled": "THE DEAD! TELL ME OF THE DEAD! Some of you only care about corpses, and frankly that's the correct priority! Is your nightly information about players who have died?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "oracle",
       "undertaker"
@@ -3298,6 +3514,8 @@
     "plain": "Of those who learn something each night about the day just gone, is your information about the Demon specifically?",
     "styled": "Specialised Tracking Module installed! While your peers fuss about corpses and lackeys, you watch exactly one target: the big boss. Is your nightly information about the Demon specifically?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "flowergirl"
     ],
@@ -3313,6 +3531,8 @@
     "plain": "Of those who learn numbers, is your number about where people are sitting?",
     "styled": "THE SEATING CHART IS EVERYTHING! Who sits beside whom, how many chairs apart, I SEE IT ALL! Of those who learn numbers, is your number about where people are sitting?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "chef",
       "empath",
@@ -3333,6 +3553,8 @@
     "plain": "Of those who learn numbers, do you get a fresh number most nights?",
     "styled": "One number is a hint. A number every night is a pattern, and patterns are what keep you alive. Of those who learn numbers, do you get a fresh number most nights?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "empath",
       "mathematician",
@@ -3354,6 +3576,8 @@
     "plain": "Of those who make a public play during the day, can yours lead to a death?",
     "styled": "Everybody loves a public performance, but some of them end with a body on the stage. Now, darling, of those who make a public play during the day, can yours lead to a death?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "gossip",
       "slayer"
@@ -3370,6 +3594,8 @@
     "plain": "Of those whose ability gets others drunk, does yours only do it once all game?",
     "styled": "Some folks pour every night. Others save it all for one almighty bender. Of those whose ability gets others drunk, does yours only do it once all game?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "courtier",
       "philosopher"
@@ -3387,6 +3613,8 @@
     "plain": "Of those who choose someone each night, does the Storyteller give you information about your choice every night?",
     "styled": "Some of us point at people every night and actually get told something back. Others just point and hope. Does the Storyteller give you information about your choice every night?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "chambermaid",
       "dreamer",
@@ -3409,6 +3637,8 @@
     "plain": "Of those who choose someone each night, does your choice only do anything if you pick the Demon?",
     "styled": "For two of our nightly pickers, it's all or nothing: find the Demon and the fireworks start, miss and nothing happens at all! Does your choice only do anything if you pick the Demon?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "snakecharmer",
       "exorcist"

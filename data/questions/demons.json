@@ -4,6 +4,8 @@
     "plain": "Would you enjoy repeating the same strange phrase out loud, knowing each repetition could get someone killed?",
     "styled": "There's always one old crank muttering the same sentence over and over. Usually harmless. Unless every time they say it, somebody keels over. Would you enjoy repeating one odd phrase out loud, knowing every repeat might cost a life?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "yaggababble"
     ],
@@ -16,6 +18,8 @@
     "plain": "Would you rather be a little token passed between your friends than a player with a seat of your own?",
     "styled": "No chair. No name tag. No vote. Just a tiny terror getting handed from lap to lap while it plots world domination and breakfast. Honestly, that sounds kind of relaxing. Would you rather be a token passed between friends than sit in a seat yourself?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lilmonsta"
     ]
@@ -25,6 +29,8 @@
     "plain": "Would you like your presence alone to quietly corrupt the good people closest to you?",
     "styled": "Some monsters have to work at being horrible. You'd just sit there, and the nice people either side of you would start going wrong without knowing why. I've had roommates like that. Do you want your mere presence to quietly corrupt the good folk nearest you?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "nodashii"
     ]
@@ -34,6 +40,8 @@
     "plain": "Would you kill yourself so that one of your Minions could take over?",
     "styled": "When all seems lost, the great one falls upon his own blade, and a lowly servant rises to wear his horns! Such tragedy! Such GENIUS! Would you be willing to kill yourself so one of your Minions could take your place?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "imp"
     ],
@@ -46,6 +54,8 @@
     "plain": "Would you like to occasionally spit one of your victims back out alive?",
     "styled": "Behold! I devour my enemies, and then, on a whim, I return one to the world, slick and trembling, so all may know my MERCY! MEEEH! Would you like to now and then spit one of your victims back out alive?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "shabaloth"
     ]
@@ -55,6 +65,8 @@
     "plain": "Do you have an appetite for two victims every night?",
     "styled": "RAWR! RAWR! (He has eaten one villager, is eyeing a second, and plainly intends to do this every night. One is never enough.) Is your appetite big enough for two victims every single night?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "shabaloth"
     ],
@@ -67,6 +79,8 @@
     "plain": "Would you like to recruit your whole Minion team yourself at the start of the game?",
     "styled": "Patch note: the evil team no longer ships pre-assembled. Some assembly required! You walk the room on night one and draft your own henchmen like a fantasy league. Would you like to personally recruit your entire Minion team at the start of the game?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "kazali"
     ]
@@ -76,6 +90,8 @@
     "plain": "Would you like to pick which players join your evil team, and cast each of them as a particular Minion?",
     "styled": "YOU, darling, are joining my team as the poisoner. You over there, the spy. No, no, don't argue, I have a VISION. Would you like to pick which players join your evil team and cast each of them as a particular Minion?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "kazali"
     ],
@@ -88,6 +104,8 @@
     "plain": "Do you like letting everyone relax after a peaceful night, right before you unleash a massacre?",
     "styled": "So, tell me, and be honest, the audience can always tell. The village wakes up to a peaceful morning, everyone's hugging, and you're just smiling. Do you like letting them relax after a quiet night right before you unleash a massacre?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "po"
     ],
@@ -100,6 +118,8 @@
     "plain": "Do you only get hungry on days when nobody else has died?",
     "styled": "Somebody got executed today? Lovely, I'm full, I'll skip dinner. Nobody died? Then I'm STARVING, and someone's getting eaten. Do you only feel the hunger on days when nobody else has died?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "zombuul"
     ],
@@ -112,6 +132,8 @@
     "plain": "Would you like the town to lose on any day it fails to execute someone?",
     "styled": "New house rule! If the villagers can't work up the nerve to string somebody up before sundown, evil simply wins. Hesitation is now a losing strategy. Would you like the town to lose any day it fails to execute someone?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "vortox"
     ],
@@ -124,6 +146,8 @@
     "plain": "Do you want most of the people at the table to secretly be you?",
     "styled": "Look around the circle. That one's you. And that one. And her. Most of these chairs are filled with the same monster wearing different faces. Would you like most of the table to secretly be you?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "legion"
     ]
@@ -133,6 +157,8 @@
     "plain": "Would you like executions to fail unless at least one good player voted for them?",
     "styled": "Ha! The baddies can wave their hands about all they like. If not one decent soul votes along, the whole hanging fizzles out like a damp firework. Would you like executions to fail whenever only evil players voted for them?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "legion"
     ],
@@ -145,6 +171,8 @@
     "plain": "Do you see the town's misfits as the perfect vessel for your next life?",
     "styled": "I know what it's like to change shape and become someone new. But you'd look at the town's outcasts and see a body to take. Do you look at the town's misfits and see the perfect vessel for your next life?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "fanggu"
     ]
@@ -154,6 +182,8 @@
     "plain": "Would you like to be impossible to kill unless your chosen host dies first?",
     "styled": "Stab it, hang it, set it on fire: nothing happens. The trick is finding the poor soul it's hiding behind and killing them instead. Hope you like murdering innocents. Would you like to be unkillable unless your chosen host dies first?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lleech"
     ],
@@ -166,6 +196,8 @@
     "plain": "Would you like your victims to decide for themselves whether they live or die?",
     "styled": "Free will! Our featured monster doesn't kill anyone, folks. It simply asks three lucky contestants to choose life or death, and there's a catch if they're all greedy. Would you like your victims to decide for themselves whether they live or die?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "alhadikhia"
     ],
@@ -178,6 +210,8 @@
     "plain": "Would you like one day to collapse into a frantic chain of deadly nominations?",
     "styled": "One day, the whole town loses its mind. Every nominee drops dead and has to point at someone else on the way down. Point, die, point, die. I've seen floor-wide panics with more dignity. Would you like a day that collapses into a chain of deadly nominations?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "riot"
     ],
@@ -190,6 +224,8 @@
     "plain": "Would you like the town to lose outright if it executes more than one innocent?",
     "styled": "Let's talk about mistakes. One wrongful hanging, the town forgives itself. A second, and the game is yours. How does that feel? Would you like the town to lose if it executes more than one innocent?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "leviathan"
     ],
@@ -202,6 +238,8 @@
     "plain": "Would you like to pick three victims in a single night?",
     "styled": "ONE corpse? Pathetic! Your goddess demands THREE, laid out before her at once like a feast! Would you like to choose three victims in a single night?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "po",
       "alhadikhia"
@@ -215,6 +253,8 @@
     "plain": "Would you happily die so another player could carry on as the Demon in your place?",
     "styled": "The Demon is dead! Long live the Demon! Somebody else picks up the horns and the show goes on, viewers. Would you happily die so another player could carry on as the Demon in your place?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "imp",
       "fanggu"
@@ -228,6 +268,8 @@
     "plain": "As the Demon, would you like to choose more than one victim at a time?",
     "styled": "One body a night keeps the town guessing. More than one keeps them burying. Different philosophy, same shovel. As the Demon, would you like to choose more than one victim at a time?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "shabaloth",
       "po",
@@ -243,6 +285,8 @@
     "plain": "As the Demon, would you like the Storyteller to pick who dies, instead of choosing a victim yourself?",
     "styled": "Some Demons agonise over every kill. Others just shrug and let the guy running the game sort it out. Honestly, that's how I'd want it. As the Demon, would you be happy for the Storyteller to pick who dies instead of choosing yourself?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lilmonsta",
       "legion",
@@ -258,6 +302,8 @@
     "plain": "As the Demon, would you like never to kill anyone at night?",
     "styled": "Not every monster needs to creep into bedrooms after dark. Some do their damage in daylight, or just by being there. As the Demon, would you be content never to kill anyone at night?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "leviathan",
       "riot"
@@ -272,6 +318,8 @@
     "plain": "As the Demon, would you like poison to be part of your ability?",
     "styled": "Loot box opened! Inside: one vial of something green and fizzy, plus your usual murder kit. Combo potential: excellent. As the Demon, would you like poison to be part of your ability?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "pukka",
       "nodashii",
@@ -288,6 +336,8 @@
     "plain": "As the Demon, would you like more Minions than usual on your side?",
     "styled": "Exciting staffing update! This season the evil team gets an extra Minion on the payroll, which really helps with our content output. As the Demon, would you like more Minions than usual on your side?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lilmonsta",
       "lordoftyphon"
@@ -301,6 +351,8 @@
     "plain": "As the Demon, would you like the town to be forced to execute someone every single day?",
     "styled": "Oh, I love this. No dithering, no 'let's sleep on it', no hand-wringing. Somebody swings every day or the whole town's stuffed. As the Demon, would you like the town forced to execute someone every single day?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "vortox"
     ],
@@ -314,6 +366,8 @@
     "plain": "As the Demon, would you like to make a choice on the very first night?",
     "styled": "Most Demons spend that first night twiddling their thumbs. Not you, I suspect. You'd want to get your claws in early, wouldn't you? As the Demon, would you like to make a choice on the very first night?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "pukka",
       "lleech",
@@ -345,6 +399,8 @@
     "plain": "As the Demon, would you like your arrival to change the usual mix of characters before the game even begins?",
     "styled": "When I arrive, the very STAGE must be rebuilt! Different players, different roles, all rearranged in my honour before the curtain rises! As the Demon, would you like your arrival to change the usual mix of characters before the game begins?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lilmonsta",
       "kazali",
@@ -363,6 +419,8 @@
     "plain": "As the Demon, would you like your ability to turn good players evil?",
     "styled": "Converts! I adore converts! Take the pure-hearted fools and twist them into servants of darkness, then laugh as they turn on their friends! As the Demon, would you like your ability to turn good players evil?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "fanggu",
       "kazali",
@@ -378,6 +436,8 @@
     "plain": "As the Demon, would you like several players to share your Demon character at the same time?",
     "styled": "Usually there's only ONE star of the show, and normally I'd insist that star is me. But imagine a whole chorus line of identical monsters. As the Demon, would you like several players to share your Demon character at once?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "legion",
       "riot"
@@ -391,6 +451,8 @@
     "plain": "As the Demon, would you like your killing to happen through daytime nominations?",
     "styled": "Forget the night shift, folks! This Demon clocks in at the town square, where every nomination is a death sentence and the crowd goes WILD. As the Demon, would you like your killing to happen through daytime nominations?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "riot"
     ],
@@ -404,6 +466,8 @@
     "plain": "As the Demon, would you rather make no decisions at night?",
     "styled": "No picking victims, no pointing in the dark, no being woken up at stupid o'clock. You just sleep. That's the dream, really. As the Demon, would you rather have no decisions to make at night at all?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "yaggababble",
       "legion",
@@ -436,6 +500,8 @@
     "plain": "As the Demon, would you like the whole town to learn who you targeted?",
     "styled": "Transparency is a core brand value! Every morning the town gets a full list of who the Demon's picked. Huge for engagement. As the Demon, would you like the whole town to learn who you targeted?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "alhadikhia"
     ],
@@ -449,6 +515,8 @@
     "plain": "As the Demon, when choosing a victim, do you care more about what someone is than who they are?",
     "styled": "Faces lie. Names lie. When you go hunting, the thing worth aiming at is the job someone's holding, not the face they're wearing. As the Demon, when you pick a victim, do you care more about what someone is than about who they are?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "ojo"
     ],
@@ -461,6 +529,8 @@
     "plain": "As the Demon, would you like evil to have a route to victory that needs no more deaths?",
     "styled": "Everyone assumes the Demon wins by piling up bodies. But there are cleverer ways, aren't there? Tell me about yours. As the Demon, would you like evil to have a route to victory that needs no more deaths?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "vortox",
       "leviathan"
@@ -475,6 +545,8 @@
     "plain": "Would you like to shrug off a death that would finish any other Demon?",
     "styled": "They hanged me! They stabbed me! And yet, LO, I endure, while lesser fiends crumble at the first scratch! MEEEEH! Would you like to shrug off a death that would finish any other Demon?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "zombuul",
       "lleech"
@@ -495,6 +567,8 @@
     "plain": "As the Demon, would you like some nights after the first where you choose no victim?",
     "styled": "Restraint can be a weapon too. A night with no bodies makes people careless, or suspicious of the wrong person. As the Demon, would you be fine with some nights after the first where you choose no victim at all?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "po",
       "zombuul"
@@ -510,6 +584,8 @@
     "plain": "As the Demon, would you like to take more than one life in a single night?",
     "styled": "One life? ONE? Your goddess spits on your single death! Give her a heap of the fallen by sunrise! As the Demon, would you like to take more than one life in a single night?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "shabaloth",
       "po"
@@ -525,6 +601,8 @@
     "plain": "As the Demon, would you like your victims to die a night later than the night you chose them?",
     "styled": "Hit them tonight, bury them tomorrow night. Gives you a full day to watch them walk around not knowing. Cruel. Effective. As the Demon, would you like your victims to die a night after you chose them?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "pukka"
     ],
@@ -539,6 +617,8 @@
     "plain": "As the Demon, would you like your presence to change how many Outsiders are in play?",
     "styled": "Patch 6.6.6: Demon selection now modifies the Outsider population. Some get more weirdos, some get fewer. Balance is a myth. As the Demon, would you like your presence to change how many Outsiders are in play?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "vigormortis",
       "fanggu"
@@ -554,6 +634,8 @@
     "plain": "As the Demon, would you like some Townsfolk to get bad information because of you?",
     "styled": "The good guys rely on their little clues. It would be a real shame if some of those clues went rotten because a certain monster was in town. As the Demon, would you like some Townsfolk to get bad information because of you?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "nodashii",
       "vortox",
@@ -569,6 +651,8 @@
     "plain": "As the Demon, would you like more evil players at the table than a game normally has?",
     "styled": "Bigger cast, bigger drama, bigger ratings! This Demon brings more villains to the table than the usual line-up allows. As the Demon, would you like more evil players at the table than a game normally has?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lordoftyphon",
       "legion"
@@ -590,6 +674,8 @@
     "plain": "As the Demon, would you like to point at exactly one player each night and have them die?",
     "styled": "None of this fancy nonsense. You point, they drop, everybody goes back to bed. Simple, honest work. As the Demon, would you like to point at exactly one player each night and have them die?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "kazali",
       "lordoftyphon",
@@ -612,6 +698,8 @@
     "plain": "Would you like the chance to bring back someone you killed?",
     "styled": "Death is SO final, darling. Sometimes a girl changes her mind and wants her victim returned, slightly damp but otherwise fine. Would you like the chance to bring back someone you killed?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "shabaloth"
     ],
@@ -626,6 +714,8 @@
     "plain": "Would you like your hunger to depend on whether today passed without a death?",
     "styled": "Rawr? Rawr... (He sniffs the air. Nobody died today. His eyes go wide and he starts drooling.) RAWR! Would you like your hunger to depend on whether today passed without a death?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "zombuul"
     ],
@@ -640,6 +730,8 @@
     "plain": "Would you like your special twist to punish the town whenever it fails to execute?",
     "styled": "Twist selected: Cowardice Tax! Any day the town can't decide on a hanging, they lose everything. The audience is going to EAT THIS UP. Would you like your special twist to punish the town whenever it fails to execute?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "vortox"
     ],
@@ -659,6 +751,8 @@
     "plain": "Would you like your special twist to poison Townsfolk sitting beside a particular player?",
     "styled": "Some twists are about the seating chart. A certain person in the circle, and the Townsfolk beside them quietly sickening. Would you like your special twist to poison Townsfolk sitting beside a particular player?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "nodashii",
       "vigormortis"
@@ -679,6 +773,8 @@
     "plain": "Would you like your special twist to let the Demon role move to another player?",
     "styled": "Succession planning is so important for a sustainable brand! With this twist, the horns can be handed on and the show keeps going. Would you like your special twist to let the Demon role move to another player?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "imp",
       "fanggu"
@@ -699,6 +795,8 @@
     "plain": "Would you like your special twist to decide who your Minions are, or where they sit?",
     "styled": "Every Demon has a team, but only a few get to shape it. Who's in it, where they sit. Are you one of those? Would you like your special twist to decide who your Minions are, or where they sit?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "kazali",
       "lordoftyphon"
@@ -719,6 +817,8 @@
     "plain": "Would you like your special twist to tie your life to someone else's?",
     "styled": "Your heartbeat, chained to some poor sap's. They live, you live. They die, so do you. I've seen worse deals, but not many. Would you like your special twist to tie your life to someone else's?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lleech"
     ],
@@ -738,6 +838,8 @@
     "plain": "Would you like how much you talk to decide how many people die?",
     "styled": "Finally, a reward for running your mouth! The more you yap, the more people go cold. I'd have levelled that town in an afternoon. Would you like how much you talk to decide how many people die?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "yaggababble"
     ],
@@ -752,6 +854,8 @@
     "plain": "Would you like to be the Demon without having a seat at the table?",
     "styled": "Everyone's sitting in a circle, accusing each other, and the actual monster doesn't even have a chair. It's just getting carried around like a handbag. Would you like to be the Demon without having a seat at the table?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lilmonsta"
     ],
@@ -766,6 +870,8 @@
     "plain": "Would you like to win simply by outlasting the town?",
     "styled": "No frenzy? No blood? Your goddess is DISGUSTED. And yet, to watch them crumble as the days run out... acceptable. Would you like to win simply by outlasting the town?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "leviathan"
     ],
@@ -779,6 +885,8 @@
     "plain": "Would you like your victims to have a say in whether they die?",
     "styled": "How GENEROUS of you, darling. Pick three peasants and let them vote on their own fates, like a little reality show inside the reality show. Would you like your victims to have a say in whether they die?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "alhadikhia"
     ],
@@ -793,6 +901,8 @@
     "plain": "Would your plans hinge on an Outsider rather than on your Minions?",
     "styled": "Ooh, a plot twist, folks! This Demon isn't counting on its loyal henchmen at all. It's got its eye on one of the town's oddballs! Would your plans hinge on an Outsider rather than on your Minions?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "fanggu"
     ],
@@ -811,6 +921,8 @@
     "plain": "Would you rather your Minions were dead than alive?",
     "styled": "My servants serve me best as CORPSES! Their loyalty, eternal! Their usefulness, undiminished! Their complaints, at last, silenced! Would you rather your Minions were dead than alive?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "vigormortis"
     ],
@@ -829,6 +941,8 @@
     "plain": "Would you like your Minions to be the Demon themselves as a matter of routine?",
     "styled": "Normally a Minion only gets the top job when the boss croaks. In some setups, though, they wear the horns as standard practice. Would you like your Minions to be the Demon themselves as a matter of routine?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lilmonsta",
       "riot"
@@ -848,6 +962,8 @@
     "plain": "As an evil player, would you like to start the game knowing a secret word or phrase?",
     "styled": "Some of us start with nothing but our wits. Others get a secret, a word that matters more than anyone at the table realises. As an evil player, would you like to start the game knowing a secret word or phrase?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "yaggababble",
       "mezepheles"
@@ -864,6 +980,8 @@
     "plain": "As an evil player, would your big moment arrive on a set day or night partway through the game?",
     "styled": "Mark your calendars, viewers! Some villains strike whenever they please, but others have a date circled in red, and when it comes, KABOOM! As an evil player, would your big moment arrive on a set day or night partway through the game?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "riot",
       "xaan",
@@ -883,6 +1001,8 @@
     "plain": "As an evil player, would you like your character to fix where you sit relative to your evil teammates?",
     "styled": "Seating charts are VERY important, darling. Some evil characters insist the team sits exactly where they're told. As an evil player, would you like your character to fix where you sit relative to your evil teammates?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lordoftyphon",
       "marionette"
@@ -899,6 +1019,8 @@
     "plain": "As an evil player, would you like to register as a different character type from your real one?",
     "styled": "You're one thing, but when the good guys check, you show up as another kind of thing. It's like having a fake ID, except the bouncer has magic. As an evil player, would you like to register as a different character type from your real one?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "spy",
       "legion"
@@ -955,6 +1077,8 @@
     "plain": "As an evil player, would you like your character to start the game with more evil players at the table than usual?",
     "styled": "Headcount update from the network! Some evil characters arrive with a bigger team than the standard package. As an evil player, would you like your character to start the game with more evil players at the table than usual?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lordoftyphon",
       "legion"
@@ -1012,6 +1136,8 @@
     "plain": "As an evil player, would your ability be triggered by particular words you say out loud yourself?",
     "styled": "Words have power, don't they? For some of you, quite literally: say the right thing, out loud, and your ability springs to life. As an evil player, would your ability be triggered by particular words you say out loud yourself?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "yaggababble",
       "goblin"

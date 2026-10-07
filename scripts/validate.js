@@ -75,6 +75,11 @@ export function splitKey(yesSet, scopeSet, allIds) {
   return `${scopeSet ? [...scopeSet].sort().join() : '*'}|${yes <= no ? yes : no}`;
 }
 
+// Authoring ratings on every question, 1 (low) to 10 (high): quality (how good a
+// question it is) and complexity (how hard its wording is to take in). Not published.
+export const RATINGS = ['quality', 'complexity'];
+export const RATING_DEFAULT = 5;
+
 export function checkQuestions(questions, characters, seen = { ids: new Set(), texts: new Set(), splits: new Map() }) {
   seen.splits ??= new Map();
   const allIds = characters.map((c) => c.id);
@@ -94,6 +99,7 @@ export function checkQuestions(questions, characters, seen = { ids: new Set(), t
       if (key === 'plain' && typeof q.plain === 'string') errors.push(...plainWording(q.plain).errors.map((e) => `${label}: plain wording ${e}`));
     }
     if (typeof q.voice !== 'string' || !q.voice.trim()) errors.push(`${label} needs a "voice" crediting the styled line`);
+    for (const key of RATINGS) if (!Number.isInteger(q[key]) || q[key] < 1 || q[key] > 10) errors.push(`${label} needs a "${key}" from 1 (low) to 10 (high); new questions start at ${RATING_DEFAULT}`);
     const selectorErrors = [...checkSelector(q.yes, `${label} yes`, ids, fields), ...(q.scope ? checkSelector(q.scope, `${label} scope`, ids, fields) : [])];
     errors.push(...selectorErrors);
     if (selectorErrors.length) continue;

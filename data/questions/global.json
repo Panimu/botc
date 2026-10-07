@@ -4,6 +4,8 @@
     "plain": "Do you win when the Demon wins?",
     "styled": "Our sponsors have asked me to remind everyone that evil is a valid lifestyle choice with excellent merchandising. Do you win when the monster wins?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": [
         "minion",
@@ -16,6 +18,8 @@
     "plain": "Are you the evil team's killer, the reason people die each night?",
     "styled": "Kid, someone has to do the killing for the bad guys, and it's never the person complaining about it. Are you the one who kills for them each night?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "yaggababble",
       "pukka",
@@ -44,6 +48,8 @@
     "plain": "Are you on the good team, but likely to cause it trouble?",
     "styled": "Bless your heart, you're on the right side and you're still a walking disaster. Your teammates love you. Your teammates are also slightly afraid of you. Is that you?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": "outsider"
     }
@@ -53,6 +59,8 @@
     "plain": "Is your ability meant to help the town, whatever it costs you?",
     "styled": "No secret sabotage, no curse in the fine print. Your power exists to help the good guys, even if it gets you killed. I know, it's suspicious. Is that you anyway?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": "townsfolk"
     }
@@ -62,6 +70,8 @@
     "plain": "Do you like to arrive part-way through and leave whenever you want?",
     "styled": "The doors are already locked, the bodies are already cooling, and here YOU come, strolling in late like you own the place. Are you the fashionably late type?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": "traveller"
     }
@@ -71,6 +81,8 @@
     "plain": "Do you belong to the original script that everyone learns first?",
     "styled": "Every contestant starts somewhere, and most of them start dying in exactly the same village. Fond memories! Are you from that very first script?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "edition": "tb"
     }
@@ -80,6 +92,8 @@
     "plain": "Do you belong to Bad Moon Rising, the script of deaths, protection and last-minute saves?",
     "styled": "Bodies dropping every night, people diving in front of knives, and somebody always crying by morning. My kind of script. Is Bad Moon Rising yours?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "edition": "bmr"
     }
@@ -89,6 +103,8 @@
     "plain": "Do you belong to Sects & Violets, the script of madness and characters that change?",
     "styled": "Welcome to the script where nobody is sure who they are, and some people are only pretending to be sure. Delicious content. Is Sects & Violets your script?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "edition": "snv"
     }
@@ -98,6 +114,8 @@
     "plain": "Are you one of the newer, experimental characters rather than one from the three original scripts?",
     "styled": "Fresh off the production line, barely tested, possibly unsafe! Legal says I have to stop saying 'possibly'. Are you one of the shiny experimental models?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "edition": "carousel",
       "team": [
@@ -114,6 +132,8 @@
     "plain": "Does your own ability give the Storyteller something to do on the very first night?",
     "styled": "Opening night! Lights, camera, and a Storyteller who already has your ability on their to-do list before anyone has unpacked. Is your ability on the night-one list?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "firstNight": true
     }
@@ -123,6 +143,8 @@
     "plain": "Does your own ability ever give the Storyteller something to do on nights after the first?",
     "styled": "A princess requires her BEAUTY SLEEP, but some of us are simply too important to be ignored. After the first night, does the Storyteller ever have to come and deal with your ability?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "otherNight": true
     }
@@ -132,6 +154,8 @@
     "plain": "Does your presence change how the game is set up before it even begins?",
     "styled": "Some contestants arrive and adapt. Others arrive and the entire arena has to be rebuilt around them. The construction crew hates you specifically. Are you one of those?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "setup": true
     }
@@ -141,6 +165,8 @@
     "plain": "Do you like holding one big play in reserve, rather than doing a little something every day?",
     "styled": "Some folks nickel-and-dime the game. You'd rather keep one swing in your back pocket, wait for your moment, and make it count. Is that your style?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "engineer",
       "nightwatchman",
@@ -165,6 +191,8 @@
     "plain": "Does your ability hand you a secret right at the start, rather than new secrets night after night?",
     "styled": "Exclusive! Before the first sunrise, our contestant's ability has already slipped them something the others would kill for, without a drop of sweat spent. Viewers, tell me that isn't a story. Did your ability hand you a secret right at the start?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "steward",
       "knight",
@@ -192,6 +220,8 @@
     "plain": "Does your ability involve someone being drunk or poisoned?",
     "styled": "Kid, half the information in this game is soaked in booze or laced with something nasty. Does your ability deal in drunkenness or poison?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "villageidiot",
@@ -223,6 +253,8 @@
     "plain": "Does your ability ask you to choose players?",
     "styled": "Point at someone! Go on! The System has prepared a delightful consequence for whoever you pick. Does your ability involve choosing players?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "preacher",
@@ -294,6 +326,8 @@
     "plain": "Does your ability care about nominations, votes or executions?",
     "styled": "Courtroom drama tests through the roof! Gavels, accusations, a crowd baying for blood. Does your ability come alive around nominations, votes or executions?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "aboutVoting": true
     }
@@ -303,6 +337,8 @@
     "plain": "Does your ability talk about dying, death or killing?",
     "styled": "DEATH! GLORIOUS DEATH! Is it written into your very being, mortal? Does your ability speak of dying, the dead, or killing?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "grandmother",
       "pixie",
@@ -390,6 +426,8 @@
     "plain": "Does your ability's text use the word 'good' or 'evil'?",
     "styled": "Some abilities are subtle. Yours apparently comes with a label maker that only prints two words. Does your ability actually say 'good' or 'evil'?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "aboutAlignment": true
     }
@@ -399,6 +437,8 @@
     "plain": "Are you evil, and does the Storyteller have something to do for you on later nights?",
     "styled": "No rest for the wicked, and I mean that contractually. Are you a villain who keeps the Storyteller busy after the first night?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": [
         "minion",
@@ -412,6 +452,8 @@
     "plain": "Are you evil, and do you change the game's setup before it starts?",
     "styled": "Before the first lie, before the first murder, a true villain redecorates. Darling, I would simply NEVER enter a game I hadn't styled myself. Is that you?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": [
         "minion",
@@ -428,6 +470,8 @@
     "plain": "Are you on the good team, with an ability that gives you a starting clue rather than fresh clues each night?",
     "styled": "A good person whose ability hands them a clue the moment they walk in, instead of making them earn one every night? That's the closest thing to a fair start this place offers. Are you one of them?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": [
         "townsfolk",
@@ -441,6 +485,8 @@
     "plain": "Are you on the good team, with a powerful action you can use only once, whenever you choose?",
     "styled": "A hero with a single bullet, who gets to pick the moment. Dramatic! Tragic! Merchandisable! Are you a good contestant with a once-per-game play you can time yourself?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "engineer",
       "nightwatchman",
@@ -461,6 +507,8 @@
     "plain": "Are you a helpful townsperson the Storyteller never has to deal with at night?",
     "styled": "Rawr... zzz. (Translation: the Storyteller never bothers him at night, and he still helps! He is very proud.) Are you a good townsperson who is no bother at night?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "savant",
       "alsaahir",
@@ -482,6 +530,8 @@
     "plain": "Are you a Demon whose presence changes the game's setup?",
     "styled": "Oh, honey, you don't just play the game, you show up and the producers have to rewrite the whole episode. Are you a Demon who changes the setup?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": "demon",
       "setup": true

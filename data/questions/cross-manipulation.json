@@ -4,6 +4,8 @@
     "plain": "Are you a good character whose ability can leave another player drunk or poisoned?",
     "styled": "So you're one of the good guys. Lovely. And yet somehow, someone on your watch ends up seeing double and getting nonsense from the Storyteller. Are you good, with an ability that can leave another player drunk or poisoned?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "makesOthersDrunkOrPoisoned": true,
       "team": [
@@ -17,6 +19,8 @@
     "plain": "Playing for evil, does your ability slip poison into other players' abilities?",
     "styled": "Our new sponsor, Nightshade Spritzers, is THRILLED to partner with evil contestants who spike the punch. Brand-safe? Absolutely. Fatal? Mostly to information. Playing for evil, would your ability slip poison into other players' powers?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "makesOthersDrunkOrPoisoned": true,
       "team": [
@@ -33,6 +37,8 @@
     "plain": "Can your ability cloud another player's judgement, by making them drunk, poisoned or mad?",
     "styled": "Booze, venom or a head full of nonsense the Storyteller makes them repeat. Three flavours of ruining somebody's afternoon. Can your ability cloud another player's judgement with drink, poison or madness?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "villageidiot",
@@ -60,6 +66,8 @@
     "plain": "As a Demon, does your ability poison players as well as kill them?",
     "styled": "Murder is the main course, darlings, but a TRUE monster serves it with a little poison on the side. Presentation matters! As a Demon, does your ability poison players as well as kill them?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "makesOthersDrunkOrPoisoned": true,
       "team": "demon"
@@ -73,6 +81,8 @@
     "plain": "Of those who spread drunkenness or poison, does yours only ever land on Townsfolk?",
     "styled": "Some poisons are indiscriminate. Yours has taste. It skips the Outsiders, ignores the riff-raff and goes straight for the Townsfolk. Does your poison only ever land on Townsfolk?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "nodashii",
       "vigormortis",
@@ -89,6 +99,8 @@
     "plain": "Of those who spread drunkenness or poison, does yours only kick in when somebody dies?",
     "styled": "Some of you poison on a schedule. Others wait for a body to hit the floor before the fog rolls in. Of you drink-and-poison types, does yours only kick in when somebody dies?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "minstrel",
       "sweetheart",
@@ -104,6 +116,8 @@
     "plain": "Of those who bring drunkenness or poison into the game, are you on the town's side?",
     "styled": "You leave people stumbling. Fine. But are you doing it for the town, or for the monsters? Among the poison-and-drink crowd, are you on the town's side?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": [
         "townsfolk",
@@ -119,6 +133,8 @@
     "plain": "Of those who spread drunkenness or poison, do you also kill a player most nights?",
     "styled": "RAWR! He sniffs the poison cup, then looks hungrily at the village. Translation: for you, is the poison just a side dish to killing a player most nights?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": "demon"
     },
@@ -131,6 +147,8 @@
     "plain": "Of those who spread drunkenness, does yours only strike whoever chooses you with their ability?",
     "styled": "You don't go looking for victims. They come to you, poke you with their ability, and wake up with a headache. Does your drunkenness only strike whoever chooses you?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "goon"
     ],
@@ -144,6 +162,8 @@
     "plain": "Does your ability use the madness rule, where someone must convincingly commit to a claim?",
     "styled": "New mechanic unlocked: Method Acting! Commit to the bit, sell it to the whole room, and the Storyteller is watching your performance. Does your ability use the madness rule, where someone must convincingly commit to a claim?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "involvesMadness": true
     }
@@ -153,6 +173,8 @@
     "plain": "Does your ability force another player to sell a claim to the group, or pay for refusing?",
     "styled": "BEHOLD! I shall write the script, and some poor fool shall recite it with feeling, or suffer! Does your ability force another player to sell a claim to the group, or pay for refusing?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cerenovus",
       "harpy"
@@ -166,6 +188,8 @@
     "plain": "Of those whose ability uses madness, is it you who has to keep up the act?",
     "styled": "Some of you hand out the madness. Some of you have to carry it yourself, lying through your teeth for your own benefit. Is it you who has to keep up the act?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "pixie",
       "mutant"
@@ -179,6 +203,8 @@
     "plain": "Does your ability have a feature of changing someone, perhaps even you, into a different character?",
     "styled": "Mid-season recasting! The audience adores it when a contestant goes to sleep as one thing and wakes up as another. Can your ability turn a player, perhaps even you, into a different character?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "snakecharmer",
       "engineer",
@@ -205,6 +231,8 @@
     "plain": "As a good player, can your ability end up changing somebody's character?",
     "styled": "Heroes don't usually get to rearrange the cast list. You might. As a good player, can your ability end up changing somebody's character?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "changesCharacters": true,
       "team": [
@@ -221,6 +249,8 @@
     "plain": "As an evil player, does your ability reshape who is which character?",
     "styled": "Evil gets a makeover budget! New Demons, new Minions, new faces where the old ones used to be. As an evil player, does your ability reshape who is which character?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "changesCharacters": true,
       "team": [
@@ -237,6 +267,8 @@
     "plain": "Of those who change characters, do the characters you change belong only to evil players?",
     "styled": "Some of you mess with anyone. You keep it in the family. Of you character-changers, do you only ever change the characters of evil players?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "engineer",
       "hatter",
@@ -254,6 +286,8 @@
     "plain": "Of those who change characters, does the change only happen because somebody died?",
     "styled": "A body drops, and suddenly somebody's got a new name badge. Grim little promotions system. Of you character-changers, does yours only happen because somebody died?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "barber",
       "hatter",
@@ -272,6 +306,8 @@
     "plain": "Of those who change characters, do you personally decide which character someone becomes?",
     "styled": "I DECIDE. I CHOOSE. I name the role and they must wear it! Of you character-changers, do you personally decide which character someone becomes?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "pithag",
       "summoner",
@@ -288,6 +324,8 @@
     "plain": "Of those who change characters, can yours change two or more players' characters at once?",
     "styled": "One makeover is a segment. Two or more at once is a special event, and we sell ad space accordingly. Of you character-changers, can yours change two or more players' characters at once?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "riot",
       "hatter",
@@ -307,6 +345,8 @@
     "plain": "Could your own ability leave you on a different team from the one you started on?",
     "styled": "Starting loyalty is a suggestion, not a contract. I've watched good folk wake up batting for the other side and keep right on smiling. Could your own ability leave you on a different team from the one you started on?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cultleader",
       "goon",
@@ -323,6 +363,8 @@
     "plain": "As an evil player, can your ability bring good players over to your side?",
     "styled": "Why kill them when you can hire them? Fresh talent, no severance, endless loyalty. As an evil player, can your ability bring good players over to your side?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "changesAlignment": true,
       "team": [
@@ -339,6 +381,8 @@
     "plain": "Of those who change alignment, is your own side the only one your ability changes?",
     "styled": "Some people convert others. You just keep changing your own mind and blaming the neighbours. Of you side-switchers, is the only player whose side your ability changes you?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cultleader",
       "goon",
@@ -355,6 +399,8 @@
     "plain": "Of those who change alignment, can your ability flip a side again and again, night after night?",
     "styled": "Some of you switch once and live with it. You? You're a weathervane. Of you side-switchers, can your ability flip a side again and again, night after night?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cultleader",
       "goon"
@@ -369,6 +415,8 @@
     "plain": "Can your ability change both a player's character and which team they're on?",
     "styled": "The deluxe package: new costume AND new loyalties, gift-wrapped and delivered overnight. Can your ability change both a player's character and which team they're on?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "snakecharmer",
       "summoner",
@@ -385,6 +433,8 @@
     "plain": "Can your ability change a player's character or their team, wrecking everyone's careful notes?",
     "styled": "Somebody spent all day building a perfect chart of who is what, and you're about to make it fiction. Can your ability change a player's character or which team they're on?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "snakecharmer",
       "farmer",
@@ -416,6 +466,8 @@
     "plain": "Can you register to other players' abilities as something you're not?",
     "styled": "Scanners say one thing, reality says another. You are a walking glitch in the inspection system. Can you register to other players' abilities as something you're not?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "registersFalsely": true
     },
@@ -428,6 +480,8 @@
     "plain": "Of those who can register falsely, are you secretly good underneath the disguise?",
     "styled": "A disguise can hide a villain or a saint, darling. Of you mis-registering types, are you secretly good underneath it?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "recluse"
     ],
@@ -441,6 +495,8 @@
     "plain": "Of those who can register falsely, is your disguise about seeming dead rather than your side or role?",
     "styled": "Some fakers lie about their team. You lie about your pulse. Of you mis-registering types, is your disguise about seeming dead?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "zombuul"
     ],
@@ -454,6 +510,8 @@
     "plain": "Can your ability make the Storyteller tell other players false things, without any drunkenness or poison?",
     "styled": "No booze, no venom, and still the Storyteller is reading everybody fairy tales. Very elegant. Very annoying. Can your ability make the Storyteller tell other players false things, without drunkenness or poison?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "feedsFalseInfo": true
     },
@@ -466,6 +524,8 @@
     "plain": "On the good team, does your ability make the Storyteller tell other players false things, with no drink or poison involved?",
     "styled": "You're good. You're helping. And somehow somebody's information goes wrong whenever you're around, and nobody's been drinking. On the good team, does your ability make the Storyteller tell other players false things, with no drink or poison involved?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "feedsFalseInfo": true,
       "team": [
@@ -482,6 +542,8 @@
     "plain": "As an evil player, does your ability make the Storyteller tell the town false things, with no poison needed?",
     "styled": "The finest lies come straight from the source, darlings, not out of a bottle. As an evil player, does your ability make the Storyteller tell the town false things, with no poison needed?",
     "voice": "Princess Donut",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "feedsFalseInfo": true,
       "team": [
@@ -498,6 +560,8 @@
     "plain": "Of those who spread false information, is the false impression mostly about you yourself?",
     "styled": "Some liars build a whole false world. Others just build a false them. Of you misinformation merchants, is the false impression mostly about you yourself?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "magician",
       "recluse",
@@ -514,6 +578,8 @@
     "plain": "Of those who spread false information, do you mainly fool the evil team rather than the town?",
     "styled": "BAH! Why trick the sheep when you can trick the wolves? Of you misinformation merchants, do you mainly fool the evil team?",
     "voice": "Prepotente",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "magician"
     ],
@@ -526,6 +592,8 @@
     "plain": "Can your own ability directly lead the Storyteller to give another player false information, by any means?",
     "styled": "Poison, drink, disguises, rule-bending, whatever. We don't care how, we care that the info is garbage. Can your own ability directly lead the Storyteller to give another player false information, by any means?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "villageidiot",
@@ -559,6 +627,8 @@
     "plain": "Could your own role leave you wrong about yourself, or quietly broken, without anyone telling you?",
     "styled": "Here's the nightmare: you're playing your heart out and the game never mentions that you've got it all wrong. Could your own role leave you wrong about yourself, or quietly broken, without anyone telling you?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "mayNotKnowTheTruth": true
     }
@@ -568,6 +638,8 @@
     "plain": "Could your role let you sincerely believe you're good while you're actually evil?",
     "styled": "The dinosaur tilts his head. He thinks he is a good boy. Narrator: he may not be a good boy. Could your role let you sincerely believe you're good while you're actually evil?",
     "voice": "Mongo",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "marionette",
       "ogre"
@@ -578,6 +650,8 @@
     "plain": "Could your role trick you into believing you're the Demon when you're really good?",
     "styled": "You wake up, you get your little Minion list, you pick a victim, you feel very evil. Then nobody dies. Could your role trick you into believing you're the Demon when you're really good?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "lunatic",
       "hermit"
@@ -588,6 +662,8 @@
     "plain": "Of those kept in the dark about themselves, could you believe you're a whole different character?",
     "styled": "Not just a little bit wrong. Completely, gloriously, wearing-the-wrong-costume wrong. Of you lot kept in the dark, could you believe you're a whole different character?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "drunk",
       "lunatic",
@@ -603,6 +679,8 @@
     "plain": "Of those in the dark about themselves, do you know your character, but might your own ability leave you drunk or poisoned?",
     "styled": "You know your name. You know your job. What you don't know is whether your own ability has quietly switched you off tonight. Of you lot kept in the dark, do you know your character, but might your own ability leave you secretly drunk or poisoned?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "villageidiot",
@@ -617,6 +695,8 @@
     "plain": "Does your ability give you another character's ability to use as your own?",
     "styled": "Why build a power when you can borrow one? Like a library card, but for murder and secrets. Does your ability give you another character's ability to use as your own?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "borrowsAbility": true
     }
@@ -626,6 +706,8 @@
     "plain": "Of those who borrow abilities, do you get to pick exactly which ability you take?",
     "styled": "Some of you get whatever falls out of the box. One of you gets to read the menu and order. Of you ability-borrowers, do you pick exactly which ability you take?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "philosopher"
     ],
@@ -638,6 +720,8 @@
     "plain": "Of those who borrow abilities, does someone have to die before the ability becomes yours?",
     "styled": "Inheritance! The only way to get rich down here is for someone else to stop breathing. Of you ability-borrowers, does someone have to die before the ability becomes yours?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "pixie",
       "cannibal"
@@ -651,6 +735,8 @@
     "plain": "Does your ability punish another player for their own choices: nominating, saying a certain word, or refusing to play along?",
     "styled": "The waiting is the delicious part, darling. They point, they speak, they refuse to play their part, and snap. Does your ability punish another player for nominating, saying a certain word, or refusing to play along?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "setsTraps": true
     },
@@ -663,6 +749,8 @@
     "plain": "Of those who set traps, is yours sprung when someone nominates?",
     "styled": "Some traps trigger on words. Yours triggers on a pointing finger and a big speech. Of you trap-setters, is yours sprung when someone nominates?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "virgin",
       "witch",
@@ -678,6 +766,8 @@
     "plain": "Of those who set traps, do you pick a fresh target for it every night?",
     "styled": "A new victim every evening, like a little advent calendar of doom! Of you trap-setters, do you pick a fresh target for it every night?",
     "voice": "Samantha",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "witch",
       "cerenovus",
@@ -693,6 +783,8 @@
     "plain": "Can the game's rules give others a false picture of you, or leave you with a false belief about yourself?",
     "styled": "Mirror, mirror, absolutely lying to your face, or to everyone else's. Can the game's rules mislead about you, giving others a false picture of you or leaving you with a false belief about yourself?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "recluse",
       "spy",
@@ -703,10 +795,8 @@
       "lunatic",
       "marionette",
       "ogre",
-      "sailor",
       "villageidiot",
       "cannibal",
-      "innkeeper",
       "hermit"
     ]
   },
@@ -715,6 +805,8 @@
     "plain": "As a good player, does your ability tamper with another player's character or sobriety?",
     "styled": "You're on the right side, sure. You're also the reason somebody woke up as someone else, or woke up drunk. As a good player, does your ability tamper with another player's character or sobriety?",
     "voice": "Elle",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sailor",
       "villageidiot",
@@ -738,6 +830,8 @@
     "plain": "As an evil player, does your ability tamper with another player's character, team or sobriety?",
     "styled": "Evil contestants, listen up: tampering polls fantastically with the eighteen-to-dead demographic. As an evil player, does your ability tamper with another player's character, team or sobriety?",
     "voice": "Zev",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "poisoner",
       "widow",
@@ -764,6 +858,8 @@
     "plain": "Does your ability swap things between players, such as their characters or their seats?",
     "styled": "Shell game! Watch the cup, watch the cup, oops, now you're sitting somewhere else as someone else. Does your ability swap things between players, such as their characters or their seats?",
     "voice": "The Host",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "snakecharmer",
       "barber",
@@ -778,6 +874,8 @@
     "plain": "Does your publicly known character let you cause another player to change character?",
     "styled": "Everyone knows exactly who you are, and you still get to rearrange them. Bold. Does your publicly known character let you cause another player to change character?",
     "voice": "Carl",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "cacklejack"
     ],
@@ -790,6 +888,8 @@
     "plain": "Of those who change alignment, do you start the game as a good character?",
     "styled": "Every turncoat has an origin story. Some of you began as heroes. Of you side-switchers, do you start the game as a good character?",
     "voice": "Odette",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": [
         "townsfolk",
@@ -805,6 +905,8 @@
     "plain": "Of those kept in the dark about themselves, are you secretly one of the Demon's Minions?",
     "styled": "The worst secret is the one kept from you. Somewhere a Demon is grinning because it knows what you are. Of you lot kept in the dark, are you secretly one of the Demon's Minions?",
     "voice": "Mordecai",
+    "quality": 5,
+    "complexity": 5,
     "yes": {
       "team": "minion"
     },
@@ -817,6 +919,8 @@
     "plain": "Of those who change characters, do you only ever turn players into good characters?",
     "styled": "Some transformations make monsters. Yours only ever makes more heroes. Of you character-changers, do you only ever turn players into good characters?",
     "voice": "Katia",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "farmer",
       "huntsman"
@@ -831,6 +935,8 @@
     "plain": "Of those who cause drunkenness or poison, does yours settle on a single player for good rather than moving around?",
     "styled": "Achievement: Long-Term Relationship! One unlucky player, one permanent stupor, no take-backs. Of you drink-and-poison types, does yours settle on a single player for good rather than moving around?",
     "voice": "The System AI",
+    "quality": 5,
+    "complexity": 5,
     "yes": [
       "sweetheart",
       "puzzlemaster",

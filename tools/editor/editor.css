@@ -192,3 +192,7 @@ dialog .field { margin-bottom: 0.6rem; }
 .conditions { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; margin: 0 0.3rem; vertical-align: middle; }
 .condition { display: inline-flex; align-items: center; gap: 0.1rem; padding: 0.05rem 0.2rem 0.05rem 0.5rem; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); }
 .condition button, .conditions > button { margin: 0 !important; padding: 0 0.4rem !important; font-size: 0.8rem !important; }
+
+/* The 1 to 10 ratings beside the voice. */
+.field.rating { flex: 0 0 auto; min-width: 0; }
+.field.rating input { width: 5.5em; }
