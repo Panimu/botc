@@ -13,9 +13,24 @@ export const OFFER_COUNT = 3;
 // are set aside the same way, and even splits are favoured. Two offers never
 // split the remaining characters the same way (either way round), even if the
 // questions differ. Offers are shown shuffled, so position gives nothing away.
+// To keep the wording on screen manageable, the last offer drawn must bring the
+// three offers' total complexity (1 to 10 each) to COMPLEXITY_BUDGET or less;
+// when nothing fits, the budget rises by 1 until something does. The split
+// targets are drawn in a seeded random order, so the squeezed slot rotates.
 export const HUNT_MIN_SIDE = 7;
 export const SPLIT_TARGETS = [0.5, 0.6, 0.7];
 const TARGET_SPREAD = 0.05;
+export const COMPLEXITY_BUDGET = 15;
+export const complexityOf = (question) => question.complexity ?? 5;
+
+// The options that keep the offers within the complexity budget, given the
+// complexity already on offer; the budget rises by 1 until at least one fits.
+export function withinBudget(options, used, budget = COMPLEXITY_BUDGET) {
+  if (!options.length) return options;
+  const least = Math.min(...options.map((c) => complexityOf(c.question ?? c)));
+  const cap = Math.max(budget - used, least);
+  return options.filter((c) => complexityOf(c.question ?? c) <= cap);
+}
 // Budgets, when a game is given the day's par: par + OVER_PAR_QUESTIONS questions
 // and GUESS_BUDGET guesses. A guess with no guess budget left spends a question
 // instead, so a winning score is at most par + 5. A hunt is lost when no legal
@@ -179,8 +194,11 @@ export class DailyGame {
     const picked = [];
     const shown = new Set(); // splits already on offer
     const fresh = (c) => !picked.includes(c) && !shown.has(c.split);
-    const draw = (pool, weightOf) => {
-      const [choice] = drawWeighted(pool.filter(fresh).map((c) => [c, weightOf(c)]), rng);
+    // The last offer drawn is held to the complexity budget.
+    const draw = (pool, weightOf, last = false) => {
+      let options = pool.filter(fresh);
+      if (last) options = withinBudget(options, picked.reduce((sum, c) => sum + complexityOf(c.question), 0));
+      const [choice] = drawWeighted(options.map((c) => [c, weightOf(c)]), rng);
       if (choice) { picked.push(choice); shown.add(choice.split); }
       return choice;
     };
@@ -190,12 +208,19 @@ export class DailyGame {
     const preferred = candidates.filter((c) => c.small >= (big ? HUNT_MIN_SIDE : 2));
     const available = () => preferred.some(fresh);
     if (big) {
-      for (const target of SPLIT_TARGETS) {
-        if (available()) draw(preferred, (c) => Math.exp(-(((c.large / n - target) / TARGET_SPREAD) ** 2)) + 1e-9);
-        else draw(candidates, even);
+      // Targets in a seeded random order, so the budget-held last slot rotates.
+      const targets = [...SPLIT_TARGETS];
+      for (let i = targets.length - 1; i > 0; i--) {
+        const j = Math.floor(rng() * (i + 1));
+        [targets[i], targets[j]] = [targets[j], targets[i]];
       }
+      targets.forEach((target, i) => {
+        const last = i === targets.length - 1;
+        if (available()) draw(preferred, (c) => Math.exp(-(((c.large / n - target) / TARGET_SPREAD) ** 2)) + 1e-9, last);
+        else draw(candidates, even, last);
+      });
     } else {
-      while (picked.length < OFFER_COUNT && draw(available() ? preferred : candidates, even));
+      while (picked.length < OFFER_COUNT && draw(available() ? preferred : candidates, even, picked.length === OFFER_COUNT - 1));
     }
 
     // Shuffle (seeded) so the 50/50 isn't always first.

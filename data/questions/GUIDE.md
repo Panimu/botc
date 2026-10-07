@@ -27,7 +27,7 @@ Questions live in `data/questions/*.json`, one file per character group, each li
 
 **`quality`** is how good a question it is: accurate, worth asking, clearly split. The user sets it. Leave it at 5 unless asked to change it.
 
-**`complexity`** is how hard the **plain** wording is to take in on a first read. It is mostly about length and sentence structure, and partly about the rules knowledge the wording assumes. The styled line isn't rated, since it ends with the same question. Rate the wording, not the split or how hard the true answer is to work out.
+**`complexity`** is how hard the **plain** wording is to take in on a first read. It is published and the daily hunt uses it: the three offers on screen aim to total 15 or less, so a rating change changes the hunt (ship it just after midnight UTC, like question edits). It is mostly about length and sentence structure, and partly about the rules knowledge the wording assumes. The styled line isn't rated, since it ends with the same question. Rate the wording, not the split or how hard the true answer is to work out.
 
 - **1 to 2**: a few short, everyday words and one idea. "Are you evil?" "Is there a face on your token?"
 - **3 to 4**: one clear idea in a short sentence, with at most one game term. "Do you win when the Demon wins?"

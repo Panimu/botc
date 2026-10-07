@@ -4,7 +4,7 @@ import {
   DailyGame, schedule, dailyCharacterId, dayNumber, replay, streaks, seededRng,
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
   par, parRun, huntSteps, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
-  OVER_PAR_QUESTIONS, GUESS_BUDGET, HUNT_MIN_SIDE, tier, streakLine, TIERS,
+  OVER_PAR_QUESTIONS, GUESS_BUDGET, HUNT_MIN_SIDE, tier, streakLine, TIERS, COMPLEXITY_BUDGET, withinBudget,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -397,4 +397,58 @@ test('a hunt won on a fourth guess (paid from the question budget) charts as a w
     checked++;
   }
   assert.ok(checked > 0, 'found a day to test');
+});
+
+test('complexity budget: the last offer keeps the total within 15, or is the least complex left', () => {
+  const opts = (...cs) => cs.map((complexity, i) => ({ question: { id: `q${i}`, complexity } }));
+  const ids = (list) => list.map((c) => c.question.complexity);
+  assert.equal(COMPLEXITY_BUDGET, 15);
+  assert.deepEqual(ids(withinBudget(opts(2, 5, 9), 8)), [2, 5], 'room for up to 7');
+  assert.deepEqual(ids(withinBudget(opts(7, 8, 9, 7), 10)), [7, 7], 'nothing fits 5, so the budget rises until the 7s do');
+  assert.deepEqual(ids(withinBudget(opts(3, 4), 16)), [3], 'first two already over budget: the least complex');
+  assert.deepEqual(withinBudget([], 4), []);
+});
+
+test('complexity budget: most three-offer screens total 15 or less, and one offer always respects it', () => {
+  let screens = 0;
+  let within = 0;
+  for (let day = 0; day < 15; day++) {
+    const game = new DailyGame({ characters, questions, date: addDays(LAUNCH_DATE, day) });
+    while (game.status === 'playing' && game.offers.length) {
+      if (game.offers.length === 3) {
+        const cs = game.offers.map((q) => q.complexity);
+        const total = cs.reduce((a, b) => a + b, 0);
+        screens++;
+        if (total <= COMPLEXITY_BUDGET) within++;
+        // Whichever offer was drawn last, it fits the budget or nothing simpler was left
+        // for it; so at least one offer is no more complex than budget minus the others,
+        // or is the simplest question that could have filled a slot.
+        const asked = new Set(game.history.map((h) => h.question.id));
+        const n = game.pool.length;
+        const usable = game.questions.filter((q) => !asked.has(q.id) && !game.offers.includes(q)
+          && (!q.scopeSet || game.pool.every((id) => q.scopeSet.has(id)))
+          && game.pool.some((id) => q.yesSet.has(id)) && game.pool.some((id) => !q.yesSet.has(id)));
+        // The budget gives way only to the split rules. Whichever offer was drawn last chose
+        // from questions whose split differs from the other two, and from those with no side
+        // under the minimum when any exist; it fits the budget or is the least complex of them.
+        const sides = (q) => { const y = game.pool.filter((id) => q.yesSet.has(id)).length; return Math.min(y, n - y); };
+        const splitOf = (q) => { const y = game.pool.filter((id) => q.yesSet.has(id)).join(); const o = game.pool.filter((id) => !q.yesSet.has(id)).join(); return y < o ? y : o; };
+        const minSide = n > GUESS_THRESHOLD ? HUNT_MIN_SIDE : 2;
+        const couldBeLast = game.offers.some((offer) => {
+          const others = game.offers.filter((q) => q !== offer);
+          const taken = new Set(others.map(splitOf));
+          const options = [offer, ...usable].filter((q) => !taken.has(splitOf(q)));
+          const preferred = options.filter((q) => sides(q) >= minSide);
+          const from = preferred.length ? preferred : options;
+          if (!from.includes(offer)) return false;
+          const least = Math.min(...from.map((q) => q.complexity));
+          return offer.complexity <= Math.max(COMPLEXITY_BUDGET - others.reduce((a, q) => a + q.complexity, 0), least);
+        });
+        assert.ok(couldBeLast, `day ${day}, ${n} left: ${cs}`);
+      }
+      game.ask(game.offers[(day + game.history.length) % game.offers.length].id);
+    }
+  }
+  assert.ok(screens > 50);
+  assert.ok(within / screens > 0.65, `only ${within} of ${screens} screens within budget`);
 });
