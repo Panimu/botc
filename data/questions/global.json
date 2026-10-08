@@ -327,7 +327,7 @@
     "plain": "Does your ability care about nominations, votes or executions?",
     "styled": "Courtroom drama tests through the roof! Gavels, accusations, a crowd baying for blood. Does your ability come alive around nominations, votes or executions?",
     "voice": "Zev",
-    "quality": 5,
+    "quality": 6,
     "complexity": 4,
     "yes": {
       "aboutVoting": true

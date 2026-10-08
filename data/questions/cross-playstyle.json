@@ -18,7 +18,7 @@
     "plain": "Is your ability quiet on most nights, with no nightly job or information?",
     "styled": "Darling, a star needs her beauty sleep. I refuse to be shaken awake at three in the morning to do PAPERWORK. Does your ability leave you in peace on most nights, with no nightly job and no nightly news?",
     "voice": "Princess Donut",
-    "quality": 5,
+    "quality": 4,
     "complexity": 5,
     "yes": {
       "wakesMostNights": false
