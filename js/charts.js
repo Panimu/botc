@@ -36,7 +36,7 @@ export function timelineChart(container, steps, { par = null } = {}) {
 }
 
 function drawTimeline(container, steps, par) {
-  const W = Math.max(240, Math.round(container.clientWidth) || 340), H = 150, L = 34, R = 14, T = 20, B = 24;
+  const W = Math.max(240, Math.round(container.clientWidth) || 340), H = 210, L = 38, R = 16, T = 24, B = 30;
   const max = steps[0].left;
   const spent = steps.at(-1).points;
   const parPath = par?.score != null ? par.path : null;
@@ -49,15 +49,23 @@ function drawTimeline(container, steps, par) {
 
   for (const v of [max, 50, 15, 5, 1].filter((v, i, a) => v <= max && a.indexOf(v) === i)) {
     svg.append(node('line', { x1: L, x2: W - R, y1: y(v), y2: y(v), class: 'grid' }));
-    svg.append(node('text', { x: L - 6, y: y(v) + 4, class: 'tick', 'text-anchor': 'end' }, String(v)));
+    svg.append(node('text', { x: L - 7, y: y(v) + 4.5, class: 'tick', 'text-anchor': 'end' }, String(v)));
   }
-  svg.append(node('text', { x: L, y: H - 6, class: 'tick' }, 'Start'));
-  if (spent > 0) svg.append(node('text', { x: x(spent), y: H - 6, class: 'tick', 'text-anchor': anchor(x(spent)) }, `${spent} ${spent === 1 ? 'point' : 'points'}`));
+  svg.append(node('text', { x: L, y: H - 8, class: 'tick' }, 'Start'));
+  // Where you finished, and where par finished, on the points axis; one label when
+  // they're too close to tell apart.
+  const parEnd = parPath ? par.score : null;
+  const pointsText = (n) => `${n} ${n === 1 ? 'point' : 'points'}`;
+  const close = parEnd != null && Math.abs(x(parEnd) - x(spent)) < 70;
+  if (spent > 0) svg.append(node('text', { x: x(spent), y: H - 8, class: 'tick you-end', 'text-anchor': anchor(x(spent)) }, close && parEnd !== spent ? `${pointsText(spent)} (par ${parEnd})` : parEnd === spent ? `${pointsText(spent)}, par` : pointsText(spent)));
+  if (parEnd != null && !close) svg.append(node('text', { x: x(parEnd), y: H - 8, class: 'tick par-end', 'text-anchor': anchor(x(parEnd)) }, `par ${parEnd}`));
 
   if (parPath) {
     const line = node('polyline', { points: parPath.map((s) => `${x(s.points)},${y(s.left)}`).join(' '), class: 'par-line' });
     line.append(node('title', {}, `Par: ${parPath.map((s) => s.left).join(', ')} left, found in ${par.score}`));
     svg.append(line);
+    const end = parPath.at(-1);
+    svg.append(node('line', { x1: x(end.points), x2: x(end.points), y1: y(end.left) - 6, y2: y(end.left) + 6, class: 'par-end-mark' }));
   }
 
   svg.append(node('polyline', { points: steps.map((s) => `${x(s.points)},${y(s.left)}`).join(' '), class: 'line' }));
@@ -66,19 +74,22 @@ function drawTimeline(container, steps, par) {
   let biggest = 1;
   steps.forEach((s, i) => { if (i > 0 && steps[i - 1].left - s.left > steps[biggest - 1].left - steps[biggest].left) biggest = i; });
   steps.forEach((s) => {
-    const point = node('circle', { cx: x(s.points), cy: y(s.left), r: 4.5, class: s.kind === 'guess' ? 'point hollow' : 'point' });
+    const point = node('circle', { cx: x(s.points), cy: y(s.left), r: 5, class: s.kind === 'guess' ? 'point hollow' : 'point' });
     const what = { start: 'Start', guess: `Wrong guess (${s.label})`, found: `Right guess (${s.label})` }[s.kind] ?? `Question ${s.label}`;
     point.append(node('title', {}, `${what}: ${s.left} left`));
     svg.append(point);
   });
-  const label = (i, text, dy) => {
+  const label = (i, text, dy, dx = 0) => {
     const px = x(steps[i].points);
-    svg.append(node('text', { x: px, y: y(steps[i].left) + dy, class: 'value', 'text-anchor': i === 0 ? 'start' : anchor(px) }, text));
+    svg.append(node('text', { x: px + dx, y: y(steps[i].left) + dy, class: 'value', 'text-anchor': dx ? 'start' : i === 0 ? 'start' : anchor(px) }, text));
   };
-  label(0, String(max), -9);
+  label(0, String(max), -11);
   // Below the line so it never collides with the start label above it.
-  if (steps.length > 2 && biggest < steps.length - 1) label(biggest, `−${steps[biggest - 1].left - steps[biggest].left}`, 18);
-  label(steps.length - 1, String(steps.at(-1).left), -9);
+  if (steps.length > 2 && biggest < steps.length - 1) label(biggest, `−${steps[biggest - 1].left - steps[biggest].left}`, 22);
+  // A right guess drops straight down, so its label sits beside the point, clear of the line.
+  const last = steps.length - 1;
+  if (steps[last].kind === 'found' && last > 0) label(last, String(steps[last].left), 4.5, 9);
+  else label(last, String(steps[last].left), -11);
   const legend = document.createElement('p');
   legend.className = 'chart-legend';
   legend.setAttribute('aria-hidden', 'true');

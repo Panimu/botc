@@ -949,15 +949,7 @@ body {
 /* Daily hunt */
 .last-answer { text-align: left; border-left: 4px solid var(--brass); border-radius: 0 0.75rem 0.75rem 0; }
 .hunt-heading { text-align: left; }
-.offer { position: relative; padding-left: 3rem; }
-.offer::before {
-  content: "?";
-  position: absolute;
-  left: 1.1rem;
-  top: 0.65rem;
-  color: var(--brass);
-  font: 400 1.7rem/1 var(--display);
-}
+.offer { position: relative; }
 .guessing { text-align: left; }
 .candidates { justify-content: flex-start; }
 .candidate { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.2rem 0.85rem 0.2rem 0.25rem; }
@@ -1074,8 +1066,12 @@ body {
   to { opacity: 0.9; transform: rotate(-10deg) scale(1); }
 }
 
-/* Keyboard hints on the offers */
-.offer { padding-right: 2.75rem; }
+/* Keyboard hints on the offers, only where a keyboard is likely. */
+.offer-key { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .offer { padding-right: 2.75rem; }
+  .offer-key { display: block; }
+}
 .offer-key {
   position: absolute;
   top: 0.8rem;
@@ -1088,15 +1084,16 @@ body {
   font: 700 0.8rem/1.4 var(--body);
   text-align: center;
 }
-@media (pointer: coarse) { .offer-key { display: none; } .offer { padding-right: 1rem; } }
 
 /* Charts */
 .chart { margin: 1.5rem 0 0; text-align: left; }
 .chart figcaption { margin-bottom: 0.4rem; font: 400 1.3rem/1.2 var(--display); }
 .timeline { display: block; width: 100%; height: auto; overflow: visible; }
 .timeline .grid { stroke: var(--line); stroke-width: 1; }
-.timeline .tick { fill: var(--dim); font: 400 11px var(--body); }
-.timeline .value { fill: var(--text); font: 700 12px var(--body); }
+.timeline .tick { fill: var(--dim); font: 400 12.5px var(--body); }
+.timeline .tick.par-end { font-style: italic; }
+.timeline .par-end-mark { stroke: var(--dim); stroke-width: 1.5; }
+.timeline .value { fill: var(--text); font: 700 13.5px var(--body); }
 .timeline .line { fill: none; stroke: var(--chart); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
 .timeline .point { fill: var(--chart); stroke: var(--panel); stroke-width: 2; }
 .timeline .point.hollow { fill: var(--panel); stroke: var(--chart); stroke-width: 2; }
@@ -1173,3 +1170,52 @@ body {
 .streak-line p { margin: 0; }
 .streak-text { font-weight: 700; }
 .streak-cells { margin-top: 0.25rem !important; font-size: 1.35rem; letter-spacing: 0.08em; line-height: 1.4; }
+
+/* Questions asked: the question, then its answer, how many it ruled out, its
+   code and the report link, kept together on one line that wraps as a unit. */
+.asked { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.6rem; row-gap: 0.15rem; }
+.asked-question { flex: 1 1 16rem; }
+.asked-meta { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.15rem 0.45rem; margin-left: auto; max-width: 100%; }
+.asked-code { display: inline-flex; align-items: center; min-width: 0; max-width: 100%; }
+.asked-code .path-id { min-width: 0; overflow-wrap: anywhere; }
+.asked .reply {
+  min-width: 2.6rem;
+  padding: 0 0.5rem;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  font: 700 0.85rem/1.5 var(--body);
+  text-align: center;
+}
+.asked .reply-yes { border-color: var(--brass); }
+.asked .cut { color: var(--dim); font: 600 0.85rem/1 var(--body); font-variant-numeric: tabular-nums; }
+.asked .path-id { font-size: 0.7rem; }
+.asked .report { margin-left: 0.1rem; }
+
+/* The remaining characters, as a compact disclosure inside the card. */
+.pool.compact { margin-top: 1.25rem; }
+.pool.compact > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+  color: var(--dim);
+  text-align: left;
+  list-style: none;
+}
+.pool.compact > summary::-webkit-details-marker { display: none; }
+.pool.compact > summary::before { content: "▸"; }
+.pool.compact[open] > summary::before { content: "▾"; }
+.pool.compact > summary h2 { margin: 0; font: 600 1rem/1.3 var(--body); color: inherit; }
+.pool.compact > summary:hover h2 { color: var(--text); }
+.pool.compact[open] > summary { margin-bottom: 0.75rem; }
+.pool.compact .team-group h3 { font-size: 1.05rem; }
+
+/* The reveal: the copy of the winning token in flight to the result portrait. */
+.reveal-flight {
+  position: fixed;
+  margin: 0;
+  z-index: 50;
+  pointer-events: none;
+  transform-origin: top left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}

@@ -62,7 +62,8 @@ export function setupThemeToggle() {
 }
 
 // Builds the collapsible list of remaining characters, grouped by team; returns
-// render(pool, heading) which only toggles visibility.
+// render(pool, heading) which only toggles visibility. heading is a label (shown
+// with the count) or a function of the count returning the whole heading.
 export function createPoolList(container, headingEl, characters) {
   const groups = TEAMS.map((team) => {
     const section = el('section', 'team-group');
@@ -100,7 +101,7 @@ export function createPoolList(container, headingEl, characters) {
       g.heading.textContent = `${g.team.heading} (${count})`;
       g.section.hidden = count === 0;
     }
-    headingEl.textContent = `${heading} (${pool.length})`;
+    headingEl.textContent = typeof heading === 'function' ? heading(pool.length) : `${heading} (${pool.length})`;
   };
 }
 

@@ -233,7 +233,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
       button.setAttribute('aria-keyshortcuts', String(i + 1));
       const key = el('kbd', 'offer-key', String(i + 1));
       key.setAttribute('aria-hidden', 'true');
-      button.append(el('span', 'offer-text', q.plain), el('span', 'offer-id', q.id), key);
+      button.append(el('span', 'offer-text', q.plain), key);
       button.addEventListener('click', () => ask(q.id));
       return button;
     }));
@@ -278,8 +278,20 @@ function start(characters, questions, clockOffset, shareQuotes) {
     return actions.flatMap((action) => {
       const h = action.ask && asked.get(action.ask);
       if (h) {
+        // The row is an inner wrapper: a flex list item would lose its number.
         const li = el('li');
-        li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'), el('span', 'path-id', ` ${h.question.id}`), reportLink(h.question, date));
+        const row = el('span', 'asked');
+        const ruledOut = h.poolBefore.filter((id) => h.question.yesSet.has(id) !== h.answer).length;
+        const cut = el('span', 'cut');
+        const cutMark = el('span', '', `\u2212${ruledOut}`);
+        cutMark.setAttribute('aria-hidden', 'true');
+        cut.append(cutMark, el('span', 'visually-hidden', `, ruled out ${plural(ruledOut, 'character')}`));
+        const meta = el('span', 'asked-meta');
+        const code = el('span', 'asked-code');
+        code.append(el('span', 'path-id', h.question.id), reportLink(h.question, date));
+        meta.append(el('span', `reply ${h.answer ? 'reply-yes' : 'reply-no'}`, h.answer ? 'Yes' : 'No'), cut, code);
+        row.append(el('span', 'asked-question', `${h.question.plain} `), meta);
+        li.append(row);
         return [li];
       }
       if (action.guess && game.wrongGuesses.includes(action.guess)) return [el('li', 'wrong-guess', `Guessed the ${byId.get(action.guess).name}: wrong`)];
@@ -442,13 +454,54 @@ function start(characters, questions, clockOffset, shareQuotes) {
     renderPath();
     renderResult();
     renderPast();
-    renderPool(game.pool, game.status === 'playing' ? 'All remaining characters' : 'Characters left at the end');
+    // The remaining characters: inside the hunt card while playing, and after a loss
+    // inside the result (after a win it would only repeat the answer).
+    const playing = game.status === 'playing';
+    const pool = $('pool');
+    pool.hidden = game.status === 'won';
+    const poolHome = playing ? $('hunt-panel') : $('result-panel');
+    if (pool.parentElement !== poolHome) poolHome.append(pool);
+    renderPool(game.pool, (n) => (playing ? `Show the ${n} left` : `Show the ${n} left at the end`));
     circle(game.pool, {
       results: game.status === 'won' ? [game.targetCharacter] : [],
       selectable: game.canGuess,
       selected,
     });
     if (focus) $(focus)?.focus();
+  }
+
+  // The reveal: a copy of the winning token flies from its seat in the circle to the
+  // portrait on the result card. A fixed-position copy, so no panel edge clips it.
+  function reveal() {
+    const from = document.querySelector('.ring-token.chosen');
+    const portrait = $('result-art');
+    if (!from || !portrait.animate || document.hidden) return;
+    const a = from.getBoundingClientRect();
+    const b = portrait.getBoundingClientRect();
+    if (!a.width || !b.width) return;
+    const flight = portrait.cloneNode();
+    flight.removeAttribute('id');
+    flight.classList.add('reveal-flight');
+    Object.assign(flight.style, { left: `${b.left}px`, top: `${b.top}px`, width: `${b.width}px`, height: `${b.height}px` });
+    document.body.append(flight);
+    portrait.style.visibility = 'hidden';
+    const scale = a.width / b.width;
+    flight.animate([
+      { transform: `translate(${a.left - b.left}px, ${a.top - b.top}px) scale(${scale})` },
+      { transform: `translate(${(a.left - b.left) * 0.35}px, ${(a.top - b.top) * 0.35 - 24}px) scale(${(scale + 1) / 2 * 1.08})`, offset: 0.6 },
+      { transform: 'none' },
+    ], { duration: 950, easing: 'cubic-bezier(0.22, 0.7, 0.2, 1)' });
+    // Land when the flight ends, or after a moment regardless (a paused animation,
+    // say in a tab switched away from, must never leave the portrait hidden).
+    let landed = false;
+    const land = () => {
+      if (landed) return;
+      landed = true;
+      flight.remove();
+      portrait.style.visibility = '';
+    };
+    flight.getAnimations()[0]?.finished.then(land, land);
+    setTimeout(land, 1400);
   }
 
   // A rubber stamp on the answer: YES or NO lands on the card.
@@ -471,6 +524,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
     announcer.textContent = `${lastReply.question} ${lastReply.reply} ${game.pool.length} left.`;
     render({ focus: game.status === 'playing' ? 'hunt-heading' : 'result-name' });
     if (game.status === 'playing') stamp(answer);
+    else if (game.status === 'won') reveal();
   }
 
   function guess() {
@@ -485,6 +539,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
       : game.status === 'lost' ? `Not the ${name}, and that was your last move.` : `Not the ${name}. ${guessBudgetText()}`;
     render({ focus: game.status === 'playing' ? 'guess-hint' : 'result-name' });
     if (!right && game.status === 'playing') stamp(false);
+    if (right) reveal();
   }
 
   // Keyboard: 1/2/3 ask the offered questions; arrow keys move through the guess candidates.

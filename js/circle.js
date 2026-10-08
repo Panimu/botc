@@ -97,6 +97,30 @@ export function createCircle({ root, ring, count, label, characters, side, onSel
   // Beads knocked out by one answer fade in a ripple round the ring, not all at once.
   const RIPPLE_MS = 600;
 
+  // The number in the middle counts down to the new total (rather than jumping),
+  // over about as long as the beads take to fade.
+  let shown = null;
+  let rolling = 0;
+  const rollCount = (target, rippleMs) => {
+    cancelAnimationFrame(rolling);
+    // No roll when unchanged or growing, or while the page is hidden (animation frames pause there).
+    if (target === null || shown === null || target >= shown || document.hidden) {
+      shown = target;
+      count.textContent = target === null ? '' : String(target);
+      return;
+    }
+    const start = shown;
+    const began = performance.now();
+    const duration = Math.max(500, Math.min(1100, rippleMs + 300));
+    const step = (now) => {
+      const t = Math.min(1, (now - began) / duration);
+      shown = Math.round(start - (start - target) * (1 - (1 - t) ** 3));
+      count.textContent = String(shown);
+      if (t < 1) rolling = requestAnimationFrame(step);
+    };
+    rolling = requestAnimationFrame(step);
+  };
+
   return function render(pool, { results = [], selectable: canSelect = false, selected = null, wrong = [] } = {}) {
     selectable = canSelect;
     root.classList.toggle('selectable', selectable);
@@ -137,7 +161,7 @@ export function createCircle({ root, ring, count, label, characters, side, onSel
       li.classList.toggle('wrong', wrong.includes(id));
     }
 
-    count.textContent = results.length ? '' : String(pool.length);
+    rollCount(results.length ? null : pool.length, knockedOut.length * rippleStep);
     idleLabel = results.length ? '' : 'left';
     clearTimeout(labelTimer);
     label.textContent = idleLabel;
