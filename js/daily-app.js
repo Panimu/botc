@@ -100,6 +100,32 @@ function applyRestoreLink(today) {
   }
 }
 
+// Reporting a question: a mail link after each asked question opens the player's
+// email app with the question's code, wording and hunt date filled in.
+const REPORT_ADDRESS = 'botcguesswho@panimu.com';
+const SVG = 'http://www.w3.org/2000/svg';
+
+function reportLink(question, date) {
+  const subject = `BotC Daily Hunt Bug Report: ${question.id}`;
+  const body = [`Question code: ${question.id}`, `Question: ${question.plain}`, `Hunt date: ${date}`, '', 'What is wrong with it:', ''].join('\r\n');
+  const link = el('a', 'report');
+  link.href = `mailto:${REPORT_ADDRESS}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  link.setAttribute('aria-label', 'Report issue');
+  link.title = 'Report issue';
+  // An envelope.
+  const icon = document.createElementNS(SVG, 'svg');
+  icon.setAttribute('viewBox', '0 0 24 24');
+  icon.setAttribute('aria-hidden', 'true');
+  icon.setAttribute('focusable', 'false');
+  for (const [tag, attrs] of [['rect', { x: 3, y: 5.5, width: 18, height: 13, rx: 2 }], ['path', { d: 'M3.5 7l8.5 6.5L20.5 7' }]]) {
+    const part = document.createElementNS(SVG, tag);
+    for (const [name, value] of Object.entries(attrs)) part.setAttribute(name, value);
+    icon.append(part);
+  }
+  link.append(icon);
+  return link;
+}
+
 function start(characters, questions, clockOffset, shareQuotes) {
   const now = () => new Date(Date.now() + clockOffset);
   const today = utcDate(now());
@@ -253,7 +279,7 @@ function start(characters, questions, clockOffset, shareQuotes) {
       const h = action.ask && asked.get(action.ask);
       if (h) {
         const li = el('li');
-        li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'), el('span', 'path-id', ` ${h.question.id}`));
+        li.append(`${h.question.plain} `, el('span', 'reply', h.answer ? 'Yes' : 'No'), el('span', 'path-id', ` ${h.question.id}`), reportLink(h.question, date));
         return [li];
       }
       if (action.guess && game.wrongGuesses.includes(action.guess)) return [el('li', 'wrong-guess', `Guessed the ${byId.get(action.guess).name}: wrong`)];
