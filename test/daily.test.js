@@ -251,7 +251,8 @@ test('random play never wins above par + 5, and only loses with no legal move le
       const game = new DailyGame({ characters, questions, date, par: p });
       while (game.status === 'playing') {
         const canAsk = game.offers.length > 0;
-        if (game.canGuess && (!canAsk || rnd() < 0.35)) game.guess(game.pool[Math.floor(rnd() * game.pool.length)]);
+        // Every fifth player guesses recklessly, so the losing path is always exercised.
+        if (game.canGuess && (!canAsk || rnd() < (player % 5 === 0 ? 0.95 : 0.35))) game.guess(game.pool[Math.floor(rnd() * game.pool.length)]);
         else if (canAsk) game.ask(game.offers[Math.floor(rnd() * game.offers.length)].id);
         else assert.fail('a playing game must have a legal move');
       }
