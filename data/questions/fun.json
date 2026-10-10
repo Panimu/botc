@@ -675,8 +675,8 @@
     "plain": "Is your character a Townsfolk or an Outsider?",
     "styled": "I know it isn't always easy to tell down here, and some days I'm not sure about myself. But I'd like to know where you stand. Is your character one of the good team's characters, a Townsfolk or an Outsider?",
     "voice": "Katia",
-    "quality": 5,
-    "complexity": 3,
+    "quality": 6,
+    "complexity": 1,
     "yes": {
       "team": [
         "townsfolk",
