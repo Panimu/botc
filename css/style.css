@@ -1221,7 +1221,25 @@ body {
 }
 
 /* A link home to panimu.com, at the end of the top bar, and the community badge as a link. */
-.topbar .home-link { margin-left: auto; }
+.topbar .home-link {
+  margin-left: auto;
+  min-height: 2.75rem;
+  padding: 0 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--dim);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.topbar .home-link::after { content: "\2197"; margin-left: 0.4rem; font-size: 0.9em; transition: transform 0.2s; }
+.topbar .home-link:hover { color: var(--text); border-color: var(--brass); }
+.topbar .home-link:hover::after { transform: translate(2px, -2px); }
 .topbar .home-link + .theme-toggle { margin-left: 0; }
+@media (max-width: 30rem) {
+  .topbar { column-gap: 0.5rem; }
+  .topbar .home-link { margin-left: 0; min-height: 2.5rem; padding: 0 0.7rem; }
+  .topbar .home-link::after { margin-left: 0.25rem; }
+}
 .ccc-link { display: inline-block; line-height: 0; border-radius: 0.5rem; }
 .ccc-link:focus-visible { outline: 3px solid var(--brass); outline-offset: 4px; }
