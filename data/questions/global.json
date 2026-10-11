@@ -213,11 +213,11 @@
   },
   {
     "id": "global-pure-helper",
-    "plain": "Is your ability meant to help the town, whatever it costs you?",
+    "plain": "Is your ability meant to help the town?",
     "styled": "No secret sabotage, no curse in the fine print. Your power exists to help the good guys, even if it gets you killed. I know, it's suspicious. Is that you anyway?",
     "voice": "Katia",
     "quality": 6,
-    "complexity": 6,
+    "complexity": 4,
     "yes": {
       "team": "townsfolk"
     }

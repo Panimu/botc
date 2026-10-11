@@ -1219,3 +1219,9 @@ body {
   transform-origin: top left;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
+
+/* A link home to panimu.com, at the end of the top bar, and the community badge as a link. */
+.topbar .home-link { margin-left: auto; }
+.topbar .home-link + .theme-toggle { margin-left: 0; }
+.ccc-link { display: inline-block; line-height: 0; border-radius: 0.5rem; }
+.ccc-link:focus-visible { outline: 3px solid var(--brass); outline-offset: 4px; }
