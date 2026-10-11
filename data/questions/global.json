@@ -4,7 +4,7 @@
     "plain": "Do you win when the Demon wins?",
     "styled": "Our sponsors have asked me to remind everyone that evil is a valid lifestyle choice with excellent merchandising. Do you win when the monster wins?",
     "voice": "Zev",
-    "quality": 5,
+    "quality": 3,
     "complexity": 3,
     "yes": {
       "team": [
