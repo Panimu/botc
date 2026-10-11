@@ -205,8 +205,8 @@
     "plain": "Are you on the good team, but likely to cause it trouble?",
     "styled": "Bless your heart, you're on the right side and you're still a walking disaster. Your teammates love you. Your teammates are also slightly afraid of you. Is that you?",
     "voice": "Elle",
-    "quality": 5,
-    "complexity": 4,
+    "quality": 2,
+    "complexity": 6,
     "yes": {
       "team": "outsider"
     }
@@ -477,7 +477,7 @@
     "plain": "Does your ability ask you to choose players?",
     "styled": "Point at someone! Go on! The System has prepared a delightful consequence for whoever you pick. Does your ability involve choosing players?",
     "voice": "The System AI",
-    "quality": 5,
+    "quality": 6,
     "complexity": 1,
     "yes": [
       "sailor",
@@ -493,11 +493,14 @@
       "acrobat",
       "exorcist",
       "lycanthrope",
+      "alsaahir",
       "nightwatchman",
       "seamstress",
       "huntsman",
       "professor",
       "slayer",
+      "princess",
+      "juggler",
       "alchemist",
       "ravenkeeper",
       "butler",
@@ -505,6 +508,7 @@
       "lunatic",
       "klutz",
       "moonchild",
+      "puzzlemaster",
       "godfather",
       "poisoner",
       "devilsadvocate",
@@ -531,6 +535,7 @@
       "lordoftyphon",
       "lleech",
       "alhadikhia",
+      "riot",
       "thief",
       "bureaucrat",
       "harlot",
@@ -539,11 +544,7 @@
       "matron",
       "gangster",
       "bonecollector",
-      "gnome",
-      "juggler",
-      "alsaahir",
-      "puzzlemaster",
-      "princess"
+      "gnome"
     ]
   },
   {
