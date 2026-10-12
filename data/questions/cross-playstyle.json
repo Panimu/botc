@@ -130,7 +130,7 @@
     "plain": "Does your ability ever lead someone, you or another player, to make a decision or take an action?",
     "styled": "I didn't sign up to make choices. Nobody signs up for anything here. But some abilities put a decision in someone's lap anyway, yours or somebody else's. Does your ability lead to someone at the table having to decide or act?",
     "voice": "Carl",
-    "quality": 5,
+    "quality": 4,
     "complexity": 7,
     "yes": {
       "neverChooses": false
@@ -513,7 +513,7 @@
     "plain": "Is your ability free of any built-in drawback for you or your own side?",
     "styled": "Wouldn't that be nice? A power with no hidden trapdoor under it. I've met maybe three in my life and I'm suspicious of all of them. Is your ability free of any drawback for you or your side?",
     "voice": "Carl",
-    "quality": 5,
+    "quality": 4,
     "complexity": 4,
     "yes": {
       "harmsOwnTeam": false

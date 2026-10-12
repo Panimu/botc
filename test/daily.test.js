@@ -5,6 +5,7 @@ import {
   EXCLUDED_FILES, GUESS_THRESHOLD, MAX_WRONG_GUESSES, NO_REPEAT_DAYS, UNLIKELY_DAYS, OFFER_COUNT, LAUNCH_DATE,
   par, parRun, huntSteps, encodeResults, decodeResults, cleanResults, archiveDate, pastHunts,
   OVER_PAR_QUESTIONS, GUESS_BUDGET, HUNT_MIN_SIDE, tier, streakLine, TIERS, COMPLEXITY_BUDGET, withinBudget, MADE_UP_MAX, madeUpQuestion,
+  offeredInParRun, qualityFactor, AVOID_WEIGHT,
 } from '../js/daily.js';
 import { loadData } from '../scripts/load.js';
 
@@ -493,4 +494,43 @@ test('made-up questions fill slots the question bank cannot, deterministically, 
     assert.equal(replay(new DailyGame({ characters, questions: tiny, date }), actions).status, 'won');
   }
   assert.ok(madeUpSeen > 20);
+});
+
+test('quality nudges the weight: neutral at 5, up above, down below, never below zero', () => {
+  assert.equal(qualityFactor({}), 1);
+  assert.equal(qualityFactor({ quality: 5 }), 1);
+  assert.ok(qualityFactor({ quality: 10 }) > 1.2);
+  assert.ok(qualityFactor({ quality: 1 }) < 0.85 && qualityFactor({ quality: 1 }) > 0);
+});
+
+test("yesterday's par run: every question it offered is known, from one run with no avoidance of its own", () => {
+  const date = addDays(LAUNCH_DATE, 3);
+  const offered = offeredInParRun(date, characters, questions);
+  const first = new DailyGame({ characters, questions, date, avoid: null });
+  assert.ok(first.offers.every((q) => offered.has(q.id)), 'the opening offers were offered');
+  assert.ok(offered.size > 8, 'a run offers several screens of questions');
+  assert.equal(offeredInParRun(date, characters, questions), offered, 'remembered');
+  // The next day avoids exactly that set; launch day avoids nothing.
+  assert.deepEqual([...new DailyGame({ characters, questions, date: addDays(date, 1) }).avoid].sort(), [...offered].sort());
+  assert.equal(new DailyGame({ characters, questions, date: LAUNCH_DATE }).avoid, null);
+  assert.equal(new DailyGame({ characters, questions, date: addDays(date, 1), avoid: null }).avoid, null);
+});
+
+test('the avoid and quality nudges are deterministic and gentle: same choices, same offers; yesterday\'s questions still appear', () => {
+  let repeats = 0;
+  let offers = 0;
+  for (let day = 1; day < 8; day++) {
+    const date = addDays(LAUNCH_DATE, day);
+    const prior = offeredInParRun(addDays(LAUNCH_DATE, day - 1), characters, questions);
+    const one = new DailyGame({ characters, questions, date });
+    const two = new DailyGame({ characters, questions, date });
+    while (one.status === 'playing' && one.offers.length) {
+      assert.deepEqual(one.offers.map((q) => q.id), two.offers.map((q) => q.id));
+      for (const q of one.offers) { offers++; if (prior.has(q.id)) repeats++; }
+      const pick = one.offers[(day + one.history.length) % one.offers.length].id;
+      one.ask(pick); two.ask(pick);
+    }
+  }
+  assert.ok(repeats > 0, 'a slight nudge, not a ban');
+  assert.ok(AVOID_WEIGHT < 1 && AVOID_WEIGHT > 0.5);
 });

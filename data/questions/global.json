@@ -261,7 +261,7 @@
     "styled": "Welcome to the script where nobody is sure who they are, and some people are only pretending to be sure. Delicious content. Is Sects & Violets your script?",
     "voice": "Odette",
     "quality": 5,
-    "complexity": 6,
+    "complexity": 4,
     "yes": {
       "edition": "snv"
     }

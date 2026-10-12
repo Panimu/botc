@@ -22,6 +22,15 @@ export const HUNT_MIN_SIDE = 7;
 export const SPLIT_TARGETS = [0.5, 0.6, 0.7];
 const TARGET_SPREAD = 0.05;
 export const COMPLEXITY_BUDGET = 15;
+// Two last nudges on every draw, after the split and complexity rules. Questions
+// that were offered at any point in yesterday's par run are slightly less likely
+// (AVOID_WEIGHT), so consecutive days feel different; and, last of all, quality
+// (1 to 10, 5 by default) tips otherwise equal questions, each point above or
+// below 5 changing the weight by QUALITY_STEP.
+export const AVOID_WEIGHT = 0.75;
+export const QUALITY_STEP = 0.05;
+export const qualityOf = (question) => question.quality ?? 5;
+export const qualityFactor = (question) => Math.max(0.1, 1 + QUALITY_STEP * (qualityOf(question) - 5));
 // When the question bank can't fill all three slots, the hunt makes up
 // "Are you one of …?" questions naming up to MADE_UP_MAX characters (never more
 // than half of those left), chosen by the same seed, so everyone sees the same ones.
@@ -91,6 +100,30 @@ export function seededRng(seed) {
 }
 
 const DAY_MS = 86400000;
+// Every question offered at any point in a day's par run (the most even offer each
+// turn), played with no avoidance of its own, so it is one run and never a chain
+// back through earlier days. Remembered per question list and date.
+const offeredCache = new WeakMap();
+export function offeredInParRun(date, characters, questions) {
+  let byDate = offeredCache.get(questions);
+  if (!byDate) offeredCache.set(questions, (byDate = new Map()));
+  if (byDate.has(date)) return byDate.get(date);
+  const game = new DailyGame({ characters, questions, date, avoid: null });
+  const names = new Map(characters.map((c) => [c.id, c.name]));
+  const offered = new Set();
+  while (game.status === 'playing') {
+    if (game.offers.length) {
+      for (const q of game.offers) offered.add(q.id);
+      const even = (q) => Math.abs(game.pool.filter((id) => q.yesSet.has(id)).length - game.pool.length / 2);
+      game.ask([...game.offers].sort((a, b) => even(a) - even(b))[0].id);
+    } else {
+      game.guess([...game.pool].sort((a, b) => names.get(a).localeCompare(names.get(b)))[0]);
+    }
+  }
+  byDate.set(date, offered);
+  return offered;
+}
+
 const toUtc = (date) => { const [y, m, d] = date.split('-').map(Number); return Date.UTC(y, m - 1, d); };
 const fromUtc = (ms) => new Date(ms).toISOString().slice(0, 10);
 
@@ -144,11 +177,15 @@ export class DailyGame {
   // par: the day's par, which sets the budgets. Leave it out (or null) for the
   // old unbudgeted rules. Callers compute it separately: par() itself builds
   // a DailyGame, so the constructor can't.
-  constructor({ characters, questions, date, par = null }) {
+  // avoid: the ids to nudge away from. Leave it out for yesterday's par-run offers;
+  // pass null for none (yesterday's own run is played without any).
+  constructor({ characters, questions, date, par = null, avoid }) {
     this.characters = characters;
     this.questions = questions.map((q) => prepare(q, characters));
     this.date = date;
     this.number = dayNumber(date) + 1;
+    this.avoid = avoid !== undefined ? avoid
+      : date > LAUNCH_DATE ? offeredInParRun(fromUtc(toUtc(date) - DAY_MS), characters, questions) : null;
     const days = schedule(date, characters);
     this.target = days.at(-1);
     this.yesterday = date >= PRE_ELIMINATE_FROM && days.length > 1 ? days.at(-2) : null;
@@ -214,7 +251,8 @@ export class DailyGame {
     const draw = (pool, weightOf, last = false) => {
       let options = pool.filter(fresh);
       if (last) options = withinBudget(options, picked.reduce((sum, c) => sum + complexityOf(c.question), 0));
-      const [choice] = drawWeighted(options.map((c) => [c, weightOf(c)]), rng);
+      const nudge = (c) => (this.avoid?.has(c.question.id) ? AVOID_WEIGHT : 1) * qualityFactor(c.question);
+      const [choice] = drawWeighted(options.map((c) => [c, weightOf(c) * nudge(c)]), rng);
       if (choice) { picked.push(choice); shown.add(choice.split); }
       return choice;
     };
